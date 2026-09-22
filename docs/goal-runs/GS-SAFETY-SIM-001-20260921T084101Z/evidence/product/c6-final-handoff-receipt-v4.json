@@ -1,0 +1,48 @@
+{
+  "recordedAt": "2026-09-22T00:44:21.805Z",
+  "owner": "/root/handoff_resume",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "officialQa": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/official-c6-qa-status-v2.json",
+    "sha256": "e1d19be846332cd4e2b682623b970dc38e202ba564fa2671a0c8deed3aac5614",
+    "issuedAt": "2026-09-22T00:40:27.224Z",
+    "overallVerdict": "BLOCKED",
+    "counts": {
+      "PASS": 4,
+      "FAIL": 0,
+      "BLOCKED": 7,
+      "NOT_RUN": 5
+    }
+  },
+  "runtime": {
+    "receiptPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-user-demo-started.json",
+    "sha256": "57efdd03b5a9cdd49a4873f7e589a6adaa89f944b1c72a55c802ac047c603733",
+    "status": "STARTED",
+    "startedAt": "2026-09-22T00:36:57.501Z",
+    "credentialValuesReadOrCopied": false
+  },
+  "rootFunctionalCheck": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/final-user-demo/attempt-02/functional-check.json",
+    "statusAtWrite": "PASS_SELF_CHECK",
+    "completedAt": "2026-09-22T00:42:29.197Z",
+    "sha256AtWrite": "42aa5f45c25470863be4553d1df51c4dfa3e44ccbaea701a667a1574efe196ed",
+    "meaning": "Root self-check only; independent QA unchanged"
+  },
+  "files": [
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index-v4.md",
+      "bytes": 8442,
+      "sha256": "9eccc20411c18c5607e449835811a9df823b3797c520676131b98fe912cd5154"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-final-requirement-qa-pointers-v4.json",
+      "bytes": 341455,
+      "sha256": "d17c5b8827b052871fb4b653fff462ac2218e47bef4e13a86a48a8edd3f76ae1"
+    }
+  ],
+  "exactBaselineRecords": 104,
+  "allPrintedHashesMachineDerived": true,
+  "missingLinks": [],
+  "priorFilesPreserved": true,
+  "sourceOrRuntimeChangesByThisTask": false
+}

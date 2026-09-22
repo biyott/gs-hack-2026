@@ -1,0 +1,16 @@
+{
+  "type": "product-document-editorial-check-not-QA",
+  "checkedAt": "2026-09-21T12:29:25.389Z",
+  "previous": "handoff-check.g3.v1.0.5.json",
+  "goalVersion": "1.0",
+  "goalChanged": false,
+  "scope": "Stable verified Mobile selection pointer; candidate3 and old generic retained as history; standard Flutter output unchanged",
+  "localLinksChecked": 68,
+  "missingLinks": [],
+  "selectionFieldsPresent": true,
+  "producerBindingAgrees": true,
+  "artifactHashes": {
+    "docs/demo-runbook.md": "43d4b7e7cc373e3844535f0572135ff35b9a8ec4035f2c6962c1c8b91d482bcf"
+  },
+  "status": "Product source stable for docs-only manifest rebind; no G3 or QA verdict."
+}

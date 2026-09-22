@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "case16-append-v1",
+  "createdAt": "2026-09-21T16:42:43.773Z",
+  "testId": "Q-RAG-08-16-APPEND",
+  "status": "PREPARATION_ONLY",
+  "providerMode": "mock",
+  "original16": "Unchanged absent-token replace case remains NOT_RUN; this additivecontrol doesnotreplace original",
+  "baseline": {
+    "sourceEvidencePath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-1a7c95cd/http-attempt-01/http-report.json",
+    "sourceEvidenceSha256": "3a3dbf04ef08fd602ffe1d15a8911f49ba00d895fcd5c7cf248b2b18e49671e8",
+    "sourceDocumentPath": "/home/b/.cache/gs-safety-c3.eulo4t9w/knowledge/equipment/EQ-001.md",
+    "sourceFileSha256": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+    "output": {
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "locale": "ko",
+      "supplementalExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+      "evidence": [
+        {
+          "documentId": "EQ-001",
+          "documentVersion": "0.1.0",
+          "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+        }
+      ]
+    },
+    "outputSha256": "e8e40575276d067a7939c8be39b38a4b0ea9a32d212038f7de95279b6bc4cc15",
+    "requiredNextCandidateCheck": "Exact approvedsource/citation/action/locale still applicable and present in actualretrievedchunks; unmodified mockpositivecontrolaccepted before negative can establish its mutation"
+  },
+  "injection": {
+    "operator": "append-only",
+    "path": "/supplementalExplanation",
+    "appendText": " {routeVersion999}",
+    "utf8Hex": "207b726f75746556657273696f6e3939397d",
+    "output": {
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "locale": "ko",
+      "supplementalExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다. {routeVersion999}",
+      "evidence": [
+        {
+          "documentId": "EQ-001",
+          "documentVersion": "0.1.0",
+          "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+        }
+      ]
+    },
+    "outputSha256": "d07ecc897f79e551cb1443cdb130b5df868fa521a01a8fe74893bd1d7b222d9d",
+    "unchanged": [
+      "actionCode",
+      "locale",
+      "evidence",
+      "sourceapproval",
+      "currentguidance/route/profile",
+      "deadline"
+    ]
+  },
+  "positiveExpected": {
+    "outcome": "accepted",
+    "reviewedSentenceExact": true
+  },
+  "negativeExpected": {
+    "outcome": "fallback:unreviewed_explanation",
+    "requiredEvidence": [
+      "nonnull injectedpayloadbytes and SHA",
+      "mockprovidergenerate entered and returned completion toservice",
+      "no accepted evidence/current supplement",
+      "primary remains byte-equivalent",
+      "unchanged immutablefirstguidance"
+    ],
+    "forbiddenSubstitutes": [
+      "provider_failure dueprecondition",
+      "nullpayload",
+      "mutatedcorpusapproval",
+      "replacement requiring absent source token",
+      "actualmodel successclaim"
+    ]
+  },
+  "clocks": "Controlledservice clock and actualexecutionUTC recordedseparately; original09:30/5000ms remain unchanged",
+  "execution": "Separate newcandidate QA adapter only after receipt/freeze+grant; do not route this newID through frozen31-case loader or mutate its regex/count",
+  "overallVerdict": "NOT_ISSUED"
+}

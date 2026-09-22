@@ -1,0 +1,69 @@
+{
+  "recordedAt": "2026-09-22T00:14:46.962Z",
+  "owner": "/root/handoff_resume",
+  "scope": "External handoff printed-hash correction and document self-check; not QA acceptance",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "priorIndex": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index.md",
+    "sha256": "19d5efc006ad293b8d06aa9dcc8e45126395f0d6203acb4cbae66fa1d212085b",
+    "preservedUnchanged": true,
+    "knownErrors": [
+      "source printed as a9522ae4668f3909993662feb06b17ee406e35a3f4887a00a0db989aac60048a",
+      "APK printed as 1d78f81eaa5d7d85a2f73d3d50b5acbbeeb4a0ea5cbbabcc638087f4fbeb515a"
+    ],
+    "cause": "Unrestricted c5-to-c6 text replacement modified hex literals before exact source replacement. Prior link/count self-check and read-only review did not detect literal hash errors."
+  },
+  "currentIndex": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index-v2.md",
+    "bytes": 11836,
+    "sha256": "1bf5ba54a0d1146030e03b398a8b7cf0a7ac505afc902b92b633f5d0543d0eb4"
+  },
+  "machineDerivedValues": {
+    "candidate": "892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "g3Receipt": "537c1411b1dc3a1328aa098a58e789361bd5e7982a23ff776f745fef13dd3f50",
+    "source": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+    "manifest": "2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792",
+    "launch": "502251eb38eaf6daf6972029b1ceef73be8c6801f9c05670e203a9718e34370a",
+    "goalInput": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796",
+    "apk": "1d78f81eaa5d7d85a2f73d3d50b5acbbeeb4a0ea5cbbabcc538087f4fbeb515a",
+    "modelArtifactSet": "991e301bd5b6baddeef7218eb453cccaab41d7aeb223d822344e3bb173323539"
+  },
+  "derivation": {
+    "g3": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/g3-freeze-c6.json",
+      "sha256": "537c1411b1dc3a1328aa098a58e789361bd5e7982a23ff776f745fef13dd3f50"
+    },
+    "manifest": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/candidate-manifest-c6.json",
+      "bytes": 367968,
+      "sha256": "2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792"
+    },
+    "launch": {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/runtime-artifacts/g3-launch-c6.md",
+      "bytes": 7282,
+      "sha256": "502251eb38eaf6daf6972029b1ceef73be8c6801f9c05670e203a9718e34370a"
+    },
+    "goal": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/goal.input.txt",
+      "bytes": 36286,
+      "sha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796"
+    },
+    "mobileSelector": {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/runtime-artifacts/mobile-build-binding.json",
+      "bytes": 23826,
+      "sha256": "432d42b846b4c40bd1353ce83cf0fbdc52d0ea15268fbfd5a3d716d1115ae72b"
+    },
+    "apkCrossCheck": "selectedApk and exact sha256 match current G3 and candidate manifest; no runtime started",
+    "models": {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/runtime-artifacts/models.json",
+      "bytes": 35301,
+      "sha256": "8fedc0720ebd03e8f82a33c2f12072a7fa6ebd78d765cb713e86d5f5847a9dc0"
+    }
+  },
+  "printed64HexTokenCount": 8,
+  "allPrintedFullHashesMatch": true,
+  "markdownLocalLinks": 38,
+  "missingLinks": [],
+  "frozenCandidateChanged": false,
+  "qaVerdict": null
+}

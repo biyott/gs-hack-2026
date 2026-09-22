@@ -1,0 +1,79 @@
+{
+  "kind": "c4-accessibility-supplement-source-freeze",
+  "version": "1",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "sourceSha256": "e17322b2faf5b5181f6a50bcd5cd4baeae2ca31f57f7bfd1653399b4e9e28efa",
+  "buildId": "czkc6DgDv3UUlTrSfDMqX",
+  "createdAt": "2026-09-21T18:17:48.247Z",
+  "runtime": "NOT_RUN",
+  "authorization": "NO_GRANT_CREATED",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-accessibility-supplement-v1.mjs",
+      "sha256": "5d7d17893d0f251b7f01ee0a002b5b814b3baa275f0499a9ce6335ef631df5a0"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-accessibility-supplement-v1.md",
+      "sha256": "ffcf2e33338a1e1548d8e9033ff2849202c74b53964a56ed4ee6cbd11eb7bba6"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c4.v2.json",
+      "sha256": "8a64152769ee5f6ff217c6f0216c73966e48e7cb22bb8f278810741c03c21fca"
+    }
+  ],
+  "sources": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "ad34164bb0eec7c9d75f7d11b177ec430cf8a39749aaca60534a650507a55e4a"
+    },
+    {
+      "path": "src/components/console/entry-screen.tsx",
+      "sha256": "e2a61cfc597c40684101a6a34ea1fd49a9c539128d0016a72be781915f8480a8"
+    },
+    {
+      "path": "src/components/console/console-header.tsx",
+      "sha256": "75d7553f04eb68a60dedb61c86a3f88ef434a5dd60552d081d12474cb583f4fc"
+    },
+    {
+      "path": "src/components/console/worker-board.tsx",
+      "sha256": "a1ea8876b21c9b7099279cca099bb2bb53a293986576fdee88c0e8a21cf9ea0d"
+    },
+    {
+      "path": "src/components/console/worker-card.tsx",
+      "sha256": "04c5ced354848e4b1325d2ea2b5cdfb7dfd4a3ed6318ce2414561a3237cf5c1b"
+    },
+    {
+      "path": "src/components/console/scenario-rail.tsx",
+      "sha256": "0fb233511277d9bcfe82b761ea86e0ea39815bb291db973f14aefb6723ed2a40"
+    },
+    {
+      "path": "src/components/console/safety-console.tsx",
+      "sha256": "e2b8028a9483f38d170e6597c9d0d8fe42b9b72ff10b6337005707d7d16b4a85"
+    },
+    {
+      "path": "src/components/incidents/guidance-record.tsx",
+      "sha256": "3061ccd60f9927476563fc3795faf5eab1852ac0663e1811f0aa5f60d5f7f3ec"
+    },
+    {
+      "path": "src/components/scene/SiteStage.tsx",
+      "sha256": "0cd8da1d09591dd7d27b637455f59e7d1df1c73854f83f7104e3d19f2b9fe739"
+    },
+    {
+      "path": "src/components/scene/StageCameraControls.tsx",
+      "sha256": "59c4e2ea4f934e62aa8ae1584f4b7b1ac2548783ef0ce86ea537db3ffc7440d2"
+    },
+    {
+      "path": "src/components/scene/EquipmentControls.tsx",
+      "sha256": "7bc5e8fb40e89648912c95930d9ffdf96b517d2405c21a2c3d97d409bc62a6a0"
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "3aff9ef817c2bad2e392cb3f27dff43ba4830cc56cbb54177ddfb75a7e00f727"
+    },
+    {
+      "path": "app/console.css",
+      "sha256": "2bb39006ab7bfeccadb1e6ff6a11b933d87687301cf29e917d744b384025c9de"
+    }
+  ]
+}

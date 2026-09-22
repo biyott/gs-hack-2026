@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-09-21T09:00:27.868Z",
+  "scope": "Six selected manufacturer configurations; source self-check, not QA acceptance",
+  "models": [
+    {
+      "model": "Spierings SK1265-AT6 legacy 60 m",
+      "metadataPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/spierings/manifest.json",
+      "originalPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/spierings/Specs-SK1265_EN.pdf",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/spierings/evidence.md",
+      "sha256": "3b24fc18f0aafb73584c191496b4cca88bd4f19a84e6a09753f3c3ccb52b2d2b",
+      "bytes": 909045,
+      "pageEvidence": [
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/spierings/page-1.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/spierings/page-2.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/spierings/page-7.png"
+      ]
+    },
+    {
+      "model": "Tadano GR-250N-4 X 00101",
+      "metadataPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/tadano/source-manifest.json",
+      "originalPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/tadano/GR250N-4-ko-specsheet.pdf",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/compact/tadano/report.md",
+      "sha256": "8728346554f8082831be7f374bd1e1ebafee8ab08d0e04af681ed73437790288",
+      "bytes": 5783106,
+      "pageEvidence": [
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/tadano/page-01.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/tadano/page-02.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/tadano/page-06.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/tadano/page-07.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/tadano/page-08.png"
+      ]
+    },
+    {
+      "model": "Liebherr LTM1050-3.1",
+      "metadataPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/ltm1050/sources.json",
+      "originalPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/ltm1050/current-technical-data.pdf",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/liebherr/ltm1050/report.md",
+      "sha256": "d6af4bfd6f9ce75987c6d506f72c5cbd640ea0b32044fd525eb8fdbf25d41ccd",
+      "bytes": 3856681,
+      "pageEvidence": [
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/ltm1050/page-03.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/ltm1050/page-30.png"
+      ]
+    },
+    {
+      "model": "Maeda MC305C-5 Metric CE",
+      "metadataPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/source-manifest.json",
+      "originalPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/originals/mc305c-5_printdata_ce.pdf",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/compact/maeda/README.md",
+      "sha256": "44a3125b73e03f298a4685428cded1e2485010c350e14bf47beccd55ed39c46e",
+      "bytes": 3015631,
+      "pageEvidence": [
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5-p1.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5-p2.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p1.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p2.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p3.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p329.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p349.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p58.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p60.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p61.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p62.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p63.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/MC305C-5_manual_jp-p64.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/mc305c-5_printdata_ce-p1.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/mc305c-5_printdata_ce-p2.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/mc305c-5_printdata_ce-p3.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/pages/mc305c-5_printdata_ce-p4.png"
+      ]
+    },
+    {
+      "model": "Liebherr LR1100.1 32 m",
+      "metadataPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/lr1100/source-manifest.json",
+      "originalPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/lr1100/liebherr-lr-1100-crawler-crane-technical-data-sheet-specifications-english.pdf",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/liebherr/lr1100/report.md",
+      "sha256": "843ac3a7fb711bd2fede5dc5f5ba2b2798cfbf3cb52faeff4515cacf1e082e52",
+      "bytes": 9697814,
+      "pageEvidence": [
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/lr1100/english-p08.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/lr1100/english-p14.png"
+      ]
+    },
+    {
+      "model": "Liebherr172 EC-B8 16HC175 UC-0460m",
+      "metadataPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/tower172/sources.metadata.json",
+      "originalPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/tower172/172ecb8-2025-02.pdf",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/liebherr/tower172/REPORT.md",
+      "sha256": "3c8973aaaa1f5d68cc48d06d8f7ff3760248a8e3feadef498e3ea921df954567",
+      "bytes": 1051150,
+      "pageEvidence": [
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/tower172/page-04.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/tower172/page-06.png",
+        "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/tower172/page-08.png"
+      ]
+    }
+  ],
+  "contextManifest": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/context/manifest.json",
+  "correctionsPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/research-corrections.md",
+  "rootEvidenceRelocated": true
+}

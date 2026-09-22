@@ -1,0 +1,174 @@
+{
+  "kind": "c6-app-origin-sites-static-binding",
+  "version": "1",
+  "status": "APP_ORIGIN_SOURCE_BOUND",
+  "preparedAt": "2026-09-22T00:02:09.695Z",
+  "preparedBy": "/root/integration_resume",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "candidateRoot": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "technicalConcurrence": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-app-origin-source-concurrence-v1.json",
+    "bytes": 2888,
+    "sha256": "e51e690a8d0b9bcd8dfa2ecaa81512ab42f255eb9dbf88b15147a3c7d52b5280",
+    "status": "STATIC_CONCURRENCE"
+  },
+  "executionGrant": null,
+  "runtimeObservation": "NOT_RUN",
+  "productPerformance": "NOT_RUN",
+  "coordinates": "One-based line and UTF-16 column; columnStart and columnEnd inclusive; exact call expression excluding semicolon and neighbors.",
+  "sourceMap": {
+    "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js.map",
+    "sha256": "69f3bf1cdca1654d36fe8f07423803b8cd060fa98a82ab1d80133c98d47cf667",
+    "bytes": 76407,
+    "version": 3,
+    "sourceIndex": 0,
+    "sourceIdentifier": "../../../app/api/events/route.ts",
+    "sourcesContentSha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+    "sourcesContentEqualsFrozenRouteBytes": true,
+    "decoding": "Fresh static Base64-VLQ delta decoding of C6 map. No compiled-artifact execution; zero-based columns converted to one-based UTF-16."
+  },
+  "sites": [
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "sha256": "1feca21806f2a135b3c39081d0dbd4468ddcb58e1a9513458847491f12048c96",
+      "line": 5,
+      "columnStart": 237,
+      "columnEnd": 253,
+      "expression": "r.enqueue(w(e,t))",
+      "expectedV8Column": 239,
+      "sourceMapPropertyAnchor": {
+        "generatedLine": 5,
+        "generatedColumn": 239,
+        "originalLine": 68,
+        "originalColumn": 22,
+        "name": "enqueue",
+        "segment": "EAAWQ"
+      },
+      "sourceMapReceiverAnchor": {
+        "generatedLine": 5,
+        "generatedColumn": 237,
+        "originalLine": 68,
+        "originalColumn": 11,
+        "name": "controller",
+        "segment": "CACAS"
+      },
+      "sourceEndpoint": "events-route-publish-enqueue",
+      "stackRepresentation": "compiled",
+      "expectationBasis": "enqueue property-name source position; runtime stack formatting has not been observed"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "sha256": "1feca21806f2a135b3c39081d0dbd4468ddcb58e1a9513458847491f12048c96",
+      "line": 5,
+      "columnStart": 486,
+      "columnEnd": 502,
+      "expression": "e.enqueue(w(t,n))",
+      "expectedV8Column": 488,
+      "sourceMapPropertyAnchor": {
+        "generatedLine": 5,
+        "generatedColumn": 488,
+        "originalLine": 85,
+        "originalColumn": 40,
+        "name": "enqueue",
+        "segment": "EAAWQ"
+      },
+      "sourceMapReceiverAnchor": {
+        "generatedLine": 5,
+        "generatedColumn": 486,
+        "originalLine": 85,
+        "originalColumn": 29,
+        "name": "controller",
+        "segment": "GAAgBa"
+      },
+      "sourceEndpoint": "events-route-pull-enqueue",
+      "stackRepresentation": "compiled",
+      "expectationBasis": "enqueue property-name source position; runtime stack formatting has not been observed"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "line": 68,
+      "columnStart": 11,
+      "columnEnd": 52,
+      "expression": "controller.enqueue(frame(snapshot, fresh))",
+      "expectedV8Column": 22,
+      "sourceEndpoint": "events-route-publish-enqueue",
+      "stackRepresentation": "source-mapped",
+      "expectationBasis": "Source-map image of compiled enqueue property anchor; source-mapped runtime formatting has not been observed"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "line": 85,
+      "columnStart": 29,
+      "columnEnd": 70,
+      "expression": "controller.enqueue(frame(snapshot, fresh))",
+      "expectedV8Column": 40,
+      "sourceEndpoint": "events-route-pull-enqueue",
+      "stackRepresentation": "source-mapped",
+      "expectationBasis": "Source-map image of compiled enqueue property anchor; source-mapped runtime formatting has not been observed"
+    }
+  ],
+  "excludedSites": [
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "sha256": "1feca21806f2a135b3c39081d0dbd4468ddcb58e1a9513458847491f12048c96",
+      "line": 5,
+      "columnStart": 364,
+      "columnEnd": 401,
+      "expression": "r.enqueue(c.encode(\": heartbeat\\n\\n\"))",
+      "expectedV8Column": 366,
+      "sourceMapPropertyAnchor": {
+        "generatedLine": 5,
+        "generatedColumn": 366,
+        "originalLine": 76,
+        "originalColumn": 24,
+        "name": "enqueue",
+        "segment": "EAAWQ"
+      },
+      "sourceMapReceiverAnchor": {
+        "generatedLine": 5,
+        "generatedColumn": 364,
+        "originalLine": 76,
+        "originalColumn": 13,
+        "name": "controller",
+        "segment": "GAClCP"
+      },
+      "propertyColumn": 366,
+      "reason": "Heartbeat comment frame, not a snapshot dispatch"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "line": 76,
+      "columnStart": 13,
+      "columnEnd": 65,
+      "expression": "controller.enqueue(encoder.encode(\": heartbeat\\n\\n\"))",
+      "expectedV8Column": 24,
+      "propertyColumn": 24,
+      "reason": "Source-map counterpart of excluded heartbeat call"
+    }
+  ],
+  "staticChecks": {
+    "compiledBytes": 20344,
+    "compiledSnapshotExpressionsUnique": true,
+    "nonBmpCharactersBeforeCompiledSpans": false,
+    "sourceMapRouteContentByteEquality": true,
+    "independentStaticSpanReview": "Separate reviewer pending; no prior review transferred",
+    "artifactExecutedOrImported": false,
+    "browserOrNetworkUsed": false
+  },
+  "requiredBeforeUse": [
+    "Performance grant must bind this exact hash and current C6 candidate/build.",
+    "Observe actual runtime stack representation and exact candidate PID/controller origin under an authorized window.",
+    "Require actual callsite inside exact expression window with matching path/artifact hash; never widen to minified line.",
+    "Retain independent public-command, browser/controller association, clock and log identities; static mapping is not runtime/performance evidence."
+  ],
+  "boundAt": "2026-09-22T00:02:09.695Z",
+  "boundBy": "/root/integration_resume",
+  "derivationScript": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-bind-app-origin.mjs",
+    "sha256": "6ea456d717c18b561927a75e46e036b968291bd75f8a62f8afb0849614d1fe59"
+  }
+}

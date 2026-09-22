@@ -1,0 +1,98 @@
+{
+  "kind": "c6-equipment-invalidation-source-freeze",
+  "version": "1",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "createdAt": "2026-09-21T18:03:30.157Z",
+  "runtime": "NOT_RUN",
+  "authorization": "NO_GRANT_CREATED",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-equipment-invalidation-v1.mjs",
+      "sha256": "17cb22d0592279fc6917ea3cd09f11b3f46452f84271836f1a61ee2e72608a05"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c6.v2.json",
+      "sha256": "3e52330f7f0b670dc7bce18684eb3c877a6195dcb8d24698439cf7e2bfbbaa94"
+    }
+  ],
+  "sources": [
+    {
+      "path": "data/equipment/catalog.json",
+      "sha256": "8318e9eb05134bc2c9ed09d90633ec36fbf6c9e80556d4c56a9842c1d81dd6b6"
+    },
+    {
+      "path": "src/components/console/scenario-rail.tsx",
+      "sha256": "2d9b55bdf2f3008d98edf8591051e0313bad6247bac8fec2e541b947313938cf"
+    },
+    {
+      "path": "src/components/scene/EquipmentControls.tsx",
+      "sha256": "7bc5e8fb40e89648912c95930d9ffdf96b517d2405c21a2c3d97d409bc62a6a0"
+    },
+    {
+      "path": "src/components/scene/SiteMap.tsx",
+      "sha256": "a9e758785fde22110a3cd9fe5e03ae245cc5ff7f7dd66aa8eb4a520591521b39"
+    },
+    {
+      "path": "src/components/scene/geometry.ts",
+      "sha256": "c2cb753dcfb5d290e6ff52016500f0ea3e14a1e689f8c3b4b6a5253fcc499b6f"
+    },
+    {
+      "path": "src/components/scene/scene-data.ts",
+      "sha256": "51f71170c7a0547c9fd473e0ab0b5cbd98e62bfe9d4e01c9de2961185fc0ba7c"
+    },
+    {
+      "path": "src/server/simulation/commands.ts",
+      "sha256": "08e6d6dd10bcdff30fd0884a14b79f3e9b0a2b41126cb7d5e6907dad097de6fd"
+    },
+    {
+      "path": "src/server/simulation/equipment-controls.ts",
+      "sha256": "13494faa1ed41197529f0477d02fff799f189c981241c8732217d05c5797eeac"
+    },
+    {
+      "path": "src/server/simulation/evaluate.ts",
+      "sha256": "e9846de7d57f5dd854acda63dd39d3ad45660f6fea2345797bbffe24baef6e51"
+    },
+    {
+      "path": "src/server/simulation/hazards.ts",
+      "sha256": "61c35cffae5434f2ce418f497db2c952f1b75a1a016d364c349d4d03a7013a8b"
+    },
+    {
+      "path": "src/server/engine/equipment.ts",
+      "sha256": "a0d242af1b831cbe6b479512e9987613100d29a42af5bee2e15101abf7f50d17"
+    },
+    {
+      "path": "src/server/guidance/guidance.ts",
+      "sha256": "968a73838ea8aae06274b0e5332ece5b64c0e7f73876250b3cc096da6ca3296e"
+    },
+    {
+      "path": "src/server/auth/config.ts",
+      "sha256": "42f71cc9ae123586635c303dc1421b63c9d9f18c8a3a01fc04bf9134d3977783"
+    },
+    {
+      "path": "packages/contracts/src/commands.ts",
+      "sha256": "df75873b40f68ff0090a3ecfbbb6870f1c835a06aea7053079d3ac6396904482"
+    },
+    {
+      "path": "packages/contracts/src/state.ts",
+      "sha256": "ccf642d8593198b8835d6b65ef865a49baa42aa659aefb75a86ca13591acba54"
+    },
+    {
+      "path": "packages/contracts/src/guidance.ts",
+      "sha256": "27b31acdacfb78ec34af3083cd23ef6b911d3f67f8513d4dd56ad6ce77528aa2"
+    }
+  ],
+  "preparedAt": "2026-09-22T00:07:02.319Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "derivativeLineage": {
+    "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-equipment-invalidation-v1.freeze.json",
+    "sha256": "3e397afa98006ca4d3bffef48621c174a8594e09d584f8c5aa923a2a8ba4e022",
+    "mapPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-browser-derivatives-v1.1.json"
+  },
+  "sourceRebinding": [
+    {
+      "path": "src/components/console/scenario-rail.tsx",
+      "referenceSha256": "0fb233511277d9bcfe82b761ea86e0ea39815bb291db973f14aefb6723ed2a40",
+      "c6Sha256": "2d9b55bdf2f3008d98edf8591051e0313bad6247bac8fec2e541b947313938cf"
+    }
+  ]
+}

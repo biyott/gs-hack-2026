@@ -1,0 +1,240 @@
+{
+  "id": "EQ-POSITION-LOSS",
+  "version": "1.0.0",
+  "label": {
+    "ko": "작업자와 장비 위치 단절",
+    "en": "Worker and equipment position interruption"
+  },
+  "mode": "equipment",
+  "mapId": "SITE-CONSTRUCTION-01",
+  "mapVersion": "1.0.0",
+  "synthetic": true,
+  "seed": 20260921,
+  "durationMs": 22000,
+  "clockEpoch": "2026-09-21T09:00:00Z",
+  "policyId": "POLICY-EQUIPMENT",
+  "initial": {
+    "equipment": {
+      "equipmentId": "EQUIPMENT-A",
+      "modelId": "sk1265-at6",
+      "position": {
+        "x": 30,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 0,
+      "slewDeg": 0,
+      "observedAtMs": 0,
+      "source": "mock",
+      "connected": true
+    },
+    "workers": [
+      {
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 65,
+          "y": 25
+        },
+        "profile": {
+          "workerId": "WORKER-A",
+          "version": 1,
+          "preferredLocale": "ko",
+          "locale": "ko",
+          "canUseStairs": true,
+          "speedMps": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "needsAssistance": false,
+          "needsCompanion": false,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      {
+        "workerId": "WORKER-B",
+        "position": {
+          "x": 90,
+          "y": 40
+        },
+        "profile": {
+          "workerId": "WORKER-B",
+          "version": 1,
+          "preferredLocale": "en",
+          "locale": "en",
+          "canUseStairs": false,
+          "speedMps": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "needsAssistance": true,
+          "needsCompanion": true,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      }
+    ],
+    "sensors": [],
+    "hazards": [],
+    "blockedPathIds": []
+  },
+  "events": [
+    {
+      "id": "EQ-POSITION-LOSS-001",
+      "atMs": 1000,
+      "type": "equipment.pose",
+      "position": {
+        "x": 35,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 2.5,
+      "slewDeg": 0
+    },
+    {
+      "id": "EQ-POSITION-LOSS-002",
+      "atMs": 6000,
+      "type": "source.connection",
+      "entityId": "WORKER-A",
+      "connected": false
+    },
+    {
+      "id": "EQ-POSITION-LOSS-STALE-A-CONNECT",
+      "atMs": 9000,
+      "type": "source.connection",
+      "entityId": "WORKER-A",
+      "connected": true
+    },
+    {
+      "id": "EQ-POSITION-LOSS-STALE-A",
+      "atMs": 9000,
+      "type": "worker.position",
+      "workerId": "WORKER-A",
+      "position": {
+        "x": 65,
+        "y": 25
+      },
+      "observedAtMs": 1000
+    },
+    {
+      "id": "EQ-POSITION-LOSS-003",
+      "atMs": 12000,
+      "type": "source.connection",
+      "entityId": "WORKER-A",
+      "connected": true
+    },
+    {
+      "id": "EQ-POSITION-LOSS-004",
+      "atMs": 12000,
+      "type": "worker.position",
+      "workerId": "WORKER-A",
+      "position": {
+        "x": 65,
+        "y": 25
+      }
+    },
+    {
+      "id": "EQ-POSITION-LOSS-005",
+      "atMs": 15000,
+      "type": "source.connection",
+      "entityId": "EQUIPMENT-A",
+      "connected": false
+    },
+    {
+      "id": "EQ-POSITION-LOSS-STALE-E-CONNECT",
+      "atMs": 18000,
+      "type": "source.connection",
+      "entityId": "EQUIPMENT-A",
+      "connected": true
+    },
+    {
+      "id": "EQ-POSITION-LOSS-STALE-E",
+      "atMs": 18000,
+      "type": "equipment.pose",
+      "position": {
+        "x": 45,
+        "y": 25
+      },
+      "speedMps": 0,
+      "headingDeg": 0,
+      "slewDeg": 0,
+      "observedAtMs": 1000
+    },
+    {
+      "id": "EQ-POSITION-LOSS-006",
+      "atMs": 20000,
+      "type": "source.connection",
+      "entityId": "EQUIPMENT-A",
+      "connected": true
+    },
+    {
+      "id": "EQ-POSITION-LOSS-007",
+      "atMs": 20000,
+      "type": "equipment.pose",
+      "position": {
+        "x": 45,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 0,
+      "slewDeg": 0
+    }
+  ],
+  "expectedResults": [
+    {
+      "atMs": 6000,
+      "kind": "source-state",
+      "entityId": "WORKER-A",
+      "state": "disconnected",
+      "note": "Preserve source and last observation; do not fabricate a fresh observation."
+    },
+    {
+      "atMs": 6000,
+      "kind": "guidance",
+      "workerId": "WORKER-A",
+      "actionCode": "POSITION_UNKNOWN",
+      "route": "empty",
+      "destinationIds": [],
+      "note": "Assert the current authoritative guidance, not generated explanation."
+    },
+    {
+      "atMs": 9000,
+      "kind": "source-state",
+      "entityId": "WORKER-A",
+      "state": "stale",
+      "note": "Connected transport does not make an old observation current."
+    },
+    {
+      "atMs": 15000,
+      "kind": "source-state",
+      "entityId": "EQUIPMENT-A",
+      "state": "disconnected",
+      "note": "Preserve source and last observation; do not fabricate a fresh observation."
+    },
+    {
+      "atMs": 18000,
+      "kind": "source-state",
+      "entityId": "EQUIPMENT-A",
+      "state": "stale",
+      "note": "The explicit old timestamp remains stale until a fresh scripted pose."
+    }
+  ],
+  "coverage": [
+    "AC-02:worker-position-loss",
+    "AC-02:equipment-position-loss",
+    "AC-04:recovery",
+    "AC-02:stale-position"
+  ]
+}

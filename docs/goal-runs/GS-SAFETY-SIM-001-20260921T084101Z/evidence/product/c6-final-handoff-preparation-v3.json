@@ -1,0 +1,84 @@
+{
+  "recordedAt": "2026-09-22T00:25:13.301Z",
+  "owner": "/root/handoff_resume",
+  "status": "WAITING_FOR_OFFICIAL_QA_AND_RUNTIME_RECEIPTS",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "baseIndex": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index-v2.md",
+    "sha256": "1bf5ba54a0d1146030e03b398a8b7cf0a7ac505afc902b92b633f5d0543d0eb4",
+    "immutable": true
+  },
+  "finalIndexPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index-v3.md",
+  "frozenCandidateChange": false,
+  "goalChanges": "목표 변경 없음",
+  "qa": {
+    "status": "WAITING",
+    "owner": "/root/qa_resume",
+    "officialCurrentCandidateReceiptRequired": true,
+    "acceptedOrDoneInferred": false,
+    "sourceOfTruthPaths": [
+      "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/acceptance.md",
+      "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/g4-current-state.json",
+      "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/resource-ledger.jsonl"
+    ],
+    "w1ScopedReport": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/server/candidate-892f975f/w1-report.md",
+      "sha256": "6af3727e422ba06c846f5a84e13ef9928bf939b7a5cc451748b07f786f9b60db",
+      "meaning": "Scoped current C6 server observations only; not whole AC or overall acceptance"
+    },
+    "matrixProgress": {
+      "source": "Root task message; await official QA final disposition",
+      "statesObserved": 67,
+      "statesPlanned": 155,
+      "targetsObserved": 140,
+      "targetsPlanned": 330,
+      "completionClaimed": false
+    }
+  },
+  "runtime": {
+    "status": "WAITING",
+    "preparationReceipt": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-user-demo-preparation.json",
+      "sha256": "9d9c16342ca905bf71e665b03174f4517f22c080d9cb0e69f42761aed3bb34f1",
+      "recordedStatus": "NOT_STARTED"
+    },
+    "plannedBaseUrl": "http://127.0.0.1:3000",
+    "plannedDatabasePath": "/home/b/.local/state/gs-safety-demo/c6-20260922-ftb108/database/safety.sqlite",
+    "credentialFileLocation": "/home/b/.local/state/gs-safety-demo/c6-20260922-ftb108/user.env",
+    "credentialsReadOrCopied": false,
+    "activationReceiptRequired": true,
+    "qaResourceReleaseRequired": true,
+    "linkAsRunningOnlyWithActualSuccessfulStartupReceipt": true,
+    "notStartedOrFailureMustRemainExplicit": true
+  },
+  "g0": {
+    "decisionReceipt": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/resume-90min/c6-deadline-measurement-priority-01.json",
+      "sha256": "8a62985be3f8f3657a43d26daa76514c9064cccfbd326866efe4a0ee276eb3d8"
+    },
+    "attemptStart": "2026-09-22T00:20:53.074Z",
+    "attemptEnd": "2026-09-22T00:20:59.375Z",
+    "actualMeasuredInterval": false,
+    "preWarmupStop": "Fresh runtime IDLE versus runner setup expecting prepared paused runtime; request returned409",
+    "noProductFailureInference": true,
+    "mandatoryCriterionPreserved": true,
+    "readyCameraCapabilityIsG0Pass": false
+  },
+  "insertionOrder": [
+    "Lead with QA-owned overall verdict or explicit WAITING, then local demo observed status/URL and private access-code file location without revealing values.",
+    "Show current C6 scoped software results with exact evidence paths. Separate C5 results and earlier failures as historical.",
+    "State mandatory incomplete scopes: full G0interval, matrix gaps, four phones/Controller+2Controlees, physical810observations, currentLAN and actualaudio/haptic/camera evidence according to final QA only.",
+    "Link exact104 baseline/map and final QA-owned AC table. Per-requirement statuses must not be invented from partial scope results.",
+    "Retain machine-derived8 hash table fromv2; append finalreceipt identity/hash separately via machine-derived source.",
+    "Give actual running demo access/start/restart instructions only from technicalowner runtime receipt. If not started, present preparation as NOT_STARTED and launch prerequisites.",
+    "Preserve v1 hasherror record,v2,priorQA failures,originalG0attempt; finaldeadline does not waive any criterion."
+  ],
+  "verificationBeforePublication": [
+    "Verify actual candidateId in all currentQA/runtime receipts.",
+    "Read full finalAC/overall verdict fromQA owner, do not promote scoped PASS.",
+    "Confirm v2 literal8hashes against currentG3,manifest,selector,models; no broad textual replacement.",
+    "Check all final links exist or label explicitly pending; recompute finalfile hash and reportRoot+QA."
+  ],
+  "desiredPublicationUtc": "2026-09-22T00:34:00Z",
+  "deadlineUtc": "2026-09-22T00:35:49Z"
+}

@@ -1,0 +1,15 @@
+{
+  "candidateRoot": "UNBOUND",
+  "candidateId": "UNBOUND",
+  "manifestRelativePath": "UNBOUND",
+  "manifestSha256": "UNBOUND",
+  "sourceSha256": "UNBOUND",
+  "receiptPath": "UNBOUND",
+  "receiptSha256": "UNBOUND",
+  "fullHead": "UNBOUND",
+  "buildId": "UNBOUND",
+  "contractVersion": "UNBOUND",
+  "contractFreezeRelativePath": "UNBOUND",
+  "launchGuideRelativePath": "UNBOUND",
+  "providerPid": null
+}

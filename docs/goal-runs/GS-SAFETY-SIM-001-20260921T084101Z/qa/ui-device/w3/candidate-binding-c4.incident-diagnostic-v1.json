@@ -1,0 +1,21 @@
+{
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "candidateRoot": "/home/b/.cache/gs-safety-c4.q2FD40",
+  "manifest": {
+    "path": "runtime-artifacts/candidate-manifest-c4.json",
+    "sha256": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d"
+  },
+  "sourceSha256": "e17322b2faf5b5181f6a50bcd5cd4baeae2ca31f57f7bfd1653399b4e9e28efa",
+  "buildId": "czkc6DgDv3UUlTrSfDMqX",
+  "mobileApkSha256": "1d78f81eaa5d7d85a2f73d3d50b5acbbeeb4a0ea5cbbabcc538087f4fbeb515a",
+  "assetManifest": {
+    "path": "resources/blender/safety-simulator/artifact-manifest.json",
+    "sha256": "51c6adfd6e5190a11b8bc04300a45634b2486ebda64f58a7affd444027c321de"
+  },
+  "evidenceRoot": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-cd8a2428/incident-diagnostic-01",
+  "authority": {
+    "receiptPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/receipt-validation.json",
+    "validatedBy": "/root/qa_lead"
+  },
+  "purpose": "Failed-C4 exploratory incident diagnostic only; no acceptance transfer"
+}

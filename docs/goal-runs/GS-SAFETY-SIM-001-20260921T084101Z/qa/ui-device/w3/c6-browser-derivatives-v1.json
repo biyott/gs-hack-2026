@@ -1,0 +1,309 @@
+{
+  "kind": "c6-additive-browser-identity-derivatives",
+  "preparedAt": "2026-09-21T23:56:21.052Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "runtime": "NOT_RUN",
+  "candidateBinding": "PENDING_G3",
+  "records": [
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c5-runtime-v1.mjs",
+      "sourceSha256": "032f8b77c2c5fbd547c518f16bfd332411cdcda3db4efc900e2945c7298ac607",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c6-runtime-v1.mjs",
+      "targetSha256": "5c9d9e47d7744a71cd5fc76304fcacdeacba3ceed063e29b134bf464d2cbe096",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c5-long-id-runtime-v1.mjs",
+      "sourceSha256": "9362a13d0db7d820c90246a8ddce3f49445b321949192a6969db03f5691de00f",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c6-long-id-runtime-v1.mjs",
+      "targetSha256": "d2d9723f312a9c9c89acc9799dfc1aaaf07617533453d5858b7c163f687cf325",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-issue-delegated-subgrant-v1.mjs",
+      "sourceSha256": "f7f4fe390dbcd3b68602e4af945093c0f0dd24d96c189f969ccee94199b4d4c9",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-issue-delegated-subgrant-v1.mjs",
+      "targetSha256": "07dc53d49fbe215121b76e3db76ebf9c4bb8e26c032c694a940767831510adf6",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-bind-browser-freezes-v1.mjs",
+      "sourceSha256": "b8d9cd3823833d9c9db20b3fda0415f149bb692b070b00d243acfffa7ec68f0d",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-bind-browser-freezes-v1.mjs",
+      "targetSha256": "349ccb771e891cfdd01d377bcd7e89af35e2c2de1bcecbcd698697f077eb2111",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-asset-interactions-v1.mjs",
+      "sourceSha256": "51e83f5741f581354d5deda03dc280642f1818e89e55c3e423364e1385c50fc9",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-asset-interactions-v1.mjs",
+      "targetSha256": "0a6723d15abf956b9981cd6c58af76874375afe3aa91f1c6450ecdd04b5d493d",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-equipment-invalidation-v1.mjs",
+      "sourceSha256": "99457e4462a3a963f0ffd9952e30ed00e47cd8024255d25566d3834a4ee906ee",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-equipment-invalidation-v1.mjs",
+      "targetSha256": "17cb22d0592279fc6917ea3cd09f11b3f46452f84271836f1a61ee2e72608a05",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-ac12-coordinate-v1.mjs",
+      "sourceSha256": "8be532ae3bb59f72c73c17cd01d5cecbbb642b411e36d9c2e77205a6299eecc6",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-ac12-coordinate-v1.mjs",
+      "targetSha256": "8a9a0297008b481b303e0a6717d4be218293cc69ca722f1282cabf2ae8d42d9b",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-guard-v1.mjs",
+      "sourceSha256": "6471588835fd7fa5f2707cfc4053ff336fc8b5395a6b61c7c426461cd85f4ddc",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-guard-v1.mjs",
+      "targetSha256": "62193e645d70c81803c3df3460bc6b5d67b7972032a29a9410c7468a92389c21",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-ab-browser-v1.mjs",
+      "sourceSha256": "71448b71a45c0dddc5115a3db97d39570e672e0a2dcee6b9250d797ae4aa59e2",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-ab-browser-v1.mjs",
+      "targetSha256": "8460343c23db8f6606a9e4b0b4b97895bcc4b57c432fd9c10badc8a4ec8094ec",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-ab-constructor-v1.mjs",
+      "sourceSha256": "de8a881537ac1b3bc83265869a70f2fd65fe50ee783455bfa0499be962af7ab3",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-ab-constructor-v1.mjs",
+      "targetSha256": "b64c836d11ece3a1ba0d90e3586c4d98255c8736f7046976fa90c1605e3ffc18",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-guard-v1.1.mjs",
+      "sourceSha256": "fc551f66cf209f012c2457a4e25a3ad6329705de044a92a13bb4d9e94c13688d",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-guard-v1.1.mjs",
+      "targetSha256": "b32f2cfcc18d916d23101795e4c4f10d88d17d52c839b6ec7c59291b5cf3d704",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-lifecycle-browser-v1.mjs",
+      "sourceSha256": "91822aa1ebd856b7f2c8fa3ce11d8aef2885de3d7d9ba68593fbc27674f5e361",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-lifecycle-browser-v1.mjs",
+      "targetSha256": "6a8c8c533d1acd503908c7a96b5aa0fd7ff739b96e19896e9894ffea003c4784",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.1.mjs",
+      "sourceSha256": "099c6cf588d0978d332122c0659b89fb6e686ea5467eaadd3547cf3110b30010",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.mjs",
+      "targetSha256": "7051e4d9381205ed5b348d31fda0e0ebbd8ab7c576a44801096dad92422a6e63",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.1.guard.mjs",
+      "sourceSha256": "6036660885929a543009e341c2f711373e67cbe44b953fcb242055d3220cbfa5",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.guard.mjs",
+      "targetSha256": "87947665b9728fa7462e32e58d1553a6d61d9887bac83e7ab9c593c248fb58a2",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.1.observations.mjs",
+      "sourceSha256": "5c9951fe79486b56f14d26353a2f63a505b43e3fced277274f2665787049f51f",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.observations.mjs",
+      "targetSha256": "5c9951fe79486b56f14d26353a2f63a505b43e3fced277274f2665787049f51f",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.1.md",
+      "sourceSha256": "e559585809e03fa3ab1e81204188db85e26729955b49a0b6af5c5a85bf315df4",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.md",
+      "targetSha256": "a637e0912dc8b7b6859c360363e3cd6502485bd84902696866efb308a041aca2",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "NOT_APPLICABLE"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-gui-v1.1.mjs",
+      "sourceSha256": "21b65220398d6dfe8d5a7a333b80fd20bf552e8cd274d359a0204d68802b9fc3",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-native-page-zoom-gui-v1.1.mjs",
+      "targetSha256": "ce20ed377278239aeceaaf6dd458ab286093ad719349b2bdccc7ac9ff6e04a50",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-gui-v1.1.guard.mjs",
+      "sourceSha256": "690adff4bba88a750d8ff1c2bc6d0d0974e9a6abda44542db26299467e489d62",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-native-page-zoom-gui-v1.1.guard.mjs",
+      "targetSha256": "a5ab35da49797e3c407698d4ea05e911d6038e237ceeb2468b0f7c42cf781d6c",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-method-v1.md",
+      "sourceSha256": "71e9792059410a973b51682f0e9818da046af6515c3b2c33435b47cbeffe25ab",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-native-page-zoom-method-v1.md",
+      "targetSha256": "3016e8353bcac9f4c122a15b5556796bda5b485d4c4f0b57ac0c6d88e4f60c82",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "NOT_APPLICABLE"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-fixture-v1.mjs",
+      "sourceSha256": "20fd55d85424069cf9ac021b6818bca549b377440775570afd04d99a5a57f303",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-fixture-v1.mjs",
+      "targetSha256": "c15e994eefac66d13009a8cd4676cd1f30ecc820cbdbb559f310a278ea71a81d",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-fixture-v1.ids.json",
+      "sourceSha256": "8166043701e85a09a6734885f2b33b5318db348a90f260598adc9122d78933a3",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-fixture-v1.ids.json",
+      "targetSha256": "8166043701e85a09a6734885f2b33b5318db348a90f260598adc9122d78933a3",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "NOT_APPLICABLE"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-fixture-v1.md",
+      "sourceSha256": "b5a8f14f0988fbe33ad4b4c0e6b54632dc0933001652c76c9b739e0dfc0ddc6a",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-fixture-v1.md",
+      "targetSha256": "4e9a3a77c57c9902294d765c54d79efb42f06120e1cfe294c59f10ff2fcc1dce",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "NOT_APPLICABLE"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-actions-v1.1.mjs",
+      "sourceSha256": "f6a89fc6cd12b491556452c08fb154d1a5bdcb02abbce93df56654c0a3832805",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-actions-v1.1.mjs",
+      "targetSha256": "012ae018e091d516099bd9f7aab0bee1c8979c1267437e3903726b25b9b3e8c0",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-actions-v1.1.guard.mjs",
+      "sourceSha256": "78b860ff7cf37e679e48f7250caf23b231a633c23f5624f2c9e8c2a29809b0eb",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-actions-v1.1.guard.mjs",
+      "targetSha256": "1ab3d20e8c2f438feb0dc659f96651a24e033896020cc92f0e76cba6a1e5955f",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-refresh-paused-fixtures-v1.mjs",
+      "sourceSha256": "e7fdb5ba9579847ee0d4d0757892853d248f8e3f03073a97775dfab38814cf54",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-refresh-paused-fixtures-v1.mjs",
+      "targetSha256": "e7fdb5ba9579847ee0d4d0757892853d248f8e3f03073a97775dfab38814cf54",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/run.mjs",
+      "sourceSha256": "f7ae8c5c9e50e5724fad4260b0c80f0beb73d4969b27f698d1023e900dd57334",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/run.mjs",
+      "targetSha256": "eddb39ad468f135c6609cf0a576d631cb49491a6f08681bcabf1768be18b4546",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/guard.mjs",
+      "sourceSha256": "64c5571a9c3f2b64343007cda118400ae16dbb895ceb1e4072ad5f07dea98b04",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/guard.mjs",
+      "targetSha256": "2fabf37e361f28f3c3addf35d5c49e4185ab80a679402cf2fc545f32752f41aa",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/events.mjs",
+      "sourceSha256": "087cc883fb2f3733eb3ad733df6011103a868c64562ea8055120bef4155ad85d",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/events.mjs",
+      "targetSha256": "087cc883fb2f3733eb3ad733df6011103a868c64562ea8055120bef4155ad85d",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/focus-evidence.mjs",
+      "sourceSha256": "a556b4297c5557a5dff2ee6695e3dba6f5f80b95404c46ace7df1113ab61d7ef",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/focus-evidence.mjs",
+      "targetSha256": "a556b4297c5557a5dff2ee6695e3dba6f5f80b95404c46ace7df1113ab61d7ef",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/check-focus-continuation.mjs",
+      "sourceSha256": "ede84515bc4ed70b6a8317ae3f38308710b682862781876f38c26aa025081709",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/check-focus-continuation.mjs",
+      "targetSha256": "72281421e42c0c179db7c6ed56cdd5a369c439e06452838ea90be80cbfccd4be",
+      "identityOnlyTransform": "literal c5→c6 and C5→C6; assertion bodies, case counts, timers, tolerances, old-candidate reference hashes unchanged",
+      "exactTransformedBytes": true,
+      "syntax": "PASS"
+    }
+  ],
+  "frozenReferences": [
+    {
+      "path": "c5-equipment-invalidation-v1.freeze.json",
+      "sha256": "3e397afa98006ca4d3bffef48621c174a8594e09d584f8c5aa923a2a8ba4e022"
+    },
+    {
+      "path": "c5-incident-suite-v1.freeze.json",
+      "sha256": "80cecdc9742e8881407a4bba6a8f5002924a76ef252839504cb133d75835d998"
+    },
+    {
+      "path": "c5-incident-suite-v1.1.freeze.json",
+      "sha256": "f1e1e89534ef92a82e09f993342f26a928da08ba1e39f3b0f2fe0bc3b83a4edd"
+    },
+    {
+      "path": "c5-accessibility-supplement-v1.1.freeze.json",
+      "sha256": "70b828abbfe0a6ed2f453ec634dee3829d112c65616a7a210946149d1e22f2b5"
+    },
+    {
+      "path": "c5-native-page-zoom-gui-v1.1.freeze.json",
+      "sha256": "5672dbe534a5b183704626a4ab9dd08b6da0fb1f1011d19c0bec7139a558a6ac"
+    },
+    {
+      "path": "c5-long-id-fixture-v1.freeze.json",
+      "sha256": "a4ff8eb2296212129ab3657e72249fb3ca0fe9441b41301689ef182f929c642b"
+    },
+    {
+      "path": "c5-long-id-actions-v1.1.freeze.json",
+      "sha256": "52982ecd83f7e797c859fbf51bb5400a6d90692e185c0aa6b19e960773291af8"
+    }
+  ]
+}

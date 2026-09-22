@@ -1,0 +1,93 @@
+{
+  "startedAt": "2026-09-21T23:57:29.716Z",
+  "stage": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "priorStage": "/home/b/.cache/gs-safety-c5.H4mElI",
+  "priorCandidateId": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+  "grantPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-assembly-grant.json",
+  "grantSha256": "e77c295bee73cb15783cd214131df63b3bbe91b4110f7493cb4643754ebfa4b2",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "delta": {
+    "added": [
+      {
+        "path": "docs/contracts/implementation-binding-v1.0.4-r5.json",
+        "bytes": 24894,
+        "sha256": "6830e5c969d7d43297d7d689a9c972d94eb9b21f32e8f997e64f1a4e73c9238e"
+      }
+    ],
+    "changed": [
+      {
+        "before": {
+          "path": "app/console.css",
+          "bytes": 37151,
+          "sha256": "2bb39006ab7bfeccadb1e6ff6a11b933d87687301cf29e917d744b384025c9de"
+        },
+        "after": {
+          "path": "app/console.css",
+          "bytes": 37403,
+          "sha256": "908042f159b9d1341289162a9c49d848c319f37c4f6e31c71811e653cabfb215"
+        }
+      },
+      {
+        "before": {
+          "path": "app/globals.css",
+          "bytes": 9114,
+          "sha256": "3aff9ef817c2bad2e392cb3f27dff43ba4830cc56cbb54177ddfb75a7e00f727"
+        },
+        "after": {
+          "path": "app/globals.css",
+          "bytes": 9094,
+          "sha256": "1a3a1e35daf8a533b7c60382ef73b7f21e125ec397aab9f67635fe6cddbbc7db"
+        }
+      },
+      {
+        "before": {
+          "path": "src/components/console/scenario-rail.tsx",
+          "bytes": 8228,
+          "sha256": "0fb233511277d9bcfe82b761ea86e0ea39815bb291db973f14aefb6723ed2a40"
+        },
+        "after": {
+          "path": "src/components/console/scenario-rail.tsx",
+          "bytes": 8401,
+          "sha256": "2d9b55bdf2f3008d98edf8591051e0313bad6247bac8fec2e541b947313938cf"
+        }
+      },
+      {
+        "before": {
+          "path": "src/components/scene/SiteStage.tsx",
+          "bytes": 7327,
+          "sha256": "0cd8da1d09591dd7d27b637455f59e7d1df1c73854f83f7104e3d19f2b9fe739"
+        },
+        "after": {
+          "path": "src/components/scene/SiteStage.tsx",
+          "bytes": 7416,
+          "sha256": "e157c6390273d1b13d4beb3ea0918c0fce8f605bbc8926f2b4c5a8686f6ce7be"
+        }
+      },
+      {
+        "before": {
+          "path": "src/components/scene/annotation-layout.test.ts",
+          "bytes": 3974,
+          "sha256": "0d3f86d8c81ec589bb1e9530a6e9843d057eae00f14c6643a3c1b8d0a8e6563e"
+        },
+        "after": {
+          "path": "src/components/scene/annotation-layout.test.ts",
+          "bytes": 6174,
+          "sha256": "a67182c1e7dafcc2743d4e8db28a57e38afd495e2fafc2bf9121a19659a4336f"
+        }
+      },
+      {
+        "before": {
+          "path": "src/components/scene/annotation-layout.ts",
+          "bytes": 5548,
+          "sha256": "3df0650505cf7fe133a20db7327e6682c4e9d67fc299f1b784f8dca1c1248a19"
+        },
+        "after": {
+          "path": "src/components/scene/annotation-layout.ts",
+          "bytes": 6530,
+          "sha256": "1bc67c8bca87f44fdc9af0171611b49de5dd1e4568af3f0a06b6acc64140c8a5"
+        }
+      }
+    ],
+    "removed": []
+  }
+}

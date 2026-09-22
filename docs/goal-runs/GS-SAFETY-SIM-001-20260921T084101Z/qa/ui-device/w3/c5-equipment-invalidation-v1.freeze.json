@@ -1,0 +1,85 @@
+{
+  "kind": "c5-equipment-invalidation-source-freeze",
+  "version": "1",
+  "candidateId": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+  "createdAt": "2026-09-21T18:03:30.157Z",
+  "runtime": "NOT_RUN",
+  "authorization": "NO_GRANT_CREATED",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-equipment-invalidation-v1.mjs",
+      "sha256": "99457e4462a3a963f0ffd9952e30ed00e47cd8024255d25566d3834a4ee906ee"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c5.v2.json",
+      "sha256": "3febb8dfe96a5ac59aae8b285cc46e9c8f4cb3bab4a1c570bada164b65bd30fa"
+    }
+  ],
+  "sources": [
+    {
+      "path": "data/equipment/catalog.json",
+      "sha256": "8318e9eb05134bc2c9ed09d90633ec36fbf6c9e80556d4c56a9842c1d81dd6b6"
+    },
+    {
+      "path": "src/components/console/scenario-rail.tsx",
+      "sha256": "0fb233511277d9bcfe82b761ea86e0ea39815bb291db973f14aefb6723ed2a40"
+    },
+    {
+      "path": "src/components/scene/EquipmentControls.tsx",
+      "sha256": "7bc5e8fb40e89648912c95930d9ffdf96b517d2405c21a2c3d97d409bc62a6a0"
+    },
+    {
+      "path": "src/components/scene/SiteMap.tsx",
+      "sha256": "a9e758785fde22110a3cd9fe5e03ae245cc5ff7f7dd66aa8eb4a520591521b39"
+    },
+    {
+      "path": "src/components/scene/geometry.ts",
+      "sha256": "c2cb753dcfb5d290e6ff52016500f0ea3e14a1e689f8c3b4b6a5253fcc499b6f"
+    },
+    {
+      "path": "src/components/scene/scene-data.ts",
+      "sha256": "51f71170c7a0547c9fd473e0ab0b5cbd98e62bfe9d4e01c9de2961185fc0ba7c"
+    },
+    {
+      "path": "src/server/simulation/commands.ts",
+      "sha256": "08e6d6dd10bcdff30fd0884a14b79f3e9b0a2b41126cb7d5e6907dad097de6fd"
+    },
+    {
+      "path": "src/server/simulation/equipment-controls.ts",
+      "sha256": "13494faa1ed41197529f0477d02fff799f189c981241c8732217d05c5797eeac"
+    },
+    {
+      "path": "src/server/simulation/evaluate.ts",
+      "sha256": "e9846de7d57f5dd854acda63dd39d3ad45660f6fea2345797bbffe24baef6e51"
+    },
+    {
+      "path": "src/server/simulation/hazards.ts",
+      "sha256": "61c35cffae5434f2ce418f497db2c952f1b75a1a016d364c349d4d03a7013a8b"
+    },
+    {
+      "path": "src/server/engine/equipment.ts",
+      "sha256": "a0d242af1b831cbe6b479512e9987613100d29a42af5bee2e15101abf7f50d17"
+    },
+    {
+      "path": "src/server/guidance/guidance.ts",
+      "sha256": "968a73838ea8aae06274b0e5332ece5b64c0e7f73876250b3cc096da6ca3296e"
+    },
+    {
+      "path": "src/server/auth/config.ts",
+      "sha256": "42f71cc9ae123586635c303dc1421b63c9d9f18c8a3a01fc04bf9134d3977783"
+    },
+    {
+      "path": "packages/contracts/src/commands.ts",
+      "sha256": "df75873b40f68ff0090a3ecfbbb6870f1c835a06aea7053079d3ac6396904482"
+    },
+    {
+      "path": "packages/contracts/src/state.ts",
+      "sha256": "ccf642d8593198b8835d6b65ef865a49baa42aa659aefb75a86ca13591acba54"
+    },
+    {
+      "path": "packages/contracts/src/guidance.ts",
+      "sha256": "27b31acdacfb78ec34af3083cd23ef6b911d3f67f8513d4dd56ad6ce77528aa2"
+    }
+  ],
+  "preparedAt": "2026-09-21T23:22:18.989Z"
+}

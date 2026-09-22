@@ -1,0 +1,24 @@
+{
+  "recordedAt": "2026-09-22T00:14:59.015Z",
+  "reviewer": "/root/integration_resume/c5_origin_verify",
+  "recordedBy": "/root/integration_resume",
+  "receiptSource": "Fresh independent static reviewer final message",
+  "binding": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-app-origin-sites-binding-v1.json",
+    "bytes": 7234,
+    "sha256": "22847272e762e2508d27c00263875004434ecb6356f02309a7da1620b89f0ed8"
+  },
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "verdict": "PASS_SCOPED_STATIC_BINDING",
+  "freshCandidateRead": true,
+  "priorPassReused": false,
+  "observations": [
+    "Independent AST snapshot calls5:237–253 and5:486–502; heartbeat5:364–401 excluded.",
+    "Six expression spans and six source-map anchors/rawVLQ segments match.",
+    "Chunk/map hashes match freshC6manifest; sourcesContent equals frozenroute bytes."
+  ],
+  "method": "Generic installed Acorn AST and trace-mapping libraries; static candidate text only.",
+  "runtime": "NOT_RUN",
+  "networkBrowserModelBuildOrCandidateMutation": false
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.1",
+  "amends": "fault-cases.v1.json",
+  "reason": "QA Lead forwarded root clarification of existing AC08/09/10: same-guide delayed supplementation must update current provenance without replaying primary speech or mutating original transmission.",
+  "owner": "/root/qa_lead/qa_rag",
+  "status": "FROZEN_INPUT_NOT_EXECUTED",
+  "contractBinding": "Use canonical monotonically increasing snapshotRevision when Tech contract is frozen; preserve guidanceId and guidanceVersion. Field naming adapter cannot change identity semantics.",
+  "cases": [
+    {
+      "testId": "Q-RAG-08-31",
+      "name": "same-guidance-delayed-supplement",
+      "providerMode": "actual",
+      "precondition": {
+        "retrieval": "matched",
+        "localeVariants": [
+          "ko",
+          "en"
+        ],
+        "primarySpeech": "active",
+        "guidanceIdentity": "same guidanceId and guidanceVersion",
+        "snapshotRevision": "R",
+        "firstTransmission": "captured immutable full primary payload with initial empty supplement/evidence"
+      },
+      "injection": {
+        "delay": "finish actual valid provider response after primary display/speech start and before 5000ms deadline",
+        "publication": "augment current guide via snapshotRevision R+1; guidanceId/version unchanged",
+        "repeat": "deliver duplicate enrichment publication and reconnect snapshot"
+      },
+      "expected": {
+        "currentSupplement": "accepted once and visible",
+        "currentEvidence": "actual selected document/version/chunk and rag_run link",
+        "snapshotRevision": "advances",
+        "guidanceId": "unchanged",
+        "guidanceVersion": "unchanged",
+        "firstTransmissionPayload": "byte/content hash unchanged including original wording, route, locale and original supplement/evidence fields",
+        "primarySpeechStarts": "one for this guidanceId/version",
+        "primaryBeeps": "no additional beep caused by supplement, duplicate publication, or reconnect",
+        "urgentAudio": "retains priority; new urgent primary cancels or outranks any lower-priority supplemental speech",
+        "staleSupplement": "discarded if guidance identity/freshness changes before acceptance"
+      },
+      "requiredEvidence": [
+        "Before/after DB and snapshot records with first/current content hashes",
+        "Actual provider/retrieval/accepted supplement record",
+        "SSE envelope identity and increasing snapshot revision",
+        "Android display/audio/vibration event timestamps plus actual audible execution evidence linked to same IDs",
+        "Authorized administrator view of immutable first transmission versus augmented current guide"
+      ],
+      "crossSlice": [
+        "AC08",
+        "AC09",
+        "AC10"
+      ],
+      "androidCard": "../ui-device/ac09-android-guidance.md",
+      "note": "Deterministic mock can verify envelope/reducer control flow, but actual provider and physical Android execution are separately mandatory for this integrated variant."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "qa-role-succession",
+  "recordedAt": "2026-09-21T23:11:30.681Z",
+  "actualQaLead": "/root/qa_resume",
+  "logicalQaLead": "/root/qa_lead",
+  "logicalUiDeviceLead": "/root/qa_lead/qa_ui_device",
+  "basis": "Root delegated independent resumed QA and concurred that frozen logical role strings may remain with actual actor identities recorded separately.",
+  "oldNativeAgentsAlive": false,
+  "acceptanceCriteriaChanged": false,
+  "sameCandidateEvidenceRequired": true,
+  "priorBehavioralPassTransferAllowed": false,
+  "deadlineUtc": "2026-09-22T00:35:49Z",
+  "verdictAuthority": "Only the resumed independent QA Lead issues official AC and overall dispositions. Frozen logical role fields describe responsibility, not the identity of a still-running historical agent."
+}

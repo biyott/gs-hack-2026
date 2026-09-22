@@ -1,0 +1,53 @@
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { ScenarioSchema } from '@candidate/server/scenarios';
+import { save } from '../evidence';
+import { makeFixture } from '../fixture';
+import { assertArrival, assertNoArrival, assertNoReceipt, assertPreservedHistory, capture,
+  fixedClock, workerA } from './assertions';
+import { assertTarget, currentOrPriorArrival, rejectArrival, startLatest } from './boundary-support';
+import { latestTarget, oldTarget, s20Config, s20Scenario } from './scenarios';
+
+const scenario = ScenarioSchema.parse({ ...s20Scenario, id: 'QA-R07-NEW-TARGET',
+  events: [...s20Scenario.events,
+    { id: 'qa-central-position', atMs: 9500, type: 'worker.position', workerId: 'WORKER-A', position: { x: 65, y: 25 } },
+    { id: 'qa-obsolete-refuge', atMs: 10000, type: 'worker.position', workerId: 'WORKER-A', position: { x: 125, y: 42 } },
+    { id: 'qa-new-refuge', atMs: 10500, type: 'worker.position', workerId: 'WORKER-A', position: { x: 125, y: 8 } },
+  ].sort((left, right) => left.atMs - right.atMs),
+});
+beforeEach(fixedClock);
+afterEach(() => vi.useRealTimers());
+describe.each([1, 2, 3])('R07 authorized replacement target repetition %s', (repetition) => {
+  it('an admin pose command at the authored original4s geometry replaces REFUGE02 with a newly validated REFUGE01 target', () => {
+    const f = makeFixture(`r07-new-target-${repetition}`, 'equipment',
+      { ...s20Config, scenarios: [...s20Config.scenarios, scenario] });
+    try {
+      const arrived = startLatest(f, scenario.id);
+      const immutable = capture(f);
+      assertTarget(f, latestTarget);
+      f.command({ action: 'advance', deltaMs: 500 });
+      const command = { action: 'control', pose: { position: { x: 30, y: 25 }, headingDeg: 0, speedMps: 3, slewDeg: 0 } } as const;
+      const rerouted = f.command(command);
+      save(`core-r07-new-target-${repetition}-rerouted`, { scenario, command,
+        expectedGeometry: 'Original independently retained4s pose with worker(65,25)', state: capture(f) });
+      expect(workerA(rerouted).currentGuidance?.actionCode).toBe('FOLLOW_VALIDATED_ROUTE');
+      expect(workerA(rerouted).currentGuidance?.destinationId).toBe('REFUGE-01');
+      expect(workerA(rerouted).currentGuidance?.waypoints.at(-1)).toEqual(oldTarget);
+      assertTarget(f, oldTarget);
+      assertNoArrival(rerouted);
+      const obsolete = f.command({ action: 'advance', deltaMs: 500 });
+      save(`core-r07-new-target-${repetition}-obsolete-position`, capture(f));
+      expect(workerA(obsolete).position).toEqual({ x: 125, y: 42 });
+      assertNoArrival(obsolete);
+      assertTarget(f, oldTarget);
+      rejectArrival(f, currentOrPriorArrival(f, arrived, `r07-obsolete-target-${repetition}`),
+        `core-r07-new-target-${repetition}-rejected`);
+      const current = f.command({ action: 'advance', deltaMs: 500 });
+      save(`core-r07-new-target-${repetition}-current-position`, capture(f));
+      expect(workerA(current).position).toEqual({ x: 125, y: 8 });
+      assertArrival(current);
+      assertNoReceipt(current);
+      assertTarget(f, oldTarget);
+      assertPreservedHistory(f, immutable.historyJson, immutable.firstGuidanceJson);
+    } finally { f.close(); }
+  });
+});

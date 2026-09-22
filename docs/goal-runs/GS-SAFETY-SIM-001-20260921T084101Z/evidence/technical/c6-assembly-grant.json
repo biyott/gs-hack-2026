@@ -1,0 +1,53 @@
+{
+  "kind": "C6_TECHNICAL_ASSEMBLY",
+  "recordedAt": "2026-09-21T23:57:28.696Z",
+  "grantedBy": "/root",
+  "recordedBy": "/root/integration_resume",
+  "executionOwner": "/root/integration_resume",
+  "authorizationSource": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c6-conformance-correction-01.json",
+    "bytes": 2212,
+    "sha256": "39bf35f1468ca46d70f598669a4b6c8df93ea26b6faf02f67444ceb234f2d3f3"
+  },
+  "additionalRootDirective": {
+    "receivedAt": "2026-09-21T23:57:28.696Z",
+    "source": "Root collaboration task/message to delegated Technical owner",
+    "directive": "QD013 correction01 authorized in same C6 before finalsource-ready: visible existing pendingincidentID with wrapping, no pin/action/state/priority change.",
+    "classification": "Contemporaneous record of actual Root instruction, not a new authority or retroactive grant."
+  },
+  "notBefore": "2026-09-21T23:50:16.912Z",
+  "notAfter": "2026-09-22T00:02:00Z",
+  "buildNotAfter": "2026-09-22T00:00:00Z",
+  "cleanupExtension": {
+    "source": "Root prospective collaboration message received before execution",
+    "recordedAt": "2026-09-21T23:57:28.696Z",
+    "directive": "Receipt/audit cleanup upper bound extended to00:02UTC; build target within00:00; user deadline unchanged00:35:49."
+  },
+  "maxBuildAttempts": 1,
+  "cpuLimit": 2,
+  "heapLimitMb": 3072,
+  "noRuntimeServices": true,
+  "priorCandidateId": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+  "allowedSourcePaths": [
+    "app/console.css",
+    "app/globals.css",
+    "docs/contracts/implementation-binding-v1.0.4-r5.json",
+    "src/components/console/scenario-rail.tsx",
+    "src/components/scene/SiteStage.tsx",
+    "src/components/scene/annotation-layout.test.ts",
+    "src/components/scene/annotation-layout.ts"
+  ],
+  "sourceReady": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/source-ready.json",
+    "bytes": 6347,
+    "sha256": "91bf951eca844d30e3be9dd668841f67c86b18930a445ea9050896f485cbdac3"
+  },
+  "binding": {
+    "path": "docs/contracts/implementation-binding-v1.0.4-r5.json",
+    "bytes": 24894,
+    "sha256": "6830e5c969d7d43297d7d689a9c972d94eb9b21f32e8f997e64f1a4e73c9238e"
+  },
+  "assemblerSha256": "4afa07896af0fef3f98266c3d5a019e5e4c84789ab58f6792ad3659105a973b2",
+  "parallel": "QA-authorized concurrent C5 nonperformance browser only; no G0 performance interval.",
+  "acceptanceIssued": false
+}

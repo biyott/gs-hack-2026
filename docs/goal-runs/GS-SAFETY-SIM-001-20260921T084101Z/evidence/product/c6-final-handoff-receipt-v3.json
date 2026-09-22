@@ -1,0 +1,40 @@
+{
+  "recordedAt": "2026-09-22T00:36:43.972Z",
+  "owner": "/root/handoff_resume",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "officialQa": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/official-c6-qa-status-v1.json",
+    "sha256": "e937caef20a02ce5fd2f5e73fcd05f3e9f991dc11d8cec03dccad9fa3b28dd44",
+    "issuedAt": "2026-09-22T00:29:42.657Z",
+    "overallVerdict": "BLOCKED",
+    "counts": {
+      "PASS": 4,
+      "FAIL": 0,
+      "BLOCKED": 7,
+      "NOT_RUN": 5
+    }
+  },
+  "demoStatusAtWrite": "START_RECEIPT_PENDING",
+  "demoReceiptPath": null,
+  "qaRelease": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/final-resource-release-v1.json",
+    "sha256": "4e7d105037911397fb6c1388171642eb93c110773491fab99d0d7921a739695c"
+  },
+  "files": [
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index-v3.md",
+      "bytes": 7521,
+      "sha256": "1b6335dbbc815a1daf57717588b7878f6d074e4801f03727f67ad4f03c9d39f3"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-final-requirement-qa-pointers-v3.json",
+      "bytes": 305279,
+      "sha256": "c1aa58e4238a3c14d68b530a0a7605882df066cac04ea6d561670e8b525bb99c"
+    }
+  ],
+  "exactBaselineRecords": 104,
+  "missingLinks": [],
+  "allPrintedHashesMachineDerived": true,
+  "priorFilesPreserved": true,
+  "sourceOrRuntimeChangesByThisTask": false
+}

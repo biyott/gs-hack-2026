@@ -1,0 +1,247 @@
+{
+  "createdAt": "2026-09-21T17:04:48.731Z",
+  "scope": "Unboundsourcepreparation copies only; inheritedC3markersdonotclaimnewexecution",
+  "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/candidate-1a7c95cd",
+  "files": [
+    {
+      "name": "binding.ts",
+      "originSha256": "a49b6ea7314c0f7fda524f6f5966732fa6a281743aa513a9badbbd6c5f6d2d22"
+    },
+    {
+      "name": "eligibility-oracle.ts",
+      "originSha256": "4db6abe32f34fc0275287b77fd182fc0295493074fd6f562436341d69a60f044"
+    },
+    {
+      "name": "fault-assertions.ts",
+      "originSha256": "2974869179a5a83c151fe2960463efe48cd4ce900625238075e95f7b7f8d41df"
+    },
+    {
+      "name": "fault-inputs.ts",
+      "originSha256": "b005371fdf2aff3e6711f2769c9090e1cf97a3f92f909d553290962211babae6"
+    },
+    {
+      "name": "fault-mutations.ts",
+      "originSha256": "24f091697e2127f3695624c6ad57a89a07901b118f5d2f50792090f9069d7646"
+    },
+    {
+      "name": "fault-runner.ts",
+      "originSha256": "96352bf3dcae41325dddba9d26b725887200b3aed90ddbe73cc08f72f8e2a71a"
+    },
+    {
+      "name": "fault-runtime.ts",
+      "originSha256": "a8f9ad9aa2cbcd44668ad534f9cca0c3adc41c846611c4fdf74529bab2b771f8"
+    },
+    {
+      "name": "fault-selftest.ts",
+      "originSha256": "d123ec96072c69460447255b6098034c2b259d31e7121dd451c8f565f0b4e64f"
+    },
+    {
+      "name": "fault-types.ts",
+      "originSha256": "7df44be02d2d0a2365dfec2ebca9c502ca5512e1c2197e8916dc5f2a9f64b147"
+    },
+    {
+      "name": "filter-inputs.ts",
+      "originSha256": "96c4aeda4cccab4aa2903c04efde7e07f221aa9a6cba60f1b26cb14f6b4421ff"
+    },
+    {
+      "name": "filter-runner.ts",
+      "originSha256": "a88e3c350ee84d99f0583c43079d5e8669fd23193a59312de94ee9ac96692c28"
+    },
+    {
+      "name": "filter-sequences.ts",
+      "originSha256": "18ffec448d3edd03bd163136a4753da730ca9a16e9b1f8a289449ded7ac7b525"
+    },
+    {
+      "name": "filter-support.ts",
+      "originSha256": "bf3f5787e681df89ba56cdccfac470e541bd00cb2335c5841bdc3e9fd66c98ef"
+    },
+    {
+      "name": "filter-types.ts",
+      "originSha256": "a8a4373f99aa85649b465c4cf64dbbd594f798726ad374a8bd3460a0b7c87d1e"
+    },
+    {
+      "name": "guidance-fixture.ts",
+      "originSha256": "4b52a644de95e1138e8fc6c83d20914085fe40bc01c64561a95a7a33a013a2d0"
+    },
+    {
+      "name": "http-canary.ts",
+      "originSha256": "7dd3914b0dd800101ed13dde3bc51490c84822e75a3efa3708f98718d8481833"
+    },
+    {
+      "name": "http-capture-joins.ts",
+      "originSha256": "21e32c888c72cdb96a6d80bca8ea9bf90f505b0bb90002ba023fd9723ee799ad"
+    },
+    {
+      "name": "http-capture-verdicts.ts",
+      "originSha256": "1d680ba3af4d1ca1da64ca1b0d56ac7eb0e77532a32ca2f6ba93ce571152d571"
+    },
+    {
+      "name": "http-cases.ts",
+      "originSha256": "a4e521e153270d872ead3afd76b1a35b4af170595c49fd65ccbb5f72d0631e39"
+    },
+    {
+      "name": "http-client.ts",
+      "originSha256": "8e87334e2dca0ba0097476dcb5349263215e39635c9bb513daa56c26f4e5b3ad"
+    },
+    {
+      "name": "http-database.ts",
+      "originSha256": "468f35b5e69c4fe11d614ac63f83f975fbe1dfefc999308330866dbf204d2dbe"
+    },
+    {
+      "name": "http-delay-control.ts",
+      "originSha256": "6491603fbdda30086027ad948d34f41b0dda9bab3d18a890ef7037eb61f6aac5"
+    },
+    {
+      "name": "http-integration-types.ts",
+      "originSha256": "5c9bd86c9fe1038280489b05bfd524b3a74fb8b610f9b18d34714fc847074ccc"
+    },
+    {
+      "name": "http-oracle.ts",
+      "originSha256": "5292fc7927580c51833b09779c2db3b30db31a78fc007520c264219d8eeaaeb5"
+    },
+    {
+      "name": "http-publication.ts",
+      "originSha256": "7dbd505d34fb9d3144b8325497c905de438922fa676849c0ba151f5b3ce54720"
+    },
+    {
+      "name": "http-runner.ts",
+      "originSha256": "bf4325295cfe5d522ec351642ae289599f84076682908085d6fc2c3c0aaa785e"
+    },
+    {
+      "name": "http-scenario.ts",
+      "originSha256": "4393330069b3b0a9dae67ea65ef4affeeae8ade1202f073a3b6c72f7bb64a6c3"
+    },
+    {
+      "name": "http-selftest.ts",
+      "originSha256": "c5874c251945edeafa648618acd6cf88a9e69b8cae411d6746c4bee5477cca29"
+    },
+    {
+      "name": "http-stream.ts",
+      "originSha256": "d9213c2231b837c3c29dcc2e3d0ffdccf74e79384d7615bf5a05b7fbb6852f8c"
+    },
+    {
+      "name": "http-types.ts",
+      "originSha256": "a530ca82b9c85313888e41ce3f524376d4cb57a9c4d92f54bbff41814db1baed"
+    },
+    {
+      "name": "integration-main.ts",
+      "originSha256": "88af40868aba58635987757913617b984a0ea647f22a0d56e5ec966910747005"
+    },
+    {
+      "name": "launch-http.ts",
+      "originSha256": "0b85183d5fd4dd5a01993e31aa6ded9dcc1fcbf6a1920e5c2ee88de475c93eed"
+    },
+    {
+      "name": "launch-process.ts",
+      "originSha256": "626b234c21acd4f02eee49b7e51711b1a1d9f781b23459ee3b41de3371cfe0e2"
+    },
+    {
+      "name": "main.ts",
+      "originSha256": "3a4b7392e99b323e00fe8e632bce676de01580043c28bffce8584ac98cab2099"
+    },
+    {
+      "name": "model-capture-evidence.ts",
+      "originSha256": "a873a61195cdcb8da47621c34f8f4f5f39d73d33d5e80225b5d04ab2a9495103"
+    },
+    {
+      "name": "model-capture-http.ts",
+      "originSha256": "22e41d657c5aba694aa036a7f56520ebf99af07834a4b0576a918c48caaf5447"
+    },
+    {
+      "name": "model-capture-proxy.ts",
+      "originSha256": "44a66bce651ad89a7bc1b0a15ba936182bde35e9a5f14c10940df835bd371123"
+    },
+    {
+      "name": "model-capture-types.ts",
+      "originSha256": "44c3cd2e5522b80fa5a152fc3c816f075621edacf0760e810fdbcd8bbf03eb67"
+    },
+    {
+      "name": "model-delay-state.ts",
+      "originSha256": "139f09b8570db3a8e988bee1ca0ff004c08fb0c9bddf3237e0819d13d2401725"
+    },
+    {
+      "name": "prepare-fault.ts",
+      "originSha256": "bce2ecdcc830de7df0ed5f6335b551987270dbe91dd5282208e58702485a02bc"
+    },
+    {
+      "name": "prepare-filter.ts",
+      "originSha256": "b01b2d8e2a26c5f70f67399931fe779c9764094f4d930bf94e5ebdf6e806ff2d"
+    },
+    {
+      "name": "privacy-component-types-v1.ts",
+      "originSha256": "f468a4ed5be9108003f0bfeec53645ade0945d48218dc9a708bf5975640499a6"
+    },
+    {
+      "name": "privacy-component-v1.ts",
+      "originSha256": "b304db6c81da8e6b26c81eea95fb089118cb0ae3318415d8c0a1b31c0dac9b8b"
+    },
+    {
+      "name": "privacy-entry-binding.ts",
+      "originSha256": "4845f76d68e7615d6d18d3bc4b215c20107f7edb363ed0bed0da5d4fd2da35e5"
+    },
+    {
+      "name": "privacy-entry-evidence.ts",
+      "originSha256": "3de38554d518a82335ede1ed7dc5e234df03e19fe2af6bc94e5f2283abf93ab4"
+    },
+    {
+      "name": "privacy-entry.ts",
+      "originSha256": "8f58f19eb34fbf1e4da28fdb6010b0b97deab3ef703058914175043a4dbc879d"
+    },
+    {
+      "name": "privacy-log-entry.ts",
+      "originSha256": "57b9f28a7b9ad29856017c85e455a70fe5dd7c50f28eabde5530592c3c2cf910"
+    },
+    {
+      "name": "privacy-log-scan-v1.ts",
+      "originSha256": "918bcd3e712e34bb50fa25e19888a9008abb75193220793c08a768e496b40699"
+    },
+    {
+      "name": "retrieval-dispositions.ts",
+      "originSha256": "fe1dfb74b0d0322e98e13700d1ef136947b39cbb93c3f46ab03739c5c299ba62"
+    },
+    {
+      "name": "retrieval-inputs.ts",
+      "originSha256": "902cc8795d218750c9e04fd4663349d30d13700718803574a0b40e02674683a4"
+    },
+    {
+      "name": "retrieval-oracle.ts",
+      "originSha256": "1fd1c712b84a0e00deb175862831f1156bbfeca021837c40296e24fd58fa66e8"
+    },
+    {
+      "name": "retrieval-runner.ts",
+      "originSha256": "d842de1f58b1cfb8dce8f5a6bc1ff93b0a05b9eb3a623319dcb56deb2268b946"
+    },
+    {
+      "name": "runtime.ts",
+      "originSha256": "4212541c21ce404b43e92c737da9be54c09c21cb99582d16583ae3d240feb6a0"
+    },
+    {
+      "name": "stairs-capture.ts",
+      "originSha256": "f33d27e96911529269cb36e3fd6f4cf4b78b8c0079c1d405aa19c61f1dcf89d0"
+    },
+    {
+      "name": "stairs-engine.ts",
+      "originSha256": "a33ddf718214a81d3149989ec3c7e38381f519b5b9f450badd62b6013ff61388"
+    },
+    {
+      "name": "stairs-entry.ts",
+      "originSha256": "699776c82b9f7674b8c54e4db6acb687d6d486fd379ab650edc5fc962d50155b"
+    },
+    {
+      "name": "stairs-invocation.ts",
+      "originSha256": "37d2e67e8c5ce1e57cffcc5beff13492e6c6118edfc4934f8333937b9c0d2072"
+    },
+    {
+      "name": "stairs-runtime.ts",
+      "originSha256": "5ff472f0b07be51a73b1dfea2d79f3e0c324fa69e367d9d278ad1532bdec8412"
+    },
+    {
+      "name": "stairs-types.ts",
+      "originSha256": "3f4bb3db604b60dffc30a389c9f53523ce42670e17b0bd709d5445819617db88"
+    },
+    {
+      "name": "tsconfig.json",
+      "originSha256": "be08f0e02b0f1e0005e8cfb7b67724c1dfe589f5b4794988c490f0607bf189ab"
+    }
+  ]
+}

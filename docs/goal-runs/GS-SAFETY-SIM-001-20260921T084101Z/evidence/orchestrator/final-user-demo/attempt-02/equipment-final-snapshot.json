@@ -1,0 +1,909 @@
+{
+  "contractVersion": "1.0.0",
+  "streamId": "c14818ca-4f1b-484e-8b4c-a5604cd8870f",
+  "sequence": 209,
+  "mode": "equipment",
+  "run": {
+    "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+    "scenarioId": "EQ-APPROACH",
+    "positionInput": "scenario",
+    "status": "completed",
+    "virtualTimeMs": 20000,
+    "speed": 1,
+    "seed": 20260921,
+    "version": 28,
+    "mapId": "SITE-CONSTRUCTION-01",
+    "mapVersion": "1.0.0",
+    "startedAt": "2026-09-22T00:41:44.718Z",
+    "updatedAt": "2026-09-22T00:42:04.794Z"
+  },
+  "workers": [
+    {
+      "workerId": "WORKER-A",
+      "profile": {
+        "workerId": "WORKER-A",
+        "version": 1,
+        "preferredLocale": "ko",
+        "locale": "ko",
+        "canUseStairs": true,
+        "speedMps": {
+          "min": 0.8,
+          "max": 1.4
+        },
+        "needsAssistance": false,
+        "needsCompanion": false,
+        "notificationPreferences": {
+          "voice": true,
+          "vibration": true
+        },
+        "confirmedAt": "2026-09-21T09:00:00Z"
+      },
+      "position": {
+        "x": 65,
+        "y": 8
+      },
+      "positionSource": "mock",
+      "positionInputSource": "synthetic",
+      "positionStatus": "known",
+      "lastObservedAt": "2026-09-22T00:42:04.793Z",
+      "currentGuidance": {
+        "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+        "eventId": "51607dfa-e3a9-4bb6-8fdc-64f07cada920",
+        "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+        "workerId": "WORKER-A",
+        "guidanceId": "GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A",
+        "guidanceVersion": 6,
+        "updateKind": "supplement",
+        "primaryGuidanceVersion": 5,
+        "simulationMode": "equipment",
+        "hazardIds": [
+          "EQUIPMENT-A:sk1265-at6:3:load:6"
+        ],
+        "hazardType": "equipment",
+        "priority": "high",
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "routeVersion": 2,
+        "stepId": "J-A-90",
+        "mapId": "SITE-CONSTRUCTION-01",
+        "mapVersion": "1.0.0",
+        "floorId": "GROUND",
+        "waypoints": [
+          {
+            "x": 65,
+            "y": 8,
+            "nodeId": "WORKER-POSITION",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 90,
+            "y": 8,
+            "nodeId": "J-A-90",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 100,
+            "y": 8,
+            "nodeId": "J-A-100",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 125,
+            "y": 8,
+            "nodeId": "REFUGE-01",
+            "floorId": "GROUND"
+          }
+        ],
+        "destinationId": "REFUGE-01",
+        "profileVersion": 1,
+        "profileSnapshot": {
+          "workerId": "WORKER-A",
+          "version": 1,
+          "preferredLocale": "ko",
+          "locale": "ko",
+          "canUseStairs": true,
+          "speedMps": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "needsAssistance": false,
+          "needsCompanion": false,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "locale": "ko",
+        "requestedLocale": "ko",
+        "fallbackLocaleUsed": false,
+        "templateCatalogVersion": "1.0.0",
+        "messageKey": "guidance.follow_validated_route",
+        "primaryMessageKey": "guidance.follow_validated_route",
+        "messageArgs": {
+          "geometryVersion": 3,
+          "policyVersion": "1.0.0",
+          "reasonCode": "evacuate",
+          "assistanceRequired": false,
+          "destinationId": "REFUGE-01"
+        },
+        "primaryMessage": "표시된 유효 경로를 따라 REFUGE-01(으)로 이동하세요.",
+        "managerExplanationKo": "표시된 유효 경로를 따라 REFUGE-01(으)로 이동하세요.",
+        "supplementalExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+        "evidence": [
+          {
+            "documentId": "EQ-001",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+          }
+        ],
+        "mode": "rag-assisted",
+        "generatedAt": "2026-09-22T00:41:54.759Z",
+        "expiresAt": "2026-09-22T00:42:54.759Z"
+      },
+      "response": {
+        "receivedAt": null,
+        "displayedAt": null,
+        "spokenAt": null,
+        "voiceStopRequestedAt": null,
+        "understoodAt": null,
+        "helpRequestedAt": null,
+        "arrivedAt": null,
+        "voiceStatus": "pending"
+      },
+      "virtual": false
+    },
+    {
+      "workerId": "WORKER-B",
+      "profile": {
+        "workerId": "WORKER-B",
+        "version": 1,
+        "preferredLocale": "en",
+        "locale": "en",
+        "canUseStairs": false,
+        "speedMps": {
+          "min": 0.3,
+          "max": 0.7
+        },
+        "needsAssistance": true,
+        "needsCompanion": true,
+        "notificationPreferences": {
+          "voice": true,
+          "vibration": true
+        },
+        "confirmedAt": "2026-09-21T09:00:00Z"
+      },
+      "position": {
+        "x": 90,
+        "y": 40
+      },
+      "positionSource": "mock",
+      "positionInputSource": "synthetic",
+      "positionStatus": "known",
+      "lastObservedAt": "2026-09-22T00:42:04.793Z",
+      "currentGuidance": null,
+      "response": {
+        "receivedAt": null,
+        "displayedAt": null,
+        "spokenAt": null,
+        "voiceStopRequestedAt": null,
+        "understoodAt": null,
+        "helpRequestedAt": null,
+        "arrivedAt": null,
+        "voiceStatus": "pending"
+      },
+      "virtual": false
+    }
+  ],
+  "equipment": {
+    "id": "EQUIPMENT-A",
+    "presetId": "sk1265-at6",
+    "position": {
+      "x": 60,
+      "y": 25
+    },
+    "headingDeg": 0,
+    "speedMps": 0,
+    "slewDeg": 0,
+    "boomAngleDeg": 0,
+    "boomLengthM": 60,
+    "trolleyM": 30,
+    "hookHeightM": 16.24,
+    "geometryVersion": 4,
+    "positionSource": "mock",
+    "positionInputSource": "synthetic",
+    "tableLinked": true,
+    "positionStatus": "known",
+    "lastObservedAt": "2026-09-22T00:42:04.793Z"
+  },
+  "hazards": [
+    {
+      "hazardId": "EQUIPMENT-A:sk1265-at6:4:body:0",
+      "hazardType": "equipment",
+      "priority": "high",
+      "polygon": [
+        {
+          "x": 51.838,
+          "y": 23.43
+        },
+        {
+          "x": 64.16,
+          "y": 23.43
+        },
+        {
+          "x": 64.16,
+          "y": 26.57
+        },
+        {
+          "x": 51.838,
+          "y": 26.57
+        }
+      ],
+      "active": true,
+      "floorId": "GROUND",
+      "source": "engine",
+      "observedAt": "2026-09-22T00:42:04.793Z",
+      "sensorStatus": "not-applicable",
+      "affectedWorkerIds": [],
+      "reason": "body and predicted movement envelope",
+      "zoneId": null,
+      "substanceId": null
+    },
+    {
+      "hazardId": "EQUIPMENT-A:sk1265-at6:4:support:1",
+      "hazardType": "equipment",
+      "priority": "high",
+      "polygon": [
+        {
+          "x": 53.865,
+          "y": 28.33
+        },
+        {
+          "x": 56.365,
+          "y": 28.33
+        },
+        {
+          "x": 56.365,
+          "y": 29.33
+        },
+        {
+          "x": 53.865,
+          "y": 29.33
+        }
+      ],
+      "active": true,
+      "floorId": "GROUND",
+      "source": "engine",
+      "observedAt": "2026-09-22T00:42:04.793Z",
+      "sensorStatus": "not-applicable",
+      "affectedWorkerIds": [],
+      "reason": "support and predicted movement envelope",
+      "zoneId": null,
+      "substanceId": null
+    },
+    {
+      "hazardId": "EQUIPMENT-A:sk1265-at6:4:support:2",
+      "hazardType": "equipment",
+      "priority": "high",
+      "polygon": [
+        {
+          "x": 61.815,
+          "y": 28.33
+        },
+        {
+          "x": 64.315,
+          "y": 28.33
+        },
+        {
+          "x": 64.315,
+          "y": 29.33
+        },
+        {
+          "x": 61.815,
+          "y": 29.33
+        }
+      ],
+      "active": true,
+      "floorId": "GROUND",
+      "source": "engine",
+      "observedAt": "2026-09-22T00:42:04.793Z",
+      "sensorStatus": "not-applicable",
+      "affectedWorkerIds": [],
+      "reason": "support and predicted movement envelope",
+      "zoneId": null,
+      "substanceId": null
+    },
+    {
+      "hazardId": "EQUIPMENT-A:sk1265-at6:4:support:3",
+      "hazardType": "equipment",
+      "priority": "high",
+      "polygon": [
+        {
+          "x": 54.135,
+          "y": 20.67
+        },
+        {
+          "x": 56.635,
+          "y": 20.67
+        },
+        {
+          "x": 56.635,
+          "y": 21.67
+        },
+        {
+          "x": 54.135,
+          "y": 21.67
+        }
+      ],
+      "active": true,
+      "floorId": "GROUND",
+      "source": "engine",
+      "observedAt": "2026-09-22T00:42:04.793Z",
+      "sensorStatus": "not-applicable",
+      "affectedWorkerIds": [],
+      "reason": "support and predicted movement envelope",
+      "zoneId": null,
+      "substanceId": null
+    },
+    {
+      "hazardId": "EQUIPMENT-A:sk1265-at6:4:support:4",
+      "hazardType": "equipment",
+      "priority": "high",
+      "polygon": [
+        {
+          "x": 62.085,
+          "y": 20.67
+        },
+        {
+          "x": 64.585,
+          "y": 20.67
+        },
+        {
+          "x": 64.585,
+          "y": 21.67
+        },
+        {
+          "x": 62.085,
+          "y": 21.67
+        }
+      ],
+      "active": true,
+      "floorId": "GROUND",
+      "source": "engine",
+      "observedAt": "2026-09-22T00:42:04.793Z",
+      "sensorStatus": "not-applicable",
+      "affectedWorkerIds": [],
+      "reason": "support and predicted movement envelope",
+      "zoneId": null,
+      "substanceId": null
+    },
+    {
+      "hazardId": "EQUIPMENT-A:sk1265-at6:4:tail:5",
+      "hazardType": "equipment",
+      "priority": "high",
+      "polygon": [
+        {
+          "x": 56.17,
+          "y": 23.6
+        },
+        {
+          "x": 60,
+          "y": 23.6
+        },
+        {
+          "x": 60,
+          "y": 26.4
+        },
+        {
+          "x": 56.17,
+          "y": 26.4
+        }
+      ],
+      "active": true,
+      "floorId": "GROUND",
+      "source": "engine",
+      "observedAt": "2026-09-22T00:42:04.793Z",
+      "sensorStatus": "not-applicable",
+      "affectedWorkerIds": [],
+      "reason": "tail and predicted movement envelope",
+      "zoneId": null,
+      "substanceId": null
+    },
+    {
+      "hazardId": "EQUIPMENT-A:sk1265-at6:4:load:6",
+      "hazardType": "equipment",
+      "priority": "high",
+      "polygon": [
+        {
+          "x": 89.45,
+          "y": 24.45
+        },
+        {
+          "x": 90.55,
+          "y": 24.45
+        },
+        {
+          "x": 90.55,
+          "y": 25.55
+        },
+        {
+          "x": 89.45,
+          "y": 25.55
+        }
+      ],
+      "active": true,
+      "floorId": "GROUND",
+      "source": "engine",
+      "observedAt": "2026-09-22T00:42:04.793Z",
+      "sensorStatus": "not-applicable",
+      "affectedWorkerIds": [],
+      "reason": "load and predicted movement envelope",
+      "zoneId": null,
+      "substanceId": null
+    }
+  ],
+  "closedEdgeIds": [],
+  "incidents": [
+    {
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "version": 7,
+      "hazardIds": [
+        "EQUIPMENT-A:sk1265-at6:2:load:6",
+        "EQUIPMENT-A:sk1265-at6:3:load:6"
+      ],
+      "hazardType": "equipment",
+      "priority": "high",
+      "status": "active",
+      "acknowledgedAt": null,
+      "assignedTo": null,
+      "supportStatus": "none",
+      "hazardClearedAt": null,
+      "passageReopenedAt": null,
+      "closedAt": null,
+      "firstGuidance": [
+        {
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "eventId": "4b74f5f8-1028-4452-8017-9c9e64f63d2c",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "workerId": "WORKER-A",
+          "guidanceId": "GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A",
+          "guidanceVersion": 1,
+          "updateKind": "primary",
+          "primaryGuidanceVersion": 1,
+          "simulationMode": "equipment",
+          "hazardIds": [
+            "EQUIPMENT-A:sk1265-at6:2:load:6"
+          ],
+          "hazardType": "equipment",
+          "priority": "high",
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "routeVersion": 1,
+          "stepId": "J-A-65",
+          "mapId": "SITE-CONSTRUCTION-01",
+          "mapVersion": "1.0.0",
+          "floorId": "GROUND",
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 8,
+              "nodeId": "J-A-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 8,
+              "nodeId": "J-A-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 8,
+              "nodeId": "J-A-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 8,
+              "nodeId": "REFUGE-01",
+              "floorId": "GROUND"
+            }
+          ],
+          "destinationId": "REFUGE-01",
+          "profileVersion": 1,
+          "profileSnapshot": {
+            "workerId": "WORKER-A",
+            "version": 1,
+            "preferredLocale": "ko",
+            "locale": "ko",
+            "canUseStairs": true,
+            "speedMps": {
+              "min": 0.8,
+              "max": 1.4
+            },
+            "needsAssistance": false,
+            "needsCompanion": false,
+            "notificationPreferences": {
+              "voice": true,
+              "vibration": true
+            },
+            "confirmedAt": "2026-09-21T09:00:00Z"
+          },
+          "locale": "ko",
+          "requestedLocale": "ko",
+          "fallbackLocaleUsed": false,
+          "templateCatalogVersion": "1.0.0",
+          "messageKey": "guidance.follow_validated_route",
+          "primaryMessageKey": "guidance.follow_validated_route",
+          "messageArgs": {
+            "geometryVersion": 2,
+            "policyVersion": "1.0.0",
+            "reasonCode": "evacuate",
+            "assistanceRequired": false,
+            "destinationId": "REFUGE-01"
+          },
+          "primaryMessage": "표시된 유효 경로를 따라 REFUGE-01(으)로 이동하세요.",
+          "managerExplanationKo": "표시된 유효 경로를 따라 REFUGE-01(으)로 이동하세요.",
+          "supplementalExplanation": null,
+          "evidence": [],
+          "mode": "template",
+          "generatedAt": "2026-09-22T00:41:45.706Z",
+          "expiresAt": "2026-09-22T00:42:45.706Z"
+        }
+      ],
+      "currentGuidance": [
+        {
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "eventId": "51607dfa-e3a9-4bb6-8fdc-64f07cada920",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "workerId": "WORKER-A",
+          "guidanceId": "GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A",
+          "guidanceVersion": 6,
+          "updateKind": "supplement",
+          "primaryGuidanceVersion": 5,
+          "simulationMode": "equipment",
+          "hazardIds": [
+            "EQUIPMENT-A:sk1265-at6:3:load:6"
+          ],
+          "hazardType": "equipment",
+          "priority": "high",
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "routeVersion": 2,
+          "stepId": "J-A-90",
+          "mapId": "SITE-CONSTRUCTION-01",
+          "mapVersion": "1.0.0",
+          "floorId": "GROUND",
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 8,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 8,
+              "nodeId": "J-A-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 8,
+              "nodeId": "J-A-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 8,
+              "nodeId": "REFUGE-01",
+              "floorId": "GROUND"
+            }
+          ],
+          "destinationId": "REFUGE-01",
+          "profileVersion": 1,
+          "profileSnapshot": {
+            "workerId": "WORKER-A",
+            "version": 1,
+            "preferredLocale": "ko",
+            "locale": "ko",
+            "canUseStairs": true,
+            "speedMps": {
+              "min": 0.8,
+              "max": 1.4
+            },
+            "needsAssistance": false,
+            "needsCompanion": false,
+            "notificationPreferences": {
+              "voice": true,
+              "vibration": true
+            },
+            "confirmedAt": "2026-09-21T09:00:00Z"
+          },
+          "locale": "ko",
+          "requestedLocale": "ko",
+          "fallbackLocaleUsed": false,
+          "templateCatalogVersion": "1.0.0",
+          "messageKey": "guidance.follow_validated_route",
+          "primaryMessageKey": "guidance.follow_validated_route",
+          "messageArgs": {
+            "geometryVersion": 3,
+            "policyVersion": "1.0.0",
+            "reasonCode": "evacuate",
+            "assistanceRequired": false,
+            "destinationId": "REFUGE-01"
+          },
+          "primaryMessage": "표시된 유효 경로를 따라 REFUGE-01(으)로 이동하세요.",
+          "managerExplanationKo": "표시된 유효 경로를 따라 REFUGE-01(으)로 이동하세요.",
+          "supplementalExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+          "evidence": [
+            {
+              "documentId": "EQ-001",
+              "documentVersion": "0.1.0",
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+            }
+          ],
+          "mode": "rag-assisted",
+          "generatedAt": "2026-09-22T00:41:54.759Z",
+          "expiresAt": "2026-09-22T00:42:54.759Z"
+        }
+      ],
+      "audit": [
+        {
+          "eventId": "f834d937-9d95-4fb3-a51f-99bcbf8b1c36",
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "kind": "guidance.generated",
+          "actorId": "engine",
+          "occurredAt": "2026-09-22T00:41:45.706Z",
+          "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":1,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+          "version": 1
+        },
+        {
+          "eventId": "6a85566e-6a93-4aed-9ecd-d459331eddc9",
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "kind": "guidance.transmission-attempt",
+          "actorId": "engine",
+          "occurredAt": "2026-09-22T00:41:45.706Z",
+          "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":1,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+          "version": 1
+        },
+        {
+          "eventId": "3989e661-c97c-497d-84a5-63c2be0d4b9d",
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "kind": "guidance.supplement",
+          "actorId": "rag",
+          "occurredAt": "2026-09-22T00:41:46.216Z",
+          "detail": "{\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":2,\"primaryGuidanceVersion\":1,\"ragRunId\":\"63b9a0df-2aec-449e-86a7-3ace457c0b7d\",\"reason\":null}",
+          "version": 3
+        },
+        {
+          "eventId": "3699ae45-b555-48a2-89f5-0f73c911d824",
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "kind": "guidance.generated",
+          "actorId": "engine",
+          "occurredAt": "2026-09-22T00:41:49.746Z",
+          "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+          "version": 3
+        },
+        {
+          "eventId": "c647685c-837d-4d37-a082-e287931d3188",
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "kind": "guidance.transmission-attempt",
+          "actorId": "engine",
+          "occurredAt": "2026-09-22T00:41:49.746Z",
+          "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+          "version": 3
+        },
+        {
+          "eventId": "c746c741-6ee2-4074-9ded-09e9a7e91f53",
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "kind": "guidance.supplement",
+          "actorId": "rag",
+          "occurredAt": "2026-09-22T00:41:50.194Z",
+          "detail": "{\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":4,\"primaryGuidanceVersion\":3,\"ragRunId\":\"0479ce64-937a-463b-99b6-d8744235a04a\",\"reason\":null}",
+          "version": 5
+        },
+        {
+          "eventId": "e6e997f9-6670-47b0-9d7a-627956149aef",
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "kind": "guidance.generated",
+          "actorId": "engine",
+          "occurredAt": "2026-09-22T00:41:54.759Z",
+          "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":5,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+          "version": 5
+        },
+        {
+          "eventId": "32fadef8-1126-47fb-b853-6774bb97d3db",
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "kind": "guidance.transmission-attempt",
+          "actorId": "engine",
+          "occurredAt": "2026-09-22T00:41:54.759Z",
+          "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":5,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+          "version": 5
+        },
+        {
+          "eventId": "a438bbaa-1a8a-47c3-abe6-b02a11a7b501",
+          "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+          "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+          "kind": "guidance.supplement",
+          "actorId": "rag",
+          "occurredAt": "2026-09-22T00:41:55.181Z",
+          "detail": "{\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":6,\"primaryGuidanceVersion\":5,\"ragRunId\":\"bdf68d3d-0969-4453-9e39-540430231e3f\",\"reason\":null}",
+          "version": 7
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "eventId": "bd3c7e16-933c-4b1b-be94-37f701ca61e1",
+      "incidentId": null,
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "simulation.start",
+      "actorId": "admin",
+      "occurredAt": "2026-09-22T00:41:44.721Z",
+      "detail": "{\"requestId\":\"19ba6d13-c0c8-4c5e-9c47-9210dae0466c\"}",
+      "version": 0
+    },
+    {
+      "eventId": "3f8771fb-6b2d-45ff-b344-bd7077819669:EQ-APPROACH-001",
+      "incidentId": null,
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "scenario.equipment.pose",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:41:45.706Z",
+      "detail": "{\"id\":\"EQ-APPROACH-001\",\"atMs\":1000,\"type\":\"equipment.pose\",\"position\":{\"x\":35,\"y\":25},\"headingDeg\":0,\"speedMps\":2.5,\"slewDeg\":0}",
+      "version": 1
+    },
+    {
+      "eventId": "f834d937-9d95-4fb3-a51f-99bcbf8b1c36",
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "guidance.generated",
+      "actorId": "engine",
+      "occurredAt": "2026-09-22T00:41:45.706Z",
+      "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":1,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+      "version": 1
+    },
+    {
+      "eventId": "6a85566e-6a93-4aed-9ecd-d459331eddc9",
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "guidance.transmission-attempt",
+      "actorId": "engine",
+      "occurredAt": "2026-09-22T00:41:45.706Z",
+      "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":1,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+      "version": 1
+    },
+    {
+      "eventId": "3989e661-c97c-497d-84a5-63c2be0d4b9d",
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "guidance.supplement",
+      "actorId": "rag",
+      "occurredAt": "2026-09-22T00:41:46.216Z",
+      "detail": "{\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":2,\"primaryGuidanceVersion\":1,\"ragRunId\":\"63b9a0df-2aec-449e-86a7-3ace457c0b7d\",\"reason\":null}",
+      "version": 3
+    },
+    {
+      "eventId": "3f8771fb-6b2d-45ff-b344-bd7077819669:EQ-APPROACH-002",
+      "incidentId": null,
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "scenario.equipment.pose",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:41:49.746Z",
+      "detail": "{\"id\":\"EQ-APPROACH-002\",\"atMs\":5000,\"type\":\"equipment.pose\",\"position\":{\"x\":35,\"y\":25},\"headingDeg\":0,\"speedMps\":3,\"slewDeg\":0}",
+      "version": 7
+    },
+    {
+      "eventId": "3699ae45-b555-48a2-89f5-0f73c911d824",
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "guidance.generated",
+      "actorId": "engine",
+      "occurredAt": "2026-09-22T00:41:49.746Z",
+      "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+      "version": 3
+    },
+    {
+      "eventId": "c647685c-837d-4d37-a082-e287931d3188",
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "guidance.transmission-attempt",
+      "actorId": "engine",
+      "occurredAt": "2026-09-22T00:41:49.746Z",
+      "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+      "version": 3
+    },
+    {
+      "eventId": "c746c741-6ee2-4074-9ded-09e9a7e91f53",
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "guidance.supplement",
+      "actorId": "rag",
+      "occurredAt": "2026-09-22T00:41:50.194Z",
+      "detail": "{\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":4,\"primaryGuidanceVersion\":3,\"ragRunId\":\"0479ce64-937a-463b-99b6-d8744235a04a\",\"reason\":null}",
+      "version": 5
+    },
+    {
+      "eventId": "3f8771fb-6b2d-45ff-b344-bd7077819669:EQ-APPROACH-003",
+      "incidentId": null,
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "scenario.worker.position",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:41:54.759Z",
+      "detail": "{\"id\":\"EQ-APPROACH-003\",\"atMs\":10000,\"type\":\"worker.position\",\"workerId\":\"WORKER-A\",\"position\":{\"x\":65,\"y\":8}}",
+      "version": 14
+    },
+    {
+      "eventId": "e6e997f9-6670-47b0-9d7a-627956149aef",
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "guidance.generated",
+      "actorId": "engine",
+      "occurredAt": "2026-09-22T00:41:54.759Z",
+      "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":5,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+      "version": 5
+    },
+    {
+      "eventId": "32fadef8-1126-47fb-b853-6774bb97d3db",
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "guidance.transmission-attempt",
+      "actorId": "engine",
+      "occurredAt": "2026-09-22T00:41:54.759Z",
+      "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":5,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+      "version": 5
+    },
+    {
+      "eventId": "a438bbaa-1a8a-47c3-abe6-b02a11a7b501",
+      "incidentId": "79ff86a3-3681-4f45-ae56-5305aa6cf3d3",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "guidance.supplement",
+      "actorId": "rag",
+      "occurredAt": "2026-09-22T00:41:55.181Z",
+      "detail": "{\"guidanceId\":\"GUIDANCE:3f8771fb-6b2d-45ff-b344-bd7077819669:79ff86a3-3681-4f45-ae56-5305aa6cf3d3:WORKER-A\",\"guidanceVersion\":6,\"primaryGuidanceVersion\":5,\"ragRunId\":\"bdf68d3d-0969-4453-9e39-540430231e3f\",\"reason\":null}",
+      "version": 7
+    },
+    {
+      "eventId": "3f8771fb-6b2d-45ff-b344-bd7077819669:EQ-APPROACH-004",
+      "incidentId": null,
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "kind": "scenario.equipment.pose",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:41:59.781Z",
+      "detail": "{\"id\":\"EQ-APPROACH-004\",\"atMs\":15000,\"type\":\"equipment.pose\",\"position\":{\"x\":60,\"y\":25},\"headingDeg\":0,\"speedMps\":0,\"slewDeg\":0}",
+      "version": 21
+    }
+  ],
+  "cctv": [
+    {
+      "cameraId": "CCTV-01",
+      "name": "책상 시연 카메라",
+      "zoneIds": [
+        "ZONE-A",
+        "ZONE-B",
+        "ZONE-C"
+      ],
+      "floorId": "GROUND",
+      "source": "mock",
+      "status": "disconnected",
+      "lastFrameAt": null,
+      "frameUrl": null,
+      "receivedFps": 0,
+      "latencyMs": null
+    }
+  ]
+}

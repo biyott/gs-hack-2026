@@ -1,0 +1,65 @@
+{
+  "kind": "c6-incident-suite-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "runtime": "NOT_RUN",
+  "authorization": "NO_GRANT_CREATED",
+  "preparedAt": "2026-09-22T00:07:02.326Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-guard-v1.mjs",
+      "sha256": "62193e645d70c81803c3df3460bc6b5d67b7972032a29a9410c7468a92389c21"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-ab-browser-v1.mjs",
+      "sha256": "8460343c23db8f6606a9e4b0b4b97895bcc4b57c432fd9c10badc8a4ec8094ec"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-ab-constructor-v1.mjs",
+      "sha256": "b64c836d11ece3a1ba0d90e3586c4d98255c8736f7046976fa90c1605e3ffc18"
+    }
+  ],
+  "sourcePaths": [
+    "tsconfig.json",
+    "package.json",
+    "src/server/db/index.ts",
+    "src/server/db/run-repository.ts",
+    "src/server/auth/index.ts",
+    "src/server/auth/config.ts",
+    "src/server/scenarios/schema.ts",
+    "src/server/scenarios/references.ts",
+    "src/server/simulation/configuration.ts",
+    "src/server/simulation/runtime.ts",
+    "src/server/simulation/commands.ts",
+    "src/server/simulation/run.ts",
+    "src/server/simulation/checkpoint.ts",
+    "src/server/simulation/snapshots.ts",
+    "src/server/simulation/evaluate.ts",
+    "src/server/simulation/incident-workflow.ts",
+    "src/server/simulation/incident-scope.ts",
+    "src/server/simulation/runtime-isolation.integration.test.ts",
+    "packages/contracts/src/index.ts",
+    "packages/contracts/src/state.ts",
+    "packages/contracts/src/commands.ts",
+    "packages/contracts/src/guidance.ts",
+    "src/server/realtime/order.ts",
+    "src/client/simulation-stream.ts",
+    "src/components/console/entry-screen.tsx",
+    "src/components/console/safety-console.tsx",
+    "src/components/incidents/incident-panel.tsx",
+    "src/components/scene/use-scene-camera.ts",
+    "src/components/scene/camera-policy.ts",
+    "src/components/scene/SiteStage.tsx",
+    "src/components/tracking/related-camera.ts",
+    "src/components/tracking/camera-panel.tsx",
+    "data/scenarios/fire-gas/fg-fire.json",
+    "data/maps/site-construction-01.json",
+    "data/policies/fire-gas-evacuate.json"
+  ],
+  "derivativeLineage": {
+    "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-suite-v1.freeze.json",
+    "sha256": "80cecdc9742e8881407a4bba6a8f5002924a76ef252839504cb133d75835d998",
+    "mapPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-browser-derivatives-v1.1.json"
+  }
+}

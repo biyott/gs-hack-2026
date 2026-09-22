@@ -1,0 +1,285 @@
+{
+  "kind": "c4-performance-runner-source-freeze",
+  "version": "1",
+  "preparedAt": "2026-09-22T00:11:02.321Z",
+  "owner": "/root/qa_lead/qa_ui_device/c4_performance_protocol",
+  "status": "SOURCE_READY_RUNTIME_NOT_RUN",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "candidateRoot": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "candidateSourceAggregateSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "productAcceptance": "NOT_EVALUATED",
+  "performanceExecution": "NOT_RUN",
+  "staticSyntaxCheck": "All new runner/preload/checker .mjs/.cjs sources passed node --check; no import or helper/application execution in preparation.",
+  "independentSourceReview": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-source-review-v1.md",
+  "helperReadiness": {
+    "dispatch": "FRESH_EXECUTION_REQUIRED",
+    "ledgerV1_1": "FRESH_EXECUTION_REQUIRED"
+  },
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/run-c4-performance-v1.mjs",
+      "sha256": "78b6077a329d8709e2161bccda47c004ce8e0a12a52bdc113ff5e7162224f1ec",
+      "bytes": 17646
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-run-guard-v1.mjs",
+      "sha256": "85089293f0c20dc54ed7c969bb9b7c42f0d70689af5fb980965c09575aad69aa",
+      "bytes": 10886
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-browser-v1.mjs",
+      "sha256": "875d63289579e4cccd2798af61ce3588206082159e29eaf806e190c89a890c73",
+      "bytes": 10494
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-support-v1.mjs",
+      "sha256": "03e06d5065f4d49069c3acbe59397ad121387f1f8789e42fa354137c86285cb7",
+      "bytes": 12974
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-input-v1.mjs",
+      "sha256": "4d75d870c2461d61798a77b5964481300145e967c428541ed2de53dfd1f0d777",
+      "bytes": 20235
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-interval-v1.mjs",
+      "sha256": "bd28d3a5ebbfaee6ef72d6253d63d72f705e914ca2627e2ec83d9f7c5125643e",
+      "bytes": 30341
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-analysis-v1.mjs",
+      "sha256": "1fa47e5c30e42cf5dba5895b82cc19764ba8703f087d8e2fd7c7bccc7334d349",
+      "bytes": 47316
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-dispatch-observer-v2.cjs",
+      "sha256": "23061d74151b72e9ef782f4f969466fc74abe23ba411a6546e4362c288de18b2",
+      "bytes": 14975
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/test-c4-dispatch-observer-v2.mjs",
+      "sha256": "3af57d3a0176999fc106c699226ae25bf4388427792a493fd8c71aa6969b9d8f",
+      "bytes": 25311
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/test-c4-primary-transition-ledger-v1_1.mjs",
+      "sha256": "23416eafc5893203a988ac4ab380a8faf6456533d75c224deb63d090b0bcb27e",
+      "bytes": 19839
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/browser-observer-primary-v2.mjs",
+      "sha256": "e421503cbc6dbb5feddfc52f4c41bde403a8e2a4498363044e772b31f7ab91df",
+      "bytes": 13266
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-primary-transition-ledger-v1.mjs",
+      "sha256": "40e8b95315f214f8d645f381c6dd6a4a84d3ff9d0e1a167535035aea3f94746b",
+      "bytes": 4539
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-protocol-v1.md",
+      "sha256": "d9eb51f5d4c81acdd1e1fb63a1134df085d1e01746bbeea03e929ce85f1b0938",
+      "bytes": 30687
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-method-freeze-v1.json",
+      "sha256": "3a0738f04bf11754f70cf5cd25881f046610e74c3523c9697801a8c558715fd5",
+      "bytes": 5503
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-runner-v1.md",
+      "sha256": "4ccbac7bc9dcf312213b14ca2d4b944b120ed61ff733980e6f2a5a029683b61d",
+      "bytes": 18681
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-source-review-v1.md",
+      "sha256": "afc354193a9ff2b8254cfea9c03a4da97acef2698cc79330c4f261a35ef1b10d",
+      "bytes": 4450
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/runtime-artifacts/candidate-manifest-c6.json",
+      "sha256": "2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792",
+      "bytes": 367968
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/BUILD_ID",
+      "sha256": "6bb8c5d1b1b54d4543b953e48e24d6da9164b9777f13fc3e48cc164ab95d919b",
+      "bytes": 21
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "bytes": 3701
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/app/api/clock/route.ts",
+      "sha256": "6745dcf8f32c96ff3c57e83d40de737d73fd36fc8726b8d8b85a32870612f5a5",
+      "bytes": 489
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/src/components/incidents/guidance-record.tsx",
+      "sha256": "3061ccd60f9927476563fc3795faf5eab1852ac0663e1811f0aa5f60d5f7f3ec",
+      "bytes": 6609
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/tools/calibration/fixtures.ts",
+      "sha256": "b25d6bde754e3b49ef6c360b05bed3d1c050093137dd33c9680d64d9db2fa903",
+      "bytes": 1924
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/tools/calibration/markers.ts",
+      "sha256": "94e34dce47d66ccf94cfb855e997d052ce7a00ee81a4a6c519f28c104c2f3540",
+      "bytes": 2522
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/tools/calibration/example-calibration.json",
+      "sha256": "835bcd338747606ca1e10214de0b7fef806401c03792fade475dcdfec9a97841",
+      "bytes": 648
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/data/maps/site-construction-01.json",
+      "sha256": "ea4834c1b17e2a0ccbdaa892ce42079a42f689cfa198c7aa0f554d811bf6b5bf",
+      "bytes": 6780
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/data/scenarios/equipment/eq-no-route.json",
+      "sha256": "76d18744d1e768b86ef5c89977be16f856c2cbff840bde8bf5a4102a0e59288b",
+      "bytes": 3076
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/data/scenarios/fire-gas/fg-route-block.json",
+      "sha256": "73a5bde5b1d875f7a928f0f58e8c4047e4a744eb1fcc8def2e18e92924c87590",
+      "bytes": 8434
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/node_modules/playwright/index.mjs",
+      "sha256": "a0f5715ea22354f922791a9c53dc012d5d5c067ff9cc4cd35ffb7cd272071a9f",
+      "bytes": 704
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/node_modules/tsx/dist/esm/api/index.mjs",
+      "sha256": "abee15f23172ead6a5f709908677ac4be5989fe1140ea7275dd35f597623493c",
+      "bytes": 1001
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/node_modules/better-sqlite3/lib/index.js",
+      "sha256": "0d56e190de8623278641b613433e89c4af2e5c90092c9c6e425f873d7fbc7ccf",
+      "bytes": 149
+    },
+    {
+      "path": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+      "sha256": "8c599d43aec53f2460a31ae2f4af6bd863f8258b34ff519564bc5d4726bfaa1e",
+      "bytes": 293285184
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-app-origin-sites-binding-v1.json",
+      "sha256": "22847272e762e2508d27c00263875004434ecb6356f02309a7da1620b89f0ed8",
+      "bytes": 7234
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js.map",
+      "sha256": "69f3bf1cdca1654d36fe8f07423803b8cd060fa98a82ab1d80133c98d47cf667",
+      "bytes": 76407
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "sha256": "1feca21806f2a135b3c39081d0dbd4468ddcb58e1a9513458847491f12048c96",
+      "bytes": 20344
+    }
+  ],
+  "limitations": [
+    "This is a source freeze, not a runtime grant or performance PASS.",
+    "Listed package entrypoints and browser binary are pinned; this inventory does not claim a complete transitive dependency closure.",
+    "Live app-origin PID/stack/controller/request-ID proof remains required despite Technical source concurrence.",
+    "Actual bank preflight, accepted rate, full foreground windows, immutable joins, provider traces and close receipt remain unobserved."
+  ],
+  "actualOwner": "/root/qa_resume",
+  "derivation": [
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/run-c4-performance-v1.mjs",
+      "originalSha256": "78b6077a329d8709e2161bccda47c004ce8e0a12a52bdc113ff5e7162224f1ec",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/run-c4-performance-v1.mjs",
+      "sha256": "78b6077a329d8709e2161bccda47c004ce8e0a12a52bdc113ff5e7162224f1ec",
+      "bytes": 17646
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-run-guard-v1.mjs",
+      "originalSha256": "1f6faec326b7f7e29c70657d9d99c57567e66183b0420398a920460ac5cb5fcf",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-run-guard-v1.mjs",
+      "sha256": "85089293f0c20dc54ed7c969bb9b7c42f0d70689af5fb980965c09575aad69aa",
+      "bytes": 10886
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-browser-v1.mjs",
+      "originalSha256": "875d63289579e4cccd2798af61ce3588206082159e29eaf806e190c89a890c73",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-browser-v1.mjs",
+      "sha256": "875d63289579e4cccd2798af61ce3588206082159e29eaf806e190c89a890c73",
+      "bytes": 10494
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-support-v1.mjs",
+      "originalSha256": "c384fa1cd500fdab7e70d5b9a5b26aafb8b0344c463c2c0d0f1cc31c775a898b",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-support-v1.mjs",
+      "sha256": "03e06d5065f4d49069c3acbe59397ad121387f1f8789e42fa354137c86285cb7",
+      "bytes": 12974
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-input-v1.mjs",
+      "originalSha256": "4d75d870c2461d61798a77b5964481300145e967c428541ed2de53dfd1f0d777",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-input-v1.mjs",
+      "sha256": "4d75d870c2461d61798a77b5964481300145e967c428541ed2de53dfd1f0d777",
+      "bytes": 20235
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-interval-v1.mjs",
+      "originalSha256": "bd28d3a5ebbfaee6ef72d6253d63d72f705e914ca2627e2ec83d9f7c5125643e",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-interval-v1.mjs",
+      "sha256": "bd28d3a5ebbfaee6ef72d6253d63d72f705e914ca2627e2ec83d9f7c5125643e",
+      "bytes": 30341
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-performance-analysis-v1.mjs",
+      "originalSha256": "f21ef6731aa750d2228d3f2811540c171bdd2e1cf2831393e9e11244b95544d6",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-performance-analysis-v1.mjs",
+      "sha256": "1fa47e5c30e42cf5dba5895b82cc19764ba8703f087d8e2fd7c7bccc7334d349",
+      "bytes": 47316
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-dispatch-observer-v2.cjs",
+      "originalSha256": "f09f2ac148bd6675bab214812ea71b6110715e3d9f5581c7031c48caf59b3cc4",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-dispatch-observer-v2.cjs",
+      "sha256": "23061d74151b72e9ef782f4f969466fc74abe23ba411a6546e4362c288de18b2",
+      "bytes": 14975
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/test-c4-dispatch-observer-v2.mjs",
+      "originalSha256": "75cc9949e3b20d535f490e7090e334c6b6a570ce0c94dabe0dfbc9d216ddfd72",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/test-c4-dispatch-observer-v2.mjs",
+      "sha256": "3af57d3a0176999fc106c699226ae25bf4388427792a493fd8c71aa6969b9d8f",
+      "bytes": 25311
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-primary-transition-ledger-v1.mjs",
+      "originalSha256": "40e8b95315f214f8d645f381c6dd6a4a84d3ff9d0e1a167535035aea3f94746b",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/c4-primary-transition-ledger-v1.mjs",
+      "sha256": "40e8b95315f214f8d645f381c6dd6a4a84d3ff9d0e1a167535035aea3f94746b",
+      "bytes": 4539
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/test-c4-primary-transition-ledger-v1_1.mjs",
+      "originalSha256": "e7abea1726ac56c256476818026b616577f54d085b2d25cdbfa7192cd4439766",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/test-c4-primary-transition-ledger-v1_1.mjs",
+      "sha256": "23416eafc5893203a988ac4ab380a8faf6456533d75c224deb63d090b0bcb27e",
+      "bytes": 19839
+    },
+    {
+      "originalPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/browser-observer-primary-v2.mjs",
+      "originalSha256": "e421503cbc6dbb5feddfc52f4c41bde403a8e2a4498363044e772b31f7ab91df",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-timing-resume/browser-observer-primary-v2.mjs",
+      "sha256": "e421503cbc6dbb5feddfc52f4c41bde403a8e2a4498363044e772b31f7ab91df",
+      "bytes": 13266
+    }
+  ],
+  "scope": "Identity/path-only derivative. Original filenames and kind tags preserved to avoid altering observation/oracle code. Original C4 failures retained."
+}

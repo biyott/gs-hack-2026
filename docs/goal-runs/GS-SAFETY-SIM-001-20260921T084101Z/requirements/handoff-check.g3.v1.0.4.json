@@ -1,0 +1,17 @@
+{
+  "type": "product-document-editorial-check-not-QA",
+  "checkedAt": "2026-09-21T11:54:55.269Z",
+  "previous": "handoff-check.g3.v1.0.3.json",
+  "goalVersion": "1.0",
+  "goalChanged": false,
+  "scope": "Bounded latest limits: preserved prior APK/pending replacement, server stop-requested versus unconfirmed device cancellation, approved per-phone features, local-only camera pixels, Wi-Fi retry steering without AC waiver, remaining UWB peer reprepare",
+  "semanticRevision13": "Owner-agreed semantics documented; Technical freeze/publication evidence remains separate",
+  "readmeBaselinePreserved": true,
+  "localLinksChecked": 59,
+  "missingLinks": [],
+  "artifactHashes": {
+    "docs/demo-runbook.md": "58a5bbdca06ce63a8b9c169236e69d29c8da34385754f9b439742a24c23a75b0",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/goal.steering.wifi-20260921.input.txt": "5fbd1a0a3a50bb62c6d72ebfb0ca09c3616cd3db6a4a6d2d281830dde8682b7e"
+  },
+  "status": "Product source stable for guarded copy; no implementation or QA verdict."
+}

@@ -1,0 +1,9 @@
+{
+  "recordedAt": "2026-09-22T00:02:09.560Z",
+  "buildReleasedAt": "2026-09-21T23:58:06.262Z",
+  "status": "ASSEMBLY_COMPLETE_RESOURCE_RELEASED",
+  "stage": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "noActiveOwnedBuildOrRuntime": true,
+  "noRuntimeServicesStarted": true
+}

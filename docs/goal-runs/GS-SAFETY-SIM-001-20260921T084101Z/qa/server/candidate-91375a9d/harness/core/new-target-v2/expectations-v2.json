@@ -1,0 +1,86 @@
+{
+  "oracleVersion": "QA-NEW-TARGET-ORACLE-2",
+  "authority": "../new-target-oracle-disposition-v1.md",
+  "repetitions": 3,
+  "workerId": "WORKER-A",
+  "mapId": "SITE-CONSTRUCTION-01",
+  "mapVersion": "1.0.0",
+  "floorId": "GROUND",
+  "arrivalToleranceM": 2,
+  "positionStaleAfterMs": 5000,
+  "allowedDestinations": {
+    "REFUGE-01": {
+      "x": 125,
+      "y": 8,
+      "floorId": "GROUND",
+      "nodeId": "REFUGE-01"
+    },
+    "REFUGE-02": {
+      "x": 125,
+      "y": 42,
+      "floorId": "GROUND",
+      "nodeId": "REFUGE-02"
+    }
+  },
+  "fixedBoundaries": [
+    {
+      "atMs": 4000,
+      "action": "FOLLOW_VALIDATED_ROUTE",
+      "destination": "REFUGE-01"
+    },
+    {
+      "atMs": 8000,
+      "action": "FOLLOW_VALIDATED_ROUTE",
+      "destination": "REFUGE-02"
+    },
+    {
+      "atMs": 9000,
+      "action": "CONFIRM_ARRIVAL",
+      "target": "REFUGE-02"
+    },
+    {
+      "atMs": 9500,
+      "after": "admin-control",
+      "action": "FOLLOW_VALIDATED_ROUTE",
+      "destination": "REFUGE-01"
+    }
+  ],
+  "laterBoundaries": [
+    {
+      "atMs": 10000,
+      "position": {
+        "x": 125,
+        "y": 42
+      },
+      "targetIsNotFrozenByCoordinate": true
+    },
+    {
+      "atMs": 10500,
+      "position": {
+        "x": 125,
+        "y": 8
+      },
+      "targetIsNotFrozenByCoordinate": true
+    }
+  ],
+  "conditions": [
+    "Every current route starts at the observed worker position and ends at a frozen allowed map node.",
+    "An independent oracle checks corridor adjacency, enabled/nonclosed edges, stairs/accessibility, obstacles, active/unknown-sensor hazards and explicit initial egress without reentry.",
+    "Each changed guidance in a lineage has a strictly greater guidanceVersion; repeated equal versions must retain exactly equal guidance.",
+    "Every movement route has a positive routeVersion. A changed consecutive routed guidance in the same lineage advances routeVersion. No across-null routeVersion monotonicity rule is invented.",
+    "Every confirmation binds the latest preceding independently valid FOLLOW route in the same run/worker/incident/map/profile lineage and lies within the published tolerance of that route target.",
+    "A later new FOLLOW route may replace an earlier target only after the independent safety and identity checks; the implementation target alone is never the expected oracle.",
+    "Raw checkpoint target/intent, live target and reserialized target bind the independently checked route; optional floor/node metadata are exact on arrivalTargets only.",
+    "Worker and active incident current guidance agree. Immutable first guidance and prior history rows remain exact.",
+    "Scenario evaluation alone writes no worker-response receipt/audit and no received/displayed/spoken/understood/help/arrived timestamp.",
+    "No particular10.5s action is assumed: absent a newer independently valid route ending at the current position, CONFIRM_ARRIVAL is forbidden.",
+    "All persisted history run versions strictly increase; latest validated target metadata remains persistent until another independently valid route replaces it."
+  ],
+  "responseProbeDisposition": "The C2 current-arrived rejection probe followed its overconstrained negative assertion and never executed. V2 removes that oracle-dependent probe and sends zero worker responses; it preserves all scenario/control operations and timestamps.",
+  "hazardOracleBoundary": "Route safety is independently computed against observed hazard polygons; this case does not independently regenerate equipment hazard geometry. Geometry correctness remains the separately bound baseline scope.",
+  "clock": {
+    "scenarioEpochUtc": "2026-09-21T09:00:00Z",
+    "injectedDateGuidanceUtc": "2026-09-21T09:30:00.000Z",
+    "actualUtc": "Captured separately using the parent real-clock helper. Original C2 virtualClock labels are preserved verbatim."
+  }
+}

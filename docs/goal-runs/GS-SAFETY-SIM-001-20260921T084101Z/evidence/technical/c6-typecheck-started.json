@@ -1,0 +1,11 @@
+{
+  "startedAt": "2026-09-21T23:58:04.002Z",
+  "pid": 74036,
+  "cwd": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "command": [
+    "npm",
+    "run",
+    "typecheck"
+  ],
+  "grantPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-assembly-grant.json"
+}

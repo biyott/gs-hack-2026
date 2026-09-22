@@ -1,0 +1,5 @@
+[
+  "voice/**/*.test.ts",
+  "core/**/*.test.ts",
+  "baseline/**/*.test.ts"
+]

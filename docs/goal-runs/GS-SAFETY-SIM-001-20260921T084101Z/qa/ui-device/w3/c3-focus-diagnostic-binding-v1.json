@@ -1,0 +1,15 @@
+{
+  "kind": "preparation-only-no-runtime-grant",
+  "candidateId": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+  "canonicalBinding": "candidate-binding-c3.v2.json",
+  "previousProcessReceipt": "w3a-process-01.json",
+  "scenario": "surface.scenario.v1.json",
+  "baseUrl": "http://127.0.0.1:4103",
+  "durationLimitMs": 120000,
+  "cases": [
+    {"id": "entry-session-768", "route": "entry-admin", "state": "admin-connected", "selector": ".entry-session", "viewport": {"width": 768, "height": 1024}},
+    {"id": "camera-375", "route": "equipment-panels", "state": "tracking-camera-and-observations", "selector": "#tracking .camera-panel", "viewport": {"width": 375, "height": 812}},
+    {"id": "calibration-375", "route": "equipment-panels", "state": "calibration-all-fields", "selector": "#tracking .calibration-panel", "viewport": {"width": 375, "height": 812}}
+  ],
+  "scope": "Only the three representative previously failing focus targets; original strict oracle retained. Existing isolated synthetic database and history preserved. No simulation commands, model generation, broad matrix, performance, phone, network configuration or actual camera. Runtime requires a separate explicit QA Lead grant after resource release."
+}

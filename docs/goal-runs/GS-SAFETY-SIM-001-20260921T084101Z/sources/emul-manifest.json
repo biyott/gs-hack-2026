@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "1.0",
+  "goalId": "GS-SAFETY-SIM-001",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "retrievalMethod": "Public Docmost page-info API discovered in public site JavaScript; no authentication.",
+  "documents": [
+    {
+      "id": "002",
+      "title": "002-두개의 시뮬레이션",
+      "url": "https://emul.site/share/hcloklbd3x/p/002-zk7TdpcVV3",
+      "apiUrl": "https://emul.site/api/shares/page-info",
+      "request": {
+        "method": "POST",
+        "body": {
+          "pageId": "zk7TdpcVV3"
+        }
+      },
+      "fetchedAt": "2026-09-21T08:46:35.340Z",
+      "sourceCreatedAt": "2026-09-21T05:31:40.247Z",
+      "sourceUpdatedAt": "2026-09-21T08:21:16.941Z",
+      "sourcePageId": "01a0c272-d358-7150-b868-c15cd0411646",
+      "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-002.original.json",
+      "rawJsonSha256": "f7d51f2f0513848b00c7b9871e17cb0959236b08ff2b25504881bd9a35761152",
+      "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-002.original.html",
+      "rawHtmlSha256": "cfa6a10c2ffd5e8ef33a477234eda9c3188427624ab56971cc2524072dc1a803",
+      "contentSha256": "c31258d3dcec40b85e995175a904d3aa7f23bb57aa153d5bbf701059c2385f73",
+      "httpStatus": 200,
+      "publicAccess": true,
+      "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-002.body.md",
+      "bodySha256": "730160c78f632b45502936c3fe9c252e57b908cb9c7a45baeb0eb57305e7c569",
+      "textNodeCount": 244,
+      "bodyMissingOriginalTextNodes": 0
+    },
+    {
+      "id": "003",
+      "title": "003- RAG",
+      "url": "https://emul.site/share/y3nmj99ywh/p/003-rag-oBzdIK1cDi",
+      "apiUrl": "https://emul.site/api/shares/page-info",
+      "request": {
+        "method": "POST",
+        "body": {
+          "pageId": "oBzdIK1cDi"
+        }
+      },
+      "fetchedAt": "2026-09-21T08:46:35.367Z",
+      "sourceCreatedAt": "2026-09-21T06:47:30.069Z",
+      "sourceUpdatedAt": "2026-09-21T07:56:49.707Z",
+      "sourcePageId": "01a0c2b8-4017-747b-affc-35ea0c6ab53e",
+      "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-003.original.json",
+      "rawJsonSha256": "73d7a2d2ae287010f9e20e7f71f958f24aa476595461221d06123d087a45a1ca",
+      "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-003.original.html",
+      "rawHtmlSha256": "83e6d328d54a7cfd2582c49f0821ac477a982b8333bcf51ff85f272c17381d48",
+      "contentSha256": "93b6aa921a82f0946f5e1f8fcea9365f9b27f72148d9824c51db41c95116e10e",
+      "httpStatus": 200,
+      "publicAccess": true,
+      "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-003.body.md",
+      "bodySha256": "3de397aa1733fbda7d4ba4d9c510e147d6799c060e9a005d9a95132e6d16379e",
+      "textNodeCount": 176,
+      "bodyMissingOriginalTextNodes": 0
+    },
+    {
+      "id": "004",
+      "title": "004-RAG에 필요한 data 만들기",
+      "url": "https://emul.site/share/tp3yhmjwfb/p/004-rag-data-fxnyP9s15A",
+      "apiUrl": "https://emul.site/api/shares/page-info",
+      "request": {
+        "method": "POST",
+        "body": {
+          "pageId": "fxnyP9s15A"
+        }
+      },
+      "fetchedAt": "2026-09-21T08:46:35.368Z",
+      "sourceCreatedAt": "2026-09-21T06:53:22.526Z",
+      "sourceUpdatedAt": "2026-09-21T07:00:42.553Z",
+      "sourcePageId": "01a0c2bd-a0df-7bba-9056-811eb8edf4c3",
+      "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.original.json",
+      "rawJsonSha256": "aa170a84f5fef0a3d08a8b5b00175288810799471c73cacc957f85cda77918fb",
+      "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.original.html",
+      "rawHtmlSha256": "c00db79060be68d827ebc49b13ed83165aabccd9cf8d2500559a5ad17ce3161c",
+      "contentSha256": "49c97f623bae298a80e616f423fd35392a68ea3b756b87e76dadc36addf7d955",
+      "httpStatus": 200,
+      "publicAccess": true,
+      "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.body.md",
+      "bodySha256": "5339f3cd43df552e3bda5da24fbef2e72dc49f9cd1ea77bba401dadb6548f2db",
+      "textNodeCount": 272,
+      "bodyMissingOriginalTextNodes": 0
+    },
+    {
+      "id": "005",
+      "title": "005- 폰에서 알림처리 방안",
+      "url": "https://emul.site/share/0of8g5q0at/p/005-O2FJWgmfS8",
+      "apiUrl": "https://emul.site/api/shares/page-info",
+      "request": {
+        "method": "POST",
+        "body": {
+          "pageId": "O2FJWgmfS8"
+        }
+      },
+      "fetchedAt": "2026-09-21T08:46:35.368Z",
+      "sourceCreatedAt": "2026-09-21T07:19:15.529Z",
+      "sourceUpdatedAt": "2026-09-21T07:24:43.173Z",
+      "sourcePageId": "01a0c2d5-5349-78cd-a541-8ad4cffa8d38",
+      "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-005.original.json",
+      "rawJsonSha256": "cf9b92a1d68e6c4ac2ac31eedec6fc5834841d8d417fcf584fa3667b841d7bfc",
+      "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-005.original.html",
+      "rawHtmlSha256": "554cc37f39fad18207529d5fcc18308abe9cd10528dca3238c588a21827e1aa0",
+      "contentSha256": "19980f3604a912d79744657bcc25ce33890b08b5900eb7caca429df49bd64cf9",
+      "httpStatus": 200,
+      "publicAccess": true,
+      "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-005.body.md",
+      "bodySha256": "90ca534b938479185fd06f049cc23e178c8a0cf8e368b241a0bc54036c5736ae",
+      "textNodeCount": 193,
+      "bodyMissingOriginalTextNodes": 0
+    },
+    {
+      "id": "006",
+      "title": "006- 안전관리자 web 서비스 내용",
+      "url": "https://emul.site/share/xg40v7nhfw/p/006-web-csOVxT08tz",
+      "apiUrl": "https://emul.site/api/shares/page-info",
+      "request": {
+        "method": "POST",
+        "body": {
+          "pageId": "csOVxT08tz"
+        }
+      },
+      "fetchedAt": "2026-09-21T08:46:35.369Z",
+      "sourceCreatedAt": "2026-09-21T07:37:42.208Z",
+      "sourceUpdatedAt": "2026-09-21T07:56:27.360Z",
+      "sourcePageId": "01a0c2e6-3642-7229-8b7b-babf0bfa69e0",
+      "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-006.original.json",
+      "rawJsonSha256": "4904233d95ce023f51248ce8681200402cbb4962d0522912c35c161a746c5964",
+      "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-006.original.html",
+      "rawHtmlSha256": "f9a72ecc0ea1b3379d5a19d157da6474fdb41a75735425fdab21037f024eb1f4",
+      "contentSha256": "950b478eb306a70fce5d5b23e9e11f00970e0f288e9e5d163afc50d3bed1fff3",
+      "httpStatus": 200,
+      "publicAccess": true,
+      "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-006.body.md",
+      "bodySha256": "b5de377f3b52ee171b07dcd998fd1e7446590469426372369e5d0a8a1e0d7ea1",
+      "textNodeCount": 148,
+      "bodyMissingOriginalTextNodes": 0
+    },
+    {
+      "id": "008",
+      "title": "008-시연 현장·크레인 후보·축척",
+      "url": "https://emul.site/share/9llgmzihy0/p/008-luMAK9l5nT",
+      "apiUrl": "https://emul.site/api/shares/page-info",
+      "request": {
+        "method": "POST",
+        "body": {
+          "pageId": "luMAK9l5nT"
+        }
+      },
+      "fetchedAt": "2026-09-21T08:46:35.369Z",
+      "sourceCreatedAt": "2026-09-21T07:56:47.102Z",
+      "sourceUpdatedAt": "2026-09-21T08:07:36.144Z",
+      "sourcePageId": "01a0c2f7-ae7e-7fc3-a44e-c13cb669d1ab",
+      "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-008.original.json",
+      "rawJsonSha256": "edf11932665c0032c940ff12b4258b053832fa0911f28445e50dd9b6e77b87ad",
+      "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-008.original.html",
+      "rawHtmlSha256": "758cb8cccea3d9435e0654a73ddd30a74a27b214d04a9731aea3afede433572b",
+      "contentSha256": "17e27b5b760403dfbff16564d2b8ebdb8d04af710c6adc94aa1993f16bdd6d77",
+      "httpStatus": 200,
+      "publicAccess": true,
+      "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-008.body.md",
+      "bodySha256": "af5fd4039da2018485f924e45e5fa5e00e9e8184689b00834e3e907feed7f345",
+      "textNodeCount": 383,
+      "bodyMissingOriginalTextNodes": 0,
+      "attachments": [
+        {
+          "name": "references.zip",
+          "mime": "application/zip",
+          "reportedSize": 1083233,
+          "actualSize": 1083233,
+          "attachmentId": "01a0c2f8-b963-73b0-adb9-0503f7ccd294",
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-008-references.zip",
+          "sourcePublicPath": "/api/files/public/01a0c2f8-b963-73b0-adb9-0503f7ccd294/references.zip",
+          "fetchedAt": "2026-09-21T08:49:13.743Z",
+          "sha256": "33174350c2fc1818d0748c80cb4147fcff16ce066d84f398077649036e301bcb"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "preparedAt": "2026-09-21T16:47:12.589Z",
+  "candidateId": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+  "kind": "frozen-diagnostic-preparation-no-execution-grant",
+  "sourceHelperSha256": "54b92b43fc05389e9a43bd32380619cd8c9e753bfe71909765c03b849b2e010d",
+  "diagnosticModuleSha256": "2f0144a57a046fe401edf8bcfe91afdf2d4800b6caab8bbf47b640711bf67438",
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/run-c3-focus-diagnostic-v1.mjs",
+      "sha256": "de5e1ea65122cb4bd9ba30df8d3b49411f1621ce5c842b8479f82954fe112a28"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/focused-scroll-diagnostic-v1.mjs",
+      "sha256": "2f0144a57a046fe401edf8bcfe91afdf2d4800b6caab8bbf47b640711bf67438"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c3-focus-diagnostic-binding-v1.json",
+      "sha256": "97c457399fb00d24661836eedf4db536e43ce32fdb078cee4979c08c13c2b5ca"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c3.v2.json",
+      "sha256": "e54c83496db8fa290a0d5229d339b139b13ae6ab1e6cd3228f3cf397dbd60740"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/surface.scenario.v1.json",
+      "sha256": "a0eacd365776af748823996330c5cc91c634394002c212da7bde57e56a03f8a5"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c3.eulo4t9w/tests/frontend/focused-scroll.mjs",
+      "sha256": "54b92b43fc05389e9a43bd32380619cd8c9e753bfe71909765c03b849b2e010d"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c3.eulo4t9w/tests/frontend/browser-actions.mjs",
+      "sha256": "a3f7d2a06ae7228c92ecc8d6854bd61222f7eddbcdab59e91934c9e30f477416"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c3.eulo4t9w/tests/frontend/browser-runtime.mjs",
+      "sha256": "9c222fa6a0e59597c935ef6047a842c60713cd5b84cfadd777784fbc0d540aef"
+    }
+  ],
+  "staticChecks": {
+    "runnerSyntax": "node --check exit0",
+    "diagnosticSyntax": "producer node --check exit0; direct source inspected by independent executor",
+    "strictOriginalOracle": "unchanged9samples/everyHit/assertUsable source verified; diagnostic fields additive only"
+  },
+  "scope": "3representative focus targets, max120000ms, preserved paused synthetic C3 database; no broad matrix or physical work"
+}

@@ -1,0 +1,31 @@
+{
+  "goalId": "GS-SAFETY-SIM-001",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "protocolVersion": "1.0",
+  "registeredAt": "2026-09-21T08:50:12.231Z",
+  "manifestCreatedAt": "2026-09-21T08:54:39.002Z",
+  "issuer": "/root/qa_lead",
+  "purpose": "Preserve G0 registration; later acceptance ledger results must not alter this snapshot.",
+  "files": [
+    {
+      "path": "goal.input.txt",
+      "sha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796"
+    },
+    {
+      "path": "qa/ac-verbatim-v1.txt",
+      "sha256": "c43f016ecf3bc77cc8d9da52eb16bdfda2943c4b7031d7aaf80c98d4c7fb115c"
+    },
+    {
+      "path": "qa/g0-protocol-v1.md",
+      "sha256": "e7f257c72feb993807e5faa420c56674f06f3bdf5e112b8155cbbef994027dec"
+    },
+    {
+      "path": "sources/emul-manifest.json",
+      "sha256": "6c80498d25da35a2ee56ed63354fa39dc5483cd595494320abe0267414b9415c"
+    },
+    {
+      "path": "qa/acceptance-registration-v1.md",
+      "sha256": "1900d702429c22805d1eaa3172708d22c26b400620549610604a130539a87230"
+    }
+  ]
+}

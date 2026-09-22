@@ -1,0 +1,14 @@
+# AC-16 — independent handoff and four-phone demonstration
+
+Status: NOT_RUN. This card covers the UI/device/asset/handoff contribution; only QA Lead aggregates AC-01–16 and issues the overall verdict. Prerequisites: all mandatory same-candidate evidence, runnable versioned runbook and artifact manifest, second executor other than product author, physical apparatus and actual model/provider resources. A runnable browser simulation is insufficient.
+
+| Test ID | Second-executor actions, using only candidate and runbook | Expected result |
+| --- | --- | --- |
+| UI16-01 | Verify manifest; install documented dependencies; migrate/seed fresh QA-owned DB; launch server/web/Android through documented local/LAN commands | Candidate hashes unchanged; installation succeeds without unwritten author intervention. Capture commands, versions, elapsed steps, errors and any required clarification as runbook defect. |
+| UI16-02 | Inventory four phones; assign arbitrary eligible phones to four roles; inspect permissions, session readiness and alternate-role errors | EQUIPMENT +two actual workers +CCTV, no permanent model whitelist; all readiness is observed. Identity/capability from physical execution, never source labels. |
+| UI16-03 | Set physical140×50cm table/corners/markers, measure offsets/heights, calibrate, verify independent grid points, start simultaneous UWB and actual CCTV | Runbook fully explains units/axes/source/uncertainty; physical measurement evidence satisfies UI13/G0. No synthetic stream presented as real input. |
+| UI16-04 | Execute heavy-equipment approach/speed/heading/constraint/no-path/unknown/arrival and six swaps; then fire/gas/combined/blocked/stale/explicit shelter/release/reopen/end | Same integrated candidate reproduces modes and phone guidance; version/state flows and persistence correlate. ±15° and full extent correctly distinguished. Scope labels remain honest. |
+| UI16-05 | Complete risk→CCTV→actual first guidance→worker reactions→support assignment/acceptance→follow-up→clear→reopen→close; reconnect/refresh, mute sound, recover app | IDs/versions/actors/times join across web/app/DB; first guide immutable, current guide valid; no response-state conflation or old audio. Cross-reference engine/incident QA evidence. |
+| UI16-06 | Repeat from runbook without author aid; verify manifest after all operations and collect all mandatory result records | Traceable unchanged candidate and complete evidence index. Every unresolved mandatory FAIL/BLOCKED/NOT_RUN remains visible. QA Lead may issue PASS only when all acceptance requirements pass. |
+
+Keep second executor identity/role, runbook hash/version and any assistance transcript in sanitized evidence. These cards/templates are not a demonstrated handoff. Missing physical access, real provider resources, actual editable sources/GLBs or second executor is a concrete blocker once established, never waived by a preparation report.

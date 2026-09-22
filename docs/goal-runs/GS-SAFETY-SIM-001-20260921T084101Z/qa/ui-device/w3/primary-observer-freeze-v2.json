@@ -1,0 +1,42 @@
+{
+  "kind": "primary-observer-preparation-freeze",
+  "preparedAt": "2026-09-21T17:10:12.951Z",
+  "preparationOnly": true,
+  "productAcceptance": "NOT_RUN",
+  "independentStaticReviewer": "/root/qa_lead/qa_ui_device/c3_partial_focus_audit",
+  "review": "Three findings addressed; final static review ready for authorized helper check. No runtime yet.",
+  "staticSyntaxChecks": "Both module and checker node --check exit0",
+  "inputSourceBoundary": "C3 component used for source preparation; final candidate component identity must be rebound before performance collection",
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/browser-observer.mjs",
+      "bytes": 4844,
+      "sha256": "168c8208c84ac0986eb3baf6c87f231922dc5a169ec798ebb58cabd6a04700be"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/browser-observer-primary-v2.mjs",
+      "bytes": 13266,
+      "sha256": "e421503cbc6dbb5feddfc52f4c41bde403a8e2a4498363044e772b31f7ab91df"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/test-primary-observer-v2.mjs",
+      "bytes": 7771,
+      "sha256": "ef5dac89a6875bfdf37eec26c0d1f1e98e46673dad31468d03e7c626b4367e5b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/browser-observer-primary-v2.md",
+      "bytes": 3944,
+      "sha256": "9da05956dca1aa3d19adb5143d3a5999b82523228429f8950464c0f7e67c8314"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c3.eulo4t9w/src/components/incidents/guidance-record.tsx",
+      "bytes": 6609,
+      "sha256": "3061ccd60f9927476563fc3795faf5eab1852ac0663e1811f0aa5f60d5f7f3ec"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c3.eulo4t9w/node_modules/playwright/index.mjs",
+      "bytes": 704,
+      "sha256": "a0f5715ea22354f922791a9c53dc012d5d5c067ff9cc4cd35ffb7cd272071a9f"
+    }
+  ]
+}

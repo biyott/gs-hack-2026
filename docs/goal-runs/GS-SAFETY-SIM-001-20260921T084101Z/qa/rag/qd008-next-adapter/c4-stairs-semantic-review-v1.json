@@ -1,0 +1,1730 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "C4-STAIRS-SEMANTIC-REVIEW-01",
+  "reviewer": "/root/qa_lead/qa_rag/c4_stairs_review",
+  "createdAt": "2026-09-21T17:51:58.415Z",
+  "method": "Independent read-only saved-artifact review and byte/hash comparisons; no runtime, product import, model, DB or test executed.",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "manifestHash": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d",
+  "scope": "C4 actual controlled service stairs extension: measured Korean and additive English; warmup is bound as background, not counted as a measured result.",
+  "overallVerdict": "NOT_ISSUED",
+  "source004": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.body.md",
+    "bytes": 20661,
+    "sha256": "5339f3cd43df552e3bda5da24fbef2e72dc49f9cd1ea77bba401dadb6548f2db",
+    "clauses": [
+      {
+        "lines": "311-318",
+        "requirement": "Equipment risk, action, route and destination belong to the engines; RAG explains their conditions."
+      },
+      {
+        "lines": "407-410",
+        "requirement": "Applicability and exclusions remain with the procedure; no invented route, destination or controls."
+      },
+      {
+        "lines": "416",
+        "requirement": "Receipt, understanding, assistance acceptance and arrival remain distinct."
+      },
+      {
+        "lines": "453-462",
+        "requirement": "Examples use placeholders; Korean and English action meaning, prohibitions and identifiers agree."
+      },
+      {
+        "lines": "480-484",
+        "requirement": "Retrieval validation includes stairs restriction and English guidance."
+      }
+    ]
+  },
+  "frozenOracle": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c2-integration-preparation/stairs-semantic-oracle.md",
+    "bytes": 20496,
+    "sha256": "9206051eb823a0c500fb3dcbfd330a6025cf134ae36c3fcfd3b5c8f54f01ecd7"
+  },
+  "harnessInvocation": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428-r1/stairs-invocation.ts",
+    "bytes": 7621,
+    "sha256": "4c830c2f6a5f9cc03e54cf4443ebf7d3504c9c35e0d5a593369f890f96d4b2d8"
+  },
+  "documents": [
+    {
+      "documentId": "EQ-001",
+      "version": "0.1.0",
+      "source": {
+        "path": "/home/b/.cache/gs-safety-c4.q2FD40/knowledge/equipment/EQ-001.md",
+        "bytes": 5104,
+        "sha256": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004"
+      },
+      "reviewedContentHash": "72c885c61053a5bfddc1f27cf841cb1e5cace93ab19888bdbbacce7bdde5c2ca",
+      "approval": {
+        "documentId": "EQ-001",
+        "documentVersion": "0.1.0",
+        "reviewedContentHash": "72c885c61053a5bfddc1f27cf841cb1e5cace93ab19888bdbbacce7bdde5c2ca",
+        "approvedFileHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+        "reviewedBy": "/root/rag_lead/knowledge_review",
+        "reviewedAt": "2026-09-21T09:13:05.116Z"
+      },
+      "sourceMatchesCapture": true,
+      "approvalMatches": true,
+      "reviewedSupplementalExplanation": {
+        "ko": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+        "en": "This alert is tied to the server's equipment exposure assessment, and the routing engine determines the route and destination."
+      },
+      "approvedTextHashes": {
+        "ko": "13c90266f5ad5b8ba7520adee6ab6cba325bcf322445b0d73b46b51e74d40d0d",
+        "en": "c34eb7b0c9fb300dd3ff566e6666a56034739dc63d00c978f36fea422912e89f"
+      }
+    },
+    {
+      "documentId": "EQ-002",
+      "version": "0.1.0",
+      "source": {
+        "path": "/home/b/.cache/gs-safety-c4.q2FD40/knowledge/equipment/EQ-002.md",
+        "bytes": 5208,
+        "sha256": "b10f6892ec886a96f1570909095991319adb8ad1e758ab43aca75f9da1a4dd0c"
+      },
+      "reviewedContentHash": "2d08eedcc93b31279b448e3f563562973dafe5d66b86a13162096ff0d7de686e",
+      "approval": {
+        "documentId": "EQ-002",
+        "documentVersion": "0.1.0",
+        "reviewedContentHash": "2d08eedcc93b31279b448e3f563562973dafe5d66b86a13162096ff0d7de686e",
+        "approvedFileHash": "b10f6892ec886a96f1570909095991319adb8ad1e758ab43aca75f9da1a4dd0c",
+        "reviewedBy": "/root/rag_lead/knowledge_review",
+        "reviewedAt": "2026-09-21T09:13:05.116Z"
+      },
+      "sourceMatchesCapture": true,
+      "approvalMatches": true,
+      "reviewedSupplementalExplanation": {
+        "ko": "장비 방향이 변경되면 엔진이 위험과 경로를 다시 평가합니다. 안내 설명의 적용 여부는 현재 안내·경로 버전의 일치로 확인됩니다.",
+        "en": "When equipment direction changes, the engine reassesses risk and routing. Whether a guidance explanation applies is checked against the current guidance and route versions."
+      },
+      "approvedTextHashes": {
+        "ko": "732088a4dd51871ec66338a7a9208b397c71503eb9a6c7867feab99101f42770",
+        "en": "8a598c135874a5f5f1b92914551ae9f3b6b93403f408023ee6ef50791f19e76c"
+      }
+    },
+    {
+      "documentId": "EQ-003",
+      "version": "0.1.0",
+      "source": {
+        "path": "/home/b/.cache/gs-safety-c4.q2FD40/knowledge/equipment/EQ-003.md",
+        "bytes": 5156,
+        "sha256": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8"
+      },
+      "reviewedContentHash": "ffa51860099aa73d2795f7065925f44b92e4e73e89d642445fc4aec9de9f81c6",
+      "approval": {
+        "documentId": "EQ-003",
+        "documentVersion": "0.1.0",
+        "reviewedContentHash": "ffa51860099aa73d2795f7065925f44b92e4e73e89d642445fc4aec9de9f81c6",
+        "approvedFileHash": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8",
+        "reviewedBy": "/root/rag_lead/knowledge_review",
+        "reviewedAt": "2026-09-21T09:13:05.116Z"
+      },
+      "sourceMatchesCapture": true,
+      "approvalMatches": true,
+      "reviewedSupplementalExplanation": {
+        "ko": "이 경로 설명은 확인된 계단 이용 불가 조건에 연결되며 경로 선택은 경로 엔진의 결과입니다.",
+        "en": "This route explanation is tied to the confirmed restriction on using stairs, and route selection is the result of the routing engine."
+      },
+      "approvedTextHashes": {
+        "ko": "5ff59e48296320d0cb515c4e368ee2027685ba160f0d0b4227ebf15594daf1c3",
+        "en": "0b979975796d9943dc5650c12f8b25d2cc3d106ebf697c14ddfc17564a5d2ca4"
+      }
+    }
+  ],
+  "phases": [
+    {
+      "phase": "live-ko",
+      "locale": "ko",
+      "measured": true,
+      "startedAt": "2026-09-21T17:28:16.060Z",
+      "completedAt": "2026-09-21T17:28:16.338Z",
+      "elapsedMs": 277.9789259999998,
+      "normalServiceDeadlineMs": 5000,
+      "artifact": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/live-ko/result.json",
+        "bytes": 305067,
+        "sha256": "7b508b3866038891cf201fd7b6b20befe671595d9f601a5be7ae081275828886"
+      },
+      "before": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/live-ko/before.json",
+        "bytes": 82397,
+        "sha256": "12a08548605ff0baac9999b29af37e752230f48a5c07a719a02e0f7389199520"
+      },
+      "after": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/live-ko/after.json",
+        "bytes": 82397,
+        "sha256": "5be64bba9aa14c8284b5abe9ad31c254c655d0dea6079415a0f6742cb9db28ca"
+      },
+      "guidance": {
+        "runId": "ceb6d3f0-6ce2-4432-a43f-59922f90c258",
+        "workerId": "WORKER-B",
+        "guidanceId": "GUIDANCE:ceb6d3f0-6ce2-4432-a43f-59922f90c258:5b2766da-752b-4e69-86e6-30e83e425b42:WORKER-B",
+        "primaryGuidanceVersion": 3,
+        "profileVersion": 3,
+        "routeVersion": 1,
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "positionStatus": "known",
+        "profile": {
+          "workerId": "WORKER-B",
+          "version": 3,
+          "preferredLocale": "ko",
+          "locale": "ko",
+          "canUseStairs": false,
+          "speedMps": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "needsAssistance": true,
+          "needsCompanion": true,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T17:28:16.041Z"
+        },
+        "waypoints": [
+          {
+            "x": 65,
+            "y": 25,
+            "nodeId": "WORKER-POSITION",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 65,
+            "y": 42,
+            "nodeId": "J-B-65",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 90,
+            "y": 42,
+            "nodeId": "J-B-90",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 100,
+            "y": 42,
+            "nodeId": "J-B-100",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 125,
+            "y": 42,
+            "nodeId": "REFUGE-02",
+            "floorId": "GROUND"
+          }
+        ],
+        "destinationId": "REFUGE-02"
+      },
+      "engineReevaluation": {
+        "origin": "Actual candidate evaluateWorkerPlan result from captured authoritative snapshot; not intercepted original decision",
+        "decision": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "hazardIds": [
+            "EQUIPMENT-A:sk1265-at6:2:load:6"
+          ],
+          "hazardType": "equipment",
+          "priority": "high",
+          "route": {
+            "kind": "valid",
+            "waypoints": [
+              {
+                "x": 65,
+                "y": 25,
+                "nodeId": "WORKER-POSITION",
+                "floorId": "GROUND"
+              },
+              {
+                "x": 65,
+                "y": 42,
+                "nodeId": "J-B-65",
+                "floorId": "GROUND"
+              },
+              {
+                "x": 90,
+                "y": 42,
+                "nodeId": "J-B-90",
+                "floorId": "GROUND"
+              },
+              {
+                "x": 100,
+                "y": 42,
+                "nodeId": "J-B-100",
+                "floorId": "GROUND"
+              },
+              {
+                "x": 125,
+                "y": 42,
+                "nodeId": "REFUGE-02",
+                "floorId": "GROUND"
+              }
+            ],
+            "edgeIds": [
+              "EDGE-EGRESS-A-NORTH",
+              "EDGE-B-02",
+              "EDGE-B-03",
+              "EDGE-B-04"
+            ],
+            "destinationId": "REFUGE-02",
+            "distanceM": 77,
+            "estimatedSeconds": 256.6666666666667,
+            "assistanceRequired": true
+          },
+          "destinationId": "REFUGE-02",
+          "assistanceRequired": true,
+          "reasonCode": "evacuate",
+          "exposure": {
+            "current": true,
+            "plannedRoute": true
+          }
+        },
+        "selectedEdges": [
+          {
+            "id": "EDGE-B-02",
+            "from": "J-B-65",
+            "to": "J-B-90",
+            "pathId": "PATH-B",
+            "widthM": 4,
+            "stairs": false,
+            "accessible": true,
+            "enabled": true,
+            "initialEgress": false
+          },
+          {
+            "id": "EDGE-B-03",
+            "from": "J-B-90",
+            "to": "J-B-100",
+            "pathId": "PATH-B",
+            "widthM": 4,
+            "stairs": false,
+            "accessible": true,
+            "enabled": true,
+            "initialEgress": false
+          },
+          {
+            "id": "EDGE-B-04",
+            "from": "J-B-100",
+            "to": "REFUGE-02",
+            "pathId": "PATH-B",
+            "widthM": 4,
+            "stairs": false,
+            "accessible": true,
+            "enabled": true,
+            "initialEgress": false
+          },
+          {
+            "id": "EDGE-EGRESS-A-NORTH",
+            "from": "WORKER-A-START",
+            "to": "J-B-65",
+            "pathId": "PATH-C",
+            "widthM": 4,
+            "stairs": false,
+            "accessible": true,
+            "enabled": true,
+            "initialEgress": true
+          }
+        ]
+      },
+      "actualModel": {
+        "provider": {
+          "provider": "openai-compatible",
+          "model": "Qwen3-0.6B-Q8_0",
+          "version": "23749fefcc72300e3a2ad315e1317431b06b590a",
+          "mode": "actual"
+        },
+        "embedding": {
+          "provider": "transformers.js@3.8.1/onnxruntime-node",
+          "model": "Xenova/multilingual-e5-small",
+          "version": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+          "dimensions": 384,
+          "mode": "actual"
+        },
+        "callId": "chatcmpl-xWsmbNkfRochD8ujVpDyvrmomisMtcZa",
+        "ragRunId": "8dbd0883-0969-4adb-8182-54b7906804f2",
+        "metadata": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/d3c3201a-a478-466e-885a-0cb083390fea.metadata.json",
+          "bytes": 1849,
+          "sha256": "b83250037caf384167e6fcbc6e05b5000b0b6d565a6b61010813f185be38041b"
+        },
+        "rawRequest": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/d3c3201a-a478-466e-885a-0cb083390fea.request.bin",
+          "bytes": 1327,
+          "sha256": "9306e691ecd10b64e896773a59790fa6f2804ea63eca31a19b3e36701b188221"
+        },
+        "rawResponse": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/d3c3201a-a478-466e-885a-0cb083390fea.response.bin",
+          "bytes": 628,
+          "sha256": "f2e3b4cdb0bb0808a4ff9e7fa7a0bfc757da8260d4f814743e484356d94de4f4"
+        },
+        "providerMessage": "{\"selection\": 0}",
+        "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+        "selection": 0,
+        "selectedOption": {
+          "supplementalExplanation": "이 경로 설명은 확인된 계단 이용 불가 조건에 연결되며 경로 선택은 경로 엔진의 결과입니다.",
+          "evidence": {
+            "documentId": "EQ-003",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+          }
+        },
+        "serviceInputChunks": [
+          {
+            "documentId": "EQ-003",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+            "contentHash": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8",
+            "bodySha256": "7604bf908f05229a8bac1780d66fea9759698608ef2ef1affb7deb9766f9f657"
+          },
+          {
+            "documentId": "EQ-001",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+            "contentHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+            "bodySha256": "ce14cac741a8ecb80612741962a7d1acf0f9c197139b5352380db1e89d77da0e"
+          }
+        ],
+        "acceptedSupplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "ko",
+          "supplementalExplanation": "이 경로 설명은 확인된 계단 이용 불가 조건에 연결되며 경로 선택은 경로 엔진의 결과입니다.",
+          "evidence": [
+            {
+              "documentId": "EQ-003",
+              "documentVersion": "0.1.0",
+              "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+            }
+          ]
+        },
+        "supplementUtf8Sha256": "5ff59e48296320d0cb515c4e368ee2027685ba160f0d0b4227ebf15594daf1c3",
+        "mechanism": "Actual Qwen selection of approved options; server expands the selected approved sentence. Full procedure chunks are captured at the service/provider-adapter boundary; the external wire contains approved options rather than full procedure bodies."
+      },
+      "retrieval": [
+        {
+          "id": "597337aa-12ce-4ff8-963f-07207d72ded7",
+          "applicability": null,
+          "fts": [
+            {
+              "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+              "score": 9.69895827736186
+            },
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.000005526528067112807
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+              "score": 0.9049007149319168
+            },
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.8492065132119259
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+              "score": 0.03278688524590164
+            },
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.03225806451612903
+            }
+          ],
+          "filters": [
+            {
+              "documentId": "COMMON-001",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "COMMON-002",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "COMMON-003",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "COMMON-004",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "EQ-001",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "EQ-003",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "EQ-004",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "EQ-005",
+              "eligible": false,
+              "reasons": [
+                "hazard",
+                "action"
+              ]
+            },
+            {
+              "documentId": "EQ-006",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven",
+                "movement-policy-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-003",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "substance",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "policy"
+              ]
+            },
+            {
+              "documentId": "FG-005",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "policy",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-006",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "substance",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-007",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-008",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "action"
+              ]
+            }
+          ],
+          "vectorDimensions": 384,
+          "queryVectorSha256": "f0823440e8e67934129bcfdb6fe742ca8b61f37000009fed9202fdd79d9c2dfc"
+        }
+      ],
+      "clockComparison": {
+        "frozenUtc": "2026-09-21T09:30:00.000Z",
+        "eligible": [
+          {
+            "documentId": "EQ-001",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+            "contentHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004"
+          },
+          {
+            "documentId": "EQ-003",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+            "contentHash": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8"
+          }
+        ],
+        "liveTimes": [
+          "2026-09-21T17:28:16.060Z",
+          "2026-09-21T17:28:16.069Z",
+          "2026-09-21T17:28:16.333Z",
+          "2026-09-21T17:28:16.337Z",
+          "2026-09-21T17:28:16.338Z"
+        ],
+        "scope": "Only this request and these observed clock reads on the captured immutable corpus."
+      },
+      "equipmentHistory": [
+        {
+          "sequence": 1,
+          "virtualTimeMs": 0,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 2,
+          "virtualTimeMs": 0,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 3,
+          "virtualTimeMs": 1000,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 4,
+          "virtualTimeMs": 1000,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 5,
+          "virtualTimeMs": 1000,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 6,
+          "virtualTimeMs": 1000,
+          "headingDeg": 0,
+          "slewDeg": 0
+        }
+      ],
+      "equipmentEvents": [
+        {
+          "eventId": "ceb6d3f0-6ce2-4432-a43f-59922f90c258:EQ-PROFILE-ROUTES-001",
+          "incidentId": null,
+          "runId": "ceb6d3f0-6ce2-4432-a43f-59922f90c258",
+          "kind": "scenario.equipment.pose",
+          "actorId": "scenario",
+          "occurredAt": "2026-09-21T17:28:15.184Z",
+          "detail": "{\"id\":\"EQ-PROFILE-ROUTES-001\",\"atMs\":1000,\"type\":\"equipment.pose\",\"position\":{\"x\":35,\"y\":25},\"headingDeg\":0,\"speedMps\":2.5,\"slewDeg\":0}",
+          "version": 1
+        }
+      ],
+      "checks": {
+        "uniqueProviderCallJoin": true,
+        "requestHash": true,
+        "responseHash": true,
+        "providerMessageHash": true,
+        "providerCallId": true,
+        "actualProviderModel": true,
+        "selectedExactEq003": true,
+        "acceptedExactReviewed": true,
+        "actionAndLocale": true,
+        "uniqueGenerationRow": true,
+        "completeChunksMatchApproved": true,
+        "wireOptionsMatchReviewedChunks": true,
+        "eq002AbsentProviderOptions": true,
+        "eq002AbsentServiceChunks": true,
+        "currentRequestFresh": true,
+        "beforeAfterGuidanceIdentical": true,
+        "requestIsAuthoritativeGuide": true,
+        "matchingConfirmedProfile": true,
+        "engineRouteBeforeAfterValid": true,
+        "engineRouteMatchesCurrentGuide": true,
+        "allSelectedEdgesNonstairs": true,
+        "equipmentExposureKnown": true,
+        "queryVectorJoinsUniquePhaseRetrieval": true,
+        "actual384Vector": true,
+        "clockEligibleIdsVersionsContentEqual": true,
+        "eq002RejectedAtEveryObservedClock": true,
+        "corpusStable": true,
+        "storedEq003CitationPresent": true,
+        "originalForbiddenIdsAbsentFromEveryRank": true,
+        "originalForbiddenIdsAbsentFromInputOutput": true,
+        "genuineApprovalPredatesAllReferenceClocks": true
+      },
+      "failedChecks": [],
+      "publication": {
+        "surface": "controlled-service-model",
+        "currentGuideSupplement": null,
+        "currentGuideEvidence": [],
+        "persistedEvidence": [
+          {
+            "guidance_id": "GUIDANCE:ceb6d3f0-6ce2-4432-a43f-59922f90c258:5b2766da-752b-4e69-86e6-30e83e425b42:WORKER-B",
+            "document_id": "EQ-003",
+            "document_version": "0.1.0",
+            "chunk_id": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+          }
+        ],
+        "http": "NOT_RUN_ON_THIS_SURFACE",
+        "sse": "NOT_RUN_ON_THIS_SURFACE",
+        "physicalUiAudio": "NOT_RUN_ON_THIS_SURFACE",
+        "note": "enrichGuidance is called directly; accepted service supplement is not attached to current guidance. Stored guidance_evidence is keyed by stable guidance ID and is not a per-primary-version publication receipt."
+      }
+    },
+    {
+      "phase": "additive-en",
+      "locale": "en",
+      "measured": true,
+      "startedAt": "2026-09-21T17:28:16.393Z",
+      "completedAt": "2026-09-21T17:28:16.771Z",
+      "elapsedMs": 377.18081000000166,
+      "normalServiceDeadlineMs": 5000,
+      "artifact": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/additive-en/result.json",
+        "bytes": 375117,
+        "sha256": "95e3ade65c7aa5c15055e6a508e30f1e61592aaed8d4eb23fa995dd283d4e929"
+      },
+      "before": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/additive-en/before.json",
+        "bytes": 85067,
+        "sha256": "965385e106ae665a1ca6357eb166735eb5ee9f97a8319299baac61ced266ef30"
+      },
+      "after": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/additive-en/after.json",
+        "bytes": 85067,
+        "sha256": "d8872b3bf901c16debedccbb87fbebc34679787a2cf3f911db1adc197af25d7d"
+      },
+      "guidance": {
+        "runId": "ceb6d3f0-6ce2-4432-a43f-59922f90c258",
+        "workerId": "WORKER-B",
+        "guidanceId": "GUIDANCE:ceb6d3f0-6ce2-4432-a43f-59922f90c258:5b2766da-752b-4e69-86e6-30e83e425b42:WORKER-B",
+        "primaryGuidanceVersion": 4,
+        "profileVersion": 4,
+        "routeVersion": 1,
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "positionStatus": "known",
+        "profile": {
+          "workerId": "WORKER-B",
+          "version": 4,
+          "preferredLocale": "en",
+          "locale": "en",
+          "canUseStairs": false,
+          "speedMps": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "needsAssistance": true,
+          "needsCompanion": true,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T17:28:16.373Z"
+        },
+        "waypoints": [
+          {
+            "x": 65,
+            "y": 25,
+            "nodeId": "WORKER-POSITION",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 65,
+            "y": 42,
+            "nodeId": "J-B-65",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 90,
+            "y": 42,
+            "nodeId": "J-B-90",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 100,
+            "y": 42,
+            "nodeId": "J-B-100",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 125,
+            "y": 42,
+            "nodeId": "REFUGE-02",
+            "floorId": "GROUND"
+          }
+        ],
+        "destinationId": "REFUGE-02"
+      },
+      "engineReevaluation": {
+        "origin": "Actual candidate evaluateWorkerPlan result from captured authoritative snapshot; not intercepted original decision",
+        "decision": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "hazardIds": [
+            "EQUIPMENT-A:sk1265-at6:2:load:6"
+          ],
+          "hazardType": "equipment",
+          "priority": "high",
+          "route": {
+            "kind": "valid",
+            "waypoints": [
+              {
+                "x": 65,
+                "y": 25,
+                "nodeId": "WORKER-POSITION",
+                "floorId": "GROUND"
+              },
+              {
+                "x": 65,
+                "y": 42,
+                "nodeId": "J-B-65",
+                "floorId": "GROUND"
+              },
+              {
+                "x": 90,
+                "y": 42,
+                "nodeId": "J-B-90",
+                "floorId": "GROUND"
+              },
+              {
+                "x": 100,
+                "y": 42,
+                "nodeId": "J-B-100",
+                "floorId": "GROUND"
+              },
+              {
+                "x": 125,
+                "y": 42,
+                "nodeId": "REFUGE-02",
+                "floorId": "GROUND"
+              }
+            ],
+            "edgeIds": [
+              "EDGE-EGRESS-A-NORTH",
+              "EDGE-B-02",
+              "EDGE-B-03",
+              "EDGE-B-04"
+            ],
+            "destinationId": "REFUGE-02",
+            "distanceM": 77,
+            "estimatedSeconds": 256.6666666666667,
+            "assistanceRequired": true
+          },
+          "destinationId": "REFUGE-02",
+          "assistanceRequired": true,
+          "reasonCode": "evacuate",
+          "exposure": {
+            "current": true,
+            "plannedRoute": true
+          }
+        },
+        "selectedEdges": [
+          {
+            "id": "EDGE-B-02",
+            "from": "J-B-65",
+            "to": "J-B-90",
+            "pathId": "PATH-B",
+            "widthM": 4,
+            "stairs": false,
+            "accessible": true,
+            "enabled": true,
+            "initialEgress": false
+          },
+          {
+            "id": "EDGE-B-03",
+            "from": "J-B-90",
+            "to": "J-B-100",
+            "pathId": "PATH-B",
+            "widthM": 4,
+            "stairs": false,
+            "accessible": true,
+            "enabled": true,
+            "initialEgress": false
+          },
+          {
+            "id": "EDGE-B-04",
+            "from": "J-B-100",
+            "to": "REFUGE-02",
+            "pathId": "PATH-B",
+            "widthM": 4,
+            "stairs": false,
+            "accessible": true,
+            "enabled": true,
+            "initialEgress": false
+          },
+          {
+            "id": "EDGE-EGRESS-A-NORTH",
+            "from": "WORKER-A-START",
+            "to": "J-B-65",
+            "pathId": "PATH-C",
+            "widthM": 4,
+            "stairs": false,
+            "accessible": true,
+            "enabled": true,
+            "initialEgress": true
+          }
+        ]
+      },
+      "actualModel": {
+        "provider": {
+          "provider": "openai-compatible",
+          "model": "Qwen3-0.6B-Q8_0",
+          "version": "23749fefcc72300e3a2ad315e1317431b06b590a",
+          "mode": "actual"
+        },
+        "embedding": {
+          "provider": "transformers.js@3.8.1/onnxruntime-node",
+          "model": "Xenova/multilingual-e5-small",
+          "version": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+          "dimensions": 384,
+          "mode": "actual"
+        },
+        "callId": "chatcmpl-V2430KWooIH4PjyfYmDW4j9KIuQh8ZG2",
+        "ragRunId": "fe3f6667-7331-4c27-86da-a132f8ab31cc",
+        "metadata": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/15486ba8-93db-4dbc-8b3b-07a8e15e6980.metadata.json",
+          "bytes": 1847,
+          "sha256": "cc3f3dcb3872e24ead1a5d97832481256331882d411bb2691b1264c2576bdadb"
+        },
+        "rawRequest": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/15486ba8-93db-4dbc-8b3b-07a8e15e6980.request.bin",
+          "bytes": 1331,
+          "sha256": "f87266f781e9e3ec17c7752e0c90e27eaafd12486c8677460867a240875f946a"
+        },
+        "rawResponse": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/15486ba8-93db-4dbc-8b3b-07a8e15e6980.response.bin",
+          "bytes": 652,
+          "sha256": "1374aec5411c4f8bf4f192ac33b666c4316ef467e64dd255daf6d61993b897d8"
+        },
+        "providerMessage": "{\"selection\": 0}",
+        "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+        "selection": 0,
+        "selectedOption": {
+          "supplementalExplanation": "This route explanation is tied to the confirmed restriction on using stairs, and route selection is the result of the routing engine.",
+          "evidence": {
+            "documentId": "EQ-003",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+          }
+        },
+        "serviceInputChunks": [
+          {
+            "documentId": "EQ-003",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+            "contentHash": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8",
+            "bodySha256": "7604bf908f05229a8bac1780d66fea9759698608ef2ef1affb7deb9766f9f657"
+          },
+          {
+            "documentId": "EQ-001",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+            "contentHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+            "bodySha256": "ce14cac741a8ecb80612741962a7d1acf0f9c197139b5352380db1e89d77da0e"
+          }
+        ],
+        "acceptedSupplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "en",
+          "supplementalExplanation": "This route explanation is tied to the confirmed restriction on using stairs, and route selection is the result of the routing engine.",
+          "evidence": [
+            {
+              "documentId": "EQ-003",
+              "documentVersion": "0.1.0",
+              "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+            }
+          ]
+        },
+        "supplementUtf8Sha256": "0b979975796d9943dc5650c12f8b25d2cc3d106ebf697c14ddfc17564a5d2ca4",
+        "mechanism": "Actual Qwen selection of approved options; server expands the selected approved sentence. Full procedure chunks are captured at the service/provider-adapter boundary; the external wire contains approved options rather than full procedure bodies."
+      },
+      "retrieval": [
+        {
+          "id": "65bb7e1b-cb91-48e0-83d9-b5e82d4da963",
+          "applicability": null,
+          "fts": [
+            {
+              "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+              "score": 9.69895827736186
+            },
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.000005526528067112807
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+              "score": 0.9049007149319168
+            },
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.8492065132119259
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+              "score": 0.03278688524590164
+            },
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.03225806451612903
+            }
+          ],
+          "filters": [
+            {
+              "documentId": "COMMON-001",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "COMMON-002",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "COMMON-003",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "COMMON-004",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "EQ-001",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "EQ-003",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "EQ-004",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "EQ-005",
+              "eligible": false,
+              "reasons": [
+                "hazard",
+                "action"
+              ]
+            },
+            {
+              "documentId": "EQ-006",
+              "eligible": false,
+              "reasons": [
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven",
+                "movement-policy-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-003",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "substance",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "policy"
+              ]
+            },
+            {
+              "documentId": "FG-005",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "policy",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-006",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "substance",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-007",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "action"
+              ]
+            },
+            {
+              "documentId": "FG-008",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "action"
+              ]
+            }
+          ],
+          "vectorDimensions": 384,
+          "queryVectorSha256": "f0823440e8e67934129bcfdb6fe742ca8b61f37000009fed9202fdd79d9c2dfc"
+        }
+      ],
+      "clockComparison": {
+        "frozenUtc": "2026-09-21T09:30:00.000Z",
+        "eligible": [
+          {
+            "documentId": "EQ-001",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+            "contentHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004"
+          },
+          {
+            "documentId": "EQ-003",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+            "contentHash": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8"
+          }
+        ],
+        "liveTimes": [
+          "2026-09-21T17:28:16.393Z",
+          "2026-09-21T17:28:16.402Z",
+          "2026-09-21T17:28:16.765Z",
+          "2026-09-21T17:28:16.770Z",
+          "2026-09-21T17:28:16.771Z"
+        ],
+        "scope": "Only this request and these observed clock reads on the captured immutable corpus."
+      },
+      "equipmentHistory": [
+        {
+          "sequence": 1,
+          "virtualTimeMs": 0,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 2,
+          "virtualTimeMs": 0,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 3,
+          "virtualTimeMs": 1000,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 4,
+          "virtualTimeMs": 1000,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 5,
+          "virtualTimeMs": 1000,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 6,
+          "virtualTimeMs": 1000,
+          "headingDeg": 0,
+          "slewDeg": 0
+        },
+        {
+          "sequence": 7,
+          "virtualTimeMs": 1000,
+          "headingDeg": 0,
+          "slewDeg": 0
+        }
+      ],
+      "equipmentEvents": [
+        {
+          "eventId": "ceb6d3f0-6ce2-4432-a43f-59922f90c258:EQ-PROFILE-ROUTES-001",
+          "incidentId": null,
+          "runId": "ceb6d3f0-6ce2-4432-a43f-59922f90c258",
+          "kind": "scenario.equipment.pose",
+          "actorId": "scenario",
+          "occurredAt": "2026-09-21T17:28:15.184Z",
+          "detail": "{\"id\":\"EQ-PROFILE-ROUTES-001\",\"atMs\":1000,\"type\":\"equipment.pose\",\"position\":{\"x\":35,\"y\":25},\"headingDeg\":0,\"speedMps\":2.5,\"slewDeg\":0}",
+          "version": 1
+        }
+      ],
+      "checks": {
+        "uniqueProviderCallJoin": true,
+        "requestHash": true,
+        "responseHash": true,
+        "providerMessageHash": true,
+        "providerCallId": true,
+        "actualProviderModel": true,
+        "selectedExactEq003": true,
+        "acceptedExactReviewed": true,
+        "actionAndLocale": true,
+        "uniqueGenerationRow": true,
+        "completeChunksMatchApproved": true,
+        "wireOptionsMatchReviewedChunks": true,
+        "eq002AbsentProviderOptions": true,
+        "eq002AbsentServiceChunks": true,
+        "currentRequestFresh": true,
+        "beforeAfterGuidanceIdentical": true,
+        "requestIsAuthoritativeGuide": true,
+        "matchingConfirmedProfile": true,
+        "engineRouteBeforeAfterValid": true,
+        "engineRouteMatchesCurrentGuide": true,
+        "allSelectedEdgesNonstairs": true,
+        "equipmentExposureKnown": true,
+        "queryVectorJoinsUniquePhaseRetrieval": true,
+        "actual384Vector": true,
+        "clockEligibleIdsVersionsContentEqual": true,
+        "eq002RejectedAtEveryObservedClock": true,
+        "corpusStable": true,
+        "storedEq003CitationPresent": true,
+        "originalForbiddenIdsAbsentFromEveryRank": true,
+        "originalForbiddenIdsAbsentFromInputOutput": true,
+        "genuineApprovalPredatesAllReferenceClocks": true
+      },
+      "failedChecks": [],
+      "publication": {
+        "surface": "controlled-service-model",
+        "currentGuideSupplement": null,
+        "currentGuideEvidence": [],
+        "persistedEvidence": [
+          {
+            "guidance_id": "GUIDANCE:ceb6d3f0-6ce2-4432-a43f-59922f90c258:5b2766da-752b-4e69-86e6-30e83e425b42:WORKER-B",
+            "document_id": "EQ-003",
+            "document_version": "0.1.0",
+            "chunk_id": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+          }
+        ],
+        "http": "NOT_RUN_ON_THIS_SURFACE",
+        "sse": "NOT_RUN_ON_THIS_SURFACE",
+        "physicalUiAudio": "NOT_RUN_ON_THIS_SURFACE",
+        "note": "enrichGuidance is called directly; accepted service supplement is not attached to current guidance. Stored guidance_evidence is keyed by stable guidance ID and is not a per-primary-version publication receipt."
+      }
+    }
+  ],
+  "sourceInterpretation": {
+    "eq003": "Both exact approved sentences assert a confirmed restriction on using stairs and attribute route selection to the engine. Captured profile versions 3 and 4 have canUseStairs=false with confirmation timestamps, and corresponding independent candidate-engine reevaluations produce valid matching non-stair routes. No destination, direction change, demographic inference, or support acceptance/arrival is asserted by the supplement.",
+    "eq002": "Its approved supplement is conditional, but its document requires a real direction-change update. This stairs history shows heading/slew 0 throughout and a single initial pose event, with profile updates at fixed virtual 1000 ms. No direction change is established or invented; EQ-002 is excluded before ranking/model and is absent from accepted citations. No previous-route invalidation is claimed.",
+    "eq001": "The additional candidate is body-applicable to the observed equipment exposure, known position and valid constrained route. It is an option in the prompt but EQ-003 is selected in both measured invocations. Source004 does not impose the original extra COMMON-only whitelist."
+  },
+  "originalQ03": {
+    "artifact": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-03.json",
+      "bytes": 37144,
+      "sha256": "4d3219cb5ddcc96341f3322d0bfbcc04b7d84f443d580007db2116a97f27c17d"
+    },
+    "verdict": "FAIL",
+    "failedAssertions": [
+      {
+        "name": "only independently allowed documents",
+        "passed": false,
+        "observed": [
+          "EQ-001"
+        ]
+      },
+      {
+        "name": "candidate eligibility agrees with independent metadata applicability",
+        "passed": false,
+        "observed": [
+          "EQ-001",
+          "EQ-002",
+          "EQ-003"
+        ]
+      },
+      {
+        "name": "all and only eligible vectors actually scored",
+        "passed": false,
+        "observed": [
+          "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+          "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+          "EQ-003:0.1.0:efba24b4441c045b:procedure"
+        ]
+      }
+    ],
+    "separatedComparisons": {
+      "source004NativeComparisons": {
+        "source": "sources/emul-004.body.md:469-478",
+        "status": "PASS",
+        "comparisons": [
+          {
+            "name": "frozen outcome",
+            "assertion": {
+              "name": "frozen outcome",
+              "passed": true,
+              "observed": "matched"
+            }
+          },
+          {
+            "name": "required documents or conflict witnesses",
+            "assertion": {
+              "name": "required documents or conflict witnesses",
+              "passed": true,
+              "observed": [
+                "EQ-003",
+                "EQ-001"
+              ]
+            }
+          },
+          {
+            "name": "forbidden documents absent",
+            "assertion": {
+              "name": "forbidden documents absent",
+              "passed": true,
+              "observed": [
+                "EQ-003",
+                "EQ-001"
+              ]
+            }
+          },
+          {
+            "name": "selected procedures retain engine action",
+            "assertion": {
+              "name": "selected procedures retain engine action",
+              "passed": true,
+              "observed": [
+                {
+                  "id": "EQ-003",
+                  "actions": [
+                    "FOLLOW_VALIDATED_ROUTE"
+                  ]
+                },
+                {
+                  "id": "EQ-001",
+                  "actions": [
+                    "ALERT_HAZARD",
+                    "FOLLOW_VALIDATED_ROUTE"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "forbidden documents absent from every score stage",
+            "assertion": {
+              "name": "forbidden documents absent from every score stage",
+              "passed": true,
+              "observed": [
+                "EQ-003",
+                "EQ-001",
+                "EQ-003",
+                "EQ-001",
+                "EQ-003",
+                "EQ-001"
+              ]
+            }
+          }
+        ],
+        "scope": "Required/forbidden document, action and retrieval status comparisons only. Current body applicability/semantic meaning requires separate evidence."
+      },
+      "extraWhitelistDiagnostic": {
+        "name": "only independently allowed documents",
+        "passed": false,
+        "observed": [
+          "EQ-001"
+        ]
+      },
+      "frozenAggregatePolicy": "The full original assertion list still determines the raw frozen verdict, including the extra whitelist. Neither comparison overwrites or waives a raw failure."
+    },
+    "rawOutcome": "matched",
+    "rawDocumentIds": [
+      "EQ-003",
+      "EQ-001"
+    ],
+    "sidecar": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/frozen-0930-sidecar.json",
+      "bytes": 57860,
+      "sha256": "f0fb0b1f3cab4d28d683cdb4a19d0dd5b2544432d6a216c24a4235654c6b1b62"
+    },
+    "requiredEq003Retrieved": true,
+    "disposition": "Original raw FAIL retained. Additional EQ-001 violates the card's COMMON-only allowedAdditionalDocumentIds rule; native required EQ-003, forbidden-ID, outcome and action assertions pass. This interpretation does not change the fixture, raw verdict or source requirements.",
+    "sidecarOriginalReference": {
+      "candidate": "C1 candidate-70da1337",
+      "artifact": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-70da1337/module-attempt-01/retrieval/Q-RAG-07-03.json",
+        "bytes": 41808,
+        "sha256": "0b7c1401507381101a38aa1ce0e6e50ee22918023ac63cf9f956c0d379fe5db5"
+      },
+      "recordedSha256": "0b7c1401507381101a38aa1ce0e6e50ee22918023ac63cf9f956c0d379fe5db5",
+      "matchesHistoricalC1Artifact": true,
+      "frozenCard": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c2-integration-preparation/stairs-extension-card.md",
+        "bytes": 8207,
+        "sha256": "e87d73b9a98f480e59cb746df48e5f5640ccb6114aa8c2f02a3404bf06719fb3"
+      },
+      "harness": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428-r1/stairs-runtime.ts",
+        "bytes": 9265,
+        "sha256": "7776e81a7349f2ea3a93989f879508141500f3ff45eede05673c55d0b5a31f56"
+      },
+      "interpretation": "The sidecar deliberately retains the frozen historical C1 raw-FAIL hash. It does not claim to hash the fresh C4 raw result, which is bound separately in originalQ03.artifact."
+    }
+  },
+  "gaps": [
+    "This component surface demonstrates actual model selection, service acceptance and stored citation only; it does not demonstrate current-guidance, HTTP or SSE publication of the stairs supplement.",
+    "No browser, physical audio, actuator, real equipment or real field safety outcome was exercised.",
+    "Engine validation in before/after artifacts is an independent reevaluation of captured authoritative state, not an intercepted original engine decision.",
+    "The explicit English invocation retains the frozen Korean retrieval query; it proves English output selection for this input, not arbitrary English-query retrieval.",
+    "EQ-002 direction-change positive behavior is outside this stairs review."
+  ],
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-70da1337/module-attempt-01/retrieval/Q-RAG-07-03.json",
+      "bytes": 41808,
+      "sha256": "0b7c1401507381101a38aa1ce0e6e50ee22918023ac63cf9f956c0d379fe5db5"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-03.json",
+      "bytes": 37144,
+      "sha256": "4d3219cb5ddcc96341f3322d0bfbcc04b7d84f443d580007db2116a97f27c17d"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/15486ba8-93db-4dbc-8b3b-07a8e15e6980.metadata.json",
+      "bytes": 1847,
+      "sha256": "cc3f3dcb3872e24ead1a5d97832481256331882d411bb2691b1264c2576bdadb"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/67d3de1a-374d-4356-aa9d-2ebc47bf194a.metadata.json",
+      "bytes": 1839,
+      "sha256": "9953f4d536942b346bdab30c7f11ac3db2e45482cc6c2aa8da282786ded6fda8"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/d3c3201a-a478-466e-885a-0cb083390fea.metadata.json",
+      "bytes": 1849,
+      "sha256": "b83250037caf384167e6fcbc6e05b5000b0b6d565a6b61010813f185be38041b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/15486ba8-93db-4dbc-8b3b-07a8e15e6980.request.bin",
+      "bytes": 1331,
+      "sha256": "f87266f781e9e3ec17c7752e0c90e27eaafd12486c8677460867a240875f946a"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/15486ba8-93db-4dbc-8b3b-07a8e15e6980.response.bin",
+      "bytes": 652,
+      "sha256": "1374aec5411c4f8bf4f192ac33b666c4316ef467e64dd255daf6d61993b897d8"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/67d3de1a-374d-4356-aa9d-2ebc47bf194a.request.bin",
+      "bytes": 1327,
+      "sha256": "9306e691ecd10b64e896773a59790fa6f2804ea63eca31a19b3e36701b188221"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/67d3de1a-374d-4356-aa9d-2ebc47bf194a.response.bin",
+      "bytes": 652,
+      "sha256": "ac049b23d72c07271bb0a1e2d6c523598e5e5d72582cf7ec41e6f6fa79398098"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/d3c3201a-a478-466e-885a-0cb083390fea.request.bin",
+      "bytes": 1327,
+      "sha256": "9306e691ecd10b64e896773a59790fa6f2804ea63eca31a19b3e36701b188221"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/private-capture/d3c3201a-a478-466e-885a-0cb083390fea.response.bin",
+      "bytes": 628,
+      "sha256": "f2e3b4cdb0bb0808a4ff9e7fa7a0bfc757da8260d4f814743e484356d94de4f4"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/capture/proxy-manifest.json",
+      "bytes": 2534,
+      "sha256": "bfa382858f78364edb109cb7437cb61bcb72385df19606e8e65be286aeccd178"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/entry-end.json",
+      "bytes": 6534,
+      "sha256": "96a16770a8c62814d01564fefc5adc0b5893f03dfa70a81d8402557f955af18b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/entry-start.json",
+      "bytes": 708,
+      "sha256": "bde011198277c4760b750d4d451a511d240caa808c21fba92b3d0f9efc84d183"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/extension-result.json",
+      "bytes": 344,
+      "sha256": "4361a9b28f4f6d595379091c14c5a8d31bcb41ae7e4ac5140a17377ee944eafd"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/additive-en/after.json",
+      "bytes": 85067,
+      "sha256": "d8872b3bf901c16debedccbb87fbebc34679787a2cf3f911db1adc197af25d7d"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/additive-en/before.json",
+      "bytes": 85067,
+      "sha256": "965385e106ae665a1ca6357eb166735eb5ee9f97a8319299baac61ced266ef30"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/additive-en/result.json",
+      "bytes": 375117,
+      "sha256": "95e3ade65c7aa5c15055e6a508e30f1e61592aaed8d4eb23fa995dd283d4e929"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/binding.json",
+      "bytes": 308113,
+      "sha256": "c4ee66bb059bc560a89b8f2ef6dd769f703e28f01d525304053c60572a708271"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/additive-en-profile-after.json",
+      "bytes": 116215,
+      "sha256": "884ea267abc251e03b544affb6b21253cda64201f29921f6e7fad46c3abc1553"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/additive-en-profile-before.json",
+      "bytes": 52566,
+      "sha256": "3abceb2f4af2be7129bb93502329ebeab4e0a98153e884ad5591049be36997dd"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/advance-1000-after.json",
+      "bytes": 98533,
+      "sha256": "f94efa626f8cf774c7ee6abaf30724507a1c969b254ed31ae5e49e7bdbce1050"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/advance-1000-before.json",
+      "bytes": 11001,
+      "sha256": "7499d4b45c890dc7151b240e990a041eab2028fcfd49c7437b107c5aad7df37f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/live-ko-profile-after.json",
+      "bytes": 110703,
+      "sha256": "9d121f78ec99a5bd5935279ea797d4bbb4b3705005f4446b555a85af8866bf98"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/live-ko-profile-before.json",
+      "bytes": 49824,
+      "sha256": "5672e222e16e94093ba066b311683abd7e3b1fdcc1f905db0f95a56a3a75df48"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/select-after.json",
+      "bytes": 12426,
+      "sha256": "2fd67a2884b98663d1a10afce589ab9440fb5a587990c2582f88a96d6c4fc27b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/select-before.json",
+      "bytes": 4054,
+      "sha256": "0496e0c54dcecd7581c82de82100630510838b8bbd6ce8e06bb47f98ee476735"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/start-after.json",
+      "bytes": 24620,
+      "sha256": "6da959bbd0034e1e60dc7787a4cb2633fdecb9b5ec349c2ec1aa0a0cf7b893f4"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/start-before.json",
+      "bytes": 5053,
+      "sha256": "c0d33a819ec76610492076605bdae4dbbe065b5df108df6c34c86859f7598e95"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/warmup-profile-after.json",
+      "bytes": 105119,
+      "sha256": "0e732d7032faee3e394cae26a11f5cda06467681e0e8697e9544ad328b53fe07"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/commands/warmup-profile-before.json",
+      "bytes": 47034,
+      "sha256": "fd9084e99f992a96da610c8e3d6fbff4f355215bd8e01f420f29d556158e390f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/corpus-after.json",
+      "bytes": 559603,
+      "sha256": "dbb54c56e38faed4601fe3eadbb4de112f0aba819b33206a9fee8c69a969956d"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/corpus-before.json",
+      "bytes": 559603,
+      "sha256": "493c030014a76a004e46a95757105af66558a2418d5fded6d0c02d9fd491abd0"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/corpus-live.json",
+      "bytes": 559603,
+      "sha256": "e44db9351c1e51ae4de451a59fbc881943cd352db1b268c78a9b528b8bd1d5ad"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/engine-initial.json",
+      "bytes": 192486,
+      "sha256": "f941f47dc565a785e7ab255771623c245af4d231d8b6469e975b84febc2dce0e"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/frozen-0930-sidecar.json",
+      "bytes": 57860,
+      "sha256": "f0fb0b1f3cab4d28d683cdb4a19d0dd5b2544432d6a216c24a4235654c6b1b62"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/live-ko/after.json",
+      "bytes": 82397,
+      "sha256": "5be64bba9aa14c8284b5abe9ad31c254c655d0dea6079415a0f6742cb9db28ca"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/live-ko/before.json",
+      "bytes": 82397,
+      "sha256": "12a08548605ff0baac9999b29af37e752230f48a5c07a719a02e0f7389199520"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/live-ko/result.json",
+      "bytes": 305067,
+      "sha256": "7b508b3866038891cf201fd7b6b20befe671595d9f601a5be7ae081275828886"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/provider-calls.json",
+      "bytes": 94538,
+      "sha256": "649a57190adf22c1b142836e000a2ba8de4c58df6c5498655c3a7894d2b65e90"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/service-initialize.json",
+      "bytes": 1907,
+      "sha256": "4aa59656917ba291a67390c19116a1f0a6353e38d6f397d1e8e5281e9b06b27c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/summary.json",
+      "bytes": 2257,
+      "sha256": "c3829eba91b587609c571f96859cbe91f7bca33db81b568473d74cd0788c871c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/warmup/after.json",
+      "bytes": 79655,
+      "sha256": "1a32b9faf53572bac36115b370011d47efad56a9105ee85d2b47a55a9c32b2d2"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/warmup/before.json",
+      "bytes": 79655,
+      "sha256": "a590072dfd9ad069396801c4975be90d06b4be6aa74eb96f8dc0bc89c72bfb55"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/warmup/result.json",
+      "bytes": 245332,
+      "sha256": "1a15f27bf851bd7610d9f5f8dc0daeb25ea39f81b8075fc97b8d63cc94a98e91"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c2-integration-preparation/stairs-extension-card.md",
+      "bytes": 8207,
+      "sha256": "e87d73b9a98f480e59cb746df48e5f5640ccb6114aa8c2f02a3404bf06719fb3"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c2-integration-preparation/stairs-semantic-oracle.md",
+      "bytes": 20496,
+      "sha256": "9206051eb823a0c500fb3dcbfd330a6025cf134ae36c3fcfd3b5c8f54f01ecd7"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428-r1/stairs-invocation.ts",
+      "bytes": 7621,
+      "sha256": "4c830c2f6a5f9cc03e54cf4443ebf7d3504c9c35e0d5a593369f890f96d4b2d8"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428-r1/stairs-runtime.ts",
+      "bytes": 9265,
+      "sha256": "7776e81a7349f2ea3a93989f879508141500f3ff45eede05673c55d0b5a31f56"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.body.md",
+      "bytes": 20661,
+      "sha256": "5339f3cd43df552e3bda5da24fbef2e72dc49f9cd1ea77bba401dadb6548f2db"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/data/knowledge/reviews/approvals.json",
+      "bytes": 6728,
+      "sha256": "ef2d2352527620d43d2a8ccd15a0f00bc740b3935dd995360c46382e1f3de00e"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/knowledge/equipment/EQ-001.md",
+      "bytes": 5104,
+      "sha256": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/knowledge/equipment/EQ-002.md",
+      "bytes": 5208,
+      "sha256": "b10f6892ec886a96f1570909095991319adb8ad1e758ab43aca75f9da1a4dd0c"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/knowledge/equipment/EQ-003.md",
+      "bytes": 5156,
+      "sha256": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8"
+    }
+  ]
+}

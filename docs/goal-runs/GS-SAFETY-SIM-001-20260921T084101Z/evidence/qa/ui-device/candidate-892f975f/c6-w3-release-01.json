@@ -1,0 +1,63 @@
+{
+  "kind": "c6-partition-union-release",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "recordedAt": "2026-09-22T00:20:09.220Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "expectedStates": 155,
+  "expectedTargets": 330,
+  "attemptedStates": 67,
+  "attemptedTargets": 140,
+  "wholeMatrixComplete": false,
+  "verdict": "INCOMPLETE_GRANT_EXPIRED",
+  "parts": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/surface-partition-v1/2026-09-22T00-16-31-245Z-97ab1644-93f1-4646-9722-7b39607ef7e9/report.json",
+      "sha256": "f14350d676e47d57c790040bfbf2bbf319434f6c99fc05ea344e55f2f702d70d",
+      "partition": "A",
+      "expectedStates": 93,
+      "expectedTargets": 198,
+      "statesAttempted": 34,
+      "targetsAttempted": 72,
+      "pngCount": 127,
+      "browserClosedAt": "2026-09-22T00:19:00.181Z",
+      "grantExpired": true,
+      "executionError": "Error: Outside C6 surface subwindow\n    at demand (file:///90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-partition-v1/guard.mjs:9:71)\n    at Object.checkWindow (file:///90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-partition-v1/guard.mjs:37:29)\n    at main (file:///90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-partition-v1/run.mjs:46:17)",
+      "freezeError": null,
+      "frozenInputsUnchanged": true,
+      "sourceChanged": false,
+      "verdict": "INCOMPLETE_OR_FAILED"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/surface-partition-v1/2026-09-22T00-16-31-300Z-db0bbdfb-db3d-417b-bd9c-b202f8b04e3c/report.json",
+      "sha256": "a91502e05ce9cb105969be2f892ec8810e50dca5d30a37e25966af36602cfa9c",
+      "partition": "B",
+      "expectedStates": 62,
+      "expectedTargets": 132,
+      "statesAttempted": 33,
+      "targetsAttempted": 68,
+      "pngCount": 106,
+      "browserClosedAt": "2026-09-22T00:19:00.052Z",
+      "grantExpired": true,
+      "executionError": "Error: Outside C6 surface subwindow\n    at demand (file:///90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-partition-v1/guard.mjs:9:71)\n    at Object.checkWindow (file:///90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-partition-v1/guard.mjs:37:29)\n    at main (file:///90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-partition-v1/run.mjs:46:17)",
+      "freezeError": null,
+      "frozenInputsUnchanged": true,
+      "sourceChanged": false,
+      "verdict": "INCOMPLETE_OR_FAILED"
+    }
+  ],
+  "browserReleasedAt": "2026-09-22T00:19:00.181Z",
+  "modelReleased": true,
+  "applicationStillRunning": true,
+  "processReceipt": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/runtime-02/w3a-process-01.json",
+  "deferred": [
+    "C6 assets7/6presets/21motions",
+    "C6 six-preset live invalidation",
+    "C6 stock HTTP lifecycle/support/reconnect",
+    "C6 native200%",
+    "C6 80-character identities",
+    "C6 accessibility supplement",
+    "Unselected B keyboard change and375/768 expanded label pending resource grant"
+  ],
+  "candidateUnchanged": true,
+  "previousCandidatesRemainSeparate": true
+}

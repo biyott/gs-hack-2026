@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "2.0.0",
+  "rigVersion": "3.0.0",
+  "assetId": "maeda-mc305",
+  "units": "meters",
+  "coordinates": "glTF Y-up, zero heading boom +X",
+  "supportedControls": [
+    "slew",
+    "boomAngle",
+    "boomLength",
+    "hookHeight"
+  ],
+  "nodes": {
+    "slew": "SLEW",
+    "boomPivot": "BOOM_PIVOT",
+    "telescopeStages": [
+      "TELESCOPIC_1",
+      "TELESCOPIC_2",
+      "TELESCOPIC_3",
+      "TELESCOPIC_4"
+    ],
+    "boomTip": "BOOM_TIP",
+    "hook": "HOOK",
+    "ropes": [
+      "HOIST_ROPE_1",
+      "HOIST_ROPE_2"
+    ],
+    "liftBarrel": "LIFT_BARREL",
+    "liftPiston": "LIFT_PISTON"
+  },
+  "baseline": {
+    "boomLength": 10.0,
+    "boomAngleDegrees": 55.0,
+    "hookHeight": 3.0,
+    "boomPivotPosition": [
+      0,
+      1.42,
+      0
+    ],
+    "telescopeLocalX": [
+      3.02,
+      1.93,
+      1.73,
+      1.53
+    ],
+    "boomTipLocalX": 1.79
+  },
+  "demoRanges": {
+    "boomLength": [
+      8.0,
+      10.6
+    ],
+    "boomAngleDegrees": [
+      30.0,
+      75.0
+    ],
+    "hookHeightMinimum": 1.0,
+    "hookHeightMaximum": 4.5
+  },
+  "poseRules": {
+    "slew": "SLEW rotation about local +Y; retain root identity",
+    "angle": "BOOM_PIVOT.rotation.z = angleRadians (absolute, baseline is +55deg)",
+    "length": "For each nested TELESCOPIC_i, position.x = baseline[i] + (boomLength - 10) / 4",
+    "tip": "tipX = boomLength*cos(angleRadians); tipY = 1.42 + boomLength*sin(angleRadians)",
+    "hook": "HOOK.position = [tipX, requestedHeight, 0], height range1.0..4.5; identity rotation and scale",
+    "ropes": "Rope i position=[tipX,hookHeight+0.23,zOffsets[i]], scale=[1,tipY-hookHeight-0.23,1], identity rotation; zOffsets=[0.07,-0.07]",
+    "hydraulic": "A=[0.59,1.02,0]; B=[2.3*cos(a)+0.22*sin(a),1.42+2.3*sin(a)-0.22*cos(a),0]; M=A+0.55*(B-A). LIFT_BARREL spans A..M and LIFT_PISTON spans M..B. Each unit cylinder points local+Y, origin at lower end: position=start, scale.y=length(end-start), quaternion=setFromUnitVectors(+Y,normalize(end-start))."
+  },
+  "geometryAssumptions": {
+    "nestedStageLengths": [
+      3.42,
+      2.33,
+      2.13,
+      1.93,
+      1.79
+    ],
+    "baselineOverlapMeters": 0.4,
+    "minimumOverlapAtMaximumExtensionMeters": 0.25,
+    "maximumOverlapAtMinimumExtensionMeters": 0.9,
+    "principalShellCount": 5,
+    "movingStageCount": 4,
+    "outerLongitudinalFacetsPerShell": 5,
+    "innerProfileScale": 0.88,
+    "outerHeightWidthMeters": [[0.46,0.37],[0.37,0.30],[0.29,0.245],[0.235,0.20],[0.185,0.16]],
+    "profileNote": "Authored hollow-shell reconstruction. Section lengths, pentagon angles and nonuniform wall thickness from a scaled inner profile are not manufacturer dimensions.",
+    "hookTopAboveOriginMeters": 0.23,
+    "note": "Demo kinematic limits preserve visual stage overlap and rope clearance; these are not certified manufacturer operating limits or load-chart guidance.",
+    "minimumVerticalRopeClearanceMeters": 0.69
+  }
+}

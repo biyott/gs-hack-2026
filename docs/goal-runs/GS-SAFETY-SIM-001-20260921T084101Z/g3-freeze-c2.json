@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "1.0.0",
+  "goalId": "GS-SAFETY-SIM-001",
+  "goalVersion": "1.0",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "gate": "G3",
+  "issuer": "/root",
+  "meaning": "Integrated candidate frozen and submitted for independent G4. Not product acceptance or a QA verdict.",
+  "gitHeadAloneIsNotCandidate": true,
+  "knownUnverifiedMandatoryResources": [
+    "Four actual phones and Controller plus two simultaneous Controlees",
+    "Physical table/marker calibration grid and 810-point accuracy observations",
+    "Successful LAN path after preserved failures; meaningful final QA retry authorized",
+    "Physical audible/haptic observation and full capture-origin-to-render timing"
+  ],
+  "limitations": [
+    "Producer checks and hash audits are not independent G4 results.",
+    "Prior candidates/failures remain preserved; no acceptance criterion or goal scope changed.",
+    "Only QA Lead may issue official AC and overall verdicts.",
+    "Actual camera pixels remain local only; PHONE-2 camera use is not authorized.",
+    "Source/asset/config/environment changes require QA impact analysis and a newly identified candidate."
+  ],
+  "issuedAt": "2026-09-21T14:57:48.417Z",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "candidateId": "sha256:0d42bacc04c50cd21c9c133e262838acb6f47e2e8d33d37ea450ce160f46bc3e",
+  "sourceSha256": "0f50d5d6cc16ca78718e88adc88669b3420ffef416b58d4c1d20d63ab9a35f77",
+  "sourceFiles": 990,
+  "artifactFiles": 475,
+  "artifactBytes": 1073126458,
+  "candidateRoot": "/home/b/.cache/gs-safety-qd001.7e7jy5oy",
+  "manifest": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/candidate-manifest-c2.json",
+    "sha256": "6f146ee34b7880e3a0c8012ae2a2485ec7d95e0314e183c555eb509060f54ef0",
+    "bytes": 278867
+  },
+  "stagedManifest": {
+    "path": "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/candidate-manifest-c2.json",
+    "sha256": "6f146ee34b7880e3a0c8012ae2a2485ec7d95e0314e183c555eb509060f54ef0",
+    "bytes": 278867
+  },
+  "supersedesForCurrentQA": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/g3-freeze-build04.json",
+    "sha256": "bb4412261394647ecfb7b1f0642e37236d7c0e38e152fcc5db0cd5bc293e37bf",
+    "bytes": 5252
+  },
+  "priorCandidatePreserved": true,
+  "build": {
+    "buildId": "QZCOSOj4hgBWlUIGbGUxu",
+    "webArtifactId": "sha256:bb45b99c3e42d8960051f9b93de4319967d785172a6940318fb54cd3c393b03b",
+    "originSourceSha256": "03154430f0dff32e6f072cdf8c66a96772ccee519787ea3ee0c02a968b991ec4",
+    "postbuildDelta": "Two parsed-equivalent test-only JSON fixture formatting changes;988 other rows unchanged; full before/after tables bound.",
+    "binding": {
+      "path": "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/c2-source-build-binding.json",
+      "sha256": "8a87da11c289324e8026e694952b3c37bc96121bd3c0bad6a4a1215d6c797d1d",
+      "bytes": 361691
+    },
+    "receipt": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/web-build-c2.json",
+      "sha256": "22d260198dd346ca47ac61b746a1f9d64e82f1afc3ea179bc326093c5e674132",
+      "bytes": 820
+    }
+  },
+  "mobile": {
+    "selectedApk": "build/mobile-candidate/gs-safety-1.0.0-candidate-4-debug.apk",
+    "apkSha256": "1d78f81eaa5d7d85a2f73d3d50b5acbbeeb4a0ea5cbbabcc538087f4fbeb515a",
+    "sourceManifestSha256": "bf5c0632ee554ea0b8fa671e7c5e9e29696e823ea54bd431e72452448f92151a",
+    "selector": {
+      "path": "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/mobile-build-binding.json",
+      "sha256": "432d42b846b4c40bd1353ce83cf0fbdc52d0ea15268fbfd5a3d716d1115ae72b",
+      "bytes": 23826
+    },
+    "reuseMeaning": "Unchanged Mobile4 source/APK, fresh C2 physical-device integration QA still required"
+  },
+  "goalInput": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/goal.input.txt",
+    "sha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796",
+    "bytes": 36286
+  },
+  "goalChange": "목표 변경 없음; goal v1.0 and frozen G0/AC retained",
+  "contracts": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/contracts/freeze-v1.0.4.json",
+      "sha256": "15f1456ba821634b76ec2037b7d028e7090a4408af185013f7b19ccb4664e748",
+      "bytes": 4408
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/contracts/implementation-binding-v1.0.4-r1.json",
+      "sha256": "35238b0b53389778df39bb4727f61d81f11c792468ea8d1c79822f63e7f8c448",
+      "bytes": 2088
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/contracts/freeze-v1.0.3.json",
+      "sha256": "9c074b761a1bfa7870066add68c75ea4a08b8595eaa6acdc52c2c167847f16bf",
+      "bytes": 5458
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/contracts/freeze-v1.0.2.json",
+      "sha256": "9b53450912b1a99020be2e5fb98f1d7b51dd97654659f03bb32619cee5c49a8f",
+      "bytes": 1737
+    }
+  ],
+  "integrationHandoff": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/g3-candidate-c2-handoff.md",
+    "sha256": "2f3af1bc2bfd82117d4d6927d6ec5e4a8c693e6a9c96cfdafda4e2c63a12ded2",
+    "bytes": 11121
+  },
+  "technicalState": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/candidate-c2-state.json",
+    "sha256": "0db20e87f4ddc0db0d5559b006b7cb4c3c40639ad3757e6a263e0b3f87547d4c",
+    "bytes": 3963
+  },
+  "launch": {
+    "path": "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/g3-launch-c2.md",
+    "sha256": "30aeac0125e2ab5d9fa053a6b6643e513b09bfc5536691be58fe655d1f17b7ec",
+    "bytes": 4812
+  },
+  "independentTechnicalIntegrity": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/qd001/c2-independent-audit.json",
+    "sha256": "04aa68b857a42e2789b068e7bdf54cbeeb7e9d9bb83b1c9e43983166e08b018c",
+    "bytes": 9175
+  },
+  "technicalFinalBinding": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c2-final-handoff-binding.json",
+    "sha256": "4561dfd46b269ee157bdf97a2fbaa298e46f4deebeb57b8616e74f03656e88fb",
+    "bytes": 3579
+  },
+  "externalSidecars": [
+    {
+      "repository": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/g3-candidate-c2-handoff.md",
+        "bytes": 11121,
+        "sha256": "2f3af1bc2bfd82117d4d6927d6ec5e4a8c693e6a9c96cfdafda4e2c63a12ded2"
+      },
+      "packaged": {
+        "path": "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/g3-candidate-c2-handoff.md",
+        "bytes": 11121,
+        "sha256": "2f3af1bc2bfd82117d4d6927d6ec5e4a8c693e6a9c96cfdafda4e2c63a12ded2"
+      }
+    },
+    {
+      "repository": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/candidate-c2-state.json",
+        "bytes": 3963,
+        "sha256": "0db20e87f4ddc0db0d5559b006b7cb4c3c40639ad3757e6a263e0b3f87547d4c"
+      },
+      "packaged": {
+        "path": "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/candidate-c2-state.json",
+        "bytes": 3963,
+        "sha256": "0db20e87f4ddc0db0d5559b006b7cb4c3c40639ad3757e6a263e0b3f87547d4c"
+      }
+    },
+    {
+      "repository": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/qd001/c2-independent-audit.json",
+        "bytes": 9175,
+        "sha256": "04aa68b857a42e2789b068e7bdf54cbeeb7e9d9bb83b1c9e43983166e08b018c"
+      },
+      "packaged": {
+        "path": "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/c2-independent-audit.json",
+        "bytes": 9175,
+        "sha256": "04aa68b857a42e2789b068e7bdf54cbeeb7e9d9bb83b1c9e43983166e08b018c"
+      }
+    }
+  ],
+  "historicalArchive": {
+    "path": "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/provenance/c2-historical-evidence.tar.gz",
+    "sha256": "865067790f0946b39f121e5573ce10c31fe68e0ff6aa1c23a8196482ea2dc894",
+    "bytes": 30756168
+  },
+  "historicalArchiveMeaning": "68 exact historical/material members, original execution identities retained; not current QA passes",
+  "auditEvidenceLimitation": {
+    "summary": "Initial auditor metadata JSON was overwritten by corrected checker execution before raw file preservation. Exact earlier observed tool output is preserved; it is not original JSON file bytes. Candidate content unchanged; corrected checks and lost-byte limitation are separately disclosed.",
+    "observation": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c2-binding-original-observation.json",
+      "sha256": "dda93dbe997659f4ac5be862822b0ac8697832f98a1309cb127519d49c34dab1",
+      "bytes": 1449
+    },
+    "exactToolOutput": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c2-binding-original-observation.jsonl",
+      "sha256": "c593a85d25edb3098527e7755881ef94ad1a07f199a78ed12bb4119ea38c7ba9",
+      "bytes": 6384
+    }
+  },
+  "rootReceiptChecks": {
+    "recordedAt": "2026-09-21T14:57:48.417Z",
+    "scope": "Final selected binding/sidecar/manifest/HEAD/build identity and original-goal verification; whole content audit performed independently by Technical review and must be independently received by QA",
+    "verifiedSidecars": [
+      "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/g3-candidate-c2-handoff.md",
+      "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/g3-candidate-c2-handoff.md",
+      "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/candidate-c2-state.json",
+      "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/candidate-c2-state.json",
+      "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/qd001/c2-independent-audit.json",
+      "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/c2-independent-audit.json"
+    ],
+    "g4Verdict": false
+  },
+  "resourceSchedule": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/g3-resource-schedule-v1.md",
+    "sha256": "309feba014cdc5e2cc5df91ab4c511b0169506985ff645f287853f7acd984412",
+    "bytes": 11255
+  },
+  "resourceRelease": {
+    "releasedAt": "2026-09-21T14:54:42.692982+00:00",
+    "activeOwnedBuilds": 0,
+    "appModelBrowserBlenderStarted": false,
+    "c1InputsUntouched": true,
+    "note": "Assembly/static/file hashing complete; QA owns next runtime window.",
+    "provider8092": "Existing pinned provider; QA schedules exclusive actual inference, no duplicate process",
+    "phones": "Only assigned QA owner controls the two connected phones; PHONE1 camera only, actual pixels local-only"
+  },
+  "qaGo": {
+    "authorized": true,
+    "authorizedAt": "2026-09-21T14:57:48.417Z",
+    "target": "/root/qa_lead",
+    "scope": "Independently receive exact C2 manifest/sidecars, then W1 server/recovery/arrival/security/order, W2 actual embedding/model, W3 web/3D/Android/LAN/CCTV and W4 fresh handoff/reviews. Original inputs and failures retained. QA defines affected regression, performs no product fixes, and alone issues official AC/overall verdicts."
+  }
+}

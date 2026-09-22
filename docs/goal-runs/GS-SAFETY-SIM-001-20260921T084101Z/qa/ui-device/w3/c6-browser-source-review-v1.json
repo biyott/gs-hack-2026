@@ -1,0 +1,249 @@
+{
+  "at": "2026-09-22T00:04:26.130Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "runtime": "NOT_RUN",
+  "originalC5Preserved": true,
+  "allIdentityDerivativesExact": true,
+  "records": [
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c5-runtime-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c6-runtime-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c5-long-id-runtime-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c6-long-id-runtime-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-issue-delegated-subgrant-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-issue-delegated-subgrant-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-bind-browser-freezes-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-bind-browser-freezes-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-asset-interactions-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-asset-interactions-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-equipment-invalidation-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-equipment-invalidation-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-ac12-coordinate-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-ac12-coordinate-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-guard-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-guard-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-ab-browser-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-ab-browser-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-ab-constructor-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-ab-constructor-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-guard-v1.1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-guard-v1.1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-lifecycle-browser-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-lifecycle-browser-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.1.guard.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.guard.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.1.observations.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.observations.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.1.md",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.md",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-gui-v1.1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-native-page-zoom-gui-v1.1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-gui-v1.1.guard.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-native-page-zoom-gui-v1.1.guard.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-method-v1.md",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-native-page-zoom-method-v1.md",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-fixture-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-fixture-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-fixture-v1.ids.json",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-fixture-v1.ids.json",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-fixture-v1.md",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-fixture-v1.md",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-actions-v1.1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-actions-v1.1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-actions-v1.1.guard.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-actions-v1.1.guard.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-refresh-paused-fixtures-v1.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-refresh-paused-fixtures-v1.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/run.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/run.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/guard.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/guard.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/events.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/events.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/focus-evidence.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/focus-evidence.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    },
+    {
+      "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-surface-adapter-v1/check-focus-continuation.mjs",
+      "target": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/check-focus-continuation.mjs",
+      "sourceUnchanged": true,
+      "targetUnchanged": true,
+      "exactLabelTransform": true,
+      "allFrozenHexHashesUnchanged": true
+    }
+  ]
+}

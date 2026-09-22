@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "issuedAt": "2026-09-22T00:12:25.467Z",
+  "reviewer": "/root/qa_resume/c6_review_security",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "verdict": "PASS",
+  "scope": "C6 source-security delta plus current exact component and G3/QA receipt bindings",
+  "findings": [],
+  "runtimeAC14": "NOT_ISSUED_BY_THIS_REVIEW",
+  "overallAcceptance": "NOT_ISSUED",
+  "g3": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/g3-freeze-c6.json",
+    "bytes": 11229,
+    "sha256": "537c1411b1dc3a1328aa098a58e789361bd5e7982a23ff776f745fef13dd3f50"
+  },
+  "qaReceipt": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/receipt-validation.json",
+    "bytes": 442047,
+    "sha256": "c42795855bbdc2f0f64f6dfcc6de28bf658b5689e5883315777465f86222c29c"
+  },
+  "evidence": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/security/audit-evidence.json",
+    "bytes": 20628,
+    "sha256": "f879a9108b332fb0ed82b237a84f7810704aca352a5706841f9a1723accf2f39"
+  },
+  "report": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/security/report.md",
+    "bytes": 6896,
+    "sha256": "21ccfe987b89d9edc4fc8588e5042fbda9e5a35b09fc865a2715c5dbb3f63465"
+  },
+  "producerEdits": false,
+  "runtimeExecution": false
+}

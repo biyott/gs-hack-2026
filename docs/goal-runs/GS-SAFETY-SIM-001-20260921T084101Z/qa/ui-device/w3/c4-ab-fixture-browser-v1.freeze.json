@@ -1,0 +1,169 @@
+{
+  "kind": "independent-c4-constructor-fixture-browser-source-freeze",
+  "version": "1",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "createdAt": "2026-09-21T18:24:08.331Z",
+  "runtime": "NOT_RUN",
+  "authorization": "NO_GRANT_CREATED",
+  "transportBoundary": "QA constructor snapshots and browser adapter; not native SSE or stock HTTP lifecycle",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-ab-constructor-v1.mjs",
+      "sha256": "6821f820e7032ae9ad9a861ea99f094f673e2e1b73299d50f1da39170c37cd26"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-ab-fixture-browser-v1.mjs",
+      "sha256": "7204efb818b1517d03d19761018cea6a52dff772fef85d2ef797577f9e7bcacf"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-ab-fixture-browser-v1.md",
+      "sha256": "4e539a50ba265cbfd6c97503e3a56cbe22b74ad0bc8595d2d9e18a16dab1623e"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c4.v2.json",
+      "sha256": "8a64152769ee5f6ff217c6f0216c73966e48e7cb22bb8f278810741c03c21fca"
+    }
+  ],
+  "sources": [
+    {
+      "path": "tsconfig.json",
+      "sha256": "e7eeeed46a5e6d3cc2a10a7b728db37c49dc02caf50bd6a9882d409c28f27de5"
+    },
+    {
+      "path": "package.json",
+      "sha256": "05f69146c99d48a824b5d86ca675016df85303ddb478f40b3817e40ba5bc6f0c"
+    },
+    {
+      "path": "src/server/db/index.ts",
+      "sha256": "8567cab6bc11314773258b4231e89ca10d8fc1bc2f4df105f970aa7ed60cb5bf"
+    },
+    {
+      "path": "src/server/db/run-repository.ts",
+      "sha256": "7e8f3e926dc95d05698db5de58a397906bf1bfcd027302c458287a08800bf7e4"
+    },
+    {
+      "path": "src/server/auth/index.ts",
+      "sha256": "ba9e2d61df5e4f8a4c2a2b1f6ba54c3da9c4ea916148f8668ccf99d8090b48f2"
+    },
+    {
+      "path": "src/server/auth/config.ts",
+      "sha256": "42f71cc9ae123586635c303dc1421b63c9d9f18c8a3a01fc04bf9134d3977783"
+    },
+    {
+      "path": "src/server/scenarios/schema.ts",
+      "sha256": "24cb9ca892b26428f67f5798951a68ecde1ba6af888bbdc3f87c20176d0e78f7"
+    },
+    {
+      "path": "src/server/scenarios/references.ts",
+      "sha256": "41b6b5110e422200cc2110cb4bb4a888fff7241a46974424ac4cf5216ec90a22"
+    },
+    {
+      "path": "src/server/simulation/configuration.ts",
+      "sha256": "a71c6bf1238bd453525f71777df4a314c6780fb93759efabdf7eddeba5fca723"
+    },
+    {
+      "path": "src/server/simulation/runtime.ts",
+      "sha256": "36b69175674865d1a60532a776ab37fb19ecdc3d88f96a94cb224596f1d1f415"
+    },
+    {
+      "path": "src/server/simulation/commands.ts",
+      "sha256": "08e6d6dd10bcdff30fd0884a14b79f3e9b0a2b41126cb7d5e6907dad097de6fd"
+    },
+    {
+      "path": "src/server/simulation/run.ts",
+      "sha256": "a4832a20907fe9c248d1dc7824e01009366d1671bb2fdc7627b5a5627d732143"
+    },
+    {
+      "path": "src/server/simulation/checkpoint.ts",
+      "sha256": "df429b3564a38891ee753478b5d7972f56ca796fc652bb77c19e871d0d936bbc"
+    },
+    {
+      "path": "src/server/simulation/snapshots.ts",
+      "sha256": "621148a7a131f526ae48f99f325e3669ea500c1172fe1485d40ad446045930ad"
+    },
+    {
+      "path": "src/server/simulation/evaluate.ts",
+      "sha256": "233d0f0f817869a5c532aef1a5b8fe731bd63ef7eec726b772d950e9a5d5c602"
+    },
+    {
+      "path": "src/server/simulation/incident-workflow.ts",
+      "sha256": "5df3c32c78e9f171e4d947f17fdbe89f42a953ec3180192926e8a26aa3370de4"
+    },
+    {
+      "path": "src/server/simulation/incident-scope.ts",
+      "sha256": "1a7c6fba6522a657c7d9020299c796b60b662b65a8b07beaad5ab8d48d46d726"
+    },
+    {
+      "path": "src/server/simulation/runtime-isolation.integration.test.ts",
+      "sha256": "35e8d59de7d33f188a290b2dbf581f569bf07109c3934ccbfc98603e65130796"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "sha256": "a8a5951d0f0d0e69282a9d8f1d6c93e5c7ccdf0e98d24fa28f68c4b0e5a21f5c"
+    },
+    {
+      "path": "packages/contracts/src/state.ts",
+      "sha256": "ccf642d8593198b8835d6b65ef865a49baa42aa659aefb75a86ca13591acba54"
+    },
+    {
+      "path": "packages/contracts/src/commands.ts",
+      "sha256": "df75873b40f68ff0090a3ecfbbb6870f1c835a06aea7053079d3ac6396904482"
+    },
+    {
+      "path": "packages/contracts/src/guidance.ts",
+      "sha256": "27b31acdacfb78ec34af3083cd23ef6b911d3f67f8513d4dd56ad6ce77528aa2"
+    },
+    {
+      "path": "src/server/realtime/order.ts",
+      "sha256": "455a4c6d8216013fc5ddbb3c7c2727d40bb2565562fe098ade097a9373beb057"
+    },
+    {
+      "path": "src/client/simulation-stream.ts",
+      "sha256": "f6e5b56300ab6bf81413be440e7c84befec1581e71e07611ab63a4bfc84c78d1"
+    },
+    {
+      "path": "src/components/console/entry-screen.tsx",
+      "sha256": "e2a61cfc597c40684101a6a34ea1fd49a9c539128d0016a72be781915f8480a8"
+    },
+    {
+      "path": "src/components/console/safety-console.tsx",
+      "sha256": "e2b8028a9483f38d170e6597c9d0d8fe42b9b72ff10b6337005707d7d16b4a85"
+    },
+    {
+      "path": "src/components/incidents/incident-panel.tsx",
+      "sha256": "f603042344b27c7bc836830091d1de79b4ebe51987511ea2b6c3ef9acf0566b5"
+    },
+    {
+      "path": "src/components/scene/use-scene-camera.ts",
+      "sha256": "067295ac993a703175141433cf149baf21b7d2ddcbd481e3526546c9c1d604d1"
+    },
+    {
+      "path": "src/components/scene/camera-policy.ts",
+      "sha256": "a076644fb99ba415c29d830fe8e8b659fb7bd8d2ab4af3be64a5468e94cdfa15"
+    },
+    {
+      "path": "src/components/scene/SiteStage.tsx",
+      "sha256": "0cd8da1d09591dd7d27b637455f59e7d1df1c73854f83f7104e3d19f2b9fe739"
+    },
+    {
+      "path": "src/components/tracking/related-camera.ts",
+      "sha256": "cf409618412cfb2a73595c8f2d54f195056df42af290ddf4c20b663057864227"
+    },
+    {
+      "path": "src/components/tracking/camera-panel.tsx",
+      "sha256": "7b25477f80584cd7c7d522604a57c541856aa22fd0202b52d23381271e1ca218"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-fire.json",
+      "sha256": "bde4e91470eaa90a03bf7b515c72563e01eba70aa06c9a7803f9cbd79764960e"
+    },
+    {
+      "path": "data/maps/site-construction-01.json",
+      "sha256": "ea4834c1b17e2a0ccbdaa892ce42079a42f689cfa198c7aa0f554d811bf6b5bf"
+    },
+    {
+      "path": "data/policies/fire-gas-evacuate.json",
+      "sha256": "53d669d60d7c06d376121bc6c1d72700b5f984d3e041899118bbb6fd43be3242"
+    }
+  ]
+}

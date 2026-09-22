@@ -1,0 +1,127 @@
+{
+  "kind": "c4-android-bounded-fault-proxy-source-freeze-v1",
+  "preparedAt": "2026-09-21T18:29:10.772372+00:00",
+  "status": "SOURCE_ONLY_NOT_EXECUTED",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "sourceSha256": "e17322b2faf5b5181f6a50bcd5cd4baeae2ca31f57f7bfd1653399b4e9e28efa",
+  "buildId": "czkc6DgDv3UUlTrSfDMqX",
+  "caseIds": [
+    "DUPLICATE",
+    "REVERSE",
+    "FOREIGN-WORKER",
+    "MAP-MISMATCH",
+    "EXPIRED",
+    "VOICE-REQUEST-DELAY",
+    "VOICE-RESPONSE-DELAY"
+  ],
+  "files": [
+    {
+      "path": "c4-android-fault-proxy-v1.mjs",
+      "sha256": "1195ab5948c56db61b6165eac3e1524ae2bce1be83b131223913bb9ed2a5f9f1",
+      "bytes": 12169
+    },
+    {
+      "path": "c4-android-fault-proxy-guard-v1.mjs",
+      "sha256": "0486290b6fefb96f12ca9d59845210ee3c7d51d5b9f66d18d2c16703d3249274",
+      "bytes": 8484
+    },
+    {
+      "path": "c4-android-fault-proxy-cases-v1.mjs",
+      "sha256": "dbac0bf0e4e681dcb4c42790321170a339887ec4aa3c4a81d9d41ec264cfb4fe",
+      "bytes": 9045
+    },
+    {
+      "path": "c4-android-fault-proxy-voice-v1.mjs",
+      "sha256": "9ea36af442beea0eac900093a0d615fae700e90e0c033a0d8d9692d8b8827d5f",
+      "bytes": 4646
+    },
+    {
+      "path": "c4-android-fault-proxy-v1.md",
+      "sha256": "46e277e5770c3ac6950f1154d79ba86d01a8af51b21ac508c0feaba623ef0ba5",
+      "bytes": 12904
+    },
+    {
+      "path": "c4-android-fault-device-mechanisms-v1.md",
+      "sha256": "2ac69a68189eb11979f06c55bb80e4958081ab8351035dd0c188a8b7589a611f",
+      "bytes": 18896
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "bytes": 3701
+    },
+    {
+      "path": "app/api/workers/[id]/response/route.ts",
+      "sha256": "6665773fb6112b8685c79d180dcd2d0f4e78e7c3045bbc1dfacf98b2c095cb0c",
+      "bytes": 1001
+    },
+    {
+      "path": "packages/contracts/src/core.ts",
+      "sha256": "3501d37d98f3f0c13f898122a715e999a24da7ead10f3810b973db9b88d7e87a",
+      "bytes": 2525
+    },
+    {
+      "path": "packages/contracts/src/commands.ts",
+      "sha256": "df75873b40f68ff0090a3ecfbbb6870f1c835a06aea7053079d3ac6396904482",
+      "bytes": 3801
+    },
+    {
+      "path": "packages/contracts/src/state.ts",
+      "sha256": "ccf642d8593198b8835d6b65ef865a49baa42aa659aefb75a86ca13591acba54",
+      "bytes": 5476
+    },
+    {
+      "path": "packages/contracts/src/guidance.ts",
+      "sha256": "27b31acdacfb78ec34af3083cd23ef6b911d3f67f8513d4dd56ad6ce77528aa2",
+      "bytes": 4752
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/application/guidance_guard.dart",
+      "sha256": "055c70b683512596aecb65f4f49375abd41ba3ca23dbacc3daf7c9930149bdd4",
+      "bytes": 2513
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/application/guidance_acknowledgements.dart",
+      "sha256": "a1a76272b229d5793c7376272e7de357aa2aee8f3ba47a528150b80728b33e04",
+      "bytes": 2109
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/data/guidance_api_service.dart",
+      "sha256": "89a9e8df2fd1e3895043c5c9f4afede85442bdd90434d575ca614b838ebae545",
+      "bytes": 5203
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/data/guidance_repository.dart",
+      "sha256": "0252e166315270ae52dbd0cbf4a081c304d27795d84fdc84eb4d3c9243f6ffe0",
+      "bytes": 5024
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/data/guidance_sse_service.dart",
+      "sha256": "e0a17234a681a60c6d9d1ca41a121e80de7fd1aefaa9d5954d200ccfd25448df",
+      "bytes": 1716
+    },
+    {
+      "path": "apps/mobile/lib/session/session_guidance_binding.dart",
+      "sha256": "7cf8f103e3693d1829213f91ca0119f34a27ef709f779e8520e795dc11858e4c",
+      "bytes": 3728
+    },
+    {
+      "path": "apps/mobile/lib/session/session_snapshot.dart",
+      "sha256": "42d14e1dfa630aaeefd84c3da59954944a49f127d509b2b72145e9b61c0872cd",
+      "bytes": 3941
+    }
+  ],
+  "runtimeExecutions": 0,
+  "deviceCommands": 0,
+  "networkRequests": 0,
+  "syntaxOnlyChecks": "four modules: node --check, exit 0",
+  "limitations": [
+    "Not an execution grant.",
+    "Actual loopback/proxy/helper/APK behavior untested.",
+    "Request identifiers are not native playback generations.",
+    "Exact injected envelope bytes are frozen privately only from actual future capture and require explicit hash-bound injection.",
+    "No native obsolete callback injection, controlled TTS-engine failure, camera, four-phone, or human output evidence."
+  ]
+}

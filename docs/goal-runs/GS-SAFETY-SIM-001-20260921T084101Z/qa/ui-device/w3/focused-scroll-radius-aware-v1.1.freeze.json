@@ -1,0 +1,93 @@
+{
+  "kind": "radius-aware-helper-preparation-freeze",
+  "version": "1.1",
+  "status": "SOURCE_PREPARED_SINGLE_RETRY_NOT_RUN",
+  "owner": "/root/qa_lead/qa_ui_device/w3_browser_scenarios",
+  "sourceRoot": "/home/b/.cache/gs-safety-c3.eulo4t9w",
+  "sourceHelperSha256": "54b92b43fc05389e9a43bd32380619cd8c9e753bfe71909765c03b849b2e010d",
+  "radiusHelperSha256": "8c55033a7b4dca6d4edd3103dc8e6430176a96b1bd749ac8331e720a752a6002",
+  "checkerSha256": "c6a89d0cc1dafdac72ef18d60840be9cd5c42ea20b111dbc6e9122b135cd34cc",
+  "priorFailedRun": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/radius-helper-check/2026-09-21T17-12-34-395Z",
+  "priorRuntimeResult": {
+    "casesSatisfied": 4,
+    "totalCases": 12,
+    "exactCornerShapeStrings": "NOT_RECORDED"
+  },
+  "primarySemanticSource": "https://drafts.csswg.org/css-borders-4/#corner-shaping",
+  "semanticEquivalence": "round equals superellipse(1); historical Chromium serialization unobserved",
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/focused-scroll-radius-aware-v1.1.mjs",
+      "sha256": "8c55033a7b4dca6d4edd3103dc8e6430176a96b1bd749ac8331e720a752a6002"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/check-focused-scroll-radius-aware-v1.1.mjs",
+      "sha256": "c6a89d0cc1dafdac72ef18d60840be9cd5c42ea20b111dbc6e9122b135cd34cc"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/focused-scroll-radius-aware-v1.1.md",
+      "sha256": "71021f6687869a743ca36a738c97e9a0500a3d7a606a2a9284bac76f9c926455"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/focused-scroll-radius-aware-v1.mjs",
+      "sha256": "dc0ebe0cd361de57853cdcb190550994794b6e1f40072e8b5a18d9fca5b6e737"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/check-focused-scroll-radius-aware-v1.mjs",
+      "sha256": "d4faa1c11e17909f7dfabe89b19b38f1cd3b5ca171f6531e20fa5070252edfe4"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/focused-scroll-radius-aware-v1.freeze.json",
+      "sha256": "c9e59ceaaedba583e75857e603b111ff21ceb9fef3250113458a2044aeaf787e"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/focused-scroll-diagnostic-v1.mjs",
+      "sha256": "2f0144a57a046fe401edf8bcfe91afdf2d4800b6caab8bbf47b640711bf67438"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c3.eulo4t9w/tests/frontend/focused-scroll.mjs",
+      "sha256": "54b92b43fc05389e9a43bd32380619cd8c9e753bfe71909765c03b849b2e010d"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c3.eulo4t9w/tests/frontend/browser-runtime.mjs",
+      "sha256": "9c222fa6a0e59597c935ef6047a842c60713cd5b84cfadd777784fbc0d540aef"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c3.eulo4t9w/node_modules/playwright/index.mjs",
+      "sha256": "a0f5715ea22354f922791a9c53dc012d5d5c067ff9cc4cd35ffb7cd272071a9f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/radius-helper-check/2026-09-21T17-12-34-395Z/report.json",
+      "sha256": "e9a6392f0d0bbf629d1af89d6291c952cb3bfad40f686a291a444e547ac4284d"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/radius-helper-check/2026-09-21T17-12-34-395Z/observations.jsonl",
+      "sha256": "bd5cdc3ec24daf3340e854f1549f826182ac0cfc0d17b24f3cf2a28bd1edbe5d"
+    }
+  ],
+  "syntaxChecks": {
+    "helperExitCode": 0,
+    "checkerExitCode": 0,
+    "modulesExecuted": false
+  },
+  "independentStaticReview": {
+    "reviewer": "/root/qa_lead/qa_ui_device/w3_browser_scenarios/selectors",
+    "finding": "No observed traversal/raw-result preservation or rectangle-ellipse proof defect; browser behavior remains unverified."
+  },
+  "syntheticFixtureCount": 16,
+  "maxAdditionalAttempts": 1,
+  "requiresNewGrant": true,
+  "estimatedRuntimeSeconds": [
+    20,
+    60
+  ],
+  "runtimeEstimateMeasured": false,
+  "internalCutoffSeconds": 75,
+  "externalTermSeconds": 85,
+  "externalKillGraceSeconds": 3,
+  "applicationReadiness": "LIMITED: global foreign generated-paint guard can reject offscreen known markers; full155 not established",
+  "browserLaunched": false,
+  "applicationAccess": false,
+  "runtimeVerdict": "NOT_RUN",
+  "productAcceptance": "NOT_RUN"
+}

@@ -1,0 +1,36 @@
+{
+  "type": "product-document-editorial-check-not-QA",
+  "checkedAt": "2026-09-21T11:08:08.436Z",
+  "supersedesForCurrentDocumentHashes": "handoff-check.g3.v1.0.1.json",
+  "goalVersion": "1.0",
+  "goalChanged": false,
+  "requirementRows": 104,
+  "mismatchedRequirements": [],
+  "baselineReadmeBytes": 468,
+  "baselineReadmePreserved": true,
+  "localLinksChecked": 90,
+  "missingLinks": [],
+  "contractFreezes": [
+    {
+      "path": "docs/contracts/freeze-v1.0.1.json",
+      "reportedContentSha256": "379a4bee66b78f2df9aa8a792f18d2edf5d6b63b26c2b94e94df55e6e51f0c63",
+      "listedFilesChecked": 19,
+      "mismatches": []
+    },
+    {
+      "path": "docs/contracts/freeze-v1.0.2.json",
+      "reportedContentSha256": "0908921f203e3e6a480562ad9bedeee6355eb8f02b9da0c9364f9d88a8e03655",
+      "listedFilesChecked": 4,
+      "mismatches": []
+    }
+  ],
+  "artifactHashes": {
+    "README.md": "7888520ad5d0a8dee25d7c15de1e6b3b59b5e26f793f5e3bf205b615da626fdf",
+    "docs/demo-runbook.md": "4a4f58b4e82ac303902d78dea59015405a1294e83b1ea5996056bc1400982340",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/requirements/g3-handoff-gaps.v1.0.md": "f25c8a37a1b5eef32696f3b4d01717014c8dd1f3f1c131deb5651acc85a263f7",
+    "docs/contracts/freeze-v1.0.1.json": "e2a93c4ec81c6153fff4501c4072a0b0efeafbee0ccc6177c3e13117a45bd7a7",
+    "docs/contracts/freeze-v1.0.2.json": "9b53450912b1a99020be2e5fb98f1d7b51dd97654659f03bb32619cee5c49a8f",
+    "docs/contracts/clarification-uwb-azimuth-v1.0.2.md": "e5a3c9d30b848df7692ff89e7e06728c7598cf3f5cd32d70eaf0c36f6892e915"
+  },
+  "status": "Product handoff source stable for candidate copy; documentation and file integrity only, no runtime or independent QA verdict."
+}

@@ -1,0 +1,84 @@
+{
+  "recordedAt": "2026-09-22T00:36:58.346Z",
+  "status": "STARTED",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "stageRoot": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "manifestSha256": "2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792",
+  "rootReleaseReceipt": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/resume-90min/user-demo-start-grant-v2.json",
+  "runtimePath": "/home/b/.local/state/gs-safety-demo/c6-20260922-ftb108",
+  "databasePath": "/home/b/.local/state/gs-safety-demo/c6-20260922-ftb108/database/safety.sqlite",
+  "credentialFileLocation": "/home/b/.local/state/gs-safety-demo/c6-20260922-ftb108/user.env",
+  "credentialSource": "generated-private-access-code",
+  "credentialValueDisclosed": false,
+  "appLogLocation": "/home/b/.local/state/gs-safety-demo/c6-20260922-ftb108/logs/app.log",
+  "serverProcessGroupId": 120281,
+  "processStartTicks": "630587",
+  "startedAt": "2026-09-22T00:36:57.501Z",
+  "baseUrl": "http://127.0.0.1:3000",
+  "port": 3000,
+  "setup": [
+    {
+      "command": "db:migrate",
+      "startedAt": "2026-09-22T00:36:55.507Z",
+      "completedAt": "2026-09-22T00:36:56.286Z",
+      "exitCode": 0
+    },
+    {
+      "command": "db:seed",
+      "startedAt": "2026-09-22T00:36:56.286Z",
+      "completedAt": "2026-09-22T00:36:57.501Z",
+      "exitCode": 0
+    }
+  ],
+  "providerConfiguration": {
+    "RAG_LLM_BASE_URL": "http://127.0.0.1:8092/v1",
+    "RAG_LLM_MODEL": "Qwen3-0.6B-Q8_0",
+    "RAG_LLM_VERSION": "23749fefcc72300e3a2ad315e1317431b06b590a",
+    "RAG_TIMEOUT_MS": "5000",
+    "RAG_EMBEDDING_MODEL": "Xenova/multilingual-e5-small",
+    "RAG_EMBEDDING_REVISION": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+    "RAG_EMBEDDING_DIMENSIONS": "384",
+    "RAG_EMBEDDING_LOCAL_PATH": "/home/b/.cache/gs-safety-c6.pSgWxT/data/knowledge/runtime/models/Xenova/multilingual-e5-small",
+    "RAG_MODEL_CACHE": "/home/b/.local/state/gs-safety-demo/c6-20260922-ftb108/model-cache"
+  },
+  "providerStartedByWrapper": false,
+  "providerReuse": {
+    "pid": 22562,
+    "startTicks": "163896",
+    "port": 8092,
+    "retained": true,
+    "ownershipTransferredTo": "/root",
+    "noFurtherQaCalls": true
+  },
+  "qaDatabaseReused": false,
+  "productAcceptance": "NOT_CLAIMED",
+  "recordedBy": "/root",
+  "verificationRecordedAt": "2026-09-22T00:44:51.352Z",
+  "launchReceiptSha256": "d3bc773af78f3987bc9a8ae3145fc1abe80cf797f7be0c618210bc8c63c7c601",
+  "windowsHttp": {
+    "observedAt": "2026-09-22T00:42:12.595Z",
+    "command": "Windows curl.exe --noproxy * --max-time5 HTTP GET; no credentials supplied",
+    "localhostStatus": 200,
+    "ipv4LoopbackStatus": 200,
+    "initialPowerShellProbe": "Timeout after8seconds; retained as separate failed probe, cause not established"
+  },
+  "functionalSelfCheck": "evidence/orchestrator/final-user-demo/attempt-02/functional-check.json",
+  "functionalSelfCheckStatus": "PASS_SELF_CHECK",
+  "qaAcceptanceClaimed": false,
+  "priorUnusedGrantExpired": true,
+  "functionalSelfCheckSha256": "42aa5f45c25470863be4553d1df51c4dfa3e44ccbaea701a667a1574efe196ed",
+  "functionalSelfCheckCompletedAt": "2026-09-22T00:42:29.197Z",
+  "officialQa": {
+    "path": "evidence/qa/g4/candidate-892f975f/official-c6-qa-status-v2.json",
+    "sha256": "e1d19be846332cd4e2b682623b970dc38e202ba564fa2671a0c8deed3aac5614",
+    "overallVerdict": "BLOCKED",
+    "counts": {
+      "PASS": 4,
+      "FAIL": 0,
+      "BLOCKED": 7,
+      "NOT_RUN": 5
+    }
+  },
+  "secretsDisclosed": false
+}

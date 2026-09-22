@@ -1,0 +1,38 @@
+{
+  "recordedAt": "2026-09-22T00:02:04.907Z",
+  "stage": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "authorization": {
+    "issuedBy": "/root",
+    "receivedVia": "Root prospective collaboration message before packaging-only retry",
+    "scope": "Single packaging environment retry; source/build/r5 unchanged; no second build or r6",
+    "cleanupNotAfter": "2026-09-22T00:04:00Z"
+  },
+  "originalBoundProof": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-91375a9d/visual-cjk/findings.md",
+    "bytes": 3006,
+    "sha256": "a0f23dfbc22a93661192d82827527a12a210fd981a76509fc93980aeed7f9587"
+  },
+  "immutableSnapshot": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-preserved-visual-cjk-findings-r5.md",
+    "bytes": 3006,
+    "sha256": "a0f23dfbc22a93661192d82827527a12a210fd981a76509fc93980aeed7f9587"
+  },
+  "recoverySource": "/tmp/qa-cjk-findings-original-candidate.md",
+  "recoveredBy": "/root/qa_resume",
+  "method": "QA retained the complete earlier tool-output text and reproduced its exact bytes; independent SHA256 check equals the pre-existing r5 digest. No guessed truncation used.",
+  "currentQaReport": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-91375a9d/visual-cjk/findings.md",
+    "bytes": 3568,
+    "sha256": "722264095f8602f3913acffcf864546c4dd92ffda3d1ccf54530bc825c5f701c"
+  },
+  "currentQaFileModified": false,
+  "failedPrefixProbe": {
+    "bytes": 3006,
+    "sha256": "61c45f123a7450eb29311f10d901a9536b975d17e413603ef5d488c299459ca5",
+    "matches": false,
+    "used": false
+  },
+  "originalFailure": "c6-assembly-failure.json",
+  "sourceChanges": false,
+  "newBuild": false
+}

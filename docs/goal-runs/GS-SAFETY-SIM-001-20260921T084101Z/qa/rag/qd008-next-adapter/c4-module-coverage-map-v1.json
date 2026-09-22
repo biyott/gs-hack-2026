@@ -1,0 +1,2449 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "C4 module-only coverage mapping",
+  "observedAt": "2026-09-21T17:49:22.273Z",
+  "executor": "/root/qa_lead/qa_rag/corpus_cards",
+  "independentRawReader": "/root/qa_lead/qa_rag/corpus_cards/meaning_check",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "manifestHash": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d",
+  "status": "MAPPING_ONLY",
+  "overallVerdict": "NOT_ISSUED",
+  "scope": "Saved-file reads and hashes only; no candidate imports, runtime, DB opens, models, network, browser or tests. No HTTP evidence or pending HTTP result is claimed. Existing raw/producer/review files preserved.",
+  "counts": {
+    "original85": {
+      "PASS": 75,
+      "FAIL": 4,
+      "BINDING_GAP": 1,
+      "NOT_RUN": 5
+    },
+    "retrieval24": {
+      "PASS": 21,
+      "FAIL": 3
+    },
+    "filters30": {
+      "PASS": 29,
+      "BINDING_GAP": 1
+    },
+    "faults31": {
+      "NOT_RUN": 5,
+      "PASS": 25,
+      "FAIL": 1
+    },
+    "faultIntegrated31": {
+      "NOT_RUN": 31
+    },
+    "faultVariants": {
+      "count": 58,
+      "statuses": {
+        "PASS": 56,
+        "NOT_RUN": 1,
+        "FAIL": 1
+      },
+      "providerModes": {
+        "mock": 58
+      }
+    },
+    "unique85": 85,
+    "allRawStatusesMatchSummaries": true
+  },
+  "gaps": [
+    {
+      "testId": "Q-RAG-08-01",
+      "raw": {
+        "testId": "Q-RAG-08-01",
+        "group": "fault",
+        "status": "NOT_RUN",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-01.json",
+        "bytes": 585,
+        "sha256": "65e8ba814cbbb981be5328e3f2864aaa7f9db03f159605c1e00e1b44a8a7b87c",
+        "matchesSummary": true
+      },
+      "currentEvidence": [
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/engine-observation-review-v1.json",
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/summary.json"
+      ],
+      "observation": "Current C4 direct-runtime/attachRag review demonstrates Korean exact reviewed normal and genuine FG-002 reroute publication within its fourteen-observation scope. Stairs direct service records accepted Korean EQ-003, still CAPTURED_FOR_REVIEW pending its own independent semantic review.",
+      "remaining": "Full frozen actual-normal Korean case is not closed. Production HTTP/SSE, dispatch-to-visible latency and physical client speech/beep/vibration/urgent audio are outside this map.",
+      "owners": [
+        "RAG integration/semantic QA",
+        "Q-WEB/Q-ANDROID/device owners",
+        "QA Lead"
+      ]
+    },
+    {
+      "testId": "Q-RAG-08-02",
+      "raw": {
+        "testId": "Q-RAG-08-02",
+        "group": "fault",
+        "status": "NOT_RUN",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-02.json",
+        "bytes": 585,
+        "sha256": "9af191a54f3e7fb042579bc97428fe37bf36ab2c5bff315d7e862ba6e17d2d37",
+        "matchesSummary": true
+      },
+      "currentEvidence": [
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/engine-observation-review-v1.json",
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/summary.json"
+      ],
+      "observation": "Current C4 direct-runtime review records actual English profile/context, exact reviewed model text and durable/current publication; FG-002 genuine reroute is demonstrated. Separate stairs additive-en service accepts EQ-003 but remains pending independent stairs semantics.",
+      "remaining": "No original frozen case status replacement and no production HTTP or physical delivery credit. Live supported-profile evidence is additive.",
+      "owners": [
+        "RAG integration/semantic QA",
+        "Q-WEB/Q-ANDROID/device owners",
+        "QA Lead"
+      ]
+    },
+    {
+      "testId": "Q-RAG-08-16",
+      "raw": {
+        "testId": "Q-RAG-08-16",
+        "group": "fault",
+        "status": "NOT_RUN",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-16.json",
+        "bytes": 14428,
+        "sha256": "5fe0f8e7c80c360968e1109222811d132aa87e5a853ce8f3b5dc32ab31e8113e",
+        "matchesSummary": true
+      },
+      "currentEvidence": [
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/case16-append/positive.json",
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/case16-append/append.json"
+      ],
+      "observation": "Original replace precondition is absent and raw result stays NOT_RUN. New positive baseline accepts exact reviewed EQ-003; additive append response is rejected as fallback:unreviewed_explanation. Both are actual candidate service with explicitly mocked provider.",
+      "remaining": "Append rejection does not execute the frozen absent-token replacement or establish actual-model adversarial behavior, HTTP or device effects.",
+      "owners": [
+        "RAG QA/source-binding owner",
+        "QA Lead fixture disposition"
+      ]
+    },
+    {
+      "testId": "Q-RAG-08-26",
+      "raw": {
+        "testId": "Q-RAG-08-26",
+        "group": "fault",
+        "status": "NOT_RUN",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-26.json",
+        "bytes": 601,
+        "sha256": "6323de6744daca0d09f9bcd815a982cdceee75d006509ea7bf93ba580938beab",
+        "matchesSummary": true
+      },
+      "currentEvidence": [
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/qa-privacy-scan-v1.json",
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/privacy-extension/summary.json"
+      ],
+      "observation": "Independent file-only scan has zero frozen-canary matches in23 captured files/1,616,148 bytes:17 JSON,4 actual model wire captures,2 empty closed component logs. Two actual component E5 queries and two LLM calls are captured; target service accepts.",
+      "remaining": "Driver status NOT_RUN and exactE5Join=false remain. Deferred warmup plus target produce two identical query/vector records, so unique target E5 association is unavailable. Production HTTP-process E5, production model/client/log scan and physical surfaces are not credited.",
+      "owners": [
+        "RAG privacy/integration owner",
+        "QA Lead privacy acceptance"
+      ]
+    },
+    {
+      "testId": "Q-RAG-08-31",
+      "raw": {
+        "testId": "Q-RAG-08-31",
+        "group": "fault",
+        "status": "NOT_RUN",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-31.json",
+        "bytes": 1544,
+        "sha256": "d22d333c023d172a489a3ea9155ca459b08389cce82454123cccb5ce772cde6d",
+        "matchesSummary": true
+      },
+      "currentEvidence": [
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/engine-observation-review-v1.json"
+      ],
+      "observation": "Direct-runtime engine review demonstrates primary-preserving current supplement publication for its observed calls. This is only related lineage evidence.",
+      "remaining": "Frozen case requires valid accepted supplement after primary display/speech starts and before5000 ms, duplicate/reconnect handling, once-only speech/no extra beep, urgent-primary priority, later primary transition and stale old-lineage rejection. No production HTTP/SSE or physical audio/display acceptance from this map.",
+      "owners": [
+        "RAG integration owner",
+        "Q-WEB/Q-ANDROID/device owners",
+        "QA Lead"
+      ]
+    },
+    {
+      "testId": "Q-RAG-06-F13",
+      "raw": {
+        "testId": "Q-RAG-06-F13",
+        "group": "filter",
+        "status": "BINDING_GAP",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F13.json",
+        "bytes": 14090,
+        "sha256": "78f71d42b3896c21d1537296747cfd0c67d39e94b2f6fd73e93ca1da3291f1d1",
+        "matchesSummary": true
+      },
+      "currentEvidence": [
+        "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F13.json"
+      ],
+      "observation": "Raw source-validation BINDING_GAP remains: simulationTypes is rejected as an unrecognized source key; observed eligibility is null with zero assertions/steps.",
+      "remaining": "Authorized representable frozen common-mode restriction or formal contract/fixture disposition. Existing derivative fact/policy controls do not represent this source field.",
+      "owners": [
+        "QA Lead/source-contract owner",
+        "RAG QA binding owner"
+      ]
+    }
+  ],
+  "rawFailureDispositions": [
+    {
+      "testId": "Q-RAG-07-02",
+      "output": {
+        "testId": "Q-RAG-07-02",
+        "group": "retrieval",
+        "status": "FAIL",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-02.json",
+        "bytes": 29541,
+        "sha256": "238ea6dfc25f4f8b6689bcc3a5c20a43fc64586c1fad467a97bd10c39b750d96",
+        "matchesSummary": true
+      },
+      "rawStatus": "FAIL",
+      "selected": [
+        "COMMON-004"
+      ],
+      "outcome": "matched",
+      "requestApplicability": "ABSENT",
+      "scenarioPolicy": null,
+      "assertions": {
+        "total": 16,
+        "passed": 13,
+        "failed": [
+          {
+            "name": "required documents or conflict witnesses",
+            "passed": false,
+            "observed": [
+              "COMMON-004"
+            ]
+          },
+          {
+            "name": "candidate eligibility agrees with independent metadata applicability",
+            "passed": false,
+            "observed": [
+              "COMMON-004",
+              "EQ-002"
+            ]
+          },
+          {
+            "name": "all and only eligible vectors actually scored",
+            "passed": false,
+            "observed": [
+              "COMMON-004:0.1.0:44e4c92b9c5237b7:procedure",
+              "EQ-002:0.1.0:b10f6892ec886a96:procedure"
+            ]
+          }
+        ]
+      },
+      "nativeComparisons": {
+        "source": "sources/emul-004.body.md:469-478",
+        "status": "FAIL",
+        "comparisons": [
+          {
+            "name": "frozen outcome",
+            "assertion": {
+              "name": "frozen outcome",
+              "passed": true,
+              "observed": "matched"
+            }
+          },
+          {
+            "name": "required documents or conflict witnesses",
+            "assertion": {
+              "name": "required documents or conflict witnesses",
+              "passed": false,
+              "observed": [
+                "COMMON-004"
+              ]
+            }
+          },
+          {
+            "name": "forbidden documents absent",
+            "assertion": {
+              "name": "forbidden documents absent",
+              "passed": true,
+              "observed": [
+                "COMMON-004"
+              ]
+            }
+          },
+          {
+            "name": "selected procedures retain engine action",
+            "assertion": {
+              "name": "selected procedures retain engine action",
+              "passed": true,
+              "observed": [
+                {
+                  "id": "COMMON-004",
+                  "actions": [
+                    "GUIDANCE_UPDATED"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "forbidden documents absent from every score stage",
+            "assertion": {
+              "name": "forbidden documents absent from every score stage",
+              "passed": true,
+              "observed": [
+                "COMMON-004",
+                "COMMON-004",
+                "COMMON-004"
+              ]
+            }
+          }
+        ],
+        "scope": "Required/forbidden document, action and retrieval status comparisons only. Current body applicability/semantic meaning requires separate evidence."
+      },
+      "extraWhitelist": {
+        "name": "only independently allowed documents",
+        "passed": true,
+        "observed": []
+      },
+      "disposition": "Preserve raw FAIL including missing required scoped document and two eligibility/vector oracle assertions. Frozen request has no applicability fact; Q07-06 also has null policy. Separate controlled fact/policy and authoritative-event observations do not rewrite the original input or verdict.",
+      "traceApplicability": null,
+      "scopedExcludedReasons": [
+        {
+          "documentId": "EQ-002",
+          "eligible": false,
+          "reasons": [
+            "equipment-direction-change-unproven"
+          ]
+        }
+      ],
+      "metadataAndVectorFailureClassification": "ORIGINAL_ORACLE_PRE_PRIVATE_FACT_ASSUMPTIONS"
+    },
+    {
+      "testId": "Q-RAG-07-03",
+      "output": {
+        "testId": "Q-RAG-07-03",
+        "group": "retrieval",
+        "status": "FAIL",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-03.json",
+        "bytes": 37144,
+        "sha256": "4d3219cb5ddcc96341f3322d0bfbcc04b7d84f443d580007db2116a97f27c17d",
+        "matchesSummary": true
+      },
+      "rawStatus": "FAIL",
+      "selected": [
+        "EQ-003",
+        "EQ-001"
+      ],
+      "outcome": "matched",
+      "requestApplicability": "ABSENT",
+      "scenarioPolicy": null,
+      "assertions": {
+        "total": 16,
+        "passed": 13,
+        "failed": [
+          {
+            "name": "only independently allowed documents",
+            "passed": false,
+            "observed": [
+              "EQ-001"
+            ]
+          },
+          {
+            "name": "candidate eligibility agrees with independent metadata applicability",
+            "passed": false,
+            "observed": [
+              "EQ-001",
+              "EQ-002",
+              "EQ-003"
+            ]
+          },
+          {
+            "name": "all and only eligible vectors actually scored",
+            "passed": false,
+            "observed": [
+              "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+              "EQ-003:0.1.0:efba24b4441c045b:procedure"
+            ]
+          }
+        ]
+      },
+      "nativeComparisons": {
+        "source": "sources/emul-004.body.md:469-478",
+        "status": "PASS",
+        "comparisons": [
+          {
+            "name": "frozen outcome",
+            "assertion": {
+              "name": "frozen outcome",
+              "passed": true,
+              "observed": "matched"
+            }
+          },
+          {
+            "name": "required documents or conflict witnesses",
+            "assertion": {
+              "name": "required documents or conflict witnesses",
+              "passed": true,
+              "observed": [
+                "EQ-003",
+                "EQ-001"
+              ]
+            }
+          },
+          {
+            "name": "forbidden documents absent",
+            "assertion": {
+              "name": "forbidden documents absent",
+              "passed": true,
+              "observed": [
+                "EQ-003",
+                "EQ-001"
+              ]
+            }
+          },
+          {
+            "name": "selected procedures retain engine action",
+            "assertion": {
+              "name": "selected procedures retain engine action",
+              "passed": true,
+              "observed": [
+                {
+                  "id": "EQ-003",
+                  "actions": [
+                    "FOLLOW_VALIDATED_ROUTE"
+                  ]
+                },
+                {
+                  "id": "EQ-001",
+                  "actions": [
+                    "ALERT_HAZARD",
+                    "FOLLOW_VALIDATED_ROUTE"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "forbidden documents absent from every score stage",
+            "assertion": {
+              "name": "forbidden documents absent from every score stage",
+              "passed": true,
+              "observed": [
+                "EQ-003",
+                "EQ-001",
+                "EQ-003",
+                "EQ-001",
+                "EQ-003",
+                "EQ-001"
+              ]
+            }
+          }
+        ],
+        "scope": "Required/forbidden document, action and retrieval status comparisons only. Current body applicability/semantic meaning requires separate evidence."
+      },
+      "extraWhitelist": {
+        "name": "only independently allowed documents",
+        "passed": false,
+        "observed": [
+          "EQ-001"
+        ]
+      },
+      "disposition": "Preserve all three raw failures: EQ-001 violates the extra COMMON-only whitelist, while two metadata-only oracle assertions still expect EQ-002 although C4 excludes it without an event fact. Native required EQ-003, forbidden/action/outcome comparisons remain separate PASS. This is C4-specific, not the C3 one-failure description.",
+      "traceApplicability": null,
+      "scopedExcludedReasons": [
+        {
+          "documentId": "EQ-002",
+          "eligible": false,
+          "reasons": [
+            "equipment-direction-change-unproven"
+          ]
+        }
+      ],
+      "metadataAndVectorFailureClassification": "ORIGINAL_ORACLE_PRE_PRIVATE_FACT_ASSUMPTIONS"
+    },
+    {
+      "testId": "Q-RAG-07-06",
+      "output": {
+        "testId": "Q-RAG-07-06",
+        "group": "retrieval",
+        "status": "FAIL",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-06.json",
+        "bytes": 29428,
+        "sha256": "27c5d5d732a94842a22dee347dafce38a6de306a03e4af948be4c0e79d379ef5",
+        "matchesSummary": true
+      },
+      "rawStatus": "FAIL",
+      "selected": [
+        "COMMON-004"
+      ],
+      "outcome": "matched",
+      "requestApplicability": "ABSENT",
+      "scenarioPolicy": null,
+      "assertions": {
+        "total": 16,
+        "passed": 13,
+        "failed": [
+          {
+            "name": "required documents or conflict witnesses",
+            "passed": false,
+            "observed": [
+              "COMMON-004"
+            ]
+          },
+          {
+            "name": "candidate eligibility agrees with independent metadata applicability",
+            "passed": false,
+            "observed": [
+              "COMMON-004",
+              "FG-002"
+            ]
+          },
+          {
+            "name": "all and only eligible vectors actually scored",
+            "passed": false,
+            "observed": [
+              "COMMON-004:0.1.0:44e4c92b9c5237b7:procedure",
+              "FG-002:0.1.0:890827a5b140b5ed:procedure"
+            ]
+          }
+        ]
+      },
+      "nativeComparisons": {
+        "source": "sources/emul-004.body.md:469-478",
+        "status": "FAIL",
+        "comparisons": [
+          {
+            "name": "frozen outcome",
+            "assertion": {
+              "name": "frozen outcome",
+              "passed": true,
+              "observed": "matched"
+            }
+          },
+          {
+            "name": "required documents or conflict witnesses",
+            "assertion": {
+              "name": "required documents or conflict witnesses",
+              "passed": false,
+              "observed": [
+                "COMMON-004"
+              ]
+            }
+          },
+          {
+            "name": "forbidden documents absent",
+            "assertion": {
+              "name": "forbidden documents absent",
+              "passed": true,
+              "observed": [
+                "COMMON-004"
+              ]
+            }
+          },
+          {
+            "name": "selected procedures retain engine action",
+            "assertion": {
+              "name": "selected procedures retain engine action",
+              "passed": true,
+              "observed": [
+                {
+                  "id": "COMMON-004",
+                  "actions": [
+                    "GUIDANCE_UPDATED"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "forbidden documents absent from every score stage",
+            "assertion": {
+              "name": "forbidden documents absent from every score stage",
+              "passed": true,
+              "observed": [
+                "COMMON-004",
+                "COMMON-004",
+                "COMMON-004"
+              ]
+            }
+          }
+        ],
+        "scope": "Required/forbidden document, action and retrieval status comparisons only. Current body applicability/semantic meaning requires separate evidence."
+      },
+      "extraWhitelist": {
+        "name": "only independently allowed documents",
+        "passed": true,
+        "observed": []
+      },
+      "disposition": "Preserve raw FAIL including missing required scoped document and two eligibility/vector oracle assertions. Frozen request has no applicability fact; Q07-06 also has null policy. Separate controlled fact/policy and authoritative-event observations do not rewrite the original input or verdict.",
+      "traceApplicability": null,
+      "scopedExcludedReasons": [
+        {
+          "documentId": "FG-002",
+          "eligible": false,
+          "reasons": [
+            "fire-route-invalidation-unproven",
+            "movement-policy-unproven"
+          ]
+        }
+      ],
+      "metadataAndVectorFailureClassification": "ORIGINAL_ORACLE_PRE_PRIVATE_FACT_ASSUMPTIONS"
+    },
+    {
+      "testId": "Q-RAG-08-22",
+      "output": {
+        "testId": "Q-RAG-08-22",
+        "group": "fault",
+        "status": "FAIL",
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-22.json",
+        "bytes": 15353,
+        "sha256": "b3512009f162677925d7e22555e7b2beada4e9d4f7284f893b300901a0175572",
+        "matchesSummary": true
+      },
+      "rawStatus": "FAIL",
+      "integratedRawStatus": "NOT_RUN",
+      "providerMode": "mock",
+      "expected": "fallback:expired",
+      "observed": "fallback:stale_guidance",
+      "failedAssertions": [
+        {
+          "name": "frozen expected service outcome",
+          "passed": false
+        }
+      ],
+      "savedEvidenceCount": 0,
+      "primaryUnchanged": true,
+      "generationOutcomeCount": 1,
+      "abortCount": 1,
+      "remainingAbortListeners": 0,
+      "disposition": "Preserve raw expired-versus-stale_guidance reason FAIL. Zero accepted evidence and unchanged primary are separate controlled/mock service observations; no actual-model/HTTP acceptance."
+    }
+  ],
+  "controlledDerivatives": {
+    "summary": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/summary.json",
+      "bytes": 3455,
+      "sha256": "7ff776c9273b1b7e94f6b3c45353b1b289efd9403ce1dc602798e4ce59aaee29"
+    },
+    "source": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-retest-preparation-v1/fixture-binding-proposal.v3.json",
+      "bytes": 14033,
+      "sha256": "8e4cd6dbc450e37dc787c23da5002262f00efd7b2a31d5c473d15d2d0735df89"
+    },
+    "counts": {
+      "total": 8,
+      "controlVerdicts": {
+        "PASS": 8
+      },
+      "nativeExpectationVerdicts": {
+        "PASS": 2,
+        "FAIL": 6
+      },
+      "kinds": {
+        "positive": 2,
+        "diagnostic": 1,
+        "negative": 5
+      }
+    },
+    "cases": [
+      {
+        "testId": "QD008-EQ002-FACT-TRUE-CONTROLLED",
+        "kind": "positive",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/QD008-EQ002-FACT-TRUE-CONTROLLED.json",
+          "bytes": 35563,
+          "sha256": "c91944dd9a5c5942332406e4f56cd8d5f14caa74ad88a7e36709b5d7c1fc8d4c"
+        },
+        "controlVerdict": "PASS",
+        "nativeExpectationVerdict": "PASS",
+        "originalTest": "Q-RAG-07-02",
+        "documentId": "EQ-002",
+        "facts": {
+          "equipmentDirectionChanged": true
+        },
+        "policy": null,
+        "requestApplicability": {
+          "equipmentDirectionChanged": true
+        },
+        "selected": [
+          "EQ-002",
+          "COMMON-004"
+        ],
+        "outcome": "matched",
+        "failedNativeAssertions": [],
+        "assertionCounts": {
+          "total": 6,
+          "passed": 6
+        },
+        "generationInputAndPublicationVerdict": "NOT_RUN",
+        "scope": "Controlled request facts/policy and actual retrieval only. Not authoritative production event evidence; original85 results unchanged.",
+        "scoringChecks": {
+          "total": 4,
+          "passed": 4
+        }
+      },
+      {
+        "testId": "QD008-FG002-FACT-TRUE-NULL-POLICY-DIAGNOSTIC",
+        "kind": "diagnostic",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/QD008-FG002-FACT-TRUE-NULL-POLICY-DIAGNOSTIC.json",
+          "bytes": 28365,
+          "sha256": "dc9c50c84a4d2ef3ba96254c49e68ffff6ef05929d703a9bb2eec43a2bdffae2"
+        },
+        "controlVerdict": "PASS",
+        "nativeExpectationVerdict": "FAIL",
+        "originalTest": "Q-RAG-07-06",
+        "documentId": "FG-002",
+        "facts": {
+          "fireInvalidatedPreviousRoute": true
+        },
+        "policy": null,
+        "requestApplicability": {
+          "fireInvalidatedPreviousRoute": true
+        },
+        "selected": [
+          "COMMON-004"
+        ],
+        "outcome": "matched",
+        "failedNativeAssertions": [
+          "unchanged native required documents"
+        ],
+        "assertionCounts": {
+          "total": 6,
+          "passed": 6
+        },
+        "generationInputAndPublicationVerdict": "NOT_RUN",
+        "scope": "Controlled request facts/policy and actual retrieval only. Not authoritative production event evidence; original85 results unchanged.",
+        "scoringChecks": {
+          "total": 4,
+          "passed": 4
+        }
+      },
+      {
+        "testId": "QD008-FG002-REROUTE-POSITIVE-EVACUATION-CONTROLLED",
+        "kind": "positive",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/QD008-FG002-REROUTE-POSITIVE-EVACUATION-CONTROLLED.json",
+          "bytes": 35512,
+          "sha256": "5dceab9a1512f9dafb04ad6d6692df73e6cf58a2a4660d7ad4d8fd4f422b5cf9"
+        },
+        "controlVerdict": "PASS",
+        "nativeExpectationVerdict": "PASS",
+        "originalTest": "Q-RAG-07-06",
+        "documentId": "FG-002",
+        "facts": {
+          "fireInvalidatedPreviousRoute": true
+        },
+        "policy": "evacuation",
+        "requestApplicability": {
+          "fireInvalidatedPreviousRoute": true
+        },
+        "selected": [
+          "FG-002",
+          "COMMON-004"
+        ],
+        "outcome": "matched",
+        "failedNativeAssertions": [],
+        "assertionCounts": {
+          "total": 6,
+          "passed": 6
+        },
+        "generationInputAndPublicationVerdict": "NOT_RUN",
+        "scope": "Controlled request facts/policy and actual retrieval only. Not authoritative production event evidence; original85 results unchanged.",
+        "scoringChecks": {
+          "total": 4,
+          "passed": 4
+        }
+      },
+      {
+        "testId": "QD008-FG002-MISSING-FACT-CONTROLLED",
+        "kind": "negative",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/QD008-FG002-MISSING-FACT-CONTROLLED.json",
+          "bytes": 28158,
+          "sha256": "ca9fc34cde5771334a231c71abff8d289316e67a2d4e597807a19cce4d06829b"
+        },
+        "controlVerdict": "PASS",
+        "nativeExpectationVerdict": "FAIL",
+        "originalTest": "Q-RAG-07-06",
+        "documentId": "FG-002",
+        "policy": "evacuation",
+        "selected": [
+          "COMMON-004"
+        ],
+        "outcome": "matched",
+        "failedNativeAssertions": [
+          "unchanged native required documents"
+        ],
+        "assertionCounts": {
+          "total": 6,
+          "passed": 6
+        },
+        "generationInputAndPublicationVerdict": "NOT_RUN",
+        "scope": "Controlled request facts/policy and actual retrieval only. Not authoritative production event evidence; original85 results unchanged.",
+        "scoringChecks": {
+          "total": 4,
+          "passed": 4
+        }
+      },
+      {
+        "testId": "QD008-FG002-FALSE-FACT-CONTROLLED",
+        "kind": "negative",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/QD008-FG002-FALSE-FACT-CONTROLLED.json",
+          "bytes": 28343,
+          "sha256": "beb56d5f83159198e1618d6a8501040e0aaaebabe5bb1a05e69ba4578a020d1d"
+        },
+        "controlVerdict": "PASS",
+        "nativeExpectationVerdict": "FAIL",
+        "originalTest": "Q-RAG-07-06",
+        "documentId": "FG-002",
+        "facts": {
+          "fireInvalidatedPreviousRoute": false
+        },
+        "policy": "evacuation",
+        "requestApplicability": {
+          "fireInvalidatedPreviousRoute": false
+        },
+        "selected": [
+          "COMMON-004"
+        ],
+        "outcome": "matched",
+        "failedNativeAssertions": [
+          "unchanged native required documents"
+        ],
+        "assertionCounts": {
+          "total": 6,
+          "passed": 6
+        },
+        "generationInputAndPublicationVerdict": "NOT_RUN",
+        "scope": "Controlled request facts/policy and actual retrieval only. Not authoritative production event evidence; original85 results unchanged.",
+        "scoringChecks": {
+          "total": 4,
+          "passed": 4
+        }
+      },
+      {
+        "testId": "QD008-FG002-NULL-POLICY-CONTROLLED",
+        "kind": "negative",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/QD008-FG002-NULL-POLICY-CONTROLLED.json",
+          "bytes": 28333,
+          "sha256": "d699f8b2e724f0740a8dca49c658a78cb3c3ef568ec5f0ac1f9dcdfe5ae1577f"
+        },
+        "controlVerdict": "PASS",
+        "nativeExpectationVerdict": "FAIL",
+        "originalTest": "Q-RAG-07-06",
+        "documentId": "FG-002",
+        "facts": {
+          "fireInvalidatedPreviousRoute": true
+        },
+        "policy": null,
+        "requestApplicability": {
+          "fireInvalidatedPreviousRoute": true
+        },
+        "selected": [
+          "COMMON-004"
+        ],
+        "outcome": "matched",
+        "failedNativeAssertions": [
+          "unchanged native required documents"
+        ],
+        "assertionCounts": {
+          "total": 6,
+          "passed": 6
+        },
+        "generationInputAndPublicationVerdict": "NOT_RUN",
+        "scope": "Controlled request facts/policy and actual retrieval only. Not authoritative production event evidence; original85 results unchanged.",
+        "scoringChecks": {
+          "total": 4,
+          "passed": 4
+        }
+      },
+      {
+        "testId": "QD008-EQ002-MISSING-FACT-CONTROLLED",
+        "kind": "negative",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/QD008-EQ002-MISSING-FACT-CONTROLLED.json",
+          "bytes": 28400,
+          "sha256": "08f7edee9ad7e79edf107290f374e2d6ff74bfb20f770b436f8fb68c63bac2f1"
+        },
+        "controlVerdict": "PASS",
+        "nativeExpectationVerdict": "FAIL",
+        "originalTest": "Q-RAG-07-02",
+        "documentId": "EQ-002",
+        "policy": null,
+        "selected": [
+          "COMMON-004"
+        ],
+        "outcome": "matched",
+        "failedNativeAssertions": [
+          "unchanged native required documents"
+        ],
+        "assertionCounts": {
+          "total": 6,
+          "passed": 6
+        },
+        "generationInputAndPublicationVerdict": "NOT_RUN",
+        "scope": "Controlled request facts/policy and actual retrieval only. Not authoritative production event evidence; original85 results unchanged.",
+        "scoringChecks": {
+          "total": 4,
+          "passed": 4
+        }
+      },
+      {
+        "testId": "QD008-EQ002-FALSE-FACT-CONTROLLED",
+        "kind": "negative",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/QD008-EQ002-FALSE-FACT-CONTROLLED.json",
+          "bytes": 28576,
+          "sha256": "1f7f651b64aef5590baedaa002188d6fd738d85ba3ed6c5777b5eb42537b6df9"
+        },
+        "controlVerdict": "PASS",
+        "nativeExpectationVerdict": "FAIL",
+        "originalTest": "Q-RAG-07-02",
+        "documentId": "EQ-002",
+        "facts": {
+          "equipmentDirectionChanged": false
+        },
+        "policy": null,
+        "requestApplicability": {
+          "equipmentDirectionChanged": false
+        },
+        "selected": [
+          "COMMON-004"
+        ],
+        "outcome": "matched",
+        "failedNativeAssertions": [
+          "unchanged native required documents"
+        ],
+        "assertionCounts": {
+          "total": 6,
+          "passed": 6
+        },
+        "generationInputAndPublicationVerdict": "NOT_RUN",
+        "scope": "Controlled request facts/policy and actual retrieval only. Not authoritative production event evidence; original85 results unchanged.",
+        "scoringChecks": {
+          "total": 4,
+          "passed": 4
+        }
+      }
+    ],
+    "scope": "Actual retrieval with explicitly supplied facts/policy, not authoritative event production. All generation-input/publication verdicts NOT_RUN. Eight control PASS values do not overwrite native failures or any frozen85 case."
+  },
+  "appendControls": [
+    {
+      "output": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/case16-append/positive.json",
+        "bytes": 18964,
+        "sha256": "c98f9788de8b6ba2836543e861626389d5fe42eb7440444716f8e352cd39f25f"
+      },
+      "source": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-retest-preparation-v1/case16-append.v2.json",
+        "sha256": "f8728cfe02802dcebc956be55046a1bb7fbd8ebd227afd324eed516e9f53c222"
+      },
+      "testId": "Q-RAG-08-16-APPEND-BASELINE",
+      "variant": "positive",
+      "verdict": "PASS",
+      "expected": "accepted",
+      "observed": "accepted",
+      "assertions": {
+        "total": 10,
+        "passed": 10
+      },
+      "persistedEvidenceCount": 1,
+      "scope": "Actual candidate service with exact frozen original EQ003 baseline and explicitly mocked provider; no actual-model acceptance claim.",
+      "controlledServiceBaseUtc": "2026-09-21T16:06:08.630Z",
+      "unchangedOriginalRetrievalUtc": "2026-09-21T09:30:00.000Z",
+      "providerMode": "mock",
+      "providerCalls": 1,
+      "providerIdentity": {
+        "provider": "qa-qd008-append-control",
+        "model": "frozen-eq003-reviewed-selection",
+        "version": "2",
+        "mode": "mock"
+      }
+    },
+    {
+      "output": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/case16-append/append.json",
+        "bytes": 18318,
+        "sha256": "fcae4d828ed3c84bb23d2138d69265b561b6845722986d688ed8d3531fc27be1"
+      },
+      "source": {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-retest-preparation-v1/case16-append.v2.json",
+        "sha256": "f8728cfe02802dcebc956be55046a1bb7fbd8ebd227afd324eed516e9f53c222"
+      },
+      "testId": "Q-RAG-08-16-APPEND",
+      "variant": "append",
+      "verdict": "PASS",
+      "expected": "fallback:unreviewed_explanation",
+      "observed": "fallback:unreviewed_explanation",
+      "assertions": {
+        "total": 10,
+        "passed": 10
+      },
+      "persistedEvidenceCount": 0,
+      "scope": "Append-only mock response delivered to actual service; original absent-token replace test remains separate.",
+      "controlledServiceBaseUtc": "2026-09-21T16:06:08.630Z",
+      "unchangedOriginalRetrievalUtc": "2026-09-21T09:30:00.000Z",
+      "providerMode": "mock",
+      "providerCalls": 1,
+      "providerIdentity": {
+        "provider": "qa-qd008-append-control",
+        "model": "frozen-eq003-reviewed-selection",
+        "version": "2",
+        "mode": "mock"
+      }
+    }
+  ],
+  "stairs": {
+    "summary": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/summary.json",
+      "bytes": 2257,
+      "sha256": "c3829eba91b587609c571f96859cbe91f7bca33db81b568473d74cd0788c871c"
+    },
+    "rawStatus": "CAPTURED_FOR_REVIEW",
+    "observations": [
+      {
+        "phase": "live-ko",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/live-ko/result.json",
+          "bytes": 305067,
+          "sha256": "7b508b3866038891cf201fd7b6b20befe671595d9f601a5be7ae081275828886"
+        },
+        "status": "CAPTURED_FOR_REVIEW",
+        "locale": "ko",
+        "resultStatus": "accepted",
+        "selectedEvidence": [
+          {
+            "documentId": "EQ-003",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+          }
+        ],
+        "actualModelOutputStatus": "CAPTURED_FOR_REVIEW",
+        "semanticStatus": "NOT_DEMONSTRATED_PENDING_INDEPENDENT_REVIEW",
+        "semanticReview": null,
+        "httpPublication": "NOT_RUN_ON_THIS_SURFACE",
+        "physicalUiAudio": "NOT_RUN_ON_THIS_SURFACE",
+        "startedAt": "2026-09-21T17:28:16.060Z",
+        "completedAt": "2026-09-21T17:28:16.338Z"
+      },
+      {
+        "phase": "additive-en",
+        "output": {
+          "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/additive-en/result.json",
+          "bytes": 375117,
+          "sha256": "95e3ade65c7aa5c15055e6a508e30f1e61592aaed8d4eb23fa995dd283d4e929"
+        },
+        "status": "CAPTURED_FOR_REVIEW",
+        "locale": "en",
+        "resultStatus": "accepted",
+        "selectedEvidence": [
+          {
+            "documentId": "EQ-003",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+          }
+        ],
+        "actualModelOutputStatus": "CAPTURED_FOR_REVIEW",
+        "semanticStatus": "NOT_DEMONSTRATED_PENDING_INDEPENDENT_REVIEW",
+        "semanticReview": null,
+        "httpPublication": "NOT_RUN_ON_THIS_SURFACE",
+        "physicalUiAudio": "NOT_RUN_ON_THIS_SURFACE",
+        "startedAt": "2026-09-21T17:28:16.393Z",
+        "completedAt": "2026-09-21T17:28:16.771Z"
+      }
+    ],
+    "scope": "Saved actual E5/model direct-service captures; independent C4 stairs semantic review remains pending in these files. No HTTP/UI delivery or candidate acceptance."
+  },
+  "engine": {
+    "review": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/engine-observation-review-v1.json",
+      "bytes": 144859,
+      "sha256": "b9061361771f618f330ae074d6048eb2ccfc3d3a27494943c6dd7578020acae2"
+    },
+    "summaryChecks": {
+      "observationCount": 14,
+      "negativeCount": 10,
+      "allNegativeCurrentStagesExcludeBothScopedDocuments": true,
+      "allFourteenImmutablePrimaryFieldsPreserved": true,
+      "allFourteenEligibleComparisonsEqual": true,
+      "rawSettlement": {
+        "settled": true,
+        "pendingOperations": 0,
+        "elapsedMs": 24.97245400000247
+      },
+      "rawDisposedAfterSettle": true,
+      "reviewJoinIssues": []
+    },
+    "findings": [
+      {
+        "classification": "VALID_ALTERNATE_SELECTION_EQ002_ACCEPTANCE_UNOBSERVED",
+        "cases": [
+          "direction-ko",
+          "direction-en"
+        ],
+        "finding": "Actual same-preset heading0 to -30 and new primary/route are established. EQ-002 was eligible, ranked by FTS/vector/fusion and supplied to actual Qwen alongside EQ-001. Raw responses selected index0 (EQ-001). The accepted and current published KO/EN explanations exactly match reviewed EQ-001 and preserve the engine primary fields. This is not evidence of a wrong applicability gate. EQ-002-specific actual accepted/publication coverage remains unobserved; do not convert it to PASS or force selection.",
+        "validAlternateBasis": "EQ-001 full body applies to equipment-assessed EQUIPMENT-A exposure with known worker position and current valid engine route/destination. Both direction cases have known WORKER-A, actual load hazard, FOLLOW_VALIDATED_ROUTE and a valid REFUGE-02 route."
+      },
+      {
+        "classification": "NEGATIVE_CURRENT_PRIMARY_EXCLUSION_OBSERVED",
+        "cases": 10,
+        "finding": "All ten negative observations carry both facts false and exclude EQ-002 and FG-002 from current eligible/ranked/model-input/result/current-publication stages. First-fire and fire profile-only cases use reviewed FG-004 under explicit evacuation and valid route; initial equipment uses EQ-001. Direction profile-only cases use GUIDANCE_UPDATED, empty hazardTypes and no_match with no model invocation."
+      },
+      {
+        "classification": "FG002_GENUINE_CAUSAL_POSITIVE_OBSERVED",
+        "cases": [
+          "fire-reroute-ko",
+          "fire-reroute-en"
+        ],
+        "finding": "Prior north route exists before virtual8000. Same-time PATH-B block and FIRE-ZONE-B growth invalidate that old route; the south/east replacement avoids the expanded fire and matches captured engine route. Same-run/worker primary1/route1 becomes primary3/route2, explicit evacuation retained. Actual model selects FG-002 and current supplement4 publishes the exact reviewed KO/EN sentence. Attribution is joint fire growth/closure, not initial first fire or closure label alone."
+      },
+      {
+        "classification": "HISTORICAL_EVIDENCE_REQUIRES_PRIMARY_SCOPE",
+        "finding": "FG post-event profile-only artifacts retain older FG-002 rows in guidance_evidence under a stable guidanceId. New primary5/supplement6 contains only FG-004, and its retrieval/model/result excludes FG-002. Historical table membership alone must not be relabeled as a new-primary publication failure."
+      }
+    ],
+    "limits": [
+      "No overall candidate acceptance or original85 reassessment is issued.",
+      "Direct durable/runtime publication only; captured engine transmission attempts have zero connected subscriptions, so this does not establish HTTP/SSE delivery or physical UI/audio.",
+      "The fourteen controlled09:30/live eligible comparisons were observed equal for these requests only; no global time equivalence is inferred.",
+      "EQ-002 actual-model acceptance and current EQ-002 publication remain unobserved in both causal direction cases.",
+      "Captured booleans were corroborated with raw snapshots/events; no production fact, query, corpus, source approval or raw result was changed."
+    ],
+    "observations": [
+      {
+        "id": "first-fire-ko",
+        "kind": "first-fire-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-ko.json",
+          "sha256": "c7898749aa6a7ba1aa1cd8ca798ca4c22be58ca6cb1cb4e26e63ba2b101c42df"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "FG-004"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "FG-004"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 1,
+        "routeVersion": 1
+      },
+      {
+        "id": "first-fire-ko-profile-only",
+        "kind": "profile-only-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-ko-profile-only.json",
+          "sha256": "d64f65e08b521d671b515fc29a24ad8e46e81c2691507c2558067157188adda4"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "FG-004"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "FG-004"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 3,
+        "routeVersion": 1
+      },
+      {
+        "id": "fire-reroute-ko",
+        "kind": "fire-reroute-positive",
+        "rawPositiveCapture": "SCOPED_ACCEPTANCE_CAPTURED_FOR_REVIEW",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-ko.json",
+          "sha256": "d6f7dc0c774b1bd05c9bfc692f93dea0ab3fe2a2b12b296dd189d97e952d0a0a"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": true,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "FG-002",
+          "FG-004"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "FG-002"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 3,
+        "routeVersion": 2
+      },
+      {
+        "id": "fire-reroute-ko-profile-only",
+        "kind": "profile-only-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-ko-profile-only.json",
+          "sha256": "e000da391fe51bd821c834ebb557939a3fab4c3928a6a03a9978cbd5dbc1623f"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "FG-004"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "FG-004"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 5,
+        "routeVersion": 2
+      },
+      {
+        "id": "initial-equipment-ko",
+        "kind": "initial-equipment-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/initial-equipment-ko.json",
+          "sha256": "e88bf0533a91cfd33418a4ee3c3cc71786c1d2aa00fcddce77fd408c5448cdac"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "EQ-001"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "EQ-001"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 1,
+        "routeVersion": 1
+      },
+      {
+        "id": "direction-ko",
+        "kind": "direction-positive",
+        "rawPositiveCapture": "SCOPED_ACCEPTANCE_NOT_OBSERVED",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-ko.json",
+          "sha256": "0cc073fb52a8677804950d47974c7f8aeb84452daf2cba413baac077c607104f"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": true
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "EQ-001",
+          "EQ-002"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "EQ-001"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 3,
+        "routeVersion": 2
+      },
+      {
+        "id": "direction-ko-profile-only",
+        "kind": "profile-only-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-ko-profile-only.json",
+          "sha256": "486233a52c8c377eaa5cb4d69491ca4f311d04a4b25b4a7b1ae36b6758df56f0"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "GUIDANCE_UPDATED",
+        "scenarioPolicy": null,
+        "modelInputDocumentIds": [],
+        "serviceStatus": "fallback",
+        "publishedDocumentIds": [],
+        "exactReviewedText": null,
+        "primaryGuidanceVersion": 5,
+        "routeVersion": null
+      },
+      {
+        "id": "first-fire-en",
+        "kind": "first-fire-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-en.json",
+          "sha256": "566fa21bc4120b9f0249e7dc0c2c10ab0483cd4e7d7d255bde5b2d4a02d8c0f0"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "FG-004"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "FG-004"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 1,
+        "routeVersion": 1
+      },
+      {
+        "id": "first-fire-en-profile-only",
+        "kind": "profile-only-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-en-profile-only.json",
+          "sha256": "7df111961477409c9a65c69000f8c2737f3d5887c2fe6034be4cf602f69f508a"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "FG-004"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "FG-004"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 3,
+        "routeVersion": 1
+      },
+      {
+        "id": "fire-reroute-en",
+        "kind": "fire-reroute-positive",
+        "rawPositiveCapture": "SCOPED_ACCEPTANCE_CAPTURED_FOR_REVIEW",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-en.json",
+          "sha256": "c450ab01171f0a3190a938af2fb68d7a896863c0d1d6573143895f5dfbb4eda0"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": true,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "FG-002",
+          "FG-004"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "FG-002"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 3,
+        "routeVersion": 2
+      },
+      {
+        "id": "fire-reroute-en-profile-only",
+        "kind": "profile-only-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-en-profile-only.json",
+          "sha256": "8e25bffc3e6763f1f6f69d07b6c096c45e1cf183896c6482ea2e7b56da1936a1"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "FG-004"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "FG-004"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 5,
+        "routeVersion": 2
+      },
+      {
+        "id": "initial-equipment-en",
+        "kind": "initial-equipment-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/initial-equipment-en.json",
+          "sha256": "3a664bc8758faa07b9371325cac1352b795c2e702c0918734b69cc0a4bc80b70"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "EQ-001"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "EQ-001"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 1,
+        "routeVersion": 1
+      },
+      {
+        "id": "direction-en",
+        "kind": "direction-positive",
+        "rawPositiveCapture": "SCOPED_ACCEPTANCE_NOT_OBSERVED",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-en.json",
+          "sha256": "eb378d8346e62deb15b2f90e3fd16a2b4bcaaa34af42248a40eb942a5b8b1222"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": true
+        },
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "scenarioPolicy": "evacuation",
+        "modelInputDocumentIds": [
+          "EQ-001",
+          "EQ-002"
+        ],
+        "serviceStatus": "accepted",
+        "publishedDocumentIds": [
+          "EQ-001"
+        ],
+        "exactReviewedText": true,
+        "primaryGuidanceVersion": 3,
+        "routeVersion": 2
+      },
+      {
+        "id": "direction-en-profile-only",
+        "kind": "profile-only-negative",
+        "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+        "output": {
+          "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-en-profile-only.json",
+          "sha256": "9ee1e5ea632a7d847050c30b6846ad966b140678b5672732e42cf19a2060aa7d"
+        },
+        "facts": {
+          "fireInvalidatedPreviousRoute": false,
+          "equipmentDirectionChanged": false
+        },
+        "actionCode": "GUIDANCE_UPDATED",
+        "scenarioPolicy": null,
+        "modelInputDocumentIds": [],
+        "serviceStatus": "fallback",
+        "publishedDocumentIds": [],
+        "exactReviewedText": null,
+        "primaryGuidanceVersion": 5,
+        "routeVersion": null
+      }
+    ],
+    "scope": "Independent review of fourteen actual direct-runtime/attachRag observations; no HTTP/SSE subscriptions or physical delivery. EQ-002-specific acceptance/publication absent in both causal direction cases despite correct eligibility and actual input."
+  },
+  "privacy": {
+    "scan": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/qa-privacy-scan-v1.json",
+      "bytes": 34757,
+      "sha256": "565d0f6af7f6021125f1561f07cb85b2b38506bd6b72c5c91ac5cf5b6a96141a"
+    },
+    "status": "NO_FROZEN_CANARY_MATCH_IN_CAPTURED_SURFACES",
+    "counts": {
+      "files": 23,
+      "bytes": 1616148,
+      "jsonFiles": 17,
+      "rawWireFiles": 4,
+      "logFiles": 2,
+      "logBytes": 0,
+      "findings": 0
+    },
+    "rawDriverStatus": "NOT_RUN",
+    "exactE5Join": false,
+    "limits": [
+      "Unique target service-to-E5 query/vector/retrieval association remains invalid under the original oracle.",
+      "Production HTTP process in-process E5 inputs/vectors are not captured here.",
+      "Production HTTP/model/SSE/client and production application-log privacy scans remain separately pending.",
+      "Physical client display/speech and uncaptured logs or channels are outside this scan."
+    ]
+  },
+  "clockAndIdentity": {
+    "startedAt": "2026-09-21T17:27:54.968Z",
+    "endedAt": "2026-09-21T17:28:44.096Z",
+    "documentUtc": "2026-09-21T09:30:00.000Z",
+    "virtualScenarioUtc": "2026-09-21T09:00:00Z",
+    "original85Unmodified": true,
+    "noHistoricalResultTransfer": true,
+    "note": "Frozen09:30 retrieval, explicitly controlled service clock and additive live engine/service observations retain separate recorded clocks."
+  },
+  "frozenInputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/derived/retrieval-cases.v1.json",
+      "bytes": 30121,
+      "sha256": "7ba78b45eb36871960c2ea00db7a31dc0220492415dbb1cf2f264f0b61564951",
+      "recordedSha256": "7ba78b45eb36871960c2ea00db7a31dc0220492415dbb1cf2f264f0b61564951",
+      "matchesRecorded": true
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/derived/filter-cases.v1.json",
+      "bytes": 9499,
+      "sha256": "9b4ce2b63c65ecc95aef3add69cd04f48f0ddbf441445d1a8580088a8448c1e3",
+      "recordedSha256": "9b4ce2b63c65ecc95aef3add69cd04f48f0ddbf441445d1a8580088a8448c1e3",
+      "matchesRecorded": true
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/derived/fault-cases.v1.json",
+      "bytes": 13056,
+      "sha256": "51c0cf09a08cf53188f9e93761f6feb5ffaf19c4be0f9225c4015dc24cb2af62",
+      "recordedSha256": "51c0cf09a08cf53188f9e93761f6feb5ffaf19c4be0f9225c4015dc24cb2af62",
+      "matchesRecorded": true
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/derived/fault-amendment.v1.2.json",
+      "bytes": 3541,
+      "sha256": "05dcdde2d9adff2fa0738cefe281534ed42f93f8aaab4ed06e2f3322cf339642",
+      "recordedSha256": "05dcdde2d9adff2fa0738cefe281534ed42f93f8aaab4ed06e2f3322cf339642",
+      "matchesRecorded": true
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/review-time-cases.v1.1.json",
+      "bytes": 8150,
+      "sha256": "671c55cd665218878f78bbdfadabd34230351beae99b4bc8825f50bbafed7767",
+      "recordedSha256": "671c55cd665218878f78bbdfadabd34230351beae99b4bc8825f50bbafed7767",
+      "matchesRecorded": true
+    }
+  ],
+  "provenance": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval-summary.json",
+      "bytes": 5691,
+      "sha256": "04647f9fd72d61f3f08a13d1e8f74a39ea4d7e6a4188e680361c17539aaa9f8d"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filter-summary.json",
+      "bytes": 1348807,
+      "sha256": "b405888df27999848b69e579fc15f1ec902347a37fb38ad097f0056468c8b0f2"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/fault-summary.json",
+      "bytes": 956016,
+      "sha256": "c70e714af255d67612d48e61c78f4d5122a3f80a3319be4ba284cf8381357c5c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/qa-readonly-initial-summary.json",
+      "bytes": 1047635,
+      "sha256": "43be39b83fbc5b428305c15b2d8e6cc37a42d30c01caac2f0143db87bcfc4d60"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/attempt-start.json",
+      "bytes": 14919,
+      "sha256": "53f66751f4568e37b0b4445e432e2998280a7c9f3607adcbf0247d2f853579cf"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/attempt-end.json",
+      "bytes": 14131,
+      "sha256": "4581cb6f3694d87a90906180940413bf2a4dde1ef7f563d4e3cc555c0e0ed5c2"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01.time.txt",
+      "bytes": 1081,
+      "sha256": "1025423407126a821cf93d15c1c8d7cc6ddc2292cc775cd81e3b9e6203699345"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/summary.json",
+      "bytes": 3455,
+      "sha256": "7ff776c9273b1b7e94f6b3c45353b1b289efd9403ce1dc602798e4ce59aaee29"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-retest-preparation-v1/fixture-binding-proposal.v3.json",
+      "bytes": 14033,
+      "sha256": "8e4cd6dbc450e37dc787c23da5002262f00efd7b2a31d5c473d15d2d0735df89"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/engine-observation-review-v1.json",
+      "bytes": 144859,
+      "sha256": "b9061361771f618f330ae074d6048eb2ccfc3d3a27494943c6dd7578020acae2"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/summary.json",
+      "bytes": 9000,
+      "sha256": "d5327f389bba31165001e2304485b33495f6c10f44df48cf23a9c25f4ff5002c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/entry-end.json",
+      "bytes": 491,
+      "sha256": "47363828dd9e6eeb124b9117b170a9d0b9bfc5f416993605018012768c9227f1"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/stairs/summary.json",
+      "bytes": 2257,
+      "sha256": "c3829eba91b587609c571f96859cbe91f7bca33db81b568473d74cd0788c871c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/stairs-extension/extension-result.json",
+      "bytes": 344,
+      "sha256": "4361a9b28f4f6d595379091c14c5a8d31bcb41ae7e4ac5140a17377ee944eafd"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/qa-privacy-scan-v1.json",
+      "bytes": 34757,
+      "sha256": "565d0f6af7f6021125f1561f07cb85b2b38506bd6b72c5c91ac5cf5b6a96141a"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/privacy-extension/summary.json",
+      "bytes": 2401,
+      "sha256": "7877386c21bd18c44117e272562e8596ecc0eba8a9c3176fc94d9a43abd6c15c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-retest-preparation-v1/case16-append.v2.json",
+      "bytes": 11882,
+      "sha256": "f8728cfe02802dcebc956be55046a1bb7fbd8ebd227afd324eed516e9f53c222"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-003.body.md",
+      "bytes": 10196,
+      "sha256": "3de397aa1733fbda7d4ba4d9c510e147d6799c060e9a005d9a95132e6d16379e"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.body.md",
+      "bytes": 20661,
+      "sha256": "5339f3cd43df552e3bda5da24fbef2e72dc49f9cd1ea77bba401dadb6548f2db"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/server/rag/retrieval-candidates.ts",
+      "bytes": 6269,
+      "sha256": "f0fa519d74e096797cb40f4aa56dd8eb776eb78f2ad7afad5e803791a93178e7"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428/eligibility-oracle.ts",
+      "bytes": 2367,
+      "sha256": "c7bc1ee6ef249e4dff5a6f2ac73687839cdbef4bb6bedd1ad39d9dd1306c512e"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428/retrieval-oracle.ts",
+      "bytes": 7730,
+      "sha256": "6f07ac4a8349eda98a04ea5c5fd20751fe041464a6aa82585f981135709a3962"
+    }
+  ],
+  "original85": [
+    {
+      "testId": "Q-RAG-07-01",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-01.json",
+      "bytes": 29433,
+      "sha256": "efa68fc18d11b3cd38728d7522fec6f0ae28ab606ea3704e371eee28413c316b",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-02",
+      "group": "retrieval",
+      "status": "FAIL",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-02.json",
+      "bytes": 29541,
+      "sha256": "238ea6dfc25f4f8b6689bcc3a5c20a43fc64586c1fad467a97bd10c39b750d96",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-03",
+      "group": "retrieval",
+      "status": "FAIL",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-03.json",
+      "bytes": 37144,
+      "sha256": "4d3219cb5ddcc96341f3322d0bfbcc04b7d84f443d580007db2116a97f27c17d",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-04",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-04.json",
+      "bytes": 37551,
+      "sha256": "54b5ef945069381aa630184384c9be4ed729e28c7d0bb130a392ef11acc478cc",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-05",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-05.json",
+      "bytes": 29313,
+      "sha256": "d59df5b9050c8e4914b555aa091f05f41a2ed8a3053b62e8a5c5c574d9436661",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-06",
+      "group": "retrieval",
+      "status": "FAIL",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-06.json",
+      "bytes": 29428,
+      "sha256": "27c5d5d732a94842a22dee347dafce38a6de306a03e4af948be4c0e79d379ef5",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-07",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-07.json",
+      "bytes": 29136,
+      "sha256": "9ba29275b94f4f85e5ce4a10c333c72211b45f0a7711ba39538e1c4cf76eb4ca",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-08",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-08.json",
+      "bytes": 29691,
+      "sha256": "427874e0c4a8b97e294af3283edce4ae157ae03ca311950c9c778af1f12a7b94",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-09",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-09.json",
+      "bytes": 29238,
+      "sha256": "69d080cb96936dc6a6b113199e3edfd6e49e1c172464831c028aa80672a661e0",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-10",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-10.json",
+      "bytes": 29545,
+      "sha256": "f3d6cd074a2203a540131393c807e68ae5228317f9ce0ce3a2230016bf5b8a88",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-11",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-11.json",
+      "bytes": 7218,
+      "sha256": "c2edbc66f4edda82ce8bf79a02b8b24b33cb0b0a61aae81a65e1e5b348c91136",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-12",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-12.json",
+      "bytes": 8015,
+      "sha256": "e76f93e048f89a1362b22c4f64e3d9f0699bd0195f025fae9b31c878959dd9c1",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-13",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-13.json",
+      "bytes": 29380,
+      "sha256": "4e254b748277018ffbb276fdaa579b186174ce81d4207dfbc07b516a17e59df4",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-14",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-14.json",
+      "bytes": 29438,
+      "sha256": "d754bfa76899e4bfdcf9d052d194ad880a553e851f1c3acb3c44924de9eba379",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-15",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-15.json",
+      "bytes": 29533,
+      "sha256": "f86fae1ddd99341ea2022ef7e95a22822151e6c887e90573d38acd15564f8da4",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-16",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-16.json",
+      "bytes": 29556,
+      "sha256": "a17ac6541d29bc44b9c76a81110749b237532f73b0d68d4a93b7d8cb513d18ad",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-17",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-17.json",
+      "bytes": 29305,
+      "sha256": "1110d11777c5a60bddaa884c47a7f880142f0e3dc86e320fed3e63c500c2089f",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-18",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-18.json",
+      "bytes": 44701,
+      "sha256": "608d62314ec7e491c33a0918daf40f8daf8eaf85afb30666d398d634f63fdfab",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-19",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-19.json",
+      "bytes": 29107,
+      "sha256": "ba06dfd368efbec69d1946adc03d5768252dd369db43c089e450f25f00f41c19",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-07-20",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-07-20.json",
+      "bytes": 26467,
+      "sha256": "ba888c96900113e4c5bcfaa39cbfcd486dff5e9270ec22ff7962d4f0a4ff3d1a",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-CLOCK-01",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-CLOCK-01.json",
+      "bytes": 12782,
+      "sha256": "68785d837dabe260fef8dfddb15c55bcb38ee17f10edcc7e099b924203d0e403",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-CLOCK-02",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-CLOCK-02.json",
+      "bytes": 8601,
+      "sha256": "ab99859d50d277758ef54e4ee12d4384d69be457396449fb1fa317a85bea0ba5",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-CLOCK-03",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-CLOCK-03.json",
+      "bytes": 27742,
+      "sha256": "61e17e6e02a631169288b3ad1d84d4b57445fd473f51c1be014d9f8a672f6e09",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-CLOCK-04",
+      "group": "retrieval",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval/Q-RAG-CLOCK-04.json",
+      "bytes": 27745,
+      "sha256": "15f0272331a6b2ac563467b46acb56c8fd404d94724b66721f002505831120fb",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F01",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F01.json",
+      "bytes": 43262,
+      "sha256": "ecfb733d1a31f6f9ba035e5e0e1d5b1af13ff979515c1e93e5708800828f9fc4",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F02",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F02.json",
+      "bytes": 43278,
+      "sha256": "a14dd73f776e916e7c8a3131bee5a0fca2f2a82522282264d62a3d7d47572e61",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F03",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F03.json",
+      "bytes": 43460,
+      "sha256": "a332bb1c18cbf610cf9ce3771567cf9b827b8fefe5703fa3b427e162acabf48e",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F04",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F04.json",
+      "bytes": 50142,
+      "sha256": "49e7c50fb2b6f7fa114bab2475b1497908369ee0613eb282d8fe9fb9e4b99af7",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F05",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F05.json",
+      "bytes": 43430,
+      "sha256": "c478e4ed2daa66dd21f8d292383b9c0e3eab324f041f78706ed4a8d1968abae0",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F06",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F06.json",
+      "bytes": 43447,
+      "sha256": "9ace3abc9a763c4aaa495ff7bf168abb97a502e1eadb6074fe8a0f055870b333",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F07",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F07.json",
+      "bytes": 50124,
+      "sha256": "eae8f9640141a70ee2b66f395a694c1edbef9e214b9b577b970799d1d3f5e455",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F08",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F08.json",
+      "bytes": 43343,
+      "sha256": "4be1625d5829721773f985a503030a6eef4411b2edfa2faf9dba60a6c5b39638",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F09",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F09.json",
+      "bytes": 43536,
+      "sha256": "b8df5f0ba0d3a8b004b02eec7c4f02a9e38885fe93fac91ba19fe7f1c69806a7",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F10",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F10.json",
+      "bytes": 14185,
+      "sha256": "1a9e579d5008501f615a0522185de196f6d1703986ce106ebde3d94a454c9989",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F11",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F11.json",
+      "bytes": 50288,
+      "sha256": "4e456b7b850514db92f14dc90311184986543d507605a488e55607cd43926521",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F12",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F12.json",
+      "bytes": 43380,
+      "sha256": "ea12a873a16a713b2f29d8afe0645fc4d1cc8320d8585bfc758836ef8984fdf7",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F13",
+      "group": "filter",
+      "status": "BINDING_GAP",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F13.json",
+      "bytes": 14090,
+      "sha256": "78f71d42b3896c21d1537296747cfd0c67d39e94b2f6fd73e93ca1da3291f1d1",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F14",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F14.json",
+      "bytes": 43934,
+      "sha256": "e0730b404ea65a866a697ce53374e5ff508456219417563014fee2a901ead16d",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F15",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F15.json",
+      "bytes": 43873,
+      "sha256": "4094d6b1f7439a44712059708fd3dc9d61c45f15904aaf168d7703ab741a61e5",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F16",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F16.json",
+      "bytes": 43351,
+      "sha256": "941e413fa9741b54e2ba7fe4e95f86046cbc43ce4f3f086926194143a11b2b6a",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F17",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F17.json",
+      "bytes": 43470,
+      "sha256": "3af2a537368e2527b82c31b00e8412ce847636d1a82b97da55dce610b048f80d",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F18",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F18.json",
+      "bytes": 43049,
+      "sha256": "580ccb653f30f77042bf15ebe89a41fa8ab0bce941774839e85246f5d4f0759c",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F19",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F19.json",
+      "bytes": 43209,
+      "sha256": "9bb7f8c60cd47cf32481b6d5ecf9e65fb25f238cd8342ec24087ecfbb0bf5cdc",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F20",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F20.json",
+      "bytes": 43365,
+      "sha256": "4ea7f827af7a61fbfde1b3deb75d20410ce098187b0eac33a46f783b7a0b725f",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F21",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F21.json",
+      "bytes": 43554,
+      "sha256": "4348df03e794e81454372ba35249a6446b2ee5f5a0d1a95a1f102bede8adc3b2",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F22",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F22.json",
+      "bytes": 43321,
+      "sha256": "e8d0a8b600c5a4bbfabda8ae20546b00e15a1aaec16ed69bfb747ef0e9ee7645",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F23",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F23.json",
+      "bytes": 43422,
+      "sha256": "e8c4d7e7944c23bc68ec4a40b044a887d7542d41d8cc7cd4bd561c29325e1c1d",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F24",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F24.json",
+      "bytes": 43821,
+      "sha256": "3e96da9e68e5cf8e38f73d510b86eab25b16c38c130cfece1e7d2afbbabc5ba6",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F25",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F25.json",
+      "bytes": 43826,
+      "sha256": "ac14294267a96f1b3753aab3749c8ef456584d68698eaee0e6918d931bf11a1c",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F26",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F26.json",
+      "bytes": 43446,
+      "sha256": "182f4a57f433e98f7d86611786e71cdcbf95b46cdf13cfaa992adbed57c9fe83",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F27",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F27.json",
+      "bytes": 28499,
+      "sha256": "0ae1dcb492fe2acd4f54a42a3943307a6f0981b04c6c141879cc049390afe745",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F28",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F28.json",
+      "bytes": 72974,
+      "sha256": "118dbdc1841c94804debf16f197afaeebc83911fae18a82b5a3f0606cf85d120",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F29",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F29.json",
+      "bytes": 86641,
+      "sha256": "37e1a34cff1c2dbaa0f8666a4fc077fea39f6b97826c9edf7c873e7913bc9153",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-06-F30",
+      "group": "filter",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filters/Q-RAG-06-F30.json",
+      "bytes": 43496,
+      "sha256": "8dd080e4cd332ad7d02a4b35688ff712ba2cc01d4b6e2df8584c9dad7a837625",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-01",
+      "group": "fault",
+      "status": "NOT_RUN",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-01.json",
+      "bytes": 585,
+      "sha256": "65e8ba814cbbb981be5328e3f2864aaa7f9db03f159605c1e00e1b44a8a7b87c",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-02",
+      "group": "fault",
+      "status": "NOT_RUN",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-02.json",
+      "bytes": 585,
+      "sha256": "9af191a54f3e7fb042579bc97428fe37bf36ab2c5bff315d7e862ba6e17d2d37",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-03",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-03.json",
+      "bytes": 16363,
+      "sha256": "f57d2614d2784eb55c846fa351be999fff11205562bb152a744d1401abe8c7d0",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-04",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-04.json",
+      "bytes": 15119,
+      "sha256": "54d54158040efd76a983292c86e8f2d28e6fc268c21c20df0278480f3ce57a6a",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-05",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-05.json",
+      "bytes": 15119,
+      "sha256": "f3a176f873c25c4cea3bb9ee70c6ddf05c8c193cdb89a598f874cf0d95ebccbe",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-06",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-06.json",
+      "bytes": 15011,
+      "sha256": "98b9a16fa29408f5965bb5508dd184be241a9da0d1566004038710aa4dbfff0d",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-07",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-07.json",
+      "bytes": 14995,
+      "sha256": "f72183258ac3581a03a09531bc345732cb2ae7bad3ce51743a6bbcbe8ce49c7f",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-08",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-08.json",
+      "bytes": 15154,
+      "sha256": "3049198f6b19f7703a9923f198b81d6af893e4101a90b51c4b611a8d1d1a7ffc",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-09",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-09.json",
+      "bytes": 15165,
+      "sha256": "c87af959e8e52da5c8005daeed3fa01abbd0365216f2434f0f9b56d29030c76a",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-10",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-10.json",
+      "bytes": 15142,
+      "sha256": "a012d023895d69a92d1025d8df9889d4b100dc77a62b8fb927835a6f70b65d0b",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-11",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-11.json",
+      "bytes": 15154,
+      "sha256": "50820d1cba5fc12da5960798165dba5cb09b0fb2250d95d61c18baec7d0a38bc",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-12",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-12.json",
+      "bytes": 15145,
+      "sha256": "23b9950d11589f5085667d990748f836ea4ed5a0161c5bfeeeec64b67610f491",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-13",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-13.json",
+      "bytes": 15089,
+      "sha256": "287200773aa99131685bf6465dcedddc4ca56bb3b478f8d1237ca6442fbdd256",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-14",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-14.json",
+      "bytes": 15217,
+      "sha256": "ff31ca40489779f5310e332d885161194d4497540aa232edffccb9363ec892bf",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-15",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-15.json",
+      "bytes": 15224,
+      "sha256": "9991e172db6fc9174902aab00576a29bbdb8042b4c030e56d583e39fe30de654",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-16",
+      "group": "fault",
+      "status": "NOT_RUN",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-16.json",
+      "bytes": 14428,
+      "sha256": "5fe0f8e7c80c360968e1109222811d132aa87e5a853ce8f3b5dc32ab31e8113e",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-17",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-17.json",
+      "bytes": 16425,
+      "sha256": "8b5c042b1795f9282fd3363fe1475bff8d2cdb3fa0834b334f5d9ae4c06001e2",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-18",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-18.json",
+      "bytes": 15376,
+      "sha256": "31d4cef526bdcb3f1d287c9a2c597630411bad0f3ac11cd0611ad60f6234b0fc",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-19",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-19.json",
+      "bytes": 15303,
+      "sha256": "f56f010852c5c1c2243c9cbb90a9132cad1e822cb8eab0fa54c870c7217d3912",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-20",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-20.json",
+      "bytes": 15405,
+      "sha256": "9fadffed45b60f236c2437a30fff9ae96dcd042267e61c3b9d9444970c6be710",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-21",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-21.json",
+      "bytes": 15368,
+      "sha256": "1fc1108dcedec26524904d0ea33430c5040419fe42e8ac76f4e9d3e95adcd3a1",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-22",
+      "group": "fault",
+      "status": "FAIL",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-22.json",
+      "bytes": 15353,
+      "sha256": "b3512009f162677925d7e22555e7b2beada4e9d4f7284f893b300901a0175572",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-23",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-23.json",
+      "bytes": 15149,
+      "sha256": "36bfec4bff2b2d451d3215982abcdf28e2958f66d4e67d9d92400ee4e394e76b",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-24",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-24.json",
+      "bytes": 14998,
+      "sha256": "b6afaf85f8a570e1630e3fd256f704734f4c7a39fb58d15859373f30de1f527e",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-25",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-25.json",
+      "bytes": 45059,
+      "sha256": "69f8c659f3a9861aa411478db7ebbe45d7ccad03feb6fac270ff2545cb2a4732",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-26",
+      "group": "fault",
+      "status": "NOT_RUN",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-26.json",
+      "bytes": 601,
+      "sha256": "6323de6744daca0d09f9bcd815a982cdceee75d006509ea7bf93ba580938beab",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-27",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-27.json",
+      "bytes": 15215,
+      "sha256": "fd168d437367aca2c11113591b934dd4eac93bac5e627b53638e413f24d9ee47",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-28",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-28.json",
+      "bytes": 15123,
+      "sha256": "fa04bd1bcefe73c20ec6596402e49b9ce6f342d9029891920cbf393c4fd7f45b",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-29",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-29.json",
+      "bytes": 15255,
+      "sha256": "b08edaf9e7baab6e115d176d2ef57ca30ce486e206f8ae470c86997c33ab0c9f",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-30",
+      "group": "fault",
+      "status": "PASS",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-30.json",
+      "bytes": 449747,
+      "sha256": "0a874cd58d6876e172462948169f16d85e34ac21858f609004db9c18ea99a67f",
+      "matchesSummary": true
+    },
+    {
+      "testId": "Q-RAG-08-31",
+      "group": "fault",
+      "status": "NOT_RUN",
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/faults/Q-RAG-08-31.json",
+      "bytes": 1544,
+      "sha256": "d22d333c023d172a489a3ea9155ca459b08389cce82454123cccb5ce772cde6d",
+      "matchesSummary": true
+    }
+  ],
+  "privatePredicateAndOriginalOracle": {
+    "classification": "ORIGINAL_ORACLE_PRE_PRIVATE_FACT_ASSUMPTIONS",
+    "predicate": {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/server/rag/retrieval-candidates.ts",
+      "bytes": 6269,
+      "sha256": "f0fa519d74e096797cb40f4aa56dd8eb776eb78f2ad7afad5e803791a93178e7",
+      "fireInvalidationLines": "85–88",
+      "movementPolicyLines": "89–92",
+      "equipmentDirectionLines": "93–96"
+    },
+    "oracle": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428/eligibility-oracle.ts",
+      "bytes": 2367,
+      "sha256": "c7bc1ee6ef249e4dff5a6f2ac73687839cdbef4bb6bedd1ad39d9dd1306c512e",
+      "lines": "4–26",
+      "observation": "Original metadata-only applicability includes approval/time/site/mode/hazard/role/zone/substance/action/profile and metadata policy; it does not evaluate the private per-document event predicates."
+    },
+    "comparisons": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428/retrieval-oracle.ts",
+      "bytes": 7730,
+      "sha256": "6f07ac4a8349eda98a04ea5c5fd20751fe041464a6aa82585f981135709a3962",
+      "lines": "48–53",
+      "observation": "The metadata-derived eligible set feeds both agreement and complete-vector assertions. Missing private facts therefore produce two oracle mismatches when C4 correctly excludes scoped documents before scoring."
+    },
+    "scope": "Classification explains saved predicates and traces only. All raw failures remain. Native expected/forbidden/action/status checks and real authoritative-event coverage are separate."
+  },
+  "independentRawReaderConfirmation": {
+    "observedAt": "2026-09-21T17:46:26Z",
+    "identities": 85,
+    "rawCounts": {
+      "PASS": 75,
+      "FAIL": 4,
+      "BINDING_GAP": 1,
+      "NOT_RUN": 5
+    },
+    "controlledCases": 8,
+    "eachControlAssertions": "6/6",
+    "eachScoringChecks": "4/4",
+    "positiveAppendEachAssertions": "10/10",
+    "providerScope": "58 original fault variants and two additive positive/append calls are mock; fact/policy derivatives use actual E5 retrieval."
+  }
+}

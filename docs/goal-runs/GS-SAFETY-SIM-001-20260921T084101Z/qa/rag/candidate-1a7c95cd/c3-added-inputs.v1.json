@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0",
+  "status": "PRE_RUNTIME_ADDITIVE_INPUTS",
+  "candidateId": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+  "original85Inputs": "Unchanged; preserve every raw outcome and diagnostic separately.",
+  "localeVariants": [
+    { "id": "C3-HTTP-EQUIPMENT-ADDITIVE-EN", "mode": "equipment", "scenario": "EQ-APPROACH", "workerId": "WORKER-A", "profileChange": "supported locale/preferredLocale en and increased version; all capabilities retained", "expected": "Actual English supplement with matching fresh primary, approved evidence and immutable first/current lineage", "warmup": "separate fresh run outside measured samples" },
+    { "id": "C3-HTTP-FIRE-GAS-ADDITIVE-EN", "mode": "fire-gas", "scenario": "FG-FIRE", "workerId": "WORKER-A", "profileChange": "supported locale/preferredLocale en and increased version; all capabilities retained", "expected": "Actual English supplement with matching fresh primary, approved evidence and immutable first/current lineage", "warmup": "separate fresh run outside measured samples" }
+  ],
+  "delayControl": {
+    "id": "Q-RAG-08-REAL-DELAY-01",
+    "basis": "ac08-generation-card.md:17-18,26-28; actual integration timer/cancellation and primary/admin continuity",
+    "mode": "equipment",
+    "scenario": "EQ-APPROACH",
+    "workerId": "WORKER-A",
+    "challenge": "After normal warmup settles, arm exactly one authenticated model request and issue the same worker's complete supported profile with a higher version.",
+    "injection": "Forward exact actual request to existing pinned8092; after full real upstream response, hold downstream response for at most6000ms, observing actual product cancellation. Only this fault call disables the proxy's independent5000ms ceiling after upstream completion; product5000ms remains unchanged.",
+    "holdMs": 6000,
+    "waitForHoldMs": 4500,
+    "lateObservationHorizonAfterHoldMs": 6250,
+    "concurrentAdminAction": "Authenticated pause command starts after upstream response hold begins; record actual response, snapshots and route context before call settles.",
+    "expected": ["Real upstream call/response identity retained", "Primary HTTP available before downstream hold", "Authorized administrator command completes during hold", "Actual product timeout and propagated client abort", "No accepted late generation, supplemental SSE or accepted evidence", "Current primary/route and original transmitted envelope remain unchanged"],
+    "classification": "Intentional fault transport with actual upstream model; never counted as normal-provider success",
+    "renderedAndPhysical": "Separate Q-WEB/Q-UI observations; HTTP timing is not rendered visibility or physical audio"
+  },
+  "privacyComponent": {
+    "id": "Q-RAG-08-26-C3-COMPONENT-SURFACE",
+    "frozenCaseId": "Q-RAG-08-26",
+    "frozenSourceSha256": "51c0cf09a08cf53188f9e93761f6feb5ffaf19c4be0f9225c4015dc24cb2af62",
+    "mode": "equipment",
+    "workerId": "WORKER-A",
+    "clock": "Actual fresh UTC for real command/guidance/document validity",
+    "expected": "Original exact canaries absent from actual outgoing E5/generation and runtime outputs after actual command parser; combine only genuinely observed separately labelled production HTTP/LLM/log surfaces",
+    "forbiddenClaim": "Direct production Next in-process E5 capture"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "startedAt": "2026-09-22T00:40:10.429Z",
+  "executor": "/root",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "baseUrl": "http://127.0.0.1:3000",
+  "scope": "Final user-demo functionality self-check; independent QA verdict not replaced",
+  "checks": [
+    {
+      "at": "2026-09-22T00:40:10.429Z",
+      "name": "server survived launcher exit",
+      "passed": true,
+      "detail": {
+        "pid": 120281
+      }
+    },
+    {
+      "at": "2026-09-22T00:40:10.449Z",
+      "name": "anonymous session rejected",
+      "passed": true,
+      "detail": 401
+    }
+  ],
+  "modes": [],
+  "errors": [],
+  "screenshots": [],
+  "status": "FAILED_SELF_CHECK",
+  "failure": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('접속 코드', { exact: true })\u001b[22m\n",
+  "completedAt": "2026-09-22T00:40:40.616Z"
+}

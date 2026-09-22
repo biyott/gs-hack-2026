@@ -1,0 +1,31 @@
+# C4 dispatch observer v2: source-only derivative
+
+Prepared files: `c4-dispatch-observer-v2.cjs` and `test-c4-dispatch-observer-v2.mjs`. Both pass `node --check`. Neither file has been executed or imported. Helper checks, application collection and product performance remain **NOT_RUN**. No grant is issued by this document. Frozen v1 remains SHA-256 `389351db684809b9b79a88330f8cd920ce61988659dac77d0a511db34842df83`.
+
+## Runtime interface
+
+The same four preload environment variables are retained: `GS_QA_DISPATCH_OBSERVER=1`, `GS_QA_DISPATCH_GRANT`, `GS_QA_DISPATCH_CANDIDATE_ROOT`, and `GS_QA_DISPATCH_OUTPUT_DIR`. The independent grant still requires phase `QA-C4-BROWSER-PERFORMANCE`, authority `/root/qa_lead`, the exact frozen candidate/source/build bindings, current time bounds and `applicationAllowed:true`. It now requires `observerMethod:"sse-controller-enqueue-v2"` and the exact v2 `observerSha256`.
+
+An optional `grant.stopFilePath` authorizes early closure. It must be an absolute, normalized, nonexistent path directly inside the canonical granted output directory. Any existing entry, including a dangling symlink, rejects installation. Absence of this field retains deadline/`beforeExit` closure. The original `notAfter` deadline is unchanged.
+
+The first JSONL row, `observer-installed`, identifies `candidateId`, actual `pid`, `observerSha256`, fresh `logId`, `logFile`, `stopFilePath`, and `deadline`. The collection runner must bind that PID to its independently recorded candidate server process; this row alone does not prove application origin. To close early, publish this complete JSON at the exact granted stop path using the installed values:
+
+```json
+{"kind":"observer-stop-request","candidateId":"<installed candidateId>","pid":12345,"observerSha256":"<installed observerSha256>","logId":"<installed logId>"}
+```
+
+The existing one-second flush timer polls this path; no signal handler or endpoint is added. Requests use a no-follow, nonblocking descriptor, verify a regular file, and read at most 8,193 bytes to enforce the 8,192-byte limit even if a file grows. The descriptor is closed in `finally`. Missing requests are normal; malformed, oversized, nonregular or mismatched requests leave observation active and increment `invalidStopRequests` for each rejected poll. Publish the complete request atomically with no replacement (for example, write/fsync a fresh temporary file in the same directory, then hard-link it to the granted nonexistent path); exposing a partially written file can create a rejected poll. Preserve the published request as evidence.
+
+One stop path disables observation, conditionally restores its own enqueue wrapper, removes its `beforeExit` listener, and clears both timers exactly once. A later replacement is preserved and reported as `replaced-before-stop`; failed restoration is reported as `restore-failed` and increments `observerFailures`, while cleanup/drain continue. No server termination occurs. The original enqueue body is unchanged from v1: exactly one original call with the same receiver/arguments and return/throw behavior, with app-origin stack capture, raw-frame hashes, controller IDs and cost counters retained.
+
+After pending writes and queued rows drain, the observer fsyncs and closes the log once. Successful log I/O permits `<logFile>.closed.json`, carrying the installed identity, `stopReason`, `restorationStatus`, `stopRequestSha256`, failure/drop counters and the completed log SHA-256. Reasons are `granted-stop-file`, `grant-deadline`, `before-exit`, or `write-failure`. The receipt file itself is an ordinary asynchronous write, not a claimed fsynced receipt. Independent read/parse/rehash and request-hash verification remain required. A missing receipt, mismatched binding/hash, nonzero failure/drop/rejection counter, or restoration other than `restored` invalidates completeness. A receipt never establishes product performance by itself.
+
+## Deferred helper checker
+
+The prepared invocation is `node test-c4-dispatch-observer-v2.mjs --grant <absolute-grant.json>`. It requires a separately issued grant with phase `QA-HELPER-CHECK`, authority `/root/qa_lead`, `syntheticOnly:true`, `applicationAllowed:false`, `modelAllowed:false`, explicit UTC `notBefore`/`notAfter`, exact `candidateId`, `checkerSha256`, `observerSha256`, and an existing canonical absolute `outputDirectory` below the C4 evidence root. It is bounded by the earlier of 45 seconds or the grant deadline. It writes a fresh `dispatch-observer-helper-report.json` with `productAcceptance:NOT_RUN`.
+
+The checker reads observer bytes once, hashes those bytes, and evaluates the identical UTF-8 source in isolated VM contexts. Filesystem, process, timers and source-binding files are synthetic. Only four synthetic source-buffer identities map to the fixed product binding hashes; observer, raw frame and log hashing use real SHA-256. No actual candidate source is read, imported or executed by this checker. The native case uses a real, branded Node stream controller with an isolated prototype containing the native enqueue method, then restores that controller's prototype. It never patches the host's native controller prototype. No browser, application, model or network is started.
+
+The 37 prepared cases cover inactive/no-hooks behavior; matching, nonmatching and malformed SSE with return and thrown sentinels; receiver/argument identity and single invocation; raw hashes/costs/app-shaped callsites/controller IDs; invalid grants and stale/outside/symlink stop paths; malformed/mismatched/partial requests; descriptor growth/replacement; empty/buffered/pending-write closure and callback races; deadline/`beforeExit`; later or frozen wrappers; failed write/fsync/close/receipt; and real native stream branding. Synthetic app-shaped callsites are test fixtures, not C4 runtime origin proof.
+
+Independent source review found and prompted fixes for failed restoration interrupting cleanup and path replacement between checking/reading a stop request. These are static findings and corrections only; the checker still requires exact-source review, a new helper-only grant, and authorized execution before any helper PASS can be claimed.

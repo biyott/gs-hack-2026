@@ -1,0 +1,27 @@
+{
+  "type": "product-document-editorial-check-not-QA",
+  "checkedAt": "2026-09-21T09:29:54.044Z",
+  "goalVersion": "1.0",
+  "preservedOriginalReadmeBytes": 468,
+  "readmePrefixSha256": "cb4f07141469bf7d3118f0ce5c534017eba2bd7a7b8e4fa3ad33018937c649c6",
+  "readmePrefixMatchesBaseline": true,
+  "brokenLocalLinks": [],
+  "inspectedArtifacts": {
+    "docs/contracts/v1.md": "6d2a52af8961c2e61e39681db7446f2a9bb6d3a671d421861f9843b68107c90e",
+    "data/equipment/catalog.json": "467837d58e48123ad437b434fd3ca9df2e557dd4975d51a6935924425b78d3de",
+    "package.json": "05f69146c99d48a824b5d86ca675016df85303ddb478f40b3817e40ba5bc6f0c",
+    "package-lock.json": "542f4b72d0f9383a767d0ffc2a87de7711b0ed5d28afcfdd5639aab1b25c931e",
+    "README.md": "b4e7ba4a1f000563d1d92871b4e09bedb4f7274fe42129ea4317924de569da79",
+    "docs/demo-runbook.md": "3f745b908654e20da8c8f60072571ebea8e5dd45097f56683a5d49d1bb73ad63",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/requirements/clarifications.v1.0.1.md": "5def73482e944679eff9ec9524b0f1fec1ffb7bc48c594a2b5dec881190a7ceb",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/requirements/contract-readiness.v1.0.md": "aa5de289d8628fdbf74a8b498102f50fe70dc70168256150936e0d00e5a40c39"
+  },
+  "openHandoff": [
+    "final production build",
+    "final APK/install artifact",
+    "actual four-phone/UWB/CCTV/calibration",
+    "final six-crane motion and analytical integration",
+    "final actual full retrieval/model candidate",
+    "second-operator integrated replay"
+  ]
+}

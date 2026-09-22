@@ -1,0 +1,77 @@
+{
+  "model": "Liebherr LTM 1050-3.1",
+  "status": "manufacturer-drawing-reviewed",
+  "specEdition": "lwe-td-185-02-defisr01-2023",
+  "sourceId": "LTM1050-OFFICIAL-PDF",
+  "transport": {
+    "lengthM": 11.830,
+    "widthM": 2.550,
+    "heightM": 3.785,
+    "tyres": "385/95 R25 (14.00 R25)",
+    "suspension": "unlowered A-column",
+    "sourcePage": 3,
+    "notes": [
+      "Selected drawn transport envelope; accessory outline dimension 12.391m appears separately.",
+      "Height lowered 100mm is 3.685m. Optional tyre rows change height and sometimes width."
+    ]
+  },
+  "supportGeometry": {
+    "type": "four-point-outriggers",
+    "state": "diagram fully extended",
+    "sourcePages": [3, 23],
+    "transverseSpanM": 6.4,
+    "padSquareSideM": 0.5,
+    "topPlanRow": {
+      "frontLongitudinalOffsetFromSlewM": -4.526,
+      "rearLongitudinalOffsetFromSlewM": 2.625,
+      "spanM": 7.151
+    },
+    "bottomPlanRow": {
+      "frontLongitudinalOffsetFromSlewM": -4.274,
+      "rearLongitudinalOffsetFromSlewM": 2.895,
+      "spanM": 7.169
+    },
+    "axisConvention": "Front negative x; rear positive x. Top/bottom refer to p3 plan drawing, not geospatial orientation.",
+    "confirmedPointCoordinatesM": null,
+    "transverseOriginOffsetM": null,
+    "notes": [
+      "Do not replace the drawing with a centered 7.151 x 6.4 rectangle.",
+      "Source labels reduced transverse span 4.5m and VarioBase-only 2.339–6.4m; selected preset uses full extension.",
+      "Use center spans separately from pad outer boundary; no ground-bearing or safety conclusion inferred."
+    ]
+  },
+  "slewOrigin": {
+    "longitudinalDimensionDatum": "vertical centerline on p3 used for 4526/2625 and 4274/2895 split dimensions",
+    "fullLocalXYZM": null
+  },
+  "tailSwingRadiusM": null,
+  "tailRadiusDiagramLabelsM": [3.530, 4.070],
+  "tailRadiusReason": "p3 labels two superstructure outline radii; accessories / stowed-jib selection not sufficiently isolated for one universal radius.",
+  "boomOrJibConfiguration": {
+    "selectedCode": "T",
+    "selectionStatus": "research recommendation for a main-boom-only preset; not an independently approved design change",
+    "type": "telescopic-main-boom",
+    "baseSections": 1,
+    "telescopicSections": 3,
+    "minLengthM": 11.4,
+    "maxLengthM": 38,
+    "installedFoldingJib": false,
+    "pages": [10, 23],
+    "optionalConfigurations": {
+      "K": {"lengthRangeM": [9.2, 16], "angleChoicesDegrees": [0, 20, 40, 60]},
+      "HK": {"lengthM": 1.4, "angleChoicesDegrees": [0, 20, 40, 60]}
+    }
+  },
+  "modelLevelOptionalMaxima": {
+    "maxRadiusM": 44,
+    "maxHookHeightM": 54,
+    "selectedTOnlyGuarantee": false
+  },
+  "unknowns": [
+    "Exact XYZ of boom heel/hinge and slew origin relative chosen asset pivot",
+    "Section profile widths/heights and telescopic section overlaps",
+    "Exact accessory state associated with each rear radius/12.391m dimension",
+    "Exact XY ground-pad coordinates without interpreting transverse centerline symmetry",
+    "Load-dependent deformation and stability; brochure is not an operating plan"
+  ]
+}

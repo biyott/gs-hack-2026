@@ -1,0 +1,72 @@
+{
+  "mapId": "SITE-CONSTRUCTION-01",
+  "mapVersion": "1.0.0",
+  "floorId": "GROUND",
+  "synthetic": true,
+  "units": "m",
+  "bounds": { "minX": 0, "minY": 0, "maxX": 140, "maxY": 50 },
+  "nodes": [
+    { "id": "J-A-08", "x": 8, "y": 8, "floorId": "GROUND", "kind": "junction" },
+    { "id": "J-A-65", "x": 65, "y": 8, "floorId": "GROUND", "kind": "junction" },
+    { "id": "J-A-90", "x": 90, "y": 8, "floorId": "GROUND", "kind": "junction" },
+    { "id": "J-A-100", "x": 100, "y": 8, "floorId": "GROUND", "kind": "junction" },
+    { "id": "REFUGE-01", "x": 125, "y": 8, "floorId": "GROUND", "kind": "refuge" },
+    { "id": "J-A-132", "x": 132, "y": 8, "floorId": "GROUND", "kind": "junction" },
+    { "id": "SHELTER-01", "x": 8, "y": 42, "floorId": "GROUND", "kind": "shelter" },
+    { "id": "J-B-65", "x": 65, "y": 42, "floorId": "GROUND", "kind": "junction" },
+    { "id": "J-B-90", "x": 90, "y": 42, "floorId": "GROUND", "kind": "junction" },
+    { "id": "J-B-100", "x": 100, "y": 42, "floorId": "GROUND", "kind": "junction" },
+    { "id": "REFUGE-02", "x": 125, "y": 42, "floorId": "GROUND", "kind": "refuge" },
+    { "id": "ASSEMBLY-01", "x": 132, "y": 42, "floorId": "GROUND", "kind": "assembly" },
+    { "id": "J-C-WEST", "x": 100, "y": 25, "floorId": "GROUND", "kind": "junction" },
+    { "id": "J-C-EAST", "x": 125, "y": 25, "floorId": "GROUND", "kind": "junction" },
+    { "id": "WORKER-A-START", "x": 65, "y": 25, "floorId": "GROUND", "kind": "start" },
+    { "id": "WORKER-B-START", "x": 90, "y": 40, "floorId": "GROUND", "kind": "start" }
+  ],
+  "edges": [
+    { "id": "EDGE-A-01", "from": "J-A-08", "to": "J-A-65", "pathId": "PATH-A", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-A-02", "from": "J-A-65", "to": "J-A-90", "pathId": "PATH-A", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-A-03", "from": "J-A-90", "to": "J-A-100", "pathId": "PATH-A", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-A-04", "from": "J-A-100", "to": "REFUGE-01", "pathId": "PATH-A", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-A-05", "from": "REFUGE-01", "to": "J-A-132", "pathId": "PATH-A", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-B-01", "from": "SHELTER-01", "to": "J-B-65", "pathId": "PATH-B", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-B-02", "from": "J-B-65", "to": "J-B-90", "pathId": "PATH-B", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-B-03", "from": "J-B-90", "to": "J-B-100", "pathId": "PATH-B", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-B-04", "from": "J-B-100", "to": "REFUGE-02", "pathId": "PATH-B", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-B-05", "from": "REFUGE-02", "to": "ASSEMBLY-01", "pathId": "PATH-B", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-C-01", "from": "J-A-08", "to": "SHELTER-01", "pathId": "PATH-C", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-C-02", "from": "J-A-132", "to": "ASSEMBLY-01", "pathId": "PATH-C", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-C-03", "from": "J-A-100", "to": "J-C-WEST", "pathId": "PATH-C", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-C-04", "from": "J-C-WEST", "to": "J-B-100", "pathId": "PATH-C", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-C-05", "from": "REFUGE-01", "to": "J-C-EAST", "pathId": "PATH-C", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-C-06", "from": "J-C-EAST", "to": "REFUGE-02", "pathId": "PATH-C", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": false },
+    { "id": "EDGE-EGRESS-A-SOUTH", "from": "WORKER-A-START", "to": "J-A-65", "pathId": "PATH-C", "widthM": 4, "stairs": true, "accessible": false, "enabled": true, "initialEgress": true },
+    { "id": "EDGE-EGRESS-A-NORTH", "from": "WORKER-A-START", "to": "J-B-65", "pathId": "PATH-C", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": true },
+    { "id": "EDGE-EGRESS-B-SOUTH", "from": "WORKER-B-START", "to": "J-A-90", "pathId": "PATH-C", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": true },
+    { "id": "EDGE-EGRESS-B-NORTH", "from": "WORKER-B-START", "to": "J-B-90", "pathId": "PATH-C", "widthM": 4, "stairs": false, "accessible": true, "enabled": true, "initialEgress": true }
+  ],
+  "zones": [
+    { "id": "ZONE-A", "name": "서측 크레인 구역", "bounds": { "minX": 0, "minY": 0, "maxX": 45, "maxY": 50 } },
+    { "id": "ZONE-B", "name": "중앙 자재·인양 구역", "bounds": { "minX": 45, "minY": 0, "maxX": 100, "maxY": 50 } },
+    { "id": "ZONE-C", "name": "동측 설비·회피 구역", "bounds": { "minX": 100, "minY": 0, "maxX": 140, "maxY": 50 } }
+  ],
+  "obstacles": [
+    { "id": "OBSTACLE-01", "bounds": { "minX": 105, "minY": 18, "maxX": 120, "maxY": 30 }, "heightM": 6 }
+  ],
+  "metadata": {
+    "displayLabel": "서산 HVO 현장 참고 / 상세 배치 재구성",
+    "craneOrigin": { "x": 30, "y": 25 },
+    "defaultJibDirection": "+X",
+    "workArea": { "minX": 15, "minY": 12, "maxX": 100, "maxY": 38 },
+    "storageArea": { "minX": 55, "minY": 17, "maxX": 75, "maxY": 29 },
+    "liftDestination": { "minX": 80, "minY": 17, "maxX": 95, "maxY": 29 },
+    "tableScale": 100,
+    "notes": [
+      "All detailed positions, zones and connections are synthetic demo geometry, not a surveyed industrial site.",
+      "EDGE-EGRESS-A-SOUTH is a synthetic stairs fixture for confirmed mobility constraints; EDGE-EGRESS-A-NORTH is the accessible alternative. Source 008 corridor geometry is unchanged.",
+      "Initial-egress edges permit only departure from a containing start hazard under engine validation; this flag never declares the edge or destination safe.",
+      "Graph edges are bidirectional. Zone bounds partition the site; shared boundaries do not establish exclusive zone membership.",
+      "Refuge candidates require current hazard, connectivity and profile validation before use."
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "createdAt": "2026-09-21T16:44:15.952Z",
+  "scope": "ExistingC3evidence map only; reexecute unchangedcontrolinputs on nextcandidate; nooldPASSretag",
+  "mapped": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-1a7c95cd/module-attempt-01/retrieval/Q-RAG-07-06.json",
+      "sha256": "8107c427c15c5b316add248104f6c35d499d8c9bb5e524aa3c34149a91d7a47c",
+      "testId": "Q-RAG-07-06",
+      "mode": "fire-gas",
+      "rawVerdict": "PASS",
+      "scope": "ActualcanonicalCOMMON004 retrieved atmatching site; not a sourcebody/currentgenerationclaim",
+      "documentId": "COMMON-004",
+      "documentVersion": "0.1.0",
+      "chunkId": "COMMON-004:0.1.0:44e4c92b9c5237b7:procedure",
+      "metadata": {
+        "documentId": "COMMON-004",
+        "title": "안내 버전 변경과 오래된 안내 처리",
+        "siteIds": [
+          "SITE-CONSTRUCTION-01"
+        ],
+        "simulationType": "common",
+        "simulationTypes": [
+          "equipment",
+          "fire-gas"
+        ],
+        "hazardTypes": [
+          "equipment",
+          "fire",
+          "gas",
+          "combined",
+          "position-unknown",
+          "sensor-unknown"
+        ],
+        "applicableRoles": [
+          "worker"
+        ],
+        "applicableZoneIds": [],
+        "substanceIds": [],
+        "profileConditions": {},
+        "actionCodes": [
+          "GUIDANCE_UPDATED"
+        ],
+        "language": "ko",
+        "version": "0.1.0",
+        "synthetic": true,
+        "approvalStatus": "approved_for_demo",
+        "effectiveFrom": "2026-01-01",
+        "expiresAt": "2030-01-01",
+        "reviewedBy": "/root/rag_lead/knowledge_review",
+        "reviewedAt": "2026-09-21T09:13:05.116Z",
+        "reviewedContentHash": "d5160a3820a0b2d7997518ea70383993243d4a11aeba5bc9e77f2a88d3cf4182",
+        "sourceReference": "synthetic://safety-simulator/COMMON-004",
+        "requiredScenarioPolicy": null,
+        "decisionKey": null,
+        "reviewedSupplementalExplanation": {
+          "ko": "안내는 실행, 경로, 프로필의 현재 버전에 연결되며 이전 버전의 설명은 현재 안내의 근거가 아닙니다.",
+          "en": "Guidance is tied to the current run, route, and profile versions; explanations from earlier versions are not evidence for current guidance."
+        }
+      }
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-1a7c95cd/module-attempt-01/retrieval/Q-RAG-07-20.json",
+      "sha256": "512b9bd3409d94df8b902827bf4800448274f2773a9ba3afb00afd032afc91bb",
+      "testId": "Q-RAG-07-20",
+      "mode": "equipment",
+      "rawVerdict": "PASS",
+      "scope": "ActualcanonicalCOMMON004 retrieved atmatching site; not a sourcebody/currentgenerationclaim",
+      "documentId": "COMMON-004",
+      "documentVersion": "0.1.0",
+      "chunkId": "COMMON-004:0.1.0:44e4c92b9c5237b7:procedure",
+      "metadata": {
+        "documentId": "COMMON-004",
+        "title": "안내 버전 변경과 오래된 안내 처리",
+        "siteIds": [
+          "SITE-CONSTRUCTION-01"
+        ],
+        "simulationType": "common",
+        "simulationTypes": [
+          "equipment",
+          "fire-gas"
+        ],
+        "hazardTypes": [
+          "equipment",
+          "fire",
+          "gas",
+          "combined",
+          "position-unknown",
+          "sensor-unknown"
+        ],
+        "applicableRoles": [
+          "worker"
+        ],
+        "applicableZoneIds": [],
+        "substanceIds": [],
+        "profileConditions": {},
+        "actionCodes": [
+          "GUIDANCE_UPDATED"
+        ],
+        "language": "ko",
+        "version": "0.1.0",
+        "synthetic": true,
+        "approvalStatus": "approved_for_demo",
+        "effectiveFrom": "2026-01-01",
+        "expiresAt": "2030-01-01",
+        "reviewedBy": "/root/rag_lead/knowledge_review",
+        "reviewedAt": "2026-09-21T09:13:05.116Z",
+        "reviewedContentHash": "d5160a3820a0b2d7997518ea70383993243d4a11aeba5bc9e77f2a88d3cf4182",
+        "sourceReference": "synthetic://safety-simulator/COMMON-004",
+        "requiredScenarioPolicy": null,
+        "decisionKey": null,
+        "reviewedSupplementalExplanation": {
+          "ko": "안내는 실행, 경로, 프로필의 현재 버전에 연결되며 이전 버전의 설명은 현재 안내의 근거가 아닙니다.",
+          "en": "Guidance is tied to the current run, route, and profile versions; explanations from earlier versions are not evidence for current guidance."
+        }
+      }
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-1a7c95cd/module-attempt-01/filters/Q-RAG-06-F11.json",
+      "sha256": "e372f28c41a167a4b2b167a09ae950591bbb1bb955a03d0df79fb14481479c1e",
+      "testId": "Q-RAG-06-F11",
+      "rawVerdict": "PASS",
+      "expectedEligible": true,
+      "observedEligible": true,
+      "observedReasons": [],
+      "scope": "ExistingcandidateboundQAmetadatafiltercontrol, not genuineproductionapproval; no newnormalizedsourcebypass"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-1a7c95cd/module-attempt-01/filters/Q-RAG-06-F09.json",
+      "sha256": "f668a39018cd9cc2483ad13e6cfa6391f2e518d11763d19590971bf62eeff9ac",
+      "testId": "Q-RAG-06-F09",
+      "rawVerdict": "PASS",
+      "expectedEligible": false,
+      "observedEligible": false,
+      "observedReasons": [
+        "site"
+      ],
+      "scope": "ExistingcandidateboundQAmetadatafiltercontrol, not genuineproductionapproval; no newnormalizedsourcebypass"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-1a7c95cd/module-attempt-01/filters/Q-RAG-06-F12.json",
+      "sha256": "55d3661e9cbed262348351203e8e9ef6fcf1ff1399eb0f8c12f1f20a6d169f15",
+      "testId": "Q-RAG-06-F12",
+      "rawVerdict": "PASS",
+      "expectedEligible": false,
+      "observedEligible": false,
+      "observedReasons": [
+        "mode"
+      ],
+      "scope": "ExistingcandidateboundQAmetadatafiltercontrol, not genuineproductionapproval; no newnormalizedsourcebypass"
+    }
+  ],
+  "preservedF13": "Source representability gap unchanged; no normalized internal-state bypass added",
+  "references": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/gap-disposition-readonly-v1.md",
+      "sha256": "e895ecea2a3ff98cda264e931fc3ab783a6218fee34fda07867bfaf24e818809"
+    }
+  ],
+  "noRuntime": true
+}

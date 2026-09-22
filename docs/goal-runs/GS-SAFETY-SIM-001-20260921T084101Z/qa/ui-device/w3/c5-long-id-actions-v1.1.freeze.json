@@ -1,0 +1,24 @@
+{
+  "kind": "c5-long-id-actions-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "runtime": "NOT_RUN",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "preparedAt": "2026-09-21T23:36:23.923Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-actions-v1.1.mjs",
+      "sha256": "f6a89fc6cd12b491556452c08fb154d1a5bdcb02abbce93df56654c0a3832805"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-actions-v1.1.guard.mjs",
+      "sha256": "78b860ff7cf37e679e48f7250caf23b231a633c23f5624f2c9e8c2a29809b0eb"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-fixture-v1.md",
+      "sha256": "b5a8f14f0988fbe33ad4b4c0e6b54632dc0933001652c76c9b739e0dfc0ddc6a"
+    }
+  ],
+  "derivation": "Pre-execution source review: after reload, React entry state resets; wait for actual enabled mode control instead of immediate count race. Frozen method/oracles unchanged."
+}

@@ -1,0 +1,302 @@
+{
+  "id": "FG-NO-ROUTE",
+  "version": "1.0.0",
+  "label": {
+    "ko": "화재 중 모든 통로 차단",
+    "en": "All routes blocked during fire"
+  },
+  "mode": "fire-gas",
+  "mapId": "SITE-CONSTRUCTION-01",
+  "mapVersion": "1.0.0",
+  "synthetic": true,
+  "seed": 20260921,
+  "durationMs": 16000,
+  "clockEpoch": "2026-09-21T09:00:00Z",
+  "policyId": "POLICY-FG-EVACUATE",
+  "initial": {
+    "equipment": null,
+    "workers": [
+      {
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 65,
+          "y": 25
+        },
+        "profile": {
+          "workerId": "WORKER-A",
+          "version": 1,
+          "preferredLocale": "ko",
+          "locale": "ko",
+          "canUseStairs": true,
+          "speedMps": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "needsAssistance": false,
+          "needsCompanion": false,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      {
+        "workerId": "WORKER-B",
+        "position": {
+          "x": 90,
+          "y": 40
+        },
+        "profile": {
+          "workerId": "WORKER-B",
+          "version": 1,
+          "preferredLocale": "en",
+          "locale": "en",
+          "canUseStairs": false,
+          "speedMps": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "needsAssistance": true,
+          "needsCompanion": true,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      }
+    ],
+    "sensors": [
+      {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      }
+    ],
+    "hazards": [],
+    "blockedPathIds": []
+  },
+  "events": [
+    {
+      "id": "FG-NO-ROUTE-001",
+      "atMs": 1000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 1000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-NO-ROUTE-002",
+      "atMs": 1000,
+      "type": "hazard.upsert",
+      "hazard": {
+        "id": "FIRE-ZONE-B",
+        "type": "fire",
+        "zoneId": "ZONE-B",
+        "polygon": [
+          {
+            "x": 60,
+            "y": 20
+          },
+          {
+            "x": 72,
+            "y": 20
+          },
+          {
+            "x": 72,
+            "y": 30
+          },
+          {
+            "x": 60,
+            "y": 30
+          }
+        ],
+        "active": true
+      }
+    },
+    {
+      "id": "FG-NO-ROUTE-003",
+      "atMs": 1000,
+      "type": "route.block",
+      "pathIds": ["PATH-A", "PATH-B", "PATH-C"]
+    },
+    {
+      "id": "FG-NO-ROUTE-004",
+      "atMs": 4000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 4000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-NO-ROUTE-005",
+      "atMs": 4000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 4000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-NO-ROUTE-006",
+      "atMs": 8000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 8000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-NO-ROUTE-007",
+      "atMs": 8000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 8000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-NO-ROUTE-008",
+      "atMs": 12000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 12000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-NO-ROUTE-009",
+      "atMs": 12000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 12000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-NO-ROUTE-010",
+      "atMs": 16000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 16000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-NO-ROUTE-011",
+      "atMs": 16000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 16000,
+        "source": "mock",
+        "connected": true
+      }
+    }
+  ],
+  "expectedResults": [
+    {
+      "atMs": 1000,
+      "kind": "guidance",
+      "workerId": "WORKER-A",
+      "actionCode": "ROUTE_UNAVAILABLE",
+      "route": "empty",
+      "destinationIds": [],
+      "note": "Assert the current authoritative guidance, not generated explanation."
+    },
+    {
+      "atMs": 1000,
+      "kind": "blocked-paths",
+      "pathIds": ["PATH-A", "PATH-B", "PATH-C"],
+      "note": "Hazard status and authorization do not implicitly change this list."
+    }
+  ],
+  "coverage": ["AC-03:no-route", "AC-03:no-implicit-shelter"]
+}

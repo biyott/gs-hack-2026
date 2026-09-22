@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "1.0",
+  "owner": "/root/qa_lead/qa_rag",
+  "status": "FROZEN_INPUT_NOT_EXECUTED",
+  "anchorRecord": "QA-ELIGIBLE-EQ",
+  "anchorContext": {
+    "siteId": "SITE-CONSTRUCTION-01",
+    "simulationType": "equipment",
+    "hazardTypes": [
+      "equipment"
+    ],
+    "role": "worker",
+    "zoneIds": [
+      "ZONE-A"
+    ],
+    "substanceIds": [],
+    "actionCode": "ALERT_HAZARD",
+    "scope": "demo",
+    "now": "2026-09-21T09:00:00Z"
+  },
+  "anchorRequirements": "Create a QA-owned procedure-complete synthetic record with current independently reviewed metadata and approved_for_demo; use valid nonsecret reviewer provenance. All mutations occur only in isolated QA fresh DB. Preserve base hash and mutation patch.",
+  "cases": [
+    {
+      "testId": "Q-RAG-06-F01",
+      "mutation": {
+        "approvalStatus": "draft"
+      },
+      "eligible": false,
+      "reason": "draft"
+    },
+    {
+      "testId": "Q-RAG-06-F02",
+      "mutation": {
+        "approvalStatus": "retired"
+      },
+      "eligible": false,
+      "reason": "retired"
+    },
+    {
+      "testId": "Q-RAG-06-F03",
+      "mutation": {
+        "effectiveFrom": "2026-09-21T09:00:00.001Z"
+      },
+      "eligible": false,
+      "reason": "not-yet-effective"
+    },
+    {
+      "testId": "Q-RAG-06-F04",
+      "mutation": {
+        "effectiveFrom": "2026-09-21T09:00:00.000Z"
+      },
+      "eligible": true,
+      "reason": "effective equality boundary"
+    },
+    {
+      "testId": "Q-RAG-06-F05",
+      "mutation": {
+        "expiresAt": "2026-09-21T08:59:59.999Z"
+      },
+      "eligible": false,
+      "reason": "expired"
+    },
+    {
+      "testId": "Q-RAG-06-F06",
+      "mutation": {
+        "expiresAt": "2026-09-21T09:00:00.000Z"
+      },
+      "eligible": false,
+      "reason": "expiry equality boundary"
+    },
+    {
+      "testId": "Q-RAG-06-F07",
+      "mutation": {
+        "expiresAt": "2026-09-21T09:00:00.001Z"
+      },
+      "eligible": true,
+      "reason": "before expiry"
+    },
+    {
+      "testId": "Q-RAG-06-F08",
+      "mutation": {
+        "siteIds": [
+          "SITE-INDUSTRIAL-01"
+        ]
+      },
+      "eligible": false,
+      "reason": "wrong site"
+    },
+    {
+      "testId": "Q-RAG-06-F09",
+      "mutation": {
+        "simulationType": "common",
+        "simulationTypes": [
+          "equipment",
+          "fire-gas"
+        ],
+        "siteIds": [
+          "SITE-INDUSTRIAL-01"
+        ]
+      },
+      "eligible": false,
+      "reason": "common does not override site"
+    },
+    {
+      "testId": "Q-RAG-06-F10",
+      "mutation": {
+        "simulationType": "common",
+        "simulationTypes": [
+          "equipment",
+          "fire-gas"
+        ],
+        "siteIds": []
+      },
+      "eligible": false,
+      "reason": "empty scope is not universal"
+    },
+    {
+      "testId": "Q-RAG-06-F11",
+      "mutation": {
+        "simulationType": "common",
+        "simulationTypes": [
+          "equipment",
+          "fire-gas"
+        ],
+        "siteIds": [
+          "SITE-CONSTRUCTION-01"
+        ]
+      },
+      "eligible": true,
+      "reason": "common eligible only at matching site and allowed requested mode"
+    },
+    {
+      "testId": "Q-RAG-06-F12",
+      "mutation": {
+        "simulationType": "fire-gas",
+        "simulationTypes": [
+          "fire-gas"
+        ]
+      },
+      "eligible": false,
+      "reason": "wrong mode"
+    },
+    {
+      "testId": "Q-RAG-06-F13",
+      "mutation": {
+        "simulationType": "common",
+        "simulationTypes": [
+          "fire-gas"
+        ]
+      },
+      "eligible": false,
+      "reason": "common mode allowlist still applies"
+    },
+    {
+      "testId": "Q-RAG-06-F14",
+      "mutation": {
+        "substanceIds": [
+          "QA-OTHER-SUBSTANCE"
+        ]
+      },
+      "requestOverride": {
+        "simulationType": "fire-gas",
+        "hazardTypes": [
+          "gas"
+        ],
+        "substanceIds": [
+          "DEMO-GAS-X"
+        ]
+      },
+      "baseOverride": {
+        "simulationType": "fire-gas",
+        "simulationTypes": [
+          "fire-gas"
+        ],
+        "hazardTypes": [
+          "gas"
+        ]
+      },
+      "eligible": false,
+      "reason": "wrong material"
+    },
+    {
+      "testId": "Q-RAG-06-F15",
+      "mutation": {
+        "substanceIds": [
+          "DEMO-GAS-X"
+        ]
+      },
+      "requestOverride": {
+        "simulationType": "fire-gas",
+        "hazardTypes": [
+          "gas"
+        ],
+        "substanceIds": []
+      },
+      "baseOverride": {
+        "simulationType": "fire-gas",
+        "simulationTypes": [
+          "fire-gas"
+        ],
+        "hazardTypes": [
+          "gas"
+        ]
+      },
+      "eligible": false,
+      "reason": "required material absent from request"
+    },
+    {
+      "testId": "Q-RAG-06-F16",
+      "mutation": {
+        "approvalStatus": "approved",
+        "synthetic": true
+      },
+      "eligible": false,
+      "reason": "synthetic approved is not demo-reviewed approval"
+    },
+    {
+      "testId": "Q-RAG-06-F17",
+      "mutation": {
+        "approvalStatus": "approved_for_demo",
+        "synthetic": true
+      },
+      "requestOverride": {
+        "scope": "production"
+      },
+      "eligible": false,
+      "reason": "demo evidence cannot enter operational scope"
+    },
+    {
+      "testId": "Q-RAG-06-F18",
+      "mutation": {
+        "reviewedBy": null
+      },
+      "eligible": false,
+      "reason": "no actual reviewer provenance"
+    },
+    {
+      "testId": "Q-RAG-06-F19",
+      "mutation": {
+        "reviewedAt": null
+      },
+      "eligible": false,
+      "reason": "no actual review time"
+    },
+    {
+      "testId": "Q-RAG-06-F20",
+      "mutation": {
+        "applicableRoles": [
+          "operator"
+        ]
+      },
+      "eligible": false,
+      "reason": "wrong role"
+    },
+    {
+      "testId": "Q-RAG-06-F21",
+      "mutation": {
+        "applicableZoneIds": [
+          "ZONE-C"
+        ]
+      },
+      "eligible": false,
+      "reason": "wrong zone"
+    },
+    {
+      "testId": "Q-RAG-06-F22",
+      "mutation": {
+        "hazardTypes": [
+          "fire"
+        ]
+      },
+      "eligible": false,
+      "reason": "wrong hazard"
+    },
+    {
+      "testId": "Q-RAG-06-F23",
+      "mutation": {
+        "actionCodes": [
+          "SHELTER_PER_SCENARIO"
+        ]
+      },
+      "eligible": false,
+      "reason": "wrong engine action"
+    },
+    {
+      "testId": "Q-RAG-06-F24",
+      "mutation": {
+        "profileConditions": {
+          "stairsAllowed": true
+        }
+      },
+      "requestOverride": {
+        "profile": {
+          "stairsAllowed": false,
+          "assistanceRequired": true,
+          "verified": true
+        }
+      },
+      "eligible": false,
+      "reason": "stair requirement incompatible"
+    },
+    {
+      "testId": "Q-RAG-06-F25",
+      "mutation": {
+        "profileConditions": {
+          "stairsAllowed": true
+        }
+      },
+      "requestOverride": {
+        "profile": {
+          "stairsAllowed": null,
+          "assistanceRequired": null,
+          "verified": false
+        }
+      },
+      "eligible": false,
+      "reason": "unknown is not confirmed capability"
+    },
+    {
+      "testId": "Q-RAG-06-F26",
+      "mutation": {
+        "requiredScenarioPolicy": "shelter"
+      },
+      "requestOverride": {
+        "scenarioPolicy": null
+      },
+      "eligible": false,
+      "reason": "shelter policy missing"
+    },
+    {
+      "testId": "Q-RAG-06-F27",
+      "mutation": {
+        "sourcePath": "qa/rag/negative-fixtures/QA-DECOY.md"
+      },
+      "eligible": false,
+      "stage": "normal-ingestion",
+      "reason": "negative fixture path excluded even with approval-like metadata"
+    },
+    {
+      "testId": "Q-RAG-06-F28",
+      "mutation": {
+        "approvalStatus": "retired"
+      },
+      "sequence": [
+        "ingest eligible",
+        "retrieve once",
+        "retire same document version",
+        "retrieve same cached query"
+      ],
+      "eligible": false,
+      "reason": "retirement invalidates chunk/FTS/vector/cache evidence"
+    },
+    {
+      "testId": "Q-RAG-06-F29",
+      "mutation": {
+        "version": "0.2.0"
+      },
+      "sequence": [
+        "ingest version 0.1.0",
+        "replace procedure content as 0.2.0",
+        "retrieve same query"
+      ],
+      "eligible": true,
+      "forbiddenVersions": [
+        "0.1.0"
+      ],
+      "reason": "modified document cannot retain old citations/cache"
+    },
+    {
+      "testId": "Q-RAG-06-F30",
+      "mutation": {
+        "embeddingVersion": "QA-OTHER-REVISION",
+        "embeddingDimensions": 2
+      },
+      "eligible": false,
+      "stage": "vector-scoring",
+      "reason": "no scoring with wrong model revision/dimensions; re-embed or explicit fallback"
+    }
+  ],
+  "assertions": [
+    "For ineligible records, no returned chunk, selected evidence or model input may contain the record; record explicit filter/ingestion reason.",
+    "FTS and vector ranking must operate within eligible corpus and preserve eligibility through fusion; a high-score excluded document cannot resurface.",
+    "Eligible is a metadata eligibility assertion, not a guarantee of top retrieval rank.",
+    "Preserve actual source metadata plus normalized fields; ambiguous malformed dates/site scopes are rejected explicitly.",
+    "A reviewer string alone does not prove review: compare immutable draft/final hashes, reviewer and author identities, time, rationale, bilingual findings and applied corrections."
+  ]
+}

@@ -1,0 +1,17 @@
+# C6 W4 independent handoff review
+
+Verdict: **BLOCKED**, with newly executed partial software evidence. No whole-AC or overall verdict is issued. Executor /root/qa_resume/c6_handoff; candidate sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b; source a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411; manifest2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792; BUILD_ID QS7DkAZLSyX00oQ4fvGHL.
+
+Actual W4 execution began00:24:16.729Z; browser closed2026-09-22T00:30:51.355Z. All owned processes are absent and4104 is free. Provider was not stopped. GrantW4-C6-01 permitted shared nonperformance provider and separate-port physical READY load; no G0 measurement claim.
+
+Fresh DB migration and seed both exited0. The first actual login returned500 because the QA regular-file copy omitted four supplied Next dependency alias symlinks. One explicitly authorized environment repair restored those exact dependency targets in the QA copy; login and simulation operations then succeeded. Initial logs and collision preparation copies remain preserved. This was an additional QA-copy operation beyond the runbook commands, not a fresh dependency installation or product correction.
+
+Real Chromium153.0.8010.12 operated EQ-APPROACH and FG-FIRE, seed20260921, with synthetic scenario input. WorkerA Korean and workerB English profiles were displayed. Equipment guidance directed WORKER-A to REFUGE-01; fire guidance to ASSEMBLY-01. Public start, pause and resume operations produced durable records; clicked controls are not automatically successful state changes.
+
+Refresh retained the paused fire snapshot. True OS restart02→03 changed stream3a946994-b92c-4c2d-b308-6764661b69d5 to ee306b05-6152-45f8-9b97-327bdd92432a. Two incident firstGuidance hashes and all8stored guidance-version hashes were unchanged. The running fire scenario completed during graceful shutdown, so restart restored completed state; this does **not** prove running-to-paused recovery. The late additional attempt reached idle only and was stopped at the deadline.
+
+A rapid equipment control sequence produced a visible409 stale-version warning. A later fire5초진행 click was followed by pausedv10→v11 with virtualTime unchanged at4118.663370999988ms. Exact HTTP request bytes were not captured; advance-observation.json explicitly leaves this unresolved for QA Lead disposition, not productFAIL or PASS.
+
+Four-phone physical setup/calibration remains BLOCKED. New installation, actual camera/phone operation, all27scenarios personally rerun and broad visual acceptance are NOT_RUN. The three screenshots show the real top viewport but contain unused dark full-page area below it; the equipment-paused filename records intent although its pixels show running. No broad visual PASS is claimed.
+
+Post-run1026source and673artifact rows match in both frozen root and QA copy with zero mismatches. All runtime/DB writes are QA-owned. Detailed evidence is the sibling execution-summary.json, persistence-comparison.json, advance-observation.json, setup-commands.json, browser-actions.jsonl, database snapshots, process receipts, environment-retry-01.json, dependency-links-restored.json, post-execution-integrity.json and resource-release.json under evidence/qa/handoff/candidate-892f975f/c6-handoff-v2. Current independent/producer-only coverage and the original27scenario+7boundary inventory remain separate. No C5 PASS transferred.

@@ -1,0 +1,67 @@
+{
+  "at": "2026-09-22T00:34:11.784Z",
+  "actualIssuer": "/root/qa_resume",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "events": [
+    {
+      "pid": 105100,
+      "startTicks": "479136",
+      "signal": "SIGTERM",
+      "at": "2026-09-22T00:34:11.478Z"
+    },
+    {
+      "pid": 108970,
+      "startTicks": "504742",
+      "signal": "SIGTERM",
+      "at": "2026-09-22T00:34:11.478Z"
+    }
+  ],
+  "apps": [
+    {
+      "pid": 105100,
+      "absent": true
+    },
+    {
+      "pid": 108970,
+      "absent": true
+    }
+  ],
+  "ports": [
+    {
+      "port": 4101,
+      "listeners": 0
+    },
+    {
+      "port": 4102,
+      "listeners": 0
+    },
+    {
+      "port": 4103,
+      "listeners": 0
+    },
+    {
+      "port": 4104,
+      "listeners": 0
+    },
+    {
+      "port": 4105,
+      "listeners": 0
+    },
+    {
+      "port": 8093,
+      "listeners": 0
+    }
+  ],
+  "physicalRelease": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/physical-cleanup-01/release.json",
+  "provider": {
+    "pid": 22562,
+    "startTicks": "163896",
+    "port": 8092,
+    "retained": true,
+    "ownershipTransferredTo": "/root",
+    "noFurtherQaCalls": true
+  },
+  "measurementsComplete": true,
+  "noFurtherQaRuntime": true,
+  "status": "RELEASED"
+}

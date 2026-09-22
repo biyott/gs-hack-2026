@@ -1,0 +1,12 @@
+{
+  "id": "QA-PRIMARY-OBSERVER-01",
+  "phase": "QA-HELPER-CHECK",
+  "grantedBy": "/root/qa_lead",
+  "syntheticOnly": true,
+  "applicationAllowed": false,
+  "modelAllowed": false,
+  "notBefore": "2026-09-21T17:13:21.199Z",
+  "notAfter": "2026-09-21T17:14:51.199Z",
+  "freezeSha256": "2693b3f248af35756dd578478cca07ac2fa53e0f2d58fbb621f7f0c678acb8a0",
+  "productAcceptance": "NOT_RUN"
+}

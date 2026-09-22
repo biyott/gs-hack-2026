@@ -1,0 +1,14 @@
+{
+  "recordedAt": "2026-09-22T00:02:09.560Z",
+  "executedBy": "/root/integration_resume",
+  "status": "CONTENT_INTEGRITY_VERIFIED",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "sourceFiles": 1026,
+  "artifactFiles": 673,
+  "mismatches": [],
+  "limits": [
+    "Technical self-check only; independent QA/Root G3 separate.",
+    "Fresh full file bytes checked; all prior source rows except the authorized frontend inventory unchanged."
+  ]
+}

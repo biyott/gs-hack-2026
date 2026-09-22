@@ -1,0 +1,24 @@
+{
+  "candidateId": "sha256:0d42bacc04c50cd21c9c133e262838acb6f47e2e8d33d37ea450ce160f46bc3e",
+  "candidateRoot": "\\\\wsl.localhost\\Ubuntu\\home\\b\\.cache\\gs-safety-qd001.7e7jy5oy",
+  "manifest": {
+    "path": "runtime-artifacts/candidate-manifest-c2.json",
+    "sha256": "6f146ee34b7880e3a0c8012ae2a2485ec7d95e0314e183c555eb509060f54ef0"
+  },
+  "sourceSha256": "0f50d5d6cc16ca78718e88adc88669b3420ffef416b58d4c1d20d63ab9a35f77",
+  "buildId": "QZCOSOj4hgBWlUIGbGUxu",
+  "mobileApkSha256": "1d78f81eaa5d7d85a2f73d3d50b5acbbeeb4a0ea5cbbabcc538087f4fbeb515a",
+  "assetManifest": {
+    "path": "resources/blender/safety-simulator/artifact-manifest.json",
+    "sha256": "51c6adfd6e5190a11b8bc04300a45634b2486ebda64f58a7affd444027c321de"
+  },
+  "evidenceRoot": "\\\\wsl.localhost\\Ubuntu\\90-biyott@github\\gs-hack-2026\\docs\\goal-runs\\GS-SAFETY-SIM-001-20260921T084101Z\\evidence\\qa\\ui-device\\candidate-0d42bacc",
+  "authority": {
+    "receiptPath": "\\\\wsl.localhost\\Ubuntu\\90-biyott@github\\gs-hack-2026\\docs\\goal-runs\\GS-SAFETY-SIM-001-20260921T084101Z\\evidence\\qa\\g4\\candidate-0d42bacc\\receipt-validation.json",
+    "validatedBy": "/root/qa_lead"
+  },
+  "canonicalBinding": {
+    "path": "\\\\wsl.localhost\\Ubuntu\\90-biyott@github\\gs-hack-2026\\docs\\goal-runs\\GS-SAFETY-SIM-001-20260921T084101Z\\qa\\ui-device\\w3\\candidate-binding-c2.v2.json",
+    "sha256": "d6e063404ff931120633e3cce3a360c5cee2800d68152e90327e5a0c7af72a64"
+  }
+}

@@ -1,0 +1,13 @@
+# CORE independent G4 execution journal
+
+Candidate: 70da1337ab54652824ffb49f65cb0213822ba7c2420ae345664dbe7c48c893af. Source: af06052baf673b40b33f8a4bb9f095b4239ff622d82fec492de6d42caeb92584. HEAD: 9dc020a7c0160af17e2ac9157dcb8c390890309a. Build ID: VEwOJr6BFk2kVq-L1cCiG.
+
+Executor: /root/qa_lead/qa_server/core_execution. Parent authorization: independent CORE G4 constructor slice. Candidate root /home/b/.cache/gs-safety-ci.u7pR52 is read-only. Node /home/b/.local/bin/node. G0 protocol and original QA cards/fixtures preserved.
+
+Planned artifacts are all beneath the owned qa/server/candidate-70da1337/core and evidence counterpart: strict TypeScript harness/config; dependency symlink to candidate node_modules; immutable attempt folders with fresh SQLite databases, sanitized snapshots, deterministic traces, run output and JSON results; source-binding checks; final subcase report. No product edits, product test reuse, HTTP, servers, model, browser or device use. Scheduler is never started. Authentication fixture secrets live only in process memory; database hash fields are never logged.
+
+Runtime failure hypotheses before execution: (1) harness module/native dependency or alias environment mismatch, distinguished by collection/native load failure; (2) harness adapter/time binding mistake, distinguished by mismatch with frozen schemas and explicit clock state; (3) product discrepancy, distinguished by valid frozen inputs and independently checked persisted/current outputs. Preserve each first failure. At most one identical environment retry; corrected harness logic produces separately named attempts and never replaces prior artifacts. No product rework authorized.
+
+Clock mapping: scenario virtual epoch 09:00 unchanged; injected UTC 2026-09-21T09:30:00Z for deterministic generation/session validity; monotonic clock controlled separately. Actual UTC execution times are recorded outside fake clocks.
+
+Execution completed through attempt-06. All first failures remain in evidence. Confirmed S20 current-guidance defect was reported immediately to parent and reproduced in separate OS processes without product changes. Original assistance assertion and compiler/dispatch errors are retained as harness failures. The transient candidate node_modules/.vite-temp directory touch caused by bundled config loading is disclosed in report-v1; it was empty after runs and later runner loading avoided it. Source904/build471 content hashes remained unchanged. QA-owned harness/cache/SQLite/raw traces are intentional retained evidence, not product changes. No scheduler/server/model/device remains running from this slice.

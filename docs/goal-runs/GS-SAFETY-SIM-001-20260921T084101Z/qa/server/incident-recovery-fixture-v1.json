@@ -1,0 +1,94 @@
+{
+  "fixtureVersion": "1.0.0",
+  "extends": "fixtures-v1.json",
+  "goalId": "GS-SAFETY-SIM-001",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "testIds": ["S18", "S19", "S20", "S21"],
+  "status": "NOT_RUN",
+  "inputContractBinding": "Read canonical G3 input schemas without changing these independent semantic expectations",
+  "incidentOwnership": {
+    "mode": "fire-gas",
+    "hazards": [
+      {
+        "id": "QA-HZ-A",
+        "workerId": "WORKER-A",
+        "type": "fire",
+        "polygon": [{"x":64,"y":24},{"x":66,"y":24},{"x":66,"y":26},{"x":64,"y":26}],
+        "restrictedPaths": ["PATH-A", "PATH-C"]
+      },
+      {
+        "id": "QA-HZ-B",
+        "workerId": "WORKER-B",
+        "type": "gas",
+        "substanceId": "DEMO-GAS-X",
+        "polygon": [{"x":89,"y":39},{"x":91,"y":39},{"x":91,"y":41},{"x":89,"y":41}],
+        "restrictedPaths": ["PATH-B", "PATH-C"]
+      }
+    ],
+    "expectedIncidentCount": 2,
+    "expectedDisjointHazardSets": true,
+    "closuresAreExplicitPolicyOwnershipNotInferredPolygonIntersection": true,
+    "states": [
+      {"after":"activate-both","activeHazards":["QA-HZ-A","QA-HZ-B"],"closedPaths":["PATH-A","PATH-B","PATH-C"]},
+      {"after":"clear-A","activeHazards":["QA-HZ-B"],"closedPaths":["PATH-A","PATH-B","PATH-C"]},
+      {"after":"reopen-A","activeHazards":["QA-HZ-B"],"closedPaths":["PATH-B","PATH-C"]},
+      {"after":"close-A","activeHazards":["QA-HZ-B"],"closedPaths":["PATH-B","PATH-C"]},
+      {"after":"clear-B","activeHazards":[],"closedPaths":["PATH-B","PATH-C"]},
+      {"after":"reopen-B","activeHazards":[],"closedPaths":[]},
+      {"after":"close-B","activeHazards":[],"closedPaths":[]}
+    ],
+    "repeatSelectedOrderReversed": true,
+    "unexpectedIndependentRestrictions": "Must remain blocked; do not subtract owners outside selected incident"
+  },
+  "restart": {
+    "requiresNewOperatingSystemProcess": true,
+    "sameDatabase": true,
+    "sameCandidateAndConfiguration": true,
+    "virtualClockPaused": true,
+    "checkpoints": ["after-clear-before-reopen", "after-reopen-before-close", "after-rerouted-arrival"],
+    "manualEquipment": {
+      "id": "EQUIPMENT-A",
+      "presetId": "tadano-gr250n4",
+      "position": {"x":36,"y":24},
+      "headingDeg": 30,
+      "slewDeg": 10,
+      "speedMps": 0,
+      "tableLinked": false
+    },
+    "workerChange": {
+      "workerId": "WORKER-A",
+      "profileVersion": 2,
+      "preferredLocale": "en",
+      "canUseStairs": false,
+      "position": {"x":70,"y":8},
+      "positionSource": "mock"
+    },
+    "compareAt": ["first-recovered-snapshot", "first-fresh-evaluation"],
+    "preserve": [
+      "runId", "equipment-preset-and-pose", "geometryVersion", "worker-profile-and-position",
+      "cleared-hazard-world-state", "other-active-hazards", "path-owner-restrictions",
+      "explicit-passage-state", "latest-arrival-target", "firstGuidance", "currentGuidance",
+      "idempotency-receipts", "worker-responses", "immutable-audit-history"
+    ],
+    "wallTimeExpiryAndStaleness": "Evaluate truthfully and separately; no implicit guidance revival"
+  },
+  "reroutedArrival": {
+    "workerId": "WORKER-A",
+    "firstDestination": {"id":"REFUGE-01","x":125,"y":8},
+    "latestDestination": {"id":"REFUGE-02","x":125,"y":42},
+    "latestArrivalGuidanceHasEmptyRouteFields": true,
+    "expectedRememberedTarget": "REFUGE-02",
+    "firstGuidanceDestinationRemains": "REFUGE-01",
+    "positionDoesNotSynthesizeExplicitResponse": true
+  },
+  "receiptSeparation": {
+    "targetWorker": "WORKER-A",
+    "initialWorkerResponseRequests": 0,
+    "connections": ["admin-1-tab-1", "observer-1", "admin-1-tab-2"],
+    "expectedWorkerReceiptFromTheseConnections": false,
+    "alsoTestWorkerSocketWithoutAcknowledgement": true,
+    "positiveControl": "authenticated WORKER-A exact-guidance received response",
+    "unchangedOnReceipt": ["displayedAt","spokenAt","understoodAt","arrivedAt","supportAcceptance"],
+    "transportSubscriberCountIsReceipt": false
+  }
+}

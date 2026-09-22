@@ -1,0 +1,68 @@
+{
+  "kind": "c6-surface-adapter-preparation-freeze",
+  "version": "1",
+  "preparedAt": "2026-09-22T00:07:02.491Z",
+  "sourceRoot": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "sourceHelperSha256": "54b92b43fc05389e9a43bd32380619cd8c9e753bfe71909765c03b849b2e010d",
+  "runtimeExecutedByPreparation": false,
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "logicalOwner": "/root/qa_lead/qa_ui_device",
+  "continuationFreezeSha256": "2651d45b82a9bc97dd76a7a974183574086fb4611c0cacad0d1b5f15bb0e7bd9",
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/run.mjs",
+      "sha256": "eddb39ad468f135c6609cf0a576d631cb49491a6f08681bcabf1768be18b4546"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/guard.mjs",
+      "sha256": "2fabf37e361f28f3c3addf35d5c49e4185ab80a679402cf2fc545f32752f41aa"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/events.mjs",
+      "sha256": "087cc883fb2f3733eb3ad733df6011103a868c64562ea8055120bef4155ad85d"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-surface-adapter-v1/focus-evidence.mjs",
+      "sha256": "a556b4297c5557a5dff2ee6695e3dba6f5f80b95404c46ace7df1113ab61d7ef"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c6.v2.json",
+      "sha256": "3e52330f7f0b670dc7bce18684eb3c877a6195dcb8d24698439cf7e2bfbbaa94"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/surface.scenario.v1.json",
+      "sha256": "a0eacd365776af748823996330c5cc91c634394002c212da7bde57e56a03f8a5"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/focused-scroll-radius-aware-v1.1.mjs",
+      "sha256": "8c55033a7b4dca6d4edd3103dc8e6430176a96b1bd749ac8331e720a752a6002"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/tests/frontend/browser-runtime.mjs",
+      "sha256": "9c222fa6a0e59597c935ef6047a842c60713cd5b84cfadd777784fbc0d540aef"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/tests/frontend/browser-actions.mjs",
+      "sha256": "a3f7d2a06ae7228c92ecc8d6854bd61222f7eddbcdab59e91934c9e30f477416"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/tests/frontend/browser-observations.mjs",
+      "sha256": "945a817d060662eb59cc11291bced96fe58f9bdffb9c577c71811a66975c09bd"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/tests/frontend/focused-scroll.mjs",
+      "sha256": "54b92b43fc05389e9a43bd32380619cd8c9e753bfe71909765c03b849b2e010d"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/tests/frontend/run-surface.mjs",
+      "sha256": "452315b83f491821bbd9e6e1231affc884c80d277c863d386bbbc5bad5616620"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/node_modules/playwright/index.mjs",
+      "sha256": "a0f5715ea22354f922791a9c53dc012d5d5c067ff9cc4cd35ffb7cd272071a9f"
+    }
+  ]
+}

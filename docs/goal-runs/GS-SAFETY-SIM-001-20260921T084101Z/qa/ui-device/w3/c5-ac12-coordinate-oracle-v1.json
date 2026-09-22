@@ -1,0 +1,358 @@
+{
+  "kind": "Independent AC12 expected values; candidate-agnostic QA input, no observed result",
+  "oracleSource": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/source-expectations.md",
+  "status": "SOURCE_PREPARED_NOT_EXECUTED",
+  "errorLimitMeters": 1e-06,
+  "points": [
+    {
+      "id": "C00",
+      "tableMeters": [
+        0,
+        0
+      ],
+      "tableCentimeters": [
+        0,
+        0
+      ],
+      "worldMeters": [
+        0,
+        0
+      ],
+      "threeGroundExpected": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "C10",
+      "tableMeters": [
+        1.4,
+        0
+      ],
+      "tableCentimeters": [
+        140,
+        0
+      ],
+      "worldMeters": [
+        140,
+        0
+      ],
+      "threeGroundExpected": [
+        140,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "C11",
+      "tableMeters": [
+        1.4,
+        0.5
+      ],
+      "tableCentimeters": [
+        140,
+        50
+      ],
+      "worldMeters": [
+        140,
+        50
+      ],
+      "threeGroundExpected": [
+        140,
+        0,
+        -50
+      ]
+    },
+    {
+      "id": "C01",
+      "tableMeters": [
+        0,
+        0.5
+      ],
+      "tableCentimeters": [
+        0,
+        50
+      ],
+      "worldMeters": [
+        0,
+        50
+      ],
+      "threeGroundExpected": [
+        0,
+        0,
+        -50
+      ]
+    },
+    {
+      "id": "E11",
+      "tableMeters": [
+        0.1,
+        0.05
+      ],
+      "tableCentimeters": [
+        10,
+        5
+      ],
+      "worldMeters": [
+        10,
+        5
+      ],
+      "threeGroundExpected": [
+        10,
+        0,
+        -5
+      ]
+    },
+    {
+      "id": "E12",
+      "tableMeters": [
+        0.1,
+        0.25
+      ],
+      "tableCentimeters": [
+        10,
+        25
+      ],
+      "worldMeters": [
+        10,
+        25
+      ],
+      "threeGroundExpected": [
+        10,
+        0,
+        -25
+      ]
+    },
+    {
+      "id": "E13",
+      "tableMeters": [
+        0.1,
+        0.45
+      ],
+      "tableCentimeters": [
+        10,
+        45
+      ],
+      "worldMeters": [
+        10,
+        45
+      ],
+      "threeGroundExpected": [
+        10,
+        0,
+        -45
+      ]
+    },
+    {
+      "id": "E21",
+      "tableMeters": [
+        0.7,
+        0.05
+      ],
+      "tableCentimeters": [
+        70,
+        5
+      ],
+      "worldMeters": [
+        70,
+        5
+      ],
+      "threeGroundExpected": [
+        70,
+        0,
+        -5
+      ]
+    },
+    {
+      "id": "E22",
+      "tableMeters": [
+        0.7,
+        0.25
+      ],
+      "tableCentimeters": [
+        70,
+        25
+      ],
+      "worldMeters": [
+        70,
+        25
+      ],
+      "threeGroundExpected": [
+        70,
+        0,
+        -25
+      ]
+    },
+    {
+      "id": "E23",
+      "tableMeters": [
+        0.7,
+        0.45
+      ],
+      "tableCentimeters": [
+        70,
+        45
+      ],
+      "worldMeters": [
+        70,
+        45
+      ],
+      "threeGroundExpected": [
+        70,
+        0,
+        -45
+      ]
+    },
+    {
+      "id": "E31",
+      "tableMeters": [
+        1.3,
+        0.05
+      ],
+      "tableCentimeters": [
+        130,
+        5
+      ],
+      "worldMeters": [
+        130,
+        5
+      ],
+      "threeGroundExpected": [
+        130,
+        0,
+        -5
+      ]
+    },
+    {
+      "id": "E32",
+      "tableMeters": [
+        1.3,
+        0.25
+      ],
+      "tableCentimeters": [
+        130,
+        25
+      ],
+      "worldMeters": [
+        130,
+        25
+      ],
+      "threeGroundExpected": [
+        130,
+        0,
+        -25
+      ]
+    },
+    {
+      "id": "E33",
+      "tableMeters": [
+        1.3,
+        0.45
+      ],
+      "tableCentimeters": [
+        130,
+        45
+      ],
+      "worldMeters": [
+        130,
+        45
+      ],
+      "threeGroundExpected": [
+        130,
+        0,
+        -45
+      ]
+    }
+  ],
+  "heightPoint": {
+    "worldXY": [
+      7,
+      11
+    ],
+    "heightMeters": 3,
+    "threeExpected": [
+      7,
+      3,
+      -11
+    ]
+  },
+  "axisBasis": {
+    "worldPositiveX": [
+      1,
+      0,
+      0
+    ],
+    "worldPositiveY": [
+      0,
+      0,
+      -1
+    ],
+    "positiveHeight": [
+      0,
+      1,
+      0
+    ]
+  },
+  "skDrawingFrame": {
+    "origin": "slew ground projection",
+    "positiveX": "page-right away from road cab; catalog notes cab negative X",
+    "positiveY": "page-top",
+    "centers": [
+      [
+        -4.885,
+        3.83
+      ],
+      [
+        3.065,
+        3.83
+      ],
+      [
+        -4.615,
+        -3.83
+      ],
+      [
+        3.335,
+        -3.83
+      ]
+    ],
+    "rowSpanMeters": 7.95,
+    "transverseSpanMeters": 7.66,
+    "worldCentersAtC30_25Heading0": [
+      [
+        25.115,
+        28.83
+      ],
+      [
+        33.065,
+        28.83
+      ],
+      [
+        25.385,
+        21.17
+      ],
+      [
+        33.335,
+        21.17
+      ]
+    ],
+    "meaning": "centers, not pad edges; model renderer orientation not observed here"
+  },
+  "tower172": {
+    "nominalSupportWidthMeters": 4.6,
+    "exactSupportPoints": null,
+    "exactExternalPolygon": null,
+    "coordinateBasis": "unknown",
+    "lengthM": null,
+    "frontWidthM": null,
+    "rearWidthM": null,
+    "syntheticRiskPolygonSeparate": true
+  },
+  "physicalCalibrationOr810Samples": "NOT_RUN",
+  "runtimeSourceRelativePaths": [
+    "packages/contracts/src/coordinates.ts",
+    "src/server/tracking/geometry.ts"
+  ],
+  "historicalOraclePath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-cd8a2428/assets/c4-ac12-coordinate-oracle-v1.json",
+  "historicalOracleSha256": "f24eb6c22c3b59480da5a06b953268d93e99e06cd8726439f772cafcafc49ade"
+}

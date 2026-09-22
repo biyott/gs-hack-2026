@@ -1,0 +1,30 @@
+{
+  "kind": "c5-accessibility-supplement-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "candidateId": null,
+  "candidateRoot": null,
+  "sourceSha256": null,
+  "buildId": null,
+  "runtime": "NOT_RUN",
+  "authorization": "NO_GRANT_CREATED",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.mjs",
+      "sha256": "7c80c7504248eddd6ca542bd7dd28b63c912e072e59bcaeb59c4fcd06998a5e1"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.guard.mjs",
+      "sha256": "198bee9930329e1c27d199886b82781c4b705074dbe9e2f9bfc0b10f539a3c0a"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.observations.mjs",
+      "sha256": "5c9951fe79486b56f14d26353a2f63a505b43e3fced277274f2665787049f51f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.md",
+      "sha256": "d0e3bf939ac044e51bd40cb903a86d2ad8eed5bbbe04b63deecf91d428038218"
+    }
+  ]
+}

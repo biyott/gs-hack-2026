@@ -1,0 +1,718 @@
+{
+  "contractVersion": "1.0.0",
+  "streamId": "c14818ca-4f1b-484e-8b4c-a5604cd8870f",
+  "sequence": 209,
+  "mode": "fire-gas",
+  "run": {
+    "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+    "scenarioId": "FG-FIRE",
+    "positionInput": "scenario",
+    "status": "completed",
+    "virtualTimeMs": 20000,
+    "speed": 1,
+    "seed": 20260921,
+    "version": 28,
+    "mapId": "SITE-CONSTRUCTION-01",
+    "mapVersion": "1.0.0",
+    "startedAt": "2026-09-22T00:42:08.562Z",
+    "updatedAt": "2026-09-22T00:42:28.565Z"
+  },
+  "workers": [
+    {
+      "workerId": "WORKER-A",
+      "profile": {
+        "workerId": "WORKER-A",
+        "version": 1,
+        "preferredLocale": "ko",
+        "locale": "ko",
+        "canUseStairs": true,
+        "speedMps": {
+          "min": 0.8,
+          "max": 1.4
+        },
+        "needsAssistance": false,
+        "needsCompanion": false,
+        "notificationPreferences": {
+          "voice": true,
+          "vibration": true
+        },
+        "confirmedAt": "2026-09-21T09:00:00Z"
+      },
+      "position": {
+        "x": 65,
+        "y": 25
+      },
+      "positionSource": "mock",
+      "positionInputSource": "synthetic",
+      "positionStatus": "known",
+      "lastObservedAt": "2026-09-22T00:42:28.557Z",
+      "currentGuidance": {
+        "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+        "eventId": "c0c9ea72-b0ad-482c-b9ba-7e3d2e216779",
+        "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+        "workerId": "WORKER-A",
+        "guidanceId": "GUIDANCE:5527f14f-07f5-4263-b647-d019a3626f7c:f7adbb76-b190-4266-b91e-b836df2700ea:WORKER-A",
+        "guidanceVersion": 2,
+        "updateKind": "supplement",
+        "primaryGuidanceVersion": 1,
+        "simulationMode": "fire-gas",
+        "hazardIds": [
+          "FIRE-ZONE-B"
+        ],
+        "hazardType": "fire",
+        "priority": "critical",
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "routeVersion": 1,
+        "stepId": "J-B-65",
+        "mapId": "SITE-CONSTRUCTION-01",
+        "mapVersion": "1.0.0",
+        "floorId": "GROUND",
+        "waypoints": [
+          {
+            "x": 65,
+            "y": 25,
+            "nodeId": "WORKER-POSITION",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 65,
+            "y": 42,
+            "nodeId": "J-B-65",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 90,
+            "y": 42,
+            "nodeId": "J-B-90",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 100,
+            "y": 42,
+            "nodeId": "J-B-100",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 125,
+            "y": 42,
+            "nodeId": "REFUGE-02",
+            "floorId": "GROUND"
+          },
+          {
+            "x": 132,
+            "y": 42,
+            "nodeId": "ASSEMBLY-01",
+            "floorId": "GROUND"
+          }
+        ],
+        "destinationId": "ASSEMBLY-01",
+        "profileVersion": 1,
+        "profileSnapshot": {
+          "workerId": "WORKER-A",
+          "version": 1,
+          "preferredLocale": "ko",
+          "locale": "ko",
+          "canUseStairs": true,
+          "speedMps": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "needsAssistance": false,
+          "needsCompanion": false,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "locale": "ko",
+        "requestedLocale": "ko",
+        "fallbackLocaleUsed": false,
+        "templateCatalogVersion": "1.0.0",
+        "messageKey": "guidance.follow_validated_route",
+        "primaryMessageKey": "guidance.follow_validated_route",
+        "messageArgs": {
+          "geometryVersion": 1,
+          "policyVersion": "1.0.0",
+          "reasonCode": "evacuate",
+          "assistanceRequired": false,
+          "destinationId": "ASSEMBLY-01"
+        },
+        "primaryMessage": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요.",
+        "managerExplanationKo": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요.",
+        "supplementalExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+        "evidence": [
+          {
+            "documentId": "FG-004",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          }
+        ],
+        "mode": "rag-assisted",
+        "generatedAt": "2026-09-22T00:42:09.504Z",
+        "expiresAt": "2026-09-22T00:43:09.504Z"
+      },
+      "response": {
+        "receivedAt": null,
+        "displayedAt": null,
+        "spokenAt": null,
+        "voiceStopRequestedAt": null,
+        "understoodAt": null,
+        "helpRequestedAt": null,
+        "arrivedAt": null,
+        "voiceStatus": "pending"
+      },
+      "virtual": false
+    },
+    {
+      "workerId": "WORKER-B",
+      "profile": {
+        "workerId": "WORKER-B",
+        "version": 1,
+        "preferredLocale": "en",
+        "locale": "en",
+        "canUseStairs": false,
+        "speedMps": {
+          "min": 0.3,
+          "max": 0.7
+        },
+        "needsAssistance": true,
+        "needsCompanion": true,
+        "notificationPreferences": {
+          "voice": true,
+          "vibration": true
+        },
+        "confirmedAt": "2026-09-21T09:00:00Z"
+      },
+      "position": {
+        "x": 90,
+        "y": 40
+      },
+      "positionSource": "mock",
+      "positionInputSource": "synthetic",
+      "positionStatus": "known",
+      "lastObservedAt": "2026-09-22T00:42:28.557Z",
+      "currentGuidance": null,
+      "response": {
+        "receivedAt": null,
+        "displayedAt": null,
+        "spokenAt": null,
+        "voiceStopRequestedAt": null,
+        "understoodAt": null,
+        "helpRequestedAt": null,
+        "arrivedAt": null,
+        "voiceStatus": "pending"
+      },
+      "virtual": false
+    }
+  ],
+  "equipment": {
+    "id": "EQUIPMENT-A",
+    "presetId": "sk1265-at6",
+    "position": {
+      "x": 30,
+      "y": 25
+    },
+    "headingDeg": 0,
+    "speedMps": 0,
+    "slewDeg": 0,
+    "boomAngleDeg": 0,
+    "boomLengthM": 60,
+    "trolleyM": 30,
+    "hookHeightM": 16.24,
+    "geometryVersion": 1,
+    "positionSource": "mock",
+    "positionInputSource": "synthetic",
+    "tableLinked": true,
+    "positionStatus": "known",
+    "lastObservedAt": "2026-09-22T00:42:05.859Z"
+  },
+  "hazards": [
+    {
+      "hazardId": "FIRE-ZONE-B",
+      "hazardType": "fire",
+      "priority": "critical",
+      "polygon": [
+        {
+          "x": 58,
+          "y": 18
+        },
+        {
+          "x": 78,
+          "y": 18
+        },
+        {
+          "x": 78,
+          "y": 34
+        },
+        {
+          "x": 58,
+          "y": 34
+        }
+      ],
+      "active": true,
+      "floorId": "GROUND",
+      "source": "mock",
+      "observedAt": "2026-09-22T00:42:28.557Z",
+      "sensorStatus": "current",
+      "affectedWorkerIds": [
+        "WORKER-A"
+      ],
+      "reason": "Scripted synthetic scenario hazard",
+      "zoneId": "ZONE-B",
+      "substanceId": null
+    }
+  ],
+  "closedEdgeIds": [],
+  "incidents": [
+    {
+      "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "version": 3,
+      "hazardIds": [
+        "FIRE-ZONE-B"
+      ],
+      "hazardType": "fire",
+      "priority": "critical",
+      "status": "active",
+      "acknowledgedAt": null,
+      "assignedTo": null,
+      "supportStatus": "none",
+      "hazardClearedAt": null,
+      "passageReopenedAt": null,
+      "closedAt": null,
+      "firstGuidance": [
+        {
+          "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+          "eventId": "63d53e05-47fa-45c6-8936-b35aa03fa4be",
+          "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+          "workerId": "WORKER-A",
+          "guidanceId": "GUIDANCE:5527f14f-07f5-4263-b647-d019a3626f7c:f7adbb76-b190-4266-b91e-b836df2700ea:WORKER-A",
+          "guidanceVersion": 1,
+          "updateKind": "primary",
+          "primaryGuidanceVersion": 1,
+          "simulationMode": "fire-gas",
+          "hazardIds": [
+            "FIRE-ZONE-B"
+          ],
+          "hazardType": "fire",
+          "priority": "critical",
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "routeVersion": 1,
+          "stepId": "J-B-65",
+          "mapId": "SITE-CONSTRUCTION-01",
+          "mapVersion": "1.0.0",
+          "floorId": "GROUND",
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 42,
+              "nodeId": "J-B-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 42,
+              "nodeId": "J-B-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 42,
+              "nodeId": "J-B-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 42,
+              "nodeId": "REFUGE-02",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 132,
+              "y": 42,
+              "nodeId": "ASSEMBLY-01",
+              "floorId": "GROUND"
+            }
+          ],
+          "destinationId": "ASSEMBLY-01",
+          "profileVersion": 1,
+          "profileSnapshot": {
+            "workerId": "WORKER-A",
+            "version": 1,
+            "preferredLocale": "ko",
+            "locale": "ko",
+            "canUseStairs": true,
+            "speedMps": {
+              "min": 0.8,
+              "max": 1.4
+            },
+            "needsAssistance": false,
+            "needsCompanion": false,
+            "notificationPreferences": {
+              "voice": true,
+              "vibration": true
+            },
+            "confirmedAt": "2026-09-21T09:00:00Z"
+          },
+          "locale": "ko",
+          "requestedLocale": "ko",
+          "fallbackLocaleUsed": false,
+          "templateCatalogVersion": "1.0.0",
+          "messageKey": "guidance.follow_validated_route",
+          "primaryMessageKey": "guidance.follow_validated_route",
+          "messageArgs": {
+            "geometryVersion": 1,
+            "policyVersion": "1.0.0",
+            "reasonCode": "evacuate",
+            "assistanceRequired": false,
+            "destinationId": "ASSEMBLY-01"
+          },
+          "primaryMessage": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요.",
+          "managerExplanationKo": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요.",
+          "supplementalExplanation": null,
+          "evidence": [],
+          "mode": "template",
+          "generatedAt": "2026-09-22T00:42:09.504Z",
+          "expiresAt": "2026-09-22T00:43:09.504Z"
+        }
+      ],
+      "currentGuidance": [
+        {
+          "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+          "eventId": "c0c9ea72-b0ad-482c-b9ba-7e3d2e216779",
+          "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+          "workerId": "WORKER-A",
+          "guidanceId": "GUIDANCE:5527f14f-07f5-4263-b647-d019a3626f7c:f7adbb76-b190-4266-b91e-b836df2700ea:WORKER-A",
+          "guidanceVersion": 2,
+          "updateKind": "supplement",
+          "primaryGuidanceVersion": 1,
+          "simulationMode": "fire-gas",
+          "hazardIds": [
+            "FIRE-ZONE-B"
+          ],
+          "hazardType": "fire",
+          "priority": "critical",
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "routeVersion": 1,
+          "stepId": "J-B-65",
+          "mapId": "SITE-CONSTRUCTION-01",
+          "mapVersion": "1.0.0",
+          "floorId": "GROUND",
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 42,
+              "nodeId": "J-B-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 42,
+              "nodeId": "J-B-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 42,
+              "nodeId": "J-B-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 42,
+              "nodeId": "REFUGE-02",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 132,
+              "y": 42,
+              "nodeId": "ASSEMBLY-01",
+              "floorId": "GROUND"
+            }
+          ],
+          "destinationId": "ASSEMBLY-01",
+          "profileVersion": 1,
+          "profileSnapshot": {
+            "workerId": "WORKER-A",
+            "version": 1,
+            "preferredLocale": "ko",
+            "locale": "ko",
+            "canUseStairs": true,
+            "speedMps": {
+              "min": 0.8,
+              "max": 1.4
+            },
+            "needsAssistance": false,
+            "needsCompanion": false,
+            "notificationPreferences": {
+              "voice": true,
+              "vibration": true
+            },
+            "confirmedAt": "2026-09-21T09:00:00Z"
+          },
+          "locale": "ko",
+          "requestedLocale": "ko",
+          "fallbackLocaleUsed": false,
+          "templateCatalogVersion": "1.0.0",
+          "messageKey": "guidance.follow_validated_route",
+          "primaryMessageKey": "guidance.follow_validated_route",
+          "messageArgs": {
+            "geometryVersion": 1,
+            "policyVersion": "1.0.0",
+            "reasonCode": "evacuate",
+            "assistanceRequired": false,
+            "destinationId": "ASSEMBLY-01"
+          },
+          "primaryMessage": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요.",
+          "managerExplanationKo": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요.",
+          "supplementalExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+          "evidence": [
+            {
+              "documentId": "FG-004",
+              "documentVersion": "0.1.0",
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+            }
+          ],
+          "mode": "rag-assisted",
+          "generatedAt": "2026-09-22T00:42:09.504Z",
+          "expiresAt": "2026-09-22T00:43:09.504Z"
+        }
+      ],
+      "audit": [
+        {
+          "eventId": "954be353-532f-48e9-9d22-2d1e6935a552",
+          "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+          "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+          "kind": "guidance.generated",
+          "actorId": "engine",
+          "occurredAt": "2026-09-22T00:42:09.504Z",
+          "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:5527f14f-07f5-4263-b647-d019a3626f7c:f7adbb76-b190-4266-b91e-b836df2700ea:WORKER-A\",\"guidanceVersion\":1,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+          "version": 1
+        },
+        {
+          "eventId": "e9f2b8a6-83b8-42d7-820a-2647fc65a782",
+          "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+          "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+          "kind": "guidance.transmission-attempt",
+          "actorId": "engine",
+          "occurredAt": "2026-09-22T00:42:09.504Z",
+          "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:5527f14f-07f5-4263-b647-d019a3626f7c:f7adbb76-b190-4266-b91e-b836df2700ea:WORKER-A\",\"guidanceVersion\":1,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+          "version": 1
+        },
+        {
+          "eventId": "377b9539-6fa4-4959-b8af-7f79e2bef43c",
+          "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+          "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+          "kind": "guidance.supplement",
+          "actorId": "rag",
+          "occurredAt": "2026-09-22T00:42:09.980Z",
+          "detail": "{\"guidanceId\":\"GUIDANCE:5527f14f-07f5-4263-b647-d019a3626f7c:f7adbb76-b190-4266-b91e-b836df2700ea:WORKER-A\",\"guidanceVersion\":2,\"primaryGuidanceVersion\":1,\"ragRunId\":\"fc27c79a-6132-4fdb-873a-4d0e5dbef048\",\"reason\":null}",
+          "version": 3
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "eventId": "1e1e6957-46e2-430c-bea8-5ad5b4d04ff2",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "simulation.start",
+      "actorId": "admin",
+      "occurredAt": "2026-09-22T00:42:08.562Z",
+      "detail": "{\"requestId\":\"f50867b4-fc6a-446c-8ae0-6268278ad689\"}",
+      "version": 0
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-001",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:09.504Z",
+      "detail": "{\"id\":\"FG-FIRE-001\",\"atMs\":1000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-FIRE-B\",\"hazardType\":\"fire\",\"zoneId\":\"ZONE-B\",\"value\":1,\"unit\":\"demo-index\",\"materialId\":null,\"observedAtMs\":1000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 1
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-002",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.hazard.upsert",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:09.504Z",
+      "detail": "{\"id\":\"FG-FIRE-002\",\"atMs\":1000,\"type\":\"hazard.upsert\",\"hazard\":{\"id\":\"FIRE-ZONE-B\",\"type\":\"fire\",\"zoneId\":\"ZONE-B\",\"polygon\":[{\"x\":60,\"y\":20},{\"x\":72,\"y\":20},{\"x\":72,\"y\":30},{\"x\":60,\"y\":30}],\"active\":true}}",
+      "version": 1
+    },
+    {
+      "eventId": "954be353-532f-48e9-9d22-2d1e6935a552",
+      "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "guidance.generated",
+      "actorId": "engine",
+      "occurredAt": "2026-09-22T00:42:09.504Z",
+      "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:5527f14f-07f5-4263-b647-d019a3626f7c:f7adbb76-b190-4266-b91e-b836df2700ea:WORKER-A\",\"guidanceVersion\":1,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+      "version": 1
+    },
+    {
+      "eventId": "e9f2b8a6-83b8-42d7-820a-2647fc65a782",
+      "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "guidance.transmission-attempt",
+      "actorId": "engine",
+      "occurredAt": "2026-09-22T00:42:09.504Z",
+      "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:5527f14f-07f5-4263-b647-d019a3626f7c:f7adbb76-b190-4266-b91e-b836df2700ea:WORKER-A\",\"guidanceVersion\":1,\"transport\":\"sse\",\"connectedSubscriptions\":1}",
+      "version": 1
+    },
+    {
+      "eventId": "377b9539-6fa4-4959-b8af-7f79e2bef43c",
+      "incidentId": "f7adbb76-b190-4266-b91e-b836df2700ea",
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "guidance.supplement",
+      "actorId": "rag",
+      "occurredAt": "2026-09-22T00:42:09.980Z",
+      "detail": "{\"guidanceId\":\"GUIDANCE:5527f14f-07f5-4263-b647-d019a3626f7c:f7adbb76-b190-4266-b91e-b836df2700ea:WORKER-A\",\"guidanceVersion\":2,\"primaryGuidanceVersion\":1,\"ragRunId\":\"fc27c79a-6132-4fdb-873a-4d0e5dbef048\",\"reason\":null}",
+      "version": 3
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-004",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:12.509Z",
+      "detail": "{\"id\":\"FG-FIRE-004\",\"atMs\":4000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-FIRE-B\",\"hazardType\":\"fire\",\"zoneId\":\"ZONE-B\",\"value\":1,\"unit\":\"demo-index\",\"materialId\":null,\"observedAtMs\":4000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 6
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-005",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:12.509Z",
+      "detail": "{\"id\":\"FG-FIRE-005\",\"atMs\":4000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-GAS-B\",\"hazardType\":\"gas\",\"zoneId\":\"ZONE-B\",\"value\":0,\"unit\":\"demo-index\",\"materialId\":\"DEMO-GAS-X\",\"observedAtMs\":4000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 6
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-003",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.hazard.upsert",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:16.519Z",
+      "detail": "{\"id\":\"FG-FIRE-003\",\"atMs\":8000,\"type\":\"hazard.upsert\",\"hazard\":{\"id\":\"FIRE-ZONE-B\",\"type\":\"fire\",\"zoneId\":\"ZONE-B\",\"polygon\":[{\"x\":58,\"y\":18},{\"x\":78,\"y\":18},{\"x\":78,\"y\":34},{\"x\":58,\"y\":34}],\"active\":true}}",
+      "version": 11
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-006",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:16.519Z",
+      "detail": "{\"id\":\"FG-FIRE-006\",\"atMs\":8000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-FIRE-B\",\"hazardType\":\"fire\",\"zoneId\":\"ZONE-B\",\"value\":1,\"unit\":\"demo-index\",\"materialId\":null,\"observedAtMs\":8000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 11
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-007",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:16.519Z",
+      "detail": "{\"id\":\"FG-FIRE-007\",\"atMs\":8000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-GAS-B\",\"hazardType\":\"gas\",\"zoneId\":\"ZONE-B\",\"value\":0,\"unit\":\"demo-index\",\"materialId\":\"DEMO-GAS-X\",\"observedAtMs\":8000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 11
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-008",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:20.529Z",
+      "detail": "{\"id\":\"FG-FIRE-008\",\"atMs\":12000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-FIRE-B\",\"hazardType\":\"fire\",\"zoneId\":\"ZONE-B\",\"value\":1,\"unit\":\"demo-index\",\"materialId\":null,\"observedAtMs\":12000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 16
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-009",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:20.529Z",
+      "detail": "{\"id\":\"FG-FIRE-009\",\"atMs\":12000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-GAS-B\",\"hazardType\":\"gas\",\"zoneId\":\"ZONE-B\",\"value\":0,\"unit\":\"demo-index\",\"materialId\":\"DEMO-GAS-X\",\"observedAtMs\":12000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 16
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-010",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:24.541Z",
+      "detail": "{\"id\":\"FG-FIRE-010\",\"atMs\":16000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-FIRE-B\",\"hazardType\":\"fire\",\"zoneId\":\"ZONE-B\",\"value\":1,\"unit\":\"demo-index\",\"materialId\":null,\"observedAtMs\":16000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 21
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-011",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:24.541Z",
+      "detail": "{\"id\":\"FG-FIRE-011\",\"atMs\":16000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-GAS-B\",\"hazardType\":\"gas\",\"zoneId\":\"ZONE-B\",\"value\":0,\"unit\":\"demo-index\",\"materialId\":\"DEMO-GAS-X\",\"observedAtMs\":16000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 21
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-012",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:28.556Z",
+      "detail": "{\"id\":\"FG-FIRE-012\",\"atMs\":20000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-FIRE-B\",\"hazardType\":\"fire\",\"zoneId\":\"ZONE-B\",\"value\":1,\"unit\":\"demo-index\",\"materialId\":null,\"observedAtMs\":20000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 26
+    },
+    {
+      "eventId": "5527f14f-07f5-4263-b647-d019a3626f7c:FG-FIRE-013",
+      "incidentId": null,
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "kind": "scenario.sensor.reading",
+      "actorId": "scenario",
+      "occurredAt": "2026-09-22T00:42:28.556Z",
+      "detail": "{\"id\":\"FG-FIRE-013\",\"atMs\":20000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-GAS-B\",\"hazardType\":\"gas\",\"zoneId\":\"ZONE-B\",\"value\":0,\"unit\":\"demo-index\",\"materialId\":\"DEMO-GAS-X\",\"observedAtMs\":20000,\"source\":\"mock\",\"connected\":true}}",
+      "version": 26
+    }
+  ],
+  "cctv": [
+    {
+      "cameraId": "CCTV-01",
+      "name": "책상 시연 카메라",
+      "zoneIds": [
+        "ZONE-A",
+        "ZONE-B",
+        "ZONE-C"
+      ],
+      "floorId": "GROUND",
+      "source": "mock",
+      "status": "disconnected",
+      "lastFrameAt": null,
+      "frameUrl": null,
+      "receivedFps": 0,
+      "latencyMs": null
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "sourceSha256": "e17322b2faf5b5181f6a50bcd5cd4baeae2ca31f57f7bfd1653399b4e9e28efa",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "manifestSha256": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d",
+  "recordedAt": "2026-09-21T17:50:33.698Z",
+  "overallVerdict": "NOT_ISSUED",
+  "leafOnly": true,
+  "lanes": [
+    {
+      "lane": "code-quality",
+      "agent": "/root/qa_lead/review_code_c4",
+      "status": "CLEAR_SCOPED_STATIC_WITH_NONBLOCKING_FINDING",
+      "reportRoot": "qa/reviews/candidate-cd8a2428/code",
+      "report": "qa/reviews/candidate-cd8a2428/code/GS-SAFETY-SIM-001-code-review.md",
+      "reportSha256": "3bba741fc87574f89113182f4f21176b23ec0a9a1111304762cc06f77de1238f",
+      "recordedAt": "2026-09-21T17:20:04.626Z",
+      "scope": "Read-only exact C4 source review; not AC or runtime acceptance"
+    },
+    {
+      "lane": "security",
+      "agent": "/root/qa_lead/review_security_c4",
+      "status": "CLEAR_SCOPED_STATIC",
+      "reportRoot": "qa/reviews/candidate-cd8a2428/security",
+      "report": "qa/reviews/candidate-cd8a2428/security/security-review.md",
+      "reportSha256": "5bb119ad76e476d0c83e24053a11b7685e38c0171884ad964e0c918094b49f3d",
+      "recordedAt": "2026-09-21T17:20:04.626Z",
+      "scope": "Read-only exact C4 source review; not AC or runtime acceptance"
+    },
+    {
+      "lane": "context",
+      "agent": "/root/qa_lead/review_context_c4",
+      "status": "PASS_SCOPED_CONTEXT",
+      "reportRoot": "qa/reviews/candidate-cd8a2428/context",
+      "report": "qa/reviews/candidate-cd8a2428/context/context-report.md",
+      "reportSha256": "c86ca2359e0f389e7bfd07c81e01beb76656c4091cd563504a51efbd6ba2ae5a",
+      "recordedAt": "2026-09-21T17:26:32.288Z",
+      "execution": "Own granted fresh currentC4 two corpus validators and isolated7inputcataloggeneration; no app/model/device acceptance"
+    },
+    {
+      "lane": "hands-on-execution",
+      "status": "PREPARING_W4_NO_RUNTIME_GRANTED",
+      "reason": "Fresh one-shot leaf reads runbook and maps existing25cases while W3 owns runtime; personally execute complementary installation/demo after explicit W4 grant",
+      "agent": "/root/qa_lead/review_execution_c4",
+      "reportRoot": "qa/reviews/candidate-cd8a2428/execution"
+    },
+    {
+      "lane": "goal-and-constraints",
+      "status": "NOT_DISPATCHED",
+      "reason": "Fresh final evidence review after required current candidate execution"
+    }
+  ],
+  "previousReportsPreserved": [
+    "qa/review-work-lanes.json",
+    "qa/review-work-lanes-c2.json",
+    "qa/review-work-lanes-c3.json"
+  ]
+}

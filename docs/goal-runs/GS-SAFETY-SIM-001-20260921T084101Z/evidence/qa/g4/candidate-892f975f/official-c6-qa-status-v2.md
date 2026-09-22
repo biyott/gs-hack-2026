@@ -1,0 +1,35 @@
+# Final independent C6 QA verdict
+
+Issued 2026-09-22T00:40:27.224Z by /root/qa_resume (logical QA Lead /root/qa_lead). **Overall BLOCKED; not accepted.**
+
+Candidate sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b; BUILD_ID QS7DkAZLSyX00oQ4fvGHL. **4 PASS, 7 BLOCKED, 5 NOT_RUN.** Criteria and durations are unchanged. No prior candidate behavioral PASS is transferred. NOT_RUN means the complete scenario was not executed; the listed subcases are preserved.
+
+| AC | Status | Fresh evidence and remaining limit |
+|---|---|---|
+| AC-01 | NOT_RUN | Fresh C6 migration/seed and 14 scenarios across three fresh DBs passed reproducibility checks. Independent W4 executed migration/seed, sensorless runs in both modes and an OS restart, using supplied dependencies/build after one documented copy-link repair. Full two-mode Android completion and complete documented installation/calibration journey were not established. |
+| AC-02 | PASS | Fresh independent engine scenario, control, profile, ownership, current geometry and routing cases passed. The criterion here concerns synthetic engine behavior; physical tracking is assessed separately. |
+| AC-03 | PASS | Fresh fire/gas/combined hazard, policy/restriction and separate clear/reopen/closure server checks passed, including three actual OS phase pairs. |
+| AC-04 | BLOCKED | Fresh 1,034 ordering checks and server recovery cases passed. Six cross-mode QD009 fixture cases remain blocked at the repository seam; actual Android fault/reconnect coverage is incomplete. W4 retained completed histories after restart but did not prove the running-to-paused restoration boundary. |
+| AC-05 | NOT_RUN | Fresh profile/language/stairs and role-response software checks passed; integrated current mobile/UI comparison and all response-state flows remain incomplete. |
+| AC-06 | PASS | 18 reviewed corpus records and genuine review/source provenance verified; fresh metadata, normal-scope exclusion and corpus filter checks passed. |
+| AC-07 | BLOCKED | Actual pinned E5, FTS5, vector and fusion processing executed. Frozen fact/policy fixture and broader lineage-join gaps remain, so complete expected-result coverage for all required retrieval cases is not established. |
+| AC-08 | BLOCKED | Actual Qwen, controlled provider faults and production E5 privacy joins executed. The original 85 raw results remain 75 PASS / 4 FAIL / 1 BINDING_GAP / 5 NOT_RUN with separate source-bound fixture/reason dispositions. Required current-flow joins and active-inference cancellation evidence remain incomplete; raw failures were not erased. |
+| AC-09 | BLOCKED | Both actual phones authenticated on C6. PHONE1 equipment guidance had version-bound received/displayed/voice-start/voice-completed callbacks. Human confirmation of heard audio and felt vibration is still pending; both-mode playback and the complete native fault matrix were not executed. One help-requested receipt has no attributed actor and is not claimed as an executor action. |
+| AC-10 | NOT_RUN | Fresh C6 A/B visible identity and pin/navigation narrow fixture passed; full C6 UI incident/support/worker/clear/reopen/close chain not executed. C5 lifecycle is historical only. |
+| AC-11 | NOT_RUN | Current server concurrency/order/restart checks passed. W4 refresh and true OS restart preserved both first-guidance hashes and all eight stored guidance versions, with a new stream. Complete C6 web and Android reconnection, two-admin incident manipulation and audio recovery were not executed. |
+| AC-12 | NOT_RUN | Seven fresh C6 Blender roundtrips passed, preserving the original uncertain wrapper exit and one environment retry. All six current application model/motion/switch and guidance-invalidation scenarios were not executed on C6. |
+| AC-13 | BLOCKED | Only two actual phones were available; four roles, Controller plus two simultaneous Controlees, 810 physical calibration samples and the full capture-origin-to-render join are absent. One equipment READY camera window completed 30 seconds of warmup plus 180 seconds measured: 1,289 received frames, mean 7.1611 fps, two stream IDs, zero duplicate frame identities. All frames were uncalibrated. The second mode was not run. This separate capability observation does not satisfy full active-1x G0. |
+| AC-14 | PASS | Fresh 40 HTTP authorization/projection/restart/provenance checks, independent source security review and actual production E5/model/client/log four-canary scans passed in the stated software scope; no seeded canary was found. W4 separately scanned 75 files without finding its private PIN. |
+| AC-15 | BLOCKED | The C6 browser matrix reached 67/155 states and 140/330 targets. Native 200%/80-ID, accessibility and motion gaps remain. The G0 attempt at 00:20:53–00:20:59 used a fresh IDLE run and received 409 on setup pause before warmup; zero G0 intervals were measured. The separate READY camera window has no render join and no full G0 performance claim. |
+| AC-16 | BLOCKED | Independent W4 demonstrated fresh migration/seed, both sensorless modes and OS restart/history preservation after a copy-environment repair. Its lane verdict is BLOCKED: four-phone/calibration handoff, paused recovery and complete mandatory coverage are missing. The five-second advance observation lacks the captured request body/correlation and establishes neither accepted-command behavior nor a product failure. Overall PASS cannot be issued. |
+
+One actual PHONE1 equipment READY camera window completed 00:28:34.092–00:32:04.093 UTC: 30 seconds warmup and 180 seconds measured, 1,289 frames (7.1611 received fps), two stream IDs and no duplicate frame identities. It was uncalibrated and ran alongside W4. The 154 ms capture-to-receive p95 is a clock-corrected diagnostic, not capture-to-render latency. The second mode and full active G0 remain incomplete.
+
+All QA runtime resources were released at 2026-09-22T00:34:11.784Z. Both physical apps were stopped and owned reverse mappings removed. QA apps are absent and ports 4101–4105/8093 are free. Provider PID 22562, startTicks 163896, port 8092 was retained and transferred to Root; no further QA runtime/model calls are authorized by this closeout.
+
+The original checkpoint, raw failures, environment retries and ambiguous observations remain in place. This report closes the executed QA work; it does not declare the original goal complete.
+
+[Full status and exact evidence hashes](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/official-c6-qa-status-v2.json)
+[W4 independent report](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/execution/c6-handoff-v2/report.md)
+[Camera metrics](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/camera-ready/W3C-C6-READY-CAMERA-EXEC-01/equipment/metric-supplement.json)
+[Resource release](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/final-resource-release-v1.json)

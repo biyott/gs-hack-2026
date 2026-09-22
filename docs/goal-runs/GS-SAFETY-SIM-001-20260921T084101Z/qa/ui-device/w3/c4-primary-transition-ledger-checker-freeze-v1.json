@@ -1,0 +1,47 @@
+{
+  "kind": "c4-primary-transition-ledger-helper-source-freeze",
+  "version": "1",
+  "preparationOnly": true,
+  "helperExecution": "NOT_RUN",
+  "productAcceptance": "NOT_RUN",
+  "productPerformance": "NOT_RUN",
+  "owner": "/root/qa_lead/qa_ui_device/c4_performance_protocol/ledger_checker",
+  "candidateRoot": "/home/b/.cache/gs-safety-c4.q2FD40",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "playwrightModule": "/home/b/.cache/gs-safety-c4.q2FD40/node_modules/playwright/index.mjs",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "staticSyntaxCheck": "node --check test-c4-primary-transition-ledger-v1.mjs: exit 0; no import or helper execution",
+  "staticReview": "Independent read-only source review completed; explicit supplement and phase-history assertions strengthened afterward. No runtime claims.",
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/test-c4-primary-transition-ledger-v1.mjs",
+      "bytes": 17278,
+      "sha256": "96638237be279a155b2907dc064d228df0369334b5c8d301896626023de54e31"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-primary-transition-ledger-v1.mjs",
+      "bytes": 4539,
+      "sha256": "40e8b95315f214f8d645f381c6dd6a4a84d3ff9d0e1a167535035aea3f94746b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/browser-observer-primary-v2.mjs",
+      "bytes": 13266,
+      "sha256": "e421503cbc6dbb5feddfc52f4c41bde403a8e2a4498363044e772b31f7ab91df"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/node_modules/playwright/index.mjs",
+      "bytes": 704,
+      "sha256": "a0f5715ea22354f922791a9c53dc012d5d5c067ff9cc4cd35ffb7cd272071a9f"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/runtime-artifacts/candidate-manifest-c4.json",
+      "bytes": 280426,
+      "sha256": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d"
+    },
+    {
+      "path": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+      "bytes": 293285184,
+      "sha256": "8c599d43aec53f2460a31ae2f4af6bd863f8258b34ff519564bc5d4726bfaa1e"
+    }
+  ]
+}

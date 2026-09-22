@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "qd008-fixture-binding-proposal-v1",
+  "createdAt": "2026-09-21T16:37:07.613Z",
+  "status": "PREPARATION_ONLY_NOT_EXECUTABLE",
+  "source": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/derived/retrieval-cases.v1.json",
+    "sha256": "7ba78b45eb36871960c2ea00db7a31dc0220492415dbb1cf2f264f0b61564951"
+  },
+  "basis": [
+    "Q07-02 heading-change query and GUIDANCE_UPDATED expected EQ002",
+    "Q07-06 fire-route-change query and GUIDANCE_UPDATED expected FG002",
+    "Archivedsource004 applicability/exceptions requirement; source expectation bytes unchanged"
+  ],
+  "clock": "Frozen09:30documenttime unchanged; controlled fixture truth is not live event evidence",
+  "records": [
+    {
+      "testId": "Q-RAG-07-02",
+      "name": "heading-change",
+      "original": {
+        "testId": "Q-RAG-07-02",
+        "name": "heading-change",
+        "simulationType": "equipment",
+        "context": {
+          "scope": "demo",
+          "siteId": "SITE-CONSTRUCTION-01",
+          "role": "worker",
+          "zoneIds": [
+            "ZONE-A"
+          ],
+          "now": "2026-09-21T09:30:00.000Z",
+          "limit": 18,
+          "profile": {
+            "stairsAllowed": true,
+            "assistanceRequired": false,
+            "verified": true
+          },
+          "scenarioPolicy": null,
+          "simulationType": "equipment",
+          "actionCode": "GUIDANCE_UPDATED",
+          "hazardTypes": [
+            "equipment"
+          ],
+          "substanceIds": [],
+          "locale": "ko",
+          "fixtureSet": "normal"
+        },
+        "query": "장비 방향 변경 새 안내 버전 이전 안내 폐기",
+        "expectedDocumentIds": [
+          "EQ-002"
+        ],
+        "forbiddenDocumentIds": [
+          "FG-001",
+          "FG-002",
+          "FG-003",
+          "FG-004",
+          "FG-005",
+          "FG-006",
+          "FG-007",
+          "FG-008",
+          "EQ-006"
+        ],
+        "expectedActionCodes": [
+          "GUIDANCE_UPDATED"
+        ],
+        "expectedOutcome": "matched",
+        "allowedAdditionalDocumentIds": [
+          "COMMON-001",
+          "COMMON-002",
+          "COMMON-003",
+          "COMMON-004"
+        ],
+        "reason": "Heading change explains current guidance; generated context binds current route and profile."
+      },
+      "originalRecordSha256": "d3f65e8732bdaecdc6f9c615fffd5a61cd2a554e2ccf18818851fca862be9bf6",
+      "proposedDerived": null,
+      "status": "AWAIT_EXACT_OWNER_FIELD_NAME",
+      "singleFieldDiff": {
+        "semanticFact": "actual equipment direction change caused engine issuance of this current primary; exactprivatefieldnotyetpublished",
+        "before": "absent",
+        "after": true
+      },
+      "unchangedExpectedFields": [
+        "expectedDocumentIds",
+        "forbiddenDocumentIds",
+        "expectedActionCodes",
+        "expectedOutcome",
+        "allowedAdditionalDocumentIds"
+      ],
+      "unchangedRequestFields": [
+        "query",
+        "scope",
+        "siteId",
+        "role",
+        "zoneIds",
+        "now",
+        "limit",
+        "profile",
+        "scenarioPolicy",
+        "simulationType",
+        "actionCode",
+        "hazardTypes",
+        "substanceIds",
+        "locale",
+        "fixtureSet"
+      ],
+      "interpretation": "Explicit controlled truth supplied by this named fixture only; no production fact inferred from query, action, title, version or model text. This is a separate derivative, not an original85 edit.",
+      "originalNoFactRun": "Required and retained under originalcase with originalexpectations. A derivative result never overwrites it."
+    },
+    {
+      "testId": "Q-RAG-07-06",
+      "name": "fire-route-change",
+      "original": {
+        "testId": "Q-RAG-07-06",
+        "name": "fire-route-change",
+        "simulationType": "fire-gas",
+        "context": {
+          "scope": "demo",
+          "siteId": "SITE-CONSTRUCTION-01",
+          "role": "worker",
+          "zoneIds": [
+            "ZONE-A"
+          ],
+          "now": "2026-09-21T09:30:00.000Z",
+          "limit": 18,
+          "profile": {
+            "stairsAllowed": true,
+            "assistanceRequired": false,
+            "verified": true
+          },
+          "scenarioPolicy": null,
+          "simulationType": "fire-gas",
+          "actionCode": "GUIDANCE_UPDATED",
+          "hazardTypes": [
+            "fire"
+          ],
+          "substanceIds": [],
+          "locale": "ko",
+          "fixtureSet": "normal"
+        },
+        "query": "화재 통로 차단 기존 경로 변경 새 안내",
+        "expectedDocumentIds": [
+          "FG-002"
+        ],
+        "forbiddenDocumentIds": [
+          "EQ-001",
+          "EQ-002",
+          "EQ-003",
+          "EQ-004",
+          "EQ-005",
+          "EQ-006",
+          "FG-005"
+        ],
+        "expectedActionCodes": [
+          "GUIDANCE_UPDATED"
+        ],
+        "expectedOutcome": "matched",
+        "allowedAdditionalDocumentIds": [
+          "COMMON-001",
+          "COMMON-002",
+          "COMMON-003",
+          "COMMON-004"
+        ],
+        "reason": "Fire change explains only current validated route/version."
+      },
+      "originalRecordSha256": "f83261cfbcfaf7665b2b950cf9f0f0ab1c4824aedfe8deb832090e263bb2aff4",
+      "proposedDerived": {
+        "testId": "Q-RAG-07-06",
+        "name": "fire-route-change",
+        "simulationType": "fire-gas",
+        "context": {
+          "scope": "demo",
+          "siteId": "SITE-CONSTRUCTION-01",
+          "role": "worker",
+          "zoneIds": [
+            "ZONE-A"
+          ],
+          "now": "2026-09-21T09:30:00.000Z",
+          "limit": 18,
+          "profile": {
+            "stairsAllowed": true,
+            "assistanceRequired": false,
+            "verified": true
+          },
+          "scenarioPolicy": null,
+          "simulationType": "fire-gas",
+          "actionCode": "GUIDANCE_UPDATED",
+          "hazardTypes": [
+            "fire"
+          ],
+          "substanceIds": [],
+          "locale": "ko",
+          "fixtureSet": "normal",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": true
+          }
+        },
+        "query": "화재 통로 차단 기존 경로 변경 새 안내",
+        "expectedDocumentIds": [
+          "FG-002"
+        ],
+        "forbiddenDocumentIds": [
+          "EQ-001",
+          "EQ-002",
+          "EQ-003",
+          "EQ-004",
+          "EQ-005",
+          "EQ-006",
+          "FG-005"
+        ],
+        "expectedActionCodes": [
+          "GUIDANCE_UPDATED"
+        ],
+        "expectedOutcome": "matched",
+        "allowedAdditionalDocumentIds": [
+          "COMMON-001",
+          "COMMON-002",
+          "COMMON-003",
+          "COMMON-004"
+        ],
+        "reason": "Fire change explains only current validated route/version."
+      },
+      "status": "PROPOSED_CONTROLLED_FIXTURE_NOT_EXECUTABLE",
+      "singleFieldDiff": {
+        "path": "/context/applicability/fireInvalidatedPreviousRoute",
+        "before": "absent",
+        "after": true
+      },
+      "unchangedExpectedFields": [
+        "expectedDocumentIds",
+        "forbiddenDocumentIds",
+        "expectedActionCodes",
+        "expectedOutcome",
+        "allowedAdditionalDocumentIds"
+      ],
+      "unchangedRequestFields": [
+        "query",
+        "scope",
+        "siteId",
+        "role",
+        "zoneIds",
+        "now",
+        "limit",
+        "profile",
+        "scenarioPolicy",
+        "simulationType",
+        "actionCode",
+        "hazardTypes",
+        "substanceIds",
+        "locale",
+        "fixtureSet"
+      ],
+      "interpretation": "Explicit controlled truth supplied by this named fixture only; no production fact inferred from query, action, title, version or model text. This is a separate derivative, not an original85 edit.",
+      "originalNoFactRun": "Required and retained under originalcase with originalexpectations. A derivative result never overwrites it."
+    }
+  ],
+  "negativeControlProposal": {
+    "variant": "separate missing/falsefact controlled records",
+    "expectation": "Corresponding scoped EQ002/FG002 absent in eligible/ranking/modelinputs andpostgenerationpublication; other suitable evidence orfallbackallowed",
+    "originalExpectedAssertions": "Still preserved on originalnofact85 run; do not replace expectedDocumentIds to obtainPASS"
+  },
+  "executionPrerequisites": [
+    "Nextcandidate fixedreceipt and fullprivatecontractbinding",
+    "QA Lead resourcegrant",
+    "Separate immutableadapter/inputfreeze",
+    "Exact ownerfieldname forEQ002",
+    "Actualproduction positives separately require first-primary anchored event/history evidence"
+  ]
+}

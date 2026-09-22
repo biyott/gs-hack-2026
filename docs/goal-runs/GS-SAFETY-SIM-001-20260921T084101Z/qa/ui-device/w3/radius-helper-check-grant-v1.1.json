@@ -1,0 +1,17 @@
+{
+  "id": "QA-RADIUS-HELPER-RETRY-01",
+  "phase": "RADIUS-HELPER-CHECK-V1.1",
+  "grantedBy": "/root/qa_lead",
+  "resourceReleased": true,
+  "syntheticHtmlOnly": true,
+  "applicationAccess": false,
+  "retryOrdinal": 1,
+  "maxAttempts": 1,
+  "notBefore": "2026-09-21T17:32:19.158Z",
+  "notAfter": "2026-09-21T17:33:59.158Z",
+  "freezeSha256": "ac241c4f2eb5e831187f7bccf88b5bf6f48cec026758c1d4ad4424bddc9f4ec9",
+  "outputRoot": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/radius-helper-check-v1.1",
+  "priorFailurePreserved": "radius-helper-check/2026-09-21T17-12-34-395Z/report.json",
+  "w2HoldConfirmedAt": "2026-09-21T17:31:40.761Z",
+  "productAcceptance": "NOT_RUN"
+}

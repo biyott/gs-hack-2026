@@ -1,0 +1,84 @@
+{
+  "version": "1.1",
+  "authority": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/clock-binding-v1.1.md",
+    "sha256": "23f32ccb7ffe686baf4792301e9f36022f18d279fed00ae0c3a29f1efa3f0ea0",
+    "issuedAt": "2026-09-21T10:23:20.799Z"
+  },
+  "scenarioVirtual": {
+    "epoch": "2026-09-21T09:00:00.000Z",
+    "seed": 20260921,
+    "elapsedEvents": "unchanged"
+  },
+  "documentTestUtc": {
+    "reference": "2026-09-21T09:30:00.000Z",
+    "deltaFromOriginalMs": 1800000,
+    "ledgerSha256": "ef2d2352527620d43d2a8ccd15a0f00bc740b3935dd995360c46382e1f3de00e",
+    "applicability": "If ledger/corpus is re-reviewed after reference UTC, preserve these artifacts and request explicit new clock mapping; never backdate review."
+  },
+  "liveIntegrationUtc": {
+    "strategy": "capture actual fresh UTC for each request and create guidance generatedAt/expiresAt from that live clock",
+    "neverUseAsFixedEnvelopeExpiry": "2026-09-21T09:30:00.000Z",
+    "record": [
+      "actualStartUtc",
+      "actualEndUtc",
+      "guidanceGeneratedAt",
+      "guidanceExpiresAt",
+      "requestDocumentUtc",
+      "candidateHash",
+      "corpusHash",
+      "reviewLedgerHash",
+      "derivedFixtureHash"
+    ]
+  },
+  "durations": {
+    "clock": "monotonic",
+    "ragTimeoutMs": 5000,
+    "deadlineRule": "elapsed >=5000ms expired; unchanged"
+  },
+  "fixtureEntries": [
+    {
+      "source": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/retrieval-cases.v1.json",
+      "original": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/original/retrieval-cases.v1.json",
+      "derived": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/derived/retrieval-cases.v1.json",
+      "sourceSha256": "ec8b62e17f3d533524cbb915a66b651b100b69b4e8952b8a2735290dbd82ade5",
+      "originalSha256": "ec8b62e17f3d533524cbb915a66b651b100b69b4e8952b8a2735290dbd82ade5",
+      "derivedSha256": "7ba78b45eb36871960c2ea00db7a31dc0220492415dbb1cf2f264f0b61564951",
+      "caseCount": 20,
+      "changedFieldCount": 20
+    },
+    {
+      "source": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/filter-cases.v1.json",
+      "original": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/original/filter-cases.v1.json",
+      "derived": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/derived/filter-cases.v1.json",
+      "sourceSha256": "65c31562aad243a0a5b2a1dbed02c55571324325882aeb16165708f5d4d72a49",
+      "originalSha256": "65c31562aad243a0a5b2a1dbed02c55571324325882aeb16165708f5d4d72a49",
+      "derivedSha256": "9b4ce2b63c65ecc95aef3add69cd04f48f0ddbf441445d1a8580088a8448c1e3",
+      "caseCount": 30,
+      "changedFieldCount": 6
+    },
+    {
+      "source": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/fault-cases.v1.json",
+      "original": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/original/fault-cases.v1.json",
+      "derived": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/derived/fault-cases.v1.json",
+      "sourceSha256": "51c0cf09a08cf53188f9e93761f6feb5ffaf19c4be0f9225c4015dc24cb2af62",
+      "originalSha256": "51c0cf09a08cf53188f9e93761f6feb5ffaf19c4be0f9225c4015dc24cb2af62",
+      "derivedSha256": "51c0cf09a08cf53188f9e93761f6feb5ffaf19c4be0f9225c4015dc24cb2af62",
+      "caseCount": 30,
+      "changedFieldCount": 0
+    },
+    {
+      "source": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/fault-amendment.v1.2.json",
+      "original": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/original/fault-amendment.v1.2.json",
+      "derived": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/clock-binding-v1.1/derived/fault-amendment.v1.2.json",
+      "sourceSha256": "05dcdde2d9adff2fa0738cefe281534ed42f93f8aaab4ed06e2f3322cf339642",
+      "originalSha256": "05dcdde2d9adff2fa0738cefe281534ed42f93f8aaab4ed06e2f3322cf339642",
+      "derivedSha256": "05dcdde2d9adff2fa0738cefe281534ed42f93f8aaab4ed06e2f3322cf339642",
+      "caseCount": 1,
+      "changedFieldCount": 0
+    }
+  ],
+  "supplementTransport": "fault-amendment.v1.2.json remains active; old v1.1 tentative transport remains preserved but superseded",
+  "producerFixtures": "Producer-owned original 26-case snapshot stays in qa/clock-binding-v1.1/producer-cases.original.json; no producer fixture was edited",
+  "execution": "NOT_RUN"
+}

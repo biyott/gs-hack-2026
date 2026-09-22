@@ -1,0 +1,23 @@
+{
+  "kind": "c5-long-id-actions-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "runtime": "NOT_RUN",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "preparedAt": "2026-09-21T23:30:47.595Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-actions-v1.mjs",
+      "sha256": "e115118e5d28d79d2eb770392154b9829f6080a3240ee292a5df5bb328a48944"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-actions-v1.guard.mjs",
+      "sha256": "731cceacc3992c4bfe6d50008886b5a86770f2c805eacf4fa85de9fc3939c1ee"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-fixture-v1.md",
+      "sha256": "b5a8f14f0988fbe33ad4b4c0e6b54632dc0933001652c76c9b739e0dfc0ddc6a"
+    }
+  ]
+}

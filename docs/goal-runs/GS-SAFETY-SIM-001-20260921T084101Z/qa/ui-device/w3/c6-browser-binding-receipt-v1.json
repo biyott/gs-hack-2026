@@ -1,0 +1,38 @@
+{
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "bindingPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c6.v2.json",
+  "bindingSha256": "3e52330f7f0b670dc7bce18684eb3c877a6195dcb8d24698439cf7e2bfbbaa94",
+  "authorityReceiptPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/receipt-validation.json",
+  "runtime": "NOT_RUN",
+  "outputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-equipment-invalidation-v1.freeze.json",
+      "sha256": "250ae255ac945a874f2f0ad2e64515a17a85eb49603c77c92fad851b9c8a4ea1"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-suite-v1.freeze.json",
+      "sha256": "d88e96f98487d28c5a8396277c6bcf750bbfbbe0f313ed45cb62cdade8aa83b1"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-incident-suite-v1.1.freeze.json",
+      "sha256": "14e5c536dd45d4d138573012cf9736c9195568194943e87f91c8dd9d9883e197"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.freeze.json",
+      "sha256": "41232928d51ad6b52d3e676cee43aa7bafbec2b0ca5811e12e44a80f260af62c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-native-page-zoom-gui-v1.1.freeze.json",
+      "sha256": "142899a6cbb18442a3ab706ac2021d4b1b49f278573dee2ff05f89826cb2ab55"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-fixture-v1.freeze.json",
+      "sha256": "f3250da44ff4eaa86b26c581376b2a14a24dd66baed2209438147bb4dbdb50b5"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-actions-v1.1.freeze.json",
+      "sha256": "c4cbb374ac1b5598b3272cc3864140edfd8c6735a656a095750769971fde7a92"
+    }
+  ],
+  "next": "Run c6-bind-browser-freezes-v1.mjs with canonical binding, then wait explicit helper/browser grant"
+}

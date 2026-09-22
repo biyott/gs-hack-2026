@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "goalId": "GS-SAFETY-SIM-001",
+  "goalVersion": "1.0",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "gate": "G3",
+  "issuedAt": "2026-09-21T13:08:51.509Z",
+  "issuer": "/root",
+  "meaning": "Integrated candidate frozen and submitted for independent G4. Not product acceptance or a QA verdict.",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "gitHeadAloneIsNotCandidate": true,
+  "candidateId": "sha256:70da1337ab54652824ffb49f65cb0213822ba7c2420ae345664dbe7c48c893af",
+  "sourceSha256": "af06052baf673b40b33f8a4bb9f095b4239ff622d82fec492de6d42caeb92584",
+  "sourceFiles": 904,
+  "artifactFiles": 471,
+  "artifactBytes": 1041626439,
+  "candidateRoot": "/home/b/.cache/gs-safety-ci.u7pR52",
+  "manifest": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/candidate-manifest-build04.json",
+    "sha256": "bc87dfe5caf85654a2ab96b345d141f6f182c0332c88798dc2ceacb51fd83849"
+  },
+  "stagedManifest": {
+    "path": "/home/b/.cache/gs-safety-ci.u7pR52/runtime-artifacts/candidate-manifest-build04.json",
+    "sha256": "bc87dfe5caf85654a2ab96b345d141f6f182c0332c88798dc2ceacb51fd83849"
+  },
+  "build": {
+    "buildId": "VEwOJr6BFk2kVq-L1cCiG",
+    "webArtifactId": "sha256:f98a04275e5b31545e9715816ae577187c43e0a8402751739c4e24ec7fffab56",
+    "originSourceSha256": "af95dcae1ea4c5aa342806f8828a2941a9da630507814e9b99d6c4c7d67a90e9",
+    "postbuildDelta": "13 validation helpers/tooling only, original bytes preserved; independent audit confirms unchanged application/runtime inputs"
+  },
+  "mobile": {
+    "selectedApk": "build/mobile-candidate/gs-safety-1.0.0-candidate-4-debug.apk",
+    "apkSha256": "1d78f81eaa5d7d85a2f73d3d50b5acbbeeb4a0ea5cbbabcc538087f4fbeb515a",
+    "sourceManifestSha256": "bf5c0632ee554ea0b8fa671e7c5e9e29696e823ea54bd431e72452448f92151a"
+  },
+  "goalInput": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/goal.input.txt",
+    "sha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796"
+  },
+  "contracts": [
+    {
+      "path": "docs/contracts/freeze-v1.0.3.json",
+      "sha256": "9c074b761a1bfa7870066add68c75ea4a08b8595eaa6acdc52c2c167847f16bf"
+    },
+    {
+      "path": "docs/contracts/freeze-v1.0.2.json",
+      "sha256": "9b53450912b1a99020be2e5fb98f1d7b51dd97654659f03bb32619cee5c49a8f"
+    }
+  ],
+  "integrationHandoff": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/g3-candidate-build04-handoff.md",
+    "sha256": "21817eaf8d31dc87ef227cf7ba65fd13d3d0214f94083c4d9ef1649aba156fed"
+  },
+  "launch": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/g3-launch-revision-1.0.3.md",
+    "sha256": "d288b77cc1aa1ea1223f924f930c22e7857d3d836ca426b0e996262b4461fc23"
+  },
+  "independentTechnicalIntegrity": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/build04-final-independent-verification.json",
+    "sha256": "fdb334cc1622f51514c0f6e44551b6c423a7734eb55ffa4acafe3081d48b89f8"
+  },
+  "frontendHandoff": {
+    "path": ".omo/teams/team-08d29e60/artifacts/frontend-final-handoff.md",
+    "sha256": "b0baf494faff6230b058702659c68914b95e3313030e71808bbb31b3c9c43415"
+  },
+  "backendHandoff": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/G2-handoff.md",
+    "sha256": "6f17ab2ac7b516edf149d19223a6f128900b8f172ff705fa0c811d78bbc795a1"
+  },
+  "mobileHandoff": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/mobile/mobile-g2-manifest.json",
+    "sha256": "93e7cbcb9dfd7dfa9b5ac0f4220a53c2028e8f166f4eee3407395199ab0db268"
+  },
+  "resourceSchedule": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/g3-resource-schedule-v1.md",
+    "sha256": "873eed373e15743443fd87f15c7d1d7c6c6f5f4eb4cf8268fd2fbbaec3b30bba"
+  },
+  "resourceRelease": {
+    "producerPorts3000and3100": "stopped by their owners; durable DB/history preserved",
+    "provider8092": "existing pinned actual local provider; QA exclusive scheduled windows",
+    "phoneControl": "Mobile producer window released; two phones available to assigned QA owner only"
+  },
+  "knownUnverifiedMandatoryResources": [
+    "Four actual phones and Controller plus two simultaneous Controlees",
+    "Physical table/marker calibration grid and 810-point accuracy observations",
+    "Successful LAN path after preserved failures; meaningful final QA retry authorized",
+    "Physical audible/haptic observation and full capture-origin-to-render timing"
+  ],
+  "limitations": [
+    "Producer checks and hash audits are not independent G4 results.",
+    "Prior candidates/failures remain preserved; no acceptance criterion or goal scope changed.",
+    "Only QA Lead may issue official AC and overall verdicts.",
+    "Actual camera pixels remain local only; PHONE-2 camera use is not authorized.",
+    "Source/asset/config/environment changes require QA impact analysis and a newly identified candidate."
+  ],
+  "qaGo": {
+    "authorized": true,
+    "authorizedAt": "2026-09-21T13:08:51.509Z",
+    "target": "/root/qa_lead",
+    "scope": "Validate receipt, then execute existing three independent QA slices and five fresh review leaves per frozen plan. No product edits by QA."
+  }
+}

@@ -1,0 +1,5 @@
+# C6 quick target, label, and projection observations
+
+Fresh C6 G3 identity and explicit QUICK-DOM-PROJECTION subgrant required. Reuse the frozen native-runner identity, process, private DB, provenance, expiry and no-camera guards; no simulation mutations in this browser. Admin login and existing client-only mode/view/camera/worker selections are permitted. Capture 375×812, 768×1024 and 1280×720 in 2D/3D, with real rect/computed style, worker foreignObject/container bounds, keyboard selection, and selected scenario full text and text fragment rectangles. QD011's existing 44px and QD012's full selected-name requirement remain unchanged. Raw bounds need independent visual review.
+
+At 1280 in actual risk mode, call the separately prepared visual_integrity projection module with live owner identity and synthetic guards. Verify its three file hashes and unchanged C5/C6 rendering interfaces first. Preserve BLOCKED when a production closure is inaccessible; no inferred camera. Screenshot only after null camera/zero-frame guard. No new acceptance verdict, no official finding closure, no app/model/performance acceptance. QD013 uses the separate unchanged A/B runner.

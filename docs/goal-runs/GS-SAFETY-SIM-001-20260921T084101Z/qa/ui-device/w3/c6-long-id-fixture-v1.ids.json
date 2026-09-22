@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "qa-long-id-inputs/1",
+  "status": "DRAFTED_NOT_AUTHENTICATED",
+  "accounts": [
+    {
+      "role": "admin",
+      "actorId": "qa-admin-80-WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+    },
+    {
+      "role": "support",
+      "actorId": "qa-support-80-WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+    }
+  ]
+}

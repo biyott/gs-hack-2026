@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "qa-c5-android-fault-binding/1",
+  "candidateLabel": "C5",
+  "status": "PENDING_C5_G3_AND_QA_LEAD_RECEIPTS",
+  "candidateId": null,
+  "candidateRoot": null,
+  "sourceSha256": null,
+  "buildId": null,
+  "evidenceRoot": null,
+  "rootReceipt": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/g3-freeze-c5.json",
+    "sha256": null
+  },
+  "leadReceipt": {
+    "path": null,
+    "sha256": null
+  },
+  "manifest": {
+    "path": "runtime-artifacts/candidate-manifest-c5.json",
+    "sha256": null
+  }
+}

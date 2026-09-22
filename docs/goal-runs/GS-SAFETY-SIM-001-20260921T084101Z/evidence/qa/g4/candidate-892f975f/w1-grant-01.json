@@ -1,0 +1,30 @@
+{
+  "id": "W1-C6-01",
+  "phase": "W1-SERVER",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "candidateRoot": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "manifest": {
+    "path": "/home/b/.cache/gs-safety-c6.pSgWxT/runtime-artifacts/candidate-manifest-c6.json",
+    "bytes": 367968,
+    "sha256": "2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792"
+  },
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "grantedBy": "/root/qa_lead",
+  "actualGrantedBy": "/root/qa_resume",
+  "notBefore": "2026-09-22T00:06:23.180Z",
+  "notAfter": "2026-09-22T00:12:00.000Z",
+  "port": 4101,
+  "provider8092Exclusive": false,
+  "providerStartAllowed": false,
+  "providerOwner": "/root/qa_resume/w1_server",
+  "modelAllowed": true,
+  "freshPrivateDatabasesOnly": true,
+  "productWritesAllowed": false,
+  "afterReleaseProviderHandoffTo": "/root/qa_resume/w2_rag",
+  "scope": "Fresh full frozen W1 plus30executableQD009/sixcrossmodefixtureBLOCKED; no priorPASStransfer",
+  "providerPid": 22562,
+  "providerStartTicks": "163896",
+  "concurrency": "W3separatefreshDBnonperformancefunctionalonly; providerrequestoverlapexplicit, W1latencydiagnosticnotG0"
+}

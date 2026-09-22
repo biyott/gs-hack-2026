@@ -1,0 +1,33 @@
+{
+  "createdAt": "2026-09-21T23:46:30.467Z",
+  "syntaxExit": 0,
+  "strictTscExit": 0,
+  "runtimeExecuted": false,
+  "files": [
+    {
+      "path": "preload.cjs",
+      "bytes": 4403,
+      "sha256": "d50dd3d12c5cf6cdd5768a19a7fbb041476e04c9306b10b82d169077d3db877d"
+    },
+    {
+      "path": "source-binding.json",
+      "bytes": 38202,
+      "sha256": "f7669ba2d67050268f1a86ee80cbdf65fe3b884ce967cea46e7dfefedc4fbf9b"
+    },
+    {
+      "path": "scan-http-v1.mjs",
+      "bytes": 19495,
+      "sha256": "706f7e28c031b28ce49f5e266fad21c4398cf2d155984f321b7ba3b2250e42fb"
+    },
+    {
+      "path": "debug-journal.md",
+      "bytes": 2326,
+      "sha256": "5eec069c9b6045c42c9f73011616077a74adab28b27c8d736ada77f23a652662"
+    },
+    {
+      "path": "bound/launch-http.ts",
+      "bytes": 10369,
+      "sha256": "7ba84787b5fcbbdf0ef3f4f26e8cfa07368414a336303a3930c264fdbd90193e"
+    }
+  ]
+}

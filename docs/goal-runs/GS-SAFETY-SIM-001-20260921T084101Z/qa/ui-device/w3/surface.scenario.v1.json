@@ -1,0 +1,1050 @@
+{
+  "buildType": "production",
+  "settleImages": true,
+  "viewports": [
+    {
+      "width": 375,
+      "height": 812
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "scopeNotes": [
+    "W3A preparation only; no runtime evidence is produced by this JSON.",
+    "Serve only frozen product /home/b/.cache/gs-safety-ci.u7pR52 with matching production BUILD_ID and approved candidate manifest; never target a mutable checkout or shared development origin.",
+    "Execution requires QA-owned isolated database, storage and server, real-device ingestion disconnected, and local verification that every frame is camera-free or generated synthetic-only before any screenshot may enter model/image tools.",
+    "Fixture owner must release stable paused EQ-PROFILE-ROUTES at its 1000ms event and paused FG-FIRE at its 1000ms event, scenario position input, one active matching incident per mode, equipment workers A/B/C and fire-gas A/B, known B position. Equipment A/B/C and fire-gas A original/current incident records must exist; fire-gas B guidance is not assumed. Both mode fixtures retain preset sk1265-at6; no equipment mutations occur during this suite.",
+    "Admin actorId and role are both admin. Access code comes only from QA_DEMO_ACCESS_CODE; this contract contains no fallback.",
+    "The harness only posts session login; no scenario, profile, incident, calibration or equipment mutation is performed by this main surface matrix.",
+    "Current records are captured as observed, including real expiry. No state here proves fresh current route validity. The C no-route case checks recorded policy output, not a still-valid live guidance window.",
+    "Six-crane selection/motion, both-mode valid/no-route timing, route geometry, authenticated worker flows, broad failure fixtures, concurrent admins, playback, physical sources and performance remain independent runtime followups in surface-matrix-v1.md.",
+    "The runner reports producer-browser-check and productAcceptance NOT_RUN; independently authored W3A execution/review provenance must be recorded separately, never rewrite its labels to PASS.",
+    "31 logical states at five viewports = 155 semantic cases before overlapping focus frames; actual PNG count is determined at runtime."
+  ],
+  "expectedHttpErrors": [
+    {
+      "method": "GET",
+      "path": "/api/session",
+      "status": 401,
+      "maxOccurrences": 2,
+      "beforeMutation": true
+    }
+  ],
+  "allowedMutations": [
+    {
+      "method": "POST",
+      "path": "/api/session"
+    }
+  ],
+  "expectedRequestFailures": [
+    {
+      "method": "GET",
+      "path": "/api/events",
+      "query": {
+        "mode": "equipment"
+      },
+      "error": "net::ERR_ABORTED",
+      "state": "fire-gas-initial-selection",
+      "maxOccurrences": 1
+    }
+  ],
+  "routes": [
+    {
+      "id": "entry-admin",
+      "path": "/",
+      "readySelector": ".entry-screen h1",
+      "states": [
+        {
+          "id": "unauthenticated",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "button[type='submit']:not(:disabled)"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "[data-testid='mode-equipment']",
+              "name": "disabled",
+              "value": ""
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "[data-testid='mode-fire-gas']",
+              "name": "disabled",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "id": "admin-connected",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "button[type='submit']:not(:disabled)"
+            },
+            {
+              "kind": "select",
+              "selector": "label:has-text('역할') select",
+              "value": "admin"
+            },
+            {
+              "kind": "fill",
+              "selector": "input[autocomplete='username']",
+              "value": "admin"
+            },
+            {
+              "kind": "fill",
+              "selector": "input[type='password']",
+              "valueEnv": "QA_DEMO_ACCESS_CODE"
+            },
+            {
+              "kind": "click",
+              "selector": "button[type='submit']"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "[data-testid='mode-equipment']:not(:disabled)"
+            },
+            {
+              "kind": "expect-text",
+              "selector": ".entry-session",
+              "value": "admin · admin"
+            }
+          ],
+          "focusTarget": [
+            ".entry-session",
+            ".mode-choices"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipment-panels",
+      "path": "/",
+      "readySelector": ".entry-screen h1",
+      "setupActions": [
+        {
+          "kind": "wait-visible",
+          "selector": "button[type='submit']:not(:disabled)"
+        },
+        {
+          "kind": "select",
+          "selector": "label:has-text('역할') select",
+          "value": "admin"
+        },
+        {
+          "kind": "fill",
+          "selector": "input[autocomplete='username']",
+          "value": "admin"
+        },
+        {
+          "kind": "fill",
+          "selector": "input[type='password']",
+          "valueEnv": "QA_DEMO_ACCESS_CODE"
+        },
+        {
+          "kind": "click",
+          "selector": "button[type='submit']"
+        },
+        {
+          "kind": "wait-visible",
+          "selector": "[data-testid='mode-equipment']:not(:disabled)"
+        },
+        {
+          "kind": "expect-text",
+          "selector": ".entry-session",
+          "value": "admin · admin"
+        },
+        {
+          "kind": "click",
+          "selector": "[data-testid='mode-equipment']",
+          "eventPhase": "equipment-initial-selection"
+        },
+        {
+          "kind": "wait-text",
+          "selector": ".workspace-heading h1",
+          "value": "중장비 접근 대응"
+        },
+        {
+          "kind": "wait-text",
+          "selector": "[data-testid='connection-state']",
+          "value": "실시간 연결"
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='scenario-select'] option:checked",
+          "name": "value",
+          "value": "EQ-PROFILE-ROUTES"
+        },
+        {
+          "kind": "expect-text",
+          "selector": "[data-testid='selected-equipment-name']",
+          "value": "Spierings SK1265-AT6"
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='position-input-select'] option:checked",
+          "name": "value",
+          "value": "scenario"
+        },
+        {
+          "kind": "wait-text",
+          "selector": "[data-testid='run-toggle']",
+          "value": "재개"
+        },
+        {
+          "kind": "wait-visible",
+          "selector": "[data-testid='site-canvas'] canvas"
+        },
+        {
+          "kind": "wait-resource",
+          "value": "/assets/site/hvo-demo.glb"
+        },
+        {
+          "kind": "wait-resource",
+          "value": "/assets/cranes/sk1265-at6.glb"
+        },
+        {
+          "kind": "wait-all-hidden",
+          "selector": ".scene-loading, .scene-failure"
+        }
+      ],
+      "states": [
+        {
+          "id": "header-and-run-controls",
+          "actions": [
+            {
+              "kind": "scroll",
+              "selector": ".console-header"
+            },
+            {
+              "kind": "expect-visible-unique",
+              "selector": ".console-header .status-synthetic",
+              "value": "시뮬레이션 / SIMULATION",
+              "inViewport": true
+            }
+          ],
+          "focusTarget": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "3d-full",
+          "actions": [
+            {
+              "kind": "select",
+              "selector": "select[aria-label='카메라 모드']",
+              "value": "full"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "full"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "button:text-is('3D 현장')",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "3d-risk",
+          "actions": [
+            {
+              "kind": "select",
+              "selector": "select[aria-label='카메라 모드']",
+              "value": "risk"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "risk"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "3d-worker-b-selected",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B')) .worker-card-heading"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B')) .worker-card-heading",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "select",
+              "selector": "select[aria-label='카메라 모드']",
+              "value": "follow"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "follow"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "2d-full-zoom-reset",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "button:text-is('2D 지도')"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "[data-testid='site-map'] .map-ground"
+            },
+            {
+              "kind": "click",
+              "selector": "button[aria-label='지도 확대']"
+            },
+            {
+              "kind": "click",
+              "selector": "button[aria-label='지도 축소']"
+            },
+            {
+              "kind": "click",
+              "selector": "button:text-is('시점 초기화')"
+            },
+            {
+              "kind": "click",
+              "selector": "button:text-is('전체 범위')"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "full"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "button:text-is('2D 지도')",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            },
+            {
+              "kind": "expect-map-scale",
+              "selector": "[data-testid='map-scale-label']"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "incident-selected-2d-locked",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "#incident-detail .incident-list-item:has(strong:text-is('장비 위험')):has(.status-badge:text-is('진행 중'))"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "#incident-detail .incident-list-item:has(strong:text-is('장비 위험')):has(.status-badge:text-is('진행 중'))",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "select",
+              "selector": "select[aria-label='카메라 모드']",
+              "value": "locked"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "locked"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "first-current-records",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-B'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+            }
+          ],
+          "focusTarget": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "guidance-details-expanded",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A')) .guidance-detail > summary"
+            },
+            {
+              "kind": "click",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A')) .guidance-detail > summary"
+            },
+            {
+              "kind": "click",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B')) .guidance-detail > summary"
+            },
+            {
+              "kind": "click",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B')) .guidance-detail > summary"
+            }
+          ],
+          "focusTarget": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))"
+          ]
+        },
+        {
+          "id": "unverified-profile-no-route-record",
+          "actions": [
+            {
+              "kind": "expect-text",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))",
+              "value": "이동 경로 없음"
+            },
+            {
+              "kind": "expect-text",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))",
+              "value": "이동 목적지 없음"
+            },
+            {
+              "kind": "click",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C')) .guidance-detail > summary"
+            },
+            {
+              "kind": "expect-text",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))",
+              "value": "ROUTE_UNAVAILABLE"
+            }
+          ],
+          "focusTarget": "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+        },
+        {
+          "id": "admin-incident-controls",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail .incident-actions"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail .incident-final-actions"
+            }
+          ],
+          "focusTarget": "#incident-detail .incident-actions"
+        },
+        {
+          "id": "worker-board-and-profile",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B')) .worker-card-heading"
+            },
+            {
+              "kind": "click",
+              "selector": ".profile-details > summary"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": ".profile-details select[name='preferredLocale']"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".profile-details select[name='preferredLocale'] option:checked",
+              "name": "value",
+              "value": "en"
+            }
+          ],
+          "focusTarget": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-C'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "related-camera-and-event-ledger",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-camera .camera-panel"
+            }
+          ],
+          "focusTarget": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "tracking-camera-and-observations",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#tracking .camera-panel"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#tracking .tracking-observations"
+            }
+          ],
+          "focusTarget": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "calibration-all-fields",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".calibration-marker:has(input[name='EQUIPMENT-A.markerId']) details > summary"
+            },
+            {
+              "kind": "click",
+              "selector": ".calibration-marker:has(input[name='WORKER-A.markerId']) details > summary"
+            },
+            {
+              "kind": "click",
+              "selector": ".calibration-marker:has(input[name='WORKER-B.markerId']) details > summary"
+            }
+          ],
+          "focusTarget": "#tracking .calibration-panel"
+        },
+        {
+          "id": "settings-and-equipment-spec",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".scenario-rail .settings-toggle:visible, #scenario-settings > h2:visible"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#scenario-settings"
+            },
+            {
+              "kind": "click",
+              "selector": ".equipment-spec > summary"
+            }
+          ],
+          "focusTarget": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings label.field:has([data-testid='equipment-select'])",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fire-gas-panels",
+      "path": "/",
+      "readySelector": ".entry-screen h1",
+      "setupActions": [
+        {
+          "kind": "wait-visible",
+          "selector": "button[type='submit']:not(:disabled)"
+        },
+        {
+          "kind": "select",
+          "selector": "label:has-text('역할') select",
+          "value": "admin"
+        },
+        {
+          "kind": "fill",
+          "selector": "input[autocomplete='username']",
+          "value": "admin"
+        },
+        {
+          "kind": "fill",
+          "selector": "input[type='password']",
+          "valueEnv": "QA_DEMO_ACCESS_CODE"
+        },
+        {
+          "kind": "click",
+          "selector": "button[type='submit']"
+        },
+        {
+          "kind": "wait-visible",
+          "selector": "[data-testid='mode-equipment']:not(:disabled)"
+        },
+        {
+          "kind": "expect-text",
+          "selector": ".entry-session",
+          "value": "admin · admin"
+        },
+        {
+          "kind": "click",
+          "selector": "[data-testid='mode-fire-gas']",
+          "eventPhase": "fire-gas-initial-selection"
+        },
+        {
+          "kind": "wait-text",
+          "selector": ".workspace-heading h1",
+          "value": "화재·가스 대응"
+        },
+        {
+          "kind": "wait-text",
+          "selector": "[data-testid='connection-state']",
+          "value": "실시간 연결"
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='scenario-select'] option:checked",
+          "name": "value",
+          "value": "FG-FIRE"
+        },
+        {
+          "kind": "expect-text",
+          "selector": "[data-testid='selected-equipment-name']",
+          "value": "Spierings SK1265-AT6"
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='position-input-select'] option:checked",
+          "name": "value",
+          "value": "scenario"
+        },
+        {
+          "kind": "wait-text",
+          "selector": "[data-testid='run-toggle']",
+          "value": "재개"
+        },
+        {
+          "kind": "wait-visible",
+          "selector": "[data-testid='site-canvas'] canvas"
+        },
+        {
+          "kind": "wait-resource",
+          "value": "/assets/site/hvo-demo.glb"
+        },
+        {
+          "kind": "wait-resource",
+          "value": "/assets/cranes/sk1265-at6.glb"
+        },
+        {
+          "kind": "wait-all-hidden",
+          "selector": ".scene-loading, .scene-failure"
+        }
+      ],
+      "states": [
+        {
+          "id": "header-and-run-controls",
+          "actions": [
+            {
+              "kind": "scroll",
+              "selector": ".console-header"
+            },
+            {
+              "kind": "expect-visible-unique",
+              "selector": ".console-header .status-synthetic",
+              "value": "시뮬레이션 / SIMULATION",
+              "inViewport": true
+            }
+          ],
+          "focusTarget": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "3d-full",
+          "actions": [
+            {
+              "kind": "select",
+              "selector": "select[aria-label='카메라 모드']",
+              "value": "full"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "full"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "button:text-is('3D 현장')",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "3d-risk",
+          "actions": [
+            {
+              "kind": "select",
+              "selector": "select[aria-label='카메라 모드']",
+              "value": "risk"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "risk"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "3d-worker-b-selected",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B')) .worker-card-heading"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B')) .worker-card-heading",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "select",
+              "selector": "select[aria-label='카메라 모드']",
+              "value": "follow"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "follow"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "2d-full-zoom-reset",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "button:text-is('2D 지도')"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "[data-testid='site-map'] .map-ground"
+            },
+            {
+              "kind": "click",
+              "selector": "button[aria-label='지도 확대']"
+            },
+            {
+              "kind": "click",
+              "selector": "button[aria-label='지도 축소']"
+            },
+            {
+              "kind": "click",
+              "selector": "button:text-is('시점 초기화')"
+            },
+            {
+              "kind": "click",
+              "selector": "button:text-is('전체 범위')"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "full"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "button:text-is('2D 지도')",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            },
+            {
+              "kind": "expect-map-scale",
+              "selector": "[data-testid='map-scale-label']"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "incident-selected-2d-locked",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "#incident-detail .incident-list-item:has(strong:text-is('화재')):has(.status-badge:text-is('진행 중'))"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "#incident-detail .incident-list-item:has(strong:text-is('화재')):has(.status-badge:text-is('진행 중'))",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "select",
+              "selector": "select[aria-label='카메라 모드']",
+              "value": "locked"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "locked"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "first-current-records",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+            }
+          ],
+          "focusTarget": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "guidance-details-expanded",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A')) .guidance-detail > summary"
+            },
+            {
+              "kind": "click",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A')) .guidance-detail > summary"
+            }
+          ],
+          "focusTarget": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "admin-incident-controls",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail .incident-actions"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail .incident-final-actions"
+            }
+          ],
+          "focusTarget": "#incident-detail .incident-actions"
+        },
+        {
+          "id": "worker-board-and-profile",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B')) .worker-card-heading"
+            },
+            {
+              "kind": "click",
+              "selector": ".profile-details > summary"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": ".profile-details select[name='preferredLocale']"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".profile-details select[name='preferredLocale'] option:checked",
+              "name": "value",
+              "value": "en"
+            }
+          ],
+          "focusTarget": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "related-camera-and-event-ledger",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-camera .camera-panel"
+            }
+          ],
+          "focusTarget": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "tracking-camera-and-observations",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#tracking .camera-panel"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#tracking .tracking-observations"
+            }
+          ],
+          "focusTarget": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "calibration-all-fields",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".calibration-marker:has(input[name='EQUIPMENT-A.markerId']) details > summary"
+            },
+            {
+              "kind": "click",
+              "selector": ".calibration-marker:has(input[name='WORKER-A.markerId']) details > summary"
+            },
+            {
+              "kind": "click",
+              "selector": ".calibration-marker:has(input[name='WORKER-B.markerId']) details > summary"
+            }
+          ],
+          "focusTarget": "#tracking .calibration-panel"
+        },
+        {
+          "id": "settings-and-equipment-spec",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": ".scenario-rail .settings-toggle:visible, #scenario-settings > h2:visible"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#scenario-settings"
+            },
+            {
+              "kind": "click",
+              "selector": ".equipment-spec > summary"
+            }
+          ],
+          "focusTarget": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings .rail-note",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        }
+      ]
+    }
+  ]
+}

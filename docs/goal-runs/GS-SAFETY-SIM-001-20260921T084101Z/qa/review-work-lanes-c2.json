@@ -1,0 +1,50 @@
+{
+  "recordedAt": "2026-09-21T15:17:36.579Z",
+  "candidateId": "sha256:0d42bacc04c50cd21c9c133e262838acb6f47e2e8d33d37ea450ce160f46bc3e",
+  "sourceSha256": "0f50d5d6cc16ca78718e88adc88669b3420ffef416b58d4c1d20d63ab9a35f77",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "manifestSha256": "6f146ee34b7880e3a0c8012ae2a2485ec7d95e0314e183c555eb509060f54ef0",
+  "overallVerdict": "NOT_ISSUED",
+  "lanes": [
+    {
+      "lane": "code-quality",
+      "agent": "/root/qa_lead/review_code_c2",
+      "status": "FAIL_QD007_HTTP_CONFIRMED",
+      "scope": "Fresh static delta/full relevant module review",
+      "report": "qa/reviews/candidate-0d42bacc/code/GS-SAFETY-SIM-001-code-review.md",
+      "reportSha256": "122dd8c6f9cb21797de8efbdebb423d5a934db0bc3e909df22b36adb85f77c39",
+      "finding": "evidence/qa/g4/candidate-0d42bacc/QD007-camera-source.json"
+    },
+    {
+      "lane": "security",
+      "agent": "/root/qa_lead/review_security_c2",
+      "status": "STATIC_APPROVE_RUNTIME_PRECONDITION_UNRESOLVED",
+      "scope": "Fresh SEC01/privacy/role review, actualHTTP proof separate",
+      "report": "qa/reviews/candidate-0d42bacc/security/security-review.md",
+      "note": "Originalsequencecausalitywithdrawn; freshnesssupportedbutunproven; originalrawreportpreserved.",
+      "correction": "qa/reviews/candidate-0d42bacc/security/security-review-correction-01.md",
+      "correctionSha256": "4fb0f82c00e743a838c223ecbd4f0a7c4579092509e72ef1cfd13704fb3723d1"
+    },
+    {
+      "lane": "context",
+      "agent": "/root/qa_lead/review_context_c2",
+      "status": "PASS_SCOPED",
+      "scope": "Fresh QD001/provenance/package review and small isolated validators",
+      "report": "qa/reviews/candidate-0d42bacc/context/context-report.md",
+      "reportSha256": "2742e1fd836ecaba4d945467705f3a9ec72531173df556d885a7c860c3fd85a0",
+      "note": "QD001 package closure independentlyverified; nooverallverdict"
+    },
+    {
+      "lane": "hands-on-execution",
+      "status": "NOT_DISPATCHED",
+      "reason": "Fresh replacement receives actual W4 resource grant at dispatch; C1 inventory-only report remainsINCONCLUSIVE"
+    },
+    {
+      "lane": "goal-and-constraints",
+      "status": "NOT_DISPATCHED",
+      "reason": "Fresh final review after actual execution packets; known physicalBLOCKED distinct from productFAIL"
+    }
+  ],
+  "leafOnly": true,
+  "previousReportsPreserved": "qa/review-work-lanes.json"
+}

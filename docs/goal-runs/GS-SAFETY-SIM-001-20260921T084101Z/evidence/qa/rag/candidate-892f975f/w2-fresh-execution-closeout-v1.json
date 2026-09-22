@@ -1,0 +1,685 @@
+{
+  "kind": "Fresh C6 W2 scoped execution closeout",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "observedAt": "2026-09-22T00:23:17.000Z",
+  "executor": "/root/qa_resume/w2_rag",
+  "grant": "W2-C6-01",
+  "module": {
+    "startedAt": "2026-09-22T00:14:11.686Z",
+    "endedAt": "2026-09-22T00:15:02.186Z",
+    "exitCode": 0,
+    "initialSourceCount": 1026,
+    "finalSourceCount": 1026,
+    "finalArtifactCount": 673
+  },
+  "http": {
+    "startedAt": "2026-09-22T00:15:21.670Z",
+    "endedAt": "2026-09-22T00:15:50.578Z",
+    "cleanupEndedAt": "2026-09-22T00:15:52.700Z",
+    "exitCode": 0,
+    "harnessUnchanged": true,
+    "captureCount": 21
+  },
+  "resourceRelease": {
+    "observedAt": "2026-09-22T00:16:10.017Z",
+    "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "grant": "W2-C6-01",
+    "resources": [
+      {
+        "pid": 107487,
+        "absent": true
+      },
+      {
+        "pid": 108158,
+        "absent": true
+      },
+      {
+        "pid": 108255,
+        "absent": true
+      }
+    ],
+    "cleanup": {
+      "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+      "attempt": "http-attempt-01",
+      "endedAt": "2026-09-22T00:15:52.700Z",
+      "cleanup": [
+        {
+          "resource": "read-only-database",
+          "success": true,
+          "errorName": null
+        },
+        {
+          "resource": "owned-application",
+          "success": true,
+          "errorName": null
+        },
+        {
+          "resource": "owned-capture-proxy",
+          "success": true,
+          "errorName": null
+        }
+      ],
+      "preservedProviderPid": 22562,
+      "existingProviderWasNotStopped": true
+    },
+    "provider": {
+      "pid": 22562,
+      "startTicks": "163896",
+      "preserved": true
+    },
+    "ownedListenersFree": true,
+    "listenerProbe": "State Recv-Q Send-Q Local Address:Port Peer Address:PortProcess\n",
+    "release": true,
+    "overallVerdict": "NOT_ISSUED",
+    "remainingWork": "Filesystem-only scans/joins/dispositions"
+  },
+  "original85": {
+    "PASS": 75,
+    "FAIL": 4,
+    "BINDING_GAP": 1,
+    "NOT_RUN": 5
+  },
+  "controlled": [
+    {
+      "testId": "QD008-EQ002-FACT-TRUE-CONTROLLED",
+      "controlVerdict": "PASS",
+      "nativeExpectationVerdict": "PASS"
+    },
+    {
+      "testId": "QD008-FG002-FACT-TRUE-NULL-POLICY-DIAGNOSTIC",
+      "controlVerdict": "PASS",
+      "nativeExpectationVerdict": "FAIL"
+    },
+    {
+      "testId": "QD008-FG002-REROUTE-POSITIVE-EVACUATION-CONTROLLED",
+      "controlVerdict": "PASS",
+      "nativeExpectationVerdict": "PASS"
+    },
+    {
+      "testId": "QD008-FG002-MISSING-FACT-CONTROLLED",
+      "controlVerdict": "PASS",
+      "nativeExpectationVerdict": "FAIL"
+    },
+    {
+      "testId": "QD008-FG002-FALSE-FACT-CONTROLLED",
+      "controlVerdict": "PASS",
+      "nativeExpectationVerdict": "FAIL"
+    },
+    {
+      "testId": "QD008-FG002-NULL-POLICY-CONTROLLED",
+      "controlVerdict": "PASS",
+      "nativeExpectationVerdict": "FAIL"
+    },
+    {
+      "testId": "QD008-EQ002-MISSING-FACT-CONTROLLED",
+      "controlVerdict": "PASS",
+      "nativeExpectationVerdict": "FAIL"
+    },
+    {
+      "testId": "QD008-EQ002-FALSE-FACT-CONTROLLED",
+      "controlVerdict": "PASS",
+      "nativeExpectationVerdict": "FAIL"
+    }
+  ],
+  "engine": [
+    {
+      "id": "first-fire-ko",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/first-fire-ko.json"
+    },
+    {
+      "id": "first-fire-ko-profile-only",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/first-fire-ko-profile-only.json"
+    },
+    {
+      "id": "fire-reroute-ko",
+      "positiveCapture": "SCOPED_ACCEPTANCE_CAPTURED_FOR_REVIEW",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/fire-reroute-ko.json"
+    },
+    {
+      "id": "fire-reroute-ko-profile-only",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/fire-reroute-ko-profile-only.json"
+    },
+    {
+      "id": "initial-equipment-ko",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/initial-equipment-ko.json"
+    },
+    {
+      "id": "direction-ko",
+      "positiveCapture": "SCOPED_ACCEPTANCE_NOT_OBSERVED",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/direction-ko.json"
+    },
+    {
+      "id": "direction-ko-profile-only",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/direction-ko-profile-only.json"
+    },
+    {
+      "id": "first-fire-en",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/first-fire-en.json"
+    },
+    {
+      "id": "first-fire-en-profile-only",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/first-fire-en-profile-only.json"
+    },
+    {
+      "id": "fire-reroute-en",
+      "positiveCapture": "SCOPED_ACCEPTANCE_CAPTURED_FOR_REVIEW",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/fire-reroute-en.json"
+    },
+    {
+      "id": "fire-reroute-en-profile-only",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/fire-reroute-en-profile-only.json"
+    },
+    {
+      "id": "initial-equipment-en",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/initial-equipment-en.json"
+    },
+    {
+      "id": "direction-en",
+      "positiveCapture": "SCOPED_ACCEPTANCE_NOT_OBSERVED",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/direction-en.json"
+    },
+    {
+      "id": "direction-en-profile-only",
+      "positiveCapture": "NOT_A_POSITIVE_CASE",
+      "artifactPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/observations/direction-en-profile-only.json"
+    }
+  ],
+  "normalAndCanary": {
+    "normal": [
+      {
+        "testId": "Q-RAG-08-01",
+        "locale": "ko",
+        "actualHttpModelVerdict": "PASS",
+        "generationIds": [
+          "31abab06-541c-417d-a609-9649911befb2",
+          "a1bb5624-1f26-48cc-91c6-538f64447e9e"
+        ],
+        "visualAndAudioVerdict": "NOT_RUN"
+      },
+      {
+        "testId": "Q-RAG-08-02",
+        "locale": "en",
+        "actualHttpModelVerdict": "FAIL",
+        "generationIds": [],
+        "visualAndAudioVerdict": "NOT_RUN"
+      }
+    ],
+    "additive": [
+      {
+        "testId": "Q-RAG-08-02",
+        "inputVariant": "additive-en",
+        "locale": "en",
+        "actualHttpModelVerdict": "PASS",
+        "generationIds": [
+          "daf738ce-d719-4b88-afc7-70c5a880731f",
+          "e5990d90-2dbb-4f78-93bd-564c0742b3d6"
+        ],
+        "runIds": [
+          "4e1092b1-fcf5-46c7-b20b-77235d6cc444",
+          "1f09291f-7624-4204-b1fe-723b3166b9d3"
+        ],
+        "originalNormalResults": "PRESERVED",
+        "publicationSemanticReview": "PENDING",
+        "visualAndAudioVerdict": "NOT_RUN"
+      }
+    ],
+    "canary": [
+      {
+        "mode": "equipment",
+        "runId": "ee347810-de0d-47ef-a832-f0b9a43f354c",
+        "targetGenerationIds": [
+          "30e90537-994f-487c-aeee-cda03e9e643f"
+        ],
+        "generationCaptureVerdict": "PASS",
+        "profileBoundaryVerdict": "PASS",
+        "fullCaseVerdict": "NOT_RUN"
+      },
+      {
+        "mode": "fire-gas",
+        "runId": "2f426f89-1426-4296-854d-5e973bf3d9c2",
+        "targetGenerationIds": [
+          "4eeb1506-5d4f-461f-9675-d60077f29f38"
+        ],
+        "generationCaptureVerdict": "PASS",
+        "profileBoundaryVerdict": "PASS",
+        "fullCaseVerdict": "NOT_RUN"
+      }
+    ],
+    "overallVerdict": "NOT_ISSUED"
+  },
+  "productionE5Privacy": {
+    "status": "ADDITIVE_OBSERVATIONS_COMPLETE_NO_FROZEN_CANARY_MATCH",
+    "checks": {
+      "exactOneApplicationObserver": true,
+      "observerComplete": true,
+      "bothFrozenModeTargets": true,
+      "allTargetJoinsUniqueAndExact": true,
+      "zeroFrozenCanariesInE5AndJoinCapture": true,
+      "zeroFrozenCanariesInActualModelLogsAndClientCapture": true,
+      "ownedResourcesClosed": true
+    },
+    "targets": [
+      {
+        "mode": "equipment",
+        "ragRunId": "30e90537-994f-487c-aeee-cda03e9e643f",
+        "signalId": "signal-10",
+        "checks": {
+          "uniqueGenerationObservation": true,
+          "uniqueInputOutputRetrieval": true,
+          "exactGuidanceIdentity": true,
+          "exactRetrievalTrace": true,
+          "exactStoredRetrievalRow": true,
+          "inputOutputSameTexts": true,
+          "actualPrefixedQueryInput": true,
+          "exactActualVector": true,
+          "actual384DimensionIdentity": true,
+          "orderedWithinGeneration": true,
+          "exactActualModelAndPublication": true
+        }
+      },
+      {
+        "mode": "fire-gas",
+        "ragRunId": "4eeb1506-5d4f-461f-9675-d60077f29f38",
+        "signalId": "signal-11",
+        "checks": {
+          "uniqueGenerationObservation": true,
+          "uniqueInputOutputRetrieval": true,
+          "exactGuidanceIdentity": true,
+          "exactRetrievalTrace": true,
+          "exactStoredRetrievalRow": true,
+          "inputOutputSameTexts": true,
+          "actualPrefixedQueryInput": true,
+          "exactActualVector": true,
+          "actual384DimensionIdentity": true,
+          "orderedWithinGeneration": true,
+          "exactActualModelAndPublication": true
+        }
+      }
+    ]
+  },
+  "rawCaptureJoins": {
+    "counts": {
+      "PASS": 16,
+      "FAIL": 4,
+      "NOT_RUN": 1
+    },
+    "failures": [
+      {
+        "ragRunId": "e2272b94-d7cb-4617-905b-f4b06203a83f",
+        "runId": "3412aeb8-e85c-4293-9770-703b2a709ef6",
+        "lineage": [
+          {
+            "runId": "3412aeb8-e85c-4293-9770-703b2a709ef6",
+            "guidanceId": "GUIDANCE:3412aeb8-e85c-4293-9770-703b2a709ef6:12556fae-b8ce-4b77-9059-e2480e55bf46:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:37.568Z",
+            "locale": "ko"
+          },
+          {
+            "runId": "3412aeb8-e85c-4293-9770-703b2a709ef6",
+            "guidanceId": "GUIDANCE:3412aeb8-e85c-4293-9770-703b2a709ef6:12556fae-b8ce-4b77-9059-e2480e55bf46:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:37.568Z",
+            "locale": "ko"
+          },
+          {
+            "runId": "3412aeb8-e85c-4293-9770-703b2a709ef6",
+            "guidanceId": "GUIDANCE:3412aeb8-e85c-4293-9770-703b2a709ef6:12556fae-b8ce-4b77-9059-e2480e55bf46:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:38.067Z",
+            "locale": "ko"
+          },
+          {
+            "runId": "3412aeb8-e85c-4293-9770-703b2a709ef6",
+            "guidanceId": "GUIDANCE:3412aeb8-e85c-4293-9770-703b2a709ef6:12556fae-b8ce-4b77-9059-e2480e55bf46:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:38.067Z",
+            "locale": "ko"
+          }
+        ],
+        "checks": [
+          {
+            "name": "recorded generation joins one persisted run/guidance/worker/profile lineage",
+            "passed": false
+          },
+          {
+            "name": "one exact call-ID and provider-message-hash capture",
+            "passed": true
+          },
+          {
+            "name": "actual forwarded complete response and model identity",
+            "passed": true
+          },
+          {
+            "name": "proxy request and response fall within recorded generation call",
+            "passed": true
+          },
+          {
+            "name": "outgoing generation envelope has reviewed options and no private-data findings",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "ragRunId": "a18b6b73-38d5-44d8-bebb-7d714da0e7a9",
+        "runId": "f4a5028f-77e4-48b5-93fe-0f91ed162599",
+        "lineage": [
+          {
+            "runId": "f4a5028f-77e4-48b5-93fe-0f91ed162599",
+            "guidanceId": "GUIDANCE:f4a5028f-77e4-48b5-93fe-0f91ed162599:ef44dce8-a51b-476c-aadb-50ed84d9744e:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:38.804Z",
+            "locale": "ko"
+          },
+          {
+            "runId": "f4a5028f-77e4-48b5-93fe-0f91ed162599",
+            "guidanceId": "GUIDANCE:f4a5028f-77e4-48b5-93fe-0f91ed162599:ef44dce8-a51b-476c-aadb-50ed84d9744e:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:38.804Z",
+            "locale": "ko"
+          },
+          {
+            "runId": "f4a5028f-77e4-48b5-93fe-0f91ed162599",
+            "guidanceId": "GUIDANCE:f4a5028f-77e4-48b5-93fe-0f91ed162599:ef44dce8-a51b-476c-aadb-50ed84d9744e:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:39.334Z",
+            "locale": "ko"
+          },
+          {
+            "runId": "f4a5028f-77e4-48b5-93fe-0f91ed162599",
+            "guidanceId": "GUIDANCE:f4a5028f-77e4-48b5-93fe-0f91ed162599:ef44dce8-a51b-476c-aadb-50ed84d9744e:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:39.334Z",
+            "locale": "ko"
+          }
+        ],
+        "checks": [
+          {
+            "name": "recorded generation joins one persisted run/guidance/worker/profile lineage",
+            "passed": false
+          },
+          {
+            "name": "one exact call-ID and provider-message-hash capture",
+            "passed": true
+          },
+          {
+            "name": "actual forwarded complete response and model identity",
+            "passed": true
+          },
+          {
+            "name": "proxy request and response fall within recorded generation call",
+            "passed": true
+          },
+          {
+            "name": "outgoing generation envelope has reviewed options and no private-data findings",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "ragRunId": "5acc6def-55ec-4c32-a4b8-1bf1917124bf",
+        "runId": "35c4f2a4-8f2d-4f16-914e-e236a6e0c1a4",
+        "lineage": [
+          {
+            "runId": "35c4f2a4-8f2d-4f16-914e-e236a6e0c1a4",
+            "guidanceId": "GUIDANCE:35c4f2a4-8f2d-4f16-914e-e236a6e0c1a4:3131f970-269b-47c1-9e43-f89fa3aa2a46:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:40.235Z",
+            "locale": "en"
+          },
+          {
+            "runId": "35c4f2a4-8f2d-4f16-914e-e236a6e0c1a4",
+            "guidanceId": "GUIDANCE:35c4f2a4-8f2d-4f16-914e-e236a6e0c1a4:3131f970-269b-47c1-9e43-f89fa3aa2a46:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:40.235Z",
+            "locale": "en"
+          },
+          {
+            "runId": "35c4f2a4-8f2d-4f16-914e-e236a6e0c1a4",
+            "guidanceId": "GUIDANCE:35c4f2a4-8f2d-4f16-914e-e236a6e0c1a4:3131f970-269b-47c1-9e43-f89fa3aa2a46:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:40.780Z",
+            "locale": "en"
+          },
+          {
+            "runId": "35c4f2a4-8f2d-4f16-914e-e236a6e0c1a4",
+            "guidanceId": "GUIDANCE:35c4f2a4-8f2d-4f16-914e-e236a6e0c1a4:3131f970-269b-47c1-9e43-f89fa3aa2a46:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:40.780Z",
+            "locale": "en"
+          }
+        ],
+        "checks": [
+          {
+            "name": "recorded generation joins one persisted run/guidance/worker/profile lineage",
+            "passed": false
+          },
+          {
+            "name": "one exact call-ID and provider-message-hash capture",
+            "passed": true
+          },
+          {
+            "name": "actual forwarded complete response and model identity",
+            "passed": true
+          },
+          {
+            "name": "proxy request and response fall within recorded generation call",
+            "passed": true
+          },
+          {
+            "name": "outgoing generation envelope has reviewed options and no private-data findings",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "ragRunId": "c09eef8c-b997-4bf0-b3bd-feff285c85ab",
+        "runId": "2f868bde-08f6-47cd-9ad3-ada61f2b8a1b",
+        "lineage": [
+          {
+            "runId": "2f868bde-08f6-47cd-9ad3-ada61f2b8a1b",
+            "guidanceId": "GUIDANCE:2f868bde-08f6-47cd-9ad3-ada61f2b8a1b:d137201b-d857-4c67-ba39-4e0e5cf40bec:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 1,
+            "generatedAt": "2026-09-22T00:15:41.602Z",
+            "locale": "ko"
+          },
+          {
+            "runId": "2f868bde-08f6-47cd-9ad3-ada61f2b8a1b",
+            "guidanceId": "GUIDANCE:2f868bde-08f6-47cd-9ad3-ada61f2b8a1b:d137201b-d857-4c67-ba39-4e0e5cf40bec:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 1,
+            "generatedAt": "2026-09-22T00:15:41.602Z",
+            "locale": "ko"
+          },
+          {
+            "runId": "2f868bde-08f6-47cd-9ad3-ada61f2b8a1b",
+            "guidanceId": "GUIDANCE:2f868bde-08f6-47cd-9ad3-ada61f2b8a1b:d137201b-d857-4c67-ba39-4e0e5cf40bec:WORKER-A",
+            "workerId": "WORKER-A",
+            "profileVersion": 2,
+            "generatedAt": "2026-09-22T00:15:41.953Z",
+            "locale": "ko"
+          }
+        ],
+        "checks": [
+          {
+            "name": "recorded generation joins one persisted run/guidance/worker/profile lineage",
+            "passed": false
+          },
+          {
+            "name": "one exact call-ID and provider-message-hash capture",
+            "passed": true
+          },
+          {
+            "name": "actual forwarded complete response and model identity",
+            "passed": true
+          },
+          {
+            "name": "proxy request and response fall within recorded generation call",
+            "passed": true
+          },
+          {
+            "name": "outgoing generation envelope has reviewed options and no private-data findings",
+            "passed": true
+          }
+        ]
+      }
+    ],
+    "interpretation": "Raw four failures concern multiple saved lineage entries for stable guidance IDs across phases. Their exact call/hash, actual forwarding/model, generation timing and outgoing-envelope checks pass. Global raw failures remain preserved."
+  },
+  "realDelay": {
+    "rawStatus": "OBSERVED_FAILURE",
+    "rawPassed": 7,
+    "rawTotal": 9,
+    "derivedPassed": 13,
+    "derivedTotal": 13,
+    "timing": {
+      "recordedTargetElapsedMs": 5002.041304000002,
+      "targetCompletedAt": "2026-09-22T00:15:46.964Z",
+      "upstreamCompletedAt": "2026-09-22T00:15:42.326Z",
+      "downstreamClientCompleteAt": "2026-09-22T00:15:46.964Z",
+      "configuredHoldMs": 6000,
+      "observedHoldMs": 4637.547208,
+      "exact5000msAbortClaim": false
+    },
+    "hardGaps": [
+      "Only supplied snapshots/SSE/DB projections are classified; future publication and full HTTP completion are not inferred.",
+      "Raw wire bytes, provenance file hashes and original artifact immutability are caller-owned verification; this function performs no I/O.",
+      "Recorded elapsed time does not prove cancellation at exactly 5000 ms or every application timer/listener cleanup.",
+      "Upstream completion followed by downstream abort cannot establish cancellation of active inference; 30-cycle cleanup is not demonstrated.",
+      "Rendered visibility, physical audio, duplicate publication and subsequent primary transition require separate evidence.",
+      "Target fallback has no persisted provider completion join; capture association uses one-shot ID and chronological phase evidence."
+    ]
+  },
+  "provenance": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/fresh-original85-outcomes-v1.json",
+      "bytes": 35528,
+      "sha256": "189cb71b4e845f2c0994896ce1810a8e47835caa5de5f773c9e063fd22746ec6"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/fresh-raw-dispositions-v1.json",
+      "bytes": 56332,
+      "sha256": "bfe13d1062132308b0b56fd947d2f77383c56f426288a33fe016833f74cd0fcf"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/fresh-raw-dispositions-expected-addendum-v1.json",
+      "bytes": 3285,
+      "sha256": "c2ee090cea361fd22c137614513ccfbdb4c9802d19627e0d82429dda5a4cb2dc"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/qd009-existing-context-composition-v1.json",
+      "bytes": 30258,
+      "sha256": "8c4e562427d8608e595a55f38c15ae0198a12f99727bbcb6d8cdf3e9cb56548d"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/w2-resource-release-v1.json",
+      "bytes": 1292,
+      "sha256": "3c6be2d57720600192f01f3b7f4f5c875f49d7ab5c5e82349345610c5fa479c4"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/source-freeze-after-execution-v1.json",
+      "bytes": 468,
+      "sha256": "d5be532e5a2ef119bfc4aa67c32e1401e5ac48d71d5123511c6919b453c4d411"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/qa-privacy-scan-v1.json",
+      "bytes": 33858,
+      "sha256": "ffdee302635a40004189f400d27121955535d3dc721741d9bc4d28581cc71a13"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/http-attempt-01/qa-privacy-http-scan-v1.json",
+      "bytes": 159489,
+      "sha256": "44058578082772a7e560c4e4a3a36cc37504d090908026c5eb95382def1bb2b0"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/http-attempt-01/qa-production-e5-privacy-join-v1.json",
+      "bytes": 13426,
+      "sha256": "b7bbb744af9ff694930f785566524c272c0af6aa5c36e3d05c80f2d09f9e94fa"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/attempt-start.json",
+      "bytes": 15760,
+      "sha256": "143d1d3a366cf035697eca149470b9fc5c1d0a0129c0500fd0bd2ac10ad9c773"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/attempt-end.json",
+      "bytes": 14973,
+      "sha256": "11f90c945a0a1e9ce34fd0479d1d8901bc57675997d60dd67885b7096cc2d7c6"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/http-attempt-01-launch/launch-binding.json",
+      "bytes": 18774,
+      "sha256": "494bb2630277aab1fbbc1ceb8eb1665352a088283ec94997ab62a85a750a6fdd"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/http-attempt-01/integration-end.json",
+      "bytes": 14924,
+      "sha256": "eda382269709252ebfcdf856206535fcf38dd77035f5cda8c4b5320a026614a1"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/controlled-applicability/summary.json",
+      "bytes": 3455,
+      "sha256": "9ec6ba032ec687817d72471636a8dfad96b84d502c4f79527e175c0187aa772a"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/engine-applicability/summary.json",
+      "bytes": 9000,
+      "sha256": "251459bd845a97c9d96828a2ba8c94d56f7c9eff15ccf5637da156ece6d6de56"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/module-attempt-01/stairs-extension/stairs/summary.json",
+      "bytes": 2257,
+      "sha256": "8399f6b9a53a790bd6409a7cafc6f064d499a3b34c5714c3bb6265d80e6a64f8"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/http-attempt-01/http-reroute-addendum/summary.json",
+      "bytes": 1625,
+      "sha256": "0a41cd906500a142e7cef2dd28c7e6fc3176174037a2314ea3295504d0570339"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/http-attempt-01/integration-capture-joins.json",
+      "bytes": 54181,
+      "sha256": "2faceb3d1bf1f47e9d07526afbcabae056c6929d616929e263a45f2bb36f8a84"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/http-attempt-01/real-delay-result.json",
+      "bytes": 287330,
+      "sha256": "6127492cdd6717ceb55cd1c76320952c54d23d85bfb96536df26d6fae7f44b3c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/http-attempt-01/real-delay-phase-derived.json",
+      "bytes": 6577,
+      "sha256": "531f24951400cbe140677d188fbf1be63e72bde335f22ca52e2e51a35379e706"
+    }
+  ],
+  "limitations": [
+    "Original85 verdicts and original normal English failure remain preserved; additive results are scoped independently.",
+    "No C5 behavior or PASS transferred into C6.",
+    "Inspector overhead excludes this run from G0 performance acceptance.",
+    "Physical display, speech, beep, vibration and device behavior are not established by W2 software observations.",
+    "No overall/AC acceptance verdict is issued by this executor."
+  ],
+  "overallVerdict": "NOT_ISSUED"
+}

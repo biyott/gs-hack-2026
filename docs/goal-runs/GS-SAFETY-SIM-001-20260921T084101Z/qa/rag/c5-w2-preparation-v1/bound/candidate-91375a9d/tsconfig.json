@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2023", "module": "ESNext", "moduleResolution": "Bundler", "noEmit": true,
+    "strict": true, "noUncheckedIndexedAccess": true, "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true, "noPropertyAccessFromIndexSignature": true,
+    "verbatimModuleSyntax": true, "skipLibCheck": true, "esModuleInterop": true,
+    "types": ["node"],
+    "typeRoots": ["/home/b/.cache/gs-safety-c5.H4mElI/node_modules/@types"],
+    "paths": {
+      "@/contracts": ["/home/b/.cache/gs-safety-c5.H4mElI/packages/contracts/src/index.ts"],
+      "@gs-safety/contracts": ["/home/b/.cache/gs-safety-c5.H4mElI/packages/contracts/src/index.ts"]
+    }
+  },
+  "include": ["./*.ts", "/home/b/.cache/gs-safety-c5.H4mElI/src/server/tracking/js-aruco2.d.ts"]
+}

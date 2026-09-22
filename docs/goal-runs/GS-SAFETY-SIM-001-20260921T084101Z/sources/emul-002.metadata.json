@@ -1,0 +1,27 @@
+{
+  "id": "002",
+  "title": "002-두개의 시뮬레이션",
+  "url": "https://emul.site/share/hcloklbd3x/p/002-zk7TdpcVV3",
+  "apiUrl": "https://emul.site/api/shares/page-info",
+  "request": {
+    "method": "POST",
+    "body": {
+      "pageId": "zk7TdpcVV3"
+    }
+  },
+  "fetchedAt": "2026-09-21T08:46:35.340Z",
+  "sourceCreatedAt": "2026-09-21T05:31:40.247Z",
+  "sourceUpdatedAt": "2026-09-21T08:21:16.941Z",
+  "sourcePageId": "01a0c272-d358-7150-b868-c15cd0411646",
+  "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-002.original.json",
+  "rawJsonSha256": "f7d51f2f0513848b00c7b9871e17cb0959236b08ff2b25504881bd9a35761152",
+  "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-002.original.html",
+  "rawHtmlSha256": "cfa6a10c2ffd5e8ef33a477234eda9c3188427624ab56971cc2524072dc1a803",
+  "contentSha256": "c31258d3dcec40b85e995175a904d3aa7f23bb57aa153d5bbf701059c2385f73",
+  "httpStatus": 200,
+  "publicAccess": true,
+  "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-002.body.md",
+  "bodySha256": "730160c78f632b45502936c3fe9c252e57b908cb9c7a45baeb0eb57305e7c569",
+  "textNodeCount": 244,
+  "bodyMissingOriginalTextNodes": 0
+}

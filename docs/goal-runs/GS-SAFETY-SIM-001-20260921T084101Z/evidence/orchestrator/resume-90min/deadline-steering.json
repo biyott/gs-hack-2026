@@ -1,0 +1,12 @@
+{
+  "recordedAt": "2026-09-21T23:10:19.542Z",
+  "inputPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/goal.steering.deadline-20260921T230549.input.txt",
+  "sha256": "b1e7aca814cfb89e76ee99ee1fd22878f8e48daa5d4f1568a66a94f238182c1b",
+  "firstToolObservedAt": "2026-09-21T23:05:49Z",
+  "exactInputArrivalTimestamp": null,
+  "operatingDeadline": "2026-09-22T00:35:49Z",
+  "scopeOrAcceptanceChanged": false,
+  "interpretation": "Resume authorized work and prioritize completion within90min; no permission to waive required AC, physical proof or independent QA",
+  "nativeGoalStatusAtObservation": "blocked; tool cannot resume it; work resumes under explicit user instruction",
+  "recovery": "Fresh bounded agent contexts, preserved failed build, one environment retry02 succeeded; no broad WSL/system configuration mutation by Root"
+}

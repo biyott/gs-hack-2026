@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "synthetic": true,
+  "positionStaleAfterMs": 5000,
+  "sensorStaleAfterMs": 5000,
+  "equipmentPredictionSeconds": 5,
+  "arrivalToleranceM": 2,
+  "gasAlarm": {
+    "materialId": "DEMO-GAS-X",
+    "minimumValue": 1,
+    "unit": "demo-index"
+  },
+  "requireExplicitReopen": true,
+  "id": "POLICY-EQUIPMENT",
+  "mode": "equipment",
+  "responses": [
+    {
+      "hazardType": "equipment",
+      "priority": 70,
+      "strategy": "evacuate",
+      "destinationIds": ["REFUGE-01", "REFUGE-02"]
+    }
+  ]
+}

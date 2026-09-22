@@ -1,0 +1,112 @@
+{
+  "kind": "c6-android-bounded-fault-proxy-source-freeze-v1",
+  "preparedAt": "2026-09-22T00:07:20.624Z",
+  "status": "SOURCE_FROZEN_PENDING_INDEPENDENT_REVIEW_NO_EXECUTION",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "caseIds": [
+    "DUPLICATE",
+    "REVERSE",
+    "FOREIGN-WORKER",
+    "MAP-MISMATCH",
+    "EXPIRED",
+    "VOICE-REQUEST-DELAY",
+    "VOICE-RESPONSE-DELAY"
+  ],
+  "files": [
+    {
+      "path": "c6-android-fault-proxy-v1.mjs",
+      "sha256": "dce51f461c8ea91ed8c4a2a65f709388a462e93e7aaa1c680e5941243542238c",
+      "bytes": 12169
+    },
+    {
+      "path": "c6-android-fault-proxy-guard-v1.mjs",
+      "sha256": "92e309abcb82c1804dae7f5d5bf9e60e0dd08afe87b61d31fcd39e67826916dd",
+      "bytes": 12237
+    },
+    {
+      "path": "c6-android-fault-proxy-cases-v1.mjs",
+      "sha256": "b291a62a2e26af078a6a2a959b2f87d385ac9f41523c09576a20974437a5e122",
+      "bytes": 9045
+    },
+    {
+      "path": "c6-android-fault-proxy-voice-v1.mjs",
+      "sha256": "85918cac5540cade81e929a1e5e9fba75f449a43a60842b0aa02a331779b2a7a",
+      "bytes": 4646
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "bytes": 3701
+    },
+    {
+      "path": "app/api/workers/[id]/response/route.ts",
+      "sha256": "6665773fb6112b8685c79d180dcd2d0f4e78e7c3045bbc1dfacf98b2c095cb0c",
+      "bytes": 1001
+    },
+    {
+      "path": "packages/contracts/src/core.ts",
+      "sha256": "3501d37d98f3f0c13f898122a715e999a24da7ead10f3810b973db9b88d7e87a",
+      "bytes": 2525
+    },
+    {
+      "path": "packages/contracts/src/commands.ts",
+      "sha256": "df75873b40f68ff0090a3ecfbbb6870f1c835a06aea7053079d3ac6396904482",
+      "bytes": 3801
+    },
+    {
+      "path": "packages/contracts/src/state.ts",
+      "sha256": "ccf642d8593198b8835d6b65ef865a49baa42aa659aefb75a86ca13591acba54",
+      "bytes": 5476
+    },
+    {
+      "path": "packages/contracts/src/guidance.ts",
+      "sha256": "27b31acdacfb78ec34af3083cd23ef6b911d3f67f8513d4dd56ad6ce77528aa2",
+      "bytes": 4752
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/application/guidance_guard.dart",
+      "sha256": "055c70b683512596aecb65f4f49375abd41ba3ca23dbacc3daf7c9930149bdd4",
+      "bytes": 2513
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/application/guidance_acknowledgements.dart",
+      "sha256": "a1a76272b229d5793c7376272e7de357aa2aee8f3ba47a528150b80728b33e04",
+      "bytes": 2109
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/data/guidance_api_service.dart",
+      "sha256": "89a9e8df2fd1e3895043c5c9f4afede85442bdd90434d575ca614b838ebae545",
+      "bytes": 5203
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/data/guidance_repository.dart",
+      "sha256": "0252e166315270ae52dbd0cbf4a081c304d27795d84fdc84eb4d3c9243f6ffe0",
+      "bytes": 5024
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/data/guidance_sse_service.dart",
+      "sha256": "e0a17234a681a60c6d9d1ca41a121e80de7fd1aefaa9d5954d200ccfd25448df",
+      "bytes": 1716
+    },
+    {
+      "path": "apps/mobile/lib/session/session_guidance_binding.dart",
+      "sha256": "7cf8f103e3693d1829213f91ca0119f34a27ef709f779e8520e795dc11858e4c",
+      "bytes": 3728
+    },
+    {
+      "path": "apps/mobile/lib/session/session_snapshot.dart",
+      "sha256": "42d14e1dfa630aaeefd84c3da59954944a49f127d509b2b72145e9b61c0872cd",
+      "bytes": 3941
+    }
+  ],
+  "inheritedC5Freeze": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-android-fault-proxy-v1.freeze.json",
+    "sha256": "b31525c3261c25e522545e1e872eec451ee65acfef6e5ac867d5eb3df55d3f81"
+  },
+  "adaptation": "Identity labels only; wire/action oracles unchanged",
+  "runtimeExecutions": 0
+}

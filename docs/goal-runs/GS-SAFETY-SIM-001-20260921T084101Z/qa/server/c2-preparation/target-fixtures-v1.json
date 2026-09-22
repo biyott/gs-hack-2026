@@ -1,0 +1,47 @@
+{
+  "goalRun": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "author": "/root/qa_lead/qa_server",
+  "status": "PREPARATION_ONLY_NOT_RUN",
+  "preparedAt": "2026-09-21T13:58:30Z",
+  "candidateId": null,
+  "basis": ["QD003-D1", "QD003-D2", "original S20 latest REFUGE-02 destination"],
+  "publicContractChange": false,
+  "originalC1InputsChanged": false,
+  "clock": {
+    "scenarioEpoch": "2026-09-21T09:00:00Z",
+    "seed": 20260921,
+    "realProcessChecks": "Actual UTC recorded when execution is granted"
+  },
+  "targetBinding": {
+    "mapId": "SITE-CONSTRUCTION-01",
+    "mapVersion": "1.0.0",
+    "workerId": "WORKER-A",
+    "firstDestination": { "x": 125, "y": 8, "floorId": "GROUND", "nodeId": "REFUGE-01" },
+    "latestDestination": { "x": 125, "y": 42, "floorId": "GROUND", "nodeId": "REFUGE-02" },
+    "arrivalPosition": { "x": 125, "y": 42 },
+    "departurePosition": { "x": 125, "y": 8 },
+    "separationM": 34
+  },
+  "departureCurrentProjections": ["worker.currentGuidance", "incident.currentGuidance for the same worker", "current response projection and its guidance identity"],
+  "departureExpected": "No current projection presents stale CONFIRM_ARRIVAL; any explicitly valid non-arrival result is allowed. Immutable first/history and genuine explicit response facts remain preserved.",
+  "privateTargetCases": [
+    { "id": "full", "input": { "x": 125, "y": 42, "floorId": "GROUND", "nodeId": "REFUGE-02" }, "expected": { "x": 125, "y": 42, "floorId": "GROUND", "nodeId": "REFUGE-02" } },
+    { "id": "floor-only", "input": { "x": 125, "y": 42, "floorId": "GROUND" }, "expected": { "x": 125, "y": 42, "floorId": "GROUND" } },
+    { "id": "node-only", "input": { "x": 125, "y": 42, "nodeId": "REFUGE-02" }, "expected": { "x": 125, "y": 42, "nodeId": "REFUGE-02" } },
+    { "id": "legacy-xy", "input": { "x": 125, "y": 42 }, "expected": { "x": 125, "y": 42 } },
+    { "id": "legacy-null", "input": null, "expected": null },
+    { "id": "known-plus-unknown", "input": { "x": 125, "y": 42, "floorId": "GROUND", "nodeId": "REFUGE-02", "qaUnrecognizedField": "not-part-of-private-contract" }, "expectedParsedAndReserialized": { "x": 125, "y": 42, "floorId": "GROUND", "nodeId": "REFUGE-02" }, "rewriteOldRawDatabaseRequired": false }
+  ],
+  "rejectedPrivateShapes": [
+    { "id": "numeric-floor", "input": { "x": 125, "y": 42, "floorId": 7 } },
+    { "id": "numeric-node", "input": { "x": 125, "y": 42, "nodeId": 7 } }
+  ],
+  "oracleRules": [
+    "Expected targets are authored independently; do not derive them by parsing actual product output.",
+    "Compare raw SQL payload, live target, reserialized target and winning committed checkpoint separately.",
+    "Do not replace latest target with immutable first-guidance target.",
+    "Do not treat private arrivalIntents.target metadata as declared by D2.",
+    "Preserve original first marker, guidance history, receipts and genuine audit facts.",
+    "Failed CAS cannot publish an uncommitted marker or fabricated audit; actual winner remains authoritative."
+  ]
+}

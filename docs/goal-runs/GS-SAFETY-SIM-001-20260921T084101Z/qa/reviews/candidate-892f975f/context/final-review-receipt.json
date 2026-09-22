@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-09-22T00:16:37.830Z",
+  "reviewer": "/root/qa_resume/c6_review_context",
+  "verdict": "PASS",
+  "scope": "Context/provenance and selected external handoff v2 only; no AC or overall verdict",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "manifestSha256": "2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792",
+  "report": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/context/report-v2.md",
+    "sha256": "0a7bc3e4ff8538ae73eb619c61cba2f41c66f3901b0d983ba8aff5c1556b0714"
+  },
+  "evidence": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/context/external-v2-checks.json",
+    "sha256": "772907419bee50866b9c112cd278dcedc6a11cd5e1323aa6b55179375a6d487d"
+  },
+  "selectedHandoff": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index-v2.md",
+    "sha256": "1bf5ba54a0d1146030e03b398a8b7cf0a7ac505afc902b92b633f5d0543d0eb4",
+    "bytes": 11836,
+    "selfCheckMatches": true
+  },
+  "priorV1FailuresPreserved": true,
+  "blockingIssues": []
+}

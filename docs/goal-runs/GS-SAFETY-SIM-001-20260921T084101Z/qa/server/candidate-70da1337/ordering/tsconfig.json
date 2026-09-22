@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "lib": ["DOM", "ES2023"], "strict": true,
+    "noUncheckedIndexedAccess": true, "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true, "noPropertyAccessFromIndexSignature": true,
+    "module": "ESNext", "moduleResolution": "Bundler", "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true, "noEmit": true, "skipLibCheck": true,
+    "typeRoots": ["/home/b/.cache/gs-safety-ci.u7pR52/node_modules/@types"], "types": ["node"],
+    "paths": { "@/contracts": ["/home/b/.cache/gs-safety-ci.u7pR52/packages/contracts/src/index.ts"] }
+  },
+  "include": ["./*.ts"]
+}

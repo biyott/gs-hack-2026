@@ -1,0 +1,27 @@
+{
+  "id": "003",
+  "title": "003- RAG",
+  "url": "https://emul.site/share/y3nmj99ywh/p/003-rag-oBzdIK1cDi",
+  "apiUrl": "https://emul.site/api/shares/page-info",
+  "request": {
+    "method": "POST",
+    "body": {
+      "pageId": "oBzdIK1cDi"
+    }
+  },
+  "fetchedAt": "2026-09-21T08:46:35.367Z",
+  "sourceCreatedAt": "2026-09-21T06:47:30.069Z",
+  "sourceUpdatedAt": "2026-09-21T07:56:49.707Z",
+  "sourcePageId": "01a0c2b8-4017-747b-affc-35ea0c6ab53e",
+  "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-003.original.json",
+  "rawJsonSha256": "73d7a2d2ae287010f9e20e7f71f958f24aa476595461221d06123d087a45a1ca",
+  "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-003.original.html",
+  "rawHtmlSha256": "83e6d328d54a7cfd2582c49f0821ac477a982b8333bcf51ff85f272c17381d48",
+  "contentSha256": "93b6aa921a82f0946f5e1f8fcea9365f9b27f72148d9824c51db41c95116e10e",
+  "httpStatus": 200,
+  "publicAccess": true,
+  "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-003.body.md",
+  "bodySha256": "3de397aa1733fbda7d4ba4d9c510e147d6799c060e9a005d9a95132e6d16379e",
+  "textNodeCount": 176,
+  "bodyMissingOriginalTextNodes": 0
+}

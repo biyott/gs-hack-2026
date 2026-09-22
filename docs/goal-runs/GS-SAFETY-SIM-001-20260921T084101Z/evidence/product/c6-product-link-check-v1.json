@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-09-22T00:07:39.452Z",
+  "owner": "/root/handoff_resume",
+  "scope": "Product document self-check only; not behavioral QA",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "goalInputSha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796",
+  "rootReceiptSha256": "537c1411b1dc3a1328aa098a58e789361bd5e7982a23ff776f745fef13dd3f50",
+  "exactBaselineRecords": 104,
+  "uniqueRequirementIds": 104,
+  "currentVerdictsAllNull": true,
+  "currentFrozenPointers": 366,
+  "markdownLocalLinks": 149,
+  "missingLinks": [],
+  "sourceOrRunbookOrAcceptanceWrittenByThisTask": false,
+  "appModelBrowserDeviceStartedByThisTask": false,
+  "files": [
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index.md",
+      "bytes": 11282,
+      "sha256": "19d5efc006ad293b8d06aa9dcc8e45126395f0d6203acb4cbae66fa1d212085b"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-requirement-evidence-map.md",
+      "bytes": 17800,
+      "sha256": "b5dea6eb37983218edafc2ca0a70281c67c5bdcce01fa6b53d4bb560b9db9d13"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-requirement-evidence-map.json",
+      "bytes": 661561,
+      "sha256": "2a5ea741c447acb900c8e5ce03af64cf7c053a60a07f6333574fad219c02a76d"
+    }
+  ]
+}

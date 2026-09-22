@@ -1,0 +1,105 @@
+{
+  "model": "Maeda MC305C-5",
+  "specEdition": "Metric(CE), copyright 2025; no printed revision number",
+  "sourceManifestPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/source-manifest.json",
+  "scope": "CE technical data M-C1 and matching global brochure M-C2 only; not Japanese manual M-C3, MC305C-3, or MC305CB-5",
+  "purpose": "Visualization/modeling reference, not a lifting or installation authorization",
+  "transport": {
+    "state": "boom and outriggers stowed as illustrated",
+    "lengthM": 4.11,
+    "widthM": 1.28,
+    "heightM": 1.695,
+    "sourceId": "M-C1",
+    "sourcePdfPage": 1,
+    "sourcePrintedPage": null
+  },
+  "supportGeometry": {
+    "dimensionReference": "outer dimensions, not pad center spacing",
+    "longitudinalSpanOriginalLabel": "Lateral",
+    "orientationNote": "Lateral dimension runs parallel to tracks in the top view; preserve original manufacturer Front/Rear labels without inferring driving direction",
+    "positions": [
+      {"position": "MAX", "longitudinalOuterSpanM": 5.17, "frontOuterWidthM": 4.808, "rearOuterWidthM": 4.704},
+      {"position": "MID", "longitudinalOuterSpanM": 4.874, "frontOuterWidthM": 4.414, "rearOuterWidthM": 4.249},
+      {"position": "MIN", "longitudinalOuterSpanM": 4.573, "frontOuterWidthM": 4.016, "rearOuterWidthM": 3.785}
+    ],
+    "supportCenters": null,
+    "padDimensionsM": null,
+    "sourceId": "M-C1",
+    "sourcePdfPage": 1,
+    "sourcePrintedPage": null
+  },
+  "slewOrigin": null,
+  "tailSwingRadiusM": null,
+  "mainBoom": {
+    "type": "5-section pentagonal telescopic",
+    "minimumPhysicalLengthM": 3.695,
+    "maximumPhysicalLengthM": 12.485,
+    "capacityTableLengthHeadersM": [[3.695, 5.945], [8.145], [10.315], [12.485]],
+    "hoistAngleRangeDeg": [0, 80],
+    "slewingRangeDeg": 360,
+    "sourceId": "M-C2",
+    "sourcePdfPage": 2,
+    "sourcePrintedPage": null,
+    "note": "Physical boom length differs from the working-radius chart intercepts 3.37, 5.62, 7.82, 9.99, 12.16m"
+  },
+  "mainBoomMaximumReach": {
+    "maximumWorkingRadiusM": 12.16,
+    "ratedTotalLoadAtMaximumRadiusKg": 260,
+    "physicalBoomLengthM": 12.485,
+    "outriggers": "MAX",
+    "reevingFalls": 4,
+    "sourceId": "M-C2",
+    "sourcePdfPage": 2,
+    "sourcePrintedPage": null,
+    "note": "Not a universal hazard radius"
+  },
+  "maximumLiftingHeightAboveGround": {
+    "valueM": 12.52,
+    "configuration": "base specification, separate maximum from radius and capacity",
+    "sourceId": "M-C1",
+    "sourcePdfPage": 1,
+    "sourcePrintedPage": null
+  },
+  "optionalAttachments": [
+    {"manufacturerName": "850kg Searcher Hook", "offsetPositions": ["SH1", "SH2", "SH3"], "chartedOutriggerPosition": "MAX", "physicalLengthM": null, "offsetAnglesDeg": null, "capacityTableImported": false, "restrictionNote": "SH1 graph contains a RESTRICTED region; nominal attachment name is not an all-radius capacity", "sourceId": "M-C1", "sourcePdfPage": 3, "sourcePrintedPage": null},
+    {"manufacturerName": "1.5t Searcher Hook", "offsetPositions": ["SH1", "SH2", "SH3"], "chartedOutriggerPosition": "MAX", "physicalLengthM": null, "offsetAnglesDeg": null, "capacityTableImported": false, "restrictionNote": "SH1 graph contains a RESTRICTED region; nominal attachment name is not an all-radius capacity", "sourceId": "M-C1", "sourcePdfPage": 4, "sourcePrintedPage": null}
+  ],
+  "scopedCapacityExcerpt": {
+    "title": "Rated Total Load Chart (4falls)",
+    "modelOnTable": "MC305CWM(E)-5",
+    "physicalBoomLengthM": 12.485,
+    "outriggers": "extended to maximum",
+    "reevingFalls": 4,
+    "attachment": "standard hook, no Searcher Hook",
+    "ratedTotalLoadIncludesHookMassKg": 30,
+    "workingRadiusBasis": "actual working radius including boom deflection under load",
+    "interpolationAuthorized": false,
+    "sourceId": "M-C2",
+    "sourcePdfPage": 2,
+    "sourcePrintedPage": null,
+    "rows": [
+      {"workingRadiusM": 4.5, "radiusRelation": "or less as printed; lower reachable limit unspecified here", "ratedTotalLoadKg": 790},
+      {"workingRadiusM": 5.0, "radiusRelation": "exact table row", "ratedTotalLoadKg": 660},
+      {"workingRadiusM": 6.0, "radiusRelation": "exact table row", "ratedTotalLoadKg": 520},
+      {"workingRadiusM": 7.0, "radiusRelation": "exact table row", "ratedTotalLoadKg": 430},
+      {"workingRadiusM": 8.0, "radiusRelation": "exact table row", "ratedTotalLoadKg": 380},
+      {"workingRadiusM": 9.0, "radiusRelation": "exact table row", "ratedTotalLoadKg": 340},
+      {"workingRadiusM": 10.0, "radiusRelation": "exact table row", "ratedTotalLoadKg": 310},
+      {"workingRadiusM": 11.0, "radiusRelation": "exact table row", "ratedTotalLoadKg": 280},
+      {"workingRadiusM": 12.16, "radiusRelation": "exact table row", "ratedTotalLoadKg": 260}
+    ],
+    "exclusions": ["MID/MIN support configuration", "other boom lengths", "other reeving", "Searcher Hooks", "pick-and-carry", "unstated ground, wind or setup conditions", "net payload interpretation"]
+  },
+  "quarantinedDiscrepancy": {
+    "sourceId": "M-C3",
+    "documentNumber": "103-OM2409-00",
+    "firstEditionDate": "2024-09-30",
+    "applicableSerial": "D5002 onward",
+    "transportLengthM": 4.145,
+    "sourcePdfPage": 60,
+    "sourcePrintedPage": "3-4",
+    "sourceDrawing": "EAM38730",
+    "cause": null,
+    "resolution": "Do not overwrite CE transport length or transfer Japanese support centerline-style dimensions into CE geometry"
+  }
+}

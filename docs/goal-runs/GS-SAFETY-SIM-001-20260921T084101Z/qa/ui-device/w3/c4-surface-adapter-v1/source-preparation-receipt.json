@@ -1,0 +1,62 @@
+{
+  "kind": "c4-surface-adapter-source-preparation-receipt",
+  "recordedAt": "2026-09-21T17:49:04.966278+00:00",
+  "author": "/root/qa_lead/qa_ui_device/w3_browser_scenarios",
+  "status": "SOURCE_FROZEN_RUNTIME_NOT_EXECUTED",
+  "adapterFreeze": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/adapter.freeze.json",
+    "sha256": "e95e3d93a3d72f56b1559cb35df021fafc11e92218a8b40f3c89c5b28ff793ef"
+  },
+  "continuationFreeze": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/continuation.freeze.json",
+    "sha256": "0d8f517a50b43d07d637737a3af08a909aeb12360544d620b08a455901b0df0e"
+  },
+  "allFrozenInputsMatch": true,
+  "historicalSemanticStates": 155,
+  "historicalFocusTargets": 330,
+  "historicalScenarioUnchanged": true,
+  "originalDiagnosticAndRadiusV11Unchanged": true,
+  "syntaxChecks": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/run.mjs",
+      "command": "node --check /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/run.mjs",
+      "exitCode": 0
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/guard.mjs",
+      "command": "node --check /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/guard.mjs",
+      "exitCode": 0
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/events.mjs",
+      "command": "node --check /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/events.mjs",
+      "exitCode": 0
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/focus-evidence.mjs",
+      "command": "node --check /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/focus-evidence.mjs",
+      "exitCode": 0
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/check-focus-continuation.mjs",
+      "command": "node --check /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/check-focus-continuation.mjs",
+      "exitCode": 0
+    }
+  ],
+  "browserLaunched": false,
+  "applicationAccess": false,
+  "modelOrDeviceExecution": false,
+  "runtimeTestsExecuted": false,
+  "productAcceptance": "NOT_RUN",
+  "independentReview": "Separate frozen source review receipt pending; this author receipt is not independent approval",
+  "helperCheckEstimate": {
+    "seconds": [
+      15,
+      35
+    ],
+    "measured": false,
+    "internalCutoffSeconds": 75,
+    "externalTermSeconds": 85,
+    "externalKillDelaySeconds": 3
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "004",
+  "title": "004-RAG에 필요한 data 만들기",
+  "url": "https://emul.site/share/tp3yhmjwfb/p/004-rag-data-fxnyP9s15A",
+  "apiUrl": "https://emul.site/api/shares/page-info",
+  "request": {
+    "method": "POST",
+    "body": {
+      "pageId": "fxnyP9s15A"
+    }
+  },
+  "fetchedAt": "2026-09-21T08:46:35.368Z",
+  "sourceCreatedAt": "2026-09-21T06:53:22.526Z",
+  "sourceUpdatedAt": "2026-09-21T07:00:42.553Z",
+  "sourcePageId": "01a0c2bd-a0df-7bba-9056-811eb8edf4c3",
+  "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.original.json",
+  "rawJsonSha256": "aa170a84f5fef0a3d08a8b5b00175288810799471c73cacc957f85cda77918fb",
+  "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.original.html",
+  "rawHtmlSha256": "c00db79060be68d827ebc49b13ed83165aabccd9cf8d2500559a5ad17ce3161c",
+  "contentSha256": "49c97f623bae298a80e616f423fd35392a68ea3b756b87e76dadc36addf7d955",
+  "httpStatus": 200,
+  "publicAccess": true,
+  "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.body.md",
+  "bodySha256": "5339f3cd43df552e3bda5da24fbef2e72dc49f9cd1ea77bba401dadb6548f2db",
+  "textNodeCount": 272,
+  "bodyMissingOriginalTextNodes": 0
+}

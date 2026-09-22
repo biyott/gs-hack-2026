@@ -1,0 +1,39 @@
+{
+  "kind": "c6-accessibility-supplement-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "candidateId": null,
+  "candidateRoot": null,
+  "sourceSha256": null,
+  "buildId": null,
+  "runtime": "NOT_RUN",
+  "authorization": "NO_GRANT_CREATED",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.mjs",
+      "sha256": "7051e4d9381205ed5b348d31fda0e0ebbd8ab7c576a44801096dad92422a6e63"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.guard.mjs",
+      "sha256": "87947665b9728fa7462e32e58d1553a6d61d9887bac83e7ab9c593c248fb58a2"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.observations.mjs",
+      "sha256": "5c9951fe79486b56f14d26353a2f63a505b43e3fced277274f2665787049f51f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-accessibility-supplement-v1.1.md",
+      "sha256": "41e5ac2858aba7e65226e356b75deda8331d146bf3d75bab770b3065292c931d"
+    }
+  ],
+  "preparationAt": "2026-09-21T23:18:25.128Z",
+  "derivation": "Preserved v1; v1.1 corrects fetch Response.status property spelling and derivative filenames only.",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "preparedAt": "2026-09-22T00:07:02.330Z",
+  "derivativeLineage": {
+    "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-accessibility-supplement-v1.1.freeze.json",
+    "sha256": "70b828abbfe0a6ed2f453ec634dee3829d112c65616a7a210946149d1e22f2b5",
+    "mapPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-browser-derivatives-v1.1.json"
+  }
+}

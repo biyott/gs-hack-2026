@@ -1,0 +1,118 @@
+{
+  "kind": "c5-android-bounded-fault-proxy-source-freeze-v1",
+  "preparedAt": "2026-09-21T23:26:39.687Z",
+  "status": "SOURCE_FROZEN_PENDING_INDEPENDENT_REVIEW_NO_EXECUTION",
+  "candidateId": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+  "sourceSha256": "a9522ae4668f3909993662feb06b17ee406e35a3f4887a00a0db989aac50048a",
+  "buildId": "a0SBz4_RkrdgOI7tmlBVr",
+  "caseIds": [
+    "DUPLICATE",
+    "REVERSE",
+    "FOREIGN-WORKER",
+    "MAP-MISMATCH",
+    "EXPIRED",
+    "VOICE-REQUEST-DELAY",
+    "VOICE-RESPONSE-DELAY"
+  ],
+  "files": [
+    {
+      "path": "c5-android-fault-proxy-v1.mjs",
+      "sha256": "cce86233a43e7667f5e0cf8bdc9ab6afadc6f1d3a677754f4f954f614a799d95",
+      "bytes": 12169
+    },
+    {
+      "path": "c5-android-fault-proxy-guard-v1.mjs",
+      "sha256": "05cfc07c7f5e14dba3ecda594e732ed07d8aa132b58cc186d65c0366cf3c171e",
+      "bytes": 12237
+    },
+    {
+      "path": "c5-android-fault-proxy-cases-v1.mjs",
+      "sha256": "d0ac3f30d4019d2a12ac31774ec87356f5c98116c6c1d778e141b3b211052ac5",
+      "bytes": 9045
+    },
+    {
+      "path": "c5-android-fault-proxy-voice-v1.mjs",
+      "sha256": "edf8a57e15b5b399a0451012d0e29e6237bcb55b7010c89fa3153e5a6480ef9b",
+      "bytes": 4646
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "bytes": 3701
+    },
+    {
+      "path": "app/api/workers/[id]/response/route.ts",
+      "sha256": "6665773fb6112b8685c79d180dcd2d0f4e78e7c3045bbc1dfacf98b2c095cb0c",
+      "bytes": 1001
+    },
+    {
+      "path": "packages/contracts/src/core.ts",
+      "sha256": "3501d37d98f3f0c13f898122a715e999a24da7ead10f3810b973db9b88d7e87a",
+      "bytes": 2525
+    },
+    {
+      "path": "packages/contracts/src/commands.ts",
+      "sha256": "df75873b40f68ff0090a3ecfbbb6870f1c835a06aea7053079d3ac6396904482",
+      "bytes": 3801
+    },
+    {
+      "path": "packages/contracts/src/state.ts",
+      "sha256": "ccf642d8593198b8835d6b65ef865a49baa42aa659aefb75a86ca13591acba54",
+      "bytes": 5476
+    },
+    {
+      "path": "packages/contracts/src/guidance.ts",
+      "sha256": "27b31acdacfb78ec34af3083cd23ef6b911d3f67f8513d4dd56ad6ce77528aa2",
+      "bytes": 4752
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/application/guidance_guard.dart",
+      "sha256": "055c70b683512596aecb65f4f49375abd41ba3ca23dbacc3daf7c9930149bdd4",
+      "bytes": 2513
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/application/guidance_acknowledgements.dart",
+      "sha256": "a1a76272b229d5793c7376272e7de357aa2aee8f3ba47a528150b80728b33e04",
+      "bytes": 2109
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/data/guidance_api_service.dart",
+      "sha256": "89a9e8df2fd1e3895043c5c9f4afede85442bdd90434d575ca614b838ebae545",
+      "bytes": 5203
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/data/guidance_repository.dart",
+      "sha256": "0252e166315270ae52dbd0cbf4a081c304d27795d84fdc84eb4d3c9243f6ffe0",
+      "bytes": 5024
+    },
+    {
+      "path": "apps/mobile/lib/features/safety_guidance/data/guidance_sse_service.dart",
+      "sha256": "e0a17234a681a60c6d9d1ca41a121e80de7fd1aefaa9d5954d200ccfd25448df",
+      "bytes": 1716
+    },
+    {
+      "path": "apps/mobile/lib/session/session_guidance_binding.dart",
+      "sha256": "7cf8f103e3693d1829213f91ca0119f34a27ef709f779e8520e795dc11858e4c",
+      "bytes": 3728
+    },
+    {
+      "path": "apps/mobile/lib/session/session_snapshot.dart",
+      "sha256": "42d14e1dfa630aaeefd84c3da59954944a49f127d509b2b72145e9b61c0872cd",
+      "bytes": 3941
+    }
+  ],
+  "originalC4FreezeSha256": "e94a5ee4344964ca3778670e63b4c69d55c7ea327a78b7372c82726197290750",
+  "adaptation": {
+    "beforePath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-91375a9d/fault-proxy-source-adapter/c5-android-fault-proxy-guard-v1.before.mjs",
+    "beforeSha256": "2426165846f4e28a555750a13dee65955c7325e3f5a0e9bcf8d6e19fe5619dfb",
+    "afterSha256": "05cfc07c7f5e14dba3ecda594e732ed07d8aa132b58cc186d65c0366cf3c171e",
+    "diffPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-91375a9d/fault-proxy-source-adapter/guard-schema-adapter.diff",
+    "diffSha256": "d26609bdc1eaa0c7c9bb6e8269ba746fe504f268abdc6e777c87365a47c6366c",
+    "scope": "Root C5 mobile receipt metadata only; inherited fault mechanisms unchanged"
+  },
+  "runtimeExecutions": 0,
+  "deviceCommands": 0,
+  "networkRequests": 0
+}

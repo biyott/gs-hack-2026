@@ -1,0 +1,48 @@
+{
+  "kind": "independent-c5-accessibility-source-review",
+  "recordedBy": "/root/qa_lead/qa_ui_device/c4_accessibility_supplement",
+  "reviewer": "/root/qa_lead/qa_ui_device/c4_accessibility_supplement/accessibility_source_review",
+  "verdict": "SOURCE_ONLY_READY_WITH_BINDING_PENDING",
+  "runtime": "NOT_RUN",
+  "productAcceptance": "NOT_RUN",
+  "candidateBindingPending": true,
+  "blockers": [],
+  "syntaxChecks": [
+    { "file": "c5-accessibility-supplement-v1.mjs", "method": "node --check", "exitCode": 0 },
+    { "file": "c5-accessibility-supplement-v1.guard.mjs", "method": "node --check", "exitCode": 0 },
+    { "file": "c5-accessibility-supplement-v1.observations.mjs", "method": "node --check", "exitCode": 0 }
+  ],
+  "examined": [
+    { "file": "c5-accessibility-supplement-v1.mjs", "sha256": "7c80c7504248eddd6ca542bd7dd28b63c912e072e59bcaeb59c4fcd06998a5e1" },
+    { "file": "c5-accessibility-supplement-v1.guard.mjs", "sha256": "198bee9930329e1c27d199886b82781c4b705074dbe9e2f9bfc0b10f539a3c0a" },
+    { "file": "c5-accessibility-supplement-v1.observations.mjs", "sha256": "5c9951fe79486b56f14d26353a2f63a505b43e3fced277274f2665787049f51f" },
+    { "file": "c5-accessibility-supplement-v1.md", "sha256": "d0e3bf939ac044e51bd40cb903a86d2ad8eed5bbbe04b63deecf91d428038218" }
+  ],
+  "confirmed": [
+    "Explicit future C5 binding and main-owned grant/process/provenance required; known C4 identity/root rejected.",
+    "Only same-origin read methods and one exact normal admin-session POST per context; other mutations blocked.",
+    "Actual Tab/ShiftTab focus qualified by visible foreground and focus-visible state.",
+    "Verified pointer positions; actual hover and held mouse active state sampled separately from screenshot interpretation.",
+    "Bounded rAF cleanup and handled rejection; instantaneous computed state jump is not animation proof.",
+    "Matched requested/observed reduced motion with computed transition/animation state and qualified target-only outcomes.",
+    "Mouse release attempted before browser close on case errors, expiry, SIGTERM and SIGINT; failures stay incomplete.",
+    "Exact Korean/English delivered selectors; per-node raw text, geometry, language and provenance observations.",
+    "Original native200 detector preserved; no CSS, DPR or pinch substitution.",
+    "Optional sibling long-ID seed receipt consumption only; actual flat session POST and filtered authenticated GET plus header observation.",
+    "Separate fresh seed timing is bounded by hash-bound successful closed receipt; process remains bound to its new runtime grant."
+  ],
+  "unknowns": [
+    "Actual C5 candidate identity, canonical root, manifest/source/build and parent-approved binding.",
+    "Compatibility of selectors and flat session API with the supplied next candidate.",
+    "Fresh process/private session/provenance and an explicit serial browser subgrant.",
+    "Actual executed long-ID seed receipt, if optional long-ID login is requested.",
+    "Whether headless native browser zoom is observable; unsupported results remain unresolved.",
+    "Whether paused fixtures contain every Korean/English/original/current target.",
+    "Independent PNG compositing, CJK, focus/hover/press/clipping visual review remains future work."
+  ],
+  "nonClaims": [
+    "No app/browser/HTTP/device/helper execution during preparation or review.",
+    "No physical paint, complete accessibility, assistive technology or whole-candidate PASS.",
+    "No account seeding, support assignment/history mutation, or C4 evidence transfer."
+  ]
+}

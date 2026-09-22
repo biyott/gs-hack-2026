@@ -1,0 +1,53 @@
+{
+  "recordedAt": "2026-09-21T23:51:52.720Z",
+  "owner": "/root/handoff_resume",
+  "delegatedBy": "/root",
+  "status": "PREPARED_AWAITING_ROOT_C6_G3",
+  "goalId": "GS-SAFETY-SIM-001",
+  "goalVersion": "1.0",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "goalChanges": "목표 변경 없음",
+  "authorization": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c6-conformance-correction-01.json",
+    "sha256": "39bf35f1468ca46d70f598669a4b6c8df93ea26b6faf02f67444ceb234f2d3f3"
+  },
+  "frozenBaseline": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/requirements/inventory.v1.0.json",
+    "sha256": "32a422c8202d756c26030e5a54206b2f7f974e15ed5ded41ea772dc667ca4d5f",
+    "exactRecordCount": 104,
+    "goalInputSha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796"
+  },
+  "preservedPreviousMap": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c5-requirement-evidence-map.json",
+    "sha256": "cae740aa8bcac940f1abdb00e31634f2242727aa665945641460dff930afa7e2",
+    "meaning": "C5 historical mapping; no behavioral PASS transfers to C6"
+  },
+  "inputsRequiredBeforeGeneration": [
+    "Root-issued actual g3-freeze-c6.json and its observed SHA256",
+    "Exact C6 manifest/root/sourceSha256/BUILD_ID and packaged launch receipt",
+    "Current implementation r5 binding and confirmed QD011/QD012 source targets",
+    "Current C6 QA receipt/ledger paths or explicitly pending paths; no invented results"
+  ],
+  "outputPaths": [
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index.md",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-requirement-evidence-map.json",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-requirement-evidence-map.md",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-product-link-check-v1.json"
+  ],
+  "steps": [
+    "Read actual G3, manifest, packaged launch and r5; derive identity from these files, never from assumed C5 replacements.",
+    "Preserve baselineRecord, originalText, ID, goalLine, mandatory and acceptanceIds exactly for all104 records.",
+    "Rebind inherited implementation pointers to actual C6 manifest; include r5/QD011/QD012 source pointers. File linkage remains distinct from execution evidence.",
+    "Write concise Korean handoff with C6-authoritative launch, selected APK/DB/model/assets/18knowledge, resource boundary and current QA pointers. C5/C4 wording retained only as historical lineage.",
+    "Attach current C6 QA evidence pointers as pending/null per requirement; shared QA files require matching internal candidate ID and timestamp.",
+    "Self-check exact104 records, unique IDs, manifest membership, existing links, G3/goal SHA; report file hashes to Root and QA."
+  ],
+  "checks": [
+    "No source/runbook/AC/app/model/browser/device mutation or process launch.",
+    "No goal/design/AC changes. QD011 frozen44px controls/annotation hitboxes/range and QD012 full wrapping selected scenario label only.",
+    "Two online devices and camera authorization remain observations/boundaries; four-phone acceptance requirement is unchanged.",
+    "No prior C5 PASS imported, and no product/QA acceptance issued by this task."
+  ],
+  "deadlineUtc": "2026-09-22T00:35:49Z",
+  "targetFileWorkAfterIdentitySeconds": 180
+}

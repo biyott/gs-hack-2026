@@ -1,0 +1,420 @@
+{
+  "startedAt": "2026-09-22T00:41:37.809Z",
+  "executor": "/root",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "baseUrl": "http://127.0.0.1:3000",
+  "scope": "Final user-demo functionality self-check; independent QA verdict not replaced",
+  "checks": [
+    {
+      "at": "2026-09-22T00:41:37.809Z",
+      "name": "server survived launcher exit",
+      "passed": true,
+      "detail": {
+        "pid": 120281
+      }
+    },
+    {
+      "at": "2026-09-22T00:41:37.825Z",
+      "name": "anonymous session rejected",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "at": "2026-09-22T00:41:39.197Z",
+      "name": "real browser login and console",
+      "passed": true,
+      "detail": {
+        "browser": "153.0.8010.12"
+      }
+    },
+    {
+      "at": "2026-09-22T00:41:39.444Z",
+      "name": "equipment select",
+      "passed": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "at": "2026-09-22T00:42:05.707Z",
+      "name": "equipment completed automatically with incident and guidance",
+      "passed": true,
+      "detail": {
+        "status": "completed",
+        "maxIncidents": 1,
+        "maxGuidance": 1
+      }
+    },
+    {
+      "at": "2026-09-22T00:42:05.730Z",
+      "name": "equipment reset",
+      "passed": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "at": "2026-09-22T00:42:05.862Z",
+      "name": "fire-gas select",
+      "passed": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "at": "2026-09-22T00:42:29.168Z",
+      "name": "fire-gas completed automatically with incident and guidance",
+      "passed": true,
+      "detail": {
+        "status": "completed",
+        "maxIncidents": 1,
+        "maxGuidance": 1
+      }
+    },
+    {
+      "at": "2026-09-22T00:42:29.185Z",
+      "name": "fire-gas reset",
+      "passed": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "at": "2026-09-22T00:42:29.196Z",
+      "name": "no browser page errors",
+      "passed": true,
+      "detail": {
+        "count": 0
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode": "equipment",
+      "scenario": "EQ-APPROACH",
+      "runId": "3f8771fb-6b2d-45ff-b344-bd7077819669",
+      "observedWallMs": 25463,
+      "finalStatus": "completed",
+      "maxIncidents": 1,
+      "maxGuidance": 1,
+      "samples": [
+        {
+          "at": "2026-09-22T00:41:44.734Z",
+          "status": "running",
+          "virtualTimeMs": 0,
+          "sequence": 2,
+          "incidents": 0,
+          "guidance": 0
+        },
+        {
+          "at": "2026-09-22T00:41:45.755Z",
+          "status": "running",
+          "virtualTimeMs": 1000.7751749999588,
+          "sequence": 13,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:49.579Z",
+          "status": "running",
+          "virtualTimeMs": 4840.662440999993,
+          "sequence": 52,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:50.586Z",
+          "status": "running",
+          "virtualTimeMs": 5842.429719999956,
+          "sequence": 64,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:51.593Z",
+          "status": "running",
+          "virtualTimeMs": 6844.415355999954,
+          "sequence": 74,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:52.599Z",
+          "status": "running",
+          "virtualTimeMs": 7846.141431999975,
+          "sequence": 84,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:53.608Z",
+          "status": "running",
+          "virtualTimeMs": 8849.769755999965,
+          "sequence": 94,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:54.618Z",
+          "status": "running",
+          "virtualTimeMs": 9852.626675000007,
+          "sequence": 104,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:55.625Z",
+          "status": "running",
+          "virtualTimeMs": 10860.093710999994,
+          "sequence": 116,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:56.637Z",
+          "status": "running",
+          "virtualTimeMs": 11866.836300999974,
+          "sequence": 126,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:57.644Z",
+          "status": "running",
+          "virtualTimeMs": 12871.508468999993,
+          "sequence": 136,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:58.650Z",
+          "status": "running",
+          "virtualTimeMs": 13874.486526999972,
+          "sequence": 146,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:41:59.658Z",
+          "status": "running",
+          "virtualTimeMs": 14876.434502999997,
+          "sequence": 156,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:00.666Z",
+          "status": "running",
+          "virtualTimeMs": 15878.689992,
+          "sequence": 167,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:01.673Z",
+          "status": "running",
+          "virtualTimeMs": 16883.058300999983,
+          "sequence": 177,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:02.681Z",
+          "status": "running",
+          "virtualTimeMs": 17885.999131999968,
+          "sequence": 187,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:03.692Z",
+          "status": "running",
+          "virtualTimeMs": 18887.190722999978,
+          "sequence": 197,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:04.699Z",
+          "status": "running",
+          "virtualTimeMs": 19987.987948999973,
+          "sequence": 208,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:05.707Z",
+          "status": "completed",
+          "virtualTimeMs": 20000,
+          "sequence": 209,
+          "incidents": 1,
+          "guidance": 1
+        }
+      ]
+    },
+    {
+      "mode": "fire-gas",
+      "scenario": "FG-FIRE",
+      "runId": "5527f14f-07f5-4263-b647-d019a3626f7c",
+      "observedWallMs": 20015,
+      "finalStatus": "completed",
+      "maxIncidents": 1,
+      "maxGuidance": 1,
+      "samples": [
+        {
+          "at": "2026-09-22T00:42:09.163Z",
+          "status": "running",
+          "virtualTimeMs": 600.347395000048,
+          "sequence": 8,
+          "incidents": 0,
+          "guidance": 0
+        },
+        {
+          "at": "2026-09-22T00:42:10.169Z",
+          "status": "running",
+          "virtualTimeMs": 1603.6009940000367,
+          "sequence": 20,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:14.052Z",
+          "status": "running",
+          "virtualTimeMs": 5511.476779000019,
+          "sequence": 60,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:15.061Z",
+          "status": "running",
+          "virtualTimeMs": 6513.905462000053,
+          "sequence": 70,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:16.068Z",
+          "status": "running",
+          "virtualTimeMs": 7517.084704000037,
+          "sequence": 80,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:17.076Z",
+          "status": "running",
+          "virtualTimeMs": 8518.587043000036,
+          "sequence": 91,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:18.084Z",
+          "status": "running",
+          "virtualTimeMs": 9521.577011000016,
+          "sequence": 101,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:19.091Z",
+          "status": "running",
+          "virtualTimeMs": 10522.604478000023,
+          "sequence": 111,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:20.102Z",
+          "status": "running",
+          "virtualTimeMs": 11525.896331000025,
+          "sequence": 121,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:21.108Z",
+          "status": "running",
+          "virtualTimeMs": 12526.454935000045,
+          "sequence": 132,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:22.115Z",
+          "status": "running",
+          "virtualTimeMs": 13531.543721000024,
+          "sequence": 142,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:23.121Z",
+          "status": "running",
+          "virtualTimeMs": 14533.326421000005,
+          "sequence": 152,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:24.128Z",
+          "status": "running",
+          "virtualTimeMs": 15538.76516400004,
+          "sequence": 162,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:25.134Z",
+          "status": "running",
+          "virtualTimeMs": 16540.560020000034,
+          "sequence": 173,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:26.141Z",
+          "status": "running",
+          "virtualTimeMs": 17545.293279000034,
+          "sequence": 183,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:27.153Z",
+          "status": "running",
+          "virtualTimeMs": 18546.86966800003,
+          "sequence": 193,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:28.161Z",
+          "status": "running",
+          "virtualTimeMs": 19653.079339000047,
+          "sequence": 204,
+          "incidents": 1,
+          "guidance": 1
+        },
+        {
+          "at": "2026-09-22T00:42:29.168Z",
+          "status": "completed",
+          "virtualTimeMs": 20000,
+          "sequence": 209,
+          "incidents": 1,
+          "guidance": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "equipment-running.png",
+    "fire-gas-running.png"
+  ],
+  "completedAt": "2026-09-22T00:42:29.197Z",
+  "status": "PASS_SELF_CHECK"
+}

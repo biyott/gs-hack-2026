@@ -1,0 +1,78 @@
+{
+  "kind": "review-lane-preparation-index",
+  "goalId": "GS-SAFETY-SIM-001",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "owner": "/root/qa_lead",
+  "plan": "qa/review-work-plan-v1.md",
+  "candidateId": "sha256:70da1337ab54652824ffb49f65cb0213822ba7c2420ae345664dbe7c48c893af",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "sourceContentSha256": "af06052baf673b40b33f8a4bb9f095b4239ff622d82fec492de6d42caeb92584",
+  "artifactManifestSha256": "bc87dfe5caf85654a2ab96b345d141f6f182c0332c88798dc2ceacb51fd83849",
+  "g3ReleasedAt": "2026-09-21T13:08:51.509Z",
+  "overallVerdict": "NOT_ISSUED",
+  "lanes": [
+    {
+      "lane": "goal-and-constraints",
+      "proposedTask": "review_goals_c1",
+      "agentPath": "/root/qa_lead/review_goals_c1",
+      "status": "INCONCLUSIVE",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/reviews/candidate-70da1337/goals/GS-SAFETY-SIM-001-gate-review.md",
+      "reportSha256": "8871a1e844dfdb973727f1958cf4ddd2f6d36896a682508c7662669ff454cdfb",
+      "disposition": "Reported REJECT on known physical blocks and pending execution before execution finished. Preserved point-in-time result; fresh final lane after actual evidence, not a newly observed software failure.",
+      "recordedAt": "2026-09-21T13:20:25.595Z"
+    },
+    {
+      "lane": "hands-on-execution",
+      "proposedTask": "review_execution_c1",
+      "agentPath": "/root/qa_lead/review_execution_c1",
+      "status": "INCONCLUSIVE",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/reviews/candidate-70da1337/execution/GS-SAFETY-SIM-001-manual-qa.md",
+      "reportSha256": "09391619d284c72ced29e941ca477469b1da7caf45bb587736f001f84d312034",
+      "disposition": "Ended with scenario inventory before W4 resource grant; no hands-on execution. Fresh bounded replacement at W4 required.",
+      "recordedAt": "2026-09-21T13:20:25.595Z"
+    },
+    {
+      "lane": "code-quality",
+      "proposedTask": "review_code_c1",
+      "agentPath": "/root/qa_lead/review_code_c1",
+      "status": "PASS",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/reviews/candidate-70da1337/code/GS-SAFETY-SIM-001-code-review.md",
+      "reportSha256": "2c477fee04eff41544eff7b8039ba89f2608045e94814e2a53aa0341b97b053d",
+      "disposition": "Static lane PASS with nonblocking test-specific prose finding; no runtime coverage claimed.",
+      "recordedAt": "2026-09-21T13:20:25.595Z"
+    },
+    {
+      "lane": "security",
+      "proposedTask": "review_security_c1",
+      "agentPath": "/root/qa_lead/review_security_c1",
+      "status": "FAIL",
+      "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/reviews/candidate-70da1337/security/security-review.md",
+      "reportSha256": "a1b3c4cb3be4cc36e8bcdc21086945bad03df076798449989a379a49dec75eec",
+      "disposition": "Source-backed SEC-01; W1 behavioral proof and owner scope clarification pending. This is lane result, not QA overall verdict.",
+      "recordedAt": "2026-09-21T13:20:25.595Z"
+    },
+    {
+      "lane": "context",
+      "proposedTask": "review_context_c1",
+      "agentPath": "/root/qa_lead/review_context_c1",
+      "status": "FAIL",
+      "reportPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/reviews/candidate-70da1337/context/context-report.md",
+      "reportSha256": "c5dc9ff3923f89174f6f6793101c4e22fd950b723214b14514f02fd7e9af205c",
+      "disposition": "Confirmed QD-001 candidate packaging omission; current approvals are intact. Read-only validators fail on absent preserved input files. No overall verdict.",
+      "recordedAt": "2026-09-21T13:32:20.411Z"
+    }
+  ],
+  "executionOwnersPreserved": [
+    "/root/qa_lead/qa_server",
+    "/root/qa_lead/qa_rag",
+    "/root/qa_lead/qa_ui_device"
+  ],
+  "limits": {
+    "productReworkRounds": 2,
+    "sameEnvironmentRetry": 1,
+    "incompleteLaneReplacement": 1,
+    "reviewersAreLeafAgents": true,
+    "fixReviewRequiresFreshReviewer": true
+  },
+  "dispatchRecordedAt": "2026-09-21T13:15:34.773Z"
+}

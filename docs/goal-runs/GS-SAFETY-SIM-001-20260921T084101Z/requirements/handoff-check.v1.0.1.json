@@ -1,0 +1,19 @@
+{
+  "type": "product-document-editorial-check-not-QA",
+  "checkedAt": "2026-09-21T10:33:06.372Z",
+  "goalVersion": "1.0",
+  "contractDocumentVersion": "1.0.1",
+  "wireSnapshotVersion": "1.0.0",
+  "catalogVersion": "1.0.1",
+  "baselineReadmeBytes": 468,
+  "baselineReadmePreserved": true,
+  "missingLinks": [],
+  "artifactHashes": {
+    "README.md": "0b8d10886cbc280c2a838493247fdeb4debabd70cc1b6ea96f70d56919e7d229",
+    "docs/demo-runbook.md": "baa3529c3ca62500d5cfa47f6621635167a25f7f8188c302cc74a92f2158a3e1",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/requirements/contract-readiness.v1.0.1.md": "3e742fd5a725fe12d2c99c4ae7f979abaf21f1d5463eaef1fc998eddd87bdd47",
+    "docs/contracts/v1.0.1-addendum.md": "1b2b0daba52723bcb2e857fd1db490d466ccb6474768a263f8461559a9c5e957",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/bootstrap-reconciliation.json": "67315316a6c70d67b0075667511ea84c13de27a59effe7fc8642747088c4bb80"
+  },
+  "status": "Documentation update only; implementation and independent QA remain separate"
+}

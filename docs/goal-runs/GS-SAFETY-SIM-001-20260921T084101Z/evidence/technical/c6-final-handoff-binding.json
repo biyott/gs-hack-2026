@@ -1,0 +1,113 @@
+{
+  "recordedAt": "2026-09-22T00:02:09.560Z",
+  "status": "TECHNICAL_HANDOFF_COMPLETE_ROOT_G3_REQUIRED",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "manifest": {
+    "path": "runtime-artifacts/candidate-manifest-c6.json",
+    "bytes": 367968,
+    "sha256": "2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792"
+  },
+  "sidecars": [
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-app-origin-sites-binding-v1.json",
+        "bytes": 7234,
+        "sha256": "22847272e762e2508d27c00263875004434ecb6356f02309a7da1620b89f0ed8"
+      },
+      "packaged": {
+        "path": "runtime-artifacts/c6-app-origin-sites-binding-v1.json",
+        "bytes": 7234,
+        "sha256": "22847272e762e2508d27c00263875004434ecb6356f02309a7da1620b89f0ed8"
+      }
+    },
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-app-origin-source-concurrence-v1.json",
+        "bytes": 2888,
+        "sha256": "e51e690a8d0b9bcd8dfa2ecaa81512ab42f255eb9dbf88b15147a3c7d52b5280"
+      },
+      "packaged": {
+        "path": "runtime-artifacts/c6-app-origin-source-concurrence-v1.json",
+        "bytes": 2888,
+        "sha256": "e51e690a8d0b9bcd8dfa2ecaa81512ab42f255eb9dbf88b15147a3c7d52b5280"
+      }
+    },
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/candidate-c6-state.json",
+        "bytes": 1488,
+        "sha256": "1d68bbfc19693c34d501354a143335405ee035b85c54752bb7e7a4c63a35ecda"
+      },
+      "packaged": {
+        "path": "runtime-artifacts/candidate-c6-state.json",
+        "bytes": 1488,
+        "sha256": "1d68bbfc19693c34d501354a143335405ee035b85c54752bb7e7a4c63a35ecda"
+      }
+    },
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/g3-candidate-c6-handoff.md",
+        "bytes": 2164,
+        "sha256": "b47019fe76cc75e5293cd5b8d2d9ee0c90df5d2b03f56e59823d0cecc6b5c75c"
+      },
+      "packaged": {
+        "path": "runtime-artifacts/g3-candidate-c6-handoff.md",
+        "bytes": 2164,
+        "sha256": "b47019fe76cc75e5293cd5b8d2d9ee0c90df5d2b03f56e59823d0cecc6b5c75c"
+      }
+    },
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-head-binding.json",
+        "bytes": 493,
+        "sha256": "e7e466e61dc27e95e03c717a25593c8ae57a124f2d11c2365d7b7c34bb433e4a"
+      },
+      "packaged": {
+        "path": "runtime-artifacts/c6-head-binding.json",
+        "bytes": 493,
+        "sha256": "e7e466e61dc27e95e03c717a25593c8ae57a124f2d11c2365d7b7c34bb433e4a"
+      }
+    },
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-head-binding-status.porcelain-v1.z",
+        "bytes": 827,
+        "sha256": "8240c8d07b7988eb596031b7ad77ab68bf3631f3ca0895d620570f1ffdd415c5"
+      },
+      "packaged": {
+        "path": "runtime-artifacts/c6-head-binding-status.porcelain-v1.z",
+        "bytes": 827,
+        "sha256": "8240c8d07b7988eb596031b7ad77ab68bf3631f3ca0895d620570f1ffdd415c5"
+      }
+    },
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-content-audit.json",
+        "bytes": 575,
+        "sha256": "99a1c54811221fd42b9182849b9e2a6ffa37e2011f80d1343442c4b760659415"
+      },
+      "packaged": {
+        "path": "runtime-artifacts/c6-content-audit.json",
+        "bytes": 575,
+        "sha256": "99a1c54811221fd42b9182849b9e2a6ffa37e2011f80d1343442c4b760659415"
+      }
+    },
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-final-resource-release.json",
+        "bytes": 363,
+        "sha256": "d842d2e3cea5e9cab38d3a323b6dcf14fb7717530245501cce48131ea41975f1"
+      },
+      "packaged": {
+        "path": "runtime-artifacts/c6-final-resource-release.json",
+        "bytes": 363,
+        "sha256": "d842d2e3cea5e9cab38d3a323b6dcf14fb7717530245501cce48131ea41975f1"
+      }
+    }
+  ],
+  "sidecarsOutsideCandidateContentHash": true,
+  "rootReceiptPointer": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/g3-freeze-c6.json",
+  "acceptance": "NOT_ISSUED"
+}

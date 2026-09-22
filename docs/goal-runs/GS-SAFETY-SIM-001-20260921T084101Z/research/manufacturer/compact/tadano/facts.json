@@ -1,0 +1,52 @@
+{
+  "model": "Tadano GR-250N-4",
+  "specEdition": "GR-250N-4-00101 / document 1609-01-05",
+  "sourceId": "TADANO-GR250N4-KO-1609-01-05",
+  "transport": {"lengthM": 11.53, "widthM": 2.62, "heightM": 3.475, "sourcePages": [1,8]},
+  "supportGeometry": {
+    "type": "X",
+    "extensionWidthSettingsM": [3.1,3.6,5,6.1,6.6],
+    "maximumExtensionWidthM": 6.6,
+    "maximumPadOuterWidthM": 7.18,
+    "longitudinalSupportCenterSpanEachSideM": 6.68,
+    "sourcePages": [1,6],
+    "coordinateOrientedPadCenters": null,
+    "coordinateOrientedPadPolygons": null,
+    "note": "Plan-view upper and lower pad rows have different longitudinal offsets; do not infer symmetric rectangle. H-type geometry is excluded."
+  },
+  "slewOrigin": null,
+  "tailSwingRadiusM": 3.1,
+  "tailSwingSourcePage": 6,
+  "boomOrJibConfiguration": {
+    "boomSections": 4,
+    "boomLengthMinM": 9.35,
+    "boomLengthMaxM": 30.5,
+    "boomElevationDegrees": [0,84],
+    "jibType": "2-section full-auto",
+    "jibLengthMinM": 8.2,
+    "jibLengthMaxM": 13,
+    "jibOffsetDegrees": [5,60],
+    "sourcePages": [1,6]
+  },
+  "separateCatalogMaxima": {
+    "mainBoomWorkingRadiusM": 27.9,
+    "withJibWorkingRadiusM": 33.9,
+    "mainBoomLiftingHeightM": 31.3,
+    "withJibLiftingHeightM": 44.2,
+    "sourcePage": 1,
+    "simultaneousPoseClaim": false
+  },
+  "capacityExample": {
+    "ratedGrossLoadTonnes": 25,
+    "boomLengthM": 9.35,
+    "workingRadiusM": 3.5,
+    "outriggerExtensionWidthM": 6.6,
+    "sector": "all around",
+    "reevingParts": 8,
+    "includedMainHookMassKg": 220,
+    "includedOtherMass": "lifting gear",
+    "groundCondition": "firm level ground, crane level",
+    "sourcePages": [2,4],
+    "operationalAuthorization": false
+  }
+}

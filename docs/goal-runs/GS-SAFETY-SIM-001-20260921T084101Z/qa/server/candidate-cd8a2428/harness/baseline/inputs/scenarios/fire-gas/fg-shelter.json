@@ -1,0 +1,322 @@
+{
+  "id": "FG-SHELTER",
+  "version": "1.0.0",
+  "label": {
+    "ko": "명시적 정책에 따른 실내 대기",
+    "en": "Shelter under explicit scenario policy"
+  },
+  "mode": "fire-gas",
+  "mapId": "SITE-CONSTRUCTION-01",
+  "mapVersion": "1.0.0",
+  "synthetic": true,
+  "seed": 20260921,
+  "durationMs": 20000,
+  "clockEpoch": "2026-09-21T09:00:00Z",
+  "policyId": "POLICY-FG-SHELTER",
+  "initial": {
+    "equipment": null,
+    "workers": [
+      {
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 65,
+          "y": 25
+        },
+        "profile": {
+          "workerId": "WORKER-A",
+          "version": 1,
+          "preferredLocale": "ko",
+          "locale": "ko",
+          "canUseStairs": true,
+          "speedMps": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "needsAssistance": false,
+          "needsCompanion": false,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      {
+        "workerId": "WORKER-B",
+        "position": {
+          "x": 90,
+          "y": 40
+        },
+        "profile": {
+          "workerId": "WORKER-B",
+          "version": 1,
+          "preferredLocale": "en",
+          "locale": "en",
+          "canUseStairs": false,
+          "speedMps": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "needsAssistance": true,
+          "needsCompanion": true,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      }
+    ],
+    "sensors": [
+      {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      }
+    ],
+    "hazards": [],
+    "blockedPathIds": []
+  },
+  "events": [
+    {
+      "id": "FG-SHELTER-001",
+      "atMs": 1000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 1000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-002",
+      "atMs": 1000,
+      "type": "hazard.upsert",
+      "hazard": {
+        "id": "GAS-ZONE-B",
+        "type": "gas",
+        "zoneId": "ZONE-B",
+        "polygon": [
+          {
+            "x": 84,
+            "y": 35
+          },
+          {
+            "x": 96,
+            "y": 35
+          },
+          {
+            "x": 96,
+            "y": 43
+          },
+          {
+            "x": 84,
+            "y": 43
+          }
+        ],
+        "active": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-003",
+      "atMs": 4000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 4000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-004",
+      "atMs": 4000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 4000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-005",
+      "atMs": 8000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 8000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-006",
+      "atMs": 8000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 8000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-007",
+      "atMs": 12000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 12000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-008",
+      "atMs": 12000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 12000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-009",
+      "atMs": 16000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 16000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-010",
+      "atMs": 16000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 16000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-011",
+      "atMs": 20000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 20000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SHELTER-012",
+      "atMs": 20000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 20000,
+        "source": "mock",
+        "connected": true
+      }
+    }
+  ],
+  "expectedResults": [
+    {
+      "atMs": 1000,
+      "kind": "guidance",
+      "workerId": "WORKER-B",
+      "actionCode": "SHELTER_PER_SCENARIO",
+      "route": "empty",
+      "destinationIds": [],
+      "note": "Assert the current authoritative guidance, not generated explanation."
+    }
+  ],
+  "coverage": ["AC-03:shelter-policy", "AC-05:route-free-action"]
+}

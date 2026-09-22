@@ -1,0 +1,77 @@
+{
+  "kind": "c4-surface-adapter-preparation-freeze",
+  "version": "1",
+  "preparedAt": "2026-09-21T17:47:19.690694+00:00",
+  "sourceRoot": "/home/b/.cache/gs-safety-c4.q2FD40",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "buildId": "czkc6DgDv3UUlTrSfDMqX",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "sourceHelperSha256": "54b92b43fc05389e9a43bd32380619cd8c9e753bfe71909765c03b849b2e010d",
+  "runtimeExecutedByPreparation": false,
+  "continuationFreezeSha256": "0d8f517a50b43d07d637737a3af08a909aeb12360544d620b08a455901b0df0e",
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/run.mjs",
+      "sha256": "0dc87a8301ca94eb218ea8b976e9e8892beccb4bc39614d999aace116ee43c9f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/guard.mjs",
+      "sha256": "8521e13f12a4f960fb8d60b6894b53490756a479909121295b99ca300701fdd9"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/events.mjs",
+      "sha256": "087cc883fb2f3733eb3ad733df6011103a868c64562ea8055120bef4155ad85d"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/focus-evidence.mjs",
+      "sha256": "a556b4297c5557a5dff2ee6695e3dba6f5f80b95404c46ace7df1113ab61d7ef"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/check-focus-continuation.mjs",
+      "sha256": "a0b035853f130dfcb284bc9ae554814263025e791730b33f4cf61119ab2391a6"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-surface-adapter-v1/continuation.freeze.json",
+      "sha256": "0d8f517a50b43d07d637737a3af08a909aeb12360544d620b08a455901b0df0e"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c4.v2.json",
+      "sha256": "8a64152769ee5f6ff217c6f0216c73966e48e7cb22bb8f278810741c03c21fca"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/surface.scenario.v1.json",
+      "sha256": "a0eacd365776af748823996330c5cc91c634394002c212da7bde57e56a03f8a5"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/focused-scroll-radius-aware-v1.1.mjs",
+      "sha256": "8c55033a7b4dca6d4edd3103dc8e6430176a96b1bd749ac8331e720a752a6002"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/tests/frontend/browser-runtime.mjs",
+      "sha256": "9c222fa6a0e59597c935ef6047a842c60713cd5b84cfadd777784fbc0d540aef"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/tests/frontend/browser-actions.mjs",
+      "sha256": "a3f7d2a06ae7228c92ecc8d6854bd61222f7eddbcdab59e91934c9e30f477416"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/tests/frontend/browser-observations.mjs",
+      "sha256": "945a817d060662eb59cc11291bced96fe58f9bdffb9c577c71811a66975c09bd"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/tests/frontend/focused-scroll.mjs",
+      "sha256": "54b92b43fc05389e9a43bd32380619cd8c9e753bfe71909765c03b849b2e010d"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/tests/frontend/run-surface.mjs",
+      "sha256": "452315b83f491821bbd9e6e1231affc884c80d277c863d386bbbc5bad5616620"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/node_modules/playwright/index.mjs",
+      "sha256": "a0f5715ea22354f922791a9c53dc012d5d5c067ff9cc4cd35ffb7cd272071a9f"
+    }
+  ],
+  "expectedSemanticStates": 155,
+  "expectedFocusTargets": 330,
+  "productAcceptance": "NOT_RUN"
+}

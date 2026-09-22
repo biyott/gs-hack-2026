@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 2,
+  "issuedAt": "2026-09-22T00:40:27.224Z",
+  "actualIssuer": "/root/qa_resume",
+  "logicalIssuer": "/root/qa_lead",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "candidateRoot": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "overallVerdict": "BLOCKED",
+  "accepted": false,
+  "checkpoint": "Final independent C6 QA closeout after all executed QA windows and resource release. Overall acceptance is not achieved.",
+  "criteriaUnchanged": true,
+  "noPriorBehavioralPassTransfer": true,
+  "counts": {
+    "PASS": 4,
+    "FAIL": 0,
+    "BLOCKED": 7,
+    "NOT_RUN": 5
+  },
+  "acceptance": [
+    {
+      "id": "AC-01",
+      "status": "NOT_RUN",
+      "criterionVerbatim": "- AC-01 재현성: 새 로컬 DB에 마이그레이션·seed 후 문서화된 명령으로 서버·웹·앱을 실행한다. 동일 시나리오·seed·가상 시간에서 핵심 위험·행동·경로 결과가 재현되고 센서 없이 두 모드가 완주한다.",
+      "basis": "Fresh C6 migration/seed and 14 scenarios across three fresh DBs passed reproducibility checks. Independent W4 executed migration/seed, sensorless runs in both modes and an OS restart, using supplied dependencies/build after one documented copy-link repair. Full two-mode Android completion and complete documented installation/calibration journey were not established."
+    },
+    {
+      "id": "AC-02",
+      "status": "PASS",
+      "criterionVerbatim": "- AC-02 중장비: 접근·속도 증가·방향 변경으로 영향 작업자와 경로가 실제로 갱신된다. 이동 제약이 다른 작업자는 허용 통로만 사용한다. 경로 없음·위치 단절·도착을 정상 이동과 구분한다.",
+      "basis": "Fresh independent engine scenario, control, profile, ownership, current geometry and routing cases passed. The criterion here concerns synthetic engine behavior; physical tracking is assessed separately."
+    },
+    {
+      "id": "AC-03",
+      "status": "PASS",
+      "criterionVerbatim": "- AC-03 화재·가스: 화재/DEMO-GAS-X/복합 위험·통로 차단·영역 변화가 정책과 경로에 반영된다. 명시된 정책에서만 실내 대기를 제공하고, 경로 없음·센서 단절·stale 상태를 처리한다. 위험 해제만으로 통행이 재개되지 않는다.",
+      "basis": "Fresh fire/gas/combined hazard, policy/restriction and separate clear/reopen/closure server checks passed, including three actual OS phase pairs."
+    },
+    {
+      "id": "AC-04",
+      "status": "BLOCKED",
+      "criterionVerbatim": "- AC-04 실행 격리: 초기화는 새 runId를 발급하고 과거 안내를 무효화한다. 모드 전환·재시작 시 타이머·구독·위험 상태가 섞이지 않는다. 다른 대상·실행, 중복·역순·만료 안내 및 지도 버전 불일치를 거부하거나 명시적으로 처리한다.",
+      "basis": "Fresh 1,034 ordering checks and server recovery cases passed. Six cross-mode QD009 fixture cases remain blocked at the repository seam; actual Android fault/reconnect coverage is incomplete. W4 retained completed histories after restart but did not prove the running-to-paused restoration boundary."
+    },
+    {
+      "id": "AC-05",
+      "status": "NOT_RUN",
+      "criterionVerbatim": "- AC-05 개인화: 한국어/영어, 계단 불가, 보조 필요, 미확인 프로필을 비교한다. 나이·성별만 바꿔도 확인된 이동 능력 판단은 바뀌지 않으며 국적으로 언어를 정하지 않는다. 수신·이해·지원 수락·도착이 서로 자동 대체되지 않는다.",
+      "basis": "Fresh profile/language/stairs and role-response software checks passed; integrated current mobile/UI comparison and all response-state flows remain incomplete."
+    },
+    {
+      "id": "AC-06",
+      "status": "PASS",
+      "criterionVerbatim": "- AC-06 합성 데이터: 18개 문서의 ID·메타데이터·허용 행동·본문 구성·양언어 의미를 검사하고 실제 검토 이력을 확인한다. draft/retired/기한 전·만료/타 현장/허용되지 않은 모드/다른 물질 문서가 안내 근거에 섞이지 않는다. common도 현장 범위를 지키고 approved_for_demo가 데모 범위에서만 허용되는지 검사한다. negative-fixtures는 정상 검색 범위에 들어가지 않는다.",
+      "basis": "18 reviewed corpus records and genuine review/source provenance verified; fresh metadata, normal-scope exclusion and corpus filter checks passed."
+    },
+    {
+      "id": "AC-07",
+      "status": "BLOCKED",
+      "criterionVerbatim": "- AC-07 검색: 최소 12개 사례로 중장비 접근·방향 변경·계단 불가·영어·위치 단절·화재 경로 변경·가스·실내 대기 정책 유무·타 현장 제외·근거 없음·충돌을 실행한다. expectedDocumentIds, forbiddenDocumentIds, expectedActionCodes, matched/no_match/conflict를 실제 검색 결과와 대조한다. 임베딩 모델명·버전·차원과 생성 벡터, FTS5·벡터의 개별 결과·결합 결과·필터 적용 결과를 기록해 실제 실행을 확인한다.",
+      "basis": "Actual pinned E5, FTS5, vector and fusion processing executed. Frozen fact/policy fixture and broader lineage-join gaps remain, so complete expected-result coverage for all required retrieval cases is not established."
+    },
+    {
+      "id": "AC-08",
+      "status": "BLOCKED",
+      "criterionVerbatim": "- AC-08 RAG 장애·오염: 지연·실패·잘못된 인용·행동 반전·문서 속 지시문·생성 중 경로/프로필 변경을 주입한다. 기본 경보·경로·관리자 기능이 계속 동작하고 잘못되거나 오래된 보조 설명은 전달되지 않는다. 정상 matched 사례의 evidence가 실제 검색 문서·버전·chunk에 존재해야 한다. 공급자·모델·버전·실제 호출/mock 구분을 기록하고, 장애 주입용 mock 결과를 정상 모델 호출 성공의 증거로 사용하지 않는다.",
+      "basis": "Actual Qwen, controlled provider faults and production E5 privacy joins executed. The original 85 raw results remain 75 PASS / 4 FAIL / 1 BINDING_GAP / 5 NOT_RUN with separate source-bound fixture/reason dispositions. Required current-flow joins and active-inference cancellation evidence remain incomplete; raw failures were not erased."
+    },
+    {
+      "id": "AC-09",
+      "status": "BLOCKED",
+      "criterionVerbatim": "- AC-09 앱 실동작: 실제 Android에서 두 모드의 같은 안내 버전이 화면·음성·진동에 적용된다. 경로 변경은 옛 음성을 취소하고 중복 이벤트·재빌드·위치 갱신은 중복 발화하지 않는다. TTS 실패, 미지원 언어·진동, 지도 불일치, 만료, 통신 단절, 앱 복귀를 확인한다.",
+      "basis": "Both actual phones authenticated on C6. PHONE1 equipment guidance had version-bound received/displayed/voice-start/voice-completed callbacks. Human confirmation of heard audio and felt vibration is still pending; both-mode playback and the complete native fault matrix were not executed. One help-requested receipt has no attributed actor and is not claimed as an executor action."
+    },
+    {
+      "id": "AC-10",
+      "status": "NOT_RUN",
+      "criterionVerbatim": "- AC-10 관제 사건 흐름: 위험 인지 → 구역·영상 확인 → 실제 최초 안내 확인 → 작업자 반응 → 관리자 지원 배정/수락·후속 안내 → 해제·통행 재개·종료를 실제 조작한다. incidentId와 안내 버전, 수행자·시각, 상태 변화와 DB 이력이 연결된다.",
+      "basis": "Fresh C6 A/B visible identity and pin/navigation narrow fixture passed; full C6 UI incident/support/worker/clear/reopen/close chain not executed. C5 lifecycle is historical only."
+    },
+    {
+      "id": "AC-11",
+      "status": "NOT_RUN",
+      "criterionVerbatim": "- AC-11 연결·동시 조작: 웹·앱 SSE 단절·재연결, 관제 새로고침, 관리자 2명 동시 접속과 조작을 실행한다. 최신 snapshot·유효 안내·최초 이력이 복구되고 중복 사건·충돌한 배정·옛 음성 재생이 발생하지 않는다. CCTV·소리·위치 장애를 각각 구분한다.",
+      "basis": "Current server concurrency/order/restart checks passed. W4 refresh and true OS restart preserved both first-guidance hashes and all eight stored guidance versions, with a new stream. Complete C6 web and Android reconnection, two-admin incident manipulation and audio recovery were not executed."
+    },
+    {
+      "id": "AC-12",
+      "status": "NOT_RUN",
+      "criterionVerbatim": "- AC-12 지도·3D: 책상 네 모서리·대표점의 좌표 변환과 축·단위를 검증한다. 008의 배치와 6종의 고정 제원판·선택 구성·형상·동작을 대조한다. 6종 교체 때마다 위험·경로·안내가 재계산되고 이전 버전이 남지 않는다. ±15° 제한과 전체 보기의 차이를 확인한다.",
+      "basis": "Seven fresh C6 Blender roundtrips passed, preserving the original uncertain wrapper exit and one environment retry. All six current application model/motion/switch and guidance-invalidation scenarios were not executed on C6."
+    },
+    {
+      "id": "AC-13",
+      "status": "BLOCKED",
+      "criterionVerbatim": "- AC-13 실측: 네 폰의 역할 선택·권한·준비 상태, Controller와 두 Controlee의 동시 수신, 거리/각도 null 처리, 가림·단절·장비 이동, 영상 표식 보정·좌표 오차·출처, CCTV 프레임률·지연을 실제 단말로 기록한다. 실제 기능 미지원 시 정확한 실패·대체 역할 안내도 확인한다. 지원 여부 표시만으로 정상 동시 측정 성공을 대신하지 않는다.",
+      "basis": "Only two actual phones were available; four roles, Controller plus two simultaneous Controlees, 810 physical calibration samples and the full capture-origin-to-render join are absent. One equipment READY camera window completed 30 seconds of warmup plus 180 seconds measured: 1,289 received frames, mean 7.1611 fps, two stream IDs, zero duplicate frame identities. All frames were uncalibrated. The second mode was not run. This separate capability observation does not satisfy full active-1x G0."
+    },
+    {
+      "id": "AC-14",
+      "status": "PASS",
+      "criterionVerbatim": "- AC-14 저장·권한: DB는 서버에서만 접근한다. 허용되지 않은 관리자 해제·종료 요청이 거부되고 허용된 조작은 수행자와 함께 기록된다. 비밀값·불필요한 개인정보가 클라이언트·LLM 요청·로그·증거에 노출되지 않는다.",
+      "basis": "Fresh 40 HTTP authorization/projection/restart/provenance checks, independent source security review and actual production E5/model/client/log four-canary scans passed in the stated software scope; no seeded canary was found. W4 separately scanned 75 files without finding its private PIN."
+    },
+    {
+      "id": "AC-15",
+      "status": "BLOCKED",
+      "criterionVerbatim": "- AC-15 화면 품질·성능: 실제 웹과 앱을 조작해 지도·경로·위험·CCTV·문구·버튼의 표시, 한국어/영어 잘림, 상태 구분, 소리 중단 중 화면 유지, 고빈도 위치 갱신 영향을 확인한다. 서버 기준 상태와 화면 보간이 분리되고 사전 고정한 성능·오차 기준을 충족한다.",
+      "basis": "The C6 browser matrix reached 67/155 states and 140/330 targets. Native 200%/80-ID, accessibility and motion gaps remain. The G0 attempt at 00:20:53–00:20:59 used a fresh IDLE run and received 409 on setup pause before warmup; zero G0 intervals were measured. The separate READY camera window has no render join and no full G0 performance claim."
+    },
+    {
+      "id": "AC-16",
+      "status": "BLOCKED",
+      "criterionVerbatim": "- AC-16 최종 시연·인계: 같은 통합 후보에서 두 모드와 4대 실기 흐름을 재현하고, 다른 실행자가 문서로 설치·보정·시연할 수 있다. 필수 요구의 구현·검증 누락이 없으며 QA Lead의 종합 PASS와 근거 경로가 있다.",
+      "basis": "Independent W4 demonstrated fresh migration/seed, both sensorless modes and OS restart/history preservation after a copy-environment repair. Its lane verdict is BLOCKED: four-phone/calibration handoff, paused recovery and complete mandatory coverage are missing. The five-second advance observation lacks the captured request body/correlation and establishes neither accepted-command behavior nor a product failure. Overall PASS cannot be issued."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/g3-freeze-c6.json",
+      "sha256": "537c1411b1dc3a1328aa098a58e789361bd5e7982a23ff776f745fef13dd3f50",
+      "bytes": 11229
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/receipt-validation.json",
+      "sha256": "c42795855bbdc2f0f64f6dfcc6de28bf658b5689e5883315777465f86222c29c",
+      "bytes": 442047
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/server/candidate-892f975f/w1-scoped-results.json",
+      "sha256": "10cf470c23200f020062d14ae8a07680bdda85f7ef7c967ebab3919059816b25",
+      "bytes": 4990
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f/w2-fresh-execution-closeout-v1.json",
+      "sha256": "7f08abbb003e242358763925e77935e7ac0eb6604a2992466868cd5cad8884b1",
+      "bytes": 28482
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/c6-w3-release-01.json",
+      "sha256": "de143d40553bdbd4b66dc24e395f7a56af220bfb4fad097cb66472851f1450dd",
+      "bytes": 3626
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/security/report.md",
+      "sha256": "21ccfe987b89d9edc4fc8588e5042fbda9e5a35b09fc865a2715c5dbb3f63465",
+      "bytes": 6896
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/goal/report.md",
+      "sha256": "5604099435a5571c538c3483bf8d073ead17bfd0cccfeb57d59030a94bfdf4a5",
+      "bytes": 17189
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/code/report.md",
+      "sha256": "bc25bb4f044447eb5fbad4dc8cb05bc2a5b791dbc52b0e25b8fe25f346dfee5e",
+      "bytes": 11165
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/context/report-v2.md",
+      "sha256": "0a7bc3e4ff8538ae73eb619c61cba2f41c66f3901b0d983ba8aff5c1556b0714",
+      "bytes": 3509
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/visual-integrity/report.md",
+      "sha256": "90f28b4da2b58861d51e0aa3577aed5905212dc29242f8f65dd8de40dc88e48a",
+      "bytes": 10344
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/visual-cjk/report.md",
+      "sha256": "20ff825f249b0e032ecf3a1c7390be11e3f31d1f6ecf76292f737f0591abd479",
+      "bytes": 7602
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/timing-01/timing-2026-09-22T00-20-53-072Z-112374/report.json",
+      "sha256": "ecc5ed282556313d7af6b3f874fbd203d4f776b3b59fe3167ac49d4eef413349",
+      "bytes": 7327
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/product/c6-handoff-index-v2.md",
+      "sha256": "1bf5ba54a0d1146030e03b398a8b7cf0a7ac505afc902b92b633f5d0543d0eb4",
+      "bytes": 11836
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/official-c6-qa-status-v1.json",
+      "sha256": "e937caef20a02ce5fd2f5e73fcd05f3e9f991dc11d8cec03dccad9fa3b28dd44",
+      "bytes": 15760
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/final-resource-release-v1.json",
+      "sha256": "4e7d105037911397fb6c1388171642eb93c110773491fab99d0d7921a739695c",
+      "bytes": 1353
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/physical-cleanup-01/release.json",
+      "sha256": "c8e3796d4ccdac5856ce26199f42e153a3b44cd9de63ac867c96dba629a7c81a",
+      "bytes": 1150
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/camera-ready/W3C-C6-READY-CAMERA-EXEC-01/equipment/metric-supplement.json",
+      "sha256": "5f13565ef5b75dd13aa6247057f28cb932f0deb93a73d52c40d8933731d90215",
+      "bytes": 1040
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/handoff/candidate-892f975f/c6-handoff-v2/execution-summary.json",
+      "sha256": "f954e0d9dd44528b385bf8dccaaa478f06d43ec19d5d2d6f42735f86b7d028a1",
+      "bytes": 2636
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/execution/c6-handoff-v2/report.md",
+      "sha256": "e25b5d3e9586a2cbce382b5b92761aab5891bfff584fa3c2ebb2adffe2a7d4a3",
+      "bytes": 3455
+    }
+  ],
+  "priorFailuresPreserved": [
+    "C1–C5 all original failures",
+    "C5QD011/12/13 and original source/DOM images",
+    "C6W3 original10ssetup timeout and explicit fresh retry",
+    "C6Blender nullnativeexitcode and explicitenvironmentretry",
+    "C6G0setup409/nointerval",
+    "C6externalhandoff hash typosv1 andcorrectedv2",
+    "W4 initial copied-dependency HTTP500 preserved; QA copy alias omission repaired once using exact existing frozen dependency targets; no product bytes changed",
+    "W4 five-second advance observation remains unproven; exact request body not captured",
+    "Camera two stream IDs and unsuccessful graceful UI-stop attempts preserved; forced-stop cleanup verified"
+  ],
+  "currentDefectRetests": {
+    "QD011": "SCOPED_RETEST_SUPPORTED; keyboardchange/fullviewports remainunproved",
+    "QD012": "SCOPED_RETEST_SUPPORTED375/768/1280;1440/200%unproved",
+    "QD013": "SCOPED_RETEST_SUPPORTED equalcriticalconstructorfixture; higherpriority/livefullchainunproved"
+  },
+  "timing": {
+    "attemptStartedAt": "2026-09-22T00:20:53.074Z",
+    "attemptCompletedAt": "2026-09-22T00:20:59.375Z",
+    "measuredIntervals": 0,
+    "measuredDurationMs": 0,
+    "cause": "QA setup used freshIDLEruns; firstpause returned409. Original preparedcollector assumed priorpausedruntime.",
+    "productFailureEstablished": false,
+    "thresholdsRelaxed": false
+  },
+  "supersedesStatus": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-892f975f/official-c6-qa-status-v1.json",
+  "originalCheckpointPreserved": true,
+  "statusSemantics": {
+    "PASS": "The stated acceptance criterion is supported by fresh evidence in its defined scope.",
+    "BLOCKED": "Mandatory coverage or evidence is blocked or incomplete; this is not an inferred product failure.",
+    "NOT_RUN": "The complete acceptance scenario was not executed; explicitly described subcases may have run."
+  },
+  "evidenceIntegrityAtCloseout": {
+    "at": "2026-09-22T00:40:27.224Z",
+    "priorCheckpointRecordsRechecked": 13,
+    "mismatches": 0,
+    "newReceiptCandidateBindingsMatched": true
+  },
+  "cameraCapability": {
+    "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "at": "2026-09-22T00:33:45.924Z",
+    "actualDurationMs": 210000.78796000002,
+    "start": "2026-09-22T00:28:34.092Z",
+    "end": "2026-09-22T00:32:04.093Z",
+    "frames": 1289,
+    "meanFps": 7.161111111111111,
+    "minOneSecondBucket": 3,
+    "maxOneSecondBucket": 9,
+    "zeroFrameSeconds": 0,
+    "streamIds": [
+      "32db3a1e-f306-487c-9879-38281f43c5e3",
+      "4db2b8a2-91a6-46d9-b1a4-08f6c6c4da1b"
+    ],
+    "duplicateFrameIdentities": 0,
+    "captureToReceiveDiagnosticP95Ms": 154,
+    "clockUncertaintyMinMs": 8.165836000011186,
+    "clockUncertaintyMaxMs": 10.4525490000016,
+    "uncertaintyOver50ms": 0,
+    "calibrationStatuses": [
+      "uncalibrated"
+    ],
+    "concurrentLoad": "W4 independent backend process on4104 authorized concurrently byQA Lead; no isolation claim",
+    "acceptance": "NOT_ASSESSED",
+    "fullActiveG0": "BLOCKED_MISSING_ORIGINAL_WORKLOAD",
+    "secondMode": "NOT_RUN",
+    "cameraRenderJoin": "NOT_MEASURED",
+    "physicalCalibration": "NOT_PERFORMED",
+    "scope": "Equipment READY receive capability only; one full 30-second warmup plus 180-second measured window.",
+    "notEquivalentToFullG0": true
+  },
+  "independentHandoff": {
+    "at": "2026-09-22T00:33:48.418Z",
+    "executor": "/root/qa_resume/c6_handoff",
+    "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "reviewVerdict": "BLOCKED",
+    "wholeAcVerdict": "NOT_ISSUED",
+    "executed": [
+      "Fresh private DB migrated and seeded using documented commands, both exit0",
+      "Supplied C6 build started from isolated QA copy; public browser login succeeded after one copy-environment repair",
+      "EQ-APPROACH and FG-FIRE selected/run with sensorless source; pause/resume actions and actual guidance observed",
+      "Authenticated refresh retained paused fire snapshot and current run",
+      "True OS restart changed stream and retained two completed run histories, both first-guidance hashes and all8stored guidance versions"
+    ],
+    "blocked": [
+      "Four-phone physical/calibration/LAN complete handoff: two phones and physical apparatus absent",
+      "Five-second advance outcome unresolved: exact HTTP request body not captured; visible click followed pausedv10→v11 with unchanged4118.663ms",
+      "Running-to-paused restart boundary not proven: first run completed during graceful shutdown; final additional selection remained idle and start control unavailable before deadline"
+    ],
+    "notRun": [
+      "Fresh dependency install/build (explicit supplied tree/build)",
+      "Full27-scenario rerun by this reviewer (mapped to current independent lane evidence instead)",
+      "Actual phone control/camera pixels/calibration/physical latency",
+      "Complete UI scroll/viewport visual review"
+    ],
+    "environmentRetry": {
+      "count": 1,
+      "reason": "File-only QA copy omitted .next/node_modules alias symlinks not present in regular-file manifest rows",
+      "restored": "Four aliases to exact already supplied C6 dependency targets in QA copy only",
+      "result": "Subsequent public browser login and actual simulation requests succeeded",
+      "productBytesChanged": false,
+      "newInstall": false
+    },
+    "firstAttemptPreserved": true,
+    "persistence": {
+      "firstGuidanceCount": 2,
+      "firstGuidanceAllUnchanged": true,
+      "guidanceVersions": 8,
+      "allVersionsUnchanged": true,
+      "newStream": true,
+      "recoveredStatus": "completed",
+      "pausedProof": false
+    },
+    "resourceRelease": "2026-09-22T00:30:51.355Z",
+    "integrity": {
+      "sources": 1026,
+      "artifacts": 673,
+      "contexts": 2,
+      "failures": 0
+    },
+    "screenshots": [
+      "equipment-paused.png",
+      "fire-paused.png",
+      "fire-after-restart.png"
+    ],
+    "concurrency": "Provider22562 shared nonperformance; other-port physical basic/READY camera capability load explicitly allowed; no G0 claim",
+    "report": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/execution/c6-handoff-v2/report.md",
+    "advanceDisposition": "UNPROVEN: visible click and unchanged virtual time were recorded, but exact request body/acceptance correlation was not captured. No new product defect is asserted."
+  },
+  "resourceRelease": {
+    "at": "2026-09-22T00:34:11.784Z",
+    "actualIssuer": "/root/qa_resume",
+    "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "events": [
+      {
+        "pid": 105100,
+        "startTicks": "479136",
+        "signal": "SIGTERM",
+        "at": "2026-09-22T00:34:11.478Z"
+      },
+      {
+        "pid": 108970,
+        "startTicks": "504742",
+        "signal": "SIGTERM",
+        "at": "2026-09-22T00:34:11.478Z"
+      }
+    ],
+    "apps": [
+      {
+        "pid": 105100,
+        "absent": true
+      },
+      {
+        "pid": 108970,
+        "absent": true
+      }
+    ],
+    "ports": [
+      {
+        "port": 4101,
+        "listeners": 0
+      },
+      {
+        "port": 4102,
+        "listeners": 0
+      },
+      {
+        "port": 4103,
+        "listeners": 0
+      },
+      {
+        "port": 4104,
+        "listeners": 0
+      },
+      {
+        "port": 4105,
+        "listeners": 0
+      },
+      {
+        "port": 8093,
+        "listeners": 0
+      }
+    ],
+    "physicalRelease": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/physical-cleanup-01/release.json",
+    "provider": {
+      "pid": 22562,
+      "startTicks": "163896",
+      "port": 8092,
+      "retained": true,
+      "ownershipTransferredTo": "/root",
+      "noFurtherQaCalls": true
+    },
+    "measurementsComplete": true,
+    "noFurtherQaRuntime": true,
+    "status": "RELEASED"
+  },
+  "humanWitness": {
+    "status": "PENDING",
+    "callbacksAreNotHumanWitness": true
+  },
+  "remainingRequirements": [
+    {
+      "id": "AC-01",
+      "status": "NOT_RUN",
+      "basis": "Fresh C6 migration/seed and 14 scenarios across three fresh DBs passed reproducibility checks. Independent W4 executed migration/seed, sensorless runs in both modes and an OS restart, using supplied dependencies/build after one documented copy-link repair. Full two-mode Android completion and complete documented installation/calibration journey were not established."
+    },
+    {
+      "id": "AC-04",
+      "status": "BLOCKED",
+      "basis": "Fresh 1,034 ordering checks and server recovery cases passed. Six cross-mode QD009 fixture cases remain blocked at the repository seam; actual Android fault/reconnect coverage is incomplete. W4 retained completed histories after restart but did not prove the running-to-paused restoration boundary."
+    },
+    {
+      "id": "AC-05",
+      "status": "NOT_RUN",
+      "basis": "Fresh profile/language/stairs and role-response software checks passed; integrated current mobile/UI comparison and all response-state flows remain incomplete."
+    },
+    {
+      "id": "AC-07",
+      "status": "BLOCKED",
+      "basis": "Actual pinned E5, FTS5, vector and fusion processing executed. Frozen fact/policy fixture and broader lineage-join gaps remain, so complete expected-result coverage for all required retrieval cases is not established."
+    },
+    {
+      "id": "AC-08",
+      "status": "BLOCKED",
+      "basis": "Actual Qwen, controlled provider faults and production E5 privacy joins executed. The original 85 raw results remain 75 PASS / 4 FAIL / 1 BINDING_GAP / 5 NOT_RUN with separate source-bound fixture/reason dispositions. Required current-flow joins and active-inference cancellation evidence remain incomplete; raw failures were not erased."
+    },
+    {
+      "id": "AC-09",
+      "status": "BLOCKED",
+      "basis": "Both actual phones authenticated on C6. PHONE1 equipment guidance had version-bound received/displayed/voice-start/voice-completed callbacks. Human confirmation of heard audio and felt vibration is still pending; both-mode playback and the complete native fault matrix were not executed. One help-requested receipt has no attributed actor and is not claimed as an executor action."
+    },
+    {
+      "id": "AC-10",
+      "status": "NOT_RUN",
+      "basis": "Fresh C6 A/B visible identity and pin/navigation narrow fixture passed; full C6 UI incident/support/worker/clear/reopen/close chain not executed. C5 lifecycle is historical only."
+    },
+    {
+      "id": "AC-11",
+      "status": "NOT_RUN",
+      "basis": "Current server concurrency/order/restart checks passed. W4 refresh and true OS restart preserved both first-guidance hashes and all eight stored guidance versions, with a new stream. Complete C6 web and Android reconnection, two-admin incident manipulation and audio recovery were not executed."
+    },
+    {
+      "id": "AC-12",
+      "status": "NOT_RUN",
+      "basis": "Seven fresh C6 Blender roundtrips passed, preserving the original uncertain wrapper exit and one environment retry. All six current application model/motion/switch and guidance-invalidation scenarios were not executed on C6."
+    },
+    {
+      "id": "AC-13",
+      "status": "BLOCKED",
+      "basis": "Only two actual phones were available; four roles, Controller plus two simultaneous Controlees, 810 physical calibration samples and the full capture-origin-to-render join are absent. One equipment READY camera window completed 30 seconds of warmup plus 180 seconds measured: 1,289 received frames, mean 7.1611 fps, two stream IDs, zero duplicate frame identities. All frames were uncalibrated. The second mode was not run. This separate capability observation does not satisfy full active-1x G0."
+    },
+    {
+      "id": "AC-15",
+      "status": "BLOCKED",
+      "basis": "The C6 browser matrix reached 67/155 states and 140/330 targets. Native 200%/80-ID, accessibility and motion gaps remain. The G0 attempt at 00:20:53–00:20:59 used a fresh IDLE run and received 409 on setup pause before warmup; zero G0 intervals were measured. The separate READY camera window has no render join and no full G0 performance claim."
+    },
+    {
+      "id": "AC-16",
+      "status": "BLOCKED",
+      "basis": "Independent W4 demonstrated fresh migration/seed, both sensorless modes and OS restart/history preservation after a copy-environment repair. Its lane verdict is BLOCKED: four-phone/calibration handoff, paused recovery and complete mandatory coverage are missing. The five-second advance observation lacks the captured request body/correlation and establishes neither accepted-command behavior nor a product failure. Overall PASS cannot be issued."
+    }
+  ]
+}

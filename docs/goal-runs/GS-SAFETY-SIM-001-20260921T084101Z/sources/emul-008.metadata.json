@@ -1,0 +1,40 @@
+{
+  "id": "008",
+  "title": "008-시연 현장·크레인 후보·축척",
+  "url": "https://emul.site/share/9llgmzihy0/p/008-luMAK9l5nT",
+  "apiUrl": "https://emul.site/api/shares/page-info",
+  "request": {
+    "method": "POST",
+    "body": {
+      "pageId": "luMAK9l5nT"
+    }
+  },
+  "fetchedAt": "2026-09-21T08:46:35.369Z",
+  "sourceCreatedAt": "2026-09-21T07:56:47.102Z",
+  "sourceUpdatedAt": "2026-09-21T08:07:36.144Z",
+  "sourcePageId": "01a0c2f7-ae7e-7fc3-a44e-c13cb669d1ab",
+  "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-008.original.json",
+  "rawJsonSha256": "edf11932665c0032c940ff12b4258b053832fa0911f28445e50dd9b6e77b87ad",
+  "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-008.original.html",
+  "rawHtmlSha256": "758cb8cccea3d9435e0654a73ddd30a74a27b214d04a9731aea3afede433572b",
+  "contentSha256": "17e27b5b760403dfbff16564d2b8ebdb8d04af710c6adc94aa1993f16bdd6d77",
+  "httpStatus": 200,
+  "publicAccess": true,
+  "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-008.body.md",
+  "bodySha256": "af5fd4039da2018485f924e45e5fa5e00e9e8184689b00834e3e907feed7f345",
+  "textNodeCount": 383,
+  "bodyMissingOriginalTextNodes": 0,
+  "attachments": [
+    {
+      "name": "references.zip",
+      "mime": "application/zip",
+      "reportedSize": 1083233,
+      "actualSize": 1083233,
+      "attachmentId": "01a0c2f8-b963-73b0-adb9-0503f7ccd294",
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-008-references.zip",
+      "sourcePublicPath": "/api/files/public/01a0c2f8-b963-73b0-adb9-0503f7ccd294/references.zip",
+      "fetchedAt": "2026-09-21T08:49:13.743Z",
+      "sha256": "33174350c2fc1818d0748c80cb4147fcff16ce066d84f398077649036e301bcb"
+    }
+  ]
+}

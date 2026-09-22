@@ -1,0 +1,1273 @@
+{
+  "recordedAt": "2026-09-21T23:58:07.790Z",
+  "priorCandidate": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+  "reusedArtifactRows": [
+    {
+      "path": "build/mobile-candidate/candidate-4-source.tar.gz",
+      "bytes": 5516096,
+      "sha256": "f3e7c8e773dfd7ce0c323ae92f5ceadc2b0b185465911740b10a10fcae874606"
+    },
+    {
+      "path": "build/mobile-candidate/gs-safety-1.0.0-candidate-4-debug.apk",
+      "bytes": 186350139,
+      "sha256": "1d78f81eaa5d7d85a2f73d3d50b5acbbeeb4a0ea5cbbabcc538087f4fbeb515a"
+    },
+    {
+      "path": "data/equipment/build-catalog.mjs",
+      "bytes": 14624,
+      "sha256": "c2b17854cf65ae60c63e980afa81e7c604a69dd6092d70cbe7a7d68e2132191e"
+    },
+    {
+      "path": "data/equipment/catalog.json",
+      "bytes": 52495,
+      "sha256": "8318e9eb05134bc2c9ed09d90633ec36fbf6c9e80556d4c56a9842c1d81dd6b6"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/LICENSE",
+      "bytes": 1078,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-base.so.0.24.0",
+      "bytes": 920352,
+      "sha256": "2f2a527afa5b40c30153b67f7645a237a10555ccb0f6234ca1987fea322c2955"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-alderlake.so",
+      "bytes": 1195328,
+      "sha256": "a6b2924b16935e81efdb14c3ca0d83921fd4b2d9516c57cc419e009cfb716b5c"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-cannonlake.so",
+      "bytes": 1336224,
+      "sha256": "f6e660e2ceafc147dc43f25df19a39aaf24c37d4e620bf442203c3de0ca42776"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-cascadelake.so",
+      "bytes": 1332128,
+      "sha256": "0f947413086fc2f71be2505cbe1d10f57c7bf31727b967e751dfe289c5c9562a"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-cooperlake.so",
+      "bytes": 1332192,
+      "sha256": "861deb0365bed11d574cceee51d5c21c990dd0720fe49c9ff9c738471080f469"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-haswell.so",
+      "bytes": 1199424,
+      "sha256": "b7298d8dd0142bc92b05b97deb66253035f5bf559d7912f641abf55f3b84a477"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-icelake.so",
+      "bytes": 1332128,
+      "sha256": "8d0d617ac5820eba8052c88125d24ab2470af91bcf7f4869b2c5ea47b5f94998"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-ivybridge.so",
+      "bytes": 1152928,
+      "sha256": "3b4852031f18d874693de932909cc00d3ffc2fc4f9c6d060ebef494ff962ba4f"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-piledriver.so",
+      "bytes": 1148832,
+      "sha256": "161e1e7cfc35094d4a3f5a85fffa473f8811b357d4655a129d7fc299f33c6b26"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-sandybridge.so",
+      "bytes": 1143616,
+      "sha256": "6277983794f8ae3b3679b24276e5b0ba25de2760b7ea93ae38682448c03848c5"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-sapphirerapids.so",
+      "bytes": 1598560,
+      "sha256": "2d02a28a92fb98f6060118fc9de599069dd7067dcaf7acae5719bf538ab72b67"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-skylakex.so",
+      "bytes": 1336224,
+      "sha256": "a3f255c8c7d218a10d6a5253362a02e685c27d98bb58c01bc2898df4b7ce986a"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-sse42.so",
+      "bytes": 940328,
+      "sha256": "b6ec7483554dab31ec86746888387643f751e3ee9710c53a707f72156a2bb23c"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-x64.so",
+      "bytes": 940496,
+      "sha256": "78555273bbf974a5857b8b7b58369f185a941d9ddb9fec6aef1c8121a2ed57ca"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-cpu-zen4.so",
+      "bytes": 1332192,
+      "sha256": "cb6c26269e09331d9d149399c7b5730afb48ac949073c3192780e9bf6db9dae4"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-rpc.so",
+      "bytes": 251072,
+      "sha256": "48083e2e16a4751d5ada8402109c0a52c921f52b34f01ffa45ef6da1f6407c5c"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml.so.0.24.0",
+      "bytes": 55184,
+      "sha256": "569c53469aceca5dd357d2c3e1570014ed73e676abb08d44971be4cb784d855c"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libllama-common.so.0.4.1",
+      "bytes": 6239736,
+      "sha256": "a066248e618c4ff226133e9f3d6d575e4671eceddfdad36754be9499f49acf1f"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libllama-server-impl.so",
+      "bytes": 7199800,
+      "sha256": "6856596f65f6fed4efcc2f462ebab505ed092bf3553714668a8fa4210a1324c9"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libllama.so.0.4.1",
+      "bytes": 4593312,
+      "sha256": "09f62256d92254c0675315423e399f20e24526d8e865146b4c9bc1993f066f50"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libmtmd.so.0.4.1",
+      "bytes": 1878008,
+      "sha256": "3cfca2f812f0b0fc58e64accd5fa22b125d9deeca06c49129441989fc471b25b"
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/llama-server",
+      "bytes": 17864,
+      "sha256": "79e312188dc1d75c28201771f106e91de470b5cebdd838d31bb4db25eecf5d39"
+    },
+    {
+      "path": "data/knowledge/runtime/models/Qwen3-0.6B-Q8_0.gguf",
+      "bytes": 639446688,
+      "sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031"
+    },
+    {
+      "path": "data/knowledge/runtime/models/Xenova/multilingual-e5-small/config.json",
+      "bytes": 658,
+      "sha256": "cb99455288675345e1a4f411438d5d0adbba5fbd3a67ea4fb03c015433b996c1"
+    },
+    {
+      "path": "data/knowledge/runtime/models/Xenova/multilingual-e5-small/onnx/model_quantized.onnx",
+      "bytes": 118308185,
+      "sha256": "f80102d3f2a1229f387d3c81909990d8945513e347b0eab049f7de3c6f98c193"
+    },
+    {
+      "path": "data/knowledge/runtime/models/Xenova/multilingual-e5-small/special_tokens_map.json",
+      "bytes": 167,
+      "sha256": "d05497f1da52c5e09554c0cd874037a083e1dc1b9cfd48034d1c717f1afc07a7"
+    },
+    {
+      "path": "data/knowledge/runtime/models/Xenova/multilingual-e5-small/tokenizer.json",
+      "bytes": 17082730,
+      "sha256": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39"
+    },
+    {
+      "path": "data/knowledge/runtime/models/Xenova/multilingual-e5-small/tokenizer_config.json",
+      "bytes": 443,
+      "sha256": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/rag/RAG-ACTUAL-2026-09-21T10-34-09-385Z/report.json",
+      "bytes": 9879,
+      "sha256": "edd346224c69a428ea34605a64a2b15627504f0f028e7edc7af44e7ced66ac86"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/goal.document.original.md",
+      "bytes": 36287,
+      "sha256": "55d2e2a4eaac35e4b16c948b22bfe56c73fae04802787921f5c2639146cb4d12"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/goal.input.txt",
+      "bytes": 36286,
+      "sha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/g0-protocol-v1.md",
+      "bytes": 12124,
+      "sha256": "e7f257c72feb993807e5faa420c56674f06f3bdf5e112b8155cbbef994027dec"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/requirements/scope-freeze.v1.0.md",
+      "bytes": 11210,
+      "sha256": "e778d20e8ddb78bcd62d89fec6354c46795dd385ebc35b7cdf4208eca54cb2d9"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.body.md",
+      "bytes": 20661,
+      "sha256": "5339f3cd43df552e3bda5da24fbef2e72dc49f9cd1ea77bba401dadb6548f2db"
+    },
+    {
+      "path": "public/assets/cranes/maeda-mc305.glb",
+      "bytes": 1062092,
+      "sha256": "37e1e64d7ec86be6e66b94f32f37521a43eef9e9d25dbbd36d5ecbbb7db4dc71"
+    },
+    {
+      "path": "resources/blender/safety-simulator/HANDOFF.md",
+      "bytes": 4365,
+      "sha256": "b09d0c4c5ca143e07670b78ec93e3661d808ee2efc122c53def1c4f01b972734"
+    },
+    {
+      "path": "resources/blender/safety-simulator/artifact-manifest.json",
+      "bytes": 21475,
+      "sha256": "8c37f448288ed4712081ff96d323a4388ffba07e68ee34fc604fc5c2312412e0"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/README.md",
+      "bytes": 8055,
+      "sha256": "dece3d24de3df00a7158570186e5cfff4a759a12a7a514345392c9020f4c1174"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/build_maeda.py",
+      "bytes": 4042,
+      "sha256": "cb9cea60eb38fbba944a3b5ca109d9ae07490d3699bad961436bc57f65ed2e35"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-carrier-detail.png",
+      "bytes": 1625554,
+      "sha256": "c3d67ca3dda4f233b8adf044f42e70b3df8edb983946679091feb2a54f742417"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-mc305.blend",
+      "bytes": 194501,
+      "sha256": "83c242db2dd53707960a6882d1c7563b746a2c78add215966ba0cdd5815e371f"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-overview.png",
+      "bytes": 1404574,
+      "sha256": "01224bf452dd2e4c8e2066881786b4fc1c6cec0fdb3abbc641c6c9502c9d49da"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-side.png",
+      "bytes": 1291955,
+      "sha256": "218e9c6fb934f8a9b39b9fe2292fe61d2710b06e09e42d4cebaa7e6240498455"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/pentagonal_shell.py",
+      "bytes": 1656,
+      "sha256": "62ef37f8e74456ae35b57d610f93f1e74c8935a45c10c1e9b2cef45c88c3fdaf"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/pose.py",
+      "bytes": 2533,
+      "sha256": "c72c257df3ec2c5582aa08d63fae2ad18d18a171f5d5d8efd2f7f1883aa3f80d"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/rig-catalog.json",
+      "bytes": 2547,
+      "sha256": "9f0da8bfc982842df17bce56ff93d903ea2bc486511f3bc1c27881ff052cb2c4"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/rig-contract.json",
+      "bytes": 2922,
+      "sha256": "433eb172abedcb2a7472136b9ceed1744b3fe968c6db587a59b224451cdda390"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/rig_builder.py",
+      "bytes": 4060,
+      "sha256": "00819ce33fa116ac6148a197c9baa414c56d04580301be19a93227e0d73bef5c"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/run_qd010.py",
+      "bytes": 4949,
+      "sha256": "bac8e91c6b1f4ed75ee557dc8751e209c07eee141b93c796af05dc59eb95ed81"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/shell_topology.py",
+      "bytes": 3690,
+      "sha256": "71bcc71737d92c6f00c992b7e3c77e43f20eeef6ce3e13159cbcd898865c8f5c"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verification.json",
+      "bytes": 8741,
+      "sha256": "c648074abbfe2c828b5f8e1a40a522b6f2a2f9fbe7b26d1e3b81664c73840e04"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_maeda.py",
+      "bytes": 5970,
+      "sha256": "f21779d0714b8b548d1c7a12c5f5076d54f3672a719a3e0e884328b259fbb487"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_rig.py",
+      "bytes": 4411,
+      "sha256": "0f9a6c8fac8368fa205b02897fd36a74baf553898c19480fbb38eca7a03491bf"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_shapes.py",
+      "bytes": 5171,
+      "sha256": "6653766df00fdc05328030aed2629ed1cc5aabd4b5e68c09a3c40257be784cd4"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_static_geometry.py",
+      "bytes": 2300,
+      "sha256": "7dc8b2048dff8d2dfc7bd5ded59c1f4cb76d65f754e40ac48a3f065d924a5499"
+    },
+    {
+      "path": "runtime-artifacts/c2-validation/frame-format-equivalence.json",
+      "bytes": 883,
+      "sha256": "599859f3d397b82ac7a32e4cf807b173be78c03678ea4e897ebbef16efbe819c"
+    },
+    {
+      "path": "runtime-artifacts/c2-validation/frame-route-pre-format.ts.txt",
+      "bytes": 3834,
+      "sha256": "a106fb7cb40ca183d62032d386f250a0ff5fa889af1403e04024b2b46c01ba4f"
+    },
+    {
+      "path": "runtime-artifacts/c3-validation/QD007-camera-source.json",
+      "bytes": 2936,
+      "sha256": "b2e3ad7f75e1a2369d02faf2a0226e6189089a98934de6d246553d4bdef28031"
+    },
+    {
+      "path": "runtime-artifacts/c3-validation/frame-route-c2-before.ts.txt",
+      "bytes": 3840,
+      "sha256": "10f23725504176483a0afab36de2b8b7ce9eb7708be0d84aa427545571e11971"
+    },
+    {
+      "path": "runtime-artifacts/c3-validation/qd007-source-ready.json",
+      "bytes": 1853,
+      "sha256": "dd1d0fbeedec7ee7f94e8b4c059e13ad1a54a5b41b5b55ad0313e5e18975cb25"
+    },
+    {
+      "path": "runtime-artifacts/c4-build-origin.json",
+      "bytes": 183223,
+      "sha256": "7467d328b72f0f7939c439528df5a49f91310b0ea1dae9f2474519c28dffce3b"
+    },
+    {
+      "path": "runtime-artifacts/c4-reuse-binding.json",
+      "bytes": 17779,
+      "sha256": "8c5e6f3119d8f23f826089ece2fcde9824bbd3580e95a5095cde77c170bcfbb2"
+    },
+    {
+      "path": "runtime-artifacts/c4-source-build-binding.json",
+      "bytes": 189114,
+      "sha256": "aef2a123773895a4a9efd65afaa33d41c860c8d1f361ed02b513166d9ed4374c"
+    },
+    {
+      "path": "runtime-artifacts/c4-validation/QD008-fire-evidence-applicability.json",
+      "bytes": 6229,
+      "sha256": "a59963d79b2aa634d8c9203d2c01dd1c1727c541b7344525e56f4decac80d3b5"
+    },
+    {
+      "path": "runtime-artifacts/c4-validation/c4-lint.json",
+      "bytes": 433,
+      "sha256": "b1eba4a2070907bb6c4c14374db46766e1f2e986d284d44b460679861ad4f977"
+    },
+    {
+      "path": "runtime-artifacts/c4-validation/c4-typecheck.json",
+      "bytes": 438,
+      "sha256": "951c073dccd63ec7f2d13c00ee859034dff14b7b2e0debe162d7fe02c91c57ae"
+    },
+    {
+      "path": "runtime-artifacts/c4-validation/dependency-materialization.json",
+      "bytes": 641,
+      "sha256": "e3b66992689710e3961aadca2154f2086e62a00a92c5ce4089ddd52e73f31dd3"
+    },
+    {
+      "path": "runtime-artifacts/c4-validation/qd008-backend-source-ready.json",
+      "bytes": 4344,
+      "sha256": "f5a98ced8e586c0388ad4736196cdc60bb7b25214523f64114197c519d2e8030"
+    },
+    {
+      "path": "runtime-artifacts/c4-validation/qd008-preservation.json",
+      "bytes": 18996,
+      "sha256": "6c87796299436afcfc87266143d27b6632f2efee70d0ab1328ceb36ba034936a"
+    },
+    {
+      "path": "runtime-artifacts/c4-validation/qd008-rag-source-ready.json",
+      "bytes": 8611,
+      "sha256": "abc565547050d4b6ace55237cbc62751c9263db44fd1d2404dc190b24e4247fd"
+    },
+    {
+      "path": "runtime-artifacts/c4-validation/web-build-c4.json",
+      "bytes": 472,
+      "sha256": "fdbc07ad1423fac14b708a786df13e233053573810eeb864ac3bd6a162db7743"
+    },
+    {
+      "path": "runtime-artifacts/c5-build-origin.json",
+      "bytes": 188856,
+      "sha256": "95908bfde8ebe4d620187f74cde00de18aae870a6f23b30f4c88bdb867b514d3"
+    },
+    {
+      "path": "runtime-artifacts/c5-reuse-binding.json",
+      "bytes": 20113,
+      "sha256": "4488574b720b8990d14c37e103c2b0a306aa3b2b717204747d989a2bcd1daced"
+    },
+    {
+      "path": "runtime-artifacts/c5-source-build-binding.json",
+      "bytes": 201982,
+      "sha256": "b7bce3f2661ebf0d9dd402e7df5b511033f665e6b7633f2bb2a23e611c6eecf6"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/c5-interrupted-build01-preservation.json",
+      "bytes": 5209,
+      "sha256": "1383371d26cf10e213ce3b02bf9530516bbfce3187e3ec16961e9e2d1d49f33c"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/c5-lint.json",
+      "bytes": 433,
+      "sha256": "0d3f35d43d519082446973eaa8191577ff0e812df53c0567bb215c9360794dc6"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/c5-retry02-authorization.json",
+      "bytes": 700,
+      "sha256": "d5131761ab2975afbaf895fd8038f254a23000ab63607beff67011122b84b73c"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/c5-retry02-preflight.json",
+      "bytes": 997,
+      "sha256": "54d5b78df1f381929c7f991e9cdfb2de3f8e5f0f663a54259de084803105b674"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/c5-retry02-release.json",
+      "bytes": 262,
+      "sha256": "f312aff95a6c41d9a5b126b17a0885481ab9d3ef94adb4374aeacf121e66ad3a"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/c5-typecheck.json",
+      "bytes": 529,
+      "sha256": "c6fc2fef79aee282e96c5daea0df86039c194cbe7f9081076e95368ab15410af"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/dependency-materialization.json",
+      "bytes": 619,
+      "sha256": "23a1fd59cce6f8398822887eb405496133b09efce760511f5e5bc3245809f61c"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proof-index.json",
+      "bytes": 45209,
+      "sha256": "1baf81cf355a75bd928984f74997e59c2d28dd3726eb78d4cddf0cb90cb749ed"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__asset-review__qd010__README.md.txt",
+      "bytes": 7887,
+      "sha256": "cfded196ccd353ee9f8bf468653f8a632492dcb4611c8e29216cc87f1a5defe9"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__asset-review__qd010__corrected-geometry-receipt.json.txt",
+      "bytes": 52375,
+      "sha256": "552ead70646871d90318a5c50dfbf13958dbae7ccc70655a67081e569d5c01fd"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__asset-review__qd010__glb-reader.mjs.txt",
+      "bytes": 4966,
+      "sha256": "79b9349375a9fd28e53b43d37eefe0b02dd49581bcb5b3e56c454af5d39667ff"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__asset-review__qd010__inspect-qd010.mjs.txt",
+      "bytes": 10806,
+      "sha256": "2dde0f2c8dedd7be5b232669a43d86ded236edf0362fe32d422ab242ce45cff8"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__asset-review__qd010__shell-geometry.mjs.txt",
+      "bytes": 3667,
+      "sha256": "75a02a02d0c70cda48a4ec2a7ae94126abc0813390db193fd5183644c6bb1b51"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__scene-rig__maeda-qd010__equipment-rig.test.before-format.ts.txt",
+      "bytes": 11185,
+      "sha256": "0e2818041079c5f55e42416d5cd5b5c721a25d5f0e7cfde9cc55978a0c0af7f9"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__scene-rig__maeda-qd010__format-check.log.txt",
+      "bytes": 42,
+      "sha256": "c09468b79a681cf7262b33a862d3dd6dddd4214940d467e089f475ab3f26ca5d"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__scene-rig__maeda-qd010__format-equivalence-failed.log.txt",
+      "bytes": 678,
+      "sha256": "e39e4280315b636ddca612b8978b6a19a15d7f2713e5a3abd6b6068f57991bd4"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__scene-rig__maeda-qd010__format.log.txt",
+      "bytes": 39,
+      "sha256": "78a7b7841fcf3ae76b271395cca2c122ee1c9682ae2088c11a6bcf53697f71b0"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__scene-rig__maeda-qd010__green.log.txt",
+      "bytes": 193,
+      "sha256": "f3090a82f72eb94344fe36bd55437dec299c633c3960c51bfa7efd8ce69cca75"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__scene-rig__maeda-qd010__receipt.md.txt",
+      "bytes": 8298,
+      "sha256": "376996a001c68a4c9e8515a8c032f3853ae663b23e2ffa299b17d854c6fd8c3e"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/.omo__teams__team-08d29e60__artifacts__scene-rig__maeda-qd010__red.log.txt",
+      "bytes": 13508,
+      "sha256": "afde3405576bcd510ea68c4d4ec1a224bf4e12aae3ff50f1efe5316c1df4167e"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__C5-source-ready.json.txt",
+      "bytes": 9360,
+      "sha256": "db839c15c8b88b45476437ee6a22f40f1a464c7a52a7b278332ff1faefa802d3"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__D2-affected-green-command.json.txt",
+      "bytes": 1348,
+      "sha256": "282bef318d1013745b64e86742e4d5edd0756f7a90fbde57f87ef81bdc158de4"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__D2-affected-green.json.txt",
+      "bytes": 35042,
+      "sha256": "d3563411a3e042b06f7efe12ac166024178c9e48536b90362c4da139d9e1559d"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__D2-affected-green.log.txt",
+      "bytes": 16345,
+      "sha256": "34c5a293fe9f1dfff23f43310f1b5c47d82f0f008b8713939f1a68aa9f341e9f"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__D2-scoped-biome-command.json.txt",
+      "bytes": 561,
+      "sha256": "f5954b7bcfa8238936613832e530a722682c7f8d194ef7a39f7f9ec915da16fd"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__D2-static-failure.json.txt",
+      "bytes": 800,
+      "sha256": "94f2b91459a56363ef942b5c6820001dacb5552c5b31f4b05846fe2225887239"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__D2-typecheck-command.json.txt",
+      "bytes": 295,
+      "sha256": "82688dc6840a4254f96c197313b7994cbfe0f2e6aca847d3998b1161c2bee388"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__D2-typecheck.log.txt",
+      "bytes": 621,
+      "sha256": "2b54c6f9513aed1c2cf0597b1acdbe4334825b1c58f64d1e9cd7a5acab96610e"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__affected-green-command.json.txt",
+      "bytes": 1282,
+      "sha256": "be2ed71edfba388d72f185105f985499cadf8a424ef42437bffd077e3024af33"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__affected-green.json.txt",
+      "bytes": 37068,
+      "sha256": "1147b32b75344f2cfc4cfd494ae6c1c35b973f824263f3e9090693b2c630b9c5"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__affected-green.log.txt",
+      "bytes": 17753,
+      "sha256": "53d9e60b46659061b2b6e27c4d6c27fde7c7a6432a1b7414c10dd5e85a14e4d4"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__directed-D1-failure.json.txt",
+      "bytes": 1931,
+      "sha256": "1cae2a694ddb515ba9473b912c45aabe09230d0e3cf00e8d4b0448a2207dc1f6"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-scoped-biome-command.json.txt",
+      "bytes": 521,
+      "sha256": "aa886f181b8e32a172c619e1d55fae3241b97be8a9d6a880856f2c7c543a321c"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-scoped-biome.log.txt",
+      "bytes": 42,
+      "sha256": "ae4a3667534db6ee7abbbf6d889af79362b4c27bce1411febed1f7038b30e463"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-source.json.txt",
+      "bytes": 1596,
+      "sha256": "b04b634ac54e68c9c43974a44e5af3ec1de22aa4740f7202f8a33d29edc7b351"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-source__arrival-intent.ts.txt.txt",
+      "bytes": 7140,
+      "sha256": "881cb0562ad5a73ba1c0cb10fe78ac724845501c689d32239bcf21b6949ff8cd"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-source__equipment-guidance-context.test.ts.txt.txt",
+      "bytes": 5166,
+      "sha256": "a17b17a10c980e47358cbd4714bebb6a0c8b3e22bec244bc6c551dc876580c43"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-source__evaluate.ts.txt.txt",
+      "bytes": 7240,
+      "sha256": "e9846de7d57f5dd854acda63dd39d3ad45660f6fea2345797bbffe24baef6e51"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-source__guidance-recovery.ts.txt.txt",
+      "bytes": 3899,
+      "sha256": "22dbf240bad1dc7539fa4740310536787b01233ff1e204c2f0ead889eb49a116"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-source__runtime-equipment-guidance-context.integration.test.ts.txt.txt",
+      "bytes": 6725,
+      "sha256": "c4f4d4d7ddac26fd7c8a180b3b2e82f84691bfd50b4235140a61fc2599b5a733"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-typecheck-command.json.txt",
+      "bytes": 270,
+      "sha256": "db662c27cbe8f4015f85f2efa3ed254af719ef3a70c6de4c032e6a2b5d0f8404"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__final-typecheck.log.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__focused-red-command.json.txt",
+      "bytes": 1021,
+      "sha256": "9813ffbc0bc1b8031d5d861c77d0fde7e17b63ea7ebe6b0451399649ef8c2045"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__focused-red.json.txt",
+      "bytes": 15012,
+      "sha256": "3a18bbf463f46965a65d4910945f7a2be63cfae949e8ea32a86b08e70fe37721"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__focused-red.log.txt",
+      "bytes": 7881,
+      "sha256": "f4e3b0fead8377019f00d7e4c8bb021b29fa45307d88e2bb781c5063a5ec0984"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__independent-review-D1-hold.md.txt",
+      "bytes": 4448,
+      "sha256": "d517ac9ba6fbd13d429999e8fb65299757a192c1176c5d4ad84899c7102a6aae"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__independent-review.md.txt",
+      "bytes": 7818,
+      "sha256": "68c3a47f714614996b9492c16f69319e2f49489d1cef072a2cb1f3d6a8c20cbd"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__backend__runtime__QD009__typing-correction.json.txt",
+      "bytes": 996,
+      "sha256": "fb566c87f1cc37a79bc69dd2bbab38624aec8564217812aecf8717d2b916d5fa"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__orchestrator__c5-backend-source-integrity-01.json.txt",
+      "bytes": 10043,
+      "sha256": "70484a0d65aa0befe832bbd64ed42c8bd045943894503a953ec9b997827c3bda"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__orchestrator__c5-design-source-integrity-01.json.txt",
+      "bytes": 30580,
+      "sha256": "7b485a19e9c4c495e936e9b8bf0d5b6669aeece80a9aae34e31006a7d637e0db"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__qa__g4__candidate-cd8a2428__QD009-current-guidance-removed-risk.json.txt",
+      "bytes": 9722,
+      "sha256": "609e34d61bf98934dbbdcffcd2cde5d968e3a2b9818dab40295d81f57f85c45e"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__qa__g4__candidate-cd8a2428__QD009-directed-scope-concurrence-v1.json.txt",
+      "bytes": 2517,
+      "sha256": "7fe3b5e6870ba4b1c1d77ad1935eb8044fe1a8962b2dd70361ad1aa91f88950f"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__qa__g4__candidate-cd8a2428__QD010-maeda-boom-section-count.json.txt",
+      "bytes": 5901,
+      "sha256": "5d62072b426766337ca981878539462bfa306a3dc48124d42607e415506fe628"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__qa__g4__candidate-cd8a2428__QD010-maeda-profile-addendum-v1.json.txt",
+      "bytes": 3114,
+      "sha256": "5b5bd9521210ab62f8593a8faa26a4512a0897872359387d529df3f9dc0a8202"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/docs__goal-runs__GS-SAFETY-SIM-001-20260921T084101Z__evidence__technical__c5-final-owner-boundary.json.txt",
+      "bytes": 902,
+      "sha256": "820a3377a00a26855e85eca0cc0f1e581cd6f6d6030275a154d9c54db74ae317"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__PLAN.md.txt",
+      "bytes": 2049,
+      "sha256": "f8078f2103d20cb161095eaa43bbd0c429992cf4ba3f8e771fc68d7c97d5eb0d"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__README.md.txt",
+      "bytes": 6458,
+      "sha256": "9c3d247d546ae274cdeb215db2775ef81ea2cf947ecc7a89cb23c6d0b9bef5ce"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__data__equipment__build-catalog.mjs.txt",
+      "bytes": 13902,
+      "sha256": "30d877e0178a616e7dbb0eb4cd2c048cddae53253559aba83ba3c24bdf3a08c4"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__data__equipment__catalog.json.txt",
+      "bytes": 51368,
+      "sha256": "3a0cdc1ab07bd993028fac9c462c34e3d7812b8baf4447c9ad34a40db6c7758b"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__public__assets__cranes__maeda-mc305.glb.txt",
+      "bytes": 1081424,
+      "sha256": "eb3d7746ad92d2905c494027bd77b84bc35f302fc677bbcc695e4b15c4af7a59"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__HANDOFF.md.txt",
+      "bytes": 2805,
+      "sha256": "c2c6ee13c79697be127ae65bf643ce0058ecc1d64f43f35ee3dd0a7f9a4bec3b"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__artifact-manifest.json.txt",
+      "bytes": 17631,
+      "sha256": "51c6adfd6e5190a11b8bc04300a45634b2486ebda64f58a7affd444027c321de"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__README.md.txt",
+      "bytes": 6583,
+      "sha256": "3d434b5bc9242f91be76a9d08961002603b3112658ab58cbaa0ac0e6ac792fc3"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__build_maeda.py.txt",
+      "bytes": 3907,
+      "sha256": "5dbb6f04c2cecaf0fc0c45666714f92ed0bae26ffc5e8d73eb93821952553aec"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__geometry.py.txt",
+      "bytes": 4873,
+      "sha256": "ccfd1ed87181b0850bdfff47b414be09a8aae950a915c2f9dee6b309f1ed1d74"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__maeda-carrier-detail.png.txt",
+      "bytes": 1636181,
+      "sha256": "16d400e3de31139f9a8043a15947b8f07081336431e498e807c9edd8d47ebeff"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__maeda-mc305.blend.txt",
+      "bytes": 204100,
+      "sha256": "cba8dafae9d037952ff689bf21e78370f77164e24455fe59272026bde91da61d"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__maeda-overview.png.txt",
+      "bytes": 1425062,
+      "sha256": "f3fc9266ab1502efa91554ceecf91f34db7db55afcadd9b9ea5bef244c53403e"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__maeda-side.png.txt",
+      "bytes": 1326497,
+      "sha256": "a82a8eaa31dc8d001cc8856ac1af1694e0eb025d10cd6b144c0379fa986d6096"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__pose.py.txt",
+      "bytes": 2527,
+      "sha256": "17192b59c6598f58d95b083b928f33d3287148f92814bb8a7a96de96fbdbd2c2"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__render_endpoints.py.txt",
+      "bytes": 4035,
+      "sha256": "c85c9a781676d53c8ce3af9e76ee76de82c418cb776d9d68003f5d54c9a34a2e"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__rig-catalog.json.txt",
+      "bytes": 2333,
+      "sha256": "e262ee88d787c01f620763a3c40a4570cb1d99893a31b5d7b2924b6754d2ffbb"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__rig-contract.json.txt",
+      "bytes": 2389,
+      "sha256": "86f804ce48ab8019ddd553eb24b72a9d1c5a3728a6d1046c800c25b5315217db"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__rig_builder.py.txt",
+      "bytes": 3955,
+      "sha256": "fba68a118f9b98ababa60412ee912ed3a9216fa2c877da19ae63b4a86d2db925"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__studio.py.txt",
+      "bytes": 2196,
+      "sha256": "fa977b77cfeb1554b3e691d1a7b298b5373c779ff0cd4e3181e81b0dd7bd34fc"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__superstructure.py.txt",
+      "bytes": 2819,
+      "sha256": "3f477ab40d407aedc772950b417e7da81a5a797d6d112051e608dc4865fcdc5b"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__undercarriage.py.txt",
+      "bytes": 4281,
+      "sha256": "04372dc0b588a9c34623ce45d38519de72268a43e78d7ef53c5c3716019fa508"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__verification.json.txt",
+      "bytes": 5123,
+      "sha256": "8fe1f41f8113aabdbf8575ddd9aa2e6fb52595fe743c6bde788b015b7e6cb644"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__verify_maeda.py.txt",
+      "bytes": 5103,
+      "sha256": "d48b1ea6076b6c6f9679d675740b9305bad2368dcc64b4906b23812075103932"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__before__resources__blender__safety-simulator__maeda-site__maeda__verify_rig.py.txt",
+      "bytes": 4367,
+      "sha256": "31520c098cb6b68aff973f9ef1a65fdadd32b2bf50da23ca8de2b74592c3bc4a"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__binding-check.log.txt",
+      "bytes": 5047,
+      "sha256": "acbc1d321ca5ae024eed866c9b02ce3ffa7902d64573309dd0f5399ecb392cdd"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__catalog-and-unaffected-proof.json.txt",
+      "bytes": 6212,
+      "sha256": "a27ee4de8897f8238230864b232ba135aae9c714904f37f8c7142e84979ab6b4"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__changed-files.json.txt",
+      "bytes": 24182,
+      "sha256": "d8885d4886fea74fdbd404c37239630aec37db2f4fa576edf33d5755eaaae52f"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__corrected-static-geometry.json.txt",
+      "bytes": 299778,
+      "sha256": "377a6ac6dc3242a5a5c112ca1d7191a50a3b6815b5cbe7ccc2f088e1eb7d5b3f"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__engine-exit-code.txt.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__engine.log.txt",
+      "bytes": 205,
+      "sha256": "d1ed653054dbefd8e36163c465a02a77595ab38634c9dee598e90a533ac4d774"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__equipment-rig.format-image.ts.txt.txt",
+      "bytes": 11574,
+      "sha256": "389682454b8bed0c7a98e8d666de19cfc792a835d12820303647efe97a8443bc"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__execution-receipt.json.txt",
+      "bytes": 3244,
+      "sha256": "c1bb974c711093558af9079a0e8b22b280cb665f8ceb06cabbb18db5a978c43f"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__format-equivalence.json.txt",
+      "bytes": 1694,
+      "sha256": "ff0bf6cea129c6174759e40541ec0d1f438de6ef86cc3259e0befc9232febf97"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__format-image.stderr.log.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__imported-conformance.json.txt",
+      "bytes": 1078,
+      "sha256": "3cb72901d24e9ebe451d8feec58520649f4650e925d77a84c12a2c63fb8c8371"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__inventory.mjs.txt",
+      "bytes": 2527,
+      "sha256": "1fd3d04f9139f3b236625413c7658acf9c47f679e712de1a9ce9eb1a1e488fcf"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__make-source-ready.mjs.txt",
+      "bytes": 4677,
+      "sha256": "d0c50a7a5ba02259ea2339eedcf42ee8368b605b202b107ffde6f0a208b657b6"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__native-process-end.json.txt",
+      "bytes": 102,
+      "sha256": "c7171607a1044c8c1349073b47a4142996cf37438024d46d9b73258f9e5a701a"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__old-source-red.json.txt",
+      "bytes": 1342,
+      "sha256": "7140e17b7213e73baf3c6bebe06455a00cdfae3327d97ed1423062fd5dc13fe8"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__old-static-geometry.json.txt",
+      "bytes": 299778,
+      "sha256": "377a6ac6dc3242a5a5c112ca1d7191a50a3b6815b5cbe7ccc2f088e1eb7d5b3f"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__producer-end-utc.txt.txt",
+      "bytes": 21,
+      "sha256": "6fabba23647ea24df40356356a819bd6655f96b9135ac925978a4c1bce1b5987"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__producer-exit-code.txt.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__producer-start-utc.txt.txt",
+      "bytes": 21,
+      "sha256": "04291338c8489a518a3f9b136f728b966212cf9dd4952a593914af2906f24c32"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__producer.log.txt",
+      "bytes": 18322,
+      "sha256": "a665c6db216b69ebced4f20d926d4e00d11ff43af5e84277ed06c58c27d31469"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__prove-format-equivalence.mjs.txt",
+      "bytes": 3033,
+      "sha256": "5dff590f356a889a1c81c88fc179d04f10099f4c71ef557e122822a7a2710cae"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__publish-manifest.mjs.txt",
+      "bytes": 4841,
+      "sha256": "fe0e894c48c733617509201324f99bf7dc077147eab09464d4b140fbfa3d7a2c"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__run-producer.sh.txt",
+      "bytes": 777,
+      "sha256": "4ecd017939d4f166adaffc2c71966a60f195a2252772bb757f92bd86d53aaf0f"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__source-conformance.json.txt",
+      "bytes": 1078,
+      "sha256": "3cb72901d24e9ebe451d8feec58520649f4650e925d77a84c12a2c63fb8c8371"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__source-ready.json.txt",
+      "bytes": 17956,
+      "sha256": "1342aa16e8a5e4204cbc5d35cfa83cc1fe186312655f6ce01a4d5d2339c3dc71"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__static-preservation.json.txt",
+      "bytes": 322,
+      "sha256": "a25a864a355b1c48b5222c977b73be0639dd4c40fe5e571ef5e2dfb07e96a742"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__verification.json.txt",
+      "bytes": 8741,
+      "sha256": "c648074abbfe2c828b5f8e1a40a522b6f2a2f9fbe7b26d1e3b81664c73840e04"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/proofs/resources__blender__safety-simulator__maeda-site__maeda__qd010-correction-01__verify-bindings.mjs.txt",
+      "bytes": 3405,
+      "sha256": "40dd60b75ff788d0a16bd1b00b2d96b9b473f8655fa4374313c4099372940bbe"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/qd009-backend-source-ready.json",
+      "bytes": 9360,
+      "sha256": "db839c15c8b88b45476437ee6a22f40f1a464c7a52a7b278332ff1faefa802d3"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/qd010-design-source-ready.json",
+      "bytes": 17956,
+      "sha256": "1342aa16e8a5e4204cbc5d35cfa83cc1fe186312655f6ce01a4d5d2339c3dc71"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/web-build-c5-retry02.json",
+      "bytes": 563,
+      "sha256": "eb3fcd56a51ed4a176dcb484989d2c05df74fd1975a359cddb618c18d45c14ce"
+    },
+    {
+      "path": "runtime-artifacts/c5-validation/web-build-c5.json",
+      "bytes": 563,
+      "sha256": "eb3fcd56a51ed4a176dcb484989d2c05df74fd1975a359cddb618c18d45c14ce"
+    },
+    {
+      "path": "runtime-artifacts/g3-launch-c4.md",
+      "bytes": 6232,
+      "sha256": "c7dd1db24ba53e8c3346330d64d9483394f0b652dfd76044f18d3732a69cee30"
+    },
+    {
+      "path": "runtime-artifacts/g3-launch-c5.md",
+      "bytes": 6948,
+      "sha256": "6573fdd53ed6843506ab6c792c918baececbcb5fe61ce001bcbb543832255957"
+    },
+    {
+      "path": "runtime-artifacts/mobile-build-binding.json",
+      "bytes": 23826,
+      "sha256": "432d42b846b4c40bd1353ce83cf0fbdc52d0ea15268fbfd5a3d716d1115ae72b"
+    },
+    {
+      "path": "runtime-artifacts/mobile-candidate-4/binding.json",
+      "bytes": 23332,
+      "sha256": "4274a7272e2b619c728e123886a8c39eeabea58ab9cf4dac2fb6860df6858462"
+    },
+    {
+      "path": "runtime-artifacts/mobile-candidate-4/candidate-4-source-sha256.txt",
+      "bytes": 14170,
+      "sha256": "bf5c0632ee554ea0b8fa671e7c5e9e29696e823ea54bd431e72452448f92151a"
+    },
+    {
+      "path": "runtime-artifacts/mobile-candidate-4/producer-manifest.json",
+      "bytes": 5049,
+      "sha256": "5a9b4b985dff4476f17c507aa9f14b756633a7e321882fe6b925acc805a6bb75"
+    },
+    {
+      "path": "runtime-artifacts/models.json",
+      "bytes": 35301,
+      "sha256": "8fedc0720ebd03e8f82a33c2f12072a7fa6ebd78d765cb713e86d5f5847a9dc0"
+    },
+    {
+      "path": "runtime-artifacts/provenance/c2-historical-evidence.json",
+      "bytes": 20526,
+      "sha256": "da4a802389b9de2634a346054346afcd53ede51df7134a813290980ee40e607c"
+    },
+    {
+      "path": "runtime-artifacts/provenance/c2-historical-evidence.tar.gz",
+      "bytes": 30756168,
+      "sha256": "865067790f0946b39f121e5573ce10c31fe68e0ff6aa1c23a8196482ea2dc894"
+    },
+    {
+      "path": "runtime-artifacts/web-artifacts-c4.json",
+      "bytes": 78464,
+      "sha256": "f2d08db9ecef8ce789949cf0733ac5233724f03a25c08240da08146242f85996"
+    },
+    {
+      "path": "runtime-artifacts/web-artifacts-c5.json",
+      "bytes": 78464,
+      "sha256": "8fe5f9641c5edac82fd4b05e1298ab43de341cbc110340f166f86f2b7ca65419"
+    },
+    {
+      "path": "src/components/scene/equipment-rig.test.ts",
+      "bytes": 11574,
+      "sha256": "389682454b8bed0c7a98e8d666de19cfc792a835d12820303647efe97a8443bc"
+    },
+    {
+      "path": "src/server/simulation/arrival-intent.ts",
+      "bytes": 7140,
+      "sha256": "881cb0562ad5a73ba1c0cb10fe78ac724845501c689d32239bcf21b6949ff8cd"
+    },
+    {
+      "path": "src/server/simulation/equipment-guidance-context.test.ts",
+      "bytes": 5166,
+      "sha256": "a17b17a10c980e47358cbd4714bebb6a0c8b3e22bec244bc6c551dc876580c43"
+    },
+    {
+      "path": "src/server/simulation/evaluate.ts",
+      "bytes": 7240,
+      "sha256": "e9846de7d57f5dd854acda63dd39d3ad45660f6fea2345797bbffe24baef6e51"
+    },
+    {
+      "path": "src/server/simulation/guidance-recovery.ts",
+      "bytes": 3899,
+      "sha256": "22dbf240bad1dc7539fa4740310536787b01233ff1e204c2f0ead889eb49a116"
+    },
+    {
+      "path": "src/server/simulation/runtime-equipment-guidance-context.integration.test.ts",
+      "bytes": 6725,
+      "sha256": "c4f4d4d7ddac26fd7c8a180b3b2e82f84691bfd50b4235140a61fc2599b5a733"
+    }
+  ],
+  "modelLinks": [
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-base.so",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 17,
+      "mode": "0777",
+      "linkText": "libggml-base.so.0",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libggml-base.so.0.24.0",
+      "target": {
+        "bytes": 920352,
+        "mode": "0755",
+        "sha256": "2f2a527afa5b40c30153b67f7645a237a10555ccb0f6234ca1987fea322c2955"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libggml-base.so",
+          "linkText": "libggml-base.so.0"
+        },
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libggml-base.so.0",
+          "linkText": "libggml-base.so.0.24.0"
+        }
+      ]
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml-base.so.0",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 22,
+      "mode": "0777",
+      "linkText": "libggml-base.so.0.24.0",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libggml-base.so.0.24.0",
+      "target": {
+        "bytes": 920352,
+        "mode": "0755",
+        "sha256": "2f2a527afa5b40c30153b67f7645a237a10555ccb0f6234ca1987fea322c2955"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libggml-base.so.0",
+          "linkText": "libggml-base.so.0.24.0"
+        }
+      ]
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml.so",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 12,
+      "mode": "0777",
+      "linkText": "libggml.so.0",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libggml.so.0.24.0",
+      "target": {
+        "bytes": 55184,
+        "mode": "0755",
+        "sha256": "569c53469aceca5dd357d2c3e1570014ed73e676abb08d44971be4cb784d855c"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libggml.so",
+          "linkText": "libggml.so.0"
+        },
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libggml.so.0",
+          "linkText": "libggml.so.0.24.0"
+        }
+      ]
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libggml.so.0",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 17,
+      "mode": "0777",
+      "linkText": "libggml.so.0.24.0",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libggml.so.0.24.0",
+      "target": {
+        "bytes": 55184,
+        "mode": "0755",
+        "sha256": "569c53469aceca5dd357d2c3e1570014ed73e676abb08d44971be4cb784d855c"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libggml.so.0",
+          "linkText": "libggml.so.0.24.0"
+        }
+      ]
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libllama-common.so",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 20,
+      "mode": "0777",
+      "linkText": "libllama-common.so.0",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libllama-common.so.0.4.1",
+      "target": {
+        "bytes": 6239736,
+        "mode": "0755",
+        "sha256": "a066248e618c4ff226133e9f3d6d575e4671eceddfdad36754be9499f49acf1f"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libllama-common.so",
+          "linkText": "libllama-common.so.0"
+        },
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libllama-common.so.0",
+          "linkText": "libllama-common.so.0.4.1"
+        }
+      ]
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libllama-common.so.0",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 24,
+      "mode": "0777",
+      "linkText": "libllama-common.so.0.4.1",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libllama-common.so.0.4.1",
+      "target": {
+        "bytes": 6239736,
+        "mode": "0755",
+        "sha256": "a066248e618c4ff226133e9f3d6d575e4671eceddfdad36754be9499f49acf1f"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libllama-common.so.0",
+          "linkText": "libllama-common.so.0.4.1"
+        }
+      ]
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libllama.so",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 13,
+      "mode": "0777",
+      "linkText": "libllama.so.0",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libllama.so.0.4.1",
+      "target": {
+        "bytes": 4593312,
+        "mode": "0755",
+        "sha256": "09f62256d92254c0675315423e399f20e24526d8e865146b4c9bc1993f066f50"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libllama.so",
+          "linkText": "libllama.so.0"
+        },
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libllama.so.0",
+          "linkText": "libllama.so.0.4.1"
+        }
+      ]
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libllama.so.0",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 17,
+      "mode": "0777",
+      "linkText": "libllama.so.0.4.1",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libllama.so.0.4.1",
+      "target": {
+        "bytes": 4593312,
+        "mode": "0755",
+        "sha256": "09f62256d92254c0675315423e399f20e24526d8e865146b4c9bc1993f066f50"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libllama.so.0",
+          "linkText": "libllama.so.0.4.1"
+        }
+      ]
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libmtmd.so",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 12,
+      "mode": "0777",
+      "linkText": "libmtmd.so.0",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libmtmd.so.0.4.1",
+      "target": {
+        "bytes": 1878008,
+        "mode": "0755",
+        "sha256": "3cfca2f812f0b0fc58e64accd5fa22b125d9deeca06c49129441989fc471b25b"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libmtmd.so",
+          "linkText": "libmtmd.so.0"
+        },
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libmtmd.so.0",
+          "linkText": "libmtmd.so.0.4.1"
+        }
+      ]
+    },
+    {
+      "path": "data/knowledge/runtime/bin/llama-b10964/libmtmd.so.0",
+      "role": "llama-server-runtime",
+      "type": "symlink",
+      "linkBytes": 16,
+      "mode": "0777",
+      "linkText": "libmtmd.so.0.4.1",
+      "resolvedTarget": "data/knowledge/runtime/bin/llama-b10964/libmtmd.so.0.4.1",
+      "target": {
+        "bytes": 1878008,
+        "mode": "0755",
+        "sha256": "3cfca2f812f0b0fc58e64accd5fa22b125d9deeca06c49129441989fc471b25b"
+      },
+      "chain": [
+        {
+          "path": "data/knowledge/runtime/bin/llama-b10964/libmtmd.so.0",
+          "linkText": "libmtmd.so.0.4.1"
+        }
+      ]
+    }
+  ],
+  "modelArtifactSetSha256": "991e301bd5b6baddeef7218eb453cccaab41d7aeb223d822344e3bb173323539",
+  "selectedApk": "build/mobile-candidate/gs-safety-1.0.0-candidate-4-debug.apk",
+  "mobileSourceRows": 300,
+  "allOtherPriorSourceRowsUnchanged": true,
+  "historicalEvidenceNotNewExecution": true
+}

@@ -1,0 +1,153 @@
+{
+  "id": "EQ-APPROACH",
+  "version": "1.0.0",
+  "label": {
+    "ko": "장비 접근과 회피",
+    "en": "Equipment approach and avoidance"
+  },
+  "mode": "equipment",
+  "mapId": "SITE-CONSTRUCTION-01",
+  "mapVersion": "1.0.0",
+  "synthetic": true,
+  "seed": 20260921,
+  "durationMs": 20000,
+  "clockEpoch": "2026-09-21T09:00:00Z",
+  "policyId": "POLICY-EQUIPMENT",
+  "initial": {
+    "equipment": {
+      "equipmentId": "EQUIPMENT-A",
+      "modelId": "sk1265-at6",
+      "position": {
+        "x": 30,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 0,
+      "slewDeg": 0,
+      "observedAtMs": 0,
+      "source": "mock",
+      "connected": true
+    },
+    "workers": [
+      {
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 65,
+          "y": 25
+        },
+        "profile": {
+          "workerId": "WORKER-A",
+          "version": 1,
+          "preferredLocale": "ko",
+          "locale": "ko",
+          "canUseStairs": true,
+          "speedMps": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "needsAssistance": false,
+          "needsCompanion": false,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      {
+        "workerId": "WORKER-B",
+        "position": {
+          "x": 90,
+          "y": 40
+        },
+        "profile": {
+          "workerId": "WORKER-B",
+          "version": 1,
+          "preferredLocale": "en",
+          "locale": "en",
+          "canUseStairs": false,
+          "speedMps": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "needsAssistance": true,
+          "needsCompanion": true,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      }
+    ],
+    "sensors": [],
+    "hazards": [],
+    "blockedPathIds": []
+  },
+  "events": [
+    {
+      "id": "EQ-APPROACH-001",
+      "atMs": 1000,
+      "type": "equipment.pose",
+      "position": {
+        "x": 35,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 2.5,
+      "slewDeg": 0
+    },
+    {
+      "id": "EQ-APPROACH-002",
+      "atMs": 5000,
+      "type": "equipment.pose",
+      "position": {
+        "x": 35,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 3,
+      "slewDeg": 0
+    },
+    {
+      "id": "EQ-APPROACH-003",
+      "atMs": 10000,
+      "type": "worker.position",
+      "workerId": "WORKER-A",
+      "position": {
+        "x": 65,
+        "y": 8
+      }
+    },
+    {
+      "id": "EQ-APPROACH-004",
+      "atMs": 15000,
+      "type": "equipment.pose",
+      "position": {
+        "x": 60,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 0,
+      "slewDeg": 0
+    }
+  ],
+  "expectedResults": [
+    {
+      "atMs": 1000,
+      "kind": "guidance",
+      "workerId": "WORKER-A",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "route": "required",
+      "destinationIds": ["REFUGE-01", "REFUGE-02"],
+      "note": "Assert the current authoritative guidance, not generated explanation."
+    }
+  ],
+  "coverage": ["AC-01", "AC-02:approach", "AC-05:ko-en"]
+}

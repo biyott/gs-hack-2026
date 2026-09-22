@@ -1,0 +1,201 @@
+{
+  "id": "EQ-PROFILE-ROUTES",
+  "version": "1.0.0",
+  "label": {
+    "ko": "이동 제약별 경로와 미확인 프로필",
+    "en": "Profile routes and unknown capabilities"
+  },
+  "mode": "equipment",
+  "mapId": "SITE-CONSTRUCTION-01",
+  "mapVersion": "1.0.0",
+  "synthetic": true,
+  "seed": 20260921,
+  "durationMs": 16000,
+  "clockEpoch": "2026-09-21T09:00:00Z",
+  "policyId": "POLICY-EQUIPMENT",
+  "initial": {
+    "equipment": {
+      "equipmentId": "EQUIPMENT-A",
+      "modelId": "sk1265-at6",
+      "position": {
+        "x": 30,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 0,
+      "slewDeg": 0,
+      "observedAtMs": 0,
+      "source": "mock",
+      "connected": true
+    },
+    "workers": [
+      {
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 65,
+          "y": 25
+        },
+        "profile": {
+          "workerId": "WORKER-A",
+          "version": 1,
+          "preferredLocale": "ko",
+          "locale": "ko",
+          "canUseStairs": true,
+          "speedMps": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "needsAssistance": false,
+          "needsCompanion": false,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      {
+        "workerId": "WORKER-B",
+        "position": {
+          "x": 90,
+          "y": 40
+        },
+        "profile": {
+          "workerId": "WORKER-B",
+          "version": 1,
+          "preferredLocale": "en",
+          "locale": "en",
+          "canUseStairs": false,
+          "speedMps": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "needsAssistance": true,
+          "needsCompanion": true,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      {
+        "workerId": "WORKER-C",
+        "position": {
+          "x": 65,
+          "y": 25
+        },
+        "profile": {
+          "workerId": "WORKER-C",
+          "version": 1,
+          "preferredLocale": null,
+          "locale": "ko",
+          "canUseStairs": null,
+          "speedMps": null,
+          "needsAssistance": null,
+          "needsCompanion": null,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": null
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      }
+    ],
+    "sensors": [],
+    "hazards": [],
+    "blockedPathIds": []
+  },
+  "events": [
+    {
+      "id": "EQ-PROFILE-ROUTES-001",
+      "atMs": 1000,
+      "type": "equipment.pose",
+      "position": {
+        "x": 35,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 2.5,
+      "slewDeg": 0
+    },
+    {
+      "id": "EQ-PROFILE-ROUTES-002",
+      "atMs": 1000,
+      "type": "worker.position",
+      "workerId": "WORKER-B",
+      "position": {
+        "x": 65,
+        "y": 25
+      }
+    },
+    {
+      "id": "EQ-PROFILE-ROUTES-003",
+      "atMs": 8000,
+      "type": "worker.profile",
+      "profile": {
+        "workerId": "WORKER-A",
+        "version": 2,
+        "preferredLocale": "ko",
+        "locale": "ko",
+        "canUseStairs": false,
+        "speedMps": {
+          "min": 0.8,
+          "max": 1.4
+        },
+        "needsAssistance": false,
+        "needsCompanion": false,
+        "notificationPreferences": {
+          "voice": true,
+          "vibration": true
+        },
+        "confirmedAt": "2026-09-21T09:00:00Z"
+      }
+    }
+  ],
+  "expectedResults": [
+    {
+      "atMs": 1000,
+      "kind": "profile-route",
+      "workerId": "WORKER-B",
+      "forbiddenEdgeIds": ["EDGE-EGRESS-A-SOUTH"],
+      "assistanceRequired": true,
+      "note": "Stairs are forbidden by the confirmed profile; assistance is required but never automatically accepted."
+    },
+    {
+      "atMs": 1000,
+      "kind": "guidance",
+      "workerId": "WORKER-C",
+      "actionCode": "ROUTE_UNAVAILABLE",
+      "route": "empty",
+      "destinationIds": [],
+      "note": "A missing verified profile yields profile-unverified, no route, and assistanceRequired=true; it never means unconstrained capability."
+    },
+    {
+      "atMs": 8000,
+      "kind": "profile-route",
+      "workerId": "WORKER-A",
+      "forbiddenEdgeIds": ["EDGE-EGRESS-A-SOUTH"],
+      "assistanceRequired": false,
+      "note": "Profile version two invalidates any previous stairs route."
+    },
+    {
+      "atMs": 1000,
+      "kind": "profile-route",
+      "workerId": "WORKER-C",
+      "forbiddenEdgeIds": ["EDGE-EGRESS-A-SOUTH"],
+      "assistanceRequired": true,
+      "note": "Unverified capabilities require support and cannot yield an unconstrained route."
+    }
+  ],
+  "coverage": ["AC-05:stairs", "AC-05:assistance", "AC-05:unknown-profile", "AC-05:profile-version"]
+}

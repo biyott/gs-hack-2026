@@ -1,0 +1,141 @@
+{
+  "version": "1.0",
+  "recordedAt": "2026-09-21T16:44:02.168Z",
+  "owner": "/root/qa_lead",
+  "status": "METHOD_FROZEN_BEFORE_NEW_EXECUTION; exact derivative files awaited",
+  "authority": "Root QD008 correction01 scope and Technical/Backend private seam; QA owns input binding and result disposition",
+  "originalFile": "qa/rag/clock-binding-v1.1/derived/retrieval-cases.v1.json",
+  "originalSha256": "7ba78b45eb36871960c2ea00db7a31dc0220492415dbb1cf2f264f0b61564951",
+  "originalCasesPreserved": [
+    {
+      "testId": "Q-RAG-07-02",
+      "name": "heading-change",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "GUIDANCE_UPDATED",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "장비 방향 변경 새 안내 버전 이전 안내 폐기",
+      "expectedDocumentIds": [
+        "EQ-002"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-006"
+      ],
+      "expectedActionCodes": [
+        "GUIDANCE_UPDATED"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Heading change explains current guidance; generated context binds current route and profile."
+    },
+    {
+      "testId": "Q-RAG-07-06",
+      "name": "fire-route-change",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "fire-gas",
+        "actionCode": "GUIDANCE_UPDATED",
+        "hazardTypes": [
+          "fire"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "화재 통로 차단 기존 경로 변경 새 안내",
+      "expectedDocumentIds": [
+        "FG-002"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-005"
+      ],
+      "expectedActionCodes": [
+        "GUIDANCE_UPDATED"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Fire change explains only current validated route/version."
+    }
+  ],
+  "privateShape": {
+    "applicability": "optional object",
+    "fireInvalidatedPreviousRoute": "optional boolean",
+    "equipmentDirectionChanged": "optional boolean"
+  },
+  "rules": [
+    "Missing/false facts remain separate negative controls. No query-word or routeVersion heuristic proves production history.",
+    "Q07-02 original described direction-change may map to equipmentDirectionChanged=true only in a named controlled retrieval derivative, other input/expectation fields identical.",
+    "Q07-06 fact-only derivative retains original scenarioPolicy=null. Do not silently replace it or mark original expected matched as passing when the new complete-condition gate excludes it.",
+    "A distinct explicit-evacuation reroute-positive card may add true fire fact AND scenarioPolicy=evacuation, retaining expected FG-002/GUIDANCE_UPDATED. It is newly explicit context, not a claim that original null means evacuation.",
+    "Original85 raw inputs/expectedIDs/forbiddenIDs/actions/outcomes and all historical reports remain unchanged.",
+    "Controlled fixture true facts test retrieval gating only. Independent actual engine history extraction must prove first-fire exclusion, real prior-route invalidation with valid replacement, initial/profile-only exclusion and real equipment direction-change/current-primary scope.",
+    "No corpus content or review provenance change is authorized by this QA method.",
+    "All executed derivatives require exact candidate/source/harness/input/expected hashes and separate result records; no previous-candidate behavioral PASS transfer."
+  ],
+  "sourceBasis": [
+    "goal.input.txt:60,62,69",
+    "sources/emul-004.body.md:127-128",
+    "knowledge/fire-gas/FG-002.md:36,58,64",
+    "knowledge/equipment/EQ-002.md applicability body"
+  ],
+  "overallVerdict": "NOT_ISSUED"
+}

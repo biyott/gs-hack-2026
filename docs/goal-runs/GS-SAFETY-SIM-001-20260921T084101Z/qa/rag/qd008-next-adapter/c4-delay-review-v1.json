@@ -1,0 +1,420 @@
+{
+  "schemaVersion": "c4-delay-independent-review-v1",
+  "classification": "BOUNDED_PHASE_CORRECTION_SUPPORTED",
+  "scope": "Saved artifacts/source text only; no runtime/imports/model/database/tests. Separate review; frozen raw statuses/checks unchanged.",
+  "candidate": {
+    "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+    "manifestSha256": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d",
+    "originalArtifacts": [
+      {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/real-delay-initial.json",
+        "sha256": "dbd3245d60fd2c7e1d325f5de8d715bec3e57fa249bab5a418e2583460a782de"
+      },
+      {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/real-delay-result.json",
+        "sha256": "7182e7136f45160fae1ee1d2d0187368941cb96e72c964ba1fa0e4e91e0512c6"
+      },
+      {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/real-delay-commands-sse.json",
+        "sha256": "bdb4b1e171d298da271589a4f57b703c34b7f2e13a97dd98926da8e6b5dd66be"
+      },
+      {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-model-captures.json",
+        "sha256": "355d9d71f6d36f322794a35e0b977e40cfaf9f585797eb7f6bbdf3902a0a6dd3"
+      }
+    ]
+  },
+  "original": {
+    "status": "OBSERVED_FAILURE",
+    "passed": 7,
+    "total": 9,
+    "checks": [
+      {
+        "name": "actual upstream completed and exact response identity was retained",
+        "passed": true
+      },
+      {
+        "name": "primary HTTP was available before downstream hold",
+        "passed": true
+      },
+      {
+        "name": "authorized administrator action completed during the blocked call",
+        "passed": true
+      },
+      {
+        "name": "pending and final primary/route context remains intact",
+        "passed": true
+      },
+      {
+        "name": "real product deadline records timeout with no accepted late generation",
+        "passed": false
+      },
+      {
+        "name": "client cancellation reached the fault transport",
+        "passed": true
+      },
+      {
+        "name": "fault delay timer and abort listener were released",
+        "passed": true
+      },
+      {
+        "name": "no late source evidence or supplemental SSE",
+        "passed": false
+      },
+      {
+        "name": "immutable first envelope bytes remain equal",
+        "passed": true
+      }
+    ]
+  },
+  "derived": {
+    "passed": 13,
+    "total": 13,
+    "checks": [
+      {
+        "name": "target is the exact fresh primary in initial HTTP and persisted envelope",
+        "passed": true
+      },
+      {
+        "name": "all observed snapshots bind the target run",
+        "passed": true
+      },
+      {
+        "name": "one target-version fallback event binds one new timeout generation",
+        "passed": true
+      },
+      {
+        "name": "no new or post-target accepted generation for the stable ID",
+        "passed": true
+      },
+      {
+        "name": "all previously captured retrieval/generation records are immutable",
+        "passed": true
+      },
+      {
+        "name": "initial immutable guidance history is identical finally",
+        "passed": true
+      },
+      {
+        "name": "existing evidence is retained without addition or mutation",
+        "passed": true
+      },
+      {
+        "name": "post-target SSE contains the exact target primary and no target supplement",
+        "passed": true
+      },
+      {
+        "name": "ordered contiguous SSE has no recorded capture failure",
+        "passed": true
+      },
+      {
+        "name": "admin response and during/final snapshots retain the exact target primary",
+        "passed": true
+      },
+      {
+        "name": "primary HTTP precedes hold and speed command completes during hold",
+        "passed": true
+      },
+      {
+        "name": "unique armed actual upstream capture completed before downstream client abort",
+        "passed": true
+      },
+      {
+        "name": "proxy-owned delay timer and listener released after client cancellation",
+        "passed": true
+      }
+    ]
+  },
+  "independentChecks": [
+    {
+      "name": "original nine checks/status copied without change",
+      "verified": true,
+      "evidence": "Original OBSERVED_FAILURE; checks 5 and 8 remain false."
+    },
+    {
+      "name": "four provenance artifact hashes match saved bytes",
+      "verified": true,
+      "evidence": "All four supplied original artifact digests independently recomputed."
+    },
+    {
+      "name": "primary and administrator HTTP raw bytes bind snapshots",
+      "verified": true,
+      "evidence": "Both response SHA-256 values and complete JSON snapshots match."
+    },
+    {
+      "name": "all raw SSE snapshot payloads equal saved parsed snapshots",
+      "verified": true,
+      "evidence": "All 10 raw data payloads match without projection differences."
+    },
+    {
+      "name": "exact target primary binds initial HTTP and versioned history",
+      "verified": true,
+      "evidence": "WORKER-A primary3/profile2; generated17:43:55.715Z."
+    },
+    {
+      "name": "target timeout generation binds new versioned fallback event",
+      "verified": true,
+      "evidence": "One new generation; fallback event f9fa4459-20b5-40fb-842f-2d5958437128 -> 9ad7e5c8-b9b0-4548-83b0-5db7571059f2."
+    },
+    {
+      "name": "accepted generation belongs to already published warmup",
+      "verified": true,
+      "evidence": "Warmup accepted at55.697Z before target55.715Z; primary1/profile1 supplement in frame7."
+    },
+    {
+      "name": "no new accepted generation for target run",
+      "verified": true,
+      "evidence": "Two new rows only: matched retrieval and timeout generation."
+    },
+    {
+      "name": "prior RAG records, complete guidance history and evidence unchanged",
+      "verified": true,
+      "evidence": "Two prior RAG rows, three guidance-history rows, one evidence row retained exactly."
+    },
+    {
+      "name": "post-target frames retain exact target and no supplemental publication",
+      "verified": true,
+      "evidence": "Frames8–10 contain unchanged target primary; no target supplement event."
+    },
+    {
+      "name": "SSE order, sequence, event IDs and receipt clock agree",
+      "verified": true,
+      "evidence": "10 frames; stream sequences39–48 contiguous; no recorded capture failure."
+    },
+    {
+      "name": "admin and during/final snapshots retain primary and speed2",
+      "verified": true,
+      "evidence": "Administrator command status200; speed2 and exact target envelope in all three snapshots."
+    },
+    {
+      "name": "primary precedes hold and admin completes inside hold",
+      "verified": true,
+      "evidence": "Primary ended20789.235753ms; hold21037.037066ms; admin21041.344444–21051.031508ms; client complete25792.307626ms."
+    },
+    {
+      "name": "one-shot capture association is unique within target generation interval",
+      "verified": true,
+      "evidence": "Capture52fa700e-4e24-4ef7-b8bb-36a7b0d8124e; 21 total captured calls, exactly one received within target interval. Completion join remains null in target row."
+    },
+    {
+      "name": "raw upstream bytes and provider identity hashes agree",
+      "verified": true,
+      "evidence": "Request1038bytes/response638bytes; retained actual response ID/model/message hash. No raw content reproduced."
+    },
+    {
+      "name": "upstream completed before hold and downstream client abort",
+      "verified": true,
+      "evidence": "Actual upstream complete21036.887161ms; hold starts0.149905ms later; inference had already completed."
+    },
+    {
+      "name": "proxy delay timer and listener released",
+      "verified": true,
+      "evidence": "Only proxy-owned hold timer/listener; no claim for all application resources or 30 cycles."
+    },
+    {
+      "name": "immutable incident firstGuidance retained",
+      "verified": true,
+      "evidence": "Full saved firstGuidance arrays remain equal."
+    }
+  ],
+  "target": {
+    "runId": "46e31029-fd32-4e0a-b550-834e52701434",
+    "workerId": "WORKER-A",
+    "guidanceId": "GUIDANCE:46e31029-fd32-4e0a-b550-834e52701434:cf1ea59f-9feb-48e9-a498-e553526b1216:WORKER-A",
+    "guidanceVersion": 3,
+    "primaryGuidanceVersion": 3,
+    "profileVersion": 2,
+    "generatedAt": "2026-09-21T17:43:55.715Z"
+  },
+  "phaseEvidence": {
+    "targetFallbackEventId": "f9fa4459-20b5-40fb-842f-2d5958437128",
+    "targetGenerationId": "9ad7e5c8-b9b0-4548-83b0-5db7571059f2",
+    "warmupAcceptedGenerationIds": [
+      "41f3a4a1-6ca2-4203-b902-d2fe2ea2a294"
+    ],
+    "earlierSupplementOrders": [
+      7
+    ],
+    "retainedEvidenceCount": 1,
+    "firstTargetFrameOrder": 8,
+    "targetSupplementOrders": [],
+    "targetSupplementEventIds": [],
+    "newAcceptedGenerationIds": [],
+    "postTargetAcceptedGenerationIds": [],
+    "armedCaptureId": "52fa700e-4e24-4ef7-b8bb-36a7b0d8124e"
+  },
+  "timing": {
+    "serviceStartedAt": "2026-09-21T17:43:55.722Z",
+    "serviceCompletedAt": "2026-09-21T17:44:00.724Z",
+    "recordedServiceElapsedMs": 5001.9227820000015,
+    "primaryHttp": {
+      "startedUtc": "2026-09-21T17:43:55.712Z",
+      "endedUtc": "2026-09-21T17:43:55.721Z",
+      "startedMs": 20780.148596,
+      "endedMs": 20789.235753,
+      "status": 200
+    },
+    "adminHttp": {
+      "startedUtc": "2026-09-21T17:43:55.973Z",
+      "endedUtc": "2026-09-21T17:43:55.983Z",
+      "startedMs": 21041.344444,
+      "endedMs": 21051.031508,
+      "status": 200
+    },
+    "proxy": {
+      "received": {
+        "utc": "2026-09-21T17:43:55.750Z",
+        "monotonicMs": 20818.424133
+      },
+      "requestComplete": {
+        "utc": "2026-09-21T17:43:55.751Z",
+        "monotonicMs": 20818.82844
+      },
+      "upstreamDispatch": {
+        "utc": "2026-09-21T17:43:55.751Z",
+        "monotonicMs": 20818.830214
+      },
+      "upstreamHeaders": {
+        "utc": "2026-09-21T17:43:55.968Z",
+        "monotonicMs": 21036.559368
+      },
+      "upstreamComplete": {
+        "utc": "2026-09-21T17:43:55.969Z",
+        "monotonicMs": 21036.887161
+      },
+      "clientComplete": {
+        "utc": "2026-09-21T17:44:00.724Z",
+        "monotonicMs": 25792.307626
+      },
+      "totalMs": 4973.883493000001,
+      "upstreamMs": 218.0569469999973,
+      "proxyElapsedExcludingUpstreamMs": 4755.826546000004
+    },
+    "fault": {
+      "id": "Q-RAG-08-REAL-DELAY-01",
+      "delayMs": 6000,
+      "captureId": "52fa700e-4e24-4ef7-b8bb-36a7b0d8124e",
+      "state": "cancelled",
+      "armedAt": {
+        "utc": "2026-09-21T17:43:55.707Z",
+        "monotonicMs": 20775.393066
+      },
+      "holdStarted": {
+        "utc": "2026-09-21T17:43:55.969Z",
+        "monotonicMs": 21037.037066
+      },
+      "holdEnded": {
+        "utc": "2026-09-21T17:44:00.724Z",
+        "monotonicMs": 25792.18314
+      },
+      "actualWaitMs": 4755.146074,
+      "clientAborted": true,
+      "cancellation": "client-aborted",
+      "timerActive": false,
+      "abortListenerActive": false
+    },
+    "exact5000msAbortClaim": false,
+    "activeInferenceCancellationDemonstrated": false
+  },
+  "wire": {
+    "captureId": "52fa700e-4e24-4ef7-b8bb-36a7b0d8124e",
+    "providerMode": "actual-upstream-with-fault-delay",
+    "outcome": "client-aborted",
+    "statusCode": 200,
+    "requestBytes": 1038,
+    "responseBytes": 638,
+    "requestSha256": "8aa2ec0eb70deb459e8af5b02b6d394aa9f5b0050751e4a1ccc672b7b9ab1c9b",
+    "responseSha256": "36db7d2e8ee17939d3fb4501208b514cd5e501d805fc58741d2d5d8e0c30c92c",
+    "providerCallId": "chatcmpl-VCxLX55f5QOYtB6dx8X3UpdcmsScmu31",
+    "modelReturned": "Qwen3-0.6B-Q8_0",
+    "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15"
+  },
+  "rawFailureExplanation": [
+    {
+      "checkNumber": 5,
+      "reason": "The predicate rejects any accepted generation sharing guidanceId, including immutable warmup primary1 generation already completed/published before primary3."
+    },
+    {
+      "checkNumber": 8,
+      "reason": "The predicate rejects any same-guidanceId evidence or supplement anywhere in the stream. One retained warmup evidence row and frame7 warmup supplement satisfy it before target frame8. Neither is a late target output."
+    }
+  ],
+  "hardGaps": [
+    "Only supplied snapshots/SSE/DB projections are classified; future publication and full HTTP completion are not inferred.",
+    "Raw wire bytes, provenance file hashes and original artifact immutability are caller-owned verification; this function performs no I/O.",
+    "Recorded elapsed time does not prove cancellation at exactly 5000 ms or every application timer/listener cleanup.",
+    "Upstream completion followed by downstream abort cannot establish cancellation of active inference; 30-cycle cleanup is not demonstrated.",
+    "Rendered visibility, physical audio, duplicate publication and subsequent primary transition require separate evidence.",
+    "Target fallback has no persisted provider completion join; capture association uses one-shot ID and chronological phase evidence."
+  ],
+  "sourceAnchors": {
+    "originalPredicates": "http-delay-control.ts:72–79",
+    "originalObservationScope": "http-delay-control.ts:50–53,82–85",
+    "proxyReadsResponseBeforeHold": "model-capture-proxy.ts:82–96",
+    "proxyHoldCleanup": "model-delay-state.ts:46–71"
+  },
+  "inputHashes": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/real-delay-initial.json",
+      "bytes": 197778,
+      "sha256": "dbd3245d60fd2c7e1d325f5de8d715bec3e57fa249bab5a418e2583460a782de"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/real-delay-result.json",
+      "bytes": 287331,
+      "sha256": "7182e7136f45160fae1ee1d2d0187368941cb96e72c964ba1fa0e4e91e0512c6"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/real-delay-phase-derived.json",
+      "bytes": 6578,
+      "sha256": "bbc96dc8461383d0660757d31ebda302fb413b43781783567d845db3d8f2bcf5"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/real-delay-commands-sse.json",
+      "bytes": 578288,
+      "sha256": "bdb4b1e171d298da271589a4f57b703c34b7f2e13a97dd98926da8e6b5dd66be"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-model-captures.json",
+      "bytes": 41931,
+      "sha256": "355d9d71f6d36f322794a35e0b977e40cfaf9f585797eb7f6bbdf3902a0a6dd3"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/52fa700e-4e24-4ef7-b8bb-36a7b0d8124e.metadata.json",
+      "bytes": 2476,
+      "sha256": "0050807496ed624df93a5e02c770b748cf7c362435e2d519690bf43c3516a45a"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/52fa700e-4e24-4ef7-b8bb-36a7b0d8124e.request.bin",
+      "bytes": 1038,
+      "sha256": "8aa2ec0eb70deb459e8af5b02b6d394aa9f5b0050751e4a1ccc672b7b9ab1c9b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/52fa700e-4e24-4ef7-b8bb-36a7b0d8124e.response.bin",
+      "bytes": 638,
+      "sha256": "36db7d2e8ee17939d3fb4501208b514cd5e501d805fc58741d2d5d8e0c30c92c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428-r1/http-delay-control.ts",
+      "bytes": 7684,
+      "sha256": "6491603fbdda30086027ad948d34f41b0dda9bab3d18a890ef7037eb61f6aac5"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428-r1/delay-phase-oracle.ts",
+      "bytes": 17740,
+      "sha256": "e286e7eea716c8186bd5f73eb9dd8195388d14ba178579cc22ad476e8c95df52"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428-r1/model-capture-proxy.ts",
+      "bytes": 12549,
+      "sha256": "44a66bce651ad89a7bc1b0a15ba936182bde35e9a5f14c10940df835bd371123"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428-r1/model-delay-state.ts",
+      "bytes": 4764,
+      "sha256": "139f09b8570db3a8e988bee1ca0ff004c08fb0c9bddf3237e0819d13d2401725"
+    }
+  ],
+  "fullCaseVerdict": "NOT_ISSUED",
+  "overallAcceptanceVerdict": "NOT_ISSUED"
+}

@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-09-21T15:58:41.767Z",
+  "candidateId": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+  "sourceSha256": "10f658c44bc4bd511302900e02b467058b6dc558b767f2acc4b2c49773d5f6ab",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "manifestSha256": "8d9b031f68374ea939dcdebb570e76aeba4b09d1154165cab53d186e7d27c4bc",
+  "overallVerdict": "NOT_ISSUED",
+  "leafOnly": true,
+  "lanes": [
+    {
+      "lane": "code-quality",
+      "agent": "/root/qa_lead/review_code_c3",
+      "status": "CLEAR_SCOPED_STATIC",
+      "report": "qa/reviews/candidate-1a7c95cd/code/GS-SAFETY-SIM-001-code-review.md",
+      "reportSha256": "13c592711ef27bb23aca9e0d3f5a59208c29f464c81eca842f1c154a8f092848"
+    },
+    {
+      "lane": "security",
+      "agent": "/root/qa_lead/review_security_c3",
+      "status": "CLEAR_SCOPED_STATIC",
+      "report": "qa/reviews/candidate-1a7c95cd/security/security-review.md",
+      "reportSha256": "46dcee8aa621d1da40a27bd70c6bc916b10eb6f68a9e55a230b79d35a77be15b"
+    },
+    {
+      "lane": "context",
+      "agent": "/root/qa_lead/review_context_c3",
+      "status": "PASS_SCOPED_CONTEXT",
+      "report": "qa/reviews/candidate-1a7c95cd/context/context-report.md",
+      "reportSha256": "3c8a7bb417f331a5ecb03f4bda94cdaa08aa9a74f08c8446429a30c69c865a9d"
+    },
+    {
+      "lane": "hands-on-execution",
+      "status": "NOT_DISPATCHED",
+      "reason": "Fresh executor at W4 receives actual clean-DB/runbook execution resources; earlier inventory-only report does not close this lane"
+    },
+    {
+      "lane": "goal-and-constraints",
+      "status": "NOT_DISPATCHED",
+      "reason": "Fresh final review after current-candidate execution packets; missing physical prerequisites remain BLOCKED"
+    }
+  ],
+  "previousReportsPreserved": [
+    "qa/review-work-lanes.json",
+    "qa/review-work-lanes-c2.json"
+  ]
+}

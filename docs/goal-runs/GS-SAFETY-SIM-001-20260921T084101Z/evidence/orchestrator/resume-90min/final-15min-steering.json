@@ -1,0 +1,11 @@
+{
+  "recordedAt": "2026-09-22T00:36:55.454Z",
+  "firstObservedAt": "2026-09-22T00:36:07Z",
+  "deadline": "2026-09-22T00:51:07Z",
+  "inputPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/goal.steering.final-15min-20260922T003607.input.txt",
+  "inputSha256": "3c547e72e5f6f4ccca1f774f6f7767621bd5b4f375a993e4a26dd464ec4fe649",
+  "previousDeadline": "2026-09-22T00:35:49Z",
+  "previousDeadlineMissed": true,
+  "goalScopeOrAcceptanceChanged": false,
+  "intent": "Verify running functionality and finish handoff within15minutes; no new feature work and no unverified completion claim."
+}

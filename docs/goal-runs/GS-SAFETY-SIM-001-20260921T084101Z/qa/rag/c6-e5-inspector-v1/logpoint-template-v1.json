@@ -1,0 +1,34 @@
+{
+  "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c5-e5-inspector-v1/source-binding.json",
+  "sourceSha256": "f7669ba2d67050268f1a86ee80cbdf65fe3b884ce967cea46e7dfefedc4fbf9b",
+  "points": [
+    {
+      "kind": "embedding-input",
+      "anchor": "let r=await s([...e],{pooling:\"mean\",normalize:!0})",
+      "expression": "{texts:e,identity:this.identity}",
+      "signal": "t",
+      "maxColumnShift": 20
+    },
+    {
+      "kind": "embedding-output",
+      "anchor": "return n.z.array(n.z.array(n.z.number().finite()).length(this.identity.dimensions)",
+      "expression": "{texts:e,vectors:i,identity:this.identity}",
+      "signal": "t",
+      "maxColumnShift": 40
+    },
+    {
+      "kind": "retrieval",
+      "anchor": "return e.logRun({id:(0,t.randomUUID)(),runId:s.runId,startedAt:r,completedAt:g.completedAt,phase:\"retrieval\"",
+      "expression": "{request:{...s,signal:undefined},trace:g}",
+      "signal": "s.signal",
+      "maxColumnShift": 20
+    },
+    {
+      "kind": "generation-join",
+      "anchor": "if(\"matched\"!==a.outcome)return y(a.outcome);let w=h()",
+      "expression": "{ragRunId:l,guidance:e.guidance,context:e.context,retrieval:a}",
+      "signal": "t",
+      "maxColumnShift": 20
+    }
+  ]
+}

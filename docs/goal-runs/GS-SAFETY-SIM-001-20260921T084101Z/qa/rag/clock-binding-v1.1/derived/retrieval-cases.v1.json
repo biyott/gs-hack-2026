@@ -1,0 +1,1111 @@
+{
+  "schemaVersion": "1.0",
+  "goalId": "GS-SAFETY-SIM-001",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "protocol": "g0-protocol-v1.0",
+  "owner": "/root/qa_lead/qa_rag",
+  "status": "FROZEN_INPUT_NOT_EXECUTED",
+  "clock": "2026-09-21T09:00:00Z",
+  "seed": 20260921,
+  "sourceBodies": {
+    "emul-003.body.md": "3de397aa1733fbda7d4ba4d9c510e147d6799c060e9a005d9a95132e6d16379e",
+    "emul-004.body.md": "5339f3cd43df552e3bda5da24fbef2e72dc49f9cd1ea77bba401dadb6548f2db"
+  },
+  "oracleRules": [
+    "Each matched expectedDocumentId is a required minimum evidence document. Additional documents are allowed only from allowedAdditionalDocumentIds and must independently pass all metadata, action, and applicability checks; all other unexpected documents are reported for review.",
+    "expectedActionCodes compares the unchanged engine-decided action, every selected explanatory procedure, and the generated semantic action; it is not a command for the LLM to choose an action.",
+    "Every forbiddenDocumentId is absent from returned chunks, evidence, generation request and accepted supplement.",
+    "For conflict, expectedDocumentIds are the trace.conflictDocumentIds witness set; returned chunks and generated evidence must be empty.",
+    "For no_match, returned chunks/evidence and accepted supplemental explanation are empty and reviewed primary guidance remains available.",
+    "fixtureSet values identify QA-owned fresh DB datasets. Negative records are only explicitly injected into isolated test indexes. Normal index cannot scan qa/rag or negative-fixtures.",
+    "scenarioPolicy move/shelter and hazard input tokens bind through a documented semantic adapter if product tokens differ; never alter expected behavior to match implementation.",
+    "All 20 cases run against real embedding retrieval for AC07 model evidence. Mock runs may diagnose orchestration but never replace real embedding evidence.",
+    "Every normal matched case records selected procedure applicability independently of ranking. Ranking similarity is never safety/correctness probability.",
+    "Locale belongs to integration generation context and is removed only from pure RetrievalRequest adapter, with identical semantic constraints preserved."
+  ],
+  "cases": [
+    {
+      "testId": "Q-RAG-07-01",
+      "name": "equipment-approach",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "ALERT_HAZARD",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "장비 접근 경보 EQUIPMENT-A ZONE-A 위험",
+      "expectedDocumentIds": [
+        "EQ-001"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-006"
+      ],
+      "expectedActionCodes": [
+        "ALERT_HAZARD"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Current equipment approach evidence explains the engine alert without creating a path."
+    },
+    {
+      "testId": "Q-RAG-07-02",
+      "name": "heading-change",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "GUIDANCE_UPDATED",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "장비 방향 변경 새 안내 버전 이전 안내 폐기",
+      "expectedDocumentIds": [
+        "EQ-002"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-006"
+      ],
+      "expectedActionCodes": [
+        "GUIDANCE_UPDATED"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Heading change explains current guidance; generated context binds current route and profile."
+    },
+    {
+      "testId": "Q-RAG-07-03",
+      "name": "stairs-forbidden",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": false,
+          "assistanceRequired": true,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "계단 이용 불가 확인된 이동 제약 회피 경로",
+      "expectedDocumentIds": [
+        "EQ-003"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-004",
+        "EQ-005"
+      ],
+      "expectedActionCodes": [
+        "FOLLOW_VALIDATED_ROUTE"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "WORKER-B's confirmed inability to use stairs is retained; no stair instruction or demographic inference."
+    },
+    {
+      "testId": "Q-RAG-07-04",
+      "name": "english-understanding",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "CONFIRM_UNDERSTANDING",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "en",
+        "fixtureSet": "normal"
+      },
+      "query": "Please explain the preferred language and confirm understanding of this guidance.",
+      "expectedDocumentIds": [
+        "COMMON-002"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-006"
+      ],
+      "expectedActionCodes": [
+        "CONFIRM_UNDERSTANDING"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Preferred English preserves meaning and does not equate receipt with understanding."
+    },
+    {
+      "testId": "Q-RAG-07-05",
+      "name": "position-interruption",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "POSITION_UNKNOWN",
+        "hazardTypes": [
+          "position-unknown"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "위치 수신 중단 현재 위치 미확인 지원",
+      "expectedDocumentIds": [
+        "EQ-005"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-006"
+      ],
+      "expectedActionCodes": [
+        "POSITION_UNKNOWN"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Unknown position must not produce a route or arrival claim."
+    },
+    {
+      "testId": "Q-RAG-07-06",
+      "name": "fire-route-change",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "fire-gas",
+        "actionCode": "GUIDANCE_UPDATED",
+        "hazardTypes": [
+          "fire"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "화재 통로 차단 기존 경로 변경 새 안내",
+      "expectedDocumentIds": [
+        "FG-002"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-005"
+      ],
+      "expectedActionCodes": [
+        "GUIDANCE_UPDATED"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Fire change explains only current validated route/version."
+    },
+    {
+      "testId": "Q-RAG-07-07",
+      "name": "demo-gas-alert",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "fire-gas",
+        "actionCode": "ALERT_HAZARD",
+        "hazardTypes": [
+          "gas"
+        ],
+        "substanceIds": [
+          "DEMO-GAS-X"
+        ],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "DEMO-GAS-X 가상 가스 경보 영향 구역",
+      "expectedDocumentIds": [
+        "FG-003"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-005"
+      ],
+      "expectedActionCodes": [
+        "ALERT_HAZARD"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Only DEMO-GAS-X evidence; no real gas identity/threshold/PPE/first-aid inference."
+    },
+    {
+      "testId": "Q-RAG-07-08",
+      "name": "shelter-policy-present",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": "shelter",
+        "simulationType": "fire-gas",
+        "actionCode": "SHELTER_PER_SCENARIO",
+        "hazardTypes": [
+          "gas"
+        ],
+        "substanceIds": [
+          "DEMO-GAS-X"
+        ],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "시나리오 정책에 따른 지정 실내 대기",
+      "expectedDocumentIds": [
+        "FG-005"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-004"
+      ],
+      "expectedActionCodes": [
+        "SHELTER_PER_SCENARIO"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Explicit applicable shelter policy and engine shelter action allow conditional explanation; no invented movement."
+    },
+    {
+      "testId": "Q-RAG-07-09",
+      "name": "shelter-policy-absent",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": "move",
+        "simulationType": "fire-gas",
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "hazardTypes": [
+          "gas"
+        ],
+        "substanceIds": [
+          "DEMO-GAS-X"
+        ],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "실내 대기 shelter 유효 경로를 따라 이동",
+      "expectedDocumentIds": [
+        "FG-004"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-005"
+      ],
+      "expectedActionCodes": [
+        "FOLLOW_VALIDATED_ROUTE"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Shelter words in query cannot override explicit move policy or the engine action."
+    },
+    {
+      "testId": "Q-RAG-07-10",
+      "name": "other-site-excluded",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "ALERT_HAZARD",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal-plus-site-decoy"
+      },
+      "query": "중장비 접근 경보",
+      "expectedDocumentIds": [
+        "EQ-001"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "QA-SITE-ONLY-INDUSTRIAL"
+      ],
+      "expectedActionCodes": [
+        "ALERT_HAZARD"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "A high similarity industrial-only decoy cannot cross site scope."
+    },
+    {
+      "testId": "Q-RAG-07-11",
+      "name": "no-applicable-guidance",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "ALERT_HAZARD",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "isolated-EQ-005"
+      },
+      "query": "위치 알려져 있음 접근 경보",
+      "expectedDocumentIds": [],
+      "forbiddenDocumentIds": [
+        "EQ-005"
+      ],
+      "expectedActionCodes": [
+        "ALERT_HAZARD"
+      ],
+      "expectedOutcome": "no_match",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Only an inapplicable position-unknown procedure is indexed; retain primary alert and record no evidence."
+    },
+    {
+      "testId": "Q-RAG-07-12",
+      "name": "conflicting-evidence",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": "QA-CONFLICT-POLICY",
+        "simulationType": "fire-gas",
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "hazardTypes": [
+          "gas"
+        ],
+        "substanceIds": [
+          "DEMO-GAS-X"
+        ],
+        "locale": "ko",
+        "fixtureSet": "isolated-conflict-pair"
+      },
+      "query": "동일 정책 충돌 이동 또는 실내 대기",
+      "expectedDocumentIds": [
+        "QA-CONFLICT-MOVE",
+        "QA-CONFLICT-SHELTER"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006"
+      ],
+      "expectedActionCodes": [
+        "FOLLOW_VALIDATED_ROUTE"
+      ],
+      "expectedOutcome": "conflict",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Both eligible contradiction witnesses are traced; no explanation generated and no score-based policy choice."
+    },
+    {
+      "testId": "Q-RAG-07-13",
+      "name": "equipment-no-route",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "ROUTE_UNAVAILABLE",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "유효 회피 경로 없음 지원 요청",
+      "expectedDocumentIds": [
+        "EQ-004"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-006"
+      ],
+      "expectedActionCodes": [
+        "ROUTE_UNAVAILABLE"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "No-route context explains support procedure; never universal wait or fabricated route."
+    },
+    {
+      "testId": "Q-RAG-07-14",
+      "name": "compound-no-route",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": "move",
+        "simulationType": "fire-gas",
+        "actionCode": "ROUTE_UNAVAILABLE",
+        "hazardTypes": [
+          "combined",
+          "fire",
+          "gas"
+        ],
+        "substanceIds": [
+          "DEMO-GAS-X"
+        ],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "화재 DEMO-GAS-X 복합 위험 유효 경로 없음",
+      "expectedDocumentIds": [
+        "FG-006"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-005"
+      ],
+      "expectedActionCodes": [
+        "ROUTE_UNAVAILABLE"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "No route in compound hazard cannot silently become shelter."
+    },
+    {
+      "testId": "Q-RAG-07-15",
+      "name": "sensor-disconnected",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "fire-gas",
+        "actionCode": "SENSOR_UNKNOWN",
+        "hazardTypes": [
+          "sensor-unknown"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "환경 센서 수신 중단 상태 미확인",
+      "expectedDocumentIds": [
+        "FG-007"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-008"
+      ],
+      "expectedActionCodes": [
+        "SENSOR_UNKNOWN"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Sensor unknown is distinct from hazard-clear and location unknown."
+    },
+    {
+      "testId": "Q-RAG-07-16",
+      "name": "await-reopen",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "fire-gas",
+        "actionCode": "AWAIT_REOPEN_AUTHORIZATION",
+        "hazardTypes": [
+          "fire"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "위험 해제 별도 통행 재개 승인 대기",
+      "expectedDocumentIds": [
+        "FG-008"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-004",
+        "FG-005"
+      ],
+      "expectedActionCodes": [
+        "AWAIT_REOPEN_AUTHORIZATION"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Hazard clearance does not authorize passage reopening."
+    },
+    {
+      "testId": "Q-RAG-07-17",
+      "name": "arrival-confirmation",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "CONFIRM_ARRIVAL",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "지정 회피 지점 도착 확인",
+      "expectedDocumentIds": [
+        "EQ-006"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-004",
+        "EQ-005"
+      ],
+      "expectedActionCodes": [
+        "CONFIRM_ARRIVAL"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Prompt requests arrival confirmation; receiving or understanding a prompt is not actual arrival."
+    },
+    {
+      "testId": "Q-RAG-07-18",
+      "name": "assistance-request",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": false,
+          "assistanceRequired": true,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "REQUEST_ASSISTANCE",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "이동 보조 동행 지원 요청",
+      "expectedDocumentIds": [
+        "COMMON-003"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-006"
+      ],
+      "expectedActionCodes": [
+        "REQUEST_ASSISTANCE"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-004"
+      ],
+      "reason": "Help request and support acceptance are separate states."
+    },
+    {
+      "testId": "Q-RAG-07-19",
+      "name": "fire-alert-restriction",
+      "simulationType": "fire-gas",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "fire-gas",
+        "actionCode": "ALERT_HAZARD",
+        "hazardTypes": [
+          "fire"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "normal"
+      },
+      "query": "가상 화재 감지 통로 제한 위험 경보",
+      "expectedDocumentIds": [
+        "FG-001"
+      ],
+      "forbiddenDocumentIds": [
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-005"
+      ],
+      "expectedActionCodes": [
+        "ALERT_HAZARD"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "reason": "Fire detection explains engine alert and passage restriction without inventing an evacuation path."
+    },
+    {
+      "testId": "Q-RAG-07-20",
+      "name": "common-guide-version",
+      "simulationType": "equipment",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:30:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "GUIDANCE_UPDATED",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "isolated-COMMON-004"
+      },
+      "query": "안내 버전 변경 오래된 안내 폐기",
+      "expectedDocumentIds": [
+        "COMMON-004"
+      ],
+      "forbiddenDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008",
+        "EQ-006"
+      ],
+      "expectedActionCodes": [
+        "GUIDANCE_UPDATED"
+      ],
+      "expectedOutcome": "matched",
+      "allowedAdditionalDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003"
+      ],
+      "reason": "Current version must replace old instructions; stale explanation is discarded."
+    }
+  ]
+}

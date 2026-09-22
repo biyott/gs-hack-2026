@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "1.1",
+  "authority": "QR-004",
+  "status": "FROZEN_INPUT_NOT_EXECUTED",
+  "owner": "/root/qa_lead/qa_rag",
+  "boundLedger": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/clock-binding-v1.1/approvals.observed.json",
+    "sha256": "ef2d2352527620d43d2a8ccd15a0f00bc740b3935dd995360c46382e1f3de00e"
+  },
+  "reviewTimestampPolicy": "All reference values come from the genuine unchanged ledger. Isolated tests copy the approved EQ-001 record and its genuine ledger row without editing reviewedAt or document content.",
+  "cases": [
+    {
+      "testId": "Q-RAG-CLOCK-01",
+      "name": "historical-pre-review-exclusion",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:00:00.000Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "ALERT_HAZARD",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "genuine-approved-corpus-with-genuine-ledger"
+      },
+      "query": "장비 접근 경보 EQUIPMENT-A ZONE-A 위험",
+      "expectedDocumentIds": [],
+      "forbiddenDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004",
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008"
+      ],
+      "expectedActionCodes": [
+        "ALERT_HAZARD"
+      ],
+      "expectedOutcome": "no_match",
+      "expectedReviewEligibility": false,
+      "reason": "At historical document UTC 09:00 all 18 actual reviews at 09:13:05.116 are in the future; no backdated approval or inferred model failure.",
+      "historicalEvidenceRule": "This case is NOT_RUN. A later reproduction receives its own actual execution timestamp and cannot stand in for missing raw original no_match output."
+    },
+    {
+      "testId": "Q-RAG-CLOCK-02",
+      "name": "review-timestamp-before",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:13:05.115Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "ALERT_HAZARD",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "isolated-unchanged-approved-EQ-001-with-genuine-ledger-row"
+      },
+      "query": "장비 접근 경보 EQUIPMENT-A ZONE-A 위험",
+      "sourceRecord": {
+        "documentId": "EQ-001",
+        "documentVersion": "0.1.0",
+        "approvedFileHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+        "reviewedContentHash": "72c885c61053a5bfddc1f27cf841cb1e5cace93ab19888bdbbacce7bdde5c2ca",
+        "reviewedAt": "2026-09-21T09:13:05.116Z"
+      },
+      "expectedDocumentIds": [],
+      "forbiddenDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004",
+        "EQ-001",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008"
+      ],
+      "expectedActionCodes": [
+        "ALERT_HAZARD"
+      ],
+      "expectedOutcome": "no_match",
+      "expectedReviewEligibility": false,
+      "reviewOffsetMs": -1,
+      "reason": "Isolate review-time eligibility with existing in-range validity dates and matching metadata; review starts at the genuine reviewedAt instant. Never alter or claim a historical approval."
+    },
+    {
+      "testId": "Q-RAG-CLOCK-03",
+      "name": "review-timestamp-at",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:13:05.116Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "ALERT_HAZARD",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "isolated-unchanged-approved-EQ-001-with-genuine-ledger-row"
+      },
+      "query": "장비 접근 경보 EQUIPMENT-A ZONE-A 위험",
+      "sourceRecord": {
+        "documentId": "EQ-001",
+        "documentVersion": "0.1.0",
+        "approvedFileHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+        "reviewedContentHash": "72c885c61053a5bfddc1f27cf841cb1e5cace93ab19888bdbbacce7bdde5c2ca",
+        "reviewedAt": "2026-09-21T09:13:05.116Z"
+      },
+      "expectedDocumentIds": [
+        "EQ-001"
+      ],
+      "forbiddenDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008"
+      ],
+      "expectedActionCodes": [
+        "ALERT_HAZARD"
+      ],
+      "expectedOutcome": "matched",
+      "expectedReviewEligibility": true,
+      "reviewOffsetMs": 0,
+      "reason": "Isolate review-time eligibility with existing in-range validity dates and matching metadata; review starts at the genuine reviewedAt instant. Never alter or claim a historical approval."
+    },
+    {
+      "testId": "Q-RAG-CLOCK-04",
+      "name": "review-timestamp-after",
+      "context": {
+        "scope": "demo",
+        "siteId": "SITE-CONSTRUCTION-01",
+        "role": "worker",
+        "zoneIds": [
+          "ZONE-A"
+        ],
+        "now": "2026-09-21T09:13:05.117Z",
+        "limit": 18,
+        "profile": {
+          "stairsAllowed": true,
+          "assistanceRequired": false,
+          "verified": true
+        },
+        "scenarioPolicy": null,
+        "simulationType": "equipment",
+        "actionCode": "ALERT_HAZARD",
+        "hazardTypes": [
+          "equipment"
+        ],
+        "substanceIds": [],
+        "locale": "ko",
+        "fixtureSet": "isolated-unchanged-approved-EQ-001-with-genuine-ledger-row"
+      },
+      "query": "장비 접근 경보 EQUIPMENT-A ZONE-A 위험",
+      "sourceRecord": {
+        "documentId": "EQ-001",
+        "documentVersion": "0.1.0",
+        "approvedFileHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+        "reviewedContentHash": "72c885c61053a5bfddc1f27cf841cb1e5cace93ab19888bdbbacce7bdde5c2ca",
+        "reviewedAt": "2026-09-21T09:13:05.116Z"
+      },
+      "expectedDocumentIds": [
+        "EQ-001"
+      ],
+      "forbiddenDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004",
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005",
+        "EQ-006",
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008"
+      ],
+      "expectedActionCodes": [
+        "ALERT_HAZARD"
+      ],
+      "expectedOutcome": "matched",
+      "expectedReviewEligibility": true,
+      "reviewOffsetMs": 1,
+      "reason": "Isolate review-time eligibility with existing in-range validity dates and matching metadata; review starts at the genuine reviewedAt instant. Never alter or claim a historical approval."
+    }
+  ]
+}

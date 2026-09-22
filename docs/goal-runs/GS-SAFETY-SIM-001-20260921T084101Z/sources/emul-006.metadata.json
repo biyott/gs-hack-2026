@@ -1,0 +1,27 @@
+{
+  "id": "006",
+  "title": "006- 안전관리자 web 서비스 내용",
+  "url": "https://emul.site/share/xg40v7nhfw/p/006-web-csOVxT08tz",
+  "apiUrl": "https://emul.site/api/shares/page-info",
+  "request": {
+    "method": "POST",
+    "body": {
+      "pageId": "csOVxT08tz"
+    }
+  },
+  "fetchedAt": "2026-09-21T08:46:35.369Z",
+  "sourceCreatedAt": "2026-09-21T07:37:42.208Z",
+  "sourceUpdatedAt": "2026-09-21T07:56:27.360Z",
+  "sourcePageId": "01a0c2e6-3642-7229-8b7b-babf0bfa69e0",
+  "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-006.original.json",
+  "rawJsonSha256": "4904233d95ce023f51248ce8681200402cbb4962d0522912c35c161a746c5964",
+  "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-006.original.html",
+  "rawHtmlSha256": "f9a72ecc0ea1b3379d5a19d157da6474fdb41a75735425fdab21037f024eb1f4",
+  "contentSha256": "950b478eb306a70fce5d5b23e9e11f00970e0f288e9e5d163afc50d3bed1fff3",
+  "httpStatus": 200,
+  "publicAccess": true,
+  "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-006.body.md",
+  "bodySha256": "b5de377f3b52ee171b07dcd998fd1e7446590469426372369e5d0a8a1e0d7ea1",
+  "textNodeCount": 148,
+  "bodyMissingOriginalTextNodes": 0
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "C4-exploratory-incident-diagnostic-preparation-freeze-v1",
+  "recordedAt": "2026-09-21T19:02:53.204573+00:00",
+  "status": "SOURCE_READY_NOT_RUN",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "runtimeAttemptConsumed": false,
+  "executionAuthority": "None. Design READY19:00:56 had priority; opportunity ended without grant/start. Any later execution requires a new explicit resource grant. C5 requires separate candidate binding/derivative.",
+  "newOutputDirectory": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-cd8a2428/incident-diagnostic-01",
+  "setupGrant": {
+    "phase": "INCIDENT-DIAGNOSTIC-SETUP",
+    "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+    "modelAllowed": true,
+    "bounds": "Finite ordered notBefore/notAfter; setup grant outside not-yet-created output directory. Fresh port4103/provider8092 exclusivity checked by resource owner before any grant."
+  },
+  "commands": [
+    "<NODE22> /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c4-incident-diagnostic-v1.mjs --grant <ABSOLUTE_SETUP_GRANT>",
+    "<NODE22> /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/setup-c4-incident-diagnostic-v1.mjs --grant <ABSOLUTE_SETUP_GRANT>",
+    "<NODE22> /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-incident-browser-v1.2.mjs --binding /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c4.incident-diagnostic-v1.json --grant <ACTUAL_BROWSER_GRANT> --fixture <NEW_OUTPUT>/incident-fixture-01.json"
+  ],
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c4.incident-diagnostic-v1.json",
+      "sha256": "7cd1a640002d06ca2221489eaf43851175eacd3aed1ae42bba2f2112a8fbcec2"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c4-incident-diagnostic-v1.mjs",
+      "sha256": "abeb0ed51ef69d42397198a6b5494283c521e998e8581676c789243b6040afa7"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/setup-c4-incident-diagnostic-v1.mjs",
+      "sha256": "c5c0d925d22e84a5da091ce566a3ed6290935639e32c9465430e8d23d7da416f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-incident-diagnostic-setup-source-review-v1.json",
+      "sha256": "7bba1b26e058137c554c1a29b51df222719315b31882278570561d0c5767e83e"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-incident-browser-v1.2.mjs",
+      "sha256": "85562d64e5bcc680f5cd6611804ec73b81abc3293d5bd77360375566da0769dc"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-incident-browser-v1.2.freeze.json",
+      "sha256": "34a9355bf7b2deb662260cd4fea2764f5364a3b02f1fd1624b1faa5637805870"
+    }
+  ],
+  "boundaries": [
+    "New independent DB/PIN/process; originalC4 DB and PID981422 excluded.",
+    "Stock runtime may initialize corpus/E5/Qwen; actual events must be captured, not called app-only or performance.",
+    "Browser grant constructed only after actual new process/provenance/fixture receipts.",
+    "Both409 assignment responses require surrounding version/RAG event review; unchanged strict assertion alone does not establish a product defect.",
+    "No phones, real camera, supplemental breadth, timing or acceptance/PASS transfer."
+  ],
+  "productEdits": 0,
+  "overallVerdict": "NOT_ISSUED"
+}

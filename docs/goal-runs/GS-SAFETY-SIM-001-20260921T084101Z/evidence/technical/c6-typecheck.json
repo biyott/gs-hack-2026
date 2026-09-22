@@ -1,0 +1,18 @@
+{
+  "startedAt": "2026-09-21T23:58:04.002Z",
+  "completedAt": "2026-09-21T23:58:06.262Z",
+  "cwd": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "command": [
+    "npm",
+    "run",
+    "typecheck"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "attempt": 1,
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "cpuLimit": 2,
+  "heapLimitMb": 3072,
+  "logSha256": "2516b2c359b0d1f0c06d4519917b416a1a3a0a503aeba62fd5292281e1cf2555",
+  "grantPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c6-assembly-grant.json"
+}

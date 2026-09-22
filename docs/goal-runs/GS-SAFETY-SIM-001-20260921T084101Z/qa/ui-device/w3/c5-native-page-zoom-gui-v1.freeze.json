@@ -1,0 +1,23 @@
+{
+  "kind": "c5-native-page-zoom-gui-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "runtime": "NOT_RUN",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "preparedAt": "2026-09-21T23:28:34.767Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-gui-v1.mjs",
+      "sha256": "a4097b35ea6ffcbb366166cec525560716eb2aca44f78182b93fa91a8f7eedfa"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-gui-v1.guard.mjs",
+      "sha256": "0e1d1bf3d0aa78ff09e73f0fd5d1e5a311701bf7b5f5632b8972a344e9b35911"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-method-v1.md",
+      "sha256": "71e9792059410a973b51682f0e9818da046af6515c3b2c33435b47cbeffe25ab"
+    }
+  ]
+}

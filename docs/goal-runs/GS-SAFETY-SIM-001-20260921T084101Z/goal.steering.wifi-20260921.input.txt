@@ -1,0 +1,3 @@
+<send_user_message_question_reply>
+[{"questionItemId":"[\"request_user_input_async\",\"call_a0shAAXzGG6eIHC8ugWgyS9x\",0]","question":"현재 Wi-Fi는 폰끼리도 통신되지 않습니다. 기기 간 통신이 가능한 다른 공유기나 핫스팟에 PC와 폰을 연결할 수 있나요? 준비되는 동안 USB 검증은 계속하며, LAN 검증은 따로 남깁니다.","answer":"wifi가 되는데 신호가 됐다 안됐다 하니 계속 다시 시도해봐. .하면서 안되면 너 말대로 usb 검증등을 하고. 또 wifi 시도 해보고. 안되면 어쩔수 없고 가상으로 하던가"}]
+</send_user_message_question_reply>

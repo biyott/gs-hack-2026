@@ -1,0 +1,36 @@
+{
+  "version": "1.1",
+  "createdAt": "2026-09-21T16:17:02.334Z",
+  "supersedesOnly": "v1 invalid second pause control in new delay extension; original85 and other inputs unchanged",
+  "caseId": "Q-RAG-08-REAL-DELAY-01",
+  "adminDuringActualHold": {
+    "action": "speed",
+    "speed": 2,
+    "requiredPriorStatus": "paused"
+  },
+  "requiredUnchanged": [
+    "target guidanceId/version/action/route",
+    "immutable primary",
+    "product5000ms deadline",
+    "actual upstream completion before hold",
+    "admin completes inside blocked interval",
+    "no late supplement/evidence",
+    "actual downstream cancellation and timer cleanup"
+  ],
+  "fault": {
+    "oneShot": true,
+    "delayMs": 6000,
+    "postHoldObservationMs": 6250
+  },
+  "scope": "delay-only attempt02; normal/EN/canary attempt01 preserved",
+  "sourceBasis": [
+    "packages/contracts/src/commands.ts:48",
+    "src/server/simulation/clock.ts:44",
+    "src/server/simulation/commands.ts:35"
+  ],
+  "unavailableOriginalEvidence": [
+    "original HTTP error status",
+    "original TypeError stack"
+  ],
+  "offlineStatus400": "synthetic reproduction; never represented as original status"
+}

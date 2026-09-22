@@ -1,0 +1,40 @@
+{
+  "recordedAt": "2026-09-22T00:15:07.484Z",
+  "reviewer": "/root/qa_resume/c6_review_context",
+  "verdict": "FAIL",
+  "scope": "C6 context/provenance and external handoff; no AC verdict",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "g3Sha256": "537c1411b1dc3a1328aa098a58e789361bd5e7982a23ff776f745fef13dd3f50",
+  "manifestSha256": "2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792",
+  "rootG3ManifestMatches": true,
+  "report": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/context/report.md",
+    "sha256": "6a3f97e8886330bc10669d69db63a62e717486f5974265fc6b28143f55f9930f"
+  },
+  "findings": [
+    "C6-CONTEXT-01: wrong current C6 source digest in handoff line13",
+    "C6-CONTEXT-02: wrong selected APK digest in handoff line30"
+  ],
+  "reviewedHandoffSha256": "19d5efc006ad293b8d06aa9dcc8e45126395f0d6203acb4cbae66fa1d212085b",
+  "currentOriginalHandoffSha256": "19d5efc006ad293b8d06aa9dcc8e45126395f0d6203acb4cbae66fa1d212085b",
+  "parentInstruction": "Hold terminal for separate v2 overlay; complete by00:15 if ready, else explicitFAIL. Originalv1 report andreceipt preserved.",
+  "observedProductFiles": [
+    "c6-handoff-generation-plan.json",
+    "c6-handoff-index-v2.md",
+    "c6-handoff-index.md",
+    "c6-product-hash-check-v2.json",
+    "c6-product-link-check-v1.json",
+    "c6-requirement-evidence-map.json",
+    "c6-requirement-evidence-map.md"
+  ],
+  "separateV2Observed": true,
+  "correctionVerification": "NOT_RUN: corrected separate external handoff version not observed before terminal",
+  "supplement": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/context/packaged-selection-and-git.json",
+    "sha256": "5d0d79d728830b546cebdcdb5126010f3fc2d5a7a7f09caf2bd45f054c1e2f34"
+  },
+  "overallAcceptanceIssued": false
+}

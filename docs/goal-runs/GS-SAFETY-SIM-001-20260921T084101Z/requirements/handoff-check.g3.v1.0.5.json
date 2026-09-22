@@ -1,0 +1,15 @@
+{
+  "type": "product-document-editorial-check-not-QA",
+  "checkedAt": "2026-09-21T12:14:35.746Z",
+  "previous": "handoff-check.g3.v1.0.4.json",
+  "goalVersion": "1.0",
+  "goalChanged": false,
+  "scope": "Current candidate3 APK versus preserved prior artifacts, exact Details role navigation, issued contract1.0.3 references; standard Flutter install path preserved",
+  "readmeBaselinePreserved": true,
+  "localLinksChecked": 65,
+  "missingLinks": [],
+  "artifactHashes": {
+    "docs/demo-runbook.md": "34fffb77d8bbbd8fe8b6b2b836140dd5b1121d3033a8d6b0b96687b626f721cb"
+  },
+  "status": "Product source stable for guarded copy; no G3 or QA verdict."
+}

@@ -1,0 +1,60 @@
+{
+  "kind": "c5-incident-suite-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "runtime": "NOT_RUN",
+  "authorization": "NO_GRANT_CREATED",
+  "preparedAt": "2026-09-21T23:18:25.128Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-guard-v1.mjs",
+      "sha256": "6471588835fd7fa5f2707cfc4053ff336fc8b5395a6b61c7c426461cd85f4ddc"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-ab-browser-v1.mjs",
+      "sha256": "71448b71a45c0dddc5115a3db97d39570e672e0a2dcee6b9250d797ae4aa59e2"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-incident-ab-constructor-v1.mjs",
+      "sha256": "de8a881537ac1b3bc83265869a70f2fd65fe50ee783455bfa0499be962af7ab3"
+    }
+  ],
+  "sourcePaths": [
+    "tsconfig.json",
+    "package.json",
+    "src/server/db/index.ts",
+    "src/server/db/run-repository.ts",
+    "src/server/auth/index.ts",
+    "src/server/auth/config.ts",
+    "src/server/scenarios/schema.ts",
+    "src/server/scenarios/references.ts",
+    "src/server/simulation/configuration.ts",
+    "src/server/simulation/runtime.ts",
+    "src/server/simulation/commands.ts",
+    "src/server/simulation/run.ts",
+    "src/server/simulation/checkpoint.ts",
+    "src/server/simulation/snapshots.ts",
+    "src/server/simulation/evaluate.ts",
+    "src/server/simulation/incident-workflow.ts",
+    "src/server/simulation/incident-scope.ts",
+    "src/server/simulation/runtime-isolation.integration.test.ts",
+    "packages/contracts/src/index.ts",
+    "packages/contracts/src/state.ts",
+    "packages/contracts/src/commands.ts",
+    "packages/contracts/src/guidance.ts",
+    "src/server/realtime/order.ts",
+    "src/client/simulation-stream.ts",
+    "src/components/console/entry-screen.tsx",
+    "src/components/console/safety-console.tsx",
+    "src/components/incidents/incident-panel.tsx",
+    "src/components/scene/use-scene-camera.ts",
+    "src/components/scene/camera-policy.ts",
+    "src/components/scene/SiteStage.tsx",
+    "src/components/tracking/related-camera.ts",
+    "src/components/tracking/camera-panel.tsx",
+    "data/scenarios/fire-gas/fg-fire.json",
+    "data/maps/site-construction-01.json",
+    "data/policies/fire-gas-evacuate.json"
+  ]
+}

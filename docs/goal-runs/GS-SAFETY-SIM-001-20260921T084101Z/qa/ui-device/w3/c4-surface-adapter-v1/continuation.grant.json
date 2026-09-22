@@ -1,0 +1,20 @@
+{
+  "id": "C4-FOCUS-CONTINUATION-01",
+  "parentGrant": "W3A-C4-01",
+  "phase": "C4-FOCUS-CONTINUATION-CHECK",
+  "grantedBy": "/root/qa_lead",
+  "owner": "/root/qa_lead/qa_ui_device",
+  "resourceReleased": true,
+  "syntheticHtmlOnly": true,
+  "applicationAccess": false,
+  "maxAttempts": 1,
+  "notBefore": "2026-09-21T17:52:58.307Z",
+  "notAfter": "2026-09-21T17:55:58.307Z",
+  "maxExecutionSeconds": 85,
+  "freezeSha256": "0d8f517a50b43d07d637737a3af08a909aeb12360544d620b08a455901b0df0e",
+  "outputRoot": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/c4-focus-continuation-check",
+  "expectedFixtures": 5,
+  "expectedTargetResults": 7,
+  "productAcceptance": "NOT_RUN",
+  "serialization": "UIowner serializes against its asset/matrix/Blender processes; no model or product/browser requests"
+}

@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-09-22T00:02:09.560Z",
+  "head": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "dirty": true,
+  "status": {
+    "path": "c6-head-binding-status.porcelain-v1.z",
+    "bytes": 827,
+    "sha256": "8240c8d07b7988eb596031b7ad77ab68bf3631f3ca0895d620570f1ffdd415c5"
+  },
+  "commitCreated": false
+}

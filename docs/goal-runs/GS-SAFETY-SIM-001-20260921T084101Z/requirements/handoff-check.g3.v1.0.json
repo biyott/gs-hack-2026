@@ -1,0 +1,26 @@
+{
+  "type": "product-document-editorial-check-not-QA",
+  "checkedAt": "2026-09-21T11:03:21.706Z",
+  "goalVersion": "1.0",
+  "goalInputSha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796",
+  "requirementRows": 104,
+  "mismatchedRequirements": [],
+  "baselineReadmeBytes": 468,
+  "baselineReadmeSha256": "cb4f07141469bf7d3118f0ce5c534017eba2bd7a7b8e4fa3ad33018937c649c6",
+  "baselineReadmePreserved": true,
+  "localLinksChecked": 79,
+  "missingLinks": [],
+  "contractFreeze": {
+    "path": "docs/contracts/freeze-v1.0.1.json",
+    "reportedContentSha256": "379a4bee66b78f2df9aa8a792f18d2edf5d6b63b26c2b94e94df55e6e51f0c63",
+    "listedFilesChecked": 19,
+    "mismatches": []
+  },
+  "artifactHashes": {
+    "README.md": "7888520ad5d0a8dee25d7c15de1e6b3b59b5e26f793f5e3bf205b615da626fdf",
+    "docs/demo-runbook.md": "d1fcfa158a56ea84f789caab02f8b21c64b2046de5d255dbe5e1717fd42eabe2",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/requirements/g3-handoff-gaps.v1.0.md": "32e126605367198a58c70829b7a01c7049401a8977817b4236c4d70eb4f4cf50",
+    "docs/contracts/freeze-v1.0.1.json": "e2a93c4ec81c6153fff4501c4072a0b0efeafbee0ccc6177c3e13117a45bd7a7"
+  },
+  "status": "Documentation and file-integrity check only. No runtime execution, final candidate or independent QA verdict."
+}

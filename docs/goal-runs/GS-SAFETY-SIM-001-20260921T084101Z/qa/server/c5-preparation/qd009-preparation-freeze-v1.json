@@ -1,0 +1,104 @@
+{
+  "schema": "qa-qd009-preparation-freeze-v1",
+  "recordedAt": "2026-09-21T18:54:44.166Z",
+  "status": "PREPARED_NOT_EXECUTED_NOT_TYPECHECKED",
+  "owner": "/root/qa_lead/qa_server",
+  "goalRun": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "finding": "QD009",
+  "directedCorrection": "QD009-D1 / IO007-D2",
+  "futureCandidateBinding": null,
+  "executionGrant": null,
+  "scope": {
+    "modelPoseOriginalUnknownProfile": 4,
+    "privateSemanticCases": 30,
+    "staleCallbacksWithMockService": 2,
+    "totalPlannedDerivativeTests": 36
+  },
+  "files": [
+    {
+      "path": "qd009-independent-card-v1.md",
+      "bytes": 9178,
+      "sha256": "c98041b5007983629fc21db678ae11373fcac0978edfdeeab65f4cf41491e788"
+    },
+    {
+      "path": "removed-risk-v1/model-pose.test.ts",
+      "bytes": 6374,
+      "sha256": "e60a9a2312ced22445edf80efe562e4e90b900af16d63ea199b9ca27fa15b317"
+    },
+    {
+      "path": "removed-risk-v1/model-support.ts",
+      "bytes": 2238,
+      "sha256": "fbf540cc3280e69f67aada5b41718bbbc49c56d2d15442d7b76af9da5f82161c"
+    },
+    {
+      "path": "removed-risk-v1/semantic-cases.test.ts",
+      "bytes": 7302,
+      "sha256": "453807de1b4eb901fcdc3821cb2663d89073c292346077400aa72993534bb72d"
+    },
+    {
+      "path": "removed-risk-v1/semantic-fixtures.ts",
+      "bytes": 6819,
+      "sha256": "6577dd89b977ae3e301bd827f1b51478a14919180dfca36585c9a4342737289b"
+    },
+    {
+      "path": "removed-risk-v1/stale-callbacks.test.ts",
+      "bytes": 11960,
+      "sha256": "e4a468e8c38f7b1a64f114b5dd0a601c31ce8c17119aa6e06d3668c7bd70e4c3"
+    }
+  ],
+  "contentSha256": "2ff278365239b36bc9f51de59c12781ba39971b66949a90f780ef50911d74fba",
+  "normativeSources": [
+    {
+      "path": "evidence/orchestrator/qd009-directed-decision-01.json",
+      "bytes": 4153,
+      "sha256": "1978a09fad3c70a442a3a3fdd3edf138c9b81a2b541a91389a6463b15d1480e0"
+    },
+    {
+      "path": "evidence/qa/g4/candidate-cd8a2428/QD009-directed-scope-concurrence-v1.json",
+      "bytes": 2517,
+      "sha256": "7fe3b5e6870ba4b1c1d77ad1935eb8044fe1a8962b2dd70361ad1aa91f88950f"
+    },
+    {
+      "path": "evidence/qa/g4/candidate-cd8a2428/QD009-current-guidance-removed-risk.json",
+      "bytes": 9722,
+      "sha256": "609e34d61bf98934dbbdcffcd2cde5d968e3a2b9818dab40295d81f57f85c45e"
+    }
+  ],
+  "originalScenario": {
+    "path": "qa/server/candidate-cd8a2428/harness/baseline/inputs/scenarios/equipment/eq-profile-routes.json",
+    "bytes": 5098,
+    "sha256": "e95e04db955846f453f8c118fe367979e5866116643e7133d52ad084eb93381f"
+  },
+  "preparedRefinements": [
+    "Before freeze: scenario schema review added required expectedResults and retained original B/C workers in callback derivative.",
+    "Before freeze: semantic current FIRE record explicitly inactive/fresh to isolate missing-GAS cause across two passes.",
+    "No old candidate inputs, results, original baseline/recovery/arrival/ordering or product files changed."
+  ],
+  "verification": {
+    "sourceReadOnlyReview": true,
+    "candidateImports": false,
+    "typecheck": false,
+    "tests": false,
+    "applicationStarts": false,
+    "databaseCreation": false,
+    "modelRequests": false
+  },
+  "executionEstimate": {
+    "actualWindowMinutes": [
+      5,
+      8
+    ],
+    "addedDerivativeSecondsUpperEstimate": 60,
+    "reserveMinutes": [
+      10,
+      15
+    ],
+    "checkpointMinutes": 5
+  },
+  "requiredBeforeExecution": [
+    "New immutable G3 receipt plus QA runtime grant",
+    "New root-only product aliases and exact new manifest/build/source identity",
+    "Unbound-template binding plus explicitly retained QA corrections, add derivative test glob only in new copy",
+    "Strict typecheck and fail-preserving actual same-candidate W1 run; no C4 PASS transfer"
+  ]
+}

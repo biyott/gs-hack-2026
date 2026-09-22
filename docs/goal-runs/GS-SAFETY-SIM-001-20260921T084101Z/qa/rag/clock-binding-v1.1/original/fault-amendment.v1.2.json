@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.2",
+  "amends": "fault-cases.v1.json",
+  "reason": "QR-003 canonical immutable-envelope/primary-lineage decision supersedes tentative same-envelope-version transport; existing AC08/09/10 behavior is unchanged.",
+  "owner": "/root/qa_lead/qa_rag",
+  "status": "FROZEN_INPUT_NOT_EXECUTED",
+  "contractBinding": "Each immutable envelope increments guidanceVersion; updateKind is primary|supplement; primaryGuidanceVersion is stable for augmentation. Playback key guidanceId+primaryGuidanceVersion. Bind final guidance.ts hash at G3.",
+  "cases": [
+    {
+      "testId": "Q-RAG-08-31",
+      "name": "same-guidance-delayed-supplement",
+      "providerMode": "actual",
+      "precondition": {
+        "retrieval": "matched",
+        "localeVariants": [
+          "ko",
+          "en"
+        ],
+        "primarySpeech": "active",
+        "guidanceIdentity": "primary envelope: guidanceId G, guidanceVersion V, primaryGuidanceVersion V, updateKind primary",
+        "firstTransmission": "captured immutable full primary payload with initial empty supplement/evidence"
+      },
+      "injection": {
+        "delay": "finish actual valid provider response after primary display/speech start and before 5000ms deadline",
+        "publication": "same guidanceId G, new guidanceVersion >V, updateKind supplement, primaryGuidanceVersion V; separate snapshot revision if present is ordering only",
+        "repeat": "deliver duplicate enrichment publication and reconnect snapshot"
+      },
+      "expected": {
+        "currentSupplement": "accepted once and visible",
+        "currentEvidence": "actual selected document/version/chunk and rag_run link",
+        "guidanceId": "unchanged",
+        "guidanceVersion": "new immutable envelope version greater than V",
+        "firstTransmissionPayload": "byte/content hash unchanged including original wording, route, locale and original supplement/evidence fields",
+        "primarySpeechStarts": "one for guidanceId G + primaryGuidanceVersion V",
+        "primaryBeeps": "no additional beep caused by supplement, duplicate publication, or reconnect",
+        "urgentAudio": "retains priority; new urgent primary cancels or outranks any lower-priority supplemental speech",
+        "staleSupplement": "discarded if guidance identity/freshness changes before acceptance",
+        "primaryGuidanceVersion": "unchanged V",
+        "updateKind": "supplement",
+        "playbackIdentity": "guidanceId G + primaryGuidanceVersion V unchanged"
+      },
+      "requiredEvidence": [
+        "Before/after DB and snapshot records with first/current content hashes",
+        "Actual provider/retrieval/accepted supplement record",
+        "SSE envelope guidanceVersion, updateKind and primaryGuidanceVersion with immutable publication ordering",
+        "Android display/audio/vibration event timestamps plus actual audible execution evidence linked to same IDs",
+        "Authorized administrator view of immutable first transmission versus augmented current guide",
+        "A subsequent new primary changes lineage and executes primary transition once; old-lineage supplement is rejected"
+      ],
+      "crossSlice": [
+        "AC08",
+        "AC09",
+        "AC10"
+      ],
+      "androidCard": "../ui-device/ac09-android-guidance.md",
+      "note": "Deterministic mock can verify envelope/reducer control flow, but actual provider and physical Android execution are separately mandatory for this integrated variant."
+    }
+  ],
+  "supersedesTransportOnly": "fault-amendment.v1.1.json"
+}

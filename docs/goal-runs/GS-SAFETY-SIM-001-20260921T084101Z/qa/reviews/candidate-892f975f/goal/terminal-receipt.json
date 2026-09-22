@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "/root/qa_resume/c6_review_goal",
+  "completedAt": "2026-09-22T00:18:27.348Z",
+  "evidenceCutoff": "2026-09-22T00:17:00Z",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "HIGH",
+  "scope": "Full-goal achievement review; no official AC or overall QA verdict",
+  "reason": "Mandatory physical four-role/two-peer/810 calibration/human witness/fullG0/second-executor evidence unestablished; current software slices remain scoped.",
+  "unchangedRequirements": 104,
+  "unchangedAcLines": 16,
+  "sourceFilesIndependentlyVerified": 1026,
+  "mappedFilesIndependentlyVerified": 366,
+  "latestDeltaRehashCount": 7,
+  "latestDeltaMismatches": [],
+  "missingReportLinks": [],
+  "mapHash": "2a5ea741c447acb900c8e5ce03af64cf7c053a60a07f6333574fad219c02a76d",
+  "currentAssessmentsNull": true,
+  "correctedFindings": [
+    "GOAL-C6-DOC-01",
+    "GOAL-C6-DOC-02"
+  ],
+  "uncorrectedProductFindings": [],
+  "currentEvidenceGap": "Quick-DOM Enter on already-selected worker does not prove selection change; notified QA.",
+  "references": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/goal/report.md",
+      "sha256": "5604099435a5571c538c3483bf8d073ead17bfd0cccfeb57d59030a94bfdf4a5"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/goal/static-audit-v1.json",
+      "sha256": "9162a39fcb2caf399e1321f4924d0e8e60f05a0681781b1ad1fd4ac24d3e3376"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/goal/runtime-reference-snapshot-v1.json",
+      "sha256": "954ceb3de6a69668847888169fe9c72fda4d583deb2bb0c88ce4054331a4f3ae"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/goal/handoff-observed-00-08-v1.md",
+      "sha256": "19d5efc006ad293b8d06aa9dcc8e45126395f0d6203acb4cbae66fa1d212085b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-892f975f/goal/handoff-correction-verification-v1.json",
+      "sha256": "488eedbc2889f1d954595ab08998abdb9cb4b50a1b1f78a5e73485e0a79bf8c6"
+    }
+  ],
+  "currentRuntimeReferences": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/c6-incident-suite-v1/2026-09-22T00-13-29-719Z-0bd64c64/report.json",
+      "sha256": "f5b57e99d56143095fd890329e7982ae028801096a88d56692b29cce866cab15"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-892f975f/c6-quick-dom-v1.1/2026-09-22T00-13-02-460Z-2ebbaa36/report.json",
+      "sha256": "331814582009c827d98831a4a8485910d955c6bc34ee00e7da172f9cddb2d034"
+    }
+  ],
+  "runtimeLaunchedByReviewer": false,
+  "priorCandidatePassReused": false,
+  "officialVerdictIssued": false
+}

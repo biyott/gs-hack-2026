@@ -1,0 +1,119 @@
+{
+  "kind": "c4-app-origin-sites-source-proposal",
+  "version": "1",
+  "status": "SOURCE_PROPOSAL_REQUIRES_TECH_CONCURRENCE",
+  "preparedAt": "2026-09-21T18:15:15Z",
+  "preparedBy": "/root/qa_lead/qa_ui_device/c4_performance_protocol/preload_close_checker",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "candidateRoot": "/home/b/.cache/gs-safety-c4.q2FD40",
+  "buildId": "czkc6DgDv3UUlTrSfDMqX",
+  "technicalConcurrence": null,
+  "requiredFutureBindingStatus": "APP_ORIGIN_SOURCE_BOUND",
+  "executionGrant": null,
+  "runtimeObservation": "NOT_RUN",
+  "productPerformance": "NOT_RUN",
+  "coordinates": "One-based line and UTF-16 column; columnStart and columnEnd are inclusive. Each window is exactly the call expression, excluding the statement semicolon and neighboring code.",
+  "sourceMap": {
+    "path": "/home/b/.cache/gs-safety-c4.q2FD40/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js.map",
+    "sha256": "69f3bf1cdca1654d36fe8f07423803b8cd060fa98a82ab1d80133c98d47cf667",
+    "bytes": 76407,
+    "version": 3,
+    "sourceIndex": 0,
+    "sourceIdentifier": "../../../app/api/events/route.ts",
+    "sourcesContentSha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+    "sourcesContentEqualsFrozenRouteBytes": true,
+    "decoding": "Static Base64-VLQ delta decoding. No JavaScript import or compiled-artifact execution. Generated positions were converted from zero-based source-map columns to one-based columns."
+  },
+  "sites": [
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "sha256": "1feca21806f2a135b3c39081d0dbd4468ddcb58e1a9513458847491f12048c96",
+      "line": 5,
+      "columnStart": 237,
+      "columnEnd": 253,
+      "sourceEndpoint": "events-route-publish-enqueue",
+      "stackRepresentation": "compiled",
+      "expression": "r.enqueue(w(e,t))",
+      "expectedV8Column": 239,
+      "expectationBasis": "enqueue property-name source position; runtime stack formatting has not been observed",
+      "sourceMapPropertyAnchor": { "generatedLine": 5, "generatedColumn": 239, "originalLine": 68, "originalColumn": 22, "name": "enqueue", "segment": "EAAWQ" },
+      "sourceMapReceiverAnchor": { "generatedLine": 5, "generatedColumn": 237, "originalLine": 68, "originalColumn": 11, "name": "controller", "segment": "CACAS" }
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "sha256": "1feca21806f2a135b3c39081d0dbd4468ddcb58e1a9513458847491f12048c96",
+      "line": 5,
+      "columnStart": 486,
+      "columnEnd": 502,
+      "sourceEndpoint": "events-route-pull-enqueue",
+      "stackRepresentation": "compiled",
+      "expression": "e.enqueue(w(t,n))",
+      "expectedV8Column": 488,
+      "expectationBasis": "enqueue property-name source position; runtime stack formatting has not been observed",
+      "sourceMapPropertyAnchor": { "generatedLine": 5, "generatedColumn": 488, "originalLine": 85, "originalColumn": 40, "name": "enqueue", "segment": "EAAWQ" },
+      "sourceMapReceiverAnchor": { "generatedLine": 5, "generatedColumn": 486, "originalLine": 85, "originalColumn": 29, "name": "controller", "segment": "GAAgBa" }
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "line": 68,
+      "columnStart": 11,
+      "columnEnd": 52,
+      "sourceEndpoint": "events-route-publish-enqueue",
+      "stackRepresentation": "source-mapped",
+      "expression": "controller.enqueue(frame(snapshot, fresh))",
+      "expectedV8Column": 22,
+      "expectationBasis": "Source-map image of the compiled enqueue property-name anchor; source-mapped runtime formatting has not been observed"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "line": 85,
+      "columnStart": 29,
+      "columnEnd": 70,
+      "sourceEndpoint": "events-route-pull-enqueue",
+      "stackRepresentation": "source-mapped",
+      "expression": "controller.enqueue(frame(snapshot, fresh))",
+      "expectedV8Column": 40,
+      "expectationBasis": "Source-map image of the compiled enqueue property-name anchor; source-mapped runtime formatting has not been observed"
+    }
+  ],
+  "excludedSites": [
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "sha256": "1feca21806f2a135b3c39081d0dbd4468ddcb58e1a9513458847491f12048c96",
+      "line": 5,
+      "columnStart": 364,
+      "columnEnd": 401,
+      "expression": "r.enqueue(c.encode(\": heartbeat\\n\\n\"))",
+      "propertyColumn": 366,
+      "reason": "Heartbeat comment frame, not a snapshot dispatch"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22",
+      "line": 76,
+      "columnStart": 13,
+      "columnEnd": 65,
+      "expression": "controller.enqueue(encoder.encode(\": heartbeat\\n\\n\"))",
+      "propertyColumn": 24,
+      "reason": "Source-map counterpart of excluded heartbeat call"
+    }
+  ],
+  "staticChecks": {
+    "compiledBytes": 20344,
+    "compiledSnapshotExpressionsUnique": true,
+    "nonBmpCharactersBeforeCompiledSpans": false,
+    "sourceMapRouteContentByteEquality": true,
+    "independentStaticSpanReview": "MATCH",
+    "artifactExecutedOrImported": false,
+    "browserOrNetworkUsed": false
+  },
+  "requiredBeforeUse": [
+    "Technical concurrence on exact source, map, hashes and narrow spans; issue a separate approved binding with status APP_ORIGIN_SOURCE_BOUND.",
+    "Performance grant must bind the exact approved binding hash; this proposal is intentionally rejected by verifyOriginRules.",
+    "Observe actual runtime stack representation and exact candidate PID/controller origin under an authorized window. --enable-source-maps or other stack formatting can change representation; neither is assumed here.",
+    "Require an actual callsite inside one of the exact expression windows with matching path and artifact hash; do not widen to a whole minified line or nearby function.",
+    "Retain independent controlled public-command, browser/controller association, clock and log identity proofs; static mapping alone is not runtime origin or performance evidence."
+  ]
+}

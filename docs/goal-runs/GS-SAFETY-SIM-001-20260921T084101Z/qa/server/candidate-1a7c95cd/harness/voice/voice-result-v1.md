@@ -1,0 +1,22 @@
+The C3 voice slice passed **74/74 cases in five files** under grant `W1-C3-01`, attempt `voice-01`. There were no failures, skips, retries or QA source edits. This is a result for the executed recovery/CAS/private-metadata subcases only, not whole-AC acceptance.
+
+Candidate `1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4`; source `10f658c44bc4bd511302900e02b467058b6dc558b767f2acc4b2c49773d5f6ab`; manifest SHA-256 `8d9b031f68374ea939dcdebb570e76aeba4b09d1154165cab53d186e7d27c4bc`; HEAD `9dc020a7c0160af17e2ac9157dcb8c390890309a`; BUILD_ID `BLy4PJy6kc0sEf4JQFnE0`. Candidate root was `/home/b/.cache/gs-safety-c3.eulo4t9w`.
+
+The parent reported shared strict typecheck exit 0 before execution; `typecheck-initial.log` was empty. All seven voice TypeScript input files are SHA-256-identical to C2. The five original test filters and all original inputs/oracles were retained.
+
+Actual UTC start `2026-09-21T15:50:07.717Z`, end `2026-09-21T15:50:34.338Z`; Vitest child PID `894096`, exit 0, reported duration `26.17s`. The shared runner checked all **1,461** C3 manifest source/build entries at `15:50:07.713Z` and `15:50:35.751Z`, with zero mismatches before or after. This concurrent functional window provides no latency/performance conclusion.
+
+| Subcase | Passed | Bounded observation |
+| --- | ---: | --- |
+| R01 | 8 | Both modes and constructor/synchronized seams; pending/playing first stop marker became durable before unrelated mutation. Repeated same-process reconstruction retained the marker and captured rows without restamping. |
+| R02 | 2 | Original S20 at 4,000+4,000ms retained first REFUGE-01 and latest REFUGE-02 `(125,42,GROUND)` with exact raw/runtime/reserialized optional floor/node metadata through both recovery seams. |
+| R03 | 28 | Independent optional/legacy/null/unknown/invalid metadata parser/restore cases and durable compatibility sidecars passed in both modes. Known fields survived; unknown keys were stripped from parsed/runtime/reserialized shape without requiring old raw-byte rewrites. |
+| R04 | 12 | Real separate-connection pause/reset/pause→resume winners remained authoritative after losing recovery CAS. Snapshot, clock, checkpoint, target metadata, captured raw rows and publication observations matched the actual winner. |
+| R05 | 8 | Four synthetic unchanged-head conflicts and four real SQLite TEMP-trigger checkpoint INSERT aborts retained captured rows and exposed no recovery frame. All trigger cases produced `SqliteError: QA_VOICE_CHECKPOINT_INSERT_ABORT`. |
+| R06 | 16 | Genuine terminal facts, immutable receipts, replay and history survived recovery; idle/completed reconstruction added no domain history. |
+
+[Machine-readable result and artifact hashes](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/server/candidate-1a7c95cd/voice-01/voice-report-v1.json) indexes 110 stamped observations, 74 fresh QA SQLite databases and 189 pre-report artifacts. Every observation stamp matches C3 and `W1-C3-01`. Its SHA-256 is `de9b4c2d67856e4117c98290390ebc040ce5f7ac91a407bf85ae94c8e5b9e88a`. [Execution log](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/server/candidate-1a7c95cd/voice-01/execution.log) records 74/74; [completion receipt](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/server/candidate-1a7c95cd/voice-01/completion.json) records command, candidate, grant, PID, actual times and exit.
+
+Independent read-only artifact review by `voice_execution/contract_audit` found no contradiction or provenance mismatch. Reopen means same-process runtime/native SQLite reconstruction; OS exit/start remains separate. Trigger evidence proves the repository transaction rollback after the injected INSERT abort, not power-loss/filesystem crash recovery. Raw equality concerns the captured domain table set. Private compatibility sidecars do not claim validated reroutes. No HTTP/SSE, model/RAG, browser, device, audio, physical silence or overall acceptance evidence is supplied by this slice.
+
+Marker checks used real Date/performance; the shared envelope field named `virtualClock` contains wall time here. Scenario elapsed time is `snapshot.run.virtualTimeMs`. Shared envelope executor identifies parent `qa_server`; this slice was executed by `/root/qa_lead/qa_server/voice_execution`. C1/C2 evidence and all product sources remain unchanged. Execution is complete and no runtime resources remain active in this slice.

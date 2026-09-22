@@ -1,0 +1,31 @@
+{
+  "kind": "REQUESTED_ONLY_NOT_AN_EXECUTION_GRANT",
+  "owner": "/root/qa_resume/w2_rag",
+  "purpose": "Additive Q-RAG-08-26 exact production E5 observation with unchanged frozen canary input and existing actual HTTP/model oracle",
+  "candidateId": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+  "candidateRoot": "/home/b/.cache/gs-safety-c5.H4mElI",
+  "attempt": "http-e5-attempt-01",
+  "maximumAttempts": 1,
+  "requestedMaximumDurationSeconds": 120,
+  "expectedDurationSeconds": 60,
+  "resources": {
+    "application": "Owned loopback127.0.0.1:4102 pinned Next production process; QA observer preload attaches inspector Session to itself, no debugger TCP port",
+    "captureProxy": "Owned loopback127.0.0.1:8093 actual forwarding proxy",
+    "inference": "Exclusive use of retained W1 provider127.0.0.1:8092 PID22562 startTicks163896",
+    "embedding": "Exact C5 local E5 model, CPU, actual provider",
+    "database": "New attempt-owned private SQLite DB migrated/seeded by exact frozen scripts"
+  },
+  "preconditions": [
+    "Fresh explicit parent runtime grant with start and hard deadline after W3/G0 release",
+    "No other model/app/browser/Blender/physical-camera resource owner overlaps",
+    "Provider PID and start ticks remain exact; ports4102 and8093 are free",
+    "Adapter verifies exact C5 manifest and source/build artifacts before and after run"
+  ],
+  "cleanup": "Stop exact owned app/capture handles, prove ports4102/8093 free, release inference, preserve externally owned provider22562",
+  "invariants": [
+    "No frozen product, candidate, model, original QA input or oracle mutation",
+    "No mock replacing normal actual model or E5 execution",
+    "Original85 outcomes and originalQ08-26NOT_RUN stay preserved",
+    "Observer miss, ambiguity, source-resolution error, canary match, or missing closure yields INCONCLUSIVE/finding; no relaxed PASS"
+  ]
+}

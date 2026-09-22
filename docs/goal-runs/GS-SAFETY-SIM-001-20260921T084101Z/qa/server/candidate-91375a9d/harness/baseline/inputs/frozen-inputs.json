@@ -1,0 +1,77 @@
+{
+  "sourceCandidate": "70da1337ab54652824ffb49f65cb0213822ba7c2420ae345664dbe7c48c893af",
+  "sourceManifestSha256": "bc87dfe5caf85654a2ab96b345d141f6f182c0332c88798dc2ceacb51fd83849",
+  "status": "COPIED_BYTES_NOT_EXECUTED",
+  "files": [
+    {
+      "path": "data/scenarios/equipment/eq-approach.json",
+      "bytes": 3409,
+      "sha256": "9685ef20d5db14baa1d7b7c3a46c63fa6b0dff6419ffbfb634adcb7723a4df7f"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-arrival.json",
+      "bytes": 3643,
+      "sha256": "c7d2d7bb457473b9b213fe3cfb44b68a8a59476be6af68d70a94fb2b170af2f1"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-no-route.json",
+      "bytes": 3076,
+      "sha256": "76d18744d1e768b86ef5c89977be16f856c2cbff840bde8bf5a4102a0e59288b"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-position-loss.json",
+      "bytes": 5588,
+      "sha256": "595ac62dd71da986675ac72f9cbe06a29f9a6bda3ecb4c90f08a65527a7513b7"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-profile-routes.json",
+      "bytes": 5098,
+      "sha256": "e95e04db955846f453f8c118fe367979e5866116643e7133d52ad084eb93381f"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-speed-direction.json",
+      "bytes": 4088,
+      "sha256": "5a00cb7dd519d8028e51f161080b35bacc4a132e55b7f9a98d29220ddc7e3d00"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-clear-reopen.json",
+      "bytes": 9709,
+      "sha256": "beaa9e7320dc284b806db7f466418317ec96e9727d0bbaa72aa4762d04ba8fbf"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-combined.json",
+      "bytes": 8635,
+      "sha256": "0704ac0f82adb3ae8dfeb52a0fbf1cc8f1a446c7b10a3c4633368c6559a9a056"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-fire.json",
+      "bytes": 8334,
+      "sha256": "bde4e91470eaa90a03bf7b515c72563e01eba70aa06c9a7803f9cbd79764960e"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-gas-designated.json",
+      "bytes": 7783,
+      "sha256": "c131254ce5095ec333dbd3965dc9cf9810efb0cdc6e387f4dd3d27f22ad1b3cf"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-no-route.json",
+      "bytes": 7097,
+      "sha256": "33c42b3c99623eddfb45e9f98969efc92b3c31d8e9d74aaea4e99b2204adea80"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-route-block.json",
+      "bytes": 8434,
+      "sha256": "73a5bde5b1d875f7a928f0f58e8c4047e4a744eb1fcc8def2e18e92924c87590"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-sensor-stale.json",
+      "bytes": 7745,
+      "sha256": "e6671f0c503c7b96a1e47fa8c7c91e569e9d4cb955ee05f4fdaae40577092321"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-shelter.json",
+      "bytes": 7537,
+      "sha256": "5ee9d995dc7c7d95e5a5cea42760182d7065ad0075c043b5f791b9f971b3e5ad"
+    }
+  ]
+}

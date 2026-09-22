@@ -1,0 +1,26 @@
+# C4 W3A observations at the current-guidance hold
+
+Owner `/root/qa_lead/qa_ui_device`. Candidate `sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba`, root `/home/b/.cache/gs-safety-c4.q2FD40`, production BUILD_ID `czkc6DgDv3UUlTrSfDMqX`. This is a partial execution record, not an overall verdict. Original artifacts are unchanged.
+
+Parent W3A-C4-01 began17:47:30.467Z and was extended additively through19:10:00Z. The later explicit HOLD supersedes permission to start new executable workloads. Fresh private runtime PID981422 started17:54:55.774Z on4103. At the hold it remains paused with its DB and history preserved; no browser, helper, Blender or phone probe remains active. No product/candidate file was edited.
+
+| Slice | Actual observed result | Boundary |
+| --- | --- | --- |
+| Continuation helper | Five pureHTML cases/seven targets satisfied;17:53:31.495–38.567Z; browser closed | Helper only, no app or product acceptance |
+| Fixture preparation | First idle advance/pause produced409; named corrected start/advance/pause succeeded once | Original failure and scripts retained; preparation is not1× timing |
+| Asset browser v1 | Six presets attempted,11 controls completed; three resource-entry timeouts; raw FAIL retained; browser closed18:02:00.420Z | All seven production GLB HTTP bodies matched frozen hashes; transport is separate from visible articulation |
+| Asset browser v1.1 sole retry | Only Maeda/LR/172;10 controls completed,29 PNGs; browser closed18:24:06.881Z; REVIEW_REQUIRED | Resource capacity2000 retained348 entries with no full event. Original assertions unchanged and original failures preserved. No second retry |
+| Asset image review | Original31 plus retry29 images directly reviewed; distinct silhouettes and multiple motions visible | Several small hook movements and SK trolley remain inconclusive at full-site scale/annotation overlap; focal collection has not run |
+| Responsive matrix |155/155 states,330/330 target traversals,550 PNGs;18:03:51.808–18:16:23.035Z; browser closed18:16:22.916Z; source/input hashes unchanged | Operational health PASS; visibility verdict INCONCLUSIVE. Raw strict misses/unsupported painted content remain. Not Android, native200% or keyboard proof |
+| Stored matrix image review | All155 states covered by495 directly viewed native viewport captures; mobile222 total images and wide285 native plus16 companions | No concrete essential text/control loss established in those pixels. Native collapsed-select truncation remains a bounded observation; unopened duplicate companions identified in reviewer ledger |
+| Coordinate math | Four corners+ninegrid,16 comparisons each, five axis/height checks; max error2.22e-16m≤1e-6m;18:07:28.630–28.977Z | Actual frozen mathematical modules only. Not physical calibration or manufacturer geometry certification |
+| Final LAN attempt | One PHONE-1 app-UID request18:19:39.154–42.694Z returned No route to host, zero HTTP bytes, exit1; released immediately | Final C4 LAN attempt consumed. No login/UI/role/permission/network/reverse changes. USB remains separate |
+| Dispatch observer helper |37 synthetic cases PASS18:20:52.052–.112Z | Fake controller/PID binding; actual app source reads0; not real dispatch/performance evidence |
+| Transition ledger helper | First attempt failed before cases, Chromium SIGABRT: Unix singleton socket path too long; ended18:21:01.785Z | Raw failure retained. Separately frozen short `/tmp` profile derivative awaits the sole environment retry grant |
+| Equipment invalidation | First UI preset switch HTTP200 at18:26:27.694Z; current WORKER-C guidance points to removed geometry2 risk while new geometry/primary are33; raw FAIL | Browser closed18:26:27.801Z before first capture. Exact response/source evidence preserved; QA Lead classification pending. Other preset/full-view/±15 checks remain NOT_RUN |
+
+The current-guidance observation is in `evidence/qa/ui-device/candidate-cd8a2428/current-guidance-removed-risk-observation-v1.json`, SHA256 `65c92929ce47aba49206d76a8774761480582578faee044121e7ab1719871a4a`. The referenced object is `worker.currentGuidance`, not an immutable first record. Before/after incident first-guidance arrays compare byte-equivalent. The current action remains ROUTE_UNAVAILABLE, reason profile-unverified, empty waypoints and null destination/route; no unsafe movement instruction is inferred.
+
+Still unexecuted: seven C4 copied-source Blender reopen/export/reimport transactions; remaining AC12 preset invalidation/full-view/±15 cases; public two-admin lifecycle/conflict/support workflow; separate constructor A/B UI fixture; focal articulation; keyboard/native200% supplement; actual dispatch/primary-visible/frame/input measurements; W3B actual APK4 scenarios; W3C PHONE-1 metadata. Earlier C3 roundtrips and producer device evidence retain their own identities. The full four-phone/two-Controlee/calibrated-grid/audible-haptic boundaries remain unchanged.
+
+The prepared performance, ledger retry, accessibility, incident, A/B, focal and Android fault-proxy inputs are separately versioned and frozen. Readiness is not execution. No new runtime begins until the parent releases the hold and issues any necessary phase grants. Real camera pixels remain forbidden in image/model tools; PHONE-2 camera remains unauthorized.

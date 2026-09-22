@@ -1,0 +1,22 @@
+{
+  "template": true,
+  "candidateId": null,
+  "candidateRoot": null,
+  "manifest": {
+    "path": null,
+    "sha256": null
+  },
+  "sourceSha256": null,
+  "buildId": null,
+  "mobileApkSha256": null,
+  "assetManifest": {
+    "path": null,
+    "sha256": null
+  },
+  "evidenceRoot": null,
+  "authority": {
+    "receiptPath": null,
+    "validatedBy": null
+  },
+  "limitation": "No C2 identity is supplied or inferred. Populate a new file from the explicit frozen receipt; binding is not a W3 resource grant."
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "qa-c2-binding-1",
+  "status": "BOUND_NOT_EXECUTED",
+  "boundAt": "2026-09-21T15:00:37.402Z",
+  "candidateRoot": "/home/b/.cache/gs-safety-qd001.7e7jy5oy",
+  "manifestPath": "/home/b/.cache/gs-safety-qd001.7e7jy5oy/runtime-artifacts/candidate-manifest-c2.json",
+  "manifestSha256": "6f146ee34b7880e3a0c8012ae2a2485ec7d95e0314e183c555eb509060f54ef0",
+  "candidateId": "0d42bacc04c50cd21c9c133e262838acb6f47e2e8d33d37ea450ce160f46bc3e",
+  "sourceSha256": "0f50d5d6cc16ca78718e88adc88669b3420ffef416b58d4c1d20d63ab9a35f77",
+  "runRoot": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z",
+  "head": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "buildId": "QZCOSOj4hgBWlUIGbGUxu",
+  "evidenceRoot": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/server/candidate-0d42bacc",
+  "harnessRoot": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/server/candidate-0d42bacc/harness",
+  "grantId": null,
+  "identityScope": "Exact supplied receipt/manifest/buildID; full source/artifact hashes required at authorized execution"
+}

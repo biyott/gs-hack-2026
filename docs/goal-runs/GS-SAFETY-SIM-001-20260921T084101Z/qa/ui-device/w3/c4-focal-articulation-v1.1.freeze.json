@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "kind": "c4-focal-articulation-source-freeze-v1.1",
+  "frozenAt": "2026-09-21T18:31:27.216Z",
+  "frozenBy": "/root/qa_lead/qa_ui_device/c3_partial_focus_audit",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "candidateRoot": "/home/b/.cache/gs-safety-c4.q2FD40",
+  "buildId": "czkc6DgDv3UUlTrSfDMqX",
+  "sourceSha256": "e17322b2faf5b5181f6a50bcd5cd4baeae2ca31f57f7bfd1653399b4e9e28efa",
+  "sourceSha256Basis": "Exact binding identity copied, not a full-source recomputation by this review.",
+  "disposition": "STATIC_READY_FOR_SEPARATELY_GRANTED_SERIAL_COLLECTION",
+  "runtimeAuthority": "NOT_GRANTED_BY_THIS_ARTIFACT",
+  "runtimePerformed": false,
+  "files": {
+    "script": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-focal-articulation-v1.1.mjs",
+      "bytes": 33593,
+      "sha256": "194b55ae2e92ff863540fcd4d9eb5b322d2f6a0dc517d2adcdfbc5e85c1b3f3f"
+    },
+    "note": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-focal-articulation-v1.1.md",
+      "bytes": 10223,
+      "sha256": "cde07d8a5f519c07292ff27a21b5c30ec077fb1a87544bfc8b0591131becac41"
+    },
+    "binding": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c4.v2.json",
+      "bytes": 1068,
+      "sha256": "8a64152769ee5f6ff217c6f0216c73966e48e7cb22bb8f278810741c03c21fca"
+    },
+    "preservedV1": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-focal-articulation-v1.mjs",
+      "bytes": 33255,
+      "sha256": "497b3436cabd6c85a9f7025b259c33442d4cca9d6f4998c8ce6c2bc441a12bf7"
+    },
+    "preservedV1Freeze": {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-focal-articulation-v1.freeze.json",
+      "bytes": 7430,
+      "sha256": "dd8a97b53075cf1af13cf4a76696c740380666138b8bd3e321da385d3b79a013"
+    }
+  },
+  "reviewedFrozenSources": [
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/ui/primitives.tsx",
+      "bytes": 2613,
+      "sha256": "f9764a70e7767be25deeaa50ca9c033d943eba1f8f0764d2d1e2602603604a9c"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/EquipmentControls.tsx",
+      "bytes": 4137,
+      "sha256": "7bc5e8fb40e89648912c95930d9ffdf96b517d2405c21a2c3d97d409bc62a6a0"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/StageCameraControls.tsx",
+      "bytes": 2553,
+      "sha256": "59c4e2ea4f934e62aa8ae1584f4b7b1ac2548783ef0ce86ea537db3ffc7440d2"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/use-scene-camera.ts",
+      "bytes": 4073,
+      "sha256": "067295ac993a703175141433cf149baf21b7d2ddcbd481e3526546c9c1d604d1"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/camera-policy.ts",
+      "bytes": 2295,
+      "sha256": "a076644fb99ba415c29d830fe8e8b659fb7bd8d2ab4af3be64a5468e94cdfa15"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/CameraRig.tsx",
+      "bytes": 2468,
+      "sha256": "057f6c81ba7e437e2b8e65f1045f4fa46f5373a8939917a295dab29deb7626e7"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/scene-data.ts",
+      "bytes": 3759,
+      "sha256": "51f71170c7a0547c9fd473e0ab0b5cbd98e62bfe9d4e01c9de2961185fc0ba7c"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/SceneAnnotations.tsx",
+      "bytes": 4612,
+      "sha256": "95df757c9086fcee1f473936d41c0dc6be71d4b73a50feb34707ec503c85f710"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/SceneAnnotations3D.tsx",
+      "bytes": 2296,
+      "sha256": "023fa5d15d13e1a508eb7fc34ac8254f793d8193601daa2f50e63eb730d97980"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/equipment-rig.ts",
+      "bytes": 5114,
+      "sha256": "35e90812bf0eaeed0648aacf250c202d60dec5596502b1af1d357bba6e5d91a8"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/scene/rig-math.ts",
+      "bytes": 442,
+      "sha256": "65ea609f52495fdb52b30a9d1525fbb8b1346c409be82e8e73ea728a7dfa9d87"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/incidents/incident-panel.tsx",
+      "bytes": 6582,
+      "sha256": "f603042344b27c7bc836830091d1de79b4ebe51987511ea2b6c3ef9acf0566b5"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/server/tracking/service.ts",
+      "bytes": 8850,
+      "sha256": "cde091096700a8b035d9e31c58a80ab88a9f58ab6609ebc1b41f927077dad4aa"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/app/api/tracking/route.ts",
+      "bytes": 671,
+      "sha256": "6d0150bfb9ae98e8be20273dedcfbde7088aa9eb86983946ee789fb985dd7498"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/packages/contracts/src/tracking.ts",
+      "bytes": 6816,
+      "sha256": "fca281b15779c3dbc902cb3443e8bc7cb77fc3f010bfc679d3ace755a66b92a0"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/data/equipment/catalog.json",
+      "bytes": 51368,
+      "sha256": "3a0cdc1ab07bd993028fac9c462c34e3d7812b8baf4447c9ad34a40db6c7758b"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/tests/frontend/browser-actions.mjs",
+      "bytes": 6141,
+      "sha256": "a3f7d2a06ae7228c92ecc8d6854bd61222f7eddbcdab59e91934c9e30f477416"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/resources/blender/safety-simulator/maeda-site/maeda/pose.py",
+      "bytes": 2527,
+      "sha256": "17192b59c6598f58d95b083b928f33d3287148f92814bb8a7a96de96fbdbd2c2"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/resources/blender/safety-simulator/maeda-site/maeda/rig_builder.py",
+      "bytes": 3955,
+      "sha256": "fba68a118f9b98ababa60412ee912ed3a9216fa2c877da19ae63b4a86d2db925"
+    }
+  ],
+  "scope": {
+    "pairs": 6,
+    "targetMotions": 6,
+    "maxPngs": 12,
+    "maxGrantDurationMs": 300000,
+    "grantPhase": "FOCAL-BROWSER",
+    "grantIdPattern": "^W3A-C4-FOCAL-[A-Za-z0-9-]+$",
+    "outputSubdirectory": "focal-articulation-v1.1",
+    "originalFourRecipeLinesUnchanged": true,
+    "recipes": [
+      {
+        "id": "tadano-hook",
+        "preset": "tadano-gr250n4",
+        "field": "hookHeightM",
+        "before": 3,
+        "after": 10,
+        "fixed": {
+          "boomLengthM": 20,
+          "boomAngleDeg": 50,
+          "slewDeg": 0
+        },
+        "zoomClicks": 2
+      },
+      {
+        "id": "ltm-hook",
+        "preset": "liebherr-ltm1050",
+        "field": "hookHeightM",
+        "before": 3,
+        "after": 10,
+        "fixed": {
+          "boomLengthM": 26,
+          "boomAngleDeg": 50,
+          "slewDeg": 0
+        },
+        "zoomClicks": 2
+      },
+      {
+        "id": "sk-trolley",
+        "preset": "sk1265-at6",
+        "field": "trolleyM",
+        "before": 20,
+        "after": 50,
+        "fixed": {
+          "hookHeightM": 16,
+          "slewDeg": 0
+        },
+        "zoomClicks": 0
+      },
+      {
+        "id": "sk-hook",
+        "preset": "sk1265-at6",
+        "field": "hookHeightM",
+        "before": 6,
+        "after": 28,
+        "fixed": {
+          "trolleyM": 50,
+          "slewDeg": 0
+        },
+        "zoomClicks": 0
+      },
+      {
+        "id": "maeda-hook",
+        "presetId": "maeda-mc305",
+        "field": "hookHeightM",
+        "before": 1,
+        "after": 4.5,
+        "fixed": {
+          "boomLengthM": 10,
+          "boomAngleDeg": 55,
+          "slewDeg": 0
+        },
+        "zoomClicks": 2,
+        "proof": {
+          "branch": "articulated attachment endpoints",
+          "tipHeightM": 9.6115204429,
+          "attachmentOffsetM": 0.23,
+          "formula": "9.6115204429 - hookHeightM - 0.23",
+          "beforeRopeM": 8.3815204429,
+          "afterRopeM": 4.8815204429,
+          "range": [
+            1,
+            4.5
+          ],
+          "scope": "Authored geometry and shipped source, not measured exported/runtime transforms."
+        }
+      },
+      {
+        "id": "172ecb-hook",
+        "presetId": "liebherr-172ecb",
+        "field": "hookHeightM",
+        "before": 6,
+        "after": 34,
+        "fixed": {
+          "trolleyM": 30,
+          "slewDeg": 0
+        },
+        "zoomClicks": 0,
+        "proof": {
+          "branch": "relative hoist",
+          "formula": "24.73 - (hookHeightM - 18.8)",
+          "beforeRopeM": 37.53,
+          "afterRopeM": 9.53,
+          "range": [
+            2,
+            42.3
+          ],
+          "trolleyRange": [
+            3,
+            50
+          ],
+          "scope": "Positive source rope scale; rendered clearance and engineering validity remain unverified."
+        }
+      }
+    ]
+  },
+  "syntaxCheck": {
+    "command": "node --check /90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-focal-articulation-v1.1.mjs",
+    "exitCode": 0,
+    "moduleImported": false
+  },
+  "maximumSuccessfulCollectionStatus": "REVIEW_REQUIRED",
+  "productAcceptance": "NOT_RUN",
+  "routeInvalidationCoverage": "NOT_IMPLEMENTED",
+  "limitations": [
+    "Locked is incident framing or fallback map bounds, not equipment-specific focus.",
+    "One orbit before each pair and fixed projection proxies do not certify exact camera internals or rig visibility.",
+    "Annotation overlap and small details may remain inconclusive after collection; direct image review is required.",
+    "Existing three unpictured preset failures and missing ten original motions are not cleared by this focal scope.",
+    "Maeda and 172ECB added endpoint proofs establish source bounds and positive rope spans only. No new focal frame has been viewed by this source review."
+  ],
+  "preservation": {
+    "frozenV1BytesUnchanged": true,
+    "originalAssetFailures": "PRESERVED",
+    "original31AndRetry29Pngs": "UNMODIFIED_BY_THIS_TASK"
+  }
+}

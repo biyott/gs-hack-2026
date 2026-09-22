@@ -1,0 +1,1936 @@
+{
+  "reviewVersion": "c4-http-semantic-review-v1",
+  "reviewType": "FILES_ONLY_INDEPENDENT_SEMANTIC_PUBLICATION_REVIEW",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "manifestHash": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d",
+  "disposition": "SIX_SCOPED_APPLICABLE_PUBLICATIONS_OBSERVED",
+  "overallVerdict": "NOT_ISSUED",
+  "scope": "Six measured HTTP cases: original-normal and additive-en equipment/fire, plus additive genuine fire reroute KO/EN. Saved JSON exports/raw model wires and full corpus source only; no runtime, product imports, provider calls, DB opens or tests.",
+  "findings": [],
+  "independentCheckExceptions": [],
+  "cases": [
+    {
+      "case": "measured-equipment",
+      "lineage": {
+        "runId": "760da7e6-8ff0-4c9a-bcce-900a71ea31b0",
+        "incidentId": "45430beb-4d88-4e30-8618-1975ddb369c4",
+        "guidanceId": "GUIDANCE:760da7e6-8ff0-4c9a-bcce-900a71ea31b0:45430beb-4d88-4e30-8618-1975ddb369c4:WORKER-A",
+        "eventId": "6af58dee-7b37-446f-8fd0-8d6b62fe05d8",
+        "guidanceVersion": 2,
+        "primaryGuidanceVersion": 1,
+        "routeVersion": 1,
+        "profileVersion": 1,
+        "locale": "ko",
+        "generatedAt": "2026-09-21T17:43:48.254Z",
+        "expiresAt": "2026-09-21T17:44:48.254Z"
+      },
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "reasonCode": "evacuate",
+      "destinationId": "REFUGE-01",
+      "citation": {
+        "documentId": "EQ-001",
+        "documentVersion": "0.1.0",
+        "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+      },
+      "approvedText": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+      "approvedTextSha256": "13c90266f5ad5b8ba7520adee6ab6cba325bcf322445b0d73b46b51e74d40d0d",
+      "independentChecks": {
+        "requestBytesHashMatch": true,
+        "responseBytesHashMatch": true,
+        "callModelMessageHashMatch": true,
+        "actualForwardedNoDelay": true,
+        "wireLocaleActionMatch": true,
+        "exactReviewedSelectionAndPublicText": true,
+        "exactCitation": true,
+        "sourceBytesMatchCorpus": true,
+        "currentDbEnvelopeMatch": true,
+        "reconnectEnvelopeMatch": true,
+        "primaryContentRetained": true,
+        "primaryPayloadHashMatch": true,
+        "primaryBeforeSupplement": true,
+        "receiptUnder5000ms": true,
+        "recordedGenerationUnder5000ms": true
+      },
+      "rawLocalePredicates": [
+        {
+          "locale": "ko",
+          "status": "PASS"
+        },
+        {
+          "locale": "en",
+          "status": "FAIL"
+        }
+      ],
+      "rawPublicationChecks": [
+        {
+          "name": "actual provider has accepted call ID, response hash and model",
+          "passed": true
+        },
+        {
+          "name": "completion strictly before 5000ms",
+          "passed": true
+        },
+        {
+          "name": "guidance lifetime binds fresh request UTC",
+          "passed": true
+        },
+        {
+          "name": "supplement retains primary lineage and raises envelope version",
+          "passed": true
+        },
+        {
+          "name": "primary SSE and HTTP response precede supplemental SSE",
+          "passed": true
+        },
+        {
+          "name": "supplement receipt is before 5000ms after primary SSE receipt",
+          "passed": true
+        },
+        {
+          "name": "SSE primary matches initial HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "accepted DB supplement equals public current",
+          "passed": true
+        },
+        {
+          "name": "each citation has exact persisted source and reviewed locale text",
+          "passed": true
+        },
+        {
+          "name": "citation has an actual retrieval candidate within generation interval",
+          "passed": true
+        },
+        {
+          "name": "original persisted envelope bytes remain unchanged",
+          "passed": true
+        },
+        {
+          "name": "current DB envelope matches augmented HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "current snapshot revision exists in DB",
+          "passed": true
+        },
+        {
+          "name": "reconnect snapshot contains same supplement and lineage",
+          "passed": true
+        }
+      ],
+      "rawCaseChecks": [
+        {
+          "name": "HTTP, reconnect and DB observations bind the measured run",
+          "passed": true
+        },
+        {
+          "name": "HTTP initial has primary template guidance",
+          "passed": true
+        },
+        {
+          "name": "every accepted publication satisfies all local checks",
+          "passed": true
+        },
+        {
+          "name": "immutable firstGuidance 45430beb-4d88-4e30-8618-1975ddb369c4",
+          "passed": true
+        },
+        {
+          "name": "SSE sequence increases within stream",
+          "passed": true
+        },
+        {
+          "name": "SSE capture closed without failure",
+          "passed": true
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "afb57b59-a278-40b0-9ec9-62df779c5640",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "embedding": {
+            "provider": "transformers.js@3.8.1/onnxruntime-node",
+            "model": "Xenova/multilingual-e5-small",
+            "version": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+            "dimensions": 384,
+            "mode": "actual"
+          },
+          "eligibleDocumentIds": [
+            "EQ-001"
+          ],
+          "causalFilterDecisions": [
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven"
+              ]
+            }
+          ],
+          "fts": [
+            "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+          ],
+          "vector": [
+            "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+          ],
+          "fused": [
+            "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+          ]
+        }
+      ],
+      "provider": {
+        "ragRunId": "99f047be-435c-4366-9471-79302f9c73db",
+        "callId": "chatcmpl-3n5Jq7FqWcti4S9MMDAOrlgSZsvYcf5N",
+        "captureId": "75543c3f-bc72-4f6d-8dc5-8f5f5dd0770e",
+        "requestSha256": "8aa2ec0eb70deb459e8af5b02b6d394aa9f5b0050751e4a1ccc672b7b9ab1c9b",
+        "responseSha256": "1807da4e4e3702657f97dc4579b75c58cb69cfacf621198cbb9dd95a762e8edc",
+        "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+        "model": "Qwen3-0.6B-Q8_0",
+        "selection": 0,
+        "offeredDocumentIds": [
+          "EQ-001"
+        ],
+        "retrievalMs": 40.77844200000072,
+        "generationMs": 239.93988999999965,
+        "rawCaptureJoinVerdict": "PASS"
+      },
+      "publication": {
+        "primaryFrameOrder": 4,
+        "primaryReceivedUtc": "2026-09-21T17:43:48.268Z",
+        "supplementFrameOrder": 7,
+        "supplementReceivedUtc": "2026-09-21T17:43:48.555Z",
+        "receiptDeltaMs": 286.89408699999876,
+        "primaryPayloadSha256": "309e6daebfedc7d5efc756b2fabbb56d72efb6b1bba1940ef1c6c843705da835",
+        "changedPrimaryFields": [
+          "eventId",
+          "evidence",
+          "guidanceVersion",
+          "mode",
+          "supplementalExplanation",
+          "updateKind"
+        ]
+      },
+      "firstPrimary": {
+        "priorSnapshotsWithoutGuidance": 2,
+        "uniquePrimaryVersions": [
+          1
+        ],
+        "scenarioId": "EQ-APPROACH",
+        "assessment": "Actual equipment exposure/current valid route supports EQ-001."
+      }
+    },
+    {
+      "case": "measured-equipment-additive-en",
+      "lineage": {
+        "runId": "70528854-fdc2-47a1-9ffe-fb8e2456c873",
+        "incidentId": "a43c1c88-7468-4832-9181-a2ff88dc123d",
+        "guidanceId": "GUIDANCE:70528854-fdc2-47a1-9ffe-fb8e2456c873:a43c1c88-7468-4832-9181-a2ff88dc123d:WORKER-A",
+        "eventId": "2604e821-2b88-4967-a52e-8c7d8a2107d6",
+        "guidanceVersion": 2,
+        "primaryGuidanceVersion": 1,
+        "routeVersion": 1,
+        "profileVersion": 2,
+        "locale": "en",
+        "generatedAt": "2026-09-21T17:43:49.952Z",
+        "expiresAt": "2026-09-21T17:44:49.952Z"
+      },
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "reasonCode": "evacuate",
+      "destinationId": "REFUGE-01",
+      "citation": {
+        "documentId": "EQ-001",
+        "documentVersion": "0.1.0",
+        "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+      },
+      "approvedText": "This alert is tied to the server's equipment exposure assessment, and the routing engine determines the route and destination.",
+      "approvedTextSha256": "c34eb7b0c9fb300dd3ff566e6666a56034739dc63d00c978f36fea422912e89f",
+      "independentChecks": {
+        "requestBytesHashMatch": true,
+        "responseBytesHashMatch": true,
+        "callModelMessageHashMatch": true,
+        "actualForwardedNoDelay": true,
+        "wireLocaleActionMatch": true,
+        "exactReviewedSelectionAndPublicText": true,
+        "exactCitation": true,
+        "sourceBytesMatchCorpus": true,
+        "currentDbEnvelopeMatch": true,
+        "reconnectEnvelopeMatch": true,
+        "primaryContentRetained": true,
+        "primaryPayloadHashMatch": true,
+        "primaryBeforeSupplement": true,
+        "receiptUnder5000ms": true,
+        "recordedGenerationUnder5000ms": true
+      },
+      "rawLocalePredicates": [
+        {
+          "locale": "ko",
+          "status": "FAIL"
+        },
+        {
+          "locale": "en",
+          "status": "PASS"
+        }
+      ],
+      "rawPublicationChecks": [
+        {
+          "name": "actual provider has accepted call ID, response hash and model",
+          "passed": true
+        },
+        {
+          "name": "completion strictly before 5000ms",
+          "passed": true
+        },
+        {
+          "name": "guidance lifetime binds fresh request UTC",
+          "passed": true
+        },
+        {
+          "name": "supplement retains primary lineage and raises envelope version",
+          "passed": true
+        },
+        {
+          "name": "primary SSE and HTTP response precede supplemental SSE",
+          "passed": true
+        },
+        {
+          "name": "supplement receipt is before 5000ms after primary SSE receipt",
+          "passed": true
+        },
+        {
+          "name": "SSE primary matches initial HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "accepted DB supplement equals public current",
+          "passed": true
+        },
+        {
+          "name": "each citation has exact persisted source and reviewed locale text",
+          "passed": true
+        },
+        {
+          "name": "citation has an actual retrieval candidate within generation interval",
+          "passed": true
+        },
+        {
+          "name": "original persisted envelope bytes remain unchanged",
+          "passed": true
+        },
+        {
+          "name": "current DB envelope matches augmented HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "current snapshot revision exists in DB",
+          "passed": true
+        },
+        {
+          "name": "reconnect snapshot contains same supplement and lineage",
+          "passed": true
+        }
+      ],
+      "rawCaseChecks": [
+        {
+          "name": "HTTP, reconnect and DB observations bind the measured run",
+          "passed": true
+        },
+        {
+          "name": "HTTP initial has primary template guidance",
+          "passed": true
+        },
+        {
+          "name": "every accepted publication satisfies all local checks",
+          "passed": true
+        },
+        {
+          "name": "immutable firstGuidance a43c1c88-7468-4832-9181-a2ff88dc123d",
+          "passed": true
+        },
+        {
+          "name": "SSE sequence increases within stream",
+          "passed": true
+        },
+        {
+          "name": "additive English primary binds the supported newer target profile",
+          "passed": true
+        },
+        {
+          "name": "SSE capture closed without failure",
+          "passed": true
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "1a09d0e8-8d1e-4865-8afc-5bbd6044ce2d",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "embedding": {
+            "provider": "transformers.js@3.8.1/onnxruntime-node",
+            "model": "Xenova/multilingual-e5-small",
+            "version": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+            "dimensions": 384,
+            "mode": "actual"
+          },
+          "eligibleDocumentIds": [
+            "EQ-001"
+          ],
+          "causalFilterDecisions": [
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven"
+              ]
+            }
+          ],
+          "fts": [
+            "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+          ],
+          "vector": [
+            "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+          ],
+          "fused": [
+            "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+          ]
+        }
+      ],
+      "provider": {
+        "ragRunId": "9be5b6a1-ad30-4fb1-8ccc-71fa9f11689a",
+        "callId": "chatcmpl-MT6vAzCh0KW1BSp6uGtvRsdg1DMUf2LI",
+        "captureId": "0eb4e046-894c-43d8-87b6-63548d64c497",
+        "requestSha256": "b3fd40ffef77a0d83aa91e2cac9c87e75d62a8033a222e3330a792be7506c48a",
+        "responseSha256": "43e455b3d9c768e7f03d1d4be923affc7f9e4ea0dcdd0332e4b5613a966cb506",
+        "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+        "model": "Qwen3-0.6B-Q8_0",
+        "selection": 0,
+        "offeredDocumentIds": [
+          "EQ-001"
+        ],
+        "retrievalMs": 37.737810000000536,
+        "generationMs": 243.16344799999933,
+        "rawCaptureJoinVerdict": "PASS"
+      },
+      "publication": {
+        "primaryFrameOrder": 6,
+        "primaryReceivedUtc": "2026-09-21T17:43:49.963Z",
+        "supplementFrameOrder": 9,
+        "supplementReceivedUtc": "2026-09-21T17:43:50.248Z",
+        "receiptDeltaMs": 285.14669100000174,
+        "primaryPayloadSha256": "ea07007ce664324b398b2f31e6d59cd9c4a889f370c1eb1799d56c25a201dde2",
+        "changedPrimaryFields": [
+          "eventId",
+          "evidence",
+          "guidanceVersion",
+          "mode",
+          "supplementalExplanation",
+          "updateKind"
+        ]
+      },
+      "firstPrimary": {
+        "priorSnapshotsWithoutGuidance": 3,
+        "uniquePrimaryVersions": [
+          1
+        ],
+        "scenarioId": "EQ-APPROACH",
+        "assessment": "Actual equipment exposure/current valid route supports EQ-001."
+      },
+      "supportedLocaleChange": {
+        "before": "ko",
+        "requested": "en",
+        "version": 2,
+        "commandStatus": 200,
+        "requestId": "7a9207fb-6407-4e26-9b71-a42e5be811f2"
+      }
+    },
+    {
+      "case": "measured-fire-gas",
+      "lineage": {
+        "runId": "95aa10ca-6e7d-4e3c-9bf6-cdffad4db09a",
+        "incidentId": "9bef9b11-2c49-4d39-95a9-0bf62688cff6",
+        "guidanceId": "GUIDANCE:95aa10ca-6e7d-4e3c-9bf6-cdffad4db09a:9bef9b11-2c49-4d39-95a9-0bf62688cff6:WORKER-A",
+        "eventId": "f6715480-0445-4217-b025-6a8e67d58e13",
+        "guidanceVersion": 2,
+        "primaryGuidanceVersion": 1,
+        "routeVersion": 1,
+        "profileVersion": 1,
+        "locale": "ko",
+        "generatedAt": "2026-09-21T17:43:49.090Z",
+        "expiresAt": "2026-09-21T17:44:49.090Z"
+      },
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "reasonCode": "evacuate",
+      "destinationId": "ASSEMBLY-01",
+      "citation": {
+        "documentId": "FG-004",
+        "documentVersion": "0.1.0",
+        "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+      },
+      "approvedText": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+      "approvedTextSha256": "5113facfab40cae0fe6a0be8a3e2e772a4d34370a17f0094c5cf145de1973796",
+      "independentChecks": {
+        "requestBytesHashMatch": true,
+        "responseBytesHashMatch": true,
+        "callModelMessageHashMatch": true,
+        "actualForwardedNoDelay": true,
+        "wireLocaleActionMatch": true,
+        "exactReviewedSelectionAndPublicText": true,
+        "exactCitation": true,
+        "sourceBytesMatchCorpus": true,
+        "currentDbEnvelopeMatch": true,
+        "reconnectEnvelopeMatch": true,
+        "primaryContentRetained": true,
+        "primaryPayloadHashMatch": true,
+        "primaryBeforeSupplement": true,
+        "receiptUnder5000ms": true,
+        "recordedGenerationUnder5000ms": true
+      },
+      "rawLocalePredicates": [
+        {
+          "locale": "ko",
+          "status": "PASS"
+        },
+        {
+          "locale": "en",
+          "status": "FAIL"
+        }
+      ],
+      "rawPublicationChecks": [
+        {
+          "name": "actual provider has accepted call ID, response hash and model",
+          "passed": true
+        },
+        {
+          "name": "completion strictly before 5000ms",
+          "passed": true
+        },
+        {
+          "name": "guidance lifetime binds fresh request UTC",
+          "passed": true
+        },
+        {
+          "name": "supplement retains primary lineage and raises envelope version",
+          "passed": true
+        },
+        {
+          "name": "primary SSE and HTTP response precede supplemental SSE",
+          "passed": true
+        },
+        {
+          "name": "supplement receipt is before 5000ms after primary SSE receipt",
+          "passed": true
+        },
+        {
+          "name": "SSE primary matches initial HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "accepted DB supplement equals public current",
+          "passed": true
+        },
+        {
+          "name": "each citation has exact persisted source and reviewed locale text",
+          "passed": true
+        },
+        {
+          "name": "citation has an actual retrieval candidate within generation interval",
+          "passed": true
+        },
+        {
+          "name": "original persisted envelope bytes remain unchanged",
+          "passed": true
+        },
+        {
+          "name": "current DB envelope matches augmented HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "current snapshot revision exists in DB",
+          "passed": true
+        },
+        {
+          "name": "reconnect snapshot contains same supplement and lineage",
+          "passed": true
+        }
+      ],
+      "rawCaseChecks": [
+        {
+          "name": "HTTP, reconnect and DB observations bind the measured run",
+          "passed": true
+        },
+        {
+          "name": "HTTP initial has primary template guidance",
+          "passed": true
+        },
+        {
+          "name": "every accepted publication satisfies all local checks",
+          "passed": true
+        },
+        {
+          "name": "immutable firstGuidance 9bef9b11-2c49-4d39-95a9-0bf62688cff6",
+          "passed": true
+        },
+        {
+          "name": "SSE sequence increases within stream",
+          "passed": true
+        },
+        {
+          "name": "SSE capture closed without failure",
+          "passed": true
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "b9370d67-b490-4bce-a18d-449d00ea9bf0",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "embedding": {
+            "provider": "transformers.js@3.8.1/onnxruntime-node",
+            "model": "Xenova/multilingual-e5-small",
+            "version": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+            "dimensions": 384,
+            "mode": "actual"
+          },
+          "eligibleDocumentIds": [
+            "FG-004"
+          ],
+          "causalFilterDecisions": [
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "fire-route-invalidation-unproven"
+              ]
+            }
+          ],
+          "fts": [
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ],
+          "vector": [
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ],
+          "fused": [
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ]
+        }
+      ],
+      "provider": {
+        "ragRunId": "8218e0e8-2202-4730-a3bb-091b5d47b432",
+        "callId": "chatcmpl-OVQ9NzIU2Dl2gub9oRJoSQXCQWIfUAQr",
+        "captureId": "997940b4-4309-4b22-a0e5-d02d3ab90f9b",
+        "requestSha256": "db09bcf4ffb6fd065460735fe2a62b4992cc672cd228360694e3f174f4957dad",
+        "responseSha256": "a9ea8f7ac55bf9a1875f1eed63897a93731ef65145d1920c6bf97bbe343f9d22",
+        "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+        "model": "Qwen3-0.6B-Q8_0",
+        "selection": 0,
+        "offeredDocumentIds": [
+          "FG-004"
+        ],
+        "retrievalMs": 38.30883800000083,
+        "generationMs": 234.6209889999991,
+        "rawCaptureJoinVerdict": "PASS"
+      },
+      "publication": {
+        "primaryFrameOrder": 4,
+        "primaryReceivedUtc": "2026-09-21T17:43:49.101Z",
+        "supplementFrameOrder": 7,
+        "supplementReceivedUtc": "2026-09-21T17:43:49.377Z",
+        "receiptDeltaMs": 276.69446400000015,
+        "primaryPayloadSha256": "a6b441b9af36eb092cc9286e88f56991ba03d097cf2669ac74827c25e0dd990f",
+        "changedPrimaryFields": [
+          "eventId",
+          "evidence",
+          "guidanceVersion",
+          "mode",
+          "supplementalExplanation",
+          "updateKind"
+        ]
+      },
+      "firstPrimary": {
+        "priorSnapshotsWithoutGuidance": 2,
+        "uniquePrimaryVersions": [
+          1
+        ],
+        "scenarioId": "FG-FIRE",
+        "assessment": "First-fire FG-004 is supported by explicit POLICY-FG-EVACUATE and current validated route. FG-002 false causal filter excludes it before ranking and actual model options."
+      }
+    },
+    {
+      "case": "measured-fire-gas-additive-en",
+      "lineage": {
+        "runId": "89a8ff3e-a139-4fb2-b93e-2a5140fc1fef",
+        "incidentId": "3b5cf706-ffba-44de-8d4a-a8c795340c11",
+        "guidanceId": "GUIDANCE:89a8ff3e-a139-4fb2-b93e-2a5140fc1fef:3b5cf706-ffba-44de-8d4a-a8c795340c11:WORKER-A",
+        "eventId": "ebb55879-2464-4c2e-8ace-c6e299afa7cc",
+        "guidanceVersion": 2,
+        "primaryGuidanceVersion": 1,
+        "routeVersion": 1,
+        "profileVersion": 2,
+        "locale": "en",
+        "generatedAt": "2026-09-21T17:43:50.700Z",
+        "expiresAt": "2026-09-21T17:44:50.700Z"
+      },
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "reasonCode": "evacuate",
+      "destinationId": "ASSEMBLY-01",
+      "citation": {
+        "documentId": "FG-004",
+        "documentVersion": "0.1.0",
+        "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+      },
+      "approvedText": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+      "approvedTextSha256": "68cd1b48443c94c8648fb23e8c0fa4ae14c496cdcf3ad117ce91718edf8559b4",
+      "independentChecks": {
+        "requestBytesHashMatch": true,
+        "responseBytesHashMatch": true,
+        "callModelMessageHashMatch": true,
+        "actualForwardedNoDelay": true,
+        "wireLocaleActionMatch": true,
+        "exactReviewedSelectionAndPublicText": true,
+        "exactCitation": true,
+        "sourceBytesMatchCorpus": true,
+        "currentDbEnvelopeMatch": true,
+        "reconnectEnvelopeMatch": true,
+        "primaryContentRetained": true,
+        "primaryPayloadHashMatch": true,
+        "primaryBeforeSupplement": true,
+        "receiptUnder5000ms": true,
+        "recordedGenerationUnder5000ms": true
+      },
+      "rawLocalePredicates": [
+        {
+          "locale": "ko",
+          "status": "FAIL"
+        },
+        {
+          "locale": "en",
+          "status": "PASS"
+        }
+      ],
+      "rawPublicationChecks": [
+        {
+          "name": "actual provider has accepted call ID, response hash and model",
+          "passed": true
+        },
+        {
+          "name": "completion strictly before 5000ms",
+          "passed": true
+        },
+        {
+          "name": "guidance lifetime binds fresh request UTC",
+          "passed": true
+        },
+        {
+          "name": "supplement retains primary lineage and raises envelope version",
+          "passed": true
+        },
+        {
+          "name": "primary SSE and HTTP response precede supplemental SSE",
+          "passed": true
+        },
+        {
+          "name": "supplement receipt is before 5000ms after primary SSE receipt",
+          "passed": true
+        },
+        {
+          "name": "SSE primary matches initial HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "accepted DB supplement equals public current",
+          "passed": true
+        },
+        {
+          "name": "each citation has exact persisted source and reviewed locale text",
+          "passed": true
+        },
+        {
+          "name": "citation has an actual retrieval candidate within generation interval",
+          "passed": true
+        },
+        {
+          "name": "original persisted envelope bytes remain unchanged",
+          "passed": true
+        },
+        {
+          "name": "current DB envelope matches augmented HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "current snapshot revision exists in DB",
+          "passed": true
+        },
+        {
+          "name": "reconnect snapshot contains same supplement and lineage",
+          "passed": true
+        }
+      ],
+      "rawCaseChecks": [
+        {
+          "name": "HTTP, reconnect and DB observations bind the measured run",
+          "passed": true
+        },
+        {
+          "name": "HTTP initial has primary template guidance",
+          "passed": true
+        },
+        {
+          "name": "every accepted publication satisfies all local checks",
+          "passed": true
+        },
+        {
+          "name": "immutable firstGuidance 3b5cf706-ffba-44de-8d4a-a8c795340c11",
+          "passed": true
+        },
+        {
+          "name": "SSE sequence increases within stream",
+          "passed": true
+        },
+        {
+          "name": "additive English primary binds the supported newer target profile",
+          "passed": true
+        },
+        {
+          "name": "SSE capture closed without failure",
+          "passed": true
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "4bf86dfc-a41d-4a63-9bf3-651ecf08fc17",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "embedding": {
+            "provider": "transformers.js@3.8.1/onnxruntime-node",
+            "model": "Xenova/multilingual-e5-small",
+            "version": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+            "dimensions": 384,
+            "mode": "actual"
+          },
+          "eligibleDocumentIds": [
+            "FG-004"
+          ],
+          "causalFilterDecisions": [
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "fire-route-invalidation-unproven"
+              ]
+            }
+          ],
+          "fts": [
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ],
+          "vector": [
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ],
+          "fused": [
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ]
+        }
+      ],
+      "provider": {
+        "ragRunId": "f78f3418-c76c-4f19-b39f-996b2c10add1",
+        "callId": "chatcmpl-f6lIWzQ5jT2SZRmlfhxnTix6yNwTPoHa",
+        "captureId": "556a5701-dd6c-410c-861e-b9d1e3991bc7",
+        "requestSha256": "02c6dd2f2eb66d0514b89e06ca9ec615b73e1eb37d67b7bc3312da68864c60aa",
+        "responseSha256": "aca974e1f5c062987da2b6eb718a4348e3f191f16cbd6d1fa2450f7604fce31f",
+        "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+        "model": "Qwen3-0.6B-Q8_0",
+        "selection": 0,
+        "offeredDocumentIds": [
+          "FG-004"
+        ],
+        "retrievalMs": 37.58833499999855,
+        "generationMs": 232.45277600000009,
+        "rawCaptureJoinVerdict": "PASS"
+      },
+      "publication": {
+        "primaryFrameOrder": 5,
+        "primaryReceivedUtc": "2026-09-21T17:43:50.710Z",
+        "supplementFrameOrder": 8,
+        "supplementReceivedUtc": "2026-09-21T17:43:50.982Z",
+        "receiptDeltaMs": 272.5371779999987,
+        "primaryPayloadSha256": "b7619283099727bf793554662613c5d06bfda4716925ef62672a3d1c42f6ffcd",
+        "changedPrimaryFields": [
+          "eventId",
+          "evidence",
+          "guidanceVersion",
+          "mode",
+          "supplementalExplanation",
+          "updateKind"
+        ]
+      },
+      "firstPrimary": {
+        "priorSnapshotsWithoutGuidance": 3,
+        "uniquePrimaryVersions": [
+          1
+        ],
+        "scenarioId": "FG-FIRE",
+        "assessment": "First-fire FG-004 is supported by explicit POLICY-FG-EVACUATE and current validated route. FG-002 false causal filter excludes it before ranking and actual model options."
+      },
+      "supportedLocaleChange": {
+        "before": "ko",
+        "requested": "en",
+        "version": 2,
+        "commandStatus": 200,
+        "requestId": "86ac3270-c554-415a-8a5d-38df20681b16"
+      }
+    },
+    {
+      "case": "http-reroute-addendum/measured-ko",
+      "lineage": {
+        "runId": "acbd3da5-7cce-459a-ba78-a560dbce60ef",
+        "incidentId": "cc987fe9-81bd-44cd-80cc-398701f1224a",
+        "guidanceId": "GUIDANCE:acbd3da5-7cce-459a-ba78-a560dbce60ef:cc987fe9-81bd-44cd-80cc-398701f1224a:WORKER-A",
+        "eventId": "70aa5734-898a-4f65-ae95-b3d22c1a2fdf",
+        "guidanceVersion": 4,
+        "primaryGuidanceVersion": 3,
+        "routeVersion": 2,
+        "profileVersion": 2,
+        "locale": "ko",
+        "generatedAt": "2026-09-21T17:43:53.603Z",
+        "expiresAt": "2026-09-21T17:44:53.603Z"
+      },
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "reasonCode": "evacuate",
+      "destinationId": "ASSEMBLY-01",
+      "citation": {
+        "documentId": "FG-002",
+        "documentVersion": "0.1.0",
+        "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+      },
+      "approvedText": "화재가 기존 경로에 영향을 주는 경우 엔진이 경로를 다시 평가합니다. 안내 설명의 적용 여부는 현재 안내·경로 버전의 일치로 확인됩니다.",
+      "approvedTextSha256": "914103a11f4af3f4cc8ffea65961401c3a38acefc2a05ecc1a4e4c1e02e49300",
+      "independentChecks": {
+        "requestBytesHashMatch": true,
+        "responseBytesHashMatch": true,
+        "callModelMessageHashMatch": true,
+        "actualForwardedNoDelay": true,
+        "wireLocaleActionMatch": true,
+        "exactReviewedSelectionAndPublicText": true,
+        "exactCitation": true,
+        "sourceBytesMatchCorpus": true,
+        "currentDbEnvelopeMatch": true,
+        "reconnectEnvelopeMatch": true,
+        "primaryContentRetained": true,
+        "primaryPayloadHashMatch": true,
+        "primaryBeforeSupplement": true,
+        "receiptUnder5000ms": true,
+        "recordedGenerationUnder5000ms": true
+      },
+      "rawLocalePredicates": null,
+      "rawPublicationChecks": [
+        {
+          "name": "actual provider has accepted call ID, response hash and model",
+          "passed": true
+        },
+        {
+          "name": "completion strictly before 5000ms",
+          "passed": true
+        },
+        {
+          "name": "guidance lifetime binds fresh request UTC",
+          "passed": true
+        },
+        {
+          "name": "supplement retains primary lineage and raises envelope version",
+          "passed": true
+        },
+        {
+          "name": "primary SSE and HTTP response precede supplemental SSE",
+          "passed": true
+        },
+        {
+          "name": "supplement receipt is before 5000ms after primary SSE receipt",
+          "passed": true
+        },
+        {
+          "name": "SSE primary matches initial HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "accepted DB supplement equals public current",
+          "passed": true
+        },
+        {
+          "name": "each citation has exact persisted source and reviewed locale text",
+          "passed": true
+        },
+        {
+          "name": "citation has an actual retrieval candidate within generation interval",
+          "passed": true
+        },
+        {
+          "name": "original persisted envelope bytes remain unchanged",
+          "passed": true
+        },
+        {
+          "name": "current DB envelope matches augmented HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "current snapshot revision exists in DB",
+          "passed": true
+        },
+        {
+          "name": "reconnect snapshot contains same supplement and lineage",
+          "passed": true
+        }
+      ],
+      "rawCaseChecks": [
+        {
+          "name": "actual first primaries anchored to named 1000ms and 8000ms scenario events",
+          "passed": true
+        },
+        {
+          "name": "adjacent durable predecessor belongs to original published route",
+          "passed": true
+        },
+        {
+          "name": "same run worker map floor and confirmed unchanged profile",
+          "passed": true
+        },
+        {
+          "name": "requested locale binds both published routes",
+          "passed": true
+        },
+        {
+          "name": "prior route was actually published and remains unexpired at reroute",
+          "passed": true
+        },
+        {
+          "name": "reroute has generated and transmission audit evidence",
+          "passed": true
+        },
+        {
+          "name": "actual 8000ms route block and fire polygon events newly applied",
+          "passed": true
+        },
+        {
+          "name": "fresh causal fire geometry changed",
+          "passed": true
+        },
+        {
+          "name": "old route permissible before and blocked by current causal fire",
+          "passed": true
+        },
+        {
+          "name": "new movement route geometrically permissible with increased route version",
+          "passed": true
+        },
+        {
+          "name": "configured evacuation policy and actual movement reason agree",
+          "passed": true
+        },
+        {
+          "name": "original incident first guidance remains immutable",
+          "passed": true
+        },
+        {
+          "name": "one actual accepted generation belongs to target reroute primary",
+          "passed": true
+        },
+        {
+          "name": "target HTTP DB SSE reconnect publication passes settled oracle",
+          "passed": true
+        },
+        {
+          "name": "actual accepted model selection cites FG002 in requested locale",
+          "passed": true
+        },
+        {
+          "name": "persisted actual E5 trace records true fact and eligible FG002",
+          "passed": true
+        },
+        {
+          "name": "actual provider call ID and content SHA join captured transparent response",
+          "passed": true
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "2eac4cbc-8326-4b37-90f4-ac7d7833940b",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": true,
+            "equipmentDirectionChanged": false
+          },
+          "embedding": {
+            "provider": "transformers.js@3.8.1/onnxruntime-node",
+            "model": "Xenova/multilingual-e5-small",
+            "version": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+            "dimensions": 384,
+            "mode": "actual"
+          },
+          "eligibleDocumentIds": [
+            "FG-002",
+            "FG-004"
+          ],
+          "causalFilterDecisions": [
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "FG-002:0.1.0:890827a5b140b5ed:procedure"
+          ],
+          "vector": [
+            "FG-002:0.1.0:890827a5b140b5ed:procedure",
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ],
+          "fused": [
+            "FG-002:0.1.0:890827a5b140b5ed:procedure",
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ]
+        }
+      ],
+      "provider": {
+        "ragRunId": "13b0a88e-298a-4ac3-b7c7-981261f2bc16",
+        "callId": "chatcmpl-JkIu6ttc8zXWKK4FONne0Jl0X7N4KIgB",
+        "captureId": "8807a511-0a7d-4cfc-8994-889a979ea4c2",
+        "requestSha256": "66fc7f19170f3cf9b41c9af37bfe49f6af9ec5f22572615a34ea567f245073b4",
+        "responseSha256": "73ae85df89fe2393f69324c6b7ca3c1a7273f8f4b6f1007f52bc75c2be0942a6",
+        "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+        "model": "Qwen3-0.6B-Q8_0",
+        "selection": 0,
+        "offeredDocumentIds": [
+          "FG-002",
+          "FG-004"
+        ],
+        "retrievalMs": 46.14917199999945,
+        "generationMs": 273.9476200000008,
+        "rawCaptureJoinVerdict": "PASS"
+      },
+      "publication": {
+        "primaryFrameOrder": 18,
+        "primaryReceivedUtc": "2026-09-21T17:43:53.618Z",
+        "supplementFrameOrder": 22,
+        "supplementReceivedUtc": "2026-09-21T17:43:53.955Z",
+        "receiptDeltaMs": 336.7578229999999,
+        "primaryPayloadSha256": "a01ca398b2842078f223c52263f51c157a9628730ed3b6eee324417c1d8e5303",
+        "changedPrimaryFields": [
+          "eventId",
+          "evidence",
+          "guidanceVersion",
+          "mode",
+          "supplementalExplanation",
+          "updateKind"
+        ]
+      },
+      "causalProof": {
+        "baselineVirtualMs": 1000,
+        "predecessorVirtualMs": 7103.510855,
+        "predecessorRunVersion": 14,
+        "predecessorSequence": 76,
+        "targetVirtualMs": 8000,
+        "targetRunVersion": 15,
+        "targetSequence": 77,
+        "previousPrimaryVersion": 1,
+        "previousRouteVersion": 1,
+        "newPrimaryVersion": 3,
+        "newRouteVersion": 2,
+        "profileUnchanged": true,
+        "oldRoutePermissibleBefore": true,
+        "oldRoutePermissibleAfter": false,
+        "newRoutePermissible": true,
+        "assessment": "Observed FG-ROUTE-BLOCK-003 PATH-B closure, -004 fire expansion to x60..98/y20..43, and -007 fresh sensor invalidate the previously published north y42 route. New primary3/route2 exits south to y8 and reaches ASSEMBLY-01 via x132. Initial egress starts inside fire; do not label the entire route hazard-free."
+      },
+      "retrievalJoinLimitation": {
+        "rawRootAmbiguousRetrievalJoin": true,
+        "publicationCitationFilteredAmbiguous": false,
+        "sameIntervalCandidateIds": [
+          [
+            "2eac4cbc-8326-4b37-90f4-ac7d7833940b",
+            "0bb52a19-8191-4a0a-a8f7-3ec0a555986b"
+          ]
+        ],
+        "text": "Retrieval records carry no guidance/worker foreign key; all same-interval candidates are retained, and multiple candidates are explicitly ambiguous.",
+        "producerInputCapture": "NOT_CLAIMED; facts are read from the actual persisted retrieval trace, never passed into the HTTP app."
+      }
+    },
+    {
+      "case": "http-reroute-addendum/measured-en",
+      "lineage": {
+        "runId": "4d936d80-b065-4c2b-b681-b6cae7bbc9e1",
+        "incidentId": "d50c08ff-886a-4730-ab1f-da097d69e76e",
+        "guidanceId": "GUIDANCE:4d936d80-b065-4c2b-b681-b6cae7bbc9e1:d50c08ff-886a-4730-ab1f-da097d69e76e:WORKER-A",
+        "eventId": "de2bc84f-0cac-4576-ac94-7a3e6fb0bef8",
+        "guidanceVersion": 4,
+        "primaryGuidanceVersion": 3,
+        "routeVersion": 2,
+        "profileVersion": 2,
+        "locale": "en",
+        "generatedAt": "2026-09-21T17:43:54.716Z",
+        "expiresAt": "2026-09-21T17:44:54.716Z"
+      },
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "reasonCode": "evacuate",
+      "destinationId": "ASSEMBLY-01",
+      "citation": {
+        "documentId": "FG-002",
+        "documentVersion": "0.1.0",
+        "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+      },
+      "approvedText": "When fire affects an existing route, the engine reassesses routing. Whether a guidance explanation applies is checked against the current guidance and route versions.",
+      "approvedTextSha256": "79164b0c52f543712c1d01735e3380a60500b8ccaf658cdf9f4f7d37b0075924",
+      "independentChecks": {
+        "requestBytesHashMatch": true,
+        "responseBytesHashMatch": true,
+        "callModelMessageHashMatch": true,
+        "actualForwardedNoDelay": true,
+        "wireLocaleActionMatch": true,
+        "exactReviewedSelectionAndPublicText": true,
+        "exactCitation": true,
+        "sourceBytesMatchCorpus": true,
+        "currentDbEnvelopeMatch": true,
+        "reconnectEnvelopeMatch": true,
+        "primaryContentRetained": true,
+        "primaryPayloadHashMatch": true,
+        "primaryBeforeSupplement": true,
+        "receiptUnder5000ms": true,
+        "recordedGenerationUnder5000ms": true
+      },
+      "rawLocalePredicates": null,
+      "rawPublicationChecks": [
+        {
+          "name": "actual provider has accepted call ID, response hash and model",
+          "passed": true
+        },
+        {
+          "name": "completion strictly before 5000ms",
+          "passed": true
+        },
+        {
+          "name": "guidance lifetime binds fresh request UTC",
+          "passed": true
+        },
+        {
+          "name": "supplement retains primary lineage and raises envelope version",
+          "passed": true
+        },
+        {
+          "name": "primary SSE and HTTP response precede supplemental SSE",
+          "passed": true
+        },
+        {
+          "name": "supplement receipt is before 5000ms after primary SSE receipt",
+          "passed": true
+        },
+        {
+          "name": "SSE primary matches initial HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "accepted DB supplement equals public current",
+          "passed": true
+        },
+        {
+          "name": "each citation has exact persisted source and reviewed locale text",
+          "passed": true
+        },
+        {
+          "name": "citation has an actual retrieval candidate within generation interval",
+          "passed": true
+        },
+        {
+          "name": "original persisted envelope bytes remain unchanged",
+          "passed": true
+        },
+        {
+          "name": "current DB envelope matches augmented HTTP guide",
+          "passed": true
+        },
+        {
+          "name": "current snapshot revision exists in DB",
+          "passed": true
+        },
+        {
+          "name": "reconnect snapshot contains same supplement and lineage",
+          "passed": true
+        }
+      ],
+      "rawCaseChecks": [
+        {
+          "name": "actual first primaries anchored to named 1000ms and 8000ms scenario events",
+          "passed": true
+        },
+        {
+          "name": "adjacent durable predecessor belongs to original published route",
+          "passed": true
+        },
+        {
+          "name": "same run worker map floor and confirmed unchanged profile",
+          "passed": true
+        },
+        {
+          "name": "requested locale binds both published routes",
+          "passed": true
+        },
+        {
+          "name": "prior route was actually published and remains unexpired at reroute",
+          "passed": true
+        },
+        {
+          "name": "reroute has generated and transmission audit evidence",
+          "passed": true
+        },
+        {
+          "name": "actual 8000ms route block and fire polygon events newly applied",
+          "passed": true
+        },
+        {
+          "name": "fresh causal fire geometry changed",
+          "passed": true
+        },
+        {
+          "name": "old route permissible before and blocked by current causal fire",
+          "passed": true
+        },
+        {
+          "name": "new movement route geometrically permissible with increased route version",
+          "passed": true
+        },
+        {
+          "name": "configured evacuation policy and actual movement reason agree",
+          "passed": true
+        },
+        {
+          "name": "original incident first guidance remains immutable",
+          "passed": true
+        },
+        {
+          "name": "one actual accepted generation belongs to target reroute primary",
+          "passed": true
+        },
+        {
+          "name": "target HTTP DB SSE reconnect publication passes settled oracle",
+          "passed": true
+        },
+        {
+          "name": "actual accepted model selection cites FG002 in requested locale",
+          "passed": true
+        },
+        {
+          "name": "persisted actual E5 trace records true fact and eligible FG002",
+          "passed": true
+        },
+        {
+          "name": "actual provider call ID and content SHA join captured transparent response",
+          "passed": true
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "c2e9d686-ac54-4ed3-9dff-7d8cd0afdef4",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": true,
+            "equipmentDirectionChanged": false
+          },
+          "embedding": {
+            "provider": "transformers.js@3.8.1/onnxruntime-node",
+            "model": "Xenova/multilingual-e5-small",
+            "version": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+            "dimensions": 384,
+            "mode": "actual"
+          },
+          "eligibleDocumentIds": [
+            "FG-002",
+            "FG-004"
+          ],
+          "causalFilterDecisions": [
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "FG-002:0.1.0:890827a5b140b5ed:procedure"
+          ],
+          "vector": [
+            "FG-002:0.1.0:890827a5b140b5ed:procedure",
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ],
+          "fused": [
+            "FG-002:0.1.0:890827a5b140b5ed:procedure",
+            "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+          ]
+        }
+      ],
+      "provider": {
+        "ragRunId": "0ce8db44-c41e-412f-ab50-89490888189d",
+        "callId": "chatcmpl-hslHTzq3ebVJP0FAlBjORixNyz89lq5S",
+        "captureId": "33305ecc-d992-4055-9c2b-cd2494b2ffef",
+        "requestSha256": "2d7cb512b7bb769ed855976d7146e96f2c61c7a0f4fffd355a07d1727deb2aa7",
+        "responseSha256": "a361ec0f1be0cf689edf23ccaf35ceff00d1d4b58d193a3c265c2b9cc0970592",
+        "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+        "model": "Qwen3-0.6B-Q8_0",
+        "selection": 0,
+        "offeredDocumentIds": [
+          "FG-002",
+          "FG-004"
+        ],
+        "retrievalMs": 45.71445800000038,
+        "generationMs": 270.68771600000036,
+        "rawCaptureJoinVerdict": "PASS"
+      },
+      "publication": {
+        "primaryFrameOrder": 18,
+        "primaryReceivedUtc": "2026-09-21T17:43:54.730Z",
+        "supplementFrameOrder": 22,
+        "supplementReceivedUtc": "2026-09-21T17:43:55.058Z",
+        "receiptDeltaMs": 328.0626740000007,
+        "primaryPayloadSha256": "0ce562b9e54565a69f21aa18e088b3eb2edacc90d2055635e498e79cc221baeb",
+        "changedPrimaryFields": [
+          "eventId",
+          "evidence",
+          "guidanceVersion",
+          "mode",
+          "supplementalExplanation",
+          "updateKind"
+        ]
+      },
+      "causalProof": {
+        "baselineVirtualMs": 1000,
+        "predecessorVirtualMs": 7101.1117429999995,
+        "predecessorRunVersion": 14,
+        "predecessorSequence": 99,
+        "targetVirtualMs": 8000,
+        "targetRunVersion": 15,
+        "targetSequence": 100,
+        "previousPrimaryVersion": 1,
+        "previousRouteVersion": 1,
+        "newPrimaryVersion": 3,
+        "newRouteVersion": 2,
+        "profileUnchanged": true,
+        "oldRoutePermissibleBefore": true,
+        "oldRoutePermissibleAfter": false,
+        "newRoutePermissible": true,
+        "assessment": "Observed FG-ROUTE-BLOCK-003 PATH-B closure, -004 fire expansion to x60..98/y20..43, and -007 fresh sensor invalidate the previously published north y42 route. New primary3/route2 exits south to y8 and reaches ASSEMBLY-01 via x132. Initial egress starts inside fire; do not label the entire route hazard-free."
+      },
+      "retrievalJoinLimitation": {
+        "rawRootAmbiguousRetrievalJoin": true,
+        "publicationCitationFilteredAmbiguous": false,
+        "sameIntervalCandidateIds": [
+          [
+            "c2e9d686-ac54-4ed3-9dff-7d8cd0afdef4",
+            "f486ac37-149e-4bd0-af52-7bc5420a6f11"
+          ]
+        ],
+        "text": "Retrieval records carry no guidance/worker foreign key; all same-interval candidates are retained, and multiple candidates are explicitly ambiguous.",
+        "producerInputCapture": "NOT_CLAIMED; facts are read from the actual persisted retrieval trace, never passed into the HTTP app."
+      }
+    }
+  ],
+  "corpus": [
+    {
+      "documentId": "EQ-001",
+      "version": "0.1.0",
+      "sourceSha256": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+      "reviewedContentHash": "72c885c61053a5bfddc1f27cf841cb1e5cace93ab19888bdbbacce7bdde5c2ca",
+      "approvedTextHashes": {
+        "ko": "13c90266f5ad5b8ba7520adee6ab6cba325bcf322445b0d73b46b51e74d40d0d",
+        "en": "c34eb7b0c9fb300dd3ff566e6666a56034739dc63d00c978f36fea422912e89f"
+      }
+    },
+    {
+      "documentId": "FG-002",
+      "version": "0.1.0",
+      "sourceSha256": "890827a5b140b5ed3e98a8bb70fc3f8d7aa6b6aa23ceb4fcb91ac609ffdee0d8",
+      "reviewedContentHash": "17f8045c0de73635d70d2931df3ce93047b554f3598caca1c6f658936e7c41ce",
+      "approvedTextHashes": {
+        "ko": "914103a11f4af3f4cc8ffea65961401c3a38acefc2a05ecc1a4e4c1e02e49300",
+        "en": "79164b0c52f543712c1d01735e3380a60500b8ccaf658cdf9f4f7d37b0075924"
+      }
+    },
+    {
+      "documentId": "FG-004",
+      "version": "0.1.0",
+      "sourceSha256": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b",
+      "reviewedContentHash": "e3417aa152fa5dd5c7b64f98b0739ec846277db5c029e43c0410c3e0c3712859",
+      "approvedTextHashes": {
+        "ko": "5113facfab40cae0fe6a0be8a3e2e772a4d34370a17f0094c5cf145de1973796",
+        "en": "68cd1b48443c94c8648fb23e8c0fa4ae14c496cdcf3ad117ce91718edf8559b4"
+      }
+    }
+  ],
+  "rawGlobalCaptureJoinCounts": {
+    "PASS": 16,
+    "FAIL": 4,
+    "NOT_RUN": 1
+  },
+  "rawGlobalFailures": [
+    {
+      "ragRunId": "971c0f0f-e67e-4358-9faa-34f94fdbf795",
+      "rawVerdict": "FAIL",
+      "rawChecks": [
+        {
+          "name": "recorded generation joins one persisted run/guidance/worker/profile lineage",
+          "passed": false
+        },
+        {
+          "name": "one exact call-ID and provider-message-hash capture",
+          "passed": true
+        },
+        {
+          "name": "actual forwarded complete response and model identity",
+          "passed": true
+        },
+        {
+          "name": "proxy request and response fall within recorded generation call",
+          "passed": true
+        },
+        {
+          "name": "outgoing generation envelope has reviewed options and no private-data findings",
+          "passed": true
+        }
+      ],
+      "generatedAtValues": [
+        "2026-09-21T17:43:52.011Z",
+        "2026-09-21T17:43:52.466Z"
+      ],
+      "profileVersions": [
+        2
+      ]
+    },
+    {
+      "ragRunId": "19dd8e0c-dcd5-4f5d-819e-1f56b8bae147",
+      "rawVerdict": "FAIL",
+      "rawChecks": [
+        {
+          "name": "recorded generation joins one persisted run/guidance/worker/profile lineage",
+          "passed": false
+        },
+        {
+          "name": "one exact call-ID and provider-message-hash capture",
+          "passed": true
+        },
+        {
+          "name": "actual forwarded complete response and model identity",
+          "passed": true
+        },
+        {
+          "name": "proxy request and response fall within recorded generation call",
+          "passed": true
+        },
+        {
+          "name": "outgoing generation envelope has reviewed options and no private-data findings",
+          "passed": true
+        }
+      ],
+      "generatedAtValues": [
+        "2026-09-21T17:43:53.160Z",
+        "2026-09-21T17:43:53.603Z"
+      ],
+      "profileVersions": [
+        2
+      ]
+    },
+    {
+      "ragRunId": "e39c1a87-90a6-47d6-ade5-b53e87d53dfe",
+      "rawVerdict": "FAIL",
+      "rawChecks": [
+        {
+          "name": "recorded generation joins one persisted run/guidance/worker/profile lineage",
+          "passed": false
+        },
+        {
+          "name": "one exact call-ID and provider-message-hash capture",
+          "passed": true
+        },
+        {
+          "name": "actual forwarded complete response and model identity",
+          "passed": true
+        },
+        {
+          "name": "proxy request and response fall within recorded generation call",
+          "passed": true
+        },
+        {
+          "name": "outgoing generation envelope has reviewed options and no private-data findings",
+          "passed": true
+        }
+      ],
+      "generatedAtValues": [
+        "2026-09-21T17:43:54.301Z",
+        "2026-09-21T17:43:54.716Z"
+      ],
+      "profileVersions": [
+        2
+      ]
+    },
+    {
+      "ragRunId": "41f3a4a1-6ca2-4203-b902-d2fe2ea2a294",
+      "rawVerdict": "FAIL",
+      "rawChecks": [
+        {
+          "name": "recorded generation joins one persisted run/guidance/worker/profile lineage",
+          "passed": false
+        },
+        {
+          "name": "one exact call-ID and provider-message-hash capture",
+          "passed": true
+        },
+        {
+          "name": "actual forwarded complete response and model identity",
+          "passed": true
+        },
+        {
+          "name": "proxy request and response fall within recorded generation call",
+          "passed": true
+        },
+        {
+          "name": "outgoing generation envelope has reviewed options and no private-data findings",
+          "passed": true
+        }
+      ],
+      "generatedAtValues": [
+        "2026-09-21T17:43:55.411Z",
+        "2026-09-21T17:43:55.715Z"
+      ],
+      "profileVersions": [
+        1,
+        2
+      ]
+    }
+  ],
+  "derivedGlobalFailureClassification": "SCOPE_CORRECTION_ONLY. Bound http-capture-joins.ts lines25-32 collect every envelope with the same stable run/guidance ID, including later primary versions, then require every generatedAt <= earlier generation start. Three old reroute baselines span later primary3; delay warmup also spans profile1/profile2. All four fail only that broad first check; exact call/hash/model/time/options checks remain true. Preserve raw16 PASS/4 FAIL/1 NOT_RUN; this is not a replacement overall verdict.",
+  "scopeLimits": [
+    "Original-normal raw KO PASS/EN FAIL and additive-en raw KO FAIL/EN PASS remain unchanged; complementary coverage does not rewrite the frozen per-run oracle.",
+    "Reroute roots retain ambiguousRetrievalJoin:true while citation-filtered publication joins report false. Do not claim unique whole-trace association or captured HTTP producer input.",
+    "Actual model returned selection0 and the service mapped it to exact reviewed text; no free-form prose-generation claim.",
+    "No physical UI/audio, full case26, delay acceptance, broad regression or overall gate verdict. Separate module EQ002-specific acceptance remains unobserved."
+  ],
+  "evidenceHashes": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/0eb4e046-894c-43d8-87b6-63548d64c497.request.bin",
+      "sha256": "b3fd40ffef77a0d83aa91e2cac9c87e75d62a8033a222e3330a792be7506c48a"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/0eb4e046-894c-43d8-87b6-63548d64c497.response.bin",
+      "sha256": "43e455b3d9c768e7f03d1d4be923affc7f9e4ea0dcdd0332e4b5613a966cb506"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/33305ecc-d992-4055-9c2b-cd2494b2ffef.request.bin",
+      "sha256": "2d7cb512b7bb769ed855976d7146e96f2c61c7a0f4fffd355a07d1727deb2aa7"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/33305ecc-d992-4055-9c2b-cd2494b2ffef.response.bin",
+      "sha256": "a361ec0f1be0cf689edf23ccaf35ceff00d1d4b58d193a3c265c2b9cc0970592"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/556a5701-dd6c-410c-861e-b9d1e3991bc7.request.bin",
+      "sha256": "02c6dd2f2eb66d0514b89e06ca9ec615b73e1eb37d67b7bc3312da68864c60aa"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/556a5701-dd6c-410c-861e-b9d1e3991bc7.response.bin",
+      "sha256": "aca974e1f5c062987da2b6eb718a4348e3f191f16cbd6d1fa2450f7604fce31f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/75543c3f-bc72-4f6d-8dc5-8f5f5dd0770e.request.bin",
+      "sha256": "8aa2ec0eb70deb459e8af5b02b6d394aa9f5b0050751e4a1ccc672b7b9ab1c9b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/75543c3f-bc72-4f6d-8dc5-8f5f5dd0770e.response.bin",
+      "sha256": "1807da4e4e3702657f97dc4579b75c58cb69cfacf621198cbb9dd95a762e8edc"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/8807a511-0a7d-4cfc-8994-889a979ea4c2.request.bin",
+      "sha256": "66fc7f19170f3cf9b41c9af37bfe49f6af9ec5f22572615a34ea567f245073b4"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/8807a511-0a7d-4cfc-8994-889a979ea4c2.response.bin",
+      "sha256": "73ae85df89fe2393f69324c6b7ca3c1a7273f8f4b6f1007f52bc75c2be0942a6"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/997940b4-4309-4b22-a0e5-d02d3ab90f9b.request.bin",
+      "sha256": "db09bcf4ffb6fd065460735fe2a62b4992cc672cd228360694e3f174f4957dad"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/private-capture/997940b4-4309-4b22-a0e5-d02d3ab90f9b.response.bin",
+      "sha256": "a9ea8f7ac55bf9a1875f1eed63897a93731ef65145d1920c6bf97bbe343f9d22"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-en-commands.json",
+      "sha256": "3d6c1d80dcc189d0740760ed965a08e1cd420baf2a83b11e4b7092f857335ad1"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-en-event.json",
+      "sha256": "d77e37a6f029c5bab8cf101c7ed378826d8a4a3ee023ffe774afb1dc4dd911ee"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-en-prior.json",
+      "sha256": "01015c4a0da0fd806847d3d0baa6308406c0c4fcbae5b5b19dbee9c4505c86ef"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-en-profile.json",
+      "sha256": "9dfff57b154b35d1b06b234c2d2b6ef9e616230a2479d856f7f1b5a5dd811552"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-en-reconnect.json",
+      "sha256": "099d876c12870fdf172f63c6981fb4f1241d849eb1f93de91a7aada1e530ad94"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-en-result.json",
+      "sha256": "6e96773e6353fae0e9db581692d19f3d1b0eab531b2ad0f7dc26178d387f712b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-en-sse.json",
+      "sha256": "646284fb89bf594477aa8a0b3c1f1fed14432b9b9b3ff171e7a2e46b3dba0338"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-ko-commands.json",
+      "sha256": "bf54d1375aa9c7a8c2d8ecd5e566e9ed45a852841c2eb263b6b3e0a7933db073"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-ko-event.json",
+      "sha256": "271536fe87d2973cb9daf7cee995c70c3fb879745f6d8202e4f6fba69462b48a"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-ko-prior.json",
+      "sha256": "495eddb404072b9ab356a2e950a07439a96acbc18ee49556927a63ebaffd3182"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-ko-profile.json",
+      "sha256": "f901775278e2aadc30784afb53164ae3a2f938f051c16f002ec45687d9722e20"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-ko-reconnect.json",
+      "sha256": "4a4285643d18107ce9eef6d3b8ac648331b87622803a597b40e9092a7b729f36"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-ko-result.json",
+      "sha256": "66fddf90703eec6bb36f408157fae96488fbd1c395c7fdc72b945b0508498b74"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/measured-ko-sse.json",
+      "sha256": "6f26f1bf8ec4cf537bf4be3971c27b7e985d3ce88b304f4d876ac24d245f6f2c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-capture-joins.json",
+      "sha256": "8922e5d81a6d196b45ef959575e738a937ff4e9a85eb6bf531827a2544a67a71"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-end.json",
+      "sha256": "8b47f758668549eb7474c85e4ebd0da1a79a0854b6ef9c37a641648c86aff77b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-model-captures.json",
+      "sha256": "355d9d71f6d36f322794a35e0b977e40cfaf9f585797eb7f6bbdf3902a0a6dd3"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-start.json",
+      "sha256": "cff7b26c3edad089cff4c5cdb1d8f3519037910ede1eac2552b7349fd87aea4b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-additive-en-commands.json",
+      "sha256": "226f6b9237faa1d96bcc8ca1e83f4a253ffbfc4b28349006c522570d78c4cbc5"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-additive-en-final.json",
+      "sha256": "ee66a2d74fbbfc10456e9cf0e53b664b139c2ae0fc24dcc71c350f7ecbe67385"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-additive-en-initial.json",
+      "sha256": "91f45ccfa38a55bc04db09fa533b073b44ea77d066212f7b56da7b2b1f28ec06"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-additive-en-locale-transition.json",
+      "sha256": "19fdead3b61593e9d0a8bd379ea44da9ae0d986f6fa9c665b43e2f03198ff864"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-additive-en-reconnect-sse.json",
+      "sha256": "6867ee9b34a3514d21b4102a67bbe65012632b4ac08b4353a1d5059c68ae2bdd"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-additive-en-sse.json",
+      "sha256": "0c91e91d658d3a41f7dfc508d60d0c36b37681e9b5bf7c13db4007b63a1ffb19"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-commands.json",
+      "sha256": "1b69bbe0e84f167478bf9a128565d3d8a6cad53f82d712860266a511f876e1ca"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-final.json",
+      "sha256": "1a739cce734bcb379678003a7263034f3d9ad3e306dc3e6d6bad5e72df017a33"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-initial.json",
+      "sha256": "c41e93bda2a1722c0999227ddeaf54284059eb6c95868c7ba5a1f18581df472e"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-reconnect-sse.json",
+      "sha256": "6d9c9d730555b0692c74e2caace287ffb9950f550b4b115ed90f3db7da447b15"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-equipment-sse.json",
+      "sha256": "8329aad3ba715bea084819453e8249ca9348cba9fcc632fd7649f73ea71def9a"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-additive-en-commands.json",
+      "sha256": "119ff91a8dfea45ae2da2443f8218e2df5a7946011725c992b390bb4dd53bada"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-additive-en-final.json",
+      "sha256": "d19629e6fcd39867d67052b290f3e7c521dc6fc9fbc93fcdccfa3ede4ffd7ba9"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-additive-en-initial.json",
+      "sha256": "122d5955052204a9bd03474f6de35a64d9f04b3d2acb1d6d1403a4f9234bdea9"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-additive-en-locale-transition.json",
+      "sha256": "ec7e36db561a56aa6c6038fb6e696cc4d4d41fd387f9017681d6bd68bda4e65c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-additive-en-reconnect-sse.json",
+      "sha256": "84185c8ec55735a65dbb67ecc49e562e10836391fa2b7046eb78e913187adf62"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-additive-en-sse.json",
+      "sha256": "454b596f22424e74e029669e25dde74cf2ddea1a5a80ecac0c7e563d90a7f93f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-commands.json",
+      "sha256": "de67f82e74ddad284eba83ef600b9509315ba6e35aa1fb3c3dbc0be68abed2d1"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-final.json",
+      "sha256": "4b80a9e32d91ed2c9f2e2dfdc8e35018fff0ddfb5406c673121612d30deaa72c"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-initial.json",
+      "sha256": "6b7160a52a26099021beef8ec2a26b7b5e8ae7b5ff3dd43bb1e1e1867e394e98"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-reconnect-sse.json",
+      "sha256": "a422781862baecb8a15bb9f06397fa6888b59f5319f0837074ba1052b9cf2647"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/measured-fire-gas-sse.json",
+      "sha256": "f05719701428e959f19c570f970eb69f1466022a0cb7ce7540f74f59157a5668"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/corpus-before.json",
+      "sha256": "7c372d4740283f52faffa9ba484f7fe6f754e58071a184b74e5a410a724117db"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/bound/candidate-cd8a2428-r2/http-capture-joins.ts",
+      "sha256": "21e32c888c72cdb96a6d80bca8ea9bf90f505b0bb90002ba023fd9723ee799ad"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/data/policies/fire-gas-evacuate.json",
+      "sha256": "53d669d60d7c06d376121bc6c1d72700b5f984d3e041899118bbb6fd43be3242"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/data/scenarios/fire-gas/fg-fire.json",
+      "sha256": "bde4e91470eaa90a03bf7b515c72563e01eba70aa06c9a7803f9cbd79764960e"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/data/scenarios/fire-gas/fg-route-block.json",
+      "sha256": "73a5bde5b1d875f7a928f0f58e8c4047e4a744eb1fcc8def2e18e92924c87590"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/knowledge/equipment/EQ-001.md",
+      "sha256": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/knowledge/fire-gas/FG-002.md",
+      "sha256": "890827a5b140b5ed3e98a8bb70fc3f8d7aa6b6aa23ceb4fcb91ac609ffdee0d8"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/knowledge/fire-gas/FG-004.md",
+      "sha256": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b"
+    }
+  ],
+  "originalNormalEnglishPrecondition": {
+    "observations": [
+      {
+        "case": "measured-equipment",
+        "workerBLocale": "en",
+        "workerBCurrentGuidance": null,
+        "actualPublishedLocales": [
+          "ko"
+        ]
+      },
+      {
+        "case": "measured-fire-gas",
+        "workerBLocale": "en",
+        "workerBCurrentGuidance": null,
+        "actualPublishedLocales": [
+          "ko"
+        ]
+      }
+    ],
+    "classification": "NO_ENGLISH_GUIDANCE_TARGET_IN_ORIGINAL_NORMAL_RUNS",
+    "explanation": "Both original normal final snapshots have WORKER-B preferredLocale en and currentGuidance null; only WORKER-A ko is impacted/published. Raw EN FAIL is an unmet locale-coverage predicate, not an observed failure to generate for an English guidance target. Separate supported WORKER-A profile version2 English cases are actual additive positives; original predicates remain unchanged."
+  }
+}

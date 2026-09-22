@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2023", "module": "ESNext", "moduleResolution": "Bundler", "noEmit": true,
+    "strict": true, "noUncheckedIndexedAccess": true, "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true, "noPropertyAccessFromIndexSignature": true,
+    "verbatimModuleSyntax": true, "skipLibCheck": true, "esModuleInterop": true,
+    "types": ["node"],
+    "typeRoots": ["__QA_CANDIDATE_ROOT__/node_modules/@types"],
+    "paths": {
+      "@/contracts": ["__QA_CANDIDATE_ROOT__/packages/contracts/src/index.ts"],
+      "@gs-safety/contracts": ["__QA_CANDIDATE_ROOT__/packages/contracts/src/index.ts"]
+    }
+  },
+  "include": ["./*.ts", "__QA_CANDIDATE_ROOT__/src/server/tracking/js-aruco2.d.ts"]
+}

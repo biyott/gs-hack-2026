@@ -1,0 +1,53 @@
+{
+  "kind": "c4-android-fault-proxy-independent-source-review-v1",
+  "reviewedAt": "2026-09-21T18:30:00.728Z",
+  "reviewer": "/root/qa_lead/qa_ui_device/c4_android_fault_proxy/proxy_safety_review",
+  "disposition": "SOURCE_ONLY_READY_NO_BLOCKING_FINDINGS",
+  "freezePath": "c4-android-fault-proxy-v1.freeze.json",
+  "freezeSha256": "e94a5ee4344964ca3778670e63b4c69d55c7ea327a78b7372c82726197290750",
+  "verification": {
+    "ownedFileHashesAndByteSizesMatched": 6,
+    "c4SourceHashesAndByteSizesMatched": 13,
+    "uniquePaths": 19,
+    "pathContainmentMatched": true,
+    "failures": []
+  },
+  "finalReviewedModuleHashes": {
+    "c4-android-fault-proxy-v1.mjs": "1195ab5948c56db61b6165eac3e1524ae2bce1be83b131223913bb9ed2a5f9f1",
+    "c4-android-fault-proxy-guard-v1.mjs": "0486290b6fefb96f12ca9d59845210ee3c7d51d5b9f66d18d2c16703d3249274",
+    "c4-android-fault-proxy-cases-v1.mjs": "dbac0bf0e4e681dcb4c42790321170a339887ec4aa3c4a81d9d41ec264cfb4fe",
+    "c4-android-fault-proxy-voice-v1.mjs": "9ea36af442beea0eac900093a0d615fae700e90e0c033a0d8d9692d8b8827d5f"
+  },
+  "conclusions": [
+    "Reviewed fixed loopback 4105 to 4103 forwarding, worker-only allowlist, grant/source/process/time/path/private credential guards, immutable raw evidence, metadata limits, one-attempt and close lifecycle.",
+    "Previously reported Cookie/Connection authorization bypass, ineffective request/raw-byte budgets, and fire-gas spelling are corrected in these exact sources.",
+    "Final delta requires first observed ACK send for voice capture, caps connections at 16, stops active-case validation errors, and labels HTTP submission/finish as insufficient proof of server receipt or client consumption."
+  ],
+  "runtimePrerequisites": [
+    "QA Lead W3B parent grant and hash-bound owner subgrant must explicitly authorize the assigned phone, worker, mode, proxy and bounded time window.",
+    "Actual bound C4 process and listener, private database/credentials, recent installed APK4 receipt, and fresh bounded device UTC receipt must satisfy runtime guards.",
+    "Use a new owned output and one attempt; capture real original envelopes and use exact hash-bound controls. Camera endpoints remain forbidden.",
+    "Join actual device UI/native logs and server records; audio or haptic claims require actual version-bound human witness. Close receipt and independent resource release remain required."
+  ],
+  "boundaries": {
+    "sourceReviewOnly": true,
+    "hashVerification": "Read-only filesystem hashing; no proxy/app module imported or executed.",
+    "proxyExecutions": 0,
+    "runtimeTests": 0,
+    "deviceCommands": 0,
+    "networkRequests": 0,
+    "pixelInspection": 0,
+    "productEdits": 0,
+    "reviewerWrite": "This additive receipt only.",
+    "unchangedSourceFiles": "All frozen inputs preserved.",
+    "noClaims": [
+      "Actual APK behavior",
+      "Client acceptance",
+      "Server persistence",
+      "Audible or felt output",
+      "Native callback rejection",
+      "Camera performance",
+      "Overall W3B or candidate PASS"
+    ]
+  }
+}

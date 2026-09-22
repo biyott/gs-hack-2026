@@ -1,0 +1,25 @@
+{
+  "kind": "c6-quick-dom-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "runtime": "NOT_RUN",
+  "preparedAt": "2026-09-22T00:02:12.006Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "projectionPreparationPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-91375a9d/risk-projection-prep/preparation.json",
+  "projectionPreparationSha256": "b6e3035c65614f93ae07f0248310356208d0b602602928dd3437cb52b9eddec9",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-quick-dom-v1.1.mjs",
+      "sha256": "be522f0234d580bbf464509b8a75ada965bf9a4bc3f4f090a4f2ad1bb55f73ed"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-quick-dom-v1.1.guard.mjs",
+      "sha256": "193df69789c3491e606b09f448cd0bb678d83f92eeb18d7b4adb256e3b6e7a62"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-quick-dom-v1.1.md",
+      "sha256": "9911cd3de9108c9f6225f67dd62ce6cd253387da1d115ba4f61507849fc42389"
+    }
+  ],
+  "derivation": "Source preflight: explicitly select actual current incident before risk projection; v1 preserved, no runtime attempt or oracle change"
+}

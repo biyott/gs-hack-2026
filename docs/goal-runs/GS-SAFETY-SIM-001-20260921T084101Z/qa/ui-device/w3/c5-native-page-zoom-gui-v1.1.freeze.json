@@ -1,0 +1,24 @@
+{
+  "kind": "c5-native-page-zoom-gui-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "runtime": "NOT_RUN",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "preparedAt": "2026-09-21T23:36:23.922Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-gui-v1.1.mjs",
+      "sha256": "21b65220398d6dfe8d5a7a333b80fd20bf552e8cd274d359a0204d68802b9fc3"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-gui-v1.1.guard.mjs",
+      "sha256": "690adff4bba88a750d8ff1c2bc6d0d0974e9a6abda44542db26299467e489d62"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-native-page-zoom-method-v1.md",
+      "sha256": "71e9792059410a973b51682f0e9818da046af6515c3b2c33435b47cbeffe25ab"
+    }
+  ],
+  "derivation": "Pre-execution source review: after reload, React entry state resets; wait for actual enabled mode control instead of immediate count race. Frozen method/oracles unchanged."
+}

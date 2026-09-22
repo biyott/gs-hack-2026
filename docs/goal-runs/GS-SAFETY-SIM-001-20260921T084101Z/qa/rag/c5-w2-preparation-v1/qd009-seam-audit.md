@@ -1,0 +1,63 @@
+# QD009 RAG seam audit — C5 source preparation
+
+Status: **UNBOUND / SOURCE_ONLY / NOT_EXECUTED**. Observed 2026-09-21T19:29:54.680Z by `/root/qa_lead/qa_rag/corpus_cards`. This packet binds no C5 root, manifest, build or runtime grant. It reads root source and saved findings only; no product import, runtime, tests, providers, databases or full-tree hash sweep. Only this Markdown is written. C4 files and original 85 inputs/results are immutable.
+
+The existing prepared W1 QD009 cases plus the existing fresh W2 replay cover the affected boundaries. No new runtime case or stricter normative oracle is required. The small remaining observation is to read the already-planned D10 saved current service input after execution, as specified below.
+
+## Exact correction and evidence boundary
+
+[QD009's preserved finding](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/QD009-current-guidance-removed-risk.json) concerns a newly issued worker current primary that claims geometry33 but retains a removed geometry2 equipment ID after actual preset replacement. Route/destination remain absent; unsafe movement was not observed. The failure is current risk identity, not the legitimacy of unresolved nonmovement or immutable history.
+
+[Root source readiness](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/C5-source-ready.json) is SOURCE_READY for future C5, not candidate acceptance. [Root's integrity record](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c5-backend-source-integrity-01.json) reports 28 source/evidence checks and five preserved copies with no mismatches. The [independent source review](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/runtime/QD009/independent-review.md) preserves original RED, D1 84/86 and typecheck failure, and distinguishes the later producer 86/86 from the final test-only matcher copy. None is new-candidate QA.
+
+The current [retention guard](/90-biyott@github/gs-hack-2026/src/server/simulation/guidance-recovery.ts:22), lines22–33, requires equipment snapshot, previous equipment mode/type and previous ROUTE_UNAVAILABLE. It removes only a previous ID in the exact current equipment namespace that has no exact current hazard record. Present inactive records, foreign namespaces and similar prefixes survive. It neither invents replacement IDs nor mutates the previous guide. Lines34–47 retain action, cause/reason, hazard type, priority, assistance and null movement fields. SENSOR_UNKNOWN/POSITION_UNKNOWN causes remain outside the guard.
+
+Both callers pass their existing authoritative snapshot: [evaluate.ts:112–118](/90-biyott@github/gs-hack-2026/src/server/simulation/evaluate.ts:112) and [arrival-intent.ts:168–171](/90-biyott@github/gs-hack-2026/src/server/simulation/arrival-intent.ts:168). Incident cumulative hazard identity and immutable first guidance remain distinct from current guidance at [evaluate.ts:179–188](/90-biyott@github/gs-hack-2026/src/server/simulation/evaluate.ts:179). A current empty hazard list therefore does not mean the incident is cleared, the worker arrived or a passage reopened.
+
+## RAG consequences from current source
+
+| Boundary | Source | Consequence for fresh observation |
+| --- | --- | --- |
+| Current hazard lookup | [services/rag.ts:43–46](/90-biyott@github/gs-hack-2026/src/server/services/rag.ts:43) | The adapter joins current snapshot records to current guidance IDs. A removed ID already produced no joined hazard before QD009; retiring that ID repairs current guidance identity without manufacturing new RAG scope. Do not join cumulative incident IDs or immutable first guidance. |
+| Query versus scope | [services/rag.ts:55–94](/90-biyott@github/gs-hack-2026/src/server/services/rag.ts:55) | The query still includes primary message, retained hazardType and action. hazardTypes, zoneIds and substanceIds come only from joined records. Empty current IDs therefore yield empty arrays even while query text says equipment. Do not replace the empty list with guidance.hazardType or infer a zone/substance. |
+| Applicability facts | [services/rag-applicability.ts:101–170](/90-biyott@github/gs-hack-2026/src/server/services/rag-applicability.ts:101) | Facts come from exact current-primary history and actual geometry/events, not hazardType text or version increments alone. Preset switches fail the same-preset direction predicate. A same-preset heading change can legitimately set equipmentDirectionChanged=true despite empty hazard scope; do not impose facts=false merely because IDs are empty. |
+| Hazard and private predicates | [retrieval-candidates.ts:64–95](/90-biyott@github/gs-hack-2026/src/server/rag/retrieval-candidates.ts:64) | Empty request hazardTypes fails the required intersection for every document. A true private direction fact cannot bypass this. EQ-002/FG-002 event predicates and FG movement policy stay separate; no new document/action requirements are introduced. |
+| Empty candidate behavior | [retrieval.ts:40–48,96–97](/90-biyott@github/gs-hack-2026/src/server/rag/retrieval.ts:40) and [service.ts:80–96](/90-biyott@github/gs-hack-2026/src/server/rag/service.ts:80) | With current, unexpired input and empty eligible corpus, retrieval skips **query** embedding and returns no_match before model generation. Initialization/corpus refresh may have separate document embedding work. Earlier expiry/stale outcomes retain their existing precedence; this is not a new exact-reason oracle. |
+| Late result/current lineage | [services/rag.ts:47–54,101–102](/90-biyott@github/gs-hack-2026/src/server/services/rag.ts:47) | The existing current-guide checks still reject stale earlier-primary work. QD009 does not authorize an old supplement to restore removed geometry. An injected accepted service used by W1 is callback plumbing and bypasses real retrieval; its current-result positive control is not contradictory model evidence. |
+
+Targeted small-file comparison found the three QD009 production files changed versus C4; the four inspected query/applicability/retrieval files (`services/rag.ts`, `services/rag-applicability.ts`, `rag/retrieval-candidates.ts`, `rag/retrieval.ts`) are byte-identical to C4. This is an inspected seam inventory, not a full candidate delta proof. Issued G3 identity and receipt verification must precede C5 binding.
+
+## Existing fresh reruns and ownership
+
+| Existing prepared rerun | What it supplies | Boundary retained |
+| --- | --- | --- |
+| W1 QD009 D01–D04 | Original WORKER-C, fresh/expired previous guide, real model/pose commands; both current mirrors lose only retired references while unresolved route/assistance and history remain. | Server surface, not browser/model semantics. See [independent card](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/server/c5-preparation/qd009-independent-card-v1.md). |
+| W1 D05–D08 and existing recovery/arrival/restart reruns | Exact present inactive, namespace/guard and missing-sensor causes; second arrival caller and conservative lifecycle. | No generic “all IDs must be active/current” rule outside the explicitly guarded equipment case. |
+| W1 D09/D10 | Stale authenticated response and deferred old-primary supplement rejection; current-lineage positive control and saved service inputs. | Explicit mock service, not actual E5/model acceptance. [D10 source](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/server/c5-preparation/removed-risk-v1/stale-callbacks.test.ts:130), especially lines146–149,161–165,167–180. |
+| Fresh W2 original85 plus eight fact/policy controls | Frozen requests and original raw dispositions stay separate from controlled private facts/policy. | They do not become QD009 preset-replacement scenarios. No oracle edits to make current product match old metadata-only assumptions. |
+| Fresh W2 existing14 engine observations | `initial-equipment-{ko,en}`, `direction-{ko,en}`, `direction-{ko,en}-profile-only`, `first-fire-{ko,en}`, their profile controls, and `fire-reroute-{ko,en}`/profile controls retain actual query/facts/retrieval/model/current publication evidence. | [Scenario source:63–90](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/templates/engine-applicability-scenarios.ts:63). Direction profile-only supplies the existing empty-hazard/current-primary no-match boundary; exact event facts and current-primary membership govern assertions. These cases do not themselves reproduce unknown-profile QD009. |
+| Fresh W2 normal HTTP/locale/privacy/delay and W3 public QD009 reproduction | Existing actual transport/current-context and rendered worker/incident surfaces, separately owned and granted after G3. | No result claimed now; W1 constructor/mock observations cannot replace actual public preset/pose reproduction. |
+
+**Minimal additional observation, no new test:** after the already-prepared D10 rerun, inspect `qd009-stale-supplement-current`, whose [existing save records livePending.input](/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/server/c5-preparation/removed-risk-v1/stale-callbacks.test.ts:174). Join its current guide, afterPose snapshot and captured context: hazardIds and joined hazardTypes/zoneIds/substanceIds are empty for this exact retired-only fixture; query may retain equipment/ROUTE_UNAVAILABLE; profile-unverified/no-route semantics remain. Its pose deliberately changes heading to180, so inspect the actual history-derived direction fact without forcing false. Then read the fresh existing W2 direction-profile-only capture for real empty-scope retrieval/no-model behavior. This composes the already-owned current-context and real-service observations without changing either original input or inventing a new model-selection target. If these existing saved inputs are unavailable, report that narrow evidence gap instead of constructing output.
+
+## Preserved dispositions and binding
+
+Original85 and their adjudicated distinctions remain intact: Q07-03's extra whitelist plus original pre-private-fact metadata/vector assumptions; Q07-02/06 raw versus derivative fact/policy context; Q08-22 raw expired/stale_guidance reason mismatch; F13 source-binding gap; original Q08-16 absent-token replacement versus additive mock append; privacy's component-versus-production process and unique-target E5 limits; Q08-31 physical/duplicate/new-primary requirements. Do not replace them with an all-hazards-nonempty assertion, force EQ-002 selection, or transfer C4 behavioral PASS to C5.
+
+Before execution: bind only from issued C5 G3 receipt/manifest/launch contract into a new owned adapter, preserve original frozen hashes/clocks, and obtain the designated exclusive resource grant. Source observations here end at 2026-09-21T19:29:54.680Z. No C5 result, availability or acceptance is asserted.
+
+## Small source proofs
+
+SHA-256 hashes observed directly from the root files, without importing them:
+
+| File | SHA-256 |
+| --- | --- |
+| [src/server/simulation/guidance-recovery.ts](/90-biyott@github/gs-hack-2026/src/server/simulation/guidance-recovery.ts) | `22dbf240bad1dc7539fa4740310536787b01233ff1e204c2f0ead889eb49a116` |
+| [src/server/simulation/evaluate.ts](/90-biyott@github/gs-hack-2026/src/server/simulation/evaluate.ts) | `e9846de7d57f5dd854acda63dd39d3ad45660f6fea2345797bbffe24baef6e51` |
+| [src/server/simulation/arrival-intent.ts](/90-biyott@github/gs-hack-2026/src/server/simulation/arrival-intent.ts) | `881cb0562ad5a73ba1c0cb10fe78ac724845501c689d32239bcf21b6949ff8cd` |
+| [src/server/services/rag.ts](/90-biyott@github/gs-hack-2026/src/server/services/rag.ts) | `16bc3ae7be9f6524c2f134e805afb8d635d2ea15120aaa2b59aaf3d73401a2a5` |
+| [src/server/services/rag-applicability.ts](/90-biyott@github/gs-hack-2026/src/server/services/rag-applicability.ts) | `d1c9e9fec40e8f2a970bbcf941155c0a246c1b2a5037dc299af54328f760e6a7` |
+| [src/server/rag/retrieval-candidates.ts](/90-biyott@github/gs-hack-2026/src/server/rag/retrieval-candidates.ts) | `f0fa519d74e096797cb40f4aa56dd8eb776eb78f2ad7afad5e803791a93178e7` |
+| [src/server/rag/retrieval.ts](/90-biyott@github/gs-hack-2026/src/server/rag/retrieval.ts) | `6ce6c9a1321874963c11a69d3d4847252054cb2c22d01e973ec7125353e41af1` |
+| [src/server/rag/service.ts](/90-biyott@github/gs-hack-2026/src/server/rag/service.ts) | `594062bc1ce5df27048436a149a727af715de21280c5736d12e674d0d3f29996` |
+

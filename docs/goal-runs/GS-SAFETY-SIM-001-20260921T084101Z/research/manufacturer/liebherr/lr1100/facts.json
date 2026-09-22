@@ -1,0 +1,111 @@
+{
+  "model": "Liebherr LR 1100.1",
+  "specEdition": "8503.02.03 / EN v01.092022 / 13646717",
+  "sourceManifest": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/lr1100/source-manifest.json",
+  "configuration": {
+    "mainBoomFamily": "1512.21",
+    "mainBoomLengthM": 32,
+    "mainBoomSectionsM": [
+      5.5,
+      6,
+      12,
+      8.5
+    ],
+    "boomMode": "Mode 1 main boom",
+    "fixedJib": "absent (requested preset selection)",
+    "auxiliaryJib": null,
+    "sourcePages": [
+      13,
+      14
+    ]
+  },
+  "officialDimensions": {
+    "trackOverallLengthM": {
+      "value": 6.275,
+      "page": 8,
+      "corroboratingPage": 9
+    },
+    "trackOutsideWidthM": {
+      "value": 5.0,
+      "page": 8
+    },
+    "trackPadWidthM": {
+      "value": 0.9,
+      "page": 8,
+      "corroboratingPage": 6
+    },
+    "depictedUndercarriageLongitudinalEnvelopeM": {
+      "value": 6.6,
+      "page": 8
+    },
+    "depictedPlatformHandrailSpanM": {
+      "value": 5.535,
+      "page": 8,
+      "limitation": "Lower walkway/stair protrusions are outside this span; not full deployed accessory width."
+    },
+    "depictedTailSwingRadiusM": {
+      "value": 4.7,
+      "page": 8
+    },
+    "boomPivotForwardOffsetFromSlewM": {
+      "value": 1.2,
+      "page": 8
+    }
+  },
+  "derivedVisualGeometry": {
+    "status": "drawing-derived, not a manufacturer support polygon",
+    "coordinateConvention": "+X toward main boom; Y lateral; origin on slew axis; no vertical datum established",
+    "trackCenterLateralOffsetsM": [
+      -2.05,
+      2.05
+    ],
+    "trackOuterXIntervalM": [
+      -3.13,
+      3.145
+    ],
+    "trackYIntervalsM": [
+      [
+        -2.5,
+        -1.6
+      ],
+      [
+        1.6,
+        2.5
+      ]
+    ],
+    "undercarriageXIntervalM": [
+      -3.3,
+      3.3
+    ],
+    "equations": [
+      "center separation = 5.000 - 0.900 = 4.100",
+      "rear track X = -(4.700 - 1.570) = -3.130",
+      "front track X = 6.275 - 3.130 = 3.145",
+      "rear undercarriage X = -(4.700 - 1.400) = -3.300",
+      "front undercarriage X = 6.600 - 3.300 = 3.300"
+    ],
+    "sourcePage": 8
+  },
+  "unknowns": {
+    "overallWorkingLengthM": null,
+    "overallWorkingWidthIncludingAllAccessoriesM": null,
+    "overallWorkingHeightM": null,
+    "boomPivotHeightM": null,
+    "effectiveGroundContactLengthM": null,
+    "loadSupportPolygon": null,
+    "specific32mConfigurationOperatingWeightT": null,
+    "specificCounterweightConfiguration": null,
+    "auxiliaryJibPresence": null,
+    "transportLengthM": null,
+    "transportWidthM": null,
+    "transportHeightM": null,
+    "selectedTransportConfiguration": null
+  },
+  "constraints": [
+    "Metric dimensions come from EN edition; do not reverse-convert rounded US figures.",
+    "Track external profile is not verified effective contact or stability geometry.",
+    "Same manufacturer editions are one source family, not independent corroboration.",
+    "For modelling evidence only; no actual lift or stability authorization.",
+    "Working undercarriage 6.600 x 5.000 m is not a transport envelope. Page 9 covers configuration-dependent disassembled transport states; none is selected for this preset."
+  ]
+}

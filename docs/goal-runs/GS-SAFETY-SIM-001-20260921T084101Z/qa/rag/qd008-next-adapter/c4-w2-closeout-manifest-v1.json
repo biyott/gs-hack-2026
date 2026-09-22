@@ -1,0 +1,303 @@
+{
+  "schemaVersion": "qa-rag-c4-w2-closeout-1",
+  "frozenAt": "2026-09-21T18:01:16.849110+00:00",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "candidateRoot": "/home/b/.cache/gs-safety-c4.q2FD40",
+  "candidateManifestSha256": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d",
+  "sourceSha256": "e17322b2faf5b5181f6a50bcd5cd4baeae2ca31f57f7bfd1653399b4e9e28efa",
+  "buildId": "czkc6DgDv3UUlTrSfDMqX",
+  "grant": "W2-C4-01",
+  "execution": {
+    "module": "module-attempt-01/r1",
+    "productionHttp": "http-attempt-01/r2",
+    "moduleExitCode": 0,
+    "httpExitCode": 0,
+    "ownedResourcesReleasedAt": "2026-09-21T17:44:06.329Z",
+    "preservedProviderPid": 332445,
+    "remainingWork": "None within this bounded RAG execution/review assignment; QA Lead/device owners retain whole-acceptance and external-surface decisions."
+  },
+  "rawOriginal85": {
+    "total": 85,
+    "PASS": 75,
+    "FAIL": 4,
+    "BINDING_GAP": 1,
+    "NOT_RUN": 5,
+    "failIds": [
+      "Q-RAG-07-02",
+      "Q-RAG-07-03",
+      "Q-RAG-07-06",
+      "Q-RAG-08-22"
+    ],
+    "notRunIds": [
+      "Q-RAG-08-01",
+      "Q-RAG-08-02",
+      "Q-RAG-08-16",
+      "Q-RAG-08-26",
+      "Q-RAG-08-31"
+    ],
+    "bindingGapIds": [
+      "Q-RAG-06-F13"
+    ],
+    "rawResultsUnmodified": true
+  },
+  "additionalScopes": {
+    "controlledFactPolicyCases": 8,
+    "case16MockPositiveAndAppend": 2,
+    "measuredActualEngineContexts": 14,
+    "measuredActualStairsServiceLocales": [
+      "ko",
+      "en"
+    ],
+    "measuredApplicableHttpPublications": 6,
+    "httpRerouteWarmupExcluded": true,
+    "originalDelayChecks": "7/9 preserved",
+    "phaseDerivedDelayChecks": "13/13 separately classified",
+    "independentDelayAssertions": "18/18",
+    "rawGlobalCaptureJoins": {
+      "PASS": 16,
+      "FAIL": 4,
+      "NOT_RUN": 1
+    },
+    "productionModelCalls": {
+      "actualForwarded": 20,
+      "actualUpstreamWithDelayFault": 1
+    },
+    "componentCanaryFiles": 23,
+    "productionCanaryFiles": 62,
+    "exactCanaryFindings": 0
+  },
+  "limits": [
+    "Original frozen statuses and raw locale/capture predicates are not retagged.",
+    "Q07-06 null policy remains explicit; evacuation positive is a separate input.",
+    "EQ002 actual eligibility/model option established, selected EQ002 publication remains unobserved.",
+    "Component exactE5Join remains false due overlapping deferred warmup; all captured query paths scanned but production in-process E5 capture is unavailable.",
+    "Broad reroute retrieval interval association remains ambiguous; citation-filtered target association is unique.",
+    "Timeout completion at5001.9227820000015ms does not claim abort exactly5000ms or cancellation of active inference.",
+    "Physical UI/audio/duplicate replay/urgent priority require independent device evidence.",
+    "No whole-AC, candidate or overall verdict issued."
+  ],
+  "artifactCount": 44,
+  "artifacts": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-w2-closeout-v1.md",
+      "sha256": "dcffb149b8e7008dccc38c69417cd33df35df695ea6b172946999254802d61df",
+      "bytes": 12139
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-module-coverage-map-v1.json",
+      "sha256": "e6b20a5e6bc531ba9e9992e81c5a9b6db366660d7ec182a2396b140c9ee53ef6",
+      "bytes": 105021
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-module-coverage-map-v1.md",
+      "sha256": "a7106021392889636b41f97cd1bc1f6ff34d193f2f399071805fc5f0e370f8e7",
+      "bytes": 8855
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/engine-observation-review-v1.json",
+      "sha256": "b9061361771f618f330ae074d6048eb2ccfc3d3a27494943c6dd7578020acae2",
+      "bytes": 144859
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-http-semantic-review-v1.json",
+      "sha256": "2148cf62c83d9f85f840827770ed20a9d1cc197d805b296318a479af3f882143",
+      "bytes": 75549
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-http-semantic-review-v1.md",
+      "sha256": "241a7c2a50bb8d5e21fc42841ee6acb73ab7c71c047fa9b5294abdbcfcd109bf",
+      "bytes": 4628
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-stairs-semantic-review-v1.json",
+      "sha256": "5fe5516e072e2fdd7587763020227022ae3a8a8d8cc22fd67c638fdb5edac5cd",
+      "bytes": 69872
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-stairs-semantic-review-v1.md",
+      "sha256": "cf5e63a4086e871fa097121d90f26af72bbab1b60219b66e7a3dcee8cf4774ce",
+      "bytes": 5290
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-delay-review-v1.json",
+      "sha256": "650d9951697c2dcc1233c8bc536858d7d4892d4009b4dcee085480ce1f2465d7",
+      "bytes": 17412
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-delay-review-v1.md",
+      "sha256": "0435eb035f09c5b98382e2215253011f44d0df6c6bff722d87543f0b9d977421",
+      "bytes": 5545
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/privacy-diagnosis-v1.md",
+      "sha256": "508f15f9f5b88a33b3770c963dcb91c73d91d149dbfafe8dece3dfd8de3834fc",
+      "bytes": 10298
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-binding-readiness-v1.json",
+      "sha256": "c1ac0479474fc42cece45d8b585ecddc0d7513cc0c599f63852890a1a49a01ac",
+      "bytes": 31526
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-static-correction-r1.json",
+      "sha256": "f62d92688cf7cef2b1a0f8d286ffd6d7fdac778110c5ca268c31d5e8864ff969",
+      "bytes": 21649
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/c4-http-addendum-freeze-r2.json",
+      "sha256": "d5af9edf371ad874d733aa80931ab6c01e25ac079106d5557e227908e0f94f27",
+      "bytes": 25487
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/privacy-scan/scan-component-v1.mjs",
+      "sha256": "9b45a61cca9abb258436f85de08e7e7066752a0242d36d21ee999a73fce0fb3c",
+      "bytes": 12907
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/qd008-next-adapter/privacy-scan/scan-http-v1.mjs",
+      "sha256": "dbefa5e6e1d58343c9712129d3cec0124b30e9cdaecee3b33bccf2c0ffe90117",
+      "bytes": 18652
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/static-preflight-03/result.json",
+      "sha256": "565e417a5340113f2b7c00e58a7c63f52756428fdad5549f9b7f8ae9de9e6fc2",
+      "bytes": 603
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/attempt-start.json",
+      "sha256": "53f66751f4568e37b0b4445e432e2998280a7c9f3607adcbf0247d2f853579cf",
+      "bytes": 14919
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/attempt-end.json",
+      "sha256": "4581cb6f3694d87a90906180940413bf2a4dde1ef7f563d4e3cc555c0e0ed5c2",
+      "bytes": 14131
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/retrieval-summary.json",
+      "sha256": "04647f9fd72d61f3f08a13d1e8f74a39ea4d7e6a4188e680361c17539aaa9f8d",
+      "bytes": 5691
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/filter-summary.json",
+      "sha256": "b405888df27999848b69e579fc15f1ec902347a37fb38ad097f0056468c8b0f2",
+      "bytes": 1348807
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/fault-summary.json",
+      "sha256": "c70e714af255d67612d48e61c78f4d5122a3f80a3319be4ba284cf8381357c5c",
+      "bytes": 956016
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/actual-ingestion.json",
+      "sha256": "d97e797ceb05da9af9c4ba4be71258994e431495c00b7fb7cdafb2f4df0f0adf",
+      "bytes": 346779
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/qa-privacy-scan-v1.json",
+      "sha256": "565d0f6af7f6021125f1561f07cb85b2b38506bd6b72c5c91ac5cf5b6a96141a",
+      "bytes": 34757
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/controlled-applicability/summary.json",
+      "sha256": "7ff776c9273b1b7e94f6b3c45353b1b289efd9403ce1dc602798e4ce59aaee29",
+      "bytes": 3455
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/case16-append/positive.json",
+      "sha256": "c98f9788de8b6ba2836543e861626389d5fe42eb7440444716f8e352cd39f25f",
+      "bytes": 18964
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/case16-append/append.json",
+      "sha256": "fcae4d828ed3c84bb23d2138d69265b561b6845722986d688ed8d3531fc27be1",
+      "bytes": 18318
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-launch/launch-binding.json",
+      "sha256": "f0880beda45c4ddda30cd47891c08527051360ec3f0ef76454128f948c627734",
+      "bytes": 18638
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-launch/actual-corpus-readiness.json",
+      "sha256": "b93c86e6253682d488993e7c587ecadae6609d32f6f7c59208efbd318bc7f1ba",
+      "bytes": 11117
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-launch/cleanup.json",
+      "sha256": "6901335aecbfd3455edd883fc9a68b6a6baafa80faf5bde86f460e8b2f864912",
+      "bytes": 562
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-start.json",
+      "sha256": "cff7b26c3edad089cff4c5cdb1d8f3519037910ede1eac2552b7349fd87aea4b",
+      "bytes": 16039
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-end.json",
+      "sha256": "8b47f758668549eb7474c85e4ebd0da1a79a0854b6ef9c37a641648c86aff77b",
+      "bytes": 14946
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-report.json",
+      "sha256": "ce05d1a85c6b46a0a87bb07c24d1a0472dbb80636ad3c09bd3e0934c5f6c486d",
+      "bytes": 56867
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-capture-joins.json",
+      "sha256": "8922e5d81a6d196b45ef959575e738a937ff4e9a85eb6bf531827a2544a67a71",
+      "bytes": 54181
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/http-reroute-addendum/summary.json",
+      "sha256": "0cd4e8c9479c9e0f69ff066fa7715890ae7c355456a7e69839d8e651d0d724bc",
+      "bytes": 1625
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/real-delay-result.json",
+      "sha256": "7182e7136f45160fae1ee1d2d0187368941cb96e72c964ba1fa0e4e91e0512c6",
+      "bytes": 287331
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/real-delay-phase-derived.json",
+      "sha256": "bbc96dc8461383d0660757d31ebda302fb413b43781783567d845db3d8f2bcf5",
+      "bytes": 6578
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/integration-model-captures.json",
+      "sha256": "355d9d71f6d36f322794a35e0b977e40cfaf9f585797eb7f6bbdf3902a0a6dd3",
+      "bytes": 41931
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01-capture/proxy-manifest.json",
+      "sha256": "bbd19311846bd82251ff7f0c56d91881de95680fc8e9557d9741e89b3a8e5218",
+      "bytes": 3228
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/qa-privacy-http-scan-v1.json",
+      "sha256": "30e9772d5bc683c5d0b30b4e422ce2cb1bc63e9aab54769564c8f644fe991b2b",
+      "bytes": 159434
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01/qa-http-timing-summary-v1.json",
+      "sha256": "fd8b0a92a240d9659c704964d1f8edaf1758c9d9eff9f0905452e119c6c3511e",
+      "bytes": 9851
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01.time.txt",
+      "sha256": "1025423407126a821cf93d15c1c8d7cc6ddc2292cc775cd81e3b9e6203699345",
+      "bytes": 1081
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/http-attempt-01.time.txt",
+      "sha256": "3b40143a598909d35fad5614edc654a008cd659aa495710f7a082c900a7a323a",
+      "bytes": 1009
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/w2-resource-release-v1.json",
+      "sha256": "8d3737751c2bbbac808fa83b6c93346e0ce4ca5dc3e19d52fbefa952785600a6",
+      "bytes": 5952
+    }
+  ],
+  "overallVerdict": "NOT_ISSUED"
+}

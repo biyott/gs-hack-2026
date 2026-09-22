@@ -1,0 +1,106 @@
+{
+  "kind": "technical-static-sse-app-origin-concurrence",
+  "recordedAt": "2026-09-22T00:02:09.695Z",
+  "owner": "/root/integration_resume",
+  "status": "STATIC_CONCURRENCE",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "checks": [
+    {
+      "name": "manifest-file:app/api/events/route.ts",
+      "pass": true,
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/app/api/events/route.ts",
+      "bytes": 3701,
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22"
+    },
+    {
+      "name": "exact-one-events-map",
+      "pass": true
+    },
+    {
+      "name": "manifest-file:.next/server/chunks/[root-of-the-server]__0rl-yj5._.js.map",
+      "pass": true,
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js.map",
+      "bytes": 76407,
+      "sha256": "69f3bf1cdca1654d36fe8f07423803b8cd060fa98a82ab1d80133c98d47cf667"
+    },
+    {
+      "name": "manifest-file:.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "pass": true,
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "bytes": 20344,
+      "sha256": "1feca21806f2a135b3c39081d0dbd4468ddcb58e1a9513458847491f12048c96"
+    },
+    {
+      "name": "map-route-byte-equality",
+      "pass": true
+    },
+    {
+      "name": "three-source-enqueues",
+      "pass": true
+    },
+    {
+      "name": "two-snapshot-one-heartbeat",
+      "pass": true
+    },
+    {
+      "name": "unique-property-anchor:68",
+      "pass": true
+    },
+    {
+      "name": "unique-receiver-anchor:68",
+      "pass": true
+    },
+    {
+      "name": "compiled-enqueue-property:68",
+      "pass": true
+    },
+    {
+      "name": "single-exact-compiled-expression:68",
+      "pass": true
+    },
+    {
+      "name": "unique-property-anchor:76",
+      "pass": true
+    },
+    {
+      "name": "unique-receiver-anchor:76",
+      "pass": true
+    },
+    {
+      "name": "compiled-enqueue-property:76",
+      "pass": true
+    },
+    {
+      "name": "single-exact-compiled-expression:76",
+      "pass": true
+    },
+    {
+      "name": "unique-property-anchor:85",
+      "pass": true
+    },
+    {
+      "name": "unique-receiver-anchor:85",
+      "pass": true
+    },
+    {
+      "name": "compiled-enqueue-property:85",
+      "pass": true
+    },
+    {
+      "name": "single-exact-compiled-expression:85",
+      "pass": true
+    },
+    {
+      "name": "candidate-manifest-unchanged",
+      "pass": true
+    }
+  ],
+  "mappingSegmentsChecked": 4574,
+  "failures": [],
+  "limits": [
+    "Static derivation from C6 bytes only; no compiled artifact imported or executed.",
+    "No runtime observation, authorization, or performance verdict.",
+    "C4 binding used only as schema reference; coordinates freshly decoded from C6 map."
+  ]
+}

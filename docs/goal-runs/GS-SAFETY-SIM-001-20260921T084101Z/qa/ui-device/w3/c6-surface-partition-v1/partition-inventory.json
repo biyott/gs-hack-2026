@@ -1,0 +1,1076 @@
+{
+  "authorization": "Parent explicit two-disjoint-viewport partition at00:13; max2parallel browsers, unchanged31states perviewport/alloracles/timers",
+  "wholeStates": 155,
+  "wholeTargets": 330,
+  "groups": [
+    {
+      "id": "A",
+      "widths": [
+        375,
+        390,
+        1280
+      ],
+      "states": [
+        {
+          "id": "entry-admin-unauthenticated-375x812",
+          "targets": []
+        },
+        {
+          "id": "entry-admin-admin-connected-375x812",
+          "targets": [
+            ".entry-session",
+            ".mode-choices"
+          ]
+        },
+        {
+          "id": "equipment-panels-header-and-run-controls-375x812",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "equipment-panels-3d-full-375x812",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-risk-375x812",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-worker-b-selected-375x812",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-2d-full-zoom-reset-375x812",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-incident-selected-2d-locked-375x812",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-first-current-records-375x812",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-guidance-details-expanded-375x812",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-unverified-profile-no-route-record-375x812",
+          "targets": [
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-admin-incident-controls-375x812",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "equipment-panels-worker-board-and-profile-375x812",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-C'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "equipment-panels-related-camera-and-event-ledger-375x812",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "equipment-panels-tracking-camera-and-observations-375x812",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "equipment-panels-calibration-all-fields-375x812",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "equipment-panels-settings-and-equipment-spec-375x812",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings label.field:has([data-testid='equipment-select'])",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-header-and-run-controls-375x812",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-3d-full-375x812",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-risk-375x812",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-worker-b-selected-375x812",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-2d-full-zoom-reset-375x812",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-incident-selected-2d-locked-375x812",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-first-current-records-375x812",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-guidance-details-expanded-375x812",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-admin-incident-controls-375x812",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-worker-board-and-profile-375x812",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-related-camera-and-event-ledger-375x812",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-tracking-camera-and-observations-375x812",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-calibration-all-fields-375x812",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-settings-and-equipment-spec-375x812",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings .rail-note",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        },
+        {
+          "id": "entry-admin-unauthenticated-390x844",
+          "targets": []
+        },
+        {
+          "id": "entry-admin-admin-connected-390x844",
+          "targets": [
+            ".entry-session",
+            ".mode-choices"
+          ]
+        },
+        {
+          "id": "equipment-panels-header-and-run-controls-390x844",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "equipment-panels-3d-full-390x844",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-risk-390x844",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-worker-b-selected-390x844",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-2d-full-zoom-reset-390x844",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-incident-selected-2d-locked-390x844",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-first-current-records-390x844",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-guidance-details-expanded-390x844",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-unverified-profile-no-route-record-390x844",
+          "targets": [
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-admin-incident-controls-390x844",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "equipment-panels-worker-board-and-profile-390x844",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-C'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "equipment-panels-related-camera-and-event-ledger-390x844",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "equipment-panels-tracking-camera-and-observations-390x844",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "equipment-panels-calibration-all-fields-390x844",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "equipment-panels-settings-and-equipment-spec-390x844",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings label.field:has([data-testid='equipment-select'])",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-header-and-run-controls-390x844",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-3d-full-390x844",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-risk-390x844",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-worker-b-selected-390x844",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-2d-full-zoom-reset-390x844",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-incident-selected-2d-locked-390x844",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-first-current-records-390x844",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-guidance-details-expanded-390x844",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-admin-incident-controls-390x844",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-worker-board-and-profile-390x844",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-related-camera-and-event-ledger-390x844",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-tracking-camera-and-observations-390x844",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-calibration-all-fields-390x844",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-settings-and-equipment-spec-390x844",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings .rail-note",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        },
+        {
+          "id": "entry-admin-unauthenticated-1280x720",
+          "targets": []
+        },
+        {
+          "id": "entry-admin-admin-connected-1280x720",
+          "targets": [
+            ".entry-session",
+            ".mode-choices"
+          ]
+        },
+        {
+          "id": "equipment-panels-header-and-run-controls-1280x720",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "equipment-panels-3d-full-1280x720",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-risk-1280x720",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-worker-b-selected-1280x720",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-2d-full-zoom-reset-1280x720",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-incident-selected-2d-locked-1280x720",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-first-current-records-1280x720",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-guidance-details-expanded-1280x720",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-unverified-profile-no-route-record-1280x720",
+          "targets": [
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-admin-incident-controls-1280x720",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "equipment-panels-worker-board-and-profile-1280x720",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-C'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "equipment-panels-related-camera-and-event-ledger-1280x720",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "equipment-panels-tracking-camera-and-observations-1280x720",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "equipment-panels-calibration-all-fields-1280x720",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "equipment-panels-settings-and-equipment-spec-1280x720",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings label.field:has([data-testid='equipment-select'])",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-header-and-run-controls-1280x720",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-3d-full-1280x720",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-risk-1280x720",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-worker-b-selected-1280x720",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-2d-full-zoom-reset-1280x720",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-incident-selected-2d-locked-1280x720",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-first-current-records-1280x720",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-guidance-details-expanded-1280x720",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-admin-incident-controls-1280x720",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-worker-board-and-profile-1280x720",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-related-camera-and-event-ledger-1280x720",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-tracking-camera-and-observations-1280x720",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-calibration-all-fields-1280x720",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-settings-and-equipment-spec-1280x720",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings .rail-note",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "widths": [
+        768,
+        1440
+      ],
+      "states": [
+        {
+          "id": "entry-admin-unauthenticated-768x1024",
+          "targets": []
+        },
+        {
+          "id": "entry-admin-admin-connected-768x1024",
+          "targets": [
+            ".entry-session",
+            ".mode-choices"
+          ]
+        },
+        {
+          "id": "equipment-panels-header-and-run-controls-768x1024",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "equipment-panels-3d-full-768x1024",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-risk-768x1024",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-worker-b-selected-768x1024",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-2d-full-zoom-reset-768x1024",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-incident-selected-2d-locked-768x1024",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-first-current-records-768x1024",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-guidance-details-expanded-768x1024",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-unverified-profile-no-route-record-768x1024",
+          "targets": [
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-admin-incident-controls-768x1024",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "equipment-panels-worker-board-and-profile-768x1024",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-C'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "equipment-panels-related-camera-and-event-ledger-768x1024",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "equipment-panels-tracking-camera-and-observations-768x1024",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "equipment-panels-calibration-all-fields-768x1024",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "equipment-panels-settings-and-equipment-spec-768x1024",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings label.field:has([data-testid='equipment-select'])",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-header-and-run-controls-768x1024",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-3d-full-768x1024",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-risk-768x1024",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-worker-b-selected-768x1024",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-2d-full-zoom-reset-768x1024",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-incident-selected-2d-locked-768x1024",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-first-current-records-768x1024",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-guidance-details-expanded-768x1024",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-admin-incident-controls-768x1024",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-worker-board-and-profile-768x1024",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-related-camera-and-event-ledger-768x1024",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-tracking-camera-and-observations-768x1024",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-calibration-all-fields-768x1024",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-settings-and-equipment-spec-768x1024",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings .rail-note",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        },
+        {
+          "id": "entry-admin-unauthenticated-1440x900",
+          "targets": []
+        },
+        {
+          "id": "entry-admin-admin-connected-1440x900",
+          "targets": [
+            ".entry-session",
+            ".mode-choices"
+          ]
+        },
+        {
+          "id": "equipment-panels-header-and-run-controls-1440x900",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "equipment-panels-3d-full-1440x900",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-risk-1440x900",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-3d-worker-b-selected-1440x900",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-2d-full-zoom-reset-1440x900",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-incident-selected-2d-locked-1440x900",
+          "targets": []
+        },
+        {
+          "id": "equipment-panels-first-current-records-1440x900",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-guidance-details-expanded-1440x900",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-B'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-unverified-profile-no-route-record-1440x900",
+          "targets": [
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-C'))"
+          ]
+        },
+        {
+          "id": "equipment-panels-admin-incident-controls-1440x900",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "equipment-panels-worker-board-and-profile-1440x900",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-C'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "equipment-panels-related-camera-and-event-ledger-1440x900",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "equipment-panels-tracking-camera-and-observations-1440x900",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "equipment-panels-calibration-all-fields-1440x900",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "equipment-panels-settings-and-equipment-spec-1440x900",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings label.field:has([data-testid='equipment-select'])",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-header-and-run-controls-1440x900",
+          "targets": [
+            ".console-header",
+            ".workspace-heading",
+            ".status-strip",
+            ".run-controls"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-3d-full-1440x900",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-risk-1440x900",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-3d-worker-b-selected-1440x900",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-2d-full-zoom-reset-1440x900",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-incident-selected-2d-locked-1440x900",
+          "targets": []
+        },
+        {
+          "id": "fire-gas-panels-first-current-records-1440x900",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-guidance-details-expanded-1440x900",
+          "targets": [
+            "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail [aria-label='현재 안내와 응답'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-admin-incident-controls-1440x900",
+          "targets": [
+            "#incident-detail .incident-actions"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-worker-board-and-profile-1440x900",
+          "targets": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".profile-details"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-related-camera-and-event-ledger-1440x900",
+          "targets": [
+            "#incident-camera .camera-panel",
+            ".event-ledger"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-tracking-camera-and-observations-1440x900",
+          "targets": [
+            "#tracking .tracking-toolbar",
+            "#tracking .camera-panel",
+            "#tracking .tracking-observations"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-calibration-all-fields-1440x900",
+          "targets": [
+            "#tracking .calibration-panel"
+          ]
+        },
+        {
+          "id": "fire-gas-panels-settings-and-equipment-spec-1440x900",
+          "targets": [
+            "#scenario-settings > h2",
+            "#scenario-settings .mode-switch",
+            "#scenario-settings label.field:has([data-testid='scenario-select'])",
+            "#scenario-settings .rail-note",
+            "#scenario-settings [data-testid='selected-equipment-name']",
+            "#scenario-settings label.field:has([data-testid='position-input-select'])",
+            "#scenario-settings label.field:has(> span:text-is('실행 속도'))",
+            "#scenario-settings .rail-facts",
+            "#scenario-settings > p.muted",
+            "#scenario-settings .equipment-spec"
+          ]
+        }
+      ]
+    }
+  ]
+}

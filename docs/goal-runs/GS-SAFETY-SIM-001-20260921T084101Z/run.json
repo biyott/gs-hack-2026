@@ -1,0 +1,704 @@
+{
+  "goalId": "GS-SAFETY-SIM-001",
+  "goalVersion": "1.0",
+  "executionId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "inputTimestamp": "2026-09-21T08:41:04.950Z",
+  "executionStartedAt": "2026-09-21T08:41:01.148Z",
+  "goalToolCreatedAt": "2026-09-21T08:41:23Z",
+  "recordedAt": "2026-09-21T08:43:26.680377+00:00",
+  "inputSource": "current active rollout response_item user message; UTF-8 text exact, no added newline",
+  "threadId": "01a0c320-2667-7ca2-b3d0-ecd02d0ca6da",
+  "operatingTargetHours": 11.5,
+  "operatingTargetIsCompletionEvidence": false,
+  "controlEnforcement": "규칙 안내 모드",
+  "goalInputSha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796",
+  "documentSha256": "55d2e2a4eaac35e4b16c948b22bfe56c73fae04802787921f5c2639146cb4d12",
+  "goalToolObjectiveSha256": "a320a84386fbc05aab0eaf72d092093a938a8d8df35fb44b859a5408b0f8e858",
+  "documentEqualsInput": false,
+  "nativeGoalStatus": "blocked",
+  "gate": "G5",
+  "g0RegisteredAt": "2026-09-21T08:50:12.231Z",
+  "g0Issuer": "/root/qa_lead",
+  "targetIntegrationQaReserveHours": 2,
+  "operatingTargetEndAt": "2026-09-21T20:11:01.148Z",
+  "stageMeaning": "Working C6 user demo verified and left running; incomplete goal handed off under user finalization instruction. NOT_ACCEPTED, not DONE.",
+  "stageRecordedAt": "2026-09-22T00:44:51.352Z",
+  "knownUnmetResources": [
+    "Current read-only ADB inventory confirms two online actual phones, not the four required roles",
+    "Physical table and 810-sample marker calibration not yet confirmed",
+    "Current LAN success and actual UWB two-peer simultaneous measurements not yet demonstrated",
+    "Current physical sound/haptic witness and end-to-end CCTV timing pending",
+    "Full active1x 210s camera G0 workload unavailable with stock12–34s scenarios; READY camera measurement is separate capability scope.",
+    "G0 attempt stopped at setup409 beforewarmup: zero actual measured performance intervals; remains required."
+  ],
+  "pendingIntegration": [
+    "Independent QA G4 execution and same-candidate AC01–16 verdict",
+    "Defect correction and candidate-specific retest if QA finds a required-behavior failure",
+    "Unmet physical resources remain explicit; only QA Lead final verdict"
+  ],
+  "priorPreparedCandidate": {
+    "candidateId": "sha256:49f4f54ae496761f12e71f474aaed5ffea9edaaae1ad45145cd67e8749c488d6",
+    "sourceSha256": "10862b66ce58b00ef237f4657970cde6a344ce5a10a128a2bb268ea6a37318ce",
+    "preparedAt": "2026-09-21T12:31:13.640Z",
+    "status": "preserved-before-final-frontend-correction; not-G3"
+  },
+  "g3": {
+    "issuedAt": "2026-09-22T00:04:44.817Z",
+    "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "record": "g3-freeze-c6.json",
+    "sha256": "537c1411b1dc3a1328aa098a58e789361bd5e7982a23ff776f745fef13dd3f50"
+  },
+  "g4": {
+    "qaIssuer": "/root/qa_resume",
+    "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "status": "FINAL_VERDICT_ISSUED",
+    "receipt": "evidence/qa/g4/candidate-892f975f/receipt-validation.json",
+    "officialVerdict": "BLOCKED",
+    "officialRecord": "evidence/qa/g4/candidate-892f975f/official-c6-qa-status-v2.json",
+    "officialRecordSha256": "e1d19be846332cd4e2b682623b970dc38e202ba564fa2671a0c8deed3aac5614",
+    "officialIssuedAt": "2026-09-22T00:40:27.224Z",
+    "counts": {
+      "PASS": 4,
+      "FAIL": 0,
+      "BLOCKED": 7,
+      "NOT_RUN": 5
+    },
+    "finalPhysicalAndHandoffAppendixPending": false
+  },
+  "openQaDefects": [
+    {
+      "id": "QD-001",
+      "scope": "Missing consistency report and original corpus review provenance/validator inputs in frozen packaging",
+      "owner": "tech_lead + rag_lead",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending"
+    },
+    {
+      "id": "QD-002",
+      "scope": "Forward stream sequence accepts older same-identity guidance version",
+      "owner": "frontend_lead",
+      "attempt": 2,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "producerManifest": ".omo/evidence/frontend-c2/source-manifest.json",
+      "producerManifestSha256": "a3056e309d9687380762ac686f203b7773b5c75d78fe36969fe959afed8742b3"
+    },
+    {
+      "id": "SEC-01",
+      "scope": "Unnecessary cross-worker synthetic range disclosure via authenticated tracking read",
+      "owner": "backend_lead + frontend_lead",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending"
+    },
+    {
+      "id": "QD-003",
+      "scope": "First recovery stop timestamp not durably persisted across reopen",
+      "owner": "backend_lead",
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "decision": "evidence/orchestrator/qd003-directed-decision-02.json"
+    },
+    {
+      "id": "QD-004",
+      "scope": "Current arrival confirmation persists after departure from correctly recovered latest target",
+      "owner": "backend_lead/guidance",
+      "attempt": 2,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "decision": "evidence/orchestrator/qd004-directed-decision-01.json"
+    },
+    {
+      "id": "QD-005",
+      "scope": "LR1100 functional boom pivot and load proxy +0.9m forward of known manufacturer dimension",
+      "owner": "design_assets (source/GLB/catalog), backend engine regression",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "producerManifest": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/changed-files.json"
+    },
+    {
+      "id": "QD-006",
+      "scope": "Invalid run/map current guidance excluded by worker selector but still emits logical manager alert announcement",
+      "owner": "frontend_lead/alert_audio_fix",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "producerManifest": ".omo/evidence/frontend-c2/source-manifest.json",
+      "producerManifestSha256": "a3056e309d9687380762ac686f203b7773b5c75d78fe36969fe959afed8742b3"
+    },
+    {
+      "id": "QD007",
+      "scope": "CCTV authenticated-channel source not normalized before ingestion and SQLite",
+      "owner": "backend_lead",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction01 source-ready48/48/static/CLEAR; new C3 and independent QA pending",
+      "decision": "evidence/orchestrator/qd007-correction-01.json"
+    }
+  ],
+  "preparedContractRevision": {
+    "version": "1.0.4",
+    "issuedAt": "2026-09-21T13:59:41.951Z",
+    "record": "docs/contracts/freeze-v1.0.4.json",
+    "contentSha256": "0dfda820ac09b8c075671f68416dac02d57c3751fa4ecbe48b2440b7c83d6205",
+    "scope": "SEC01 role-policy semantics; not yet a frozen C2"
+  },
+  "operatingPlanHistory": [
+    {
+      "hours": 8,
+      "targetEndAt": "2026-09-21T16:41:01.148Z",
+      "recordedAt": "2026-09-21T08:43:26.680377+00:00",
+      "reason": "Initial delegated quality-first planning target; not a completion gate or hard cutoff"
+    },
+    {
+      "hours": 10,
+      "targetEndAt": "2026-09-21T18:41:01.148Z",
+      "recordedAt": "2026-09-21T14:18:26.590Z",
+      "decisionOwner": "/root",
+      "reason": "IndependentQA remaining estimates W1reserve45min,W2estimate25min,W3estimate110–165min plus freshhandoff; user-delegated6–12h planning range. Preserve all required feasible checks; physicalblocked items remain explicit.",
+      "isGoalScopeOrAcceptanceChange": false,
+      "isHardCutoff": false
+    },
+    {
+      "hours": 11.5,
+      "targetEndAt": "2026-09-21T20:11:01.148Z",
+      "recordedAt": "2026-09-21T17:13:23.350Z",
+      "decisionOwner": "/root",
+      "reason": "C4 now issued17:12UTC; independent QA estimates105–170min remaining including actual models, web/3D, two-phone feasible subset, PHONE1 camera last and fresh handoff. Planning stays within user-delegated6–12h; no omitted mandatory checks or physical-gap waiver.",
+      "isGoalScopeOrAcceptanceChange": false,
+      "isHardCutoff": false
+    }
+  ],
+  "c2Preparation": {
+    "root": "/home/b/.cache/gs-safety-qd001.7e7jy5oy",
+    "sourceReady": {
+      "backend": "evidence/backend/C2-source-ready.json",
+      "frontend": ".omo/evidence/frontend-c2/source-manifest.json",
+      "rootBoundedCheck": "evidence/orchestrator/c2-source-readiness.json"
+    },
+    "phase": "C2 frozen; Root G3 issued; independent QA GO",
+    "g3Issued": true,
+    "fixedSourceFiles": 990,
+    "fixedSourceSha256": "03154430f0dff32e6f072cdf8c66a96772ccee519787ea3ee0c02a968b991ec4",
+    "environmentRetry": {
+      "issue": "Turbopack external dependency symlink rejected",
+      "maximum": 1,
+      "authorized": 1,
+      "sourceOrBundlerConfigChange": false
+    },
+    "buildId": "QZCOSOj4hgBWlUIGbGUxu",
+    "candidateId": "sha256:0d42bacc04c50cd21c9c133e262838acb6f47e2e8d33d37ea450ce160f46bc3e",
+    "finalSourceSha256": "0f50d5d6cc16ca78718e88adc88669b3420ffef416b58d4c1d20d63ab9a35f77",
+    "updatedAt": "2026-09-21T14:47:50.193Z",
+    "postbuildDelta": "Exactly two test JSON fixtures formatted; parsed deep equality preserved; build origin/source table and original lint failure retained",
+    "g3IssuedAt": "2026-09-21T14:57:48.417Z",
+    "independentQaReceipt": {
+      "completedAt": "2026-09-21T14:59:13.285Z",
+      "path": "evidence/qa/g4/candidate-0d42bacc/receipt-validation.json",
+      "matchedSourceFiles": 990,
+      "matchedArtifacts": 475,
+      "mismatchCount": 0,
+      "meaning": "Receipt integrity only, not behavioral acceptance"
+    },
+    "qaExecution": {
+      "window": "W1-C2-01",
+      "coreStartedAt": "2026-09-21T15:03:14.032Z",
+      "httpStartedAt": "2026-09-21T15:03:53.322Z",
+      "httpPid": 867253,
+      "port": 4101,
+      "overallVerdict": "NOT_ISSUED"
+    }
+  },
+  "g3History": [
+    {
+      "issuedAt": "2026-09-21T13:08:51.509Z",
+      "candidateId": "sha256:70da1337ab54652824ffb49f65cb0213822ba7c2420ae345664dbe7c48c893af",
+      "record": "g3-freeze-build04.json"
+    },
+    {
+      "issuedAt": "2026-09-21T14:57:48.417Z",
+      "candidateId": "sha256:0d42bacc04c50cd21c9c133e262838acb6f47e2e8d33d37ea450ce160f46bc3e",
+      "record": "g3-freeze-c2.json",
+      "sha256": "83037d7ede9f98515242fcabf4d946be15048cf9dedd91be5e5d6deb4837bc53"
+    },
+    {
+      "issuedAt": "2026-09-21T15:45:34.415Z",
+      "candidateId": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+      "record": "g3-freeze-c3.json",
+      "sha256": "37949392e24846b525874e79e648a9994df30ffe394357cbd843e971086b1362"
+    }
+  ],
+  "handoffIndex": {
+    "path": "evidence/product/c6-handoff-index-v4.md",
+    "sha256": "9eccc20411c18c5607e449835811a9df823b3797c520676131b98fe912cd5154",
+    "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "rootRecordedAt": "2026-09-22T00:45:35.092Z",
+    "meaning": "Final working user-demo guide with official C6 QA BLOCKED and separate Root actual browser self-check."
+  },
+  "c3Preparation": {
+    "reason": "QD007 actual authenticated-source boundary mismatch",
+    "phase": "Root G3 issued; independent QA receipt and fresh C3 execution authorized",
+    "g3Issued": true,
+    "sourceOwner": "backend_lead",
+    "bindingOwner": "tech_lead",
+    "qaWindows": "QA owns sequential W1/W2/W3/W4 grants",
+    "root": "/home/b/.cache/gs-safety-c3.eulo4t9w",
+    "backendSourceReady": {
+      "path": "evidence/backend/C3-source-ready.json",
+      "sourceReadyAt": "2026-09-21T15:27:31.677Z",
+      "sha256": "dd1d0fbeedec7ee7f94e8b4c059e13ad1a54a5b41b5b55ad0313e5e18975cb25"
+    },
+    "implementationBinding": {
+      "path": "docs/contracts/implementation-binding-v1.0.4-r2.json",
+      "sha256": "5f90a218c9dd43571046283076d6749c7c3728b846809a92e2a5e02ed27cf75a"
+    },
+    "updatedAt": "2026-09-21T15:45:34.415Z",
+    "candidateId": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+    "sourceSha256": "10f658c44bc4bd511302900e02b467058b6dc558b767f2acc4b2c49773d5f6ab",
+    "buildId": "BLy4PJy6kc0sEf4JQFnE0",
+    "sourceFiles": 992,
+    "artifactFiles": 469,
+    "manifestSha256": "8d9b031f68374ea939dcdebb570e76aeba4b09d1154165cab53d186e7d27c4bc"
+  },
+  "currentQaReceipt": {
+    "path": "evidence/qa/g4/candidate-892f975f/receipt-validation.json",
+    "sha256": "c42795855bbdc2f0f64f6dfcc6de28bf658b5689e5883315777465f86222c29c",
+    "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "observedAt": "2026-09-22T00:14:34.089Z",
+    "status": "RECEIPT_VERIFIED",
+    "meaning": "Candidate receipt integrity only; no behavior or overall acceptance implied."
+  },
+  "handoffIndexHistory": [
+    {
+      "path": "evidence/product/c2-handoff-index.md",
+      "sha256": "48f7729aaa601b93e12a27a365a6b2fcb75e8eb81d8d0eb544974022d1ccc7c9",
+      "observedAt": "2026-09-21T15:08:31.536Z",
+      "classification": "External navigation index; no candidate content or QA verdict change"
+    },
+    {
+      "path": "evidence/product/c3-handoff-index.md",
+      "sha256": "93659f85171e4e9364f9f6e8cfba57e29079b6a575c5f0ef5d652230e26ce901",
+      "bytes": 13844,
+      "observedAt": "2026-09-21T15:50:07.000Z",
+      "meaning": "Current C3 navigation and executable instructions, not QA acceptance"
+    },
+    {
+      "path": "evidence/product/c4-handoff-index.md",
+      "sha256": "03efd79fa40914e22bc016a71777caf4b873eecd5d3c07135ff6265f2c69e381",
+      "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+      "observedAt": "2026-09-21T17:20:51.129Z",
+      "rootRecordedAt": "2026-09-21T17:22:14.216Z",
+      "meaning": "External navigation; no product QA verdict"
+    },
+    {
+      "path": "evidence/product/c6-handoff-index-v2.md",
+      "sha256": "1bf5ba54a0d1146030e03b398a8b7cf0a7ac505afc902b92b633f5d0543d0eb4",
+      "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+      "rootRecordedAt": "2026-09-22T00:15:50.771Z",
+      "meaning": "Current C6 external navigation after two printed-hash corrections; final QA and demo runtime receipt pending."
+    }
+  ],
+  "executionCheckpoint": {
+    "recordedAt": "2026-09-21T16:23:00.532Z",
+    "reportedBy": "/root/qa_lead",
+    "candidateId": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+    "w1": {
+      "releasedAt": "2026-09-21T15:55:10.302Z",
+      "scopedRetests": "QD001/002/003/004/006/SEC01 and QD007 scoped PASS; QD005 analytic/runtime PASS, rendered QA pending",
+      "record": "evidence/qa/g4/candidate-1a7c95cd/defect-retest-status-v1.json"
+    },
+    "w2": {
+      "activatedAt": "2026-09-21T16:05:28.638Z",
+      "grantId": "W2-C3-01",
+      "harnessSha256": "7382da2bd66790e003c9bc05a9e91a80ce29f0dca94ef1aca5e5851b84148a31",
+      "resourceReleasedAt": "2026-09-21T16:18:44.196Z",
+      "delayDisposition": "Original7/9 raw retained. QA read-only join: accepted v2/profile1 precedes targetv3/profile2; target timed out5002.618ms, current templatev3/empty evidence/no late target supplement. Derived report pending; no additional rerun."
+    },
+    "overallVerdict": "NOT_ISSUED",
+    "w3": {
+      "grantId": "W3A-C3-01",
+      "scope": "Synthetic browser/assets/Blender/performance; initial50min/checkpoint15; actual start awaited",
+      "phoneCameraGrant": false
+    }
+  },
+  "requirementImplementationMap": {
+    "markdown": {
+      "path": "evidence/product/c4-requirement-implementation-map.md",
+      "sha256": "758cbbdeec9b669766c0f1bfd1b32b66001798ee5e53bde615c8018d663d2e2f"
+    },
+    "json": {
+      "path": "evidence/product/c4-requirement-implementation-map.json",
+      "sha256": "247a14a6f6ff0c2f7f7ee327bcbd71cce592adac53a9715ef7ab6bcf793eeed9"
+    },
+    "validation": {
+      "path": "evidence/product/c4-product-link-check-v1.json",
+      "sha256": "3dae8a93b6017894e4a7dfab3408466084a1fef2891b02e1debdfe2f985ce792"
+    },
+    "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+    "observedAt": "2026-09-21T17:20:51.129Z",
+    "baselineRows": 104,
+    "frozenFiles": 340,
+    "meaning": "Exact frozen implementation/evidence references; no AC acceptance"
+  },
+  "c4Preparation": {
+    "reason": "QD008 confirmed procedural applicability failure",
+    "phase": "G3 issued; independent QA GO",
+    "g3Issued": true,
+    "failedCandidate": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+    "authorization": "evidence/orchestrator/qd008-correction-01.json",
+    "updatedAt": "2026-09-21T17:12:03.258Z",
+    "scopeAddendum": "evidence/orchestrator/qd008-correction-01-scope.json",
+    "nonblockingScopeAddendum": "evidence/orchestrator/qd008-nonblocking-dispatch-01.json",
+    "qaUiDiagnostic": "evidence/qa/g4/candidate-1a7c95cd/W3-focus-diagnostic-disposition.json",
+    "technicalOwnerResumed": true,
+    "sourceReadiness": "evidence/orchestrator/c4-source-readiness.json",
+    "sourceReadinessSha256": "fcb634f96f9d8888e29669132b98fab9e2b38e5e84a328af212df87d230bdbe3",
+    "implementationBinding": {
+      "path": "docs/contracts/implementation-binding-v1.0.4-r3.json",
+      "sha256": "371afc9fa891c57ed0c37ccc7132695bb2e633d9f3f452b8b1123871d67d66e3",
+      "bytes": 13079
+    }
+  },
+  "qaRemainingEstimate": {
+    "recordedAt": "2026-09-21T16:57:52.252Z",
+    "source": "/root/qa_lead message",
+    "afterC4ReceiptMinutes": [
+      105,
+      170
+    ],
+    "rangesMinutes": {
+      "W1": [
+        3,
+        5
+      ],
+      "W2": [
+        15,
+        25
+      ],
+      "W3A": [
+        30,
+        50
+      ],
+      "W3B": [
+        30,
+        45
+      ],
+      "W3C": [
+        12,
+        20
+      ],
+      "W4": [
+        15,
+        25
+      ]
+    },
+    "qualifiers": [
+      "Estimate only; real defects may add work",
+      "No test omission or acceptance change",
+      "Four phones/two simultaneous Controlees/physical810grid remain unavailable",
+      "Audible/haptic confirmation requires actual version-bound human observation"
+    ],
+    "operatingTargetUnchangedPendingReceipt": false,
+    "currentReceipt": "g3-freeze-c4.json"
+  },
+  "qaReceiptHistory": [
+    {
+      "path": "evidence/qa/g4/candidate-1a7c95cd/receipt-validation.json",
+      "sha256": "0c68b89a9b95fe9a57be520a0921ccd2daba6348e5f8d3a2561658bf0e58e807",
+      "candidateId": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+      "completedAt": "2026-09-21T15:47:10.683Z",
+      "allMatch": true,
+      "meaning": "Independent candidate receipt only; product execution and overall acceptance separate"
+    },
+    {
+      "path": "evidence/qa/g4/candidate-cd8a2428/receipt-validation.json",
+      "sha256": "cd74ef75f8bbcf8c95d618823187d97a1ed5d1d30679fb8931b5fa1934847fed",
+      "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+      "completedAt": "2026-09-21T17:14:16.065Z",
+      "allMatch": true,
+      "meaning": "Independent candidate receipt only; product execution and overall acceptance separate"
+    }
+  ],
+  "requirementImplementationMapHistory": [
+    {
+      "recordedAt": "2026-09-21T16:15:59.176Z",
+      "md": {
+        "path": "evidence/product/c3-requirement-implementation-map.md",
+        "sha256": "0a2e3ff93e310c1e7883ee89b6af2b314df5194c4970e198649e1bc2c27ada5d",
+        "bytes": 316784
+      },
+      "json": {
+        "path": "evidence/product/c3-requirement-implementation-map.json",
+        "sha256": "e29b2483f1f188c30840132c876097f4f16852e2128908f57c2d7cea9144a99c",
+        "bytes": 647137
+      },
+      "meaning": "104 unchanged baseline requirements linked to manifest-bound implementation paths and observed evidence. File existence is not implementation acceptance; QA verdict remains independent."
+    }
+  ],
+  "currentQaProgress": "Final independent C6 QA BLOCKED; Root final user-demo functionality self-check passed without changing QA verdict.",
+  "physicalResumePreparation": {
+    "recordedAt": "2026-09-21T18:09:36.599Z",
+    "document": {
+      "path": "evidence/product/c4-physical-resume-preparation-v1.md",
+      "sha256": "bb22a607b101e1ec86363346fb10972305712b00612c736c6941b936e2201b47"
+    },
+    "provenance": {
+      "path": "evidence/product/c4-physical-resume-preparation-v1.provenance.json",
+      "sha256": "cbf3f24824acf4ca19d3ddc0d71d2e3b5df66317f0d3a8296b65e9fa9ba17c2c"
+    },
+    "executionOrVerdict": false
+  },
+  "operatingTargetStatus": "Historical11.5hour plan superseded by candidate-dependent remaining-work forecast",
+  "operatingForecast": {
+    "recordedAt": "2026-09-21T18:49:53.815Z",
+    "source": "QA Lead remaining-schedule message after QD009/QD010",
+    "dependsOn": "Combined corrected candidate independently received at new G3/G4",
+    "remainingMinutes": {
+      "minimum": 108,
+      "maximum": 180
+    },
+    "plusFinalReviewSynthesis": true,
+    "breakdownMinutes": {
+      "W1": [
+        5,
+        5
+      ],
+      "W2": [
+        5,
+        10
+      ],
+      "W3FreshCaptureAssetIncidentAccessibility": [
+        35,
+        55
+      ],
+      "softwareTiming": [
+        10,
+        25
+      ],
+      "feasibleTwoPhone": [
+        30,
+        45
+      ],
+      "phone1CameraLast": [
+        8,
+        15
+      ],
+      "W4SecondExecutor": [
+        15,
+        25
+      ]
+    },
+    "notHardCutoff": true,
+    "notCompletionEvidence": true,
+    "initialSixToTwelveHourPlanningReferencePreserved": true,
+    "noGoalScopeOrCriteriaChange": true,
+    "physicalRequirementsRemainBlockedWhereResourcesMissing": true
+  },
+  "c5Preparation": {
+    "recordedAt": "2026-09-21T19:03:56.033Z",
+    "status": "BOTH_OWNER_READY_AWAITING_R4_ASSEMBLY",
+    "backend": {
+      "status": "SOURCE_READY",
+      "at": "2026-09-21T18:56:51.450Z",
+      "receipt": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/C5-source-ready.json",
+      "sha256": "db839c15c8b88b45476437ee6a22f40f1a464c7a52a7b278332ff1faefa802d3",
+      "integrity": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c5-backend-source-integrity-01.json",
+      "sourceFiles": 5,
+      "integrityMismatches": 0,
+      "producerBehavior": "86/86 before exact test-only matcher container copy; final scoped Biome and whole-workspace typecheck PASS after copy",
+      "qaAcceptance": false
+    },
+    "design": {
+      "status": "OWNER_READY_FOR_INTEGRATION",
+      "at": "2026-09-21T19:24:14.925Z",
+      "resourceReleasedAt": "2026-09-21T19:24:17Z",
+      "receipt": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/source-ready.json",
+      "sha256": "1342aa16e8a5e4204cbc5d35cfa83cc1fe186312655f6ce01a4d5d2339c3dc71",
+      "integrity": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c5-design-source-integrity-01.json",
+      "integrityEntries": 96,
+      "integrityMismatches": 0,
+      "formattingProof": "Pinned Biome formatter image exact-byte equivalence; not AST proof or post-format behavioral rerun",
+      "priorScheduleBreachPreserved": true,
+      "qaAcceptance": false
+    },
+    "technical": {
+      "status": "ASSEMBLY_AUTHORIZED_PENDING_ACTUAL_START",
+      "grant": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/c5-technical-assembly-grant-01.json",
+      "sha256": "44afa6d41c4467d111d7ccc27fa8c9e5a4f0e5d0ce872c2dcfae6e208c89ba28",
+      "grantedAt": "2026-09-21T19:26:10.164Z",
+      "expiresAt": "2026-09-21T19:46:10.164Z",
+      "binding": {
+        "path": "docs/contracts/implementation-binding-v1.0.4-r4.json",
+        "sha256": "e2ae8f14061a8d7f96a2e1d8e2cee0e982abf49a064b05771d59fe0b22af4b39",
+        "issuedAt": "2026-09-21T19:26:55.815963Z",
+        "rootIntegrity": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c5-r4-integrity-01.json"
+      },
+      "executionOwner": "/root/recovery_boundary_oracle",
+      "delegationSha256": "d0e278615e1b5e48f35defe3d4864472c4db60dfa8fb4581fc600f714d71ae65"
+    },
+    "priorCandidateDiagnostic": {
+      "candidate": "C4 failed immutable; exploratory only",
+      "report": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-cd8a2428/incident-diagnostic-01/incident-browser/2026-09-21T19-14-29-997Z-c11ebb54/report.json",
+      "sha256": "a9c86ad8fc84bd50e271f5df7027aad2389b06793aeaa2eb4b6b49d60500bbdb",
+      "startedAt": "2026-09-21T19:14:29.998Z",
+      "completedAt": "2026-09-21T19:14:44.379Z",
+      "rawVerdict": "INCOMPLETE_REVIEW_REQUIRED",
+      "productAcceptance": "NOT_RUN",
+      "inputsUnchanged": true,
+      "grantExpired": false,
+      "qaDisposition": "NO_NEW_SUPPORTED_DEFECT_IN_EXECUTED_SCOPE",
+      "noPassTransfer": true,
+      "disposition": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/C4-incident-exploratory-disposition-v1.json",
+      "dispositionSha256": "978ecf83bc5421b047ddeb6ceef87ad149915c13a988c259ad97e72afc07ff4f"
+    },
+    "updatedAt": "2026-09-21T19:26:00.302Z"
+  },
+  "userResume": {
+    "recordedAt": "2026-09-21T23:07:23.566Z",
+    "instruction": "1시간 반 안에 완료해야 해 계속 해",
+    "deadline": "2026-09-22T00:35:49Z",
+    "goalScopeChanged": false,
+    "acceptanceCriteriaChanged": false,
+    "nativeGoalStatusAtResume": "blocked",
+    "executionAuthorizedByUser": true,
+    "blockedAudit": "fresh resumed audit; previous blocked turn count is not reused",
+    "resourcesObserved": "10.5GB available RAM; no application/model ports listening; native old agents missing"
+  },
+  "priorRunStateSnapshots": [
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/resume-90min/run-before-c5-stage-update.json",
+      "sha256": "a03ed548ce9b62576ee95faec39dfa9d658f2903b1db7385c4ef67d3109f5373",
+      "recordedAt": "2026-09-21T23:18:00.312Z",
+      "meaning": "Preserves previous operational fields, including stale historical C1/C4 state; no historical evidence erased."
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/resume-90min/run-before-c6-stage-update.json",
+      "sha256": "8075ea5bb30ee6fbcc2ba24d10ea584963a286bf6e2ad5c2479a8d6cc5f06b89",
+      "recordedAt": "2026-09-22T00:07:50.174Z"
+    }
+  ],
+  "nativeGoalStatusMeaning": "Native tool remained blocked from prior environment outage; user explicitly resumed execution. No API can reactivate native status; this is distinct from active resumed work and from QA verdict.",
+  "executionStatus": "ACTIVE_USER_RESUMED",
+  "historicalG4": {
+    "qaIssuer": "/root/qa_lead",
+    "validationStartedAt": "2026-09-21T13:10:34.652Z",
+    "validationCompletedAt": "2026-09-21T13:10:36.514Z",
+    "candidateId": "sha256:70da1337ab54652824ffb49f65cb0213822ba7c2420ae345664dbe7c48c893af",
+    "receipt": "evidence/qa/g4/candidate-70da1337/receipt-validation.json",
+    "resourceLedger": "evidence/qa/g4/candidate-70da1337/resource-ledger.jsonl",
+    "w1GrantConfirmedAt": "2026-09-21T13:15:34.773Z",
+    "runtimeStart": {
+      "serverPort": 4101,
+      "launchedAt": "2026-09-21T13:18:55.266Z",
+      "owner": "/root/qa_lead/qa_server",
+      "receipt": "evidence/qa/server/candidate-70da1337/http/process-initial.json"
+    }
+  },
+  "historicalDefectState": [
+    {
+      "id": "QD-001",
+      "scope": "Missing consistency report and original corpus review provenance/validator inputs in frozen packaging",
+      "owner": "tech_lead + rag_lead",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending"
+    },
+    {
+      "id": "QD-002",
+      "scope": "Forward stream sequence accepts older same-identity guidance version",
+      "owner": "frontend_lead",
+      "attempt": 2,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "producerManifest": ".omo/evidence/frontend-c2/source-manifest.json",
+      "producerManifestSha256": "a3056e309d9687380762ac686f203b7773b5c75d78fe36969fe959afed8742b3"
+    },
+    {
+      "id": "SEC-01",
+      "scope": "Unnecessary cross-worker synthetic range disclosure via authenticated tracking read",
+      "owner": "backend_lead + frontend_lead",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending"
+    },
+    {
+      "id": "QD-003",
+      "scope": "First recovery stop timestamp not durably persisted across reopen",
+      "owner": "backend_lead",
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "decision": "evidence/orchestrator/qd003-directed-decision-02.json"
+    },
+    {
+      "id": "QD-004",
+      "scope": "Current arrival confirmation persists after departure from correctly recovered latest target",
+      "owner": "backend_lead/guidance",
+      "attempt": 2,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "decision": "evidence/orchestrator/qd004-directed-decision-01.json"
+    },
+    {
+      "id": "QD-005",
+      "scope": "LR1100 functional boom pivot and load proxy +0.9m forward of known manufacturer dimension",
+      "owner": "design_assets (source/GLB/catalog), backend engine regression",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "producerManifest": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/changed-files.json"
+    },
+    {
+      "id": "QD-006",
+      "scope": "Invalid run/map current guidance excluded by worker selector but still emits logical manager alert announcement",
+      "owner": "frontend_lead/alert_audio_fix",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction/source ready for separate C2; C1 failure remains, independent C2 retest pending",
+      "producerManifest": ".omo/evidence/frontend-c2/source-manifest.json",
+      "producerManifestSha256": "a3056e309d9687380762ac686f203b7773b5c75d78fe36969fe959afed8742b3"
+    },
+    {
+      "id": "QD007",
+      "scope": "CCTV authenticated-channel source not normalized before ingestion and SQLite",
+      "owner": "backend_lead",
+      "attempt": 1,
+      "automaticReworkLimit": 2,
+      "status": "Producer correction01 source-ready48/48/static/CLEAR; new C3 and independent QA pending",
+      "decision": "evidence/orchestrator/qd007-correction-01.json"
+    }
+  ],
+  "openQaDefectsMeaning": "Earlier defect records below are history; official current candidate dispositions are QA-owned, not inferred from producer corrections.",
+  "currentCorrections": [
+    "QD011 correction01",
+    "QD012 correction01",
+    "QD013 correction01"
+  ],
+  "currentCorrectionRecords": [
+    "evidence/orchestrator/c6-conformance-correction-01.json",
+    "evidence/orchestrator/c6-conformance-correction-01-addendum.json"
+  ],
+  "currentProofRecovery": "evidence/technical/c6-cjk-proof-recovery.json",
+  "demoPreparation": {
+    "path": "evidence/technical/c6-user-demo-preparation.json",
+    "status": "STARTED_AND_CHECKED",
+    "plannedBaseUrl": "http://127.0.0.1:3000",
+    "freshPrivateDbRequired": true,
+    "waitForQaResourceRelease": false
+  },
+  "handoffIndexMeaning": "v1 preserved with known printed source/APK hash errors; v2 literal hashes rebuilt from actual authoritative receipts. No candidate change.",
+  "finalization": {
+    "recordedAt": "2026-09-22T00:44:51.352Z",
+    "overallAccepted": false,
+    "softwareDemoRunning": true,
+    "baseUrl": "http://127.0.0.1:3000",
+    "startedReceipt": "evidence/technical/c6-user-demo-started-v2.json",
+    "functionalSelfCheck": "evidence/orchestrator/final-user-demo/attempt-02/functional-check.json",
+    "deadline": "2026-09-22T00:51:07Z",
+    "original90MinuteDeadlineMissed": true,
+    "goalChanged": false,
+    "goalChangeStatement": "목표 변경 없음",
+    "remainingRequiredWork": "Official AC04/07/08/09/13/15/16 BLOCKED and AC01/05/10/11/12 NOT_RUN; see QA final v2. Real4phone/twopeer/calibration810, complete native/UI/LLM lineage and G0 remain required.",
+    "finalHandoff": "g5-final-handoff.md",
+    "requirementQaPointers": "evidence/product/c6-final-requirement-qa-pointers-v4.json"
+  }
+}

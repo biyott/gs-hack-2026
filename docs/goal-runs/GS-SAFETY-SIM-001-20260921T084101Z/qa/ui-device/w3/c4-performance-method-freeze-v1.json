@@ -1,0 +1,101 @@
+{
+  "kind": "c4-browser-performance-method-source-freeze",
+  "version": "1",
+  "preparedAt": "2026-09-21T17:44:30Z",
+  "owner": "/root/qa_lead/qa_ui_device/c4_performance_protocol",
+  "preparationOnly": true,
+  "executionGrant": null,
+  "helperExecution": "NOT_RUN",
+  "productPerformance": "NOT_RUN",
+  "formalMethodConcurrence": "PENDING_EXACT_SOURCE_BINDING",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "candidateRoot": "/home/b/.cache/gs-safety-c4.q2FD40",
+  "candidateManifestSha256": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d",
+  "candidateSourceSha256": "e17322b2faf5b5181f6a50bcd5cd4baeae2ca31f57f7bfd1653399b4e9e28efa",
+  "buildId": "czkc6DgDv3UUlTrSfDMqX",
+  "receiptValidationPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/receipt-validation.json",
+  "sources": [
+    {
+      "path": "c4-performance-protocol-v1.md",
+      "bytes": 30687,
+      "sha256": "d9eb51f5d4c81acdd1e1fb63a1134df085d1e01746bbeea03e929ce85f1b0938"
+    },
+    {
+      "path": "c4-dispatch-observer-v1.cjs",
+      "bytes": 12185,
+      "sha256": "389351db684809b9b79a88330f8cd920ce61988659dac77d0a511db34842df83",
+      "syntaxCheck": "node --check exit 0"
+    },
+    {
+      "path": "c4-primary-transition-ledger-v1.mjs",
+      "bytes": 4539,
+      "sha256": "40e8b95315f214f8d645f381c6dd6a4a84d3ff9d0e1a167535035aea3f94746b",
+      "syntaxCheck": "node --check exit 0"
+    },
+    {
+      "path": "browser-observer-primary-v2.mjs",
+      "sha256": "e421503cbc6dbb5feddfc52f4c41bde403a8e2a4498363044e772b31f7ab91df",
+      "status": "UNCHANGED_EXISTING_13_SYNTHETIC_HTML_CHECKS_ONLY"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/src/components/incidents/guidance-record.tsx",
+      "bytes": 6609,
+      "sha256": "3061ccd60f9927476563fc3795faf5eab1852ac0663e1811f0aa5f60d5f7f3ec",
+      "binding": "EXACT_MATCH_TO_PRIMARY_OBSERVER_V2_COMPONENT"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/app/api/events/route.ts",
+      "sha256": "484f580f150f8d97cab3910b8c5a09b1694ffb9083f93f3d3befb0ab9f0b9e22"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/.next/server/app/api/events/route.js",
+      "sha256": "8259e6493c67f110182fec0f05e13073128fa5072b85c0f782fe2d20de3ee501"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c4.q2FD40/.next/server/chunks/[root-of-the-server]__0rl-yj5._.js",
+      "sha256": "1feca21806f2a135b3c39081d0dbd4468ddcb58e1a9513458847491f12048c96"
+    }
+  ],
+  "endpoint": "Application-origin native ReadableStreamDefaultController.enqueue pre-call and post-return/error; not socket/network flush",
+  "originProof": "First-controller candidate-root callsites plus exact compiled artifact/source-map binding and PID required; payload/timing match alone insufficient",
+  "browserEndpoint": "Unchanged primary-text-DOM-and-sampled-hit-test-at-requestAnimationFrame proxy, not physical paint",
+  "workload": {
+    "syntheticInputName": "QA-C4-SYN-POS-CAMERA-10HZ-v1",
+    "inputRoute": "POST /api/tracking/frame with synthetic seven-marker JPEG, calibration and measured position selector",
+    "admins": 2,
+    "modes": ["equipment", "fire-gas"],
+    "warmupSeconds": 30,
+    "measurementSeconds": 180,
+    "speed": 1,
+    "cycleOffsetsSeconds": [0, 18, 36, 54, 72, 90, 108, 126, 144, 162],
+    "cycleCommands": ["select", "position-input:measured", "speed:1", "start"],
+    "equipmentScenario": "EQ-NO-ROUTE",
+    "fireGasScenario": "FG-ROUTE-BLOCK",
+    "minimumObservedValidPrimaryJoinsPerAdminPerMode": 20,
+    "maximumIntervalsPerMode": 3,
+    "allResetStartCompletedAndSlowFramesRetained": true,
+    "runIdsDiscontinuous": true,
+    "actualAccepted10HzNotAssumed": true
+  },
+  "staticReviewNotes": [
+    "Parent identified finally-return exception suppression; recording now uses a metadata guard with no return from finally. Negative malformed-SSE plus original-throw/return validation remains required.",
+    "Fixture-seams review incorrectly claimed SSE absent; rejected against frozen app/api/events/route.ts. Public SSE exists.",
+    "Transition ledger compares immediate previous state, so later return to an older identity is retained. One observer is installed per document; start/stop does not accumulate observers.",
+    "Close receipt must be observed and rehashed after completion; missing receipt, parse/drop/write/observer failures or unproven origin invalidate completeness."
+  ],
+  "remainingPreparation": [
+    "Exact-source QA/Technical concurrence and helper-only grant",
+    "Minimal same-wrapper VM/fake-controller and pure-HTML checker source and execution; protocol contains case plan only",
+    "Authorized synthetic JPEG bank generation, verification and hash freeze",
+    "Full two-admin/input/cycle/clock/immutable-DB-join execution runner (not present)",
+    "Runtime app-origin prototype/controller and independent browser clock binding",
+    "Early graceful observer closure method if grant deadline/natural beforeExit is unsuitable",
+    "Actual accepted three-entity rates and per-admin/mode primary quota",
+    "Physical workload evidence; actual-model provider evidence when authorized"
+  ],
+  "occupancyAfterPreparation": {
+    "oneIntervalPerModeSeconds": 420,
+    "threeIntervalsPerModeSeconds": 1260,
+    "additional": "Recorded setup, clock/controller binding, fixture preflight and teardown; no fixed sleeps or per-interval restart requirement"
+  }
+}

@@ -1,0 +1,67 @@
+import { ScenarioSchema } from '@candidate/server/scenarios';
+import { configuration } from '../fixture';
+
+// Independently retained C1 inputs; no current producer test is imported.
+const initial = {
+  equipment: { equipmentId: 'EQUIPMENT-A', modelId: 'sk1265-at6', position: { x: 30, y: 25 },
+    headingDeg: 0, speedMps: 0, slewDeg: 0, observedAtMs: 0, source: 'mock', connected: true },
+  workers: [
+    { workerId: 'WORKER-A', position: { x: 65, y: 25 }, observedAtMs: 0, source: 'mock', connected: true,
+      profile: { workerId: 'WORKER-A', version: 1, preferredLocale: 'ko', locale: 'ko', canUseStairs: true,
+        speedMps: { min: 0.8, max: 1.4 }, needsAssistance: false, needsCompanion: false,
+        notificationPreferences: { voice: true, vibration: true }, confirmedAt: '2026-09-21T09:00:00Z' } },
+    { workerId: 'WORKER-B', position: { x: 90, y: 40 }, observedAtMs: 0, source: 'mock', connected: true,
+      profile: { workerId: 'WORKER-B', version: 1, preferredLocale: 'en', locale: 'en', canUseStairs: false,
+        speedMps: { min: 0.3, max: 0.7 }, needsAssistance: true, needsCompanion: true,
+        notificationPreferences: { voice: true, vibration: true }, confirmedAt: '2026-09-21T09:00:00Z' } },
+  ],
+  sensors: [], hazards: [], blockedPathIds: [],
+} as const;
+
+export const latestTarget = { x: 125, y: 42, floorId: 'GROUND', nodeId: 'REFUGE-02' } as const;
+export const oldTarget = { x: 125, y: 8, floorId: 'GROUND', nodeId: 'REFUGE-01' } as const;
+export const oldRefugeEdges = ['EDGE-A-04', 'EDGE-A-05', 'EDGE-C-05'] as const;
+export const latestRefugeEdges = ['EDGE-B-04', 'EDGE-B-05', 'EDGE-C-06'] as const;
+
+export const s20Scenario = ScenarioSchema.parse({
+  id: 'QA-S20-OS', version: '1.0.0', label: { ko: '속도 증가와 진행 방향 변경', en: 'Speed increase and direction change' },
+  mode: 'equipment', mapId: 'SITE-CONSTRUCTION-01', mapVersion: '1.0.0', synthetic: true,
+  seed: 20260921, durationMs: 12000, clockEpoch: '2026-09-21T09:00:00Z', policyId: 'POLICY-EQUIPMENT', initial,
+  events: [
+    { id: 'EQ-SPEED-DIRECTION-001', atMs: 1000, type: 'equipment.pose', position: { x: 30, y: 25 }, headingDeg: 0, speedMps: 0.5, slewDeg: 0 },
+    { id: 'EQ-SPEED-DIRECTION-002', atMs: 4000, type: 'equipment.pose', position: { x: 30, y: 25 }, headingDeg: 0, speedMps: 3, slewDeg: 0 },
+    { id: 'EQ-SPEED-DIRECTION-003', atMs: 8000, type: 'equipment.pose', position: { x: 35, y: 25 }, headingDeg: -30, speedMps: 3, slewDeg: 0 },
+    { id: 'qa-latest-arrival', atMs: 9000, type: 'worker.position', workerId: 'WORKER-A', position: { x: 125, y: 42 } },
+    { id: 'qa-old-target', atMs: 11000, type: 'worker.position', workerId: 'WORKER-A', position: { x: 125, y: 8 } },
+  ],
+  expectedResults: [
+    { atMs: 4000, kind: 'guidance', workerId: 'WORKER-A', actionCode: 'FOLLOW_VALIDATED_ROUTE', route: 'required', destinationIds: ['REFUGE-01'], note: 'Assert the current authoritative guidance, not generated explanation.' },
+    { atMs: 8000, kind: 'guidance', workerId: 'WORKER-A', actionCode: 'FOLLOW_VALIDATED_ROUTE', route: 'required', destinationIds: ['REFUGE-02'], note: 'Changed heading sweeps the load across the prior south route; replan to the north refuge using the actual declared geometry.' },
+  ],
+  coverage: ['AC-02:speed-increase', 'AC-02:heading-change', 'AC-04:guidance-version'],
+});
+export const s20Config = { ...configuration, scenarios: [...configuration.scenarios, s20Scenario] };
+
+// Retains the producer's original three events, including its scenario replacement ID.
+export const oldRefugeScenario = ScenarioSchema.parse({
+  id: 'EQ-APPROACH', version: '1.0.0', label: { ko: '회피 후보점 도착 확인', en: 'Arrival at validated refuge' },
+  mode: 'equipment', mapId: 'SITE-CONSTRUCTION-01', mapVersion: '1.0.0', synthetic: true,
+  seed: 20260921, durationMs: 34000, clockEpoch: '2026-09-21T09:00:00Z', policyId: 'POLICY-EQUIPMENT', initial,
+  events: [
+    { id: 'EQ-ARRIVAL-001', atMs: 1000, type: 'equipment.pose', position: { x: 35, y: 25 }, headingDeg: 0, speedMps: 2.5, slewDeg: 0 },
+    { id: 'reroute', type: 'route.block', atMs: 2000, pathIds: oldRefugeEdges },
+    { id: 'arrive', type: 'worker.position', atMs: 3000, workerId: 'WORKER-A', position: { x: 125, y: 42 } },
+  ],
+  expectedResults: [
+    { atMs: 1000, kind: 'guidance', workerId: 'WORKER-A', actionCode: 'FOLLOW_VALIDATED_ROUTE', route: 'required', destinationIds: ['REFUGE-01', 'REFUGE-02'], note: 'Assert the current authoritative guidance, not generated explanation.' },
+    { atMs: 32000, kind: 'arrival', workerId: 'WORKER-A', destinationId: 'REFUGE-01', requiresExplicitConfirmation: true, note: 'Position can mark atDestination; received/understood/arrived timestamps remain separate until explicit responses.' },
+  ],
+  coverage: ['AC-02:arrival', 'AC-05:response-separation'],
+});
+export const oldRefugeConfig = { ...configuration, scenarios: configuration.scenarios.map((entry) => entry.id === oldRefugeScenario.id ? oldRefugeScenario : entry) };
+export const blockedLatestScenario = ScenarioSchema.parse({ ...oldRefugeScenario, id: 'QA-R07-LATEST-BLOCKED',
+  events: [...oldRefugeScenario.events,
+    { id: 'qa-latest-target-branches-close', type: 'route.block', atMs: 2500, pathIds: latestRefugeEdges },
+  ].sort((left, right) => left.atMs - right.atMs),
+});
+export const blockedLatestConfig = { ...configuration, scenarios: [...configuration.scenarios, blockedLatestScenario] };

@@ -1,0 +1,21 @@
+{
+  "kind": "independent-c4-incident-v1.1-source-freeze",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "createdAt": "2026-09-21T18:06:20.819Z",
+  "runtime": "NOT_RUN",
+  "authorization": "NO_GRANT_CREATED",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-incident-browser-v1.1.mjs",
+      "sha256": "de1a4cba23b80fb1cc66c619cb569187c20d2f7ae9762b8b866dcc7835550a45"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-incident-browser-v1.1.md",
+      "sha256": "b9d0518f18182c9602c21e1296c1c6224c935836d0eceb5c247a32647e2efcb7"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c4.v2.json",
+      "sha256": "8a64152769ee5f6ff217c6f0216c73966e48e7cb22bb8f278810741c03c21fca"
+    }
+  ]
+}

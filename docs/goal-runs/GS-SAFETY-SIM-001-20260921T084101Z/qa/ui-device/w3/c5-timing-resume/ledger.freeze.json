@@ -1,0 +1,74 @@
+{
+  "kind": "c4-primary-transition-ledger-helper-source-freeze",
+  "version": "1.1",
+  "preparationOnly": true,
+  "helperExecution": "NOT_RUN",
+  "productAcceptance": "NOT_RUN",
+  "productPerformance": "NOT_RUN",
+  "owner": "/root/qa_lead/qa_ui_device/c4_performance_protocol/ledger_checker",
+  "candidateRoot": "/home/b/.cache/gs-safety-c5.H4mElI",
+  "candidateId": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+  "playwrightModule": "/home/b/.cache/gs-safety-c5.H4mElI/node_modules/playwright/index.mjs",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "staticSyntaxCheck": "node --check test-c4-primary-transition-ledger-v1_1.mjs: exit 0; no import or helper execution",
+  "staticReview": "Independent source-only diff review found no deterministic defect; all eight cases/assertions remain unchanged. Launch-only temp scope and forced-timeout retention are documented limitations.",
+  "changeScope": "Short private mkdtemp browser root, launch-only TMPDIR override, exact-owned-directory cleanup/reporting, and original-failure evidence binding. Eight case expectations and helper source bytes unchanged.",
+  "parentCheckerSha256": "96638237be279a155b2907dc064d228df0369334b5c8d301896626023de54e31",
+  "parentFreezeSha256": "e1fd9b8771a637875556b6ce8e6eb17c80ce6132acecad370d7f34469396c42e",
+  "executionAuthority": "New exact-source grant required; one parent-owned environment retry only. No grant is supplied by this freeze.",
+  "originalFailure": {
+    "verdict": "FAIL",
+    "completedCases": 0,
+    "signal": "SIGABRT",
+    "fatalDiagnostic": "chrome/browser/process_singleton_posix.cc:313] Socket path too long",
+    "browserLogStorage": "Chromium launch command and stderr are embedded in errors arrays of both files; no separate log file exists in the original evidence directory. Both enclosing files are hashed below.",
+    "files": [
+      {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-cd8a2428/timing-helper-check-01/ledger-2026-09-21T18-21-00-941Z-1003357/raw-output.json",
+        "sha256": "5124375651dfd460b40da65e53ba78876cfa64f29d958f87a35c2f01e19dc4f0"
+      },
+      {
+        "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-cd8a2428/timing-helper-check-01/ledger-2026-09-21T18-21-00-941Z-1003357/summary.json",
+        "sha256": "99c372e31b2d520a83c24df0bf662a040042d3d30a006d57995f0b93f88193c5"
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-timing-resume/test-c4-primary-transition-ledger-v1_1.mjs",
+      "bytes": 19839,
+      "sha256": "782c18c6b4711a63fbc7b34b5fcf661a5504e113290e1cf453f9bd9fc0c7266f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-timing-resume/c4-primary-transition-ledger-v1.mjs",
+      "bytes": 4539,
+      "sha256": "40e8b95315f214f8d645f381c6dd6a4a84d3ff9d0e1a167535035aea3f94746b"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-timing-resume/browser-observer-primary-v2.mjs",
+      "bytes": 13266,
+      "sha256": "e421503cbc6dbb5feddfc52f4c41bde403a8e2a4498363044e772b31f7ab91df"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c5.H4mElI/node_modules/playwright/index.mjs",
+      "bytes": 704,
+      "sha256": "a0f5715ea22354f922791a9c53dc012d5d5c067ff9cc4cd35ffb7cd272071a9f"
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c5.H4mElI/runtime-artifacts/candidate-manifest-c5.json",
+      "bytes": 343553,
+      "sha256": "76afd9b2eb72dde296feecf477405af8e1aea1c4bcb92dac474ea2d0748c9379"
+    },
+    {
+      "path": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+      "bytes": 293285184,
+      "sha256": "8c599d43aec53f2460a31ae2f4af6bd863f8258b34ff519564bc5d4726bfaa1e"
+    }
+  ],
+  "preparedAt": "2026-09-21T23:17:56.921Z",
+  "metadataCorrection": {
+    "at": "2026-09-21T23:22:54.689Z",
+    "reason": "Independently found carried historical candidateId metadata; no input/oracle changes and no execution yet",
+    "originalPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-timing-resume/ledger.freeze.json.initial-preserved"
+  }
+}

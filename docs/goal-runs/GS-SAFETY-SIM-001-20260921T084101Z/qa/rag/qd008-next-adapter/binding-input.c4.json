@@ -1,0 +1,15 @@
+{
+  "candidateRoot": "/home/b/.cache/gs-safety-c4.q2FD40",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "manifestRelativePath": "runtime-artifacts/candidate-manifest-c4.json",
+  "manifestSha256": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d",
+  "sourceSha256": "e17322b2faf5b5181f6a50bcd5cd4baeae2ca31f57f7bfd1653399b4e9e28efa",
+  "receiptPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/g3-freeze-c4.json",
+  "receiptSha256": "2aaaee8cf59205f542b693e13b197a48944f6590f9a27399d1837757e616c49d",
+  "fullHead": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "buildId": "czkc6DgDv3UUlTrSfDMqX",
+  "contractVersion": "1.0.4",
+  "contractFreezeRelativePath": "docs/contracts/freeze-v1.0.4.json",
+  "launchGuideRelativePath": "runtime-artifacts/g3-launch-c4.md",
+  "providerPid": 332445
+}

@@ -1,0 +1,20 @@
+{
+  "goalId": "GS-SAFETY-SIM-001",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "issuer": "/root/qa_lead",
+  "recordedAt": "2026-09-21T10:23:10.816Z",
+  "virtualClock": "2026-09-21T09:00:00.000Z",
+  "documentFixtureClock": "2026-09-21T09:30:00.000Z",
+  "copies": [
+    {
+      "source": "tests/rag-test-cases.json",
+      "target": "producer-cases.original.json",
+      "sha256": "be54c02a5697048a29b07b425c6dad74773fcaee1ea56447e516217a0568f245"
+    },
+    {
+      "source": "data/knowledge/reviews/approvals.json",
+      "target": "approvals.observed.json",
+      "sha256": "ef2d2352527620d43d2a8ccd15a0f00bc740b3935dd995360c46382e1f3de00e"
+    }
+  ]
+}

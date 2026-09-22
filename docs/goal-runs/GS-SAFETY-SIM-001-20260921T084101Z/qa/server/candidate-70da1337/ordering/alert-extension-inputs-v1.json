@@ -1,0 +1,18 @@
+{
+  "scope": "Pure real store plus AlertLedger/alertObservations and visibleRoutes; no physical audio or rendered scene",
+  "baseInputLedgerSha256": "4f86a9a6bf723a2cdc83f4ab9c593388086d7675ddaa17550f39dfb98a0fa772",
+  "method": "Each original case control is accepted as owned SSE baseline; initialize AlertLedger with production [streamId,runId,connectionEpoch] scope and baseline observations. Send the original incoming forward snapshot as HTTP through real store. Query accepted state through production projections and update same AlertLedger scope. No QA filter precedes production alert/route functions.",
+  "samePrimaryNullBinding": "QA Lead permits null OR exact baseline for reject-invalid; no physical/UI retention claim",
+  "cases": [
+    {"index":1,"label":"current-valid-forward","expectedAnnouncements":1,"expectedWorkerVersion":4,"expectedRouteVersions":[4]},
+    {"index":2,"label":"exact-duplicate","expectedAnnouncements":0,"expectedWorkerVersion":3,"expectedRouteVersions":[3]},
+    {"index":5,"label":"wrong-run","expectedAnnouncements":0,"expectedWorkerVersion":null,"expectedRouteVersions":[]},
+    {"index":7,"label":"wrong-map-id","expectedAnnouncements":0,"expectedWorkerVersion":null,"expectedRouteVersions":[]},
+    {"index":8,"label":"wrong-map-version","expectedAnnouncements":0,"expectedWorkerVersion":null,"expectedRouteVersions":[]},
+    {"index":11,"label":"current-valid-forward","expectedAnnouncements":1,"expectedWorkerVersion":4,"expectedRouteVersions":[4]},
+    {"index":12,"label":"exact-duplicate","expectedAnnouncements":0,"expectedWorkerVersion":3,"expectedRouteVersions":[3]},
+    {"index":15,"label":"wrong-run","expectedAnnouncements":0,"expectedWorkerVersion":null,"expectedRouteVersions":[]},
+    {"index":17,"label":"wrong-map-id","expectedAnnouncements":0,"expectedWorkerVersion":null,"expectedRouteVersions":[]},
+    {"index":18,"label":"wrong-map-version","expectedAnnouncements":0,"expectedWorkerVersion":null,"expectedRouteVersions":[]}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "005",
+  "title": "005- 폰에서 알림처리 방안",
+  "url": "https://emul.site/share/0of8g5q0at/p/005-O2FJWgmfS8",
+  "apiUrl": "https://emul.site/api/shares/page-info",
+  "request": {
+    "method": "POST",
+    "body": {
+      "pageId": "O2FJWgmfS8"
+    }
+  },
+  "fetchedAt": "2026-09-21T08:46:35.368Z",
+  "sourceCreatedAt": "2026-09-21T07:19:15.529Z",
+  "sourceUpdatedAt": "2026-09-21T07:24:43.173Z",
+  "sourcePageId": "01a0c2d5-5349-78cd-a541-8ad4cffa8d38",
+  "rawJsonPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-005.original.json",
+  "rawJsonSha256": "cf9b92a1d68e6c4ac2ac31eedec6fc5834841d8d417fcf584fa3667b841d7bfc",
+  "rawHtmlPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-005.original.html",
+  "rawHtmlSha256": "554cc37f39fad18207529d5fcc18308abe9cd10528dca3238c588a21827e1aa0",
+  "contentSha256": "19980f3604a912d79744657bcc25ce33890b08b5900eb7caca429df49bd64cf9",
+  "httpStatus": 200,
+  "publicAccess": true,
+  "bodyPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-005.body.md",
+  "bodySha256": "90ca534b938479185fd06f049cc23e178c8a0cf8e368b241a0bc54036c5736ae",
+  "textNodeCount": 193,
+  "bodyMissingOriginalTextNodes": 0
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "c4-android-fault-proxy-correctness-review-v1",
+  "reviewedAt": "2026-09-21T18:30:44Z",
+  "reviewer": "/root/qa_lead/qa_ui_device/c4_android_fault_proxy/proxy_source_review",
+  "disposition": "STATIC_SOURCE_READY",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "freezePath": "c4-android-fault-proxy-v1.freeze.json",
+  "freezeSha256": "e94a5ee4344964ca3778670e63b4c69d55c7ea327a78b7372c82726197290750",
+  "reviewedModules": [
+    {
+      "path": "c4-android-fault-proxy-v1.mjs",
+      "sha256": "1195ab5948c56db61b6165eac3e1524ae2bce1be83b131223913bb9ed2a5f9f1"
+    },
+    {
+      "path": "c4-android-fault-proxy-guard-v1.mjs",
+      "sha256": "0486290b6fefb96f12ca9d59845210ee3c7d51d5b9f66d18d2c16703d3249274"
+    },
+    {
+      "path": "c4-android-fault-proxy-cases-v1.mjs",
+      "sha256": "dbac0bf0e4e681dcb4c42790321170a339887ec4aa3c4a81d9d41ec264cfb4fe"
+    },
+    {
+      "path": "c4-android-fault-proxy-voice-v1.mjs",
+      "sha256": "9ea36af442beea0eac900093a0d615fae700e90e0c033a0d8d9692d8b8827d5f"
+    }
+  ],
+  "method": "Read-only source comparison against frozen C4 native Dart consumers, SSE route, worker scoping and response contracts; final module and freeze hashes read directly. Only this additive review receipt was written.",
+  "verifiedAreas": [
+    "Native login fields, bearer session scope, fire-gas mode and deterministic mobile ACK identities match frozen C4 consumers.",
+    "Complete LF-delimited SSE envelopes preserve publication identities; duplicate/reverse cases target repository ordering and normalized inner cases target separate guidance guards.",
+    "Active-case SSE end or downstream disconnect stops the attempt; control order, single injection, recovery and resource deadlines remain explicit.",
+    "The selected actual voice request is held before upstream submission, or its genuine upstream response is held after one submission. Distinct successor ACKs pass through; a duplicate of the held request aborts.",
+    "JSON media type, first-seen selected ACK, finite hash-bound device clock, inject-time baseline validity and five-second observation deadline are enforced.",
+    "Submission instrumentation captures UTC before upstream.end(body) and logs the returned call with both timestamps and no server-receipt claim. Downstream finish/close metadata does not claim client consumption."
+  ],
+  "resolvedInitialFindings": [
+    "Active SSE reconnect could previously continue a controlled case.",
+    "The mode allowlist previously used firegas instead of fire-gas.",
+    "A held voice request previously caused distinct successor voice-started ACKs to be rejected.",
+    "Freeze-time-only expiry checking could mask the intended map rejection at injection.",
+    "The documented JSON POST media-type restriction was previously missing."
+  ],
+  "remainingBlockingFindings": [],
+  "reviewerActions": {
+    "runtimeExecutions": 0,
+    "testExecutions": 0,
+    "syntaxChecks": 0,
+    "deviceActions": 0,
+    "networkRequests": 0,
+    "productEdits": 0
+  },
+  "limits": [
+    "Source readiness is not an execution grant, runtime validation or product pass.",
+    "Actual installed APK identity, adopted valid baseline, post-map UI recovery, server persistence and absence of prior committed receipts require independent execution evidence.",
+    "Submission and downstream transport events do not prove receipt by the server or consumption by the APK.",
+    "Actual device behavior, native callbacks, audible speech, felt vibration and physical camera or tracking behavior remain unverified."
+  ]
+}

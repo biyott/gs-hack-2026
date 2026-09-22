@@ -1,0 +1,60 @@
+{
+  "kind": "independent-static-c4-incident-diagnostic-setup-review",
+  "version": "1",
+  "reviewedAt": "2026-09-21T19:02:08.020Z",
+  "reviewedBy": "/root/qa_lead/qa_ui_device/c4_incident_harness",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "scope": "Read-only source review of launcher, public fixture setup, binding and v1.2 compatibility; no helper import or runtime execution",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/launch-c4-incident-diagnostic-v1.mjs",
+      "sha256": "abeb0ed51ef69d42397198a6b5494283c521e998e8581676c789243b6040afa7"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/setup-c4-incident-diagnostic-v1.mjs",
+      "sha256": "c5c0d925d22e84a5da091ce566a3ed6290935639e32c9465430e8d23d7da416f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/candidate-binding-c4.incident-diagnostic-v1.json",
+      "sha256": "7cd1a640002d06ca2221489eaf43851175eacd3aed1ae42bba2f2112a8fbcec2"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-incident-browser-v1.2.mjs",
+      "sha256": "85562d64e5bcc680f5cd6611804ec73b81abc3293d5bd77360375566da0769dc"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c4-incident-browser-v1.2.freeze.json",
+      "sha256": "34a9355bf7b2deb662260cd4fea2764f5364a3b02f1fd1624b1faa5637805870"
+    }
+  ],
+  "status": "STATIC_REVIEW_COMPLETE_NO_REMAINING_SOURCE_BLOCKER_FOR_DECLARED_INPUTS",
+  "runtime": "NOT_RUN",
+  "productAcceptance": "NOT_RUN",
+  "attemptConsumed": false,
+  "authority": "Design became READY and has priority; preparation opportunity ended without runtime. This receipt creates no grant and cannot authorize future execution.",
+  "observations": [
+    "Binding retains exact C4 stage/candidate/build/source and points to new direct evidence child incident-diagnostic-01.",
+    "Launcher requires an explicit INCIDENT-DIAGNOSTIC-SETUP grant, matching candidate and modelAllowed true. Current source checks finite ordered bounds and rechecks before sync spawn and before app spawn.",
+    "Launcher intentionally requires output directory absent; it creates new .private credentials with exclusive write and random PIN and uses DATABASE_PATH to create/migrate/seed a distinct new DB. Original C4 DB/PIN paths are not used.",
+    "Setup grant must be stored outside the not-yet-created diagnostic output; parent confirmed grant will be under QA g4. Browser grant is separately required inside new diagnostic output by v1.2.",
+    "No assets, browser, phones or camera are auto-started by these setup scripts. Actual app start and incidental E5/corpus/Qwen are runtime effects requiring separate current authority and exclusive provider 8092 ownership.",
+    "Public setup performs real seeded admin login, handles top-level or nested issued session token, reads current version before each select/start/advance/pause command, then captures actual paused synthetic FG-FIRE state and empty actual tracking.",
+    "Session request/response are omitted from the public command ledger; PIN is not in argv/console/provenance; issued session is written only to new .private/admin-session.json mode0600. Frozen migration/seed sources contain no normal secret logging.",
+    "Fixture candidate/mode/run/incident IDs, provenance path/hash and cameraByIncident shape match v1.2. CCTV-01, GROUND and zones A/B/C are independently present in frozen snapshots.ts; camera panel renders camera ID/floor/zones and related-camera.ts matches actual hazard zone/floor.",
+    "v1.2 still validates active unacknowledged hazard-backed A, immutable first guidance and all original strict flow oracles. Setup does not invent independent B."
+  ],
+  "resolvedFindings": [
+    {
+      "id": "TIME-NAN-BYPASS",
+      "finding": "Initial launch/setup Date.parse comparisons accepted invalid bounds as NaN.",
+      "resolution": "Current bytes explicitly require finite ordered notBefore/notAfter and use guard; launcher rechecks around subprocess stages."
+    }
+  ],
+  "boundaries": [
+    "No syntax test or helper execution was performed in this review; only source and hashes were read.",
+    "Actual process readiness, source/build at runtime, port4103 availability, prior process stopped, provider PID/exclusivity and shutdown are owner runtime checks. Hardcoded provenance fields are attestations, not observations by this review.",
+    "Fresh first API/hazard requests may initialize model/corpus and introduce scheduler/RAG version changes; setup can fail strictly and must preserve evidence, not retry or weaken flow.",
+    "Do not reuse these C4 candidate IDs/freezes as authority or acceptance for C5. A new candidate binding needs a separate future derivative and grant.",
+    "No acceptance, visual, performance, device, native outage or independent incident isolation result is established."
+  ]
+}

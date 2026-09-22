@@ -1,0 +1,31 @@
+{
+  "criterion": "S22 focused pure-consumer probes; supplementary to unchanged 1000",
+  "baseInput": "input-ledger-v1.json cases[0].control",
+  "baseInputLedgerSha256": "4f86a9a6bf723a2cdc83f4ab9c593388086d7675ddaa17550f39dfb98a0fa772",
+  "probes": [
+    {"id":"http-before-baseline","input":"Initial unowned HTTP control snapshot","expected":null},
+    {"id":"owned-initial-baseline","input":"First owned SSE control snapshot","expected":100},
+    {"id":"equal-sequence-conflict","input":"Owned baseline sequence100; HTTP sequence100 changed guidance2","expected":3},
+    {"id":"lower-sequence-later-clock","input":"Owned baseline; sequence99 run.version999 updatedAt+1000ms","expected":100},
+    {"id":"forward-sequence-backward-clock","input":"Sequence101 unchanged run.version9 updatedAt-1000ms","expected":{"sequence":101,"version":9}},
+    {"id":"http-cannot-switch-stream","input":"Established stream; HTTP foreign UUID sequence999999","expected":100},
+    {"id":"legitimate-new-run","input":"Current stream sequence101 coherent new run and guidance4","expected":{"runId":"QA-RESET-NEW","guidanceVersion":4}},
+    {"id":"superseded-connection","input":"beginConnection twice; old epoch callback with foreign stream seq999999","expected":100},
+    {"id":"owned-new-stream-lower-revision","input":"Owned reconnect foreign stream seq1 run.version1","expected":{"sequence":1,"version":1}},
+    {"id":"same-stream-reconnect-watermark","input":"Owned reconnect same seq100; then owned seq101","expected":{"duplicateSequence":100,"afterForward":101}},
+    {"id":"wrong-mode","input":"Equipment selected; incoming fire-gas sequence999999","expected":"equipment"},
+    {"id":"missing-wire-order","input":"Delete streamId and sequence from current wire payload","expected":false},
+    {"id":"legacy-wire-order","input":"streamId legacy sequence0","expected":false},
+    {"id":"expiry-boundaries","input":"Valid guidance expiring at injected now; query now-1, now, now+1","expected":[true,false,false]},
+    {"id":"pause-does-not-extend-expiry","input":"Paused snapshot with expired guidance","expected":null},
+    {"id":"wrong-floor","input":"Current guidance floorId OTHER-FLOOR","expected":null},
+    {"id":"wrong-profile","input":"Worker profile version2 with guidance profile version1","expected":null},
+    {"id":"closed-incident","input":"Current guidance belongs to closed incident","expected":null},
+    {"id":"missing-incident","input":"Current guidance has no matching incident","expected":null},
+    {"id":"supplement-lineage","input":"Primary3 then evidenced supplement4 primary3","expected":{"currentVersion":4,"samePrimary":true}},
+    {"id":"supplement-response-binding","input":"Captured primary3 current supplement4","expected":{"voiceVersion":3,"displayVersion":null}},
+    {"id":"new-primary-identity","input":"Primary3 and primary5","expected":false},
+    {"id":"alert-supplement-deduplication","input":"Baseline primary3; exact repeat; supplement4 primary3; primary5","expected":[0,0,0,1]},
+    {"id":"independent-mode-watermarks","input":"Equipment seq100; switch mode; fire-gas owned seq1","expected":{"mode":"fire-gas","sequence":1}}
+  ]
+}

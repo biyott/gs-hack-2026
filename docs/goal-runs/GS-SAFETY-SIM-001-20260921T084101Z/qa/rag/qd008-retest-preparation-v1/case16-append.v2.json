@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "case16-append-v2",
+  "createdAt": "2026-09-21T16:46:07.863Z",
+  "testId": "Q-RAG-08-16-APPEND",
+  "status": "PREPARATION_ONLY",
+  "providerMode": "mock",
+  "original16": "Unchanged absent-token replace case remains NOT_RUN; this additivecontrol doesnotreplace original",
+  "baseline": {
+    "sourceEvidencePath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-1a7c95cd/module-attempt-01/faults/Q-RAG-08-16.json",
+    "sourceEvidenceSha256": "181e9f332e43e1108dcfd26e41fb6f7606e7a66d93b80b5a6082ea73437127ff",
+    "sourceDocumentPath": "/home/b/.cache/gs-safety-c3.eulo4t9w/knowledge/equipment/EQ-003.md",
+    "sourceFileSha256": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8",
+    "originalRequest": {
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "locale": "ko",
+      "chunks": [
+        {
+          "documentId": "EQ-003",
+          "documentVersion": "0.1.0",
+          "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure",
+          "content": "# EQ-003 개인 이동 제약을 반영한 회피 안내\n\n## 1. 목적\n\n계단 이용 불가로 확인된 작업자에게 경로 엔진이 선택한 회피 경로의 개인화 근거를 설명한다.\n\n시뮬레이션 전용 합성 자료다. 실제 현장 사용 지침, 실제 승인·인증·법규 준수의 증거가 아니다. 위험·행동·경로·목적지는 서버 엔진이 결정하며 이 문서는 그 조건에 맞는 설명만 제공한다.\n\n## 2. 적용 조건\n\nequipment 실행에서 stairsAllowed가 확인된 false이고 해당 profileVersion으로 계산한 유효 경로가 있을 때 적용한다.\n\n검색 적용 시 siteIds, 요청 모드 또는 common, 위험 유형, 역할, 구역·물질·행동·프로필 조건, 유효기간을 모두 확인한다. 합성 문서는 독립 검토 기록과 approved_for_demo 상태가 확인된 데모 검색에서만 사용할 수 있다. draft, retired, 기한 전·만료 문서는 검색 근거에서 제외한다.\n\n## 3. 적용 제외 조건\n\n계단 이용 여부 미입력·미확인, stairsAllowed true, 화재·가스 모드, 오래된 프로필 기반 경로, 경로 없음에는 이 이동 설명을 적용하지 않는다.\n\n## 4. 필요한 입력 필드\n\n- `siteId`\n- `simulationType`\n- `runId`\n- `workerId`\n- `actionCode`\n- `guidanceId`\n- `guidanceVersion`\n- `profileVersion`\n- `expiresAt`\n- `stairsAllowed`\n- `assistanceRequired`\n- `profileConfirmedAt`\n- `routeVersion`\n- `routeStatus`\n- `nextWaypointLabel`\n- `destinationLabel`\n\n필수 입력이 없으면 추측으로 채우지 않고 미확인 또는 설정 필요로 남긴다. 이름·생년월일·의료 진단명은 본 검색 절차의 입력이 아니다.\n\n## 5. 행동 코드와 설명\n\n- `FOLLOW_VALIDATED_ROUTE`: 확인된 계단 이용 불가 조건을 반영해 서버가 제공한 경로만 설명한다.\n- `REQUEST_ASSISTANCE`: 확인된 보조 필요 또는 작업자의 요청을 별도 지원 흐름으로 전달한다.\n\n현재 엔진의 actionCode와 일치하는 설명만 사용한다. 본문은 하나의 절차 검색 단위로 유지하여 적용 조건·행동·예외를 함께 확인한다.\n\n## 6. 개인화 적용\n\n나이·성별·국적에서 계단 이용 능력이나 이동 속도를 추정하지 않는다. 본 문서의 false 조건은 확인된 기능 제약이며 미입력 값과 다르다.\n\n언어는 preferredLocale을 사용하고 국적으로 추정하지 않는다. 나이·성별에서 이동 능력이나 이해 능력을 추정하지 않으며 미입력 프로필을 제약 없음으로 취급하지 않는다.\n\n## 7. 예외 및 기본 안내\n\n맞는 경로를 찾지 못하면 EQ-004로 처리하고 계단 이용을 임의 허용하지 않는다. 보조가 필요해도 요청·배정·수락을 자동으로 동일 처리하지 않는다.\n\n검색 근거 없음·충돌·모델 지연·실패·잘못된 인용·행동 불일치에는 보조 설명을 생략하고 검토된 기본 안내를 유지한다. 실제 경로·목적지·연결 관계·장비 제어·임계값을 생성하지 않는다.\n\n## 8. 한국어 안내 예시\n\n> 안내 {guidanceVersion}의 경로에는 확인된 계단 이용 불가 조건이 반영되었습니다. 제공된 유효 경로를 따라 {nextWaypointLabel}을 거쳐 {destinationLabel}로 이동하세요. 도움이 필요하면 요청해 주세요.\n\n## 9. 영어 안내 예시\n\n> The route in guidance {guidanceVersion} reflects the confirmed restriction on using stairs. Follow the provided valid route via {nextWaypointLabel} to {destinationLabel}. Request assistance if needed.\n\n## 10. 확인할 상태\n\n- stairsAllowed false 확인\n- 경로가 참조한 profileVersion\n- 지원 요청·수락\n- 현재 유효 경로\n\n기기 수신 확인, 작업자의 이해 확인, 담당자의 지원 수락, 작업자 또는 엔진의 도착 확인은 각각 별도 상태이며 서로 자동 대체하지 않는다.\n\n## 11. 검색 키워드\n\n계단 이용 불가, 개인 이동 제약, 접근성, stairs not allowed, mobility constraints, accessible route\n\n## 12. 관련 문서 ID\n\n- `COMMON-001`\n- `COMMON-003`\n- `EQ-004`",
+          "metadata": {
+            "documentId": "EQ-003",
+            "title": "개인 이동 제약을 반영한 회피 안내",
+            "siteIds": [
+              "SITE-CONSTRUCTION-01"
+            ],
+            "simulationType": "equipment",
+            "simulationTypes": [
+              "equipment"
+            ],
+            "hazardTypes": [
+              "equipment"
+            ],
+            "applicableRoles": [
+              "worker"
+            ],
+            "applicableZoneIds": [],
+            "substanceIds": [],
+            "profileConditions": {
+              "stairsAllowed": false
+            },
+            "actionCodes": [
+              "FOLLOW_VALIDATED_ROUTE"
+            ],
+            "language": "ko",
+            "version": "0.1.0",
+            "synthetic": true,
+            "approvalStatus": "approved_for_demo",
+            "effectiveFrom": "2026-01-01",
+            "expiresAt": "2030-01-01",
+            "reviewedBy": "/root/rag_lead/knowledge_review",
+            "reviewedAt": "2026-09-21T09:13:05.116Z",
+            "reviewedContentHash": "ffa51860099aa73d2795f7065925f44b92e4e73e89d642445fc4aec9de9f81c6",
+            "sourceReference": "synthetic://safety-simulator/EQ-003",
+            "requiredScenarioPolicy": null,
+            "decisionKey": null,
+            "reviewedSupplementalExplanation": {
+              "ko": "이 경로 설명은 확인된 계단 이용 불가 조건에 연결되며 경로 선택은 경로 엔진의 결과입니다.",
+              "en": "This route explanation is tied to the confirmed restriction on using stairs, and route selection is the result of the routing engine."
+            }
+          },
+          "contentHash": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8"
+        }
+      ]
+    },
+    "sameOriginalServiceBefore": {
+      "incidentId": "QA-INCIDENT",
+      "eventId": "QA-EVENT",
+      "runId": "Q-RAG-08-16-default",
+      "workerId": "QA-WORKER",
+      "guidanceId": "Q-RAG-08-16-default-guidance",
+      "guidanceVersion": 1,
+      "updateKind": "primary",
+      "primaryGuidanceVersion": 1,
+      "simulationMode": "equipment",
+      "hazardIds": [
+        "QA-EQUIPMENT"
+      ],
+      "hazardType": "equipment",
+      "priority": "high",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "routeVersion": 1,
+      "stepId": "QA-STEP",
+      "mapId": "QA-MAP",
+      "mapVersion": "1",
+      "floorId": "QA-FLOOR",
+      "waypoints": [
+        {
+          "x": 0,
+          "y": 0,
+          "nodeId": "QA-NODE-A",
+          "floorId": "QA-FLOOR"
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "nodeId": "QA-NODE-B",
+          "floorId": "QA-FLOOR"
+        }
+      ],
+      "destinationId": "QA-NODE-B",
+      "profileVersion": 1,
+      "profileSnapshot": {
+        "workerId": "QA-WORKER",
+        "version": 1,
+        "preferredLocale": "ko",
+        "locale": "ko",
+        "canUseStairs": false,
+        "speedMps": {
+          "min": 0.5,
+          "max": 1
+        },
+        "needsAssistance": true,
+        "needsCompanion": true,
+        "notificationPreferences": {
+          "voice": true,
+          "vibration": true
+        },
+        "confirmedAt": "2026-09-21T16:06:07.630Z"
+      },
+      "locale": "ko",
+      "requestedLocale": "ko",
+      "fallbackLocaleUsed": false,
+      "templateCatalogVersion": "QA-FIXTURE-1",
+      "messageKey": "FOLLOW_VALIDATED_ROUTE",
+      "primaryMessageKey": "FOLLOW_VALIDATED_ROUTE",
+      "messageArgs": {},
+      "primaryMessage": "제공된 유효 경로를 따라 이동하세요.",
+      "managerExplanationKo": "독립 QA 서비스 제어용 고정 경로 자료",
+      "supplementalExplanation": null,
+      "evidence": [],
+      "mode": "template",
+      "generatedAt": "2026-09-21T16:06:08.630Z",
+      "expiresAt": "2026-09-21T16:07:08.630Z"
+    },
+    "output": {
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "locale": "ko",
+      "supplementalExplanation": "이 경로 설명은 확인된 계단 이용 불가 조건에 연결되며 경로 선택은 경로 엔진의 결과입니다.",
+      "evidence": [
+        {
+          "documentId": "EQ-003",
+          "documentVersion": "0.1.0",
+          "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+        }
+      ]
+    },
+    "outputSha256": "004390f4b6d2d801b9c052b93fdf16a28a36d2b2a41714ef8955317cfa3b2ef9",
+    "requiredNextCandidateCheck": "EQ003stillapproved/retrievedandapplicable tosameconfirmednostairs/currentvalidroute baseline; unmodified mockpositivecontrol mustbeaccepted beforeappendnegative",
+    "inventedTokenAbsent": true
+  },
+  "injection": {
+    "operator": "append-only",
+    "path": "/supplementalExplanation",
+    "appendText": " {routeVersion999}",
+    "utf8Hex": "207b726f75746556657273696f6e3939397d",
+    "output": {
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "locale": "ko",
+      "supplementalExplanation": "이 경로 설명은 확인된 계단 이용 불가 조건에 연결되며 경로 선택은 경로 엔진의 결과입니다. {routeVersion999}",
+      "evidence": [
+        {
+          "documentId": "EQ-003",
+          "documentVersion": "0.1.0",
+          "chunkId": "EQ-003:0.1.0:efba24b4441c045b:procedure"
+        }
+      ]
+    },
+    "outputSha256": "ece292bc7007a096c159b523053855e77e699631133ecb9253e403968e296b26",
+    "unchanged": [
+      "actionCode",
+      "locale",
+      "evidence",
+      "sourceapproval",
+      "currentguidance/route/profile",
+      "deadline"
+    ]
+  },
+  "positiveExpected": {
+    "outcome": "accepted",
+    "reviewedSentenceExact": true
+  },
+  "negativeExpected": {
+    "outcome": "fallback:unreviewed_explanation",
+    "requiredEvidence": [
+      "nonnull injectedpayloadbytes and SHA",
+      "mockprovidergenerate entered and returned completion toservice",
+      "no accepted evidence/current supplement",
+      "primary remains byte-equivalent",
+      "unchanged immutablefirstguidance"
+    ],
+    "forbiddenSubstitutes": [
+      "provider_failure dueprecondition",
+      "nullpayload",
+      "mutatedcorpusapproval",
+      "replacement requiring absent source token",
+      "actualmodel successclaim"
+    ]
+  },
+  "clocks": "Controlledservice clock and actualexecutionUTC recordedseparately; original09:30/5000ms remain unchanged",
+  "execution": "Separate newcandidate QA adapter only after receipt/freeze+grant; do not route this newID through frozen31-case loader or mutate its regex/count",
+  "overallVerdict": "NOT_ISSUED",
+  "supersedes": "v1 unexecuted EQ001 preparation baseline only; v2 uses exactoriginalcase16 EQ003 reviewedchunk/action/locale"
+}

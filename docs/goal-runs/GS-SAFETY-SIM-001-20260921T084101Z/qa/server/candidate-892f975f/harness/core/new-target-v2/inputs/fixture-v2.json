@@ -1,0 +1,275 @@
+{
+  "fixtureVersion": "QA-NEW-TARGET-2",
+  "scenario": {
+    "id": "QA-R07-NEW-TARGET",
+    "version": "1.0.0",
+    "label": {
+      "ko": "속도 증가와 진행 방향 변경",
+      "en": "Speed increase and direction change"
+    },
+    "mode": "equipment",
+    "mapId": "SITE-CONSTRUCTION-01",
+    "mapVersion": "1.0.0",
+    "synthetic": true,
+    "seed": 20260921,
+    "durationMs": 12000,
+    "clockEpoch": "2026-09-21T09:00:00Z",
+    "policyId": "POLICY-EQUIPMENT",
+    "initial": {
+      "equipment": {
+        "equipmentId": "EQUIPMENT-A",
+        "modelId": "sk1265-at6",
+        "position": {
+          "x": 30,
+          "y": 25
+        },
+        "headingDeg": 0,
+        "speedMps": 0,
+        "slewDeg": 0,
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      "workers": [
+        {
+          "workerId": "WORKER-A",
+          "position": {
+            "x": 65,
+            "y": 25
+          },
+          "profile": {
+            "workerId": "WORKER-A",
+            "version": 1,
+            "preferredLocale": "ko",
+            "locale": "ko",
+            "canUseStairs": true,
+            "speedMps": {
+              "min": 0.8,
+              "max": 1.4
+            },
+            "needsAssistance": false,
+            "needsCompanion": false,
+            "notificationPreferences": {
+              "voice": true,
+              "vibration": true
+            },
+            "confirmedAt": "2026-09-21T09:00:00Z"
+          },
+          "observedAtMs": 0,
+          "source": "mock",
+          "connected": true
+        },
+        {
+          "workerId": "WORKER-B",
+          "position": {
+            "x": 90,
+            "y": 40
+          },
+          "profile": {
+            "workerId": "WORKER-B",
+            "version": 1,
+            "preferredLocale": "en",
+            "locale": "en",
+            "canUseStairs": false,
+            "speedMps": {
+              "min": 0.3,
+              "max": 0.7
+            },
+            "needsAssistance": true,
+            "needsCompanion": true,
+            "notificationPreferences": {
+              "voice": true,
+              "vibration": true
+            },
+            "confirmedAt": "2026-09-21T09:00:00Z"
+          },
+          "observedAtMs": 0,
+          "source": "mock",
+          "connected": true
+        }
+      ],
+      "sensors": [],
+      "hazards": [],
+      "blockedPathIds": []
+    },
+    "events": [
+      {
+        "id": "EQ-SPEED-DIRECTION-001",
+        "atMs": 1000,
+        "type": "equipment.pose",
+        "position": {
+          "x": 30,
+          "y": 25
+        },
+        "headingDeg": 0,
+        "speedMps": 0.5,
+        "slewDeg": 0
+      },
+      {
+        "id": "EQ-SPEED-DIRECTION-002",
+        "atMs": 4000,
+        "type": "equipment.pose",
+        "position": {
+          "x": 30,
+          "y": 25
+        },
+        "headingDeg": 0,
+        "speedMps": 3,
+        "slewDeg": 0
+      },
+      {
+        "id": "EQ-SPEED-DIRECTION-003",
+        "atMs": 8000,
+        "type": "equipment.pose",
+        "position": {
+          "x": 35,
+          "y": 25
+        },
+        "headingDeg": -30,
+        "speedMps": 3,
+        "slewDeg": 0
+      },
+      {
+        "id": "qa-latest-arrival",
+        "atMs": 9000,
+        "type": "worker.position",
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 125,
+          "y": 42
+        }
+      },
+      {
+        "id": "qa-central-position",
+        "atMs": 9500,
+        "type": "worker.position",
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 65,
+          "y": 25
+        }
+      },
+      {
+        "id": "qa-obsolete-refuge",
+        "atMs": 10000,
+        "type": "worker.position",
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 125,
+          "y": 42
+        }
+      },
+      {
+        "id": "qa-new-refuge",
+        "atMs": 10500,
+        "type": "worker.position",
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 125,
+          "y": 8
+        }
+      },
+      {
+        "id": "qa-old-target",
+        "atMs": 11000,
+        "type": "worker.position",
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 125,
+          "y": 8
+        }
+      }
+    ],
+    "expectedResults": [
+      {
+        "atMs": 4000,
+        "note": "Assert the current authoritative guidance, not generated explanation.",
+        "kind": "guidance",
+        "workerId": "WORKER-A",
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "route": "required",
+        "destinationIds": [
+          "REFUGE-01"
+        ]
+      },
+      {
+        "atMs": 8000,
+        "note": "Changed heading sweeps the load across the prior south route; replan to the north refuge using the actual declared geometry.",
+        "kind": "guidance",
+        "workerId": "WORKER-A",
+        "actionCode": "FOLLOW_VALIDATED_ROUTE",
+        "route": "required",
+        "destinationIds": [
+          "REFUGE-02"
+        ]
+      }
+    ],
+    "coverage": [
+      "AC-02:speed-increase",
+      "AC-02:heading-change",
+      "AC-04:guidance-version"
+    ]
+  },
+  "control": {
+    "action": "control",
+    "pose": {
+      "position": {
+        "x": 30,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 3,
+      "slewDeg": 0
+    }
+  },
+  "operations": [
+    {
+      "action": "select",
+      "scenarioId": "QA-R07-NEW-TARGET"
+    },
+    {
+      "action": "start"
+    },
+    {
+      "action": "advance",
+      "deltaMs": 4000
+    },
+    {
+      "action": "advance",
+      "deltaMs": 4000
+    },
+    {
+      "action": "advance",
+      "deltaMs": 1000
+    },
+    {
+      "action": "advance",
+      "deltaMs": 500
+    },
+    {
+      "action": "control",
+      "pose": {
+        "position": {
+          "x": 30,
+          "y": 25
+        },
+        "headingDeg": 0,
+        "speedMps": 3,
+        "slewDeg": 0
+      }
+    },
+    {
+      "action": "advance",
+      "deltaMs": 500
+    },
+    {
+      "action": "advance",
+      "deltaMs": 500
+    }
+  ],
+  "provenance": {
+    "scenarioAndControlArtifact": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/server/candidate-0d42bacc/core-w1-extra-new-target-a01/core-r07-new-target-1-rerouted-15425ef3-1a8a-4422-a5ff-c160fbe5553c.json",
+    "originalTest": "preserved/new-target.c2.test.ts.txt",
+    "note": "Scenario/events/control operations preserve the original added timeline; the old conditional arrived-response rejection probe was part of the overconstrained oracle and was never reached in C2. This derivative submits no worker responses."
+  }
+}

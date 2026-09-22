@@ -1,0 +1,39 @@
+{
+  "recordedAt": "2026-09-22T00:44:51.352Z",
+  "goalId": "GS-SAFETY-SIM-001",
+  "goalVersion": "1.0",
+  "executionId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "goalInputSha256": "5acf113eee7b75724f5b9e9b3e7d92f8bf99d714f812a35c6946f7a2d4239796",
+  "qa": {
+    "qaIssuer": "/root/qa_resume",
+    "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+    "status": "FINAL_VERDICT_ISSUED",
+    "receipt": "evidence/qa/g4/candidate-892f975f/receipt-validation.json",
+    "officialVerdict": "BLOCKED",
+    "officialRecord": "evidence/qa/g4/candidate-892f975f/official-c6-qa-status-v2.json",
+    "officialRecordSha256": "e1d19be846332cd4e2b682623b970dc38e202ba564fa2671a0c8deed3aac5614",
+    "officialIssuedAt": "2026-09-22T00:40:27.224Z",
+    "counts": {
+      "PASS": 4,
+      "FAIL": 0,
+      "BLOCKED": 7,
+      "NOT_RUN": 5
+    },
+    "finalPhysicalAndHandoffAppendixPending": false
+  },
+  "finalization": {
+    "recordedAt": "2026-09-22T00:44:51.352Z",
+    "overallAccepted": false,
+    "softwareDemoRunning": true,
+    "baseUrl": "http://127.0.0.1:3000",
+    "startedReceipt": "evidence/technical/c6-user-demo-started-v2.json",
+    "functionalSelfCheck": "evidence/orchestrator/final-user-demo/attempt-02/functional-check.json",
+    "deadline": "2026-09-22T00:51:07Z",
+    "original90MinuteDeadlineMissed": true,
+    "goalChanged": false,
+    "goalChangeStatement": "목표 변경 없음",
+    "remainingRequiredWork": "Official AC04/07/08/09/13/15/16 BLOCKED and AC01/05/10/11/12 NOT_RUN; see QA final v2. Real4phone/twopeer/calibration810, complete native/UI/LLM lineage and G0 remain required."
+  },
+  "markdownSha256": "e3648276fc56b88c5b8823497f82a66fd7c9e8a992f437ef6c5fa86e7a5c9922"
+}

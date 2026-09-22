@@ -1,0 +1,131 @@
+{
+  "id": "EQ-NO-ROUTE",
+  "version": "1.0.0",
+  "label": {
+    "ko": "유효 회피 경로 없음",
+    "en": "No valid avoidance route"
+  },
+  "mode": "equipment",
+  "mapId": "SITE-CONSTRUCTION-01",
+  "mapVersion": "1.0.0",
+  "synthetic": true,
+  "seed": 20260921,
+  "durationMs": 12000,
+  "clockEpoch": "2026-09-21T09:00:00Z",
+  "policyId": "POLICY-EQUIPMENT",
+  "initial": {
+    "equipment": {
+      "equipmentId": "EQUIPMENT-A",
+      "modelId": "sk1265-at6",
+      "position": {
+        "x": 30,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 0,
+      "slewDeg": 0,
+      "observedAtMs": 0,
+      "source": "mock",
+      "connected": true
+    },
+    "workers": [
+      {
+        "workerId": "WORKER-A",
+        "position": {
+          "x": 65,
+          "y": 25
+        },
+        "profile": {
+          "workerId": "WORKER-A",
+          "version": 1,
+          "preferredLocale": "ko",
+          "locale": "ko",
+          "canUseStairs": true,
+          "speedMps": {
+            "min": 0.8,
+            "max": 1.4
+          },
+          "needsAssistance": false,
+          "needsCompanion": false,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      },
+      {
+        "workerId": "WORKER-B",
+        "position": {
+          "x": 90,
+          "y": 40
+        },
+        "profile": {
+          "workerId": "WORKER-B",
+          "version": 1,
+          "preferredLocale": "en",
+          "locale": "en",
+          "canUseStairs": false,
+          "speedMps": {
+            "min": 0.3,
+            "max": 0.7
+          },
+          "needsAssistance": true,
+          "needsCompanion": true,
+          "notificationPreferences": {
+            "voice": true,
+            "vibration": true
+          },
+          "confirmedAt": "2026-09-21T09:00:00Z"
+        },
+        "observedAtMs": 0,
+        "source": "mock",
+        "connected": true
+      }
+    ],
+    "sensors": [],
+    "hazards": [],
+    "blockedPathIds": []
+  },
+  "events": [
+    {
+      "id": "EQ-NO-ROUTE-001",
+      "atMs": 1000,
+      "type": "equipment.pose",
+      "position": {
+        "x": 35,
+        "y": 25
+      },
+      "headingDeg": 0,
+      "speedMps": 2.5,
+      "slewDeg": 0
+    },
+    {
+      "id": "EQ-NO-ROUTE-002",
+      "atMs": 1000,
+      "type": "route.block",
+      "pathIds": ["PATH-A", "PATH-B", "PATH-C"]
+    }
+  ],
+  "expectedResults": [
+    {
+      "atMs": 1000,
+      "kind": "guidance",
+      "workerId": "WORKER-A",
+      "actionCode": "ROUTE_UNAVAILABLE",
+      "route": "empty",
+      "destinationIds": [],
+      "note": "Assert the current authoritative guidance, not generated explanation."
+    },
+    {
+      "atMs": 1000,
+      "kind": "blocked-paths",
+      "pathIds": ["PATH-A", "PATH-B", "PATH-C"],
+      "note": "Hazard status and authorization do not implicitly change this list."
+    }
+  ],
+  "coverage": ["AC-02:no-route", "AC-05:assistance"]
+}

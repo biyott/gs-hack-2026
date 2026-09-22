@@ -1,0 +1,29 @@
+{
+  "kind": "c6-long-id-actions-source-freeze",
+  "version": "1",
+  "candidateBindingStatus": "PENDING_UNTIL_EXPLICIT_RUNTIME_BINDING",
+  "runtime": "NOT_RUN",
+  "browserExecutable": "/home/b/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+  "preparedAt": "2026-09-22T00:07:02.351Z",
+  "actualOwner": "/root/qa_resume/w3_browser",
+  "files": [
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-actions-v1.1.mjs",
+      "sha256": "012ae018e091d516099bd9f7aab0bee1c8979c1267437e3903726b25b9b3e8c0"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-actions-v1.1.guard.mjs",
+      "sha256": "1ab3d20e8c2f438feb0dc659f96651a24e033896020cc92f0e76cba6a1e5955f"
+    },
+    {
+      "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-long-id-fixture-v1.md",
+      "sha256": "4e9a3a77c57c9902294d765c54d79efb42f06120e1cfe294c59f10ff2fcc1dce"
+    }
+  ],
+  "derivation": "Pre-execution source review: after reload, React entry state resets; wait for actual enabled mode control instead of immediate count race. Frozen method/oracles unchanged.",
+  "derivativeLineage": {
+    "source": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c5-long-id-actions-v1.1.freeze.json",
+    "sha256": "52982ecd83f7e797c859fbf51bb5400a6d90692e185c0aa6b19e960773291af8",
+    "mapPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/w3/c6-browser-derivatives-v1.1.json"
+  }
+}

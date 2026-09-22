@@ -1,0 +1,12 @@
+{
+  "startedAt": "2026-09-21T23:57:32.373Z",
+  "completedAt": "2026-09-21T23:57:50.048Z",
+  "source": "/home/b/.cache/gs-safety-c5.H4mElI/node_modules",
+  "destination": "/home/b/.cache/gs-safety-c6.pSgWxT/node_modules",
+  "method": "cp -a --reflink=auto: separate files or copy-on-write extents, never hardlinks; internal links checked",
+  "regularFiles": 41030,
+  "internalSymlinks": 39,
+  "regularBytes": 1599382677,
+  "packageLockSha256": "542f4b72d0f9383a767d0ffc2a87de7711b0ed5d28afcfdd5639aab1b25c931e",
+  "newInstallClaim": false
+}

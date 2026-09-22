@@ -1,0 +1,308 @@
+{
+  "assetId": "maeda-mc305",
+  "sourceReopened": true,
+  "sourceObjects": 245,
+  "glbReimported": true,
+  "runtimeObjects": 57,
+  "meshCount": 38,
+  "coordinateSystemVerified": "Blender XY/Zup; standard glTF Y-up; root ground, unit scale, +X boom",
+  "boundsBlenderMeters": {
+    "min": [
+      -2.5850000381469727,
+      -2.4040000438690186,
+      0.0
+    ],
+    "max": [
+      5.913030624389648,
+      2.4040000438690186,
+      9.788785934448242
+    ],
+    "size": [
+      8.498030662536621,
+      4.808000087738037,
+      9.788785934448242
+    ]
+  },
+  "padOuterBoundsMeters": {
+    "min": [
+      -2.5850000381469727,
+      -2.4040000438690186,
+      0.0
+    ],
+    "max": [
+      2.5850000381469727,
+      2.4040000438690186,
+      0.07000000029802322
+    ],
+    "size": [
+      5.170000076293945,
+      4.808000087738037,
+      0.07000000029802322
+    ]
+  },
+  "bodyBoundsMeters": {
+    "min": [
+      -1.4450000524520874,
+      -0.6399999856948853,
+      0.07250000536441803
+    ],
+    "max": [
+      1.2050000429153442,
+      0.6399999856948853,
+      0.8500000238418579
+    ],
+    "size": [
+      2.6500000953674316,
+      1.2799999713897705,
+      0.7775000184774399
+    ]
+  },
+  "tailBoundsMeters": {
+    "min": [
+      -1.2699999809265137,
+      -0.4300000071525574,
+      0.8399999737739563
+    ],
+    "max": [
+      -0.9500000476837158,
+      0.4300000071525574,
+      1.2400000095367432
+    ],
+    "size": [
+      0.31999993324279785,
+      0.8600000143051147,
+      0.40000003576278687
+    ]
+  },
+  "padFrontWidthMeters": 4.808000087738037,
+  "padRearWidthMeters": 4.703999996185303,
+  "triangleCount": 22160,
+  "sourceFile": "\\\\wsl.localhost\\Ubuntu\\90-biyott@github\\gs-hack-2026\\resources\\blender\\safety-simulator\\maeda-site\\maeda\\maeda-mc305.blend",
+  "glbFile": "\\\\wsl.localhost\\Ubuntu\\90-biyott@github\\gs-hack-2026\\public\\assets\\cranes\\maeda-mc305.glb",
+  "glbBytes": 1062092,
+  "demoPose": {
+    "boomLengthMeters": 10,
+    "boomAngleDegrees": 55,
+    "boomTipMeters": [
+      5.735764980316162,
+      0.0,
+      9.611520767211914
+    ],
+    "hookReferenceMeters": [
+      5.735764503479004,
+      0.0,
+      3.0
+    ]
+  },
+  "sourceShapeConformance": {
+    "status": "passed",
+    "manufacturerSource": "https://www.maeda-minicranes.com/download/files/MC305C-5.pdf",
+    "manufacturerPdfSha256": "10ea95a9f92dc35f864b16138bfb723f6ec5a568abbac6c7cea608ecbfaa1a55",
+    "manufacturerPdfPage": 2,
+    "expectedPrincipalShells": 5,
+    "expectedMovingStages": 4,
+    "expectedOuterLongitudinalFacets": 5,
+    "principalShellCount": 5,
+    "movingStageCount": 4,
+    "principalMeshNames": [
+      "Telescopic_section_1",
+      "Telescopic_section_2",
+      "Telescopic_section_3",
+      "Telescopic_section_4",
+      "Telescopic_section_5"
+    ],
+    "outerProfileVertexCounts": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "assertions": [
+      "five real separately named principal meshes",
+      "four consecutive moving-stage parents",
+      "five planar outer longitudinal faces per shell",
+      "five inner faces and annular open-bore ends",
+      "complete quad or diagonal-triangle coverage without duplicate faces",
+      "child principal profiles strictly inside parent bores",
+      "unit local mesh/stage scale; no principal bevels"
+    ]
+  },
+  "importedShapeConformance": {
+    "status": "passed",
+    "manufacturerSource": "https://www.maeda-minicranes.com/download/files/MC305C-5.pdf",
+    "manufacturerPdfSha256": "10ea95a9f92dc35f864b16138bfb723f6ec5a568abbac6c7cea608ecbfaa1a55",
+    "manufacturerPdfPage": 2,
+    "expectedPrincipalShells": 5,
+    "expectedMovingStages": 4,
+    "expectedOuterLongitudinalFacets": 5,
+    "principalShellCount": 5,
+    "movingStageCount": 4,
+    "principalMeshNames": [
+      "Telescopic_section_1",
+      "Telescopic_section_2",
+      "Telescopic_section_3",
+      "Telescopic_section_4",
+      "Telescopic_section_5"
+    ],
+    "outerProfileVertexCounts": [
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "assertions": [
+      "five real separately named principal meshes",
+      "four consecutive moving-stage parents",
+      "five planar outer longitudinal faces per shell",
+      "five inner faces and annular open-bore ends",
+      "complete quad or diagonal-triangle coverage without duplicate faces",
+      "child principal profiles strictly inside parent bores",
+      "unit local mesh/stage scale; no principal bevels"
+    ]
+  },
+  "sourceMotionVerification": {
+    "status": "passed",
+    "cornerPosesTested": 24,
+    "supportedControls": [
+      "slew",
+      "boomAngle",
+      "boomLength",
+      "hookHeight"
+    ],
+    "nodeNamesVerified": [
+      "SLEW",
+      "BOOM_PIVOT",
+      "TELESCOPIC_1",
+      "TELESCOPIC_2",
+      "TELESCOPIC_3",
+      "TELESCOPIC_4",
+      "BOOM_TIP",
+      "HOOK",
+      "HOIST_ROPE_1",
+      "HOIST_ROPE_2",
+      "LIFT_BARREL",
+      "LIFT_PISTON"
+    ],
+    "assertions": [
+      "tip matches length/angle/slew",
+      "hook remains vertically under tip",
+      "rope mesh endpoints match anchors",
+      "hydraulic mesh endpoints match fraction anchors",
+      "telescope overlap between0.25m and0.90m",
+      "root and supports unchanged",
+      "all minimum/maximum length, angle and hoist combinations checked at three slew headings"
+    ]
+  },
+  "motionVerification": {
+    "status": "passed",
+    "cornerPosesTested": 24,
+    "supportedControls": [
+      "slew",
+      "boomAngle",
+      "boomLength",
+      "hookHeight"
+    ],
+    "nodeNamesVerified": [
+      "SLEW",
+      "BOOM_PIVOT",
+      "TELESCOPIC_1",
+      "TELESCOPIC_2",
+      "TELESCOPIC_3",
+      "TELESCOPIC_4",
+      "BOOM_TIP",
+      "HOOK",
+      "HOIST_ROPE_1",
+      "HOIST_ROPE_2",
+      "LIFT_BARREL",
+      "LIFT_PISTON"
+    ],
+    "assertions": [
+      "tip matches length/angle/slew",
+      "hook remains vertically under tip",
+      "rope mesh endpoints match anchors",
+      "hydraulic mesh endpoints match fraction anchors",
+      "telescope overlap between0.25m and0.90m",
+      "root and supports unchanged",
+      "all minimum/maximum length, angle and hoist combinations checked at three slew headings"
+    ]
+  },
+  "officialTransportMeters": [
+    4.11,
+    1.28,
+    1.695
+  ],
+  "officialIndependentMaxima": {
+    "radiusMeters": 12.16,
+    "hookHeightMeters": 12.52
+  },
+  "approximations": [
+    "not a CAD replica",
+    "five physical pentagonal principal shells follow the published count/profile type",
+    "section lengths, profile angles and uniformly scaled0.88 inner profiles are authored hollow-shell reconstruction, not OEM dimensions or wall thickness",
+    "10m boom at55deg with hook3m is selected demo pose",
+    "pad centers inferred using assumed0.28m square pads, official OUTER envelope retained",
+    "track/body/detail dimensions are visual approximations",
+    "kinematic limits preserve overlap and clearance; not certified manufacturer working ranges"
+  ],
+  "nodes": [
+    "BOOM_PIVOT",
+    "BOOM_PIVOT_Dark_Teal_BATCH",
+    "BOOM_PIVOT_Lettering_BATCH",
+    "BOOM_PIVOT_Rubber_BATCH",
+    "BOOM_TIP",
+    "BOOM_TIP_Steel_BATCH",
+    "HOIST_ROPE_1",
+    "HOIST_ROPE_1_Rubber_BATCH",
+    "HOIST_ROPE_2",
+    "HOIST_ROPE_2_Rubber_BATCH",
+    "HOOK",
+    "HOOK_ATTACH_1",
+    "HOOK_ATTACH_2",
+    "HOOK_Chrome_BATCH",
+    "HOOK_Steel_BATCH",
+    "HOOK_Warning_Yellow_BATCH",
+    "LIFT_BARREL",
+    "LIFT_BARREL_Dark_Teal_BATCH",
+    "LIFT_FIXED_ANCHOR",
+    "LIFT_MOVING_ANCHOR",
+    "LIFT_PISTON",
+    "LIFT_PISTON_Chrome_BATCH",
+    "MAEDA_ROOT",
+    "MAEDA_ROOT_Chrome_BATCH",
+    "MAEDA_ROOT_Maeda_Teal_BATCH",
+    "MAEDA_ROOT_Rubber_BATCH",
+    "MAEDA_ROOT_Steel_BATCH",
+    "PAD_FRONT_L",
+    "PAD_FRONT_R",
+    "PAD_REAR_L",
+    "PAD_REAR_R",
+    "SLEW",
+    "SLEW_Chrome_BATCH",
+    "SLEW_Dark_Teal_BATCH",
+    "SLEW_Lettering_BATCH",
+    "SLEW_Maeda_Teal_BATCH",
+    "SLEW_Rubber_BATCH",
+    "SLEW_Steel_BATCH",
+    "TELESCOPIC_1",
+    "TELESCOPIC_1_Dark_Teal_BATCH",
+    "TELESCOPIC_1_Rubber_BATCH",
+    "TELESCOPIC_2",
+    "TELESCOPIC_2_Dark_Teal_BATCH",
+    "TELESCOPIC_2_Rubber_BATCH",
+    "TELESCOPIC_3",
+    "TELESCOPIC_3_Dark_Teal_BATCH",
+    "TELESCOPIC_3_Rubber_BATCH",
+    "TELESCOPIC_4",
+    "TELESCOPIC_4_Dark_Teal_BATCH",
+    "TELESCOPIC_4_Rubber_BATCH",
+    "TIP_ATTACH_1",
+    "TIP_ATTACH_2",
+    "Telescopic_section_1",
+    "Telescopic_section_2",
+    "Telescopic_section_3",
+    "Telescopic_section_4",
+    "Telescopic_section_5"
+  ]
+}

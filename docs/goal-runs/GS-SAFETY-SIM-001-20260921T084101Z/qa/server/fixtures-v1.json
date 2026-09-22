@@ -1,0 +1,92 @@
+{
+  "fixtureVersion": "1.0.0",
+  "goalId": "GS-SAFETY-SIM-001",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "protocol": "g0-protocol-v1.md",
+  "purpose": "Schema-independent frozen server QA expectations, not production seed data",
+  "clockStartUtc": "2026-09-21T09:00:00Z",
+  "seed": 20260921,
+  "repeatCount": 3,
+  "siteId": "SITE-CONSTRUCTION-01",
+  "negativeSiteId": "SITE-INDUSTRIAL-01",
+  "gasMaterialId": "DEMO-GAS-X",
+  "workers": [
+    {
+      "workerId": "WORKER-A",
+      "profileVersion": 1,
+      "confirmedAt": "2026-09-21T09:00:00Z",
+      "preferredLocale": "ko",
+      "canUseStairs": true,
+      "speedMps": { "min": 0.8, "max": 1.4 },
+      "needsAssistance": false,
+      "needsCompanion": false,
+      "notificationPreferences": { "voice": true, "vibration": true },
+      "expectedLocale": "ko"
+    },
+    {
+      "workerId": "WORKER-B",
+      "profileVersion": 1,
+      "confirmedAt": "2026-09-21T09:00:00Z",
+      "preferredLocale": "en",
+      "canUseStairs": false,
+      "speedMps": { "min": 0.3, "max": 0.7 },
+      "needsAssistance": true,
+      "needsCompanion": true,
+      "notificationPreferences": { "voice": true, "vibration": true },
+      "expectedLocale": "en"
+    },
+    {
+      "workerId": "WORKER-C",
+      "profileVersion": 1,
+      "confirmedAt": null,
+      "preferredLocale": null,
+      "canUseStairs": null,
+      "speedMps": null,
+      "needsAssistance": null,
+      "needsCompanion": null,
+      "notificationPreferences": { "voice": true, "vibration": true },
+      "expectedLocale": "documented explicit fallback with unconfirmed requested locale retained",
+      "expectedCapabilityTreatment": "unknown, never unconstrained"
+    }
+  ],
+  "independentResponses": [
+    "received", "displayed", "voice-started", "voice-completed", "voice-failed",
+    "voice-unsupported", "understood", "help-requested", "support-accepted", "arrived"
+  ],
+  "independentIncidentStates": [
+    "acknowledged", "sound-muted", "hazard-cleared", "passage-reopened", "closed"
+  ],
+  "guidanceEnvelopeSeries": {
+    "count": 1000,
+    "classes": [
+      { "name": "current-valid-forward", "count": 100 },
+      { "name": "exact-duplicate", "count": 100 },
+      { "name": "reverse-version", "count": 100 },
+      { "name": "expired", "count": 100 },
+      { "name": "wrong-run", "count": 100 },
+      { "name": "wrong-worker", "count": 100 },
+      { "name": "wrong-map-id", "count": 100 },
+      { "name": "wrong-map-version", "count": 100 },
+      { "name": "old-snapshot-after-reconnect", "count": 100 },
+      { "name": "delayed-pre-reset", "count": 100 }
+    ],
+    "expectedInvalidRegressions": 0,
+    "clientAndServerEvidenceSeparate": true
+  },
+  "demographicMetamorphicInputs": [
+    { "label": "control", "age": 25, "gender": "female", "nationality": "KR" },
+    { "label": "age-only", "age": 70, "gender": "female", "nationality": "KR" },
+    { "label": "gender-only", "age": 25, "gender": "male", "nationality": "KR" },
+    { "label": "nationality-only", "age": 25, "gender": "female", "nationality": "US" }
+  ],
+  "demographicExpectedEffect": "No changed mobility or language; unsupported fields may be rejected without mutation; never forward unnecessary fields",
+  "nonsecretCanaries": {
+    "serverConfig": "QA_PUBLIC_CANARY_SERVER_ONLY_GS001",
+    "unnecessaryProfileField": "QA_PUBLIC_CANARY_UNUSED_DEMOGRAPHIC_GS001"
+  },
+  "sourceBodySha256": {
+    "002": "730160c78f632b45502936c3fe9c252e57b908cb9c7a45baeb0eb57305e7c569",
+    "005": "90ca534b938479185fd06f049cc23e178c8a0cf8e368b241a0bc54036c5736ae",
+    "006": "b5de377f3b52ee171b07dcd998fd1e7446590469426372369e5d0a8a1e0d7ea1"
+  }
+}

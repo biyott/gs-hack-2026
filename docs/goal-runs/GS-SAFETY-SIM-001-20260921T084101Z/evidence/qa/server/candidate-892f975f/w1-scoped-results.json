@@ -1,0 +1,187 @@
+{
+  "schema": "qa-w1-scoped-results-1",
+  "at": "2026-09-22T00:11:51.767Z",
+  "actualExecutor": "/root/qa_resume/w1_server",
+  "goalRun": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "protocol": "qa/g0-protocol-v1.md",
+  "grant": "W1-C6-01",
+  "candidateId": "892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "sourceSha256": "a7b49298f553030d30674e7b8397ca08a5304cd54cf0f1f678269068e92da411",
+  "manifestSha256": "2325d673562225a0daf24fb7da060a65e3aab6091e300971e3ea3a83842f1792",
+  "head": "9dc020a7c0160af17e2ac9157dcb8c390890309a",
+  "buildId": "QS7DkAZLSyX00oQ4fvGHL",
+  "firstTestStartedAt": "2026-09-22T00:07:44.578Z",
+  "lastTestCompletedAt": "2026-09-22T00:09:32.238Z",
+  "runtimeReleasedAt": "2026-09-22T00:10:26.318Z",
+  "strictCompile": "strict-typecheck-01.json: exit0",
+  "scopes": [
+    {
+      "name": "Original baseline/control/profile/explicit ownership",
+      "observed": "PASS",
+      "behaviorTests": 25,
+      "scenarioRuns": "14 ×3 freshDB",
+      "diagnosticTests": 1,
+      "evidence": "baseline-voice-lr-01"
+    },
+    {
+      "name": "Recovery/CAS/metadata",
+      "observed": "PASS",
+      "tests": 74,
+      "evidence": "baseline-voice-lr-01"
+    },
+    {
+      "name": "LR geometry",
+      "observed": "PASS",
+      "tests": 14,
+      "evidence": "baseline-voice-lr-01"
+    },
+    {
+      "name": "S20 actual OS phase pairs and closure controls",
+      "observed": "PASS",
+      "tests": 12,
+      "osPairs": 3,
+      "evidence": "core-r1/2/3-phase1-01 and phase2-closures-01"
+    },
+    {
+      "name": "R07",
+      "observed": "PASS",
+      "tests": 30,
+      "evidence": "core-r07-newtarget-01"
+    },
+    {
+      "name": "Frozen new-target-v2",
+      "observed": "PASS",
+      "tests": 3,
+      "evidence": "core-r07-newtarget-01"
+    },
+    {
+      "name": "QD009 original model/pose and callback cases",
+      "observed": "PASS",
+      "tests": 6,
+      "evidence": "qd009-01"
+    },
+    {
+      "name": "QD009 private same-mode semantic derivative",
+      "observed": "PASS",
+      "tests": 24,
+      "evidence": "qd009-01"
+    },
+    {
+      "name": "QD009 private cross-mode semantics",
+      "observed": "BLOCKED",
+      "tests": 6,
+      "evidence": "qd009-cross-mode-source-disposition.json"
+    },
+    {
+      "name": "Pure ordering",
+      "observed": "PASS",
+      "tests": 1034,
+      "results": [
+        {
+          "file": "ordering-base-01/ordering-base-results.json",
+          "total": 1000,
+          "failed": 0,
+          "diagnosticMismatches": null
+        },
+        {
+          "file": "ordering-focused-01/ordering-focused-results.json",
+          "total": 24,
+          "failed": 0,
+          "diagnosticMismatches": null
+        },
+        {
+          "file": "ordering-alerts-01/ordering-alert-results.json",
+          "total": 10,
+          "failed": 0,
+          "diagnosticMismatches": 0
+        }
+      ]
+    },
+    {
+      "name": "Actual Next HTTP",
+      "observed": "PASS",
+      "tests": 40,
+      "results": [
+        {
+          "file": "security-results.json",
+          "checks": 29,
+          "failed": 0
+        },
+        {
+          "file": "voice-observe-first-results.json",
+          "checks": 2,
+          "failed": 0
+        },
+        {
+          "file": "voice-observe-second-results.json",
+          "checks": 3,
+          "failed": 0
+        },
+        {
+          "file": "frame-control-results.json",
+          "checks": 6,
+          "failed": 0
+        }
+      ]
+    }
+  ],
+  "scenarioCreationDiagnostic": {
+    "evidence": "baseline-voice-lr-01/S18-scenario-creation-diagnostic-785bc112-958c-4d18-aeb2-0462865341ff.json",
+    "matchesOriginalOwnerMatrix": false,
+    "expectedOwners": {
+      "PATH-A": [
+        "QA-HZ-A"
+      ],
+      "PATH-B": [
+        "QA-HZ-B"
+      ],
+      "PATH-C": [
+        "QA-HZ-A",
+        "QA-HZ-B"
+      ]
+    },
+    "observedOwners": {
+      "PATH-A": [
+        "QA-HZ-A"
+      ],
+      "PATH-C": [
+        "QA-HZ-A",
+        "QA-HZ-B"
+      ],
+      "PATH-B": [
+        "QA-HZ-A",
+        "QA-HZ-B"
+      ]
+    },
+    "expectedAfterReopenB": [
+      "PATH-A",
+      "PATH-C"
+    ],
+    "observedAfterReopenB": [
+      "PATH-A",
+      "PATH-B",
+      "PATH-C"
+    ],
+    "behaviorVerdict": false
+  },
+  "preservedSourceDispositions": [
+    "../candidate-91375a9d/qd009-field-adapter.json",
+    "../candidate-91375a9d/semantic-v2-disposition.json",
+    "../candidate-91375a9d/core-r07-newtarget-01/execution.log"
+  ],
+  "priorBehavioralResultsReused": false,
+  "currentExecutionFailures": 0,
+  "currentRetries": 0,
+  "qd009All36Passed": false,
+  "concurrency": "W3 independent DB functional run permitted;8092 nonexclusive per grant, no G0/model-quality or latency claim",
+  "integrity": {
+    "sources": 1026,
+    "artifacts": 673,
+    "sidecars": 28,
+    "mismatches": 0,
+    "evidence": "final-candidate-sidecar-integrity.json"
+  },
+  "resourceRelease": "w1-resource-release.json",
+  "productWrites": false,
+  "wholeAcOrOverallVerdict": null
+}

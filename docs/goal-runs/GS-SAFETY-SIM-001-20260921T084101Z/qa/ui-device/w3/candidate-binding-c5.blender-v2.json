@@ -1,0 +1,20 @@
+{
+  "candidateId": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+  "candidateRoot": "/home/b/.cache/gs-safety-c5.H4mElI",
+  "manifest": {
+    "path": "runtime-artifacts/candidate-manifest-c5.json",
+    "sha256": "76afd9b2eb72dde296feecf477405af8e1aea1c4bcb92dac474ea2d0748c9379"
+  },
+  "sourceSha256": "a9522ae4668f3909993662feb06b17ee406e35a3f4887a00a0db989aac50048a",
+  "buildId": "a0SBz4_RkrdgOI7tmlBVr",
+  "assetManifest": {
+    "path": "resources/blender/safety-simulator/artifact-manifest.json",
+    "sha256": "8c37f448288ed4712081ff96d323a4388ffba07e68ee34fc604fc5c2312412e0"
+  },
+  "evidenceRoot": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/ui-device/candidate-91375a9d",
+  "authority": {
+    "receiptPath": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-91375a9d/receipt-validation.json",
+    "validatedBy": "/root/qa_lead"
+  },
+  "mobileApkSha256": "1d78f81eaa5d7d85a2f73d3d50b5acbbeeb4a0ea5cbbabcc538087f4fbeb515a"
+}

@@ -1,0 +1,662 @@
+{
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "candidateRoot": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "evidenceRoot": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f",
+  "createdAt": "2026-09-22T00:07:40.771Z",
+  "method": "Static source-bound observation preparation. Runtime resolution and exact joins must still be demonstrated.",
+  "chunks": [
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__0i45wh5._.js",
+      "sha256": "d8ca712747b72ab2555525f1bf192981cfac57a6fdb75c1c0ec891edb7326f36",
+      "bytes": 230724,
+      "points": [
+        {
+          "kind": "embedding-input",
+          "anchor": "let r=await s([...e],{pooling:\"mean\",normalize:!0})",
+          "expression": "{texts:e,identity:this.identity}",
+          "signal": "t",
+          "maxColumnShift": 20,
+          "lineNumber": 24,
+          "columnNumber": 34485,
+          "sourceOffset": 115137
+        },
+        {
+          "kind": "embedding-output",
+          "anchor": "return n.z.array(n.z.array(n.z.number().finite()).length(this.identity.dimensions)",
+          "expression": "{texts:e,vectors:i,identity:this.identity}",
+          "signal": "t",
+          "maxColumnShift": 40,
+          "lineNumber": 24,
+          "columnNumber": 34573,
+          "sourceOffset": 115225
+        },
+        {
+          "kind": "retrieval",
+          "anchor": "return e.logRun({id:(0,t.randomUUID)(),runId:s.runId,startedAt:r,completedAt:g.completedAt,phase:\"retrieval\"",
+          "expression": "{request:{...s,signal:undefined},trace:g}",
+          "signal": "s.signal",
+          "maxColumnShift": 20,
+          "lineNumber": 52,
+          "columnNumber": 2126,
+          "sourceOffset": 156585
+        },
+        {
+          "kind": "generation-join",
+          "anchor": "if(\"matched\"!==a.outcome)return y(a.outcome);let w=h()",
+          "expression": "{ragRunId:l,guidance:e.guidance,context:e.context,retrieval:a}",
+          "signal": "t",
+          "maxColumnShift": 20,
+          "lineNumber": 53,
+          "columnNumber": 5039,
+          "sourceOffset": 165555
+        }
+      ]
+    },
+    {
+      "path": "/home/b/.cache/gs-safety-c6.pSgWxT/.next/server/chunks/[root-of-the-server]__1xzzcym._.js",
+      "sha256": "621e2eeb4f25549f1eb12ed588798c9ea274adfbef1a1fff542aa945e7b888cb",
+      "bytes": 230724,
+      "points": [
+        {
+          "kind": "embedding-input",
+          "anchor": "let r=await s([...e],{pooling:\"mean\",normalize:!0})",
+          "expression": "{texts:e,identity:this.identity}",
+          "signal": "t",
+          "maxColumnShift": 20,
+          "lineNumber": 24,
+          "columnNumber": 34485,
+          "sourceOffset": 115137
+        },
+        {
+          "kind": "embedding-output",
+          "anchor": "return n.z.array(n.z.array(n.z.number().finite()).length(this.identity.dimensions)",
+          "expression": "{texts:e,vectors:i,identity:this.identity}",
+          "signal": "t",
+          "maxColumnShift": 40,
+          "lineNumber": 24,
+          "columnNumber": 34573,
+          "sourceOffset": 115225
+        },
+        {
+          "kind": "retrieval",
+          "anchor": "return e.logRun({id:(0,t.randomUUID)(),runId:s.runId,startedAt:r,completedAt:g.completedAt,phase:\"retrieval\"",
+          "expression": "{request:{...s,signal:undefined},trace:g}",
+          "signal": "s.signal",
+          "maxColumnShift": 20,
+          "lineNumber": 52,
+          "columnNumber": 2126,
+          "sourceOffset": 156585
+        },
+        {
+          "kind": "generation-join",
+          "anchor": "if(\"matched\"!==a.outcome)return y(a.outcome);let w=h()",
+          "expression": "{ragRunId:l,guidance:e.guidance,context:e.context,retrieval:a}",
+          "signal": "t",
+          "maxColumnShift": 20,
+          "lineNumber": 53,
+          "columnNumber": 5039,
+          "sourceOffset": 165555
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "name": "binding-materialization.json",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/binding-materialization.json",
+      "originalSha256": "ec2e91329cb9ea98a72f93778c9eeb85e6439d3ccae5117a32d8568007df36ce",
+      "derivativeSha256": "ec2e91329cb9ea98a72f93778c9eeb85e6439d3ccae5117a32d8568007df36ce",
+      "changed": false
+    },
+    {
+      "name": "binding.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/binding.ts",
+      "originalSha256": "e01c1a09a4ff882bf57b4a4db0b402b1e2a373bfe800044716edb079e8def70c",
+      "derivativeSha256": "e01c1a09a4ff882bf57b4a4db0b402b1e2a373bfe800044716edb079e8def70c",
+      "changed": false
+    },
+    {
+      "name": "case16-append-provider.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/case16-append-provider.ts",
+      "originalSha256": "9433e1b7ec7d8ac79bb38ccec34687fbc171a50e851ba736b52e4d1c5a26d76a",
+      "derivativeSha256": "9433e1b7ec7d8ac79bb38ccec34687fbc171a50e851ba736b52e4d1c5a26d76a",
+      "changed": false
+    },
+    {
+      "name": "case16-append.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/case16-append.ts",
+      "originalSha256": "c88b2a35874ed9e8c460d4381cc2f565cb28d2eade2ce4fb101a90538d4abb4c",
+      "derivativeSha256": "c88b2a35874ed9e8c460d4381cc2f565cb28d2eade2ce4fb101a90538d4abb4c",
+      "changed": false
+    },
+    {
+      "name": "controlled-applicability.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/controlled-applicability.ts",
+      "originalSha256": "5a328a0dfd21d51f7690e448d35d54204cab736f655c645af27c3a0539f4e1a3",
+      "derivativeSha256": "5a328a0dfd21d51f7690e448d35d54204cab736f655c645af27c3a0539f4e1a3",
+      "changed": false
+    },
+    {
+      "name": "delay-phase-entry.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/delay-phase-entry.ts",
+      "originalSha256": "030a14b651cbaa8455aa9ebe904a32b9fb045a53d42ef3f25a8ee14c86a834aa",
+      "derivativeSha256": "030a14b651cbaa8455aa9ebe904a32b9fb045a53d42ef3f25a8ee14c86a834aa",
+      "changed": false
+    },
+    {
+      "name": "delay-phase-oracle.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/delay-phase-oracle.ts",
+      "originalSha256": "e286e7eea716c8186bd5f73eb9dd8195388d14ba178579cc22ad476e8c95df52",
+      "derivativeSha256": "e286e7eea716c8186bd5f73eb9dd8195388d14ba178579cc22ad476e8c95df52",
+      "changed": false
+    },
+    {
+      "name": "eligibility-oracle.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/eligibility-oracle.ts",
+      "originalSha256": "538a39e9a5a9d72d50ecbc756c6ed7f04decf63d0c336360763b3176a1e300c1",
+      "derivativeSha256": "538a39e9a5a9d72d50ecbc756c6ed7f04decf63d0c336360763b3176a1e300c1",
+      "changed": false
+    },
+    {
+      "name": "engine-applicability-capture.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/engine-applicability-capture.ts",
+      "originalSha256": "6a6445cad26dd0543691bb02f5d2bd4f9420feb7d2db3ab3a2f25d4688d5d5a7",
+      "derivativeSha256": "6a6445cad26dd0543691bb02f5d2bd4f9420feb7d2db3ab3a2f25d4688d5d5a7",
+      "changed": false
+    },
+    {
+      "name": "engine-applicability-evidence.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/engine-applicability-evidence.ts",
+      "originalSha256": "9976ad7361a02e2e3cd626e58aab9152a8f78c9117d8b145f3c73eabeb9444a3",
+      "derivativeSha256": "9976ad7361a02e2e3cd626e58aab9152a8f78c9117d8b145f3c73eabeb9444a3",
+      "changed": false
+    },
+    {
+      "name": "engine-applicability-oracle.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/engine-applicability-oracle.ts",
+      "originalSha256": "4692fff7afe6da0e79c8e68b7e483282b4aa13fed5cee198d3eb19deb97a3751",
+      "derivativeSha256": "4692fff7afe6da0e79c8e68b7e483282b4aa13fed5cee198d3eb19deb97a3751",
+      "changed": false
+    },
+    {
+      "name": "engine-applicability-scenarios.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/engine-applicability-scenarios.ts",
+      "originalSha256": "15f3c5862c62920869108253527a24c6a133d74dbaf5ec1000ae247c90204091",
+      "derivativeSha256": "15f3c5862c62920869108253527a24c6a133d74dbaf5ec1000ae247c90204091",
+      "changed": false
+    },
+    {
+      "name": "engine-applicability-types.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/engine-applicability-types.ts",
+      "originalSha256": "ac0baa338f8db519b422553baad89b39bf8c03160251c613b22bfd95628d06f1",
+      "derivativeSha256": "ac0baa338f8db519b422553baad89b39bf8c03160251c613b22bfd95628d06f1",
+      "changed": false
+    },
+    {
+      "name": "engine-applicability.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/engine-applicability.ts",
+      "originalSha256": "d1fbab6b173a978e87f1c7cddfe39f6add8d73b67045527bc1c52f0f98fd5b9f",
+      "derivativeSha256": "d1fbab6b173a978e87f1c7cddfe39f6add8d73b67045527bc1c52f0f98fd5b9f",
+      "changed": false
+    },
+    {
+      "name": "engine-entry.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/engine-entry.ts",
+      "originalSha256": "094f356814460a78363f665b3c2b99cb2362a06ad58a60b686024e3ce5fb9f52",
+      "derivativeSha256": "094f356814460a78363f665b3c2b99cb2362a06ad58a60b686024e3ce5fb9f52",
+      "changed": false
+    },
+    {
+      "name": "fault-assertions.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/fault-assertions.ts",
+      "originalSha256": "2974869179a5a83c151fe2960463efe48cd4ce900625238075e95f7b7f8d41df",
+      "derivativeSha256": "2974869179a5a83c151fe2960463efe48cd4ce900625238075e95f7b7f8d41df",
+      "changed": false
+    },
+    {
+      "name": "fault-inputs.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/fault-inputs.ts",
+      "originalSha256": "768cbaa887996464cb38b5354175e7ad9b9069e442e257cb83288b6874d86d96",
+      "derivativeSha256": "768cbaa887996464cb38b5354175e7ad9b9069e442e257cb83288b6874d86d96",
+      "changed": false
+    },
+    {
+      "name": "fault-mutations.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/fault-mutations.ts",
+      "originalSha256": "8219613744fcc6c3973cc556989c2c0065912c6cb135bbb654be92753004151d",
+      "derivativeSha256": "8219613744fcc6c3973cc556989c2c0065912c6cb135bbb654be92753004151d",
+      "changed": false
+    },
+    {
+      "name": "fault-runner.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/fault-runner.ts",
+      "originalSha256": "d54010033d8b4e3b0e9aa85a17997bc47ad7de232c8fc9ec98a0741b585d66c8",
+      "derivativeSha256": "d54010033d8b4e3b0e9aa85a17997bc47ad7de232c8fc9ec98a0741b585d66c8",
+      "changed": false
+    },
+    {
+      "name": "fault-runtime.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/fault-runtime.ts",
+      "originalSha256": "baa4463b92b119bbb078566a023c26037112d7e74ee6fff529d55bc5c4ceb731",
+      "derivativeSha256": "baa4463b92b119bbb078566a023c26037112d7e74ee6fff529d55bc5c4ceb731",
+      "changed": false
+    },
+    {
+      "name": "fault-selftest.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/fault-selftest.ts",
+      "originalSha256": "d123ec96072c69460447255b6098034c2b259d31e7121dd451c8f565f0b4e64f",
+      "derivativeSha256": "d123ec96072c69460447255b6098034c2b259d31e7121dd451c8f565f0b4e64f",
+      "changed": false
+    },
+    {
+      "name": "fault-types.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/fault-types.ts",
+      "originalSha256": "36d2b2b2a58c1266a1f8c7cd9d7d2c881fa13820cd1a78f3832e8e2e7fc51062",
+      "derivativeSha256": "36d2b2b2a58c1266a1f8c7cd9d7d2c881fa13820cd1a78f3832e8e2e7fc51062",
+      "changed": false
+    },
+    {
+      "name": "filter-inputs.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/filter-inputs.ts",
+      "originalSha256": "950ba6e8a7e5dc079403d2954beb78bbea88932905efc83cc05216a48eb72dc2",
+      "derivativeSha256": "950ba6e8a7e5dc079403d2954beb78bbea88932905efc83cc05216a48eb72dc2",
+      "changed": false
+    },
+    {
+      "name": "filter-runner.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/filter-runner.ts",
+      "originalSha256": "72c874d1ee4f85d1bff37d76abae3556a573181e0dc50f1a6c683c3daf013f48",
+      "derivativeSha256": "72c874d1ee4f85d1bff37d76abae3556a573181e0dc50f1a6c683c3daf013f48",
+      "changed": false
+    },
+    {
+      "name": "filter-sequences.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/filter-sequences.ts",
+      "originalSha256": "a57ba467dcebca21e81876536d8eac80fd14374440861359d9dd17307a3cb6ee",
+      "derivativeSha256": "a57ba467dcebca21e81876536d8eac80fd14374440861359d9dd17307a3cb6ee",
+      "changed": false
+    },
+    {
+      "name": "filter-support.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/filter-support.ts",
+      "originalSha256": "264c0e705ec6ac8dc2a5909d1f79d95f7023ea902ed2eb03331377790c29f743",
+      "derivativeSha256": "264c0e705ec6ac8dc2a5909d1f79d95f7023ea902ed2eb03331377790c29f743",
+      "changed": false
+    },
+    {
+      "name": "filter-types.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/filter-types.ts",
+      "originalSha256": "a59e7dc3ac7ff1632d74e3844b779ac69f96075cca8539613491b659cebda5ae",
+      "derivativeSha256": "a59e7dc3ac7ff1632d74e3844b779ac69f96075cca8539613491b659cebda5ae",
+      "changed": false
+    },
+    {
+      "name": "guidance-fixture.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/guidance-fixture.ts",
+      "originalSha256": "1ecc05dc198ee1b8d24f9ef44abe036e1b5e57032e234a2df49683191ae785f4",
+      "derivativeSha256": "1ecc05dc198ee1b8d24f9ef44abe036e1b5e57032e234a2df49683191ae785f4",
+      "changed": false
+    },
+    {
+      "name": "http-canary.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-canary.ts",
+      "originalSha256": "7dd3914b0dd800101ed13dde3bc51490c84822e75a3efa3708f98718d8481833",
+      "derivativeSha256": "7dd3914b0dd800101ed13dde3bc51490c84822e75a3efa3708f98718d8481833",
+      "changed": false
+    },
+    {
+      "name": "http-capture-joins.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-capture-joins.ts",
+      "originalSha256": "21e32c888c72cdb96a6d80bca8ea9bf90f505b0bb90002ba023fd9723ee799ad",
+      "derivativeSha256": "21e32c888c72cdb96a6d80bca8ea9bf90f505b0bb90002ba023fd9723ee799ad",
+      "changed": false
+    },
+    {
+      "name": "http-capture-verdicts.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-capture-verdicts.ts",
+      "originalSha256": "1d680ba3af4d1ca1da64ca1b0d56ac7eb0e77532a32ca2f6ba93ce571152d571",
+      "derivativeSha256": "1d680ba3af4d1ca1da64ca1b0d56ac7eb0e77532a32ca2f6ba93ce571152d571",
+      "changed": false
+    },
+    {
+      "name": "http-cases.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-cases.ts",
+      "originalSha256": "a4e521e153270d872ead3afd76b1a35b4af170595c49fd65ccbb5f72d0631e39",
+      "derivativeSha256": "a4e521e153270d872ead3afd76b1a35b4af170595c49fd65ccbb5f72d0631e39",
+      "changed": false
+    },
+    {
+      "name": "http-client.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-client.ts",
+      "originalSha256": "8e87334e2dca0ba0097476dcb5349263215e39635c9bb513daa56c26f4e5b3ad",
+      "derivativeSha256": "8e87334e2dca0ba0097476dcb5349263215e39635c9bb513daa56c26f4e5b3ad",
+      "changed": false
+    },
+    {
+      "name": "http-database.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-database.ts",
+      "originalSha256": "468f35b5e69c4fe11d614ac63f83f975fbe1dfefc999308330866dbf204d2dbe",
+      "derivativeSha256": "468f35b5e69c4fe11d614ac63f83f975fbe1dfefc999308330866dbf204d2dbe",
+      "changed": false
+    },
+    {
+      "name": "http-delay-control.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-delay-control.ts",
+      "originalSha256": "6491603fbdda30086027ad948d34f41b0dda9bab3d18a890ef7037eb61f6aac5",
+      "derivativeSha256": "6491603fbdda30086027ad948d34f41b0dda9bab3d18a890ef7037eb61f6aac5",
+      "changed": false
+    },
+    {
+      "name": "http-integration-types.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-integration-types.ts",
+      "originalSha256": "5c9bd86c9fe1038280489b05bfd524b3a74fb8b610f9b18d34714fc847074ccc",
+      "derivativeSha256": "5c9bd86c9fe1038280489b05bfd524b3a74fb8b610f9b18d34714fc847074ccc",
+      "changed": false
+    },
+    {
+      "name": "http-oracle.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-oracle.ts",
+      "originalSha256": "5292fc7927580c51833b09779c2db3b30db31a78fc007520c264219d8eeaaeb5",
+      "derivativeSha256": "5292fc7927580c51833b09779c2db3b30db31a78fc007520c264219d8eeaaeb5",
+      "changed": false
+    },
+    {
+      "name": "http-publication.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-publication.ts",
+      "originalSha256": "7dbd505d34fb9d3144b8325497c905de438922fa676849c0ba151f5b3ce54720",
+      "derivativeSha256": "7dbd505d34fb9d3144b8325497c905de438922fa676849c0ba151f5b3ce54720",
+      "changed": false
+    },
+    {
+      "name": "http-reroute-command.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-reroute-command.ts",
+      "originalSha256": "08dc8b6bc3759399639993877763621b35d2bf98047bb99d3580b69a3d5f3094",
+      "derivativeSha256": "08dc8b6bc3759399639993877763621b35d2bf98047bb99d3580b69a3d5f3094",
+      "changed": false
+    },
+    {
+      "name": "http-reroute-evidence.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-reroute-evidence.ts",
+      "originalSha256": "24674ad82524cab004c907b027d1f8d5ffe5c5cc4e4542c8e7710463a25e60b4",
+      "derivativeSha256": "24674ad82524cab004c907b027d1f8d5ffe5c5cc4e4542c8e7710463a25e60b4",
+      "changed": false
+    },
+    {
+      "name": "http-reroute-oracle.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-reroute-oracle.ts",
+      "originalSha256": "044b1c896eb6c99f6622fd96d11aad75541f6c56d79e4d1f81889d082d4fda65",
+      "derivativeSha256": "044b1c896eb6c99f6622fd96d11aad75541f6c56d79e4d1f81889d082d4fda65",
+      "changed": false
+    },
+    {
+      "name": "http-reroute-positive.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-reroute-positive.ts",
+      "originalSha256": "cd7ebb96da457169bde67eba1431e1bb4e7e51f496601e11a3091c4ffc87eaa6",
+      "derivativeSha256": "cd7ebb96da457169bde67eba1431e1bb4e7e51f496601e11a3091c4ffc87eaa6",
+      "changed": false
+    },
+    {
+      "name": "http-reroute-scenario.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-reroute-scenario.ts",
+      "originalSha256": "16074dd6ebc8e129286cf18843928933e128ff5c6410f23dcd045f6df2282f10",
+      "derivativeSha256": "16074dd6ebc8e129286cf18843928933e128ff5c6410f23dcd045f6df2282f10",
+      "changed": false
+    },
+    {
+      "name": "http-runner.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-runner.ts",
+      "originalSha256": "70020c353f1457f18caf68d11bf975657afca5da1f39a0af8f95f4424737ef1e",
+      "derivativeSha256": "70020c353f1457f18caf68d11bf975657afca5da1f39a0af8f95f4424737ef1e",
+      "changed": false
+    },
+    {
+      "name": "http-scenario.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-scenario.ts",
+      "originalSha256": "4393330069b3b0a9dae67ea65ef4affeeae8ade1202f073a3b6c72f7bb64a6c3",
+      "derivativeSha256": "4393330069b3b0a9dae67ea65ef4affeeae8ade1202f073a3b6c72f7bb64a6c3",
+      "changed": false
+    },
+    {
+      "name": "http-selftest.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-selftest.ts",
+      "originalSha256": "c5874c251945edeafa648618acd6cf88a9e69b8cae411d6746c4bee5477cca29",
+      "derivativeSha256": "c5874c251945edeafa648618acd6cf88a9e69b8cae411d6746c4bee5477cca29",
+      "changed": false
+    },
+    {
+      "name": "http-stream.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-stream.ts",
+      "originalSha256": "d9213c2231b837c3c29dcc2e3d0ffdccf74e79384d7615bf5a05b7fbb6852f8c",
+      "derivativeSha256": "d9213c2231b837c3c29dcc2e3d0ffdccf74e79384d7615bf5a05b7fbb6852f8c",
+      "changed": false
+    },
+    {
+      "name": "http-types.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/http-types.ts",
+      "originalSha256": "88e824642d01bc5e82180d81dfc022d8baa5be6f276467abd7f410b8d7b9137e",
+      "derivativeSha256": "88e824642d01bc5e82180d81dfc022d8baa5be6f276467abd7f410b8d7b9137e",
+      "changed": false
+    },
+    {
+      "name": "integration-main.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/integration-main.ts",
+      "originalSha256": "527c7ef114393f1d71f56bc8f795af58cdc4fc129e11956e5d40dccd34bec621",
+      "derivativeSha256": "527c7ef114393f1d71f56bc8f795af58cdc4fc129e11956e5d40dccd34bec621",
+      "changed": false
+    },
+    {
+      "name": "launch-http.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/launch-http.ts",
+      "originalSha256": "b716e7e973d47df98e607226ec4c219edce81e54b151f6062e8694a6e3c72089",
+      "derivativeSha256": "71e2658982144b4833ac083dcb64f0231cbfba32da9b8a7808dc110dd24c1537",
+      "changed": true
+    },
+    {
+      "name": "launch-process.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/launch-process.ts",
+      "originalSha256": "93c20471aa13c1b1606e6b6a802ce89d92abb39e0b36d6487af0626341a73a74",
+      "derivativeSha256": "93c20471aa13c1b1606e6b6a802ce89d92abb39e0b36d6487af0626341a73a74",
+      "changed": false
+    },
+    {
+      "name": "main.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/main.ts",
+      "originalSha256": "f631d94033dd792bf867ae38d124755630a5c7a73094171d89733b5d3e5b3636",
+      "derivativeSha256": "f631d94033dd792bf867ae38d124755630a5c7a73094171d89733b5d3e5b3636",
+      "changed": false
+    },
+    {
+      "name": "model-capture-evidence.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/model-capture-evidence.ts",
+      "originalSha256": "1b25534fea36431adad095f3eaa531960546f6514e87f05b5cd847ae3aedca3a",
+      "derivativeSha256": "1b25534fea36431adad095f3eaa531960546f6514e87f05b5cd847ae3aedca3a",
+      "changed": false
+    },
+    {
+      "name": "model-capture-http.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/model-capture-http.ts",
+      "originalSha256": "22e41d657c5aba694aa036a7f56520ebf99af07834a4b0576a918c48caaf5447",
+      "derivativeSha256": "22e41d657c5aba694aa036a7f56520ebf99af07834a4b0576a918c48caaf5447",
+      "changed": false
+    },
+    {
+      "name": "model-capture-proxy.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/model-capture-proxy.ts",
+      "originalSha256": "44a66bce651ad89a7bc1b0a15ba936182bde35e9a5f14c10940df835bd371123",
+      "derivativeSha256": "44a66bce651ad89a7bc1b0a15ba936182bde35e9a5f14c10940df835bd371123",
+      "changed": false
+    },
+    {
+      "name": "model-capture-types.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/model-capture-types.ts",
+      "originalSha256": "44c3cd2e5522b80fa5a152fc3c816f075621edacf0760e810fdbcd8bbf03eb67",
+      "derivativeSha256": "44c3cd2e5522b80fa5a152fc3c816f075621edacf0760e810fdbcd8bbf03eb67",
+      "changed": false
+    },
+    {
+      "name": "model-delay-state.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/model-delay-state.ts",
+      "originalSha256": "139f09b8570db3a8e988bee1ca0ff004c08fb0c9bddf3237e0819d13d2401725",
+      "derivativeSha256": "139f09b8570db3a8e988bee1ca0ff004c08fb0c9bddf3237e0819d13d2401725",
+      "changed": false
+    },
+    {
+      "name": "prepare-fault.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/prepare-fault.ts",
+      "originalSha256": "b20a9d206940709056ede9d1060a0ef5b76b9ccd2ae2dcb2f6176f7d00e8a5d1",
+      "derivativeSha256": "b20a9d206940709056ede9d1060a0ef5b76b9ccd2ae2dcb2f6176f7d00e8a5d1",
+      "changed": false
+    },
+    {
+      "name": "prepare-filter.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/prepare-filter.ts",
+      "originalSha256": "e90205aee9666c505679152c7ee4e1f4d16d9f1d4fff53a2e19155921ca40c4b",
+      "derivativeSha256": "e90205aee9666c505679152c7ee4e1f4d16d9f1d4fff53a2e19155921ca40c4b",
+      "changed": false
+    },
+    {
+      "name": "privacy-component-types-v1.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/privacy-component-types-v1.ts",
+      "originalSha256": "ea13b1fb71477134deaf1e4ee457474412463bd69acf5a09c8313431f82140a4",
+      "derivativeSha256": "ea13b1fb71477134deaf1e4ee457474412463bd69acf5a09c8313431f82140a4",
+      "changed": false
+    },
+    {
+      "name": "privacy-component-v1.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/privacy-component-v1.ts",
+      "originalSha256": "b304db6c81da8e6b26c81eea95fb089118cb0ae3318415d8c0a1b31c0dac9b8b",
+      "derivativeSha256": "b304db6c81da8e6b26c81eea95fb089118cb0ae3318415d8c0a1b31c0dac9b8b",
+      "changed": false
+    },
+    {
+      "name": "privacy-entry-binding.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/privacy-entry-binding.ts",
+      "originalSha256": "53a913a5557e0b0aa73183e7e92e5b862a208df7be4ec6d7abc6142d8e981857",
+      "derivativeSha256": "53a913a5557e0b0aa73183e7e92e5b862a208df7be4ec6d7abc6142d8e981857",
+      "changed": false
+    },
+    {
+      "name": "privacy-entry-evidence.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/privacy-entry-evidence.ts",
+      "originalSha256": "0691e352b783d62264f07c5b5462067b646c5c7a81b6e4d4d5ea4931c5656405",
+      "derivativeSha256": "0691e352b783d62264f07c5b5462067b646c5c7a81b6e4d4d5ea4931c5656405",
+      "changed": false
+    },
+    {
+      "name": "privacy-entry.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/privacy-entry.ts",
+      "originalSha256": "235e7bacbbacb940eca254c4d227475f192640dc5f9556517d2b9b34007d8f18",
+      "derivativeSha256": "235e7bacbbacb940eca254c4d227475f192640dc5f9556517d2b9b34007d8f18",
+      "changed": false
+    },
+    {
+      "name": "privacy-log-entry.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/privacy-log-entry.ts",
+      "originalSha256": "173a81d54f3623d8c2aed4cb6024c214c008b78bb345602f4f5458b80e428494",
+      "derivativeSha256": "173a81d54f3623d8c2aed4cb6024c214c008b78bb345602f4f5458b80e428494",
+      "changed": false
+    },
+    {
+      "name": "privacy-log-scan-v1.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/privacy-log-scan-v1.ts",
+      "originalSha256": "918bcd3e712e34bb50fa25e19888a9008abb75193220793c08a768e496b40699",
+      "derivativeSha256": "918bcd3e712e34bb50fa25e19888a9008abb75193220793c08a768e496b40699",
+      "changed": false
+    },
+    {
+      "name": "qd008-controlled-inputs.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/qd008-controlled-inputs.ts",
+      "originalSha256": "9430c077de38958a85fa2636a0bc486bdcf74e728da58252cb55dcf901143218",
+      "derivativeSha256": "9430c077de38958a85fa2636a0bc486bdcf74e728da58252cb55dcf901143218",
+      "changed": false
+    },
+    {
+      "name": "retrieval-dispositions.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/retrieval-dispositions.ts",
+      "originalSha256": "fe1dfb74b0d0322e98e13700d1ef136947b39cbb93c3f46ab03739c5c299ba62",
+      "derivativeSha256": "fe1dfb74b0d0322e98e13700d1ef136947b39cbb93c3f46ab03739c5c299ba62",
+      "changed": false
+    },
+    {
+      "name": "retrieval-inputs.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/retrieval-inputs.ts",
+      "originalSha256": "f50ed65b5a71acebf8fb1be2cc2bdc4a3d6568fa646bf7711b5f7399476c679d",
+      "derivativeSha256": "f50ed65b5a71acebf8fb1be2cc2bdc4a3d6568fa646bf7711b5f7399476c679d",
+      "changed": false
+    },
+    {
+      "name": "retrieval-oracle.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/retrieval-oracle.ts",
+      "originalSha256": "8b0b81fb7cdf826f4538ac000cab7c8e93b1b70ee1bbe71a0442403b3de4a65c",
+      "derivativeSha256": "8b0b81fb7cdf826f4538ac000cab7c8e93b1b70ee1bbe71a0442403b3de4a65c",
+      "changed": false
+    },
+    {
+      "name": "retrieval-runner.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/retrieval-runner.ts",
+      "originalSha256": "f84525b2b506c47c343d24e704a37b02afaa20142b1158d92b384c61f7f5a116",
+      "derivativeSha256": "f84525b2b506c47c343d24e704a37b02afaa20142b1158d92b384c61f7f5a116",
+      "changed": false
+    },
+    {
+      "name": "runtime.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/runtime.ts",
+      "originalSha256": "7ca51ed5c66b712655040a174aa6a35e0f2b9d06a17cf8da636c0bc350a01689",
+      "derivativeSha256": "7ca51ed5c66b712655040a174aa6a35e0f2b9d06a17cf8da636c0bc350a01689",
+      "changed": false
+    },
+    {
+      "name": "stairs-capture.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/stairs-capture.ts",
+      "originalSha256": "067b44a8268de2f382a76a076a65aa2eff37a4855d8b3beef5e85390361e5f54",
+      "derivativeSha256": "067b44a8268de2f382a76a076a65aa2eff37a4855d8b3beef5e85390361e5f54",
+      "changed": false
+    },
+    {
+      "name": "stairs-engine.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/stairs-engine.ts",
+      "originalSha256": "568f65f642e23d0f11bb3301b27cbb4e02b60e4e1d4c67b9fe44665696deb688",
+      "derivativeSha256": "568f65f642e23d0f11bb3301b27cbb4e02b60e4e1d4c67b9fe44665696deb688",
+      "changed": false
+    },
+    {
+      "name": "stairs-entry.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/stairs-entry.ts",
+      "originalSha256": "a5be7d268a294a911f0c918c30176bea699c82d76b143f15c01d440b84a35bf3",
+      "derivativeSha256": "a5be7d268a294a911f0c918c30176bea699c82d76b143f15c01d440b84a35bf3",
+      "changed": false
+    },
+    {
+      "name": "stairs-invocation.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/stairs-invocation.ts",
+      "originalSha256": "7314f2313cc9e7ea641b7e23f81c0e2ac4fe5b6c11948fbd3030d3bc20f261d2",
+      "derivativeSha256": "7314f2313cc9e7ea641b7e23f81c0e2ac4fe5b6c11948fbd3030d3bc20f261d2",
+      "changed": false
+    },
+    {
+      "name": "stairs-runtime.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/stairs-runtime.ts",
+      "originalSha256": "1b01e04a575757bcf0cfc598096c5a59faa6bbefd61144b2f0f7127afdbc330e",
+      "derivativeSha256": "1b01e04a575757bcf0cfc598096c5a59faa6bbefd61144b2f0f7127afdbc330e",
+      "changed": false
+    },
+    {
+      "name": "stairs-types.ts",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/stairs-types.ts",
+      "originalSha256": "61863e03be9718baeebafec54f47c73856cc79cb1dfd0e338c849cd065c43ce8",
+      "derivativeSha256": "61863e03be9718baeebafec54f47c73856cc79cb1dfd0e338c849cd065c43ce8",
+      "changed": false
+    },
+    {
+      "name": "tsconfig.json",
+      "original": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/tsconfig.json",
+      "originalSha256": "0d8a169b990091c30aaff27bb0b8110e64c6cd6d0fb139c393deb5469d0dd1f6",
+      "derivativeSha256": "0d8a169b990091c30aaff27bb0b8110e64c6cd6d0fb139c393deb5469d0dd1f6",
+      "changed": false
+    }
+  ],
+  "inputBinding": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/binding-input.c6.json",
+    "sha256": "16e0337c1eb46e45dc81ad7cecacbad003613e9db107d56b9f69f4f558cdb3b2"
+  }
+}

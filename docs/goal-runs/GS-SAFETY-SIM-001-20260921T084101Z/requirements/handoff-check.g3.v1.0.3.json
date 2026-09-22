@@ -1,0 +1,15 @@
+{
+  "type": "product-document-editorial-check-not-QA",
+  "checkedAt": "2026-09-21T11:34:21.893Z",
+  "previous": "handoff-check.g3.v1.0.2.json",
+  "goalVersion": "1.0",
+  "goalChanged": false,
+  "scope": "Narrow RAG environment loading, corrected mobile role label and current submitted APK/USB-versus-LAN evidence",
+  "readmeBaselinePreserved": true,
+  "localLinksChecked": 58,
+  "missingLinks": [],
+  "artifactHashes": {
+    "docs/demo-runbook.md": "77d223335eb54be644228a2106e18d7634006bf5cf04743658588c5c0d340eac"
+  },
+  "status": "Product source stable for guarded copy; no QA verdict."
+}

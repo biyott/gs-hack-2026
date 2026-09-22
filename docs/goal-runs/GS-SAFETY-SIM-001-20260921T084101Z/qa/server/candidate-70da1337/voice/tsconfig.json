@@ -1,0 +1,17 @@
+{
+  "extends": "/home/b/.cache/gs-safety-ci.u7pR52/tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "types": ["node"],
+    "typeRoots": ["/home/b/.cache/gs-safety-ci.u7pR52/node_modules/@types"],
+    "paths": {
+      "@/contracts": ["/home/b/.cache/gs-safety-ci.u7pR52/packages/contracts/src/index.ts"],
+      "@gs-safety/contracts": ["/home/b/.cache/gs-safety-ci.u7pR52/packages/contracts/src/index.ts"],
+      "@/*": ["/home/b/.cache/gs-safety-ci.u7pR52/src/*"],
+      "qa-candidate/*": ["/home/b/.cache/gs-safety-ci.u7pR52/*"],
+      "vitest": ["/home/b/.cache/gs-safety-ci.u7pR52/node_modules/vitest/dist/index.d.ts"]
+    }
+  },
+  "include": ["./*.ts", "/home/b/.cache/gs-safety-ci.u7pR52/src/server/tracking/js-aruco2.d.ts"],
+  "exclude": []
+}

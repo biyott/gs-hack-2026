@@ -1,0 +1,57 @@
+{
+  "fixtureVersion": "2.0.0",
+  "extends": "fixtures-v1.json",
+  "supersedes": "delayed-supplement-fixture-v1.json",
+  "changeRecord": "QR003",
+  "goalId": "GS-SAFETY-SIM-001",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "testId": "S17",
+  "relatedClientTestId": "UI09-09",
+  "acceptanceCriteria": ["AC-08", "AC-09", "AC-10", "AC-11"],
+  "status": "NOT_RUN",
+  "modes": ["equipment", "fire-gas"],
+  "locales": ["ko", "en"],
+  "supplementReleaseGate": "actual primary speech started and not ended",
+  "playbackIdentityFields": ["runId", "workerId", "guidanceId", "primaryGuidanceVersion"],
+  "unchangedDependencies": [
+    "runId", "incidentId", "workerId", "guidanceId", "primaryGuidanceVersion",
+    "mapId", "mapVersion", "routeVersion", "profileVersion", "hazardIds"
+  ],
+  "unchangedPrimaryFields": [
+    "actionCode", "primaryMessage", "primaryMessageKey", "messageKey", "messageArgs",
+    "locale", "waypoints", "destinationId", "profileSnapshot", "generatedAt", "expiresAt"
+  ],
+  "supplementEnvelope": {
+    "guidanceVersionRelation": "supplement > primary and supplement > prior envelope",
+    "primaryGuidanceVersionRelation": "supplement == original primary",
+    "updateKind": "supplement",
+    "mode": "rag-assisted",
+    "requiresNonemptyEvidence": true,
+    "requiresSupplementalExplanation": true
+  },
+  "newPrimaryControl": {
+    "updateKind": "primary",
+    "primaryGuidanceVersionRelation": "primaryGuidanceVersion == guidanceVersion",
+    "expectedPrimaryTransitions": 1,
+    "oldPrimaryCallbackAccepted": false
+  },
+  "activePrimaryCallbackAcceptedAfterSupplement": true,
+  "supplementReceiptSeparateFromPrimaryPlayback": true,
+  "snapshotRevisionRoleIfPresent": "transport ordering only, never primary playback identity",
+  "firstGuidanceDigestRelation": "after augmentation, duplicate, reconnect and restart == original",
+  "expectedAugmentationInducedPrimaryDispatches": 0,
+  "expectedAugmentationInducedPrimaryAudioStarts": 0,
+  "expectedAugmentationInducedBeepStarts": 0,
+  "expectedAugmentationInducedPrimaryCancellations": 0,
+  "requiredProvenance": [
+    "documentId", "documentVersion", "chunkId", "provider", "model", "modelRevision",
+    "callIdentity", "actualOrMock", "validationOutcome"
+  ],
+  "recoveryChecks": ["duplicate-frame", "SSE-reconnect", "latest-HTTP-snapshot", "isolated-DB-process-restart"],
+  "negativeSibling": "route or profile invalidation during delay rejects stale supplement",
+  "evidenceBoundaries": {
+    "server": "dispatch, immutable envelope/primary lineage, HTTP/SSE, first/current persistence",
+    "rag": "actual retrieval, model call and validation provenance",
+    "uiDevice": "actual primary speech overlap, display, beep/TTS/callback/cancellation events"
+  }
+}

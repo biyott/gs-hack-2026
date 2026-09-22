@@ -1,0 +1,69 @@
+{
+  "kind": "REQUEST_ONLY_NOT_AN_EXECUTION_GRANT",
+  "owner": "/root/qa_resume/w2_rag",
+  "candidateId": "sha256:892f975f083d159e9d354e1bda511a2cf1b81bc4964a0c3335f69d9a498ca40b",
+  "candidateRoot": "/home/b/.cache/gs-safety-c6.pSgWxT",
+  "sourceFreeze": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/c6-source-freeze-v1.json",
+    "bytes": 69458,
+    "sha256": "07eba2c3349df15b5f355392fac87f6e0222d6d7705867e101f1b29909fa7709"
+  },
+  "receipt": {
+    "path": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/g3-freeze-c6.json",
+    "bytes": 11229,
+    "sha256": "537c1411b1dc3a1328aa098a58e789361bd5e7982a23ff776f745fef13dd3f50"
+  },
+  "maximumDurationSeconds": 120,
+  "maximumAttempts": 1,
+  "expectedRuntimeSeconds": 105,
+  "preconditions": [
+    "Explicit W1 release and parent W2 grant",
+    "Provider22562/startTicks163896 retained and ports4102/8093 free",
+    "W3 performs no model calls or API state changes throughout W2"
+  ],
+  "resources": {
+    "providerPid": 22562,
+    "providerStartTicks": "163896",
+    "model": "Exclusive actual8092",
+    "ownedPorts": [
+      4102,
+      8093
+    ],
+    "inspector": "Own-process session only; no TCP inspector"
+  },
+  "commands": [
+    {
+      "cwd": "/home/b/.cache/gs-safety-c6.pSgWxT",
+      "entry": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-w2-preparation-v1/bound/candidate-892f975f/main.ts",
+      "args": [
+        "--grant=W2",
+        "--attempt=module-attempt-01",
+        "--with-applicability",
+        "--with-stairs",
+        "--with-privacy",
+        "--with-engine-applicability"
+      ]
+    },
+    {
+      "cwd": "/home/b/.cache/gs-safety-c6.pSgWxT",
+      "entry": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-e5-inspector-v1/bound/launch-http.ts",
+      "args": [
+        "--grant=W2",
+        "--attempt=http-attempt-01"
+      ]
+    }
+  ],
+  "environment": {
+    "NODE_OPTIONS": "--max-old-space-size=1536",
+    "TSX_TSCONFIG_PATH": "/home/b/.cache/gs-safety-c6.pSgWxT/tsconfig.json"
+  },
+  "launcher": "/home/b/.local/share/gs-safety-runtime/node-v22.23.2-linux-x64/bin/node --import tsx",
+  "evidenceRoot": "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-892f975f",
+  "postprocessing": [
+    "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-e5-inspector-v1/scan-component-v1.mjs",
+    "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-e5-inspector-v1/scan-http-v1.mjs",
+    "/90-biyott@github/gs-hack-2026/docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/rag/c6-e5-inspector-v1/join-e5-v1.mjs"
+  ],
+  "oracle": "All original85 raw rows and failures preserved. Additive E5 capture does not alter original canaries/model/oracles or grant acceptance.",
+  "cleanup": "Exact owned launcher/app/capture handles only; preserve retained provider, prove free4102/8093 and release exclusive model immediately."
+}

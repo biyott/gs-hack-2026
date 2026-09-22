@@ -1,0 +1,3641 @@
+{
+  "reviewId": "QD008-C4-ENGINE-OBSERVATION-REVIEW-v1",
+  "reviewedAt": "2026-09-21T17:36:47.434986+00:00",
+  "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+  "manifestHash": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d",
+  "scope": "Independent files-only semantic and lineage review of fourteen existing direct-runtime/attachRag observations; no runtime, product imports, model calls, DB opens, tests or raw edits. Standard-library JSON/byte reads only.",
+  "overallVerdict": "NOT_ISSUED",
+  "rawResultsPreserved": true,
+  "findings": [
+    {
+      "classification": "VALID_ALTERNATE_SELECTION_EQ002_ACCEPTANCE_UNOBSERVED",
+      "cases": [
+        "direction-ko",
+        "direction-en"
+      ],
+      "finding": "Actual same-preset heading0 to -30 and new primary/route are established. EQ-002 was eligible, ranked by FTS/vector/fusion and supplied to actual Qwen alongside EQ-001. Raw responses selected index0 (EQ-001). The accepted and current published KO/EN explanations exactly match reviewed EQ-001 and preserve the engine primary fields. This is not evidence of a wrong applicability gate. EQ-002-specific actual accepted/publication coverage remains unobserved; do not convert it to PASS or force selection.",
+      "validAlternateBasis": "EQ-001 full body applies to equipment-assessed EQUIPMENT-A exposure with known worker position and current valid engine route/destination. Both direction cases have known WORKER-A, actual load hazard, FOLLOW_VALIDATED_ROUTE and a valid REFUGE-02 route."
+    },
+    {
+      "classification": "NEGATIVE_CURRENT_PRIMARY_EXCLUSION_OBSERVED",
+      "cases": 10,
+      "finding": "All ten negative observations carry both facts false and exclude EQ-002 and FG-002 from current eligible/ranked/model-input/result/current-publication stages. First-fire and fire profile-only cases use reviewed FG-004 under explicit evacuation and valid route; initial equipment uses EQ-001. Direction profile-only cases use GUIDANCE_UPDATED, empty hazardTypes and no_match with no model invocation."
+    },
+    {
+      "classification": "FG002_GENUINE_CAUSAL_POSITIVE_OBSERVED",
+      "cases": [
+        "fire-reroute-ko",
+        "fire-reroute-en"
+      ],
+      "finding": "Prior north route exists before virtual8000. Same-time PATH-B block and FIRE-ZONE-B growth invalidate that old route; the south/east replacement avoids the expanded fire and matches captured engine route. Same-run/worker primary1/route1 becomes primary3/route2, explicit evacuation retained. Actual model selects FG-002 and current supplement4 publishes the exact reviewed KO/EN sentence. Attribution is joint fire growth/closure, not initial first fire or closure label alone."
+    },
+    {
+      "classification": "HISTORICAL_EVIDENCE_REQUIRES_PRIMARY_SCOPE",
+      "finding": "FG post-event profile-only artifacts retain older FG-002 rows in guidance_evidence under a stable guidanceId. New primary5/supplement6 contains only FG-004, and its retrieval/model/result excludes FG-002. Historical table membership alone must not be relabeled as a new-primary publication failure."
+    }
+  ],
+  "summaryChecks": {
+    "observationCount": 14,
+    "negativeCount": 10,
+    "allNegativeCurrentStagesExcludeBothScopedDocuments": true,
+    "allFourteenImmutablePrimaryFieldsPreserved": true,
+    "allFourteenEligibleComparisonsEqual": true,
+    "rawSettlement": {
+      "settled": true,
+      "pendingOperations": 0,
+      "elapsedMs": 24.97245400000247
+    },
+    "rawDisposedAfterSettle": true,
+    "reviewJoinIssues": []
+  },
+  "joinMethod": "ServiceCallIndex joins provider wrapper captures. Generation row joins exact ragRunId, then callId plus provider-message hash to proxy; request/response bytes hashed independently. Retrieval joins same run, exact facts, service interval and resident embedding output vector; no-embedding no_match joins empty-vector retrieval in that exact interval. First primary re-located from raw history by run/worker/guidanceId/primaryGuidanceVersion. Stable guidanceId and responseHash alone are insufficient: many selection0 responses share the same message hash.",
+  "sourceBodies": [
+    {
+      "documentId": "EQ-001",
+      "version": "0.1.0",
+      "sourceSha256": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+      "reviewedContentHash": "72c885c61053a5bfddc1f27cf841cb1e5cace93ab19888bdbbacce7bdde5c2ca",
+      "reviewedTextHashes": {
+        "ko": "13c90266f5ad5b8ba7520adee6ab6cba325bcf322445b0d73b46b51e74d40d0d",
+        "en": "c34eb7b0c9fb300dd3ff566e6666a56034739dc63d00c978f36fea422912e89f"
+      },
+      "beforeAfterIdentical": true
+    },
+    {
+      "documentId": "EQ-002",
+      "version": "0.1.0",
+      "sourceSha256": "b10f6892ec886a96f1570909095991319adb8ad1e758ab43aca75f9da1a4dd0c",
+      "reviewedContentHash": "2d08eedcc93b31279b448e3f563562973dafe5d66b86a13162096ff0d7de686e",
+      "reviewedTextHashes": {
+        "ko": "732088a4dd51871ec66338a7a9208b397c71503eb9a6c7867feab99101f42770",
+        "en": "8a598c135874a5f5f1b92914551ae9f3b6b93403f408023ee6ef50791f19e76c"
+      },
+      "beforeAfterIdentical": true
+    },
+    {
+      "documentId": "FG-002",
+      "version": "0.1.0",
+      "sourceSha256": "890827a5b140b5ed3e98a8bb70fc3f8d7aa6b6aa23ceb4fcb91ac609ffdee0d8",
+      "reviewedContentHash": "17f8045c0de73635d70d2931df3ce93047b554f3598caca1c6f658936e7c41ce",
+      "reviewedTextHashes": {
+        "ko": "914103a11f4af3f4cc8ffea65961401c3a38acefc2a05ecc1a4e4c1e02e49300",
+        "en": "79164b0c52f543712c1d01735e3380a60500b8ccaf658cdf9f4f7d37b0075924"
+      },
+      "beforeAfterIdentical": true
+    },
+    {
+      "documentId": "FG-004",
+      "version": "0.1.0",
+      "sourceSha256": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b",
+      "reviewedContentHash": "e3417aa152fa5dd5c7b64f98b0739ec846277db5c029e43c0410c3e0c3712859",
+      "reviewedTextHashes": {
+        "ko": "5113facfab40cae0fe6a0be8a3e2e772a4d34370a17f0094c5cf145de1973796",
+        "en": "68cd1b48443c94c8648fb23e8c0fa4ae14c496cdcf3ad117ce91718edf8559b4"
+      },
+      "beforeAfterIdentical": true
+    }
+  ],
+  "limits": [
+    "No overall candidate acceptance or original85 reassessment is issued.",
+    "Direct durable/runtime publication only; captured engine transmission attempts have zero connected subscriptions, so this does not establish HTTP/SSE delivery or physical UI/audio.",
+    "The fourteen controlled09:30/live eligible comparisons were observed equal for these requests only; no global time equivalence is inferred.",
+    "EQ-002 actual-model acceptance and current EQ-002 publication remain unobserved in both causal direction cases.",
+    "Captured booleans were corroborated with raw snapshots/events; no production fact, query, corpus, source approval or raw result was changed."
+  ],
+  "observations": [
+    {
+      "id": "first-fire-ko",
+      "kind": "first-fire-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-ko.json",
+      "sha256": "c7898749aa6a7ba1aa1cd8ca798ca4c22be58ca6cb1cb4e26e63ba2b101c42df",
+      "runId": "b755a5bc-b472-41f4-a944-70d85f3c6d2c",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:b755a5bc-b472-41f4-a944-70d85f3c6d2c:9beb77a3-4517-409f-90e9-980d086f7b51:WORKER-A",
+      "primaryGuidanceVersion": 1,
+      "currentGuidanceVersion": 2,
+      "profileVersion": 1,
+      "routeVersion": 1,
+      "locale": "ko",
+      "serviceCallIndex": 2,
+      "inputQuery": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요. fire FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "cef2fdad-1230-44d1-954f-6caa642e446f",
+          "startedAt": "2026-09-21T17:28:33.463Z",
+          "completedAt": "2026-09-21T17:28:33.482Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 6.554335949368134
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.8808131348737978
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.03278688524590164
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "FG-004",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "contentHash": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "ko",
+          "supplementalExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+          "evidence": [
+            {
+              "documentId": "FG-004",
+              "documentVersion": "0.1.0",
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+            }
+          ]
+        },
+        "ragRunId": "5a0c2496-2381-4ab5-afaa-d17327e9bb43"
+      },
+      "elapsedMs": 635.9344730000012,
+      "generationRecord": {
+        "id": "5a0c2496-2381-4ab5-afaa-d17327e9bb43",
+        "startedAt": "2026-09-21T17:28:33.449Z",
+        "completedAt": "2026-09-21T17:28:34.083Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:b755a5bc-b472-41f4-a944-70d85f3c6d2c:9beb77a3-4517-409f-90e9-980d086f7b51:WORKER-A",
+          "callId": "chatcmpl-N6afHqYUlwJQMN5hiiLAg024DSgC8o16",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 33.466815000007045,
+          "generationMs": 600.3864989999929,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "ko",
+            "supplementalExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+            "evidence": [
+              {
+                "documentId": "FG-004",
+                "documentVersion": "0.1.0",
+                "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "00ac0613-37bb-47c7-87c9-bb5c0c91f1d9",
+          "callId": "chatcmpl-N6afHqYUlwJQMN5hiiLAg024DSgC8o16",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "FG-004"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "FG-004",
+          "requestSha256": "db09bcf4ffb6fd065460735fe2a62b4992cc672cd228360694e3f174f4957dad",
+          "responseSha256": "cf2a5a47c962708a1657748db345de3102c0364e89308b8694ce0ac589272d06",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "FG-004",
+          "documentVersion": "0.1.0",
+          "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+        }
+      ],
+      "publishedExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+      "publicationAudit": [
+        {
+          "eventId": "68f8c083-529f-4714-ada8-673c9ab01ab7",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:34.084Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:b755a5bc-b472-41f4-a944-70d85f3c6d2c:9beb77a3-4517-409f-90e9-980d086f7b51:WORKER-A",
+            "guidanceVersion": 2,
+            "primaryGuidanceVersion": 1,
+            "ragRunId": "5a0c2496-2381-4ab5-afaa-d17327e9bb43",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 2,
+        "runVersion": 2,
+        "virtualTimeMs": 1000,
+        "previousRunVersion": 1,
+        "previousPrimaryVersion": null,
+        "previousRouteVersion": null,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": null,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": []
+    },
+    {
+      "id": "first-fire-ko-profile-only",
+      "kind": "profile-only-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-ko-profile-only.json",
+      "sha256": "d64f65e08b521d671b515fc29a24ad8e46e81c2691507c2558067157188adda4",
+      "runId": "b755a5bc-b472-41f4-a944-70d85f3c6d2c",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:b755a5bc-b472-41f4-a944-70d85f3c6d2c:9beb77a3-4517-409f-90e9-980d086f7b51:WORKER-A",
+      "primaryGuidanceVersion": 3,
+      "currentGuidanceVersion": 4,
+      "profileVersion": 2,
+      "routeVersion": 1,
+      "locale": "ko",
+      "serviceCallIndex": 3,
+      "inputQuery": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요. fire FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "3424c2ef-b717-45ed-9946-5d36c37d3eba",
+          "startedAt": "2026-09-21T17:28:34.156Z",
+          "completedAt": "2026-09-21T17:28:34.174Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 6.554335949368134
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.8808131348737978
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.03278688524590164
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "FG-004",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "contentHash": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "ko",
+          "supplementalExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+          "evidence": [
+            {
+              "documentId": "FG-004",
+              "documentVersion": "0.1.0",
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+            }
+          ]
+        },
+        "ragRunId": "40ce3c7d-6b2c-49aa-9749-04e387f7ba7e"
+      },
+      "elapsedMs": 269.84304999999586,
+      "generationRecord": {
+        "id": "40ce3c7d-6b2c-49aa-9749-04e387f7ba7e",
+        "startedAt": "2026-09-21T17:28:34.146Z",
+        "completedAt": "2026-09-21T17:28:34.413Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:b755a5bc-b472-41f4-a944-70d85f3c6d2c:9beb77a3-4517-409f-90e9-980d086f7b51:WORKER-A",
+          "callId": "chatcmpl-n12WH4mdQKEOTBVmsW6fWTFI5ilQMIC7",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 28.512415999997756,
+          "generationMs": 238.75354399999924,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "ko",
+            "supplementalExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+            "evidence": [
+              {
+                "documentId": "FG-004",
+                "documentVersion": "0.1.0",
+                "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "c50a2492-3bc2-4f3f-8362-bb61b9771a65",
+          "callId": "chatcmpl-n12WH4mdQKEOTBVmsW6fWTFI5ilQMIC7",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "FG-004"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "FG-004",
+          "requestSha256": "db09bcf4ffb6fd065460735fe2a62b4992cc672cd228360694e3f174f4957dad",
+          "responseSha256": "2efbfe31b7ebfd00c6779009ecc680447eedce404c423c6e5de9ecac15976183",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "FG-004",
+          "documentVersion": "0.1.0",
+          "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+        }
+      ],
+      "publishedExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+      "publicationAudit": [
+        {
+          "eventId": "53d2a248-1093-4150-b4cf-624509d20ea4",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:34.414Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:b755a5bc-b472-41f4-a944-70d85f3c6d2c:9beb77a3-4517-409f-90e9-980d086f7b51:WORKER-A",
+            "guidanceVersion": 4,
+            "primaryGuidanceVersion": 3,
+            "ragRunId": "40ce3c7d-6b2c-49aa-9749-04e387f7ba7e",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 5,
+        "runVersion": 5,
+        "virtualTimeMs": 1000,
+        "previousRunVersion": 4,
+        "previousPrimaryVersion": 1,
+        "previousRouteVersion": 1,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": true,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": []
+    },
+    {
+      "id": "fire-reroute-ko",
+      "kind": "fire-reroute-positive",
+      "rawPositiveCapture": "SCOPED_ACCEPTANCE_CAPTURED_FOR_REVIEW",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-ko.json",
+      "sha256": "d6f7dc0c774b1bd05c9bfc692f93dea0ab3fe2a2b12b296dd189d97e952d0a0a",
+      "runId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:3d8c3a42-80d7-4037-984a-abc2da4ec5b3:1fdc4178-f580-4769-b4b6-18256576babc:WORKER-A",
+      "primaryGuidanceVersion": 3,
+      "currentGuidanceVersion": 4,
+      "profileVersion": 1,
+      "routeVersion": 2,
+      "locale": "ko",
+      "serviceCallIndex": 5,
+      "inputQuery": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요. fire FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": true,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "a90eca39-3e5e-46b9-880e-df547ff9a19d",
+          "startedAt": "2026-09-21T17:28:34.937Z",
+          "completedAt": "2026-09-21T17:28:34.955Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": true,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 6.554335949368134
+            },
+            {
+              "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure",
+              "score": 2.9583023402460746
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure",
+              "score": 0.8843658021975707
+            },
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.8808131348737978
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure",
+              "score": 0.03252247488101534
+            },
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.03252247488101534
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "FG-002",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure",
+            "contentHash": "890827a5b140b5ed3e98a8bb70fc3f8d7aa6b6aa23ceb4fcb91ac609ffdee0d8"
+          },
+          {
+            "documentId": "FG-004",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "contentHash": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "ko",
+          "supplementalExplanation": "화재가 기존 경로에 영향을 주는 경우 엔진이 경로를 다시 평가합니다. 안내 설명의 적용 여부는 현재 안내·경로 버전의 일치로 확인됩니다.",
+          "evidence": [
+            {
+              "documentId": "FG-002",
+              "documentVersion": "0.1.0",
+              "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+            }
+          ]
+        },
+        "ragRunId": "7688be2f-a459-426b-99f5-d05b0473db95"
+      },
+      "elapsedMs": 429.0405150000006,
+      "generationRecord": {
+        "id": "7688be2f-a459-426b-99f5-d05b0473db95",
+        "startedAt": "2026-09-21T17:28:34.905Z",
+        "completedAt": "2026-09-21T17:28:35.331Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:3d8c3a42-80d7-4037-984a-abc2da4ec5b3:1fdc4178-f580-4769-b4b6-18256576babc:WORKER-A",
+          "callId": "chatcmpl-PYYDprRCi1nsTuX9IhlolDu3L8w3Tbk5",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 49.97099999999773,
+          "generationMs": 376.0316190000012,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "ko",
+            "supplementalExplanation": "화재가 기존 경로에 영향을 주는 경우 엔진이 경로를 다시 평가합니다. 안내 설명의 적용 여부는 현재 안내·경로 버전의 일치로 확인됩니다.",
+            "evidence": [
+              {
+                "documentId": "FG-002",
+                "documentVersion": "0.1.0",
+                "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "4208bc36-4998-4b45-ba70-f066f06ad69e",
+          "callId": "chatcmpl-PYYDprRCi1nsTuX9IhlolDu3L8w3Tbk5",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "FG-002",
+            "FG-004"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "FG-002",
+          "requestSha256": "66fc7f19170f3cf9b41c9af37bfe49f6af9ec5f22572615a34ea567f245073b4",
+          "responseSha256": "91b27a9913d301ef93e4594719e86dd9a5488d638f4cd90c71f1295d33be2ea8",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "FG-002",
+          "documentVersion": "0.1.0",
+          "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+        }
+      ],
+      "publishedExplanation": "화재가 기존 경로에 영향을 주는 경우 엔진이 경로를 다시 평가합니다. 안내 설명의 적용 여부는 현재 안내·경로 버전의 일치로 확인됩니다.",
+      "publicationAudit": [
+        {
+          "eventId": "8b0128ce-d2a8-405a-bfdf-5c120dd5396a",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:35.332Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:3d8c3a42-80d7-4037-984a-abc2da4ec5b3:1fdc4178-f580-4769-b4b6-18256576babc:WORKER-A",
+            "guidanceVersion": 4,
+            "primaryGuidanceVersion": 3,
+            "ragRunId": "7688be2f-a459-426b-99f5-d05b0473db95",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 6,
+        "runVersion": 6,
+        "virtualTimeMs": 8000,
+        "previousRunVersion": 5,
+        "previousPrimaryVersion": 1,
+        "previousRouteVersion": 1,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": false,
+      "causalHistory": {
+        "beforeEquipment": {
+          "presetId": "sk1265-at6",
+          "position": {
+            "x": 30,
+            "y": 25
+          },
+          "headingDeg": 0,
+          "slewDeg": 0,
+          "geometryVersion": 1
+        },
+        "afterEquipment": {
+          "presetId": "sk1265-at6",
+          "position": {
+            "x": 30,
+            "y": 25
+          },
+          "headingDeg": 0,
+          "slewDeg": 0,
+          "geometryVersion": 1
+        },
+        "previousGuide": {
+          "guidanceVersion": 2,
+          "primaryGuidanceVersion": 1,
+          "routeVersion": 1,
+          "destinationId": "ASSEMBLY-01",
+          "profileVersion": 1,
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 42,
+              "nodeId": "J-B-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 42,
+              "nodeId": "J-B-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 42,
+              "nodeId": "J-B-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 42,
+              "nodeId": "REFUGE-02",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 132,
+              "y": 42,
+              "nodeId": "ASSEMBLY-01",
+              "floorId": "GROUND"
+            }
+          ]
+        },
+        "currentPrimary": {
+          "guidanceVersion": 3,
+          "primaryGuidanceVersion": 3,
+          "routeVersion": 2,
+          "destinationId": "ASSEMBLY-01",
+          "profileVersion": 1,
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 8,
+              "nodeId": "J-A-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 8,
+              "nodeId": "J-A-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 8,
+              "nodeId": "J-A-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 8,
+              "nodeId": "REFUGE-01",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 132,
+              "y": 8,
+              "nodeId": "J-A-132",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 132,
+              "y": 42,
+              "nodeId": "ASSEMBLY-01",
+              "floorId": "GROUND"
+            }
+          ]
+        },
+        "newScenarioEvents": [
+          {
+            "eventId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3:FG-ROUTE-BLOCK-003",
+            "incidentId": null,
+            "runId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3",
+            "kind": "scenario.route.block",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:34.867Z",
+            "detail": "{\"id\":\"FG-ROUTE-BLOCK-003\",\"atMs\":8000,\"type\":\"route.block\",\"pathIds\":[\"PATH-B\"]}",
+            "version": 4
+          },
+          {
+            "eventId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3:FG-ROUTE-BLOCK-004",
+            "incidentId": null,
+            "runId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3",
+            "kind": "scenario.hazard.upsert",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:34.867Z",
+            "detail": "{\"id\":\"FG-ROUTE-BLOCK-004\",\"atMs\":8000,\"type\":\"hazard.upsert\",\"hazard\":{\"id\":\"FIRE-ZONE-B\",\"type\":\"fire\",\"zoneId\":\"ZONE-B\",\"polygon\":[{\"x\":60,\"y\":20},{\"x\":98,\"y\":20},{\"x\":98,\"y\":43},{\"x\":60,\"y\":43}],\"active\":true}}",
+            "version": 4
+          },
+          {
+            "eventId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3:FG-ROUTE-BLOCK-007",
+            "incidentId": null,
+            "runId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3",
+            "kind": "scenario.sensor.reading",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:34.867Z",
+            "detail": "{\"id\":\"FG-ROUTE-BLOCK-007\",\"atMs\":8000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-FIRE-B\",\"hazardType\":\"fire\",\"zoneId\":\"ZONE-B\",\"value\":1,\"unit\":\"demo-index\",\"materialId\":null,\"observedAtMs\":8000,\"source\":\"mock\",\"connected\":true}}",
+            "version": 4
+          },
+          {
+            "eventId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3:FG-ROUTE-BLOCK-008",
+            "incidentId": null,
+            "runId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3",
+            "kind": "scenario.sensor.reading",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:34.867Z",
+            "detail": "{\"id\":\"FG-ROUTE-BLOCK-008\",\"atMs\":8000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-GAS-B\",\"hazardType\":\"gas\",\"zoneId\":\"ZONE-B\",\"value\":0,\"unit\":\"demo-index\",\"materialId\":\"DEMO-GAS-X\",\"observedAtMs\":8000,\"source\":\"mock\",\"connected\":true}}",
+            "version": 4
+          }
+        ],
+        "publicationAnchors": [
+          {
+            "eventId": "82aa6d12-aaa5-43b7-b6ad-9184796140aa",
+            "incidentId": "1fdc4178-f580-4769-b4b6-18256576babc",
+            "runId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3",
+            "kind": "guidance.generated",
+            "actorId": "engine",
+            "occurredAt": "2026-09-21T17:28:34.867Z",
+            "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3d8c3a42-80d7-4037-984a-abc2da4ec5b3:1fdc4178-f580-4769-b4b6-18256576babc:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":0}",
+            "version": 3
+          },
+          {
+            "eventId": "ae1d8b67-014e-483d-afd4-7fa05393b50c",
+            "incidentId": "1fdc4178-f580-4769-b4b6-18256576babc",
+            "runId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3",
+            "kind": "guidance.transmission-attempt",
+            "actorId": "engine",
+            "occurredAt": "2026-09-21T17:28:34.867Z",
+            "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3d8c3a42-80d7-4037-984a-abc2da4ec5b3:1fdc4178-f580-4769-b4b6-18256576babc:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":0}",
+            "version": 3
+          }
+        ],
+        "firstGuidanceStable": true,
+        "capturedIndependentEngineRouteMatches": true
+      }
+    },
+    {
+      "id": "fire-reroute-ko-profile-only",
+      "kind": "profile-only-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-ko-profile-only.json",
+      "sha256": "e000da391fe51bd821c834ebb557939a3fab4c3928a6a03a9978cbd5dbc1623f",
+      "runId": "3d8c3a42-80d7-4037-984a-abc2da4ec5b3",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:3d8c3a42-80d7-4037-984a-abc2da4ec5b3:1fdc4178-f580-4769-b4b6-18256576babc:WORKER-A",
+      "primaryGuidanceVersion": 5,
+      "currentGuidanceVersion": 6,
+      "profileVersion": 2,
+      "routeVersion": 2,
+      "locale": "ko",
+      "serviceCallIndex": 7,
+      "inputQuery": "표시된 유효 경로를 따라 ASSEMBLY-01(으)로 이동하세요. fire FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "77d4f5ea-9613-44c5-9d74-8a06536aa4df",
+          "startedAt": "2026-09-21T17:28:36.010Z",
+          "completedAt": "2026-09-21T17:28:36.027Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 6.554335949368134
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.8808131348737978
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.03278688524590164
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "FG-004",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "contentHash": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "ko",
+          "supplementalExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+          "evidence": [
+            {
+              "documentId": "FG-004",
+              "documentVersion": "0.1.0",
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+            }
+          ]
+        },
+        "ragRunId": "dfefb8d5-c05d-4f55-867b-18fb4554f8f0"
+      },
+      "elapsedMs": 283.9985979999983,
+      "generationRecord": {
+        "id": "dfefb8d5-c05d-4f55-867b-18fb4554f8f0",
+        "startedAt": "2026-09-21T17:28:35.998Z",
+        "completedAt": "2026-09-21T17:28:36.279Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:3d8c3a42-80d7-4037-984a-abc2da4ec5b3:1fdc4178-f580-4769-b4b6-18256576babc:WORKER-A",
+          "callId": "chatcmpl-1qiDQw6cY2vzGTUXwAVsvqSUnVEUPj1y",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 31.00585599999613,
+          "generationMs": 249.81358600000385,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "ko",
+            "supplementalExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+            "evidence": [
+              {
+                "documentId": "FG-004",
+                "documentVersion": "0.1.0",
+                "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "817f5528-0c86-48c0-84a2-2bcf8bb66a0b",
+          "callId": "chatcmpl-1qiDQw6cY2vzGTUXwAVsvqSUnVEUPj1y",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "FG-004"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "FG-004",
+          "requestSha256": "db09bcf4ffb6fd065460735fe2a62b4992cc672cd228360694e3f174f4957dad",
+          "responseSha256": "8fb6f666bd4e53ed62e63946eedb335630adec547b7f932b64d736c1fc8576e3",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "FG-004",
+          "documentVersion": "0.1.0",
+          "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+        }
+      ],
+      "publishedExplanation": "이 이동 설명은 명시된 시나리오 이동 정책과 현재 검증 경로가 함께 있는 경우에만 적용됩니다.",
+      "publicationAudit": [
+        {
+          "eventId": "b36ffb51-7f07-4b07-8c13-987c4201a1dc",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:36.279Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:3d8c3a42-80d7-4037-984a-abc2da4ec5b3:1fdc4178-f580-4769-b4b6-18256576babc:WORKER-A",
+            "guidanceVersion": 6,
+            "primaryGuidanceVersion": 5,
+            "ragRunId": "dfefb8d5-c05d-4f55-867b-18fb4554f8f0",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 10,
+        "runVersion": 10,
+        "virtualTimeMs": 8000,
+        "previousRunVersion": 9,
+        "previousPrimaryVersion": 3,
+        "previousRouteVersion": 2,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": true,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": [
+        {
+          "guidance_id": "GUIDANCE:3d8c3a42-80d7-4037-984a-abc2da4ec5b3:1fdc4178-f580-4769-b4b6-18256576babc:WORKER-A",
+          "document_id": "FG-002",
+          "document_version": "0.1.0",
+          "chunk_id": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+        }
+      ]
+    },
+    {
+      "id": "initial-equipment-ko",
+      "kind": "initial-equipment-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/initial-equipment-ko.json",
+      "sha256": "e88bf0533a91cfd33418a4ee3c3cc71786c1d2aa00fcddce77fd408c5448cdac",
+      "runId": "6bd391d8-0721-4f8a-89d8-5f4a250915b8",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A",
+      "primaryGuidanceVersion": 1,
+      "currentGuidanceVersion": 2,
+      "profileVersion": 1,
+      "routeVersion": 1,
+      "locale": "ko",
+      "serviceCallIndex": 8,
+      "inputQuery": "표시된 유효 경로를 따라 REFUGE-01(으)로 이동하세요. equipment FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "daac6321-cc7d-4eea-aa2e-b28d44a773da",
+          "startedAt": "2026-09-21T17:28:36.452Z",
+          "completedAt": "2026-09-21T17:28:36.468Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 3.8664619278751076
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.886999803421616
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.03278688524590164
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "EQ-001",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+            "contentHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "ko",
+          "supplementalExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+          "evidence": [
+            {
+              "documentId": "EQ-001",
+              "documentVersion": "0.1.0",
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+            }
+          ]
+        },
+        "ragRunId": "98f944cc-8325-434a-a5b3-1e9ffa62aebe"
+      },
+      "elapsedMs": 295.4188520000025,
+      "generationRecord": {
+        "id": "98f944cc-8325-434a-a5b3-1e9ffa62aebe",
+        "startedAt": "2026-09-21T17:28:36.441Z",
+        "completedAt": "2026-09-21T17:28:36.735Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A",
+          "callId": "chatcmpl-WrIk3F1vOvj68rLEUdFdFZBR8pGbcvDh",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 27.052354999999807,
+          "generationMs": 266.81326300000364,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "ko",
+            "supplementalExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+            "evidence": [
+              {
+                "documentId": "EQ-001",
+                "documentVersion": "0.1.0",
+                "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "ae9621a8-d019-4452-b5f7-53445f8dad26",
+          "callId": "chatcmpl-WrIk3F1vOvj68rLEUdFdFZBR8pGbcvDh",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "EQ-001"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "EQ-001",
+          "requestSha256": "8aa2ec0eb70deb459e8af5b02b6d394aa9f5b0050751e4a1ccc672b7b9ab1c9b",
+          "responseSha256": "2d4c87cba361d1cc47d13a42a763229b7d856677ead4c29bd9cdf24bfe497243",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "EQ-001",
+          "documentVersion": "0.1.0",
+          "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+        }
+      ],
+      "publishedExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+      "publicationAudit": [
+        {
+          "eventId": "d066aade-90f5-4419-82a4-7f37fd24c1c7",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:36.735Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A",
+            "guidanceVersion": 2,
+            "primaryGuidanceVersion": 1,
+            "ragRunId": "98f944cc-8325-434a-a5b3-1e9ffa62aebe",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 4,
+        "runVersion": 4,
+        "virtualTimeMs": 4000,
+        "previousRunVersion": 3,
+        "previousPrimaryVersion": null,
+        "previousRouteVersion": null,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": null,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": []
+    },
+    {
+      "id": "direction-ko",
+      "kind": "direction-positive",
+      "rawPositiveCapture": "SCOPED_ACCEPTANCE_NOT_OBSERVED",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-ko.json",
+      "sha256": "0cc073fb52a8677804950d47974c7f8aeb84452daf2cba413baac077c607104f",
+      "runId": "6bd391d8-0721-4f8a-89d8-5f4a250915b8",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A",
+      "primaryGuidanceVersion": 3,
+      "currentGuidanceVersion": 4,
+      "profileVersion": 1,
+      "routeVersion": 2,
+      "locale": "ko",
+      "serviceCallIndex": 9,
+      "inputQuery": "표시된 유효 경로를 따라 REFUGE-02(으)로 이동하세요. equipment FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": true
+      },
+      "retrieval": [
+        {
+          "id": "45347a3d-75db-423e-8a34-3e2bb17b78b8",
+          "startedAt": "2026-09-21T17:28:36.824Z",
+          "completedAt": "2026-09-21T17:28:36.840Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": true
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 3.8664619278751076
+            },
+            {
+              "chunkId": "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+              "score": 2.6710840559360864
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+              "score": 0.8867310584734561
+            },
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.8823976870497017
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.03252247488101534
+            },
+            {
+              "chunkId": "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+              "score": 0.03252247488101534
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "EQ-001",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+            "contentHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004"
+          },
+          {
+            "documentId": "EQ-002",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+            "contentHash": "b10f6892ec886a96f1570909095991319adb8ad1e758ab43aca75f9da1a4dd0c"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "ko",
+          "supplementalExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+          "evidence": [
+            {
+              "documentId": "EQ-001",
+              "documentVersion": "0.1.0",
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+            }
+          ]
+        },
+        "ragRunId": "61a19582-910d-442e-a69e-abeea8dff15e"
+      },
+      "elapsedMs": 772.792481000004,
+      "generationRecord": {
+        "id": "61a19582-910d-442e-a69e-abeea8dff15e",
+        "startedAt": "2026-09-21T17:28:36.812Z",
+        "completedAt": "2026-09-21T17:28:37.582Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A",
+          "callId": "chatcmpl-MKJCY5U5M3uqc1xUwEjNZEXMeZtwVHKs",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 28.472039000000223,
+          "generationMs": 741.8709939999972,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "ko",
+            "supplementalExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+            "evidence": [
+              {
+                "documentId": "EQ-001",
+                "documentVersion": "0.1.0",
+                "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "26baf5b0-14d1-44d1-b016-3508e8ec129a",
+          "callId": "chatcmpl-MKJCY5U5M3uqc1xUwEjNZEXMeZtwVHKs",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "EQ-001",
+            "EQ-002"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "EQ-001",
+          "requestSha256": "e098a660de5e93b177ea2386eb0f9f16b7b974e3af58a4b551ff9ce9d3421cc5",
+          "responseSha256": "f69c0395b1ae5ec8685cd2ae4f3ad4b4cf177a7c6236e9e5c64e6217d818c996",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "EQ-001",
+          "documentVersion": "0.1.0",
+          "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+        }
+      ],
+      "publishedExplanation": "이 경보는 서버의 중장비 영향 대상 판단에 연결되며 경로와 목적지는 경로 엔진에서 결정됩니다.",
+      "publicationAudit": [
+        {
+          "eventId": "3e4c1689-c49c-40f6-aa43-07fcf86fabde",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:37.583Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A",
+            "guidanceVersion": 4,
+            "primaryGuidanceVersion": 3,
+            "ragRunId": "61a19582-910d-442e-a69e-abeea8dff15e",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 7,
+        "runVersion": 7,
+        "virtualTimeMs": 8000,
+        "previousRunVersion": 6,
+        "previousPrimaryVersion": 1,
+        "previousRouteVersion": 1,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": false,
+      "causalHistory": {
+        "beforeEquipment": {
+          "presetId": "sk1265-at6",
+          "position": {
+            "x": 30,
+            "y": 25
+          },
+          "headingDeg": 0,
+          "slewDeg": 0,
+          "geometryVersion": 4
+        },
+        "afterEquipment": {
+          "presetId": "sk1265-at6",
+          "position": {
+            "x": 35,
+            "y": 25
+          },
+          "headingDeg": -30,
+          "slewDeg": 0,
+          "geometryVersion": 5
+        },
+        "previousGuide": {
+          "guidanceVersion": 2,
+          "primaryGuidanceVersion": 1,
+          "routeVersion": 1,
+          "destinationId": "REFUGE-01",
+          "profileVersion": 1,
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 8,
+              "nodeId": "J-A-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 8,
+              "nodeId": "J-A-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 8,
+              "nodeId": "J-A-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 8,
+              "nodeId": "REFUGE-01",
+              "floorId": "GROUND"
+            }
+          ]
+        },
+        "currentPrimary": {
+          "guidanceVersion": 3,
+          "primaryGuidanceVersion": 3,
+          "routeVersion": 2,
+          "destinationId": "REFUGE-02",
+          "profileVersion": 1,
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 42,
+              "nodeId": "J-B-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 42,
+              "nodeId": "J-B-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 42,
+              "nodeId": "J-B-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 42,
+              "nodeId": "REFUGE-02",
+              "floorId": "GROUND"
+            }
+          ]
+        },
+        "newScenarioEvents": [
+          {
+            "eventId": "6bd391d8-0721-4f8a-89d8-5f4a250915b8:EQ-SPEED-DIRECTION-003",
+            "incidentId": null,
+            "runId": "6bd391d8-0721-4f8a-89d8-5f4a250915b8",
+            "kind": "scenario.equipment.pose",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:36.786Z",
+            "detail": "{\"id\":\"EQ-SPEED-DIRECTION-003\",\"atMs\":8000,\"type\":\"equipment.pose\",\"position\":{\"x\":35,\"y\":25},\"headingDeg\":-30,\"speedMps\":3,\"slewDeg\":0}",
+            "version": 6
+          }
+        ],
+        "publicationAnchors": [
+          {
+            "eventId": "f0c5ca81-ee8d-470d-9356-2fec6ed64ef9",
+            "incidentId": "1871ecba-34ac-410b-a879-17e983380dda",
+            "runId": "6bd391d8-0721-4f8a-89d8-5f4a250915b8",
+            "kind": "guidance.generated",
+            "actorId": "engine",
+            "occurredAt": "2026-09-21T17:28:36.786Z",
+            "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":0}",
+            "version": 3
+          },
+          {
+            "eventId": "695eeac5-875a-4cd7-9f4c-e741cb860ddc",
+            "incidentId": "1871ecba-34ac-410b-a879-17e983380dda",
+            "runId": "6bd391d8-0721-4f8a-89d8-5f4a250915b8",
+            "kind": "guidance.transmission-attempt",
+            "actorId": "engine",
+            "occurredAt": "2026-09-21T17:28:36.786Z",
+            "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":0}",
+            "version": 3
+          }
+        ],
+        "firstGuidanceStable": true,
+        "capturedIndependentEngineRouteMatches": true
+      }
+    },
+    {
+      "id": "direction-ko-profile-only",
+      "kind": "profile-only-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-ko-profile-only.json",
+      "sha256": "486233a52c8c377eaa5cb4d69491ca4f311d04a4b25b4a7b1ae36b6758df56f0",
+      "runId": "6bd391d8-0721-4f8a-89d8-5f4a250915b8",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A",
+      "primaryGuidanceVersion": 5,
+      "currentGuidanceVersion": 5,
+      "profileVersion": 2,
+      "routeVersion": null,
+      "locale": "ko",
+      "serviceCallIndex": 10,
+      "inputQuery": "안내가 변경되었습니다. 최신 행동 안내를 확인하세요. equipment GUIDANCE_UPDATED",
+      "actionCode": "GUIDANCE_UPDATED",
+      "scenarioPolicy": null,
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "41af141e-6a3d-46db-b388-5440af70dbde",
+          "startedAt": "2026-09-21T17:28:37.677Z",
+          "completedAt": "2026-09-21T17:28:37.681Z",
+          "outcome": "no_match",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "hazard",
+                "action"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven",
+                "movement-policy-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "policy",
+                "action"
+              ]
+            }
+          ],
+          "fts": [],
+          "vector": [],
+          "fused": []
+        }
+      ],
+      "modelInputChunks": [],
+      "serviceOutcome": {
+        "status": "fallback",
+        "reason": "no_match",
+        "ragRunId": "d8d7b95e-c2b7-4d34-9e77-8b06ac904df0"
+      },
+      "elapsedMs": 18.06714500000089,
+      "generationRecord": {
+        "id": "d8d7b95e-c2b7-4d34-9e77-8b06ac904df0",
+        "startedAt": "2026-09-21T17:28:37.666Z",
+        "completedAt": "2026-09-21T17:28:37.681Z",
+        "outcome": "fallback",
+        "detail": {
+          "guidanceId": "GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A",
+          "reason": "no_match",
+          "elapsedMs": 15.369194999999308,
+          "completion": null
+        }
+      },
+      "wire": [],
+      "publishedEvidence": [],
+      "publishedExplanation": null,
+      "publicationAudit": [
+        {
+          "eventId": "639d05bc-f109-4ddc-86d5-306bb5db0cb7",
+          "kind": "rag.fallback",
+          "occurredAt": "2026-09-21T17:28:37.682Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:6bd391d8-0721-4f8a-89d8-5f4a250915b8:1871ecba-34ac-410b-a879-17e983380dda:WORKER-A",
+            "guidanceVersion": 5,
+            "primaryGuidanceVersion": 5,
+            "ragRunId": "d8d7b95e-c2b7-4d34-9e77-8b06ac904df0",
+            "reason": "no_match"
+          }
+        }
+      ],
+      "exactReviewedText": null,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 10,
+        "runVersion": 10,
+        "virtualTimeMs": 8000,
+        "previousRunVersion": 9,
+        "previousPrimaryVersion": 3,
+        "previousRouteVersion": 2,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": true,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": []
+    },
+    {
+      "id": "first-fire-en",
+      "kind": "first-fire-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-en.json",
+      "sha256": "566fa21bc4120b9f0249e7dc0c2c10ab0483cd4e7d7d255bde5b2d4a02d8c0f0",
+      "runId": "cb5466b2-e0ee-4e7d-924e-c28090666108",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:cb5466b2-e0ee-4e7d-924e-c28090666108:df888826-1e5f-406d-8d2a-701e3522e884:WORKER-A",
+      "primaryGuidanceVersion": 1,
+      "currentGuidanceVersion": 2,
+      "profileVersion": 2,
+      "routeVersion": 1,
+      "locale": "en",
+      "serviceCallIndex": 11,
+      "inputQuery": "Follow the displayed validated route to ASSEMBLY-01. fire FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "46ba6e53-ac66-4b85-a8d3-4b03d6a8dfcc",
+          "startedAt": "2026-09-21T17:28:37.856Z",
+          "completedAt": "2026-09-21T17:28:37.871Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 6.053367642053971
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.8334486310298274
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.03278688524590164
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "FG-004",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "contentHash": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "en",
+          "supplementalExplanation": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+          "evidence": [
+            {
+              "documentId": "FG-004",
+              "documentVersion": "0.1.0",
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+            }
+          ]
+        },
+        "ragRunId": "6bb7de32-f8c0-46f3-98d6-940c199536ca"
+      },
+      "elapsedMs": 367.0951569999961,
+      "generationRecord": {
+        "id": "6bb7de32-f8c0-46f3-98d6-940c199536ca",
+        "startedAt": "2026-09-21T17:28:37.844Z",
+        "completedAt": "2026-09-21T17:28:38.209Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:cb5466b2-e0ee-4e7d-924e-c28090666108:df888826-1e5f-406d-8d2a-701e3522e884:WORKER-A",
+          "callId": "chatcmpl-7RBvn10r6s7yb77ustDNXPxSNVVG5wN0",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 27.9731249999968,
+          "generationMs": 337.7104390000022,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "en",
+            "supplementalExplanation": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+            "evidence": [
+              {
+                "documentId": "FG-004",
+                "documentVersion": "0.1.0",
+                "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "b350db54-b778-403a-8c69-dd8ff0f06983",
+          "callId": "chatcmpl-7RBvn10r6s7yb77ustDNXPxSNVVG5wN0",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "FG-004"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "FG-004",
+          "requestSha256": "02c6dd2f2eb66d0514b89e06ca9ec615b73e1eb37d67b7bc3312da68864c60aa",
+          "responseSha256": "bc21d5f4b779bdf3313bed8680fb319a98a392f81db5c89c8cc3eeb7ff19e803",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "FG-004",
+          "documentVersion": "0.1.0",
+          "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+        }
+      ],
+      "publishedExplanation": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+      "publicationAudit": [
+        {
+          "eventId": "de5d729b-ffc0-425a-82d5-97d0e4ffa42d",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:38.210Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:cb5466b2-e0ee-4e7d-924e-c28090666108:df888826-1e5f-406d-8d2a-701e3522e884:WORKER-A",
+            "guidanceVersion": 2,
+            "primaryGuidanceVersion": 1,
+            "ragRunId": "6bb7de32-f8c0-46f3-98d6-940c199536ca",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 3,
+        "runVersion": 3,
+        "virtualTimeMs": 1000,
+        "previousRunVersion": 2,
+        "previousPrimaryVersion": null,
+        "previousRouteVersion": null,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": null,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": []
+    },
+    {
+      "id": "first-fire-en-profile-only",
+      "kind": "profile-only-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-en-profile-only.json",
+      "sha256": "7df111961477409c9a65c69000f8c2737f3d5887c2fe6034be4cf602f69f508a",
+      "runId": "cb5466b2-e0ee-4e7d-924e-c28090666108",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:cb5466b2-e0ee-4e7d-924e-c28090666108:df888826-1e5f-406d-8d2a-701e3522e884:WORKER-A",
+      "primaryGuidanceVersion": 3,
+      "currentGuidanceVersion": 4,
+      "profileVersion": 3,
+      "routeVersion": 1,
+      "locale": "en",
+      "serviceCallIndex": 12,
+      "inputQuery": "Follow the displayed validated route to ASSEMBLY-01. fire FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "7a0e2040-328d-43cb-a16a-efa61ab742a5",
+          "startedAt": "2026-09-21T17:28:38.290Z",
+          "completedAt": "2026-09-21T17:28:38.308Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 6.053367642053971
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.8334486310298274
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.03278688524590164
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "FG-004",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "contentHash": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "en",
+          "supplementalExplanation": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+          "evidence": [
+            {
+              "documentId": "FG-004",
+              "documentVersion": "0.1.0",
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+            }
+          ]
+        },
+        "ragRunId": "2cfafcdf-4bd6-4075-8ab7-164ab6719b44"
+      },
+      "elapsedMs": 262.9730359999958,
+      "generationRecord": {
+        "id": "2cfafcdf-4bd6-4075-8ab7-164ab6719b44",
+        "startedAt": "2026-09-21T17:28:38.280Z",
+        "completedAt": "2026-09-21T17:28:38.541Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:cb5466b2-e0ee-4e7d-924e-c28090666108:df888826-1e5f-406d-8d2a-701e3522e884:WORKER-A",
+          "callId": "chatcmpl-WQMbVcB8UDPChtzAlYfurQbs7iCqCXmT",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 28.249320000002626,
+          "generationMs": 232.83946399999695,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "en",
+            "supplementalExplanation": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+            "evidence": [
+              {
+                "documentId": "FG-004",
+                "documentVersion": "0.1.0",
+                "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "b65cf31f-fde9-46c2-a51f-a21d48a35a46",
+          "callId": "chatcmpl-WQMbVcB8UDPChtzAlYfurQbs7iCqCXmT",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "FG-004"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "FG-004",
+          "requestSha256": "02c6dd2f2eb66d0514b89e06ca9ec615b73e1eb37d67b7bc3312da68864c60aa",
+          "responseSha256": "741797d907a21566bb6c88f68d535b441f803d07d76ae8805d97db604523c2db",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "FG-004",
+          "documentVersion": "0.1.0",
+          "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+        }
+      ],
+      "publishedExplanation": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+      "publicationAudit": [
+        {
+          "eventId": "3b93661d-c61c-4ee2-91b7-077c10989c10",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:38.541Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:cb5466b2-e0ee-4e7d-924e-c28090666108:df888826-1e5f-406d-8d2a-701e3522e884:WORKER-A",
+            "guidanceVersion": 4,
+            "primaryGuidanceVersion": 3,
+            "ragRunId": "2cfafcdf-4bd6-4075-8ab7-164ab6719b44",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 6,
+        "runVersion": 6,
+        "virtualTimeMs": 1000,
+        "previousRunVersion": 5,
+        "previousPrimaryVersion": 1,
+        "previousRouteVersion": 1,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": true,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": []
+    },
+    {
+      "id": "fire-reroute-en",
+      "kind": "fire-reroute-positive",
+      "rawPositiveCapture": "SCOPED_ACCEPTANCE_CAPTURED_FOR_REVIEW",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-en.json",
+      "sha256": "c450ab01171f0a3190a938af2fb68d7a896863c0d1d6573143895f5dfbb4eda0",
+      "runId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:e87f5dd3-d56b-429a-8d32-49320c16931d:WORKER-A",
+      "primaryGuidanceVersion": 3,
+      "currentGuidanceVersion": 4,
+      "profileVersion": 2,
+      "routeVersion": 2,
+      "locale": "en",
+      "serviceCallIndex": 14,
+      "inputQuery": "Follow the displayed validated route to ASSEMBLY-01. fire FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": true,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "731918d1-5d92-4a84-b4bd-e72c21ff0fbe",
+          "startedAt": "2026-09-21T17:28:39.066Z",
+          "completedAt": "2026-09-21T17:28:39.081Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": true,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 6.053367642053971
+            },
+            {
+              "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure",
+              "score": 3.29603996614743
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure",
+              "score": 0.8353830561629848
+            },
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.8334486310298274
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure",
+              "score": 0.03252247488101534
+            },
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.03252247488101534
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "FG-002",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure",
+            "contentHash": "890827a5b140b5ed3e98a8bb70fc3f8d7aa6b6aa23ceb4fcb91ac609ffdee0d8"
+          },
+          {
+            "documentId": "FG-004",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "contentHash": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "en",
+          "supplementalExplanation": "When fire affects an existing route, the engine reassesses routing. Whether a guidance explanation applies is checked against the current guidance and route versions.",
+          "evidence": [
+            {
+              "documentId": "FG-002",
+              "documentVersion": "0.1.0",
+              "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+            }
+          ]
+        },
+        "ragRunId": "ccd00630-4727-40fa-a360-8de6ee0f8d5f"
+      },
+      "elapsedMs": 556.0953420000005,
+      "generationRecord": {
+        "id": "ccd00630-4727-40fa-a360-8de6ee0f8d5f",
+        "startedAt": "2026-09-21T17:28:39.037Z",
+        "completedAt": "2026-09-21T17:28:39.590Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:e87f5dd3-d56b-429a-8d32-49320c16931d:WORKER-A",
+          "callId": "chatcmpl-xRRMC107MAIHRqpX5pj2IFJ1flEqhhZI",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 45.011568000001716,
+          "generationMs": 507.78727499999513,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "en",
+            "supplementalExplanation": "When fire affects an existing route, the engine reassesses routing. Whether a guidance explanation applies is checked against the current guidance and route versions.",
+            "evidence": [
+              {
+                "documentId": "FG-002",
+                "documentVersion": "0.1.0",
+                "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "ab4a177f-2ee8-4def-b529-5675a6ae743d",
+          "callId": "chatcmpl-xRRMC107MAIHRqpX5pj2IFJ1flEqhhZI",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "FG-002",
+            "FG-004"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "FG-002",
+          "requestSha256": "2d7cb512b7bb769ed855976d7146e96f2c61c7a0f4fffd355a07d1727deb2aa7",
+          "responseSha256": "41109551efad1628c1d79700816c2d437a50d51004b59a7038cf48ce4e768504",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "FG-002",
+          "documentVersion": "0.1.0",
+          "chunkId": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+        }
+      ],
+      "publishedExplanation": "When fire affects an existing route, the engine reassesses routing. Whether a guidance explanation applies is checked against the current guidance and route versions.",
+      "publicationAudit": [
+        {
+          "eventId": "ec90445d-4db8-455c-b58d-40999ff9c639",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:39.590Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:e87f5dd3-d56b-429a-8d32-49320c16931d:WORKER-A",
+            "guidanceVersion": 4,
+            "primaryGuidanceVersion": 3,
+            "ragRunId": "ccd00630-4727-40fa-a360-8de6ee0f8d5f",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 7,
+        "runVersion": 7,
+        "virtualTimeMs": 8000,
+        "previousRunVersion": 6,
+        "previousPrimaryVersion": 1,
+        "previousRouteVersion": 1,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": false,
+      "causalHistory": {
+        "beforeEquipment": {
+          "presetId": "sk1265-at6",
+          "position": {
+            "x": 30,
+            "y": 25
+          },
+          "headingDeg": 0,
+          "slewDeg": 0,
+          "geometryVersion": 1
+        },
+        "afterEquipment": {
+          "presetId": "sk1265-at6",
+          "position": {
+            "x": 30,
+            "y": 25
+          },
+          "headingDeg": 0,
+          "slewDeg": 0,
+          "geometryVersion": 1
+        },
+        "previousGuide": {
+          "guidanceVersion": 2,
+          "primaryGuidanceVersion": 1,
+          "routeVersion": 1,
+          "destinationId": "ASSEMBLY-01",
+          "profileVersion": 2,
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 42,
+              "nodeId": "J-B-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 42,
+              "nodeId": "J-B-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 42,
+              "nodeId": "J-B-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 42,
+              "nodeId": "REFUGE-02",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 132,
+              "y": 42,
+              "nodeId": "ASSEMBLY-01",
+              "floorId": "GROUND"
+            }
+          ]
+        },
+        "currentPrimary": {
+          "guidanceVersion": 3,
+          "primaryGuidanceVersion": 3,
+          "routeVersion": 2,
+          "destinationId": "ASSEMBLY-01",
+          "profileVersion": 2,
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 8,
+              "nodeId": "J-A-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 8,
+              "nodeId": "J-A-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 8,
+              "nodeId": "J-A-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 8,
+              "nodeId": "REFUGE-01",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 132,
+              "y": 8,
+              "nodeId": "J-A-132",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 132,
+              "y": 42,
+              "nodeId": "ASSEMBLY-01",
+              "floorId": "GROUND"
+            }
+          ]
+        },
+        "newScenarioEvents": [
+          {
+            "eventId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:FG-ROUTE-BLOCK-003",
+            "incidentId": null,
+            "runId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b",
+            "kind": "scenario.route.block",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:39.004Z",
+            "detail": "{\"id\":\"FG-ROUTE-BLOCK-003\",\"atMs\":8000,\"type\":\"route.block\",\"pathIds\":[\"PATH-B\"]}",
+            "version": 5
+          },
+          {
+            "eventId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:FG-ROUTE-BLOCK-004",
+            "incidentId": null,
+            "runId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b",
+            "kind": "scenario.hazard.upsert",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:39.004Z",
+            "detail": "{\"id\":\"FG-ROUTE-BLOCK-004\",\"atMs\":8000,\"type\":\"hazard.upsert\",\"hazard\":{\"id\":\"FIRE-ZONE-B\",\"type\":\"fire\",\"zoneId\":\"ZONE-B\",\"polygon\":[{\"x\":60,\"y\":20},{\"x\":98,\"y\":20},{\"x\":98,\"y\":43},{\"x\":60,\"y\":43}],\"active\":true}}",
+            "version": 5
+          },
+          {
+            "eventId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:FG-ROUTE-BLOCK-007",
+            "incidentId": null,
+            "runId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b",
+            "kind": "scenario.sensor.reading",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:39.004Z",
+            "detail": "{\"id\":\"FG-ROUTE-BLOCK-007\",\"atMs\":8000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-FIRE-B\",\"hazardType\":\"fire\",\"zoneId\":\"ZONE-B\",\"value\":1,\"unit\":\"demo-index\",\"materialId\":null,\"observedAtMs\":8000,\"source\":\"mock\",\"connected\":true}}",
+            "version": 5
+          },
+          {
+            "eventId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:FG-ROUTE-BLOCK-008",
+            "incidentId": null,
+            "runId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b",
+            "kind": "scenario.sensor.reading",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:39.004Z",
+            "detail": "{\"id\":\"FG-ROUTE-BLOCK-008\",\"atMs\":8000,\"type\":\"sensor.reading\",\"sensor\":{\"sensorId\":\"SENSOR-GAS-B\",\"hazardType\":\"gas\",\"zoneId\":\"ZONE-B\",\"value\":0,\"unit\":\"demo-index\",\"materialId\":\"DEMO-GAS-X\",\"observedAtMs\":8000,\"source\":\"mock\",\"connected\":true}}",
+            "version": 5
+          }
+        ],
+        "publicationAnchors": [
+          {
+            "eventId": "d45a574a-d0e4-412f-ba35-178b9cec0820",
+            "incidentId": "e87f5dd3-d56b-429a-8d32-49320c16931d",
+            "runId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b",
+            "kind": "guidance.generated",
+            "actorId": "engine",
+            "occurredAt": "2026-09-21T17:28:39.004Z",
+            "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:e87f5dd3-d56b-429a-8d32-49320c16931d:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":0}",
+            "version": 3
+          },
+          {
+            "eventId": "882be3b2-829a-42fe-b4f4-005c9998156c",
+            "incidentId": "e87f5dd3-d56b-429a-8d32-49320c16931d",
+            "runId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b",
+            "kind": "guidance.transmission-attempt",
+            "actorId": "engine",
+            "occurredAt": "2026-09-21T17:28:39.004Z",
+            "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:e87f5dd3-d56b-429a-8d32-49320c16931d:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":0}",
+            "version": 3
+          }
+        ],
+        "firstGuidanceStable": true,
+        "capturedIndependentEngineRouteMatches": true
+      }
+    },
+    {
+      "id": "fire-reroute-en-profile-only",
+      "kind": "profile-only-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-en-profile-only.json",
+      "sha256": "8e25bffc3e6763f1f6f69d07b6c096c45e1cf183896c6482ea2e7b56da1936a1",
+      "runId": "3d8b7b5c-79da-4ba5-bb12-6e4f7442540b",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:e87f5dd3-d56b-429a-8d32-49320c16931d:WORKER-A",
+      "primaryGuidanceVersion": 5,
+      "currentGuidanceVersion": 6,
+      "profileVersion": 3,
+      "routeVersion": 2,
+      "locale": "en",
+      "serviceCallIndex": 16,
+      "inputQuery": "Follow the displayed validated route to ASSEMBLY-01. fire FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "cb512ddf-5982-45a6-97bd-37dddfe318c0",
+          "startedAt": "2026-09-21T17:28:39.678Z",
+          "completedAt": "2026-09-21T17:28:39.695Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": true,
+              "reasons": []
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 6.053367642053971
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.8334486310298274
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+              "score": 0.03278688524590164
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "FG-004",
+            "documentVersion": "0.1.0",
+            "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure",
+            "contentHash": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "en",
+          "supplementalExplanation": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+          "evidence": [
+            {
+              "documentId": "FG-004",
+              "documentVersion": "0.1.0",
+              "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+            }
+          ]
+        },
+        "ragRunId": "48e31518-898f-4c27-8f2e-964f8244f398"
+      },
+      "elapsedMs": 285.4805190000043,
+      "generationRecord": {
+        "id": "48e31518-898f-4c27-8f2e-964f8244f398",
+        "startedAt": "2026-09-21T17:28:39.665Z",
+        "completedAt": "2026-09-21T17:28:39.947Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:e87f5dd3-d56b-429a-8d32-49320c16931d:WORKER-A",
+          "callId": "chatcmpl-CJMc4JhYGXICjLy8EGKe25vVLT3v4hJK",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 30.03486499999417,
+          "generationMs": 251.97967500000232,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "en",
+            "supplementalExplanation": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+            "evidence": [
+              {
+                "documentId": "FG-004",
+                "documentVersion": "0.1.0",
+                "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "281c7d14-fbdf-49e0-8848-3332e6201374",
+          "callId": "chatcmpl-CJMc4JhYGXICjLy8EGKe25vVLT3v4hJK",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "FG-004"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "FG-004",
+          "requestSha256": "02c6dd2f2eb66d0514b89e06ca9ec615b73e1eb37d67b7bc3312da68864c60aa",
+          "responseSha256": "d8736fccd766deb9ef85068b40eb1988d3d738090a364870d9ba17a05a91c68b",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "FG-004",
+          "documentVersion": "0.1.0",
+          "chunkId": "FG-004:0.1.0:0a5e2515e0acd69d:procedure"
+        }
+      ],
+      "publishedExplanation": "This movement explanation applies only when an explicit scenario movement policy and a current validated route are both present.",
+      "publicationAudit": [
+        {
+          "eventId": "11ebbbbb-0fcb-40db-a432-d7352576fa6b",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:39.947Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:e87f5dd3-d56b-429a-8d32-49320c16931d:WORKER-A",
+            "guidanceVersion": 6,
+            "primaryGuidanceVersion": 5,
+            "ragRunId": "48e31518-898f-4c27-8f2e-964f8244f398",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 11,
+        "runVersion": 11,
+        "virtualTimeMs": 8000,
+        "previousRunVersion": 10,
+        "previousPrimaryVersion": 3,
+        "previousRouteVersion": 2,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": true,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": [
+        {
+          "guidance_id": "GUIDANCE:3d8b7b5c-79da-4ba5-bb12-6e4f7442540b:e87f5dd3-d56b-429a-8d32-49320c16931d:WORKER-A",
+          "document_id": "FG-002",
+          "document_version": "0.1.0",
+          "chunk_id": "FG-002:0.1.0:890827a5b140b5ed:procedure"
+        }
+      ]
+    },
+    {
+      "id": "initial-equipment-en",
+      "kind": "initial-equipment-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/initial-equipment-en.json",
+      "sha256": "3a664bc8758faa07b9371325cac1352b795c2e702c0918734b69cc0a4bc80b70",
+      "runId": "f6093123-e29e-4aba-9d50-5e4d51b6eb10",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A",
+      "primaryGuidanceVersion": 1,
+      "currentGuidanceVersion": 2,
+      "profileVersion": 2,
+      "routeVersion": 1,
+      "locale": "en",
+      "serviceCallIndex": 17,
+      "inputQuery": "Follow the displayed validated route to REFUGE-01. equipment FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "e91d6f3e-ee10-433c-b388-75cac7a0c4fa",
+          "startedAt": "2026-09-21T17:28:40.150Z",
+          "completedAt": "2026-09-21T17:28:40.166Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 3.369007948419177
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.8418984996550605
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.03278688524590164
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "EQ-001",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+            "contentHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "en",
+          "supplementalExplanation": "This alert is tied to the server's equipment exposure assessment, and the routing engine determines the route and destination.",
+          "evidence": [
+            {
+              "documentId": "EQ-001",
+              "documentVersion": "0.1.0",
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+            }
+          ]
+        },
+        "ragRunId": "13cb3e2b-f091-4fcb-be41-ce97967d12d0"
+      },
+      "elapsedMs": 566.1437529999967,
+      "generationRecord": {
+        "id": "13cb3e2b-f091-4fcb-be41-ce97967d12d0",
+        "startedAt": "2026-09-21T17:28:40.140Z",
+        "completedAt": "2026-09-21T17:28:40.704Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A",
+          "callId": "chatcmpl-mwXKXTQzLcosaDoTGEw5SzNNrue6oxBt",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 27.001061999995727,
+          "generationMs": 537.5335909999994,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "en",
+            "supplementalExplanation": "This alert is tied to the server's equipment exposure assessment, and the routing engine determines the route and destination.",
+            "evidence": [
+              {
+                "documentId": "EQ-001",
+                "documentVersion": "0.1.0",
+                "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "5942d736-31a6-40b2-97b3-7b568d634cba",
+          "callId": "chatcmpl-mwXKXTQzLcosaDoTGEw5SzNNrue6oxBt",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "EQ-001"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "EQ-001",
+          "requestSha256": "b3fd40ffef77a0d83aa91e2cac9c87e75d62a8033a222e3330a792be7506c48a",
+          "responseSha256": "5e0f622798e79a28288e3e1be96c9e323baa8c4550e463303f34c42f1f842303",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "EQ-001",
+          "documentVersion": "0.1.0",
+          "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+        }
+      ],
+      "publishedExplanation": "This alert is tied to the server's equipment exposure assessment, and the routing engine determines the route and destination.",
+      "publicationAudit": [
+        {
+          "eventId": "67805873-5844-41b1-8d97-e5ab94739fae",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:40.705Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A",
+            "guidanceVersion": 2,
+            "primaryGuidanceVersion": 1,
+            "ragRunId": "13cb3e2b-f091-4fcb-be41-ce97967d12d0",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 5,
+        "runVersion": 5,
+        "virtualTimeMs": 4000,
+        "previousRunVersion": 4,
+        "previousPrimaryVersion": null,
+        "previousRouteVersion": null,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": null,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": []
+    },
+    {
+      "id": "direction-en",
+      "kind": "direction-positive",
+      "rawPositiveCapture": "SCOPED_ACCEPTANCE_NOT_OBSERVED",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-en.json",
+      "sha256": "eb378d8346e62deb15b2f90e3fd16a2b4bcaaa34af42248a40eb942a5b8b1222",
+      "runId": "f6093123-e29e-4aba-9d50-5e4d51b6eb10",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A",
+      "primaryGuidanceVersion": 3,
+      "currentGuidanceVersion": 4,
+      "profileVersion": 2,
+      "routeVersion": 2,
+      "locale": "en",
+      "serviceCallIndex": 18,
+      "inputQuery": "Follow the displayed validated route to REFUGE-02. equipment FOLLOW_VALIDATED_ROUTE",
+      "actionCode": "FOLLOW_VALIDATED_ROUTE",
+      "scenarioPolicy": "evacuation",
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": true
+      },
+      "retrieval": [
+        {
+          "id": "b12fe71c-6109-41ea-bce6-625511eba99e",
+          "startedAt": "2026-09-21T17:28:40.789Z",
+          "completedAt": "2026-09-21T17:28:40.804Z",
+          "outcome": "matched",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": true
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": true,
+              "reasons": []
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard"
+              ]
+            }
+          ],
+          "fts": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 3.369007948419177
+            },
+            {
+              "chunkId": "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+              "score": 3.0082091824580575
+            }
+          ],
+          "vector": [
+            {
+              "chunkId": "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+              "score": 0.8391635725827382
+            },
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.837444062893656
+            }
+          ],
+          "fused": [
+            {
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+              "score": 0.03252247488101534
+            },
+            {
+              "chunkId": "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+              "score": 0.03252247488101534
+            }
+          ]
+        }
+      ],
+      "modelInputChunks": [
+        [
+          {
+            "documentId": "EQ-001",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure",
+            "contentHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004"
+          },
+          {
+            "documentId": "EQ-002",
+            "documentVersion": "0.1.0",
+            "chunkId": "EQ-002:0.1.0:b10f6892ec886a96:procedure",
+            "contentHash": "b10f6892ec886a96f1570909095991319adb8ad1e758ab43aca75f9da1a4dd0c"
+          }
+        ]
+      ],
+      "serviceOutcome": {
+        "status": "accepted",
+        "supplement": {
+          "actionCode": "FOLLOW_VALIDATED_ROUTE",
+          "locale": "en",
+          "supplementalExplanation": "This alert is tied to the server's equipment exposure assessment, and the routing engine determines the route and destination.",
+          "evidence": [
+            {
+              "documentId": "EQ-001",
+              "documentVersion": "0.1.0",
+              "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+            }
+          ]
+        },
+        "ragRunId": "449e3fc9-a5a3-4cb5-a684-fb88a0a4195a"
+      },
+      "elapsedMs": 638.8355789999987,
+      "generationRecord": {
+        "id": "449e3fc9-a5a3-4cb5-a684-fb88a0a4195a",
+        "startedAt": "2026-09-21T17:28:40.777Z",
+        "completedAt": "2026-09-21T17:28:41.413Z",
+        "outcome": "accepted",
+        "detail": {
+          "guidanceId": "GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A",
+          "callId": "chatcmpl-YOdrwVWwcNEGRfKKAs4ZojRHtXcpAz64",
+          "responseHash": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "modelReturned": "Qwen3-0.6B-Q8_0",
+          "retrievalMs": 27.79808700000285,
+          "generationMs": 608.6460139999981,
+          "validation": "reviewed-extractive-selection",
+          "supplement": {
+            "actionCode": "FOLLOW_VALIDATED_ROUTE",
+            "locale": "en",
+            "supplementalExplanation": "This alert is tied to the server's equipment exposure assessment, and the routing engine determines the route and destination.",
+            "evidence": [
+              {
+                "documentId": "EQ-001",
+                "documentVersion": "0.1.0",
+                "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+              }
+            ]
+          }
+        }
+      },
+      "wire": [
+        {
+          "captureId": "20e7ee64-62e7-4bb0-a409-6f870f2e1737",
+          "callId": "chatcmpl-YOdrwVWwcNEGRfKKAs4ZojRHtXcpAz64",
+          "model": "Qwen3-0.6B-Q8_0",
+          "optionDocumentIds": [
+            "EQ-001",
+            "EQ-002"
+          ],
+          "selection": 0,
+          "selectedDocumentId": "EQ-001",
+          "requestSha256": "58de33fabbd652a980c4dfcfdde1f8eab5aabaa4fe274f1961dc77f0a5e50e9f",
+          "responseSha256": "c2b29a7924e59a913a72c2d1487b3e39639605d3e7bd0a75231c44818a66924f",
+          "providerMessageSha256": "bca82d819b59ccc09ff214a52e4858fa451692635e6ce0619d9b9ce77c879e15",
+          "checks": {
+            "requestBytesHashMatches": true,
+            "responseBytesHashMatches": true,
+            "providerCallIdMatches": true,
+            "providerMessageHashMatches": true,
+            "reviewedOptionMatchesServiceText": true
+          }
+        }
+      ],
+      "publishedEvidence": [
+        {
+          "documentId": "EQ-001",
+          "documentVersion": "0.1.0",
+          "chunkId": "EQ-001:0.1.0:66847a3d71e32e56:procedure"
+        }
+      ],
+      "publishedExplanation": "This alert is tied to the server's equipment exposure assessment, and the routing engine determines the route and destination.",
+      "publicationAudit": [
+        {
+          "eventId": "ef1b6b84-7744-4a65-a1bb-a811bfc6ed06",
+          "kind": "guidance.supplement",
+          "occurredAt": "2026-09-21T17:28:41.414Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A",
+            "guidanceVersion": 4,
+            "primaryGuidanceVersion": 3,
+            "ragRunId": "449e3fc9-a5a3-4cb5-a684-fb88a0a4195a",
+            "reason": null
+          }
+        }
+      ],
+      "exactReviewedText": true,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 8,
+        "runVersion": 8,
+        "virtualTimeMs": 8000,
+        "previousRunVersion": 7,
+        "previousPrimaryVersion": 1,
+        "previousRouteVersion": 1,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": false,
+      "causalHistory": {
+        "beforeEquipment": {
+          "presetId": "sk1265-at6",
+          "position": {
+            "x": 30,
+            "y": 25
+          },
+          "headingDeg": 0,
+          "slewDeg": 0,
+          "geometryVersion": 4
+        },
+        "afterEquipment": {
+          "presetId": "sk1265-at6",
+          "position": {
+            "x": 35,
+            "y": 25
+          },
+          "headingDeg": -30,
+          "slewDeg": 0,
+          "geometryVersion": 5
+        },
+        "previousGuide": {
+          "guidanceVersion": 2,
+          "primaryGuidanceVersion": 1,
+          "routeVersion": 1,
+          "destinationId": "REFUGE-01",
+          "profileVersion": 2,
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 8,
+              "nodeId": "J-A-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 8,
+              "nodeId": "J-A-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 8,
+              "nodeId": "J-A-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 8,
+              "nodeId": "REFUGE-01",
+              "floorId": "GROUND"
+            }
+          ]
+        },
+        "currentPrimary": {
+          "guidanceVersion": 3,
+          "primaryGuidanceVersion": 3,
+          "routeVersion": 2,
+          "destinationId": "REFUGE-02",
+          "profileVersion": 2,
+          "waypoints": [
+            {
+              "x": 65,
+              "y": 25,
+              "nodeId": "WORKER-POSITION",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 65,
+              "y": 42,
+              "nodeId": "J-B-65",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 90,
+              "y": 42,
+              "nodeId": "J-B-90",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 100,
+              "y": 42,
+              "nodeId": "J-B-100",
+              "floorId": "GROUND"
+            },
+            {
+              "x": 125,
+              "y": 42,
+              "nodeId": "REFUGE-02",
+              "floorId": "GROUND"
+            }
+          ]
+        },
+        "newScenarioEvents": [
+          {
+            "eventId": "f6093123-e29e-4aba-9d50-5e4d51b6eb10:EQ-SPEED-DIRECTION-003",
+            "incidentId": null,
+            "runId": "f6093123-e29e-4aba-9d50-5e4d51b6eb10",
+            "kind": "scenario.equipment.pose",
+            "actorId": "scenario",
+            "occurredAt": "2026-09-21T17:28:40.748Z",
+            "detail": "{\"id\":\"EQ-SPEED-DIRECTION-003\",\"atMs\":8000,\"type\":\"equipment.pose\",\"position\":{\"x\":35,\"y\":25},\"headingDeg\":-30,\"speedMps\":3,\"slewDeg\":0}",
+            "version": 7
+          }
+        ],
+        "publicationAnchors": [
+          {
+            "eventId": "2dd46a40-79a3-4877-a9be-0d185a40aac0",
+            "incidentId": "5a25f966-ed02-4415-a8dd-b1e0121ac299",
+            "runId": "f6093123-e29e-4aba-9d50-5e4d51b6eb10",
+            "kind": "guidance.generated",
+            "actorId": "engine",
+            "occurredAt": "2026-09-21T17:28:40.748Z",
+            "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":0}",
+            "version": 3
+          },
+          {
+            "eventId": "078fac5f-1a77-4080-80d8-a908624b6de8",
+            "incidentId": "5a25f966-ed02-4415-a8dd-b1e0121ac299",
+            "runId": "f6093123-e29e-4aba-9d50-5e4d51b6eb10",
+            "kind": "guidance.transmission-attempt",
+            "actorId": "engine",
+            "occurredAt": "2026-09-21T17:28:40.748Z",
+            "detail": "{\"workerId\":\"WORKER-A\",\"guidanceId\":\"GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A\",\"guidanceVersion\":3,\"transport\":\"sse\",\"connectedSubscriptions\":0}",
+            "version": 3
+          }
+        ],
+        "firstGuidanceStable": true,
+        "capturedIndependentEngineRouteMatches": true
+      }
+    },
+    {
+      "id": "direction-en-profile-only",
+      "kind": "profile-only-negative",
+      "rawPositiveCapture": "NOT_A_POSITIVE_CASE",
+      "file": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-en-profile-only.json",
+      "sha256": "9ee1e5ea632a7d847050c30b6846ad966b140678b5672732e42cf19a2060aa7d",
+      "runId": "f6093123-e29e-4aba-9d50-5e4d51b6eb10",
+      "workerId": "WORKER-A",
+      "guidanceId": "GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A",
+      "primaryGuidanceVersion": 5,
+      "currentGuidanceVersion": 5,
+      "profileVersion": 3,
+      "routeVersion": null,
+      "locale": "en",
+      "serviceCallIndex": 19,
+      "inputQuery": "Guidance has changed. Check your latest action guidance. equipment GUIDANCE_UPDATED",
+      "actionCode": "GUIDANCE_UPDATED",
+      "scenarioPolicy": null,
+      "actualFacts": {
+        "fireInvalidatedPreviousRoute": false,
+        "equipmentDirectionChanged": false
+      },
+      "retrieval": [
+        {
+          "id": "3df1db7d-c3f3-4ad4-b8e1-f81fb515e59c",
+          "startedAt": "2026-09-21T17:28:41.490Z",
+          "completedAt": "2026-09-21T17:28:41.494Z",
+          "outcome": "no_match",
+          "applicability": {
+            "fireInvalidatedPreviousRoute": false,
+            "equipmentDirectionChanged": false
+          },
+          "filters": [
+            {
+              "documentId": "EQ-001",
+              "eligible": false,
+              "reasons": [
+                "hazard",
+                "action"
+              ]
+            },
+            {
+              "documentId": "EQ-002",
+              "eligible": false,
+              "reasons": [
+                "hazard",
+                "equipment-direction-change-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-002",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "fire-route-invalidation-unproven",
+                "movement-policy-unproven"
+              ]
+            },
+            {
+              "documentId": "FG-004",
+              "eligible": false,
+              "reasons": [
+                "mode",
+                "hazard",
+                "policy",
+                "action"
+              ]
+            }
+          ],
+          "fts": [],
+          "vector": [],
+          "fused": []
+        }
+      ],
+      "modelInputChunks": [],
+      "serviceOutcome": {
+        "status": "fallback",
+        "reason": "no_match",
+        "ragRunId": "a581786e-d6c9-40e2-a3ae-4648c7d1b47c"
+      },
+      "elapsedMs": 18.322029000002658,
+      "generationRecord": {
+        "id": "a581786e-d6c9-40e2-a3ae-4648c7d1b47c",
+        "startedAt": "2026-09-21T17:28:41.478Z",
+        "completedAt": "2026-09-21T17:28:41.494Z",
+        "outcome": "fallback",
+        "detail": {
+          "guidanceId": "GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A",
+          "reason": "no_match",
+          "elapsedMs": 15.763152999999875,
+          "completion": null
+        }
+      },
+      "wire": [],
+      "publishedEvidence": [],
+      "publishedExplanation": null,
+      "publicationAudit": [
+        {
+          "eventId": "5421e6a6-c495-4481-a2cb-1dfd79c3a802",
+          "kind": "rag.fallback",
+          "occurredAt": "2026-09-21T17:28:41.494Z",
+          "detail": {
+            "guidanceId": "GUIDANCE:f6093123-e29e-4aba-9d50-5e4d51b6eb10:5a25f966-ed02-4415-a8dd-b1e0121ac299:WORKER-A",
+            "guidanceVersion": 5,
+            "primaryGuidanceVersion": 5,
+            "ragRunId": "a581786e-d6c9-40e2-a3ae-4648c7d1b47c",
+            "reason": "no_match"
+          }
+        }
+      ],
+      "exactReviewedText": null,
+      "immutablePrimaryFieldsPreserved": true,
+      "firstPrimaryAnchor": {
+        "index": 11,
+        "runVersion": 11,
+        "virtualTimeMs": 8000,
+        "previousRunVersion": 10,
+        "previousPrimaryVersion": 3,
+        "previousRouteVersion": 2,
+        "targetMatchesFirstSnapshot": true
+      },
+      "controlled0930VsLiveEligibleEqual": true,
+      "profileOnlyGeometryUnchanged": true,
+      "negativeStageObservations": {
+        "EQ-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        },
+        "FG-002": {
+          "eligible": false,
+          "ranked": false,
+          "modelInput": false,
+          "accepted": false,
+          "currentPublished": false
+        }
+      },
+      "historicalEvidenceRowsForScopedDocument": []
+    }
+  ],
+  "inputSha256": {
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/summary.json": "d5327f389bba31165001e2304485b33495f6c10f44df48cf23a9c25f4ff5002c",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/provider-calls.json": "d0a0cd5ca846061d79e4ebd3569da337dbaf10cd539f82a129455e46217d2ec9",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/proxy-final.json": "e887cbb571b5a304047fa796e33be5a9ded622303ec1e5f9b078382027b66551",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/corpus-before.json": "7c372d4740283f52faffa9ba484f7fe6f754e58071a184b74e5a410a724117db",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/corpus-after.json": "0db4c7c36664255b7cf771a90051100d9130d507de759ccb0464d72b41380664",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/binding.json": "ce73b41643268d6ff5e5a52f93bf5418908cbdac337099d3ab5a134941543c37",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/attached-service-captures.json": "cc1dbb241e25984ba6c8edea2d0630b685642c45f3e5bdf8df897102757a9057",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/final-durable-history.json": "b2f4431fb27c289a837426b1e9d9823e7d1dcca56f880ef08c788d5420445efd",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/entry-start.json": "c5c0c2c28d11da69e606a2ad21f4abc6a469b7413747cb834da5e0ef7f7948f3",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/entry-end.json": "47363828dd9e6eeb124b9117b170a9d0b9bfc5f416993605018012768c9227f1",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/provider-binding-before.json": "43072b75768102a0451709b04a69481306873e3be5028ee7ac4b382bf0b9dd9e",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/provider-binding-after.json": "c377fa38f27748cbed71f5c82da5866838880764d66558846ab8fbc671aa7c14",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-ko.json": "c7898749aa6a7ba1aa1cd8ca798ca4c22be58ca6cb1cb4e26e63ba2b101c42df",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/00ac0613-37bb-47c7-87c9-bb5c0c91f1d9.request.bin": "db09bcf4ffb6fd065460735fe2a62b4992cc672cd228360694e3f174f4957dad",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/00ac0613-37bb-47c7-87c9-bb5c0c91f1d9.response.bin": "cf2a5a47c962708a1657748db345de3102c0364e89308b8694ce0ac589272d06",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-ko-profile-only.json": "d64f65e08b521d671b515fc29a24ad8e46e81c2691507c2558067157188adda4",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/c50a2492-3bc2-4f3f-8362-bb61b9771a65.request.bin": "db09bcf4ffb6fd065460735fe2a62b4992cc672cd228360694e3f174f4957dad",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/c50a2492-3bc2-4f3f-8362-bb61b9771a65.response.bin": "2efbfe31b7ebfd00c6779009ecc680447eedce404c423c6e5de9ecac15976183",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-ko.json": "d6f7dc0c774b1bd05c9bfc692f93dea0ab3fe2a2b12b296dd189d97e952d0a0a",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/4208bc36-4998-4b45-ba70-f066f06ad69e.request.bin": "66fc7f19170f3cf9b41c9af37bfe49f6af9ec5f22572615a34ea567f245073b4",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/4208bc36-4998-4b45-ba70-f066f06ad69e.response.bin": "91b27a9913d301ef93e4594719e86dd9a5488d638f4cd90c71f1295d33be2ea8",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-ko-profile-only.json": "e000da391fe51bd821c834ebb557939a3fab4c3928a6a03a9978cbd5dbc1623f",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/817f5528-0c86-48c0-84a2-2bcf8bb66a0b.request.bin": "db09bcf4ffb6fd065460735fe2a62b4992cc672cd228360694e3f174f4957dad",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/817f5528-0c86-48c0-84a2-2bcf8bb66a0b.response.bin": "8fb6f666bd4e53ed62e63946eedb335630adec547b7f932b64d736c1fc8576e3",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/initial-equipment-ko.json": "e88bf0533a91cfd33418a4ee3c3cc71786c1d2aa00fcddce77fd408c5448cdac",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/ae9621a8-d019-4452-b5f7-53445f8dad26.request.bin": "8aa2ec0eb70deb459e8af5b02b6d394aa9f5b0050751e4a1ccc672b7b9ab1c9b",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/ae9621a8-d019-4452-b5f7-53445f8dad26.response.bin": "2d4c87cba361d1cc47d13a42a763229b7d856677ead4c29bd9cdf24bfe497243",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-ko.json": "0cc073fb52a8677804950d47974c7f8aeb84452daf2cba413baac077c607104f",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/26baf5b0-14d1-44d1-b016-3508e8ec129a.request.bin": "e098a660de5e93b177ea2386eb0f9f16b7b974e3af58a4b551ff9ce9d3421cc5",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/26baf5b0-14d1-44d1-b016-3508e8ec129a.response.bin": "f69c0395b1ae5ec8685cd2ae4f3ad4b4cf177a7c6236e9e5c64e6217d818c996",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-ko-profile-only.json": "486233a52c8c377eaa5cb4d69491ca4f311d04a4b25b4a7b1ae36b6758df56f0",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-en.json": "566fa21bc4120b9f0249e7dc0c2c10ab0483cd4e7d7d255bde5b2d4a02d8c0f0",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/b350db54-b778-403a-8c69-dd8ff0f06983.request.bin": "02c6dd2f2eb66d0514b89e06ca9ec615b73e1eb37d67b7bc3312da68864c60aa",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/b350db54-b778-403a-8c69-dd8ff0f06983.response.bin": "bc21d5f4b779bdf3313bed8680fb319a98a392f81db5c89c8cc3eeb7ff19e803",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/first-fire-en-profile-only.json": "7df111961477409c9a65c69000f8c2737f3d5887c2fe6034be4cf602f69f508a",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/b65cf31f-fde9-46c2-a51f-a21d48a35a46.request.bin": "02c6dd2f2eb66d0514b89e06ca9ec615b73e1eb37d67b7bc3312da68864c60aa",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/b65cf31f-fde9-46c2-a51f-a21d48a35a46.response.bin": "741797d907a21566bb6c88f68d535b441f803d07d76ae8805d97db604523c2db",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-en.json": "c450ab01171f0a3190a938af2fb68d7a896863c0d1d6573143895f5dfbb4eda0",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/ab4a177f-2ee8-4def-b529-5675a6ae743d.request.bin": "2d7cb512b7bb769ed855976d7146e96f2c61c7a0f4fffd355a07d1727deb2aa7",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/ab4a177f-2ee8-4def-b529-5675a6ae743d.response.bin": "41109551efad1628c1d79700816c2d437a50d51004b59a7038cf48ce4e768504",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/fire-reroute-en-profile-only.json": "8e25bffc3e6763f1f6f69d07b6c096c45e1cf183896c6482ea2e7b56da1936a1",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/281c7d14-fbdf-49e0-8848-3332e6201374.request.bin": "02c6dd2f2eb66d0514b89e06ca9ec615b73e1eb37d67b7bc3312da68864c60aa",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/281c7d14-fbdf-49e0-8848-3332e6201374.response.bin": "d8736fccd766deb9ef85068b40eb1988d3d738090a364870d9ba17a05a91c68b",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/initial-equipment-en.json": "3a664bc8758faa07b9371325cac1352b795c2e702c0918734b69cc0a4bc80b70",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/5942d736-31a6-40b2-97b3-7b568d634cba.request.bin": "b3fd40ffef77a0d83aa91e2cac9c87e75d62a8033a222e3330a792be7506c48a",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/5942d736-31a6-40b2-97b3-7b568d634cba.response.bin": "5e0f622798e79a28288e3e1be96c9e323baa8c4550e463303f34c42f1f842303",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-en.json": "eb378d8346e62deb15b2f90e3fd16a2b4bcaaa34af42248a40eb942a5b8b1222",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/20e7ee64-62e7-4bb0-a409-6f870f2e1737.request.bin": "58de33fabbd652a980c4dfcfdde1f8eab5aabaa4fe274f1961dc77f0a5e50e9f",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-entry/capture/private-capture/20e7ee64-62e7-4bb0-a409-6f870f2e1737.response.bin": "c2b29a7924e59a913a72c2d1487b3e39639605d3e7bd0a75231c44818a66924f",
+    "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/rag/candidate-cd8a2428/module-attempt-01/engine-applicability/observations/direction-en-profile-only.json": "9ee1e5ea632a7d847050c30b6846ad966b140678b5672732e42cf19a2060aa7d"
+  }
+}
