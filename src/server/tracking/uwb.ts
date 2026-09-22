@@ -1,10 +1,12 @@
 import type { Calibration, UwbUpload } from "../../../packages/contracts/src/tracking";
+import type { UwbFixedAnchor } from "../../../packages/contracts/src/uwb-anchor";
 import { rotateOffset, tableMetersToCentimeters, tableMetersToWorldMeters } from "./geometry";
 import { type MarkerPose, type PositionObservation, TRACKING_STALE_MS } from "./types";
 
 export type UwbObservation = PositionObservation & {
   readonly captureClock?: UwbUpload["captureClock"];
   readonly rangeInputSource: PositionObservation["inputSource"];
+  readonly referenceSource?: "fixed-anchor" | "camera-marker";
   readonly tableDistanceM: number | null;
   readonly worldDistanceM: number | null;
   readonly azimuthRad: number | null;
@@ -15,6 +17,7 @@ export type UwbContext = {
   readonly calibration: Calibration | null;
   readonly poses: readonly MarkerPose[];
   readonly receivedAt: string;
+  readonly uwbAnchor?: UwbFixedAnchor | null;
 };
 
 export function deriveUwbObservation(input: UwbUpload, context: UwbContext): UwbObservation {
@@ -26,6 +29,7 @@ export function deriveUwbObservation(input: UwbUpload, context: UwbContext): Uwb
     source: "uwb",
     inputSource: input.source ?? "unknown",
     rangeInputSource: input.source ?? "unknown",
+    referenceSource: context.uwbAnchor ? "fixed-anchor" : "camera-marker",
     status: "invalid",
     position: null,
     tablePositionM: null,
@@ -48,6 +52,38 @@ export function deriveUwbObservation(input: UwbUpload, context: UwbContext): Uwb
   if (input.distanceM === null) return { ...observation, error: "UWB distance is unavailable." };
   if (input.azimuthRad === null)
     return { ...observation, status: "distance-only", error: "UWB azimuth is unavailable." };
+
+  if (context.uwbAnchor) {
+    const anchor = context.uwbAnchor;
+    const heightDifferenceM = anchor.workerAntennaHeightsM[input.workerId] - anchor.antennaHeightM;
+    if (input.elevationRad === null && Math.abs(heightDifferenceM) > input.distanceM)
+      return {
+        ...observation,
+        error: "UWB range is shorter than calibrated antenna height separation.",
+      };
+    const planarDistanceM =
+      input.elevationRad === null
+        ? Math.sqrt(input.distanceM ** 2 - heightDifferenceM ** 2)
+        : input.distanceM * Math.cos(input.elevationRad);
+    const relative = rotateOffset(
+      {
+        x: planarDistanceM * Math.cos(input.azimuthRad),
+        y: -planarDistanceM * Math.sin(input.azimuthRad),
+      },
+      anchor.headingRad,
+    );
+    const tablePositionM = {
+      x: anchor.positionTableM.x + relative.x,
+      y: anchor.positionTableM.y + relative.y,
+    };
+    return {
+      ...observation,
+      status: "valid",
+      tablePositionM,
+      tablePositionCm: tableMetersToCentimeters(tablePositionM),
+      position: { ...tableMetersToWorldMeters(tablePositionM), z: 0 },
+    };
+  }
 
   const { calibration } = context;
   if (calibration === null || calibration.uwbYawRad === null)

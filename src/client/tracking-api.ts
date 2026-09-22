@@ -8,6 +8,8 @@ import {
   CalibrationSchema,
   type TrackingSnapshot,
   TrackingSnapshotSchema,
+  type UwbFixedAnchor,
+  UwbFixedAnchorRequestSchema,
 } from "@/contracts";
 import { ApiFailure } from "./api";
 
@@ -48,6 +50,12 @@ export const trackingApi = {
     parseTrackingResponse(
       trackingHttp.post("/api/tracking/calibration", {
         json: CalibrationSchema.parse(calibration),
+      }),
+    ),
+  saveUwbAnchor: (anchor: UwbFixedAnchor | null) =>
+    parseTrackingResponse(
+      trackingHttp.post("/api/tracking/uwb-anchor", {
+        json: UwbFixedAnchorRequestSchema.parse({ anchor }),
       }),
     ),
 };

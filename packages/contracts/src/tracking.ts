@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { CaptureClockSchema, captureClockMatches } from "./clock";
 import { InputSourceSchema } from "./core";
+import { UwbFixedAnchorSchema } from "./uwb-anchor";
 
 const PointSchema = z.object({ x: z.number().finite(), y: z.number().finite() }).readonly();
 const TimestampSchema = z.string().datetime({ offset: true });
@@ -142,6 +143,7 @@ export const UwbObservationSchema = PositionObservationSchema.unwrap()
   .extend({
     captureClock: CaptureClockSchema.optional(),
     rangeInputSource: InputSourceSchema.default("unknown"),
+    referenceSource: z.enum(["fixed-anchor", "camera-marker"]).optional(),
     tableDistanceM: z.number().nonnegative().nullable(),
     worldDistanceM: z.number().nonnegative().nullable(),
     azimuthRad: z.number().nullable(),
@@ -172,6 +174,7 @@ export const TrackingSnapshotSchema = z
   .object({
     schemaVersion: z.enum(["1.0.0", "1.0.1"]),
     calibration: CalibrationSchema.nullable(),
+    uwbAnchor: UwbFixedAnchorSchema.nullable().optional(),
     camera: CameraFrameSchema.nullable(),
     cameraObservations: z.array(PositionObservationSchema).readonly(),
     uwbObservations: z.array(UwbObservationSchema).readonly(),

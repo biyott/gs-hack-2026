@@ -195,3 +195,92 @@ describe("tracking authorization lifecycle", () => {
     expect(vi.getTimerCount()).toBe(0);
   });
 });
+
+describe("fixed UWB anchor updates", () => {
+  it("supersedes an older pending poll when the anchor is applied", async () => {
+    // Given an in-flight poll without a fixed anchor.
+    const pending = deferred<TrackingSnapshot>();
+    const configured = {
+      ...snapshot,
+      uwbAnchor: {
+        version: "fixed-note20",
+        positionTableM: { x: 0, y: 0.25 },
+        headingRad: 0,
+        antennaHeightM: 0,
+        workerAntennaHeightsM: { "WORKER-A": 0, "WORKER-B": 0 },
+      },
+    };
+    vi.spyOn(trackingApi, "snapshot").mockReturnValue(pending.promise);
+    vi.spyOn(trackingApi, "saveUwbAnchor").mockResolvedValue(configured);
+    const { session, states, saved } = harness();
+    session.start(true);
+    // When the new anchor is saved and the old poll completes afterward.
+    await session.saveUwbAnchor(configured.uwbAnchor);
+    pending.resolve(snapshot);
+    await vi.advanceTimersByTimeAsync(0);
+    // Then the old response cannot remove the applied configuration.
+    expect(states.at(-1)?.snapshot?.uwbAnchor).toEqual(configured.uwbAnchor);
+    expect(saved).toHaveBeenCalledOnce();
+    session.stop();
+  });
+
+  it("publishes the server snapshot when the fixed anchor is cleared", async () => {
+    // Given an authorized tracking session and the clear response.
+    vi.spyOn(trackingApi, "snapshot").mockResolvedValue(snapshot);
+    const save = vi.spyOn(trackingApi, "saveUwbAnchor").mockResolvedValue(snapshot);
+    const { session, states } = harness();
+    session.start(true);
+    // When the operator clears the anchor.
+    await session.saveUwbAnchor(null);
+    // Then null crosses the API and the response replaces the local snapshot.
+    expect(save).toHaveBeenCalledWith(null);
+    expect(states.at(-1)?.snapshot).toEqual(snapshot);
+    session.stop();
+  });
+
+  it("does not save an anchor while tracking access is disabled", async () => {
+    // Given a disabled tracking session.
+    const save = vi.spyOn(trackingApi, "saveUwbAnchor").mockResolvedValue(snapshot);
+    const { session } = harness();
+    session.start(false);
+    // When a stale form attempts to clear the anchor.
+    await session.saveUwbAnchor(null);
+    // Then no request is sent.
+    expect(save).not.toHaveBeenCalled();
+  });
+
+  it("discards a pending anchor response after access is revoked", async () => {
+    // Given an authorized save that has not yet completed.
+    vi.spyOn(trackingApi, "snapshot").mockResolvedValue(snapshot);
+    const pending = deferred<TrackingSnapshot>();
+    vi.spyOn(trackingApi, "saveUwbAnchor").mockReturnValue(pending.promise);
+    const { session, states, saved } = harness();
+    session.start(true);
+    const saving = session.saveUwbAnchor(null);
+    session.start(false);
+    // When that request eventually completes.
+    pending.resolve(snapshot);
+    await saving;
+    // Then privileged state and the refresh callback remain cleared.
+    expect(states.at(-1)?.snapshot).toBeNull();
+    expect(saved).not.toHaveBeenCalled();
+  });
+});
+
+describe("fixed UWB anchor save failures", () => {
+  it("propagates a failed save to the form without replacing the current snapshot", async () => {
+    // Given a connected session and a rejected configuration request.
+    vi.spyOn(trackingApi, "snapshot").mockResolvedValue(snapshot);
+    const failure = new Error("Configuration request failed");
+    vi.spyOn(trackingApi, "saveUwbAnchor").mockRejectedValue(failure);
+    const { session, states, saved } = harness();
+    session.start(true);
+    await vi.advanceTimersByTimeAsync(0);
+    // When saving fails.
+    await expect(session.saveUwbAnchor(null)).rejects.toBe(failure);
+    // Then the caller can show the error and no success refresh is emitted.
+    expect(states.at(-1)?.snapshot).toEqual(snapshot);
+    expect(saved).not.toHaveBeenCalled();
+    session.stop();
+  });
+});

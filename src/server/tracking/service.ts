@@ -8,33 +8,21 @@ import {
   type TrackingSnapshot,
   UwbUploadSchema,
 } from "../../../packages/contracts/src/tracking";
+import {
+  type UwbFixedAnchor,
+  UwbFixedAnchorSchema,
+} from "../../../packages/contracts/src/uwb-anchor";
 import { deriveCameraObservations } from "./camera";
 import { detectJpeg } from "./detector";
+import { ageObservation } from "./observation-aging";
 import { type MarkerPose, TRACKING_STALE_MS, TrackingError } from "./types";
 import { deriveUwbObservation, type UwbObservation } from "./uwb";
-
-function ageObservation<T extends PositionObservation>(value: T, now: string): T {
-  const ageMs =
-    value.lastObservedAt === null
-      ? null
-      : Math.max(0, Date.parse(now) - Date.parse(value.lastObservedAt));
-  if (ageMs !== null && ageMs > TRACKING_STALE_MS) {
-    return {
-      ...value,
-      ageMs,
-      status: "stale",
-      position: null,
-      tablePositionM: null,
-      tablePositionCm: null,
-      error: "Last observation is older than 1000ms.",
-    };
-  }
-  return { ...value, ageMs };
-}
 
 /** Owns the latest per-source state; history persistence belongs to the server runtime. */
 export class TrackingService {
   private calibration: Calibration | null = null;
+  private uwbAnchor: UwbFixedAnchor | null = null;
+  private uwbAnchorChangedAt: number | null = null;
   private camera: CameraFrame | null = null;
   private lastCamera: CameraFrame | null = null;
   private retiredCameraStreams = new Set<string>();
@@ -61,12 +49,19 @@ export class TrackingService {
       const camera = cameraObservations.find((item) => item.entityId === entityId);
       const uwb = uwbObservations.find((item) => item.entityId === entityId);
       const selected =
-        camera?.status === "valid" ? camera : uwb?.status === "valid" ? uwb : (camera ?? uwb);
+        this.uwbAnchor && entityId !== "EQUIPMENT-A"
+          ? uwb
+          : camera?.status === "valid"
+            ? camera
+            : uwb?.status === "valid"
+              ? uwb
+              : (camera ?? uwb);
       return selected ? [selected] : [];
     });
     return {
       schemaVersion: "1.0.1",
       calibration: this.calibration,
+      uwbAnchor: this.uwbAnchor,
       camera: this.camera,
       cameraObservations,
       uwbObservations,
@@ -85,6 +80,13 @@ export class TrackingService {
       capturedAt: new Date().toISOString(),
       receivedAt: new Date().toISOString(),
     }).observations;
+    return this.getSnapshot();
+  }
+
+  setUwbAnchor(raw: unknown): TrackingSnapshot {
+    this.uwbAnchor = UwbFixedAnchorSchema.nullable().parse(raw);
+    this.uwbAnchorChangedAt = Date.now();
+    this.uwbObservations.clear();
     return this.getSnapshot();
   }
 
@@ -187,6 +189,8 @@ export class TrackingService {
         "UWB capture time must not be later than server receipt; synchronize device clocks.",
       );
     if (
+      (this.uwbAnchorChangedAt !== null &&
+        Date.parse(input.capturedAt) < this.uwbAnchorChangedAt) ||
       this.retiredUwbSessions.get(input.workerId)?.has(session) ||
       (previous &&
         (Date.parse(input.capturedAt) < Date.parse(previous.capturedAt) ||
@@ -198,6 +202,7 @@ export class TrackingService {
       );
     const observation = deriveUwbObservation(input, {
       calibration: this.calibration,
+      uwbAnchor: this.uwbAnchor,
       poses: this.poses,
       receivedAt,
     });

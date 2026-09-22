@@ -27,7 +27,9 @@ export function refreshTrackingAge(): void {
             stale.has(worker.workerId) &&
             worker.positionStatus !== "stale",
         ) ||
-          (stale.has("EQUIPMENT-A") &&
+          (!tracking.uwbAnchor &&
+            snapshot.equipment.positionSource !== "manual" &&
+            stale.has("EQUIPMENT-A") &&
             snapshot.equipment.positionStatus !== "stale" &&
             configuration.equipment.some(
               (preset) => preset.id === snapshot.equipment.presetId && preset.controls.translation,
@@ -38,7 +40,6 @@ export function refreshTrackingAge(): void {
 }
 
 export function synchronizeTracking(tracking: TrackingSnapshot): void {
-  if (tracking.updates.length === 0 && tracking.camera === null) return;
   const runtime = getRuntimeServices().runtime;
   const now = new Date().toISOString();
   for (const run of runtime.runs.values()) {

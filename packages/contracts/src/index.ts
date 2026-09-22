@@ -8,4 +8,5 @@ export * from "./guidance";
 export * from "./map";
 export * from "./state";
 export * from "./tracking";
+export * from "./uwb-anchor";
 export * from "./uwb-session";

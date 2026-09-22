@@ -36,6 +36,7 @@ const tracking: TrackingState = {
   now: Date.parse(capturedAt),
   refresh: () => {},
   saveCalibration: async () => {},
+  saveUwbAnchor: async () => {},
 };
 
 function renderPanel(role: SessionRole) {

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { errorMessage } from "@/client/api";
 import { trackingApi } from "@/client/tracking-api";
-import type { Calibration, TrackingSnapshot } from "@/contracts";
+import type { Calibration, TrackingSnapshot, UwbFixedAnchor } from "@/contracts";
 
 export type TrackingView = {
   readonly snapshot: TrackingSnapshot | null;
@@ -68,17 +68,22 @@ export function createTrackingSession(
     }, 200);
     return stop;
   };
-  const saveCalibration = async (calibration: Calibration) => {
+  const save = async (request: () => Promise<TrackingSnapshot>) => {
     const requestController = controller;
     if (!requestController || requestController.signal.aborted) return;
     const generation = ++requestGeneration;
-    const next = await trackingApi.calibrate(calibration);
+    const next = await request();
     if (requestController.signal.aborted || generation !== requestGeneration) return;
     requestGeneration += 1;
     publish({ snapshot: next, error: null, connected: true, now: Date.now() });
     onSaved();
   };
-  return { start, stop, saveCalibration };
+  return {
+    start,
+    stop,
+    saveCalibration: (calibration: Calibration) => save(() => trackingApi.calibrate(calibration)),
+    saveUwbAnchor: (anchor: UwbFixedAnchor | null) => save(() => trackingApi.saveUwbAnchor(anchor)),
+  };
 }
 
 export function useTracking(enabled: boolean) {
@@ -96,6 +101,9 @@ export function useTracking(enabled: boolean) {
     },
     saveCalibration: async (calibration: Calibration) => {
       if (enabled) await session.saveCalibration(calibration);
+    },
+    saveUwbAnchor: async (anchor: UwbFixedAnchor | null) => {
+      if (enabled) await session.saveUwbAnchor(anchor);
     },
   };
 }

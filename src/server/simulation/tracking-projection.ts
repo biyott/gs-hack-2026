@@ -4,6 +4,7 @@ import type {
   SimulationSnapshot,
   TrackingSnapshot,
 } from "@/contracts";
+import { tableMetersToWorldMeters } from "../tracking/geometry";
 import { TRACKING_STALE_MS } from "../tracking/types";
 
 function positionSource(observation: PositionObservation): "video" | "uwb" {
@@ -101,31 +102,44 @@ export function projectTracking(
     ...snapshot,
     workers,
     cctv,
-    equipment: !equipmentMovable
+    equipment: tracking.uwbAnchor
       ? {
           ...snapshot.equipment,
-          positionSource: "mock",
+          position: tableMetersToWorldMeters(tracking.uwbAnchor.positionTableM),
+          headingDeg: (tracking.uwbAnchor.headingRad * 180) / Math.PI,
+          speedMps: 0,
+          positionSource: "manual",
           positionInputSource: "synthetic",
           positionStatus: "known",
+          lastObservedAt: null,
         }
-      : equipment === undefined
+      : !equipmentMovable && snapshot.equipment.positionSource !== "manual"
         ? {
             ...snapshot.equipment,
-            positionSource: "video",
-            positionInputSource: "unknown",
-            positionStatus: "unknown",
-            lastObservedAt: null,
+            positionSource: "mock",
+            positionInputSource: "synthetic",
+            positionStatus: "known",
           }
-        : {
-            ...snapshot.equipment,
-            position:
-              equipment.status === "valid" && equipment.position !== null
-                ? equipment.position
-                : snapshot.equipment.position,
-            positionSource: positionSource(equipment),
-            positionInputSource: equipment.inputSource,
-            positionStatus: positionStatus(equipment),
-            lastObservedAt: equipment.lastObservedAt,
-          },
+        : equipment === undefined ||
+            (snapshot.equipment.positionSource === "manual" &&
+              (equipment.status !== "valid" || equipment.position === null))
+          ? {
+              ...snapshot.equipment,
+              positionSource: snapshot.equipment.positionSource === "manual" ? "manual" : "video",
+              positionInputSource: "unknown",
+              positionStatus: "unknown",
+              lastObservedAt: null,
+            }
+          : {
+              ...snapshot.equipment,
+              position:
+                equipment.status === "valid" && equipment.position !== null
+                  ? equipment.position
+                  : snapshot.equipment.position,
+              positionSource: positionSource(equipment),
+              positionInputSource: equipment.inputSource,
+              positionStatus: positionStatus(equipment),
+              lastObservedAt: equipment.lastObservedAt,
+            },
   };
 }

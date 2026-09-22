@@ -6,6 +6,7 @@ import { Banner, Panel, StatusBadge } from "@/components/ui/primitives";
 import type { CctvState, Session } from "@/contracts";
 import { CalibrationForm } from "./calibration-form";
 import { CameraPanel } from "./camera-panel";
+import { FixedUwbAnchorForm } from "./fixed-uwb-anchor-form";
 import { CameraObservationTable, UwbObservationTable } from "./observation-table";
 import type { TrackingState } from "./use-tracking";
 
@@ -42,6 +43,11 @@ export function TrackingPanel({ cctv, role, tracking }: TrackingPanelProps) {
           {tracking.error} 마지막 수신값은 현재 측정으로 간주하지 마세요.
         </Banner>
       ) : null}
+      <FixedUwbAnchorForm
+        anchor={snapshot?.uwbAnchor ?? null}
+        canConfigure={canCalibrate && tracking.connected}
+        onSave={tracking.saveUwbAnchor}
+      />
       <CameraPanel
         cameras={cctv}
         frame={snapshot?.camera ?? null}
