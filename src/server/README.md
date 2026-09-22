@@ -4,6 +4,23 @@ Run `npm ci`, `npm run db:migrate`, `npm run db:seed`, then `npm run dev` from t
 
 See [authentication](auth/README.md), [database](db/README.md), and the [wire contracts](../../docs/contracts/v1.md). PINs, bearer tokens and UWB keys must not be copied into evidence logs. All data and risk geometry are for the declared demonstration configuration.
 
+## GPT through the OpenAI API
+
+Set these server-only variables in the repository-root `.env` or inject them from a Kubernetes Secret, then restart the server:
+
+```dotenv
+RAG_LLM_PROVIDER=openai
+OPENAI_API_KEY=replace-with-your-openai-api-key
+```
+
+OpenAI mode defaults to `https://api.openai.com/v1` and the pinned `gpt-4.1-mini-2025-04-14` model. `RAG_LLM_BASE_URL`, `RAG_LLM_MODEL`, and `RAG_LLM_VERSION` override those defaults; remove old local Qwen overrides when switching. If both keys are set, `RAG_LLM_API_KEY` takes precedence over `OPENAI_API_KEY`. Keep keys out of Git and never prefix them with `NEXT_PUBLIC_`.
+
+The provider uses [Chat Completions](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create) with structured output to select a reviewed explanation. The existing primary safety decision, route, and 5-second supplement deadline remain authoritative. A provider failure leaves the primary guidance in place. The default model supports [structured outputs](https://developers.openai.com/api/docs/models/gpt-4.1-mini); other model families may require different request options.
+
+Retrieval still uses the local multilingual E5 embedding model. Prepare its files as described in [the model setup guide](../../data/knowledge/runtime/README.md); adding an OpenAI key does not replace the embedding model. SQLite remains on the application server.
+
+Omit `RAG_LLM_PROVIDER` or set it to `local` to retain the existing Qwen/llama.cpp defaults. Local mode ignores `OPENAI_API_KEY` and only uses an explicitly supplied `RAG_LLM_API_KEY` for authentication.
+
 ## Authentication and privacy
 
 `POST /api/session` accepts the following JSON. Substitute the configured PIN locally; the role is checked against the seeded account, never trusted as authorization.

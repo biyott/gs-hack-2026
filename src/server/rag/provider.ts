@@ -1,6 +1,7 @@
 import { createHash, randomUUID } from "node:crypto";
 import ky from "ky";
 import { z } from "zod";
+import { MAX_SUPPLEMENT_MS } from "./deadline";
 import {
   type GenerationInput,
   type LanguageModelIdentity,
@@ -10,11 +11,12 @@ import {
 } from "./generation-types";
 
 const ProviderConfigSchema = z.object({
+  provider: z.enum(["local", "openai"]).default("local"),
   baseUrl: z.url(),
   model: z.string().min(1),
   version: z.string().min(1),
   apiKey: z.string().optional(),
-  timeoutMs: z.number().int().positive().default(5000),
+  timeoutMs: z.number().int().positive().max(MAX_SUPPLEMENT_MS).default(MAX_SUPPLEMENT_MS),
 });
 const ResponseSchema = z.object({
   id: z.string().optional(),
@@ -22,6 +24,13 @@ const ResponseSchema = z.object({
   choices: z.array(z.object({ message: z.object({ content: z.string() }) })).min(1),
 });
 const SelectionSchema = z.object({ selection: z.number().int().nonnegative() }).strict();
+const ProviderSettings = {
+  local: {
+    identity: "openai-compatible",
+    request: { max_tokens: 24, chat_template_kwargs: { enable_thinking: false } },
+  },
+  openai: { identity: "openai", request: { max_completion_tokens: 64 } },
+} as const;
 
 export class OpenAICompatibleLanguageModel implements LanguageModelProvider {
   readonly identity: LanguageModelIdentity;
@@ -29,8 +38,11 @@ export class OpenAICompatibleLanguageModel implements LanguageModelProvider {
 
   constructor(configuration: unknown) {
     this.config = ProviderConfigSchema.parse(configuration);
+    if (this.config.provider === "openai" && !this.config.apiKey?.trim()) {
+      throw new RagProviderError("configuration", "OpenAI mode requires an API key");
+    }
     this.identity = {
-      provider: "openai-compatible",
+      provider: ProviderSettings[this.config.provider].identity,
       model: this.config.model,
       version: this.config.version,
       mode: "actual",
@@ -71,8 +83,7 @@ export class OpenAICompatibleLanguageModel implements LanguageModelProvider {
         json: {
           model: this.config.model,
           temperature: 0,
-          max_tokens: 24,
-          chat_template_kwargs: { enable_thinking: false },
+          ...ProviderSettings[this.config.provider].request,
           messages: [
             {
               role: "system",
