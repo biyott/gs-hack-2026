@@ -1,5 +1,7 @@
 # 단일 K3s 서버 수동 배포
 
+이미 배포된 앱을 `gs.emul.site`로 공개하려면 [도메인·HTTPS 연결](public-domain.md)을 따르세요.
+
 서버에서 이미지를 빌드하고 K3s에 직접 넣습니다. GitHub Actions, 레지스트리, Argo CD는 필요하지 않습니다. **K3s 노드가 1대이고 Docker가 설치된 Linux 서버**에서 실행하세요. AMD64/ARM64 모두 서버 CPU에 맞춰 빌드합니다. 첫 빌드에는 npm 패키지와 임베딩 모델 다운로드를 위한 인터넷 연결이 필요합니다.
 
 Ubuntu/Debian 서버에 Docker가 없다면 `sudo apt-get update` 후 `sudo apt-get install -y docker.io`와 `sudo systemctl enable --now docker`로 준비할 수 있습니다. 기존 K3s의 `local-path` StorageClass를 사용하며 클러스터를 새로 설치하거나 기존 앱을 변경하지 않습니다.

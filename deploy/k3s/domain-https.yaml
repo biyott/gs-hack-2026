@@ -1,0 +1,57 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: gs-safety-letsencrypt
+  namespace: gs-safety
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      name: gs-safety-acme-account
+    solvers:
+      - http01:
+          ingress:
+            ingressClassName: traefik
+            ingressTemplate:
+              metadata:
+                annotations:
+                  traefik.ingress.kubernetes.io/router.entrypoints: web
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: gs-safety-tls
+  namespace: gs-safety
+spec:
+  secretName: gs-safety-tls
+  issuerRef:
+    kind: Issuer
+    name: gs-safety-letsencrypt
+  dnsNames:
+    - gs.emul.site
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: gs-safety-https
+  namespace: gs-safety
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
+spec:
+  ingressClassName: traefik
+  tls:
+    - hosts:
+        - gs.emul.site
+      secretName: gs-safety-tls
+  rules:
+    - host: gs.emul.site
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: gs-safety
+                port:
+                  number: 3000
