@@ -1,10 +1,13 @@
+import assert from "node:assert/strict";
 import { describe, expect, it } from "vitest";
 import type { SimulationSnapshot } from "@/contracts";
+import { eventsBetween } from "../scenarios";
 import { cleanups, configuration, fixture } from "../simulation/runtime-test-fixtures";
 
 function towerRun(scenarioId: string) {
   const f = fixture();
   f.command({ action: "select", scenarioId });
+  f.command({ action: "speed", speed: 1 });
   f.command({ action: "start" });
   const initial = f.command({ action: "equipment", presetId: "liebherr-172ecb" });
   const publications: SimulationSnapshot[] = [];
@@ -21,10 +24,17 @@ function chassisHazards(snapshot: SimulationSnapshot) {
     }));
 }
 
-const scenarios = [
-  { id: "EQ-APPROACH", publicationTimes: [1000, 5000, 10000, 15000, 20000] },
-  { id: "EQ-SPEED-DIRECTION", publicationTimes: [1000, 4000, 8000, 12000, 16000, 20000] },
-] as const;
+const scenarios = ["EQ-APPROACH", "EQ-SPEED-DIRECTION"].map((id) => {
+  const scenario = configuration.scenarios.find((candidate) => candidate.id === id);
+  assert.ok(scenario);
+  const publicationTimes = [
+    ...new Set([
+      ...eventsBetween(scenario, 0, scenario.durationMs).map((batch) => batch.atMs),
+      scenario.durationMs,
+    ]),
+  ];
+  return { id, durationMs: scenario.durationMs, publicationTimes };
+});
 
 describe("fixed tower selection during mobile equipment scenarios", () => {
   for (const scenario of scenarios) {
@@ -32,7 +42,7 @@ describe("fixed tower selection during mobile equipment scenarios", () => {
       // Given
       const { f, publications } = towerRun(scenario.id);
       // When
-      f.command({ action: "advance", deltaMs: 20000 });
+      f.command({ action: "advance", deltaMs: scenario.durationMs });
       // Then
       expect(publications.map((snapshot) => snapshot.run.virtualTimeMs)).toEqual(
         scenario.publicationTimes,
@@ -46,7 +56,7 @@ describe("fixed tower selection during mobile equipment scenarios", () => {
       // Given
       const { f, publications } = towerRun(scenario.id);
       // When
-      f.command({ action: "advance", deltaMs: 20000 });
+      f.command({ action: "advance", deltaMs: scenario.durationMs });
       // Then
       expect(
         publications.map((snapshot) => ({
@@ -61,7 +71,7 @@ describe("fixed tower selection during mobile equipment scenarios", () => {
       const { f, initial, publications } = towerRun(scenario.id);
       const anchored = chassisHazards(initial);
       // When
-      f.command({ action: "advance", deltaMs: 20000 });
+      f.command({ action: "advance", deltaMs: scenario.durationMs });
       // Then
       expect(anchored.length).toBeGreaterThan(0);
       expect(publications.map(chassisHazards)).toEqual(

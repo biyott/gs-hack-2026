@@ -16,7 +16,16 @@ describe("QD004 current arrival guidance after departure", () => {
       id: "QA-S20-OS",
       durationMs: 12_000,
       events: [
-        ...base.events.filter((event) => event.atMs <= 8000),
+        ...base.events
+          .map((event) => ({ ...event, atMs: Math.round((event.atMs * 20_000) / base.durationMs) }))
+          .filter((event) => event.atMs <= 8000),
+        {
+          id: "qa-reroute-hold",
+          type: "worker.position",
+          atMs: 8000,
+          workerId: "WORKER-A",
+          position: { x: 65, y: 25 },
+        },
         {
           id: "qa-latest-arrival",
           type: "worker.position",
@@ -39,6 +48,7 @@ describe("QD004 current arrival guidance after departure", () => {
     const path = join(directory, "runtime.sqlite");
     const original = fixture(path, config);
     original.command({ action: "select", scenarioId: scenario.id });
+    original.command({ action: "speed", speed: 1 });
     original.command({ action: "start" });
     const first = original.command({ action: "advance", deltaMs: 4000 });
     expect(first.workers[0]?.currentGuidance?.destinationId).toBe("REFUGE-01");

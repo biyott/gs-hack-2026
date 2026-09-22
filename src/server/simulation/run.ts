@@ -17,6 +17,7 @@ import { evaluateSnapshot } from "./evaluate";
 import { closedEdges, projectHazards } from "./hazards";
 import { addClosureOwners, type ClosureOwners, relatesToIncident } from "./incident-scope";
 import { restorePlaybackSnapshot } from "./playback";
+import { advanceScenarioMotion, restoreScenarioPoses } from "./scenario-motion";
 import { createRunSnapshot, observeWorld } from "./snapshots";
 import {
   applyWorldEvent,
@@ -70,13 +71,7 @@ export class SimulationRun {
       this.world = {
         ...this.world,
         state: {
-          ...this.world.state,
-          workers: this.world.state.workers.map((worker) => {
-            const saved = restored.workers.find(
-              (candidate) => candidate.workerId === worker.workerId,
-            );
-            return saved ? { ...worker, position: saved.position, profile: saved.profile } : worker;
-          }),
+          ...restoreScenarioPoses(this.world.state, restored),
           blockedPathIds: [
             ...new Set(
               configuration.map.edges
@@ -222,6 +217,7 @@ export class SimulationRun {
     const snapshots: SimulationSnapshot[] = [];
     for (const batch of eventsBetween(this.scenario, beforeMs, clock.virtualTimeMs)) {
       const now = new Date().toISOString();
+      advanceScenarioMotion(this, batch.atMs);
       this.snapshot = {
         ...this.snapshot,
         run: { ...this.snapshot.run, virtualTimeMs: batch.atMs, updatedAt: now },
@@ -230,6 +226,7 @@ export class SimulationRun {
       snapshots.push(this.evaluate(now, recipients));
     }
     const now = new Date().toISOString();
+    advanceScenarioMotion(this, clock.virtualTimeMs);
     this.snapshot = {
       ...this.snapshot,
       run: {

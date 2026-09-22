@@ -21,6 +21,7 @@ export function closedArrival() {
         pathIds: ["EDGE-A-04", "EDGE-A-05", "EDGE-C-05"],
       },
       ...[
+        { atMs: 2000, position: { x: 65, y: 25 } },
         { atMs: 3000, position: { x: 125, y: 42 } },
         { atMs: 4000, position: { x: 125, y: 8 } },
         { atMs: 5000, position: { x: 125, y: 42 } },
@@ -37,6 +38,7 @@ export function closedArrival() {
     scenarios: [...configuration.scenarios, scenario],
   });
   f.command({ action: "select", scenarioId: scenario.id });
+  f.command({ action: "speed", speed: 1 });
   f.command({ action: "start" });
   f.command({ action: "advance", deltaMs: 3000 });
   const run = f.runtime.getRun("equipment");

@@ -42,7 +42,7 @@ describe("runtime publication ordering", () => {
       vi.advanceTimersByTime(100);
       const reset = f.command({ action: "reset" }, mode);
       // Then
-      expect(transient.run.virtualTimeMs).toBe(200);
+      expect(transient.run.virtualTimeMs).toBe(300);
       expect(transient.run.version).toBe(started.run.version);
       expect(persisted).toEqual(started);
       expect(publications.length).toBeGreaterThanOrEqual(6);
@@ -54,7 +54,7 @@ describe("runtime publication ordering", () => {
         expect(snapshot.sequence).toBeGreaterThan(previous);
         previous = snapshot.sequence;
       }
-      expect(reset.run).toMatchObject({ version: 0, virtualTimeMs: 0, status: "idle" });
+      expect(reset.run).toMatchObject({ version: 0, virtualTimeMs: 0, status: "idle", speed: 2 });
       expect(reset.run.runId).not.toBe(started.run.runId);
       expect(f.snapshot(other.mode)).toEqual(other);
     },

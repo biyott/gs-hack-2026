@@ -1,6 +1,6 @@
 {
   "id": "FG-CLEAR-REOPEN",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "위험 해제와 별도 통행 재개",
     "en": "Hazard clear and separate reopening"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 24000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-FG-EVACUATE",
   "initial": {
@@ -103,7 +103,7 @@
   "events": [
     {
       "id": "FG-CLEAR-REOPEN-001",
-      "atMs": 1000,
+      "atMs": 375,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -112,14 +112,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 1000,
+        "observedAtMs": 375,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-002",
-      "atMs": 1000,
+      "atMs": 375,
       "type": "hazard.upsert",
       "hazard": {
         "id": "FIRE-ZONE-B",
@@ -148,13 +148,13 @@
     },
     {
       "id": "FG-CLEAR-REOPEN-003",
-      "atMs": 1000,
+      "atMs": 375,
       "type": "route.block",
       "pathIds": ["PATH-B"]
     },
     {
       "id": "FG-CLEAR-REOPEN-007",
-      "atMs": 4000,
+      "atMs": 1500,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -163,14 +163,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 4000,
+        "observedAtMs": 1500,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-008",
-      "atMs": 4000,
+      "atMs": 1500,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -179,14 +179,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 4000,
+        "observedAtMs": 1500,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-009",
-      "atMs": 8000,
+      "atMs": 3000,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -195,14 +195,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 8000,
+        "observedAtMs": 3000,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-010",
-      "atMs": 8000,
+      "atMs": 3000,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -211,14 +211,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 8000,
+        "observedAtMs": 3000,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-004",
-      "atMs": 12000,
+      "atMs": 4500,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -227,20 +227,20 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 12000,
+        "observedAtMs": 4500,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-005",
-      "atMs": 12000,
+      "atMs": 4500,
       "type": "hazard.clear",
       "hazardId": "FIRE-ZONE-B"
     },
     {
       "id": "FG-CLEAR-REOPEN-011",
-      "atMs": 12000,
+      "atMs": 4500,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -249,14 +249,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 12000,
+        "observedAtMs": 4500,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-012",
-      "atMs": 12000,
+      "atMs": 4500,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -265,14 +265,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 12000,
+        "observedAtMs": 4500,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-013",
-      "atMs": 16000,
+      "atMs": 6000,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -281,14 +281,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 16000,
+        "observedAtMs": 6000,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-014",
-      "atMs": 16000,
+      "atMs": 6000,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -297,21 +297,21 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 16000,
+        "observedAtMs": 6000,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-006",
-      "atMs": 20000,
+      "atMs": 7500,
       "type": "route.reopen",
       "pathIds": ["PATH-B"],
       "authorizedBy": "scenario:reviewed-demo-policy"
     },
     {
       "id": "FG-CLEAR-REOPEN-015",
-      "atMs": 20000,
+      "atMs": 7500,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -320,14 +320,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 20000,
+        "observedAtMs": 7500,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-016",
-      "atMs": 20000,
+      "atMs": 7500,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -336,14 +336,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 20000,
+        "observedAtMs": 7500,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-017",
-      "atMs": 24000,
+      "atMs": 9000,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -352,14 +352,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 24000,
+        "observedAtMs": 9000,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-CLEAR-REOPEN-018",
-      "atMs": 24000,
+      "atMs": 9000,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -368,7 +368,7 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 24000,
+        "observedAtMs": 9000,
         "source": "mock",
         "connected": true
       }
@@ -376,19 +376,19 @@
   ],
   "expectedResults": [
     {
-      "atMs": 12000,
+      "atMs": 4500,
       "kind": "active-hazards",
       "hazardIds": [],
       "note": "Retain all independently active hazards."
     },
     {
-      "atMs": 12000,
+      "atMs": 4500,
       "kind": "blocked-paths",
       "pathIds": ["PATH-B"],
       "note": "Hazard status and authorization do not implicitly change this list."
     },
     {
-      "atMs": 12000,
+      "atMs": 4500,
       "kind": "guidance",
       "workerId": "WORKER-A",
       "actionCode": "AWAIT_REOPEN_AUTHORIZATION",
@@ -397,7 +397,7 @@
       "note": "Assert the current authoritative guidance, not generated explanation."
     },
     {
-      "atMs": 20000,
+      "atMs": 7500,
       "kind": "blocked-paths",
       "pathIds": [],
       "note": "Hazard status and authorization do not implicitly change this list."

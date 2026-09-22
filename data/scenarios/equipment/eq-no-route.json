@@ -1,6 +1,6 @@
 {
   "id": "EQ-NO-ROUTE",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "유효 회피 경로 없음",
     "en": "No valid avoidance route"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 12000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-EQUIPMENT",
   "initial": {
@@ -93,7 +93,7 @@
   "events": [
     {
       "id": "EQ-NO-ROUTE-001",
-      "atMs": 1000,
+      "atMs": 750,
       "type": "equipment.pose",
       "position": {
         "x": 35,
@@ -105,14 +105,14 @@
     },
     {
       "id": "EQ-NO-ROUTE-002",
-      "atMs": 1000,
+      "atMs": 750,
       "type": "route.block",
       "pathIds": ["PATH-A", "PATH-B", "PATH-C"]
     }
   ],
   "expectedResults": [
     {
-      "atMs": 1000,
+      "atMs": 750,
       "kind": "guidance",
       "workerId": "WORKER-A",
       "actionCode": "ROUTE_UNAVAILABLE",
@@ -121,7 +121,7 @@
       "note": "Assert the current authoritative guidance, not generated explanation."
     },
     {
-      "atMs": 1000,
+      "atMs": 750,
       "kind": "blocked-paths",
       "pathIds": ["PATH-A", "PATH-B", "PATH-C"],
       "note": "Hazard status and authorization do not implicitly change this list."

@@ -12,9 +12,17 @@ describe("runtime unresolved guidance through the public profile command", () =>
     const f = fixture();
     const mode = "fire-gas";
     f.command({ action: "select", scenarioId: "FG-SENSOR-STALE" }, mode);
+    f.command({ action: "speed", speed: 1 }, mode);
     f.command({ action: "start" }, mode);
-    f.command({ action: "advance", deltaMs: 7000 }, mode);
     const run = f.runtime.getRun(mode);
+    const staleCheckpoint = run.scenario.expectedResults.find(
+      (expected) =>
+        expected.kind === "source-state" &&
+        expected.entityId === "SENSOR-GAS-B" &&
+        expected.state === "stale",
+    );
+    assert.ok(staleCheckpoint);
+    f.command({ action: "advance", deltaMs: staleCheckpoint.atMs }, mode);
     const oldWorker = run.snapshot.workers.find((worker) => worker.workerId === "WORKER-B");
     assert.ok(oldWorker?.currentGuidance);
     const previous = oldWorker.currentGuidance;

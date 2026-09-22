@@ -125,7 +125,7 @@ describe("real scenario runtime checkpoints", () => {
       for (const expected of [...scenario.expectedResults].sort(
         (left, right) => left.atMs - right.atMs,
       )) {
-        run.advance(expected.atMs - run.snapshot.run.virtualTimeMs, 0);
+        run.advance((expected.atMs - run.snapshot.run.virtualTimeMs) / run.snapshot.run.speed, 0);
         verifyCheckpoint(run, expected);
       }
     });

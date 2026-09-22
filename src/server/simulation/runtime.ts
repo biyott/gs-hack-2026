@@ -197,7 +197,11 @@ export class SimulationRuntime {
           : scenario,
         this.dependencies.configuration,
       );
-      next.snapshot = this.order.next(next.snapshot);
+      next.clock.setSpeed(run.snapshot.run.speed);
+      next.snapshot = this.order.next({
+        ...next.snapshot,
+        run: { ...next.snapshot.run, speed: run.snapshot.run.speed },
+      });
       next.snapshot = this.dependencies.repository.replace(
         next.snapshot,
         {

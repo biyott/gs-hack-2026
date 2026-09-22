@@ -3,9 +3,12 @@ import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, it, vi } from "vitest";
+import type { SimulationMode } from "@/contracts";
 import { ScenarioSchema } from "../scenarios";
 import type { SimulationConfiguration } from "./configuration";
 import { cleanups, configuration, fixture } from "./runtime-test-fixtures";
+
+type RuntimeFixture = ReturnType<typeof fixture>;
 
 function persistent(config: SimulationConfiguration = configuration) {
   const directory = mkdtempSync(join(tmpdir(), "gs-runtime-"));
@@ -13,8 +16,15 @@ function persistent(config: SimulationConfiguration = configuration) {
   const path = join(directory, "safety.sqlite");
   const context = fixture(path, config);
   context.command({ action: "start" });
-  context.command({ action: "advance", deltaMs: 1000 });
+  const checkpoint = context.runtime.getRun("equipment").scenario.expectedResults[0];
+  assert.ok(checkpoint);
+  advanceTo(context, checkpoint.atMs);
   return { path, context };
+}
+
+function advanceTo(f: RuntimeFixture, atMs: number, mode: SimulationMode = "equipment") {
+  const { virtualTimeMs, speed } = f.snapshot(mode).run;
+  return f.command({ action: "advance", deltaMs: (atMs - virtualTimeMs) / speed }, mode);
 }
 
 describe("runtime persisted continuation", () => {
@@ -22,7 +32,9 @@ describe("runtime persisted continuation", () => {
     // Given
     const { path, context: f } = persistent();
     f.command({ action: "start" }, "fire-gas");
-    f.command({ action: "advance", deltaMs: 8000 }, "fire-gas");
+    const checkpoint = f.runtime.getRun("fire-gas").scenario.expectedResults.at(-1);
+    assert.ok(checkpoint);
+    advanceTo(f, checkpoint.atMs, "fire-gas");
     f.runtime.respond(f.response("help-requested"), f.session("worker-a"));
     const modes = [f.snapshot(), f.snapshot("fire-gas")];
     const histories = modes.map((snapshot) => f.repository.history(snapshot.run.runId));
@@ -79,35 +91,21 @@ describe("runtime persisted continuation", () => {
     expect(result.incidents.map((incident) => incident.status)).toEqual(["cleared"]);
   });
 
-  it("retains manual equipment pose when a reopened run is resumed", () => {
-    // Given
+  it.each(["sk1265-at6", "tadano-gr250n4"])("restores %s pose and trajectory", (presetId) => {
     const { path, context: f } = persistent();
+    if (presetId !== f.snapshot().equipment.presetId) f.command({ action: "equipment", presetId });
     const before = f.command({ action: "control", pose: { slewDeg: 7 } });
+    const expected = f.runtime.getRun("equipment").advance(250, 0).at(-1);
+    assert.ok(expected);
     f.runtime.dispose();
     f.database.close();
     const reopened = fixture(path);
+    expect(reopened.snapshot().equipment).toEqual(before.equipment);
     reopened.command({ action: "resume" });
-    // When
     const result = reopened.command({ action: "advance", deltaMs: 250 });
-    // Then
-    expect(result.equipment).toEqual(before.equipment);
-  });
-
-  it("retains a manually switched equipment preset when a reopened run is resumed", () => {
-    // Given
-    const { path, context: f } = persistent();
-    f.command({ action: "equipment", presetId: "tadano-gr250n4" });
-    const before = f.command({ action: "control", pose: { slewDeg: 7 } });
-    f.runtime.dispose();
-    f.database.close();
-    const reopened = fixture(path);
-    reopened.command({ action: "resume" });
-    // When
-    const result = reopened.command({ action: "advance", deltaMs: 250 });
-    // Then
-    expect(result.equipment).toEqual(before.equipment);
+    expect(result.equipment).toEqual(expected.equipment);
     expect(result.hazards.map((hazard) => hazard.hazardId)).toEqual(
-      before.hazards.map((hazard) => hazard.hazardId),
+      expected.hazards.map((hazard) => hazard.hazardId),
     );
   });
 
@@ -118,7 +116,11 @@ describe("runtime persisted continuation", () => {
       const { path, context: f } = persistent();
       f.command({ action: "select", scenarioId: "FG-ROUTE-BLOCK" }, "fire-gas");
       f.command({ action: "start" }, "fire-gas");
-      f.command({ action: "advance", deltaMs: 8000 }, "fire-gas");
+      const checkpoint = f.runtime
+        .getRun("fire-gas")
+        .scenario.expectedResults.find((expected) => expected.kind === "blocked-paths");
+      assert.ok(checkpoint);
+      advanceTo(f, checkpoint.atMs, "fire-gas");
       f.runtime.incident(f.action({ action: "clear-hazard" }, "fire-gas"), f.admin);
       if (passageReopened)
         f.runtime.incident(f.action({ action: "reopen-passage" }, "fire-gas"), f.admin);
@@ -140,39 +142,30 @@ describe("runtime persisted continuation", () => {
     // Given
     const base = configuration.scenarios.find((scenario) => scenario.id === "EQ-ARRIVAL");
     assert.ok(base);
-    const approach = base.events[0];
-    assert.ok(approach);
+    const hold = base.events.find((event) => event.type === "worker.position");
+    assert.ok(hold);
     const scenario = ScenarioSchema.parse({
       ...base,
       id: "EQ-APPROACH",
       events: [
-        approach,
+        ...base.events.filter((event) => event.type === "equipment.pose"),
         {
           id: "reroute",
           type: "route.block",
           atMs: 2000,
           pathIds: ["EDGE-A-04", "EDGE-A-05", "EDGE-C-05"],
         },
-        {
-          id: "arrive",
-          type: "worker.position",
-          atMs: 3000,
-          workerId: "WORKER-A",
-          position: { x: 125, y: 42 },
-        },
+        { ...hold, atMs: 2000 },
+        { ...hold, id: "arrive", atMs: 3000, position: { x: 125, y: 42 } },
       ],
     });
-    const config = {
-      ...configuration,
-      scenarios: configuration.scenarios.map((entry) =>
-        entry.id === scenario.id ? scenario : entry,
-      ),
-    };
+    const scenarios = configuration.scenarios.filter((entry) => entry.id !== scenario.id);
+    const config = { ...configuration, scenarios: [...scenarios, scenario] };
     const { path, context: f } = persistent(config);
     expect(f.snapshot().workers[0]?.currentGuidance?.destinationId).toBe("REFUGE-01");
-    f.command({ action: "advance", deltaMs: 1000 });
+    advanceTo(f, 2000);
     expect(f.snapshot().workers[0]?.currentGuidance?.destinationId).toBe("REFUGE-02");
-    f.command({ action: "advance", deltaMs: 1000 });
+    advanceTo(f, 3000);
     expect(f.snapshot().workers[0]?.currentGuidance).toMatchObject({
       actionCode: "CONFIRM_ARRIVAL",
       waypoints: [],
@@ -223,7 +216,7 @@ describe("runtime persisted continuation", () => {
       const command = f.request({ action: "speed", speed: 2 });
       const incident = f.action({ action: "acknowledge" });
       const response = f.response("understood");
-      const dispatch = (context: ReturnType<typeof fixture>) => {
+      const dispatch = (context: RuntimeFixture) => {
         switch (kind) {
           case "command":
             return context.runtime.command(command, context.admin);
@@ -237,7 +230,7 @@ describe("runtime persisted continuation", () => {
         }
       };
       const requestId = kind === "command" ? command.requestId : incident.requestId;
-      const receipt = (context: ReturnType<typeof fixture>) =>
+      const receipt = (context: RuntimeFixture) =>
         kind === "command" || kind === "incident"
           ? context.repository.findRequestReceipt("equipment", requestId)
           : context.repository.responseReceipt(response);
@@ -278,7 +271,7 @@ describe("runtime persisted continuation", () => {
     // When
     vi.advanceTimersByTime(1000);
     // Then
-    expect(f.snapshot().run.virtualTimeMs).toBe(1000);
+    expect(f.snapshot().run.virtualTimeMs).toBe(1000 * f.snapshot().run.speed);
     expect(f.snapshot("fire-gas").run.virtualTimeMs).toBe(0);
     expect(vi.getTimerCount()).toBe(1);
     f.runtime.dispose();

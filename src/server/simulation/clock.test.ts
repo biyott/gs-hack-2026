@@ -2,9 +2,35 @@ import { describe, expect, it } from "vitest";
 import { ClockTransitionError, SimulationClock } from "./clock";
 
 describe("deterministic simulation clock", () => {
+  it("advances at 1.5x real time when no initial speed is supplied", () => {
+    // Given
+    const clock = new SimulationClock(10000);
+    clock.start();
+    // When
+    const result = clock.advance(500);
+    // Then
+    expect(result).toMatchObject({ virtualTimeMs: 750, speed: 1.5 });
+  });
+
+  it("preserves an explicit speed when a clock is restored", () => {
+    // Given
+    const clock = new SimulationClock(10000, {
+      status: "running",
+      virtualTimeMs: 1000,
+      speed: 0.5,
+      durationMs: 10000,
+    });
+    // When
+    const result = clock.advance(500);
+    // Then
+    expect(result).toMatchObject({ virtualTimeMs: 1250, speed: 0.5 });
+  });
+
   it("keeps independent modes and freezes paused time", () => {
     const equipment = new SimulationClock(10000);
     const fireGas = new SimulationClock(10000);
+    equipment.setSpeed(1);
+    fireGas.setSpeed(1);
     equipment.start();
     fireGas.start();
     equipment.advance(500);

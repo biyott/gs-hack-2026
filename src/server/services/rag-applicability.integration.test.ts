@@ -1,9 +1,27 @@
 import assert from "node:assert/strict";
 import { describe, expect, it, vi } from "vitest";
+import type { SimulationMode } from "@/contracts";
 import type { EnrichmentInput } from "../rag";
 import { ResponsePolicySchema } from "../scenarios/policy";
 import { configuration, fixture } from "../simulation/runtime-test-fixtures";
 import { type AttachedRagService, attachRag } from "./rag";
+
+function advanceToEvent(
+  f: ReturnType<typeof fixture>,
+  mode: SimulationMode,
+  eventId: string,
+): void {
+  const run = f.runtime.getRun(mode);
+  const event = run.scenario.events.find((candidate) => candidate.id === eventId);
+  assert.ok(event);
+  f.command(
+    {
+      action: "advance",
+      deltaMs: (event.atMs - run.snapshot.run.virtualTimeMs) / run.snapshot.run.speed,
+    },
+    mode,
+  );
+}
 
 async function capture(f: ReturnType<typeof fixture>): Promise<readonly EnrichmentInput[]> {
   const calls: EnrichmentInput[] = [];
@@ -57,12 +75,12 @@ describe("QD008 authoritative RAG applicability context", () => {
     const f = fixture();
     f.command({ action: "select", scenarioId: "FG-ROUTE-BLOCK" }, "fire-gas");
     f.command({ action: "start" }, "fire-gas");
-    f.command({ action: "advance", deltaMs: 1000 }, "fire-gas");
+    advanceToEvent(f, "fire-gas", "FG-ROUTE-BLOCK-002");
     const before = f.snapshot("fire-gas").workers[0]?.currentGuidance;
     assert.ok(before);
     expect(before.actionCode).toBe("FOLLOW_VALIDATED_ROUTE");
     // When fire invalidates that route and a later pause repeats the replacement primary.
-    f.command({ action: "advance", deltaMs: 7000 }, "fire-gas");
+    advanceToEvent(f, "fire-gas", "FG-ROUTE-BLOCK-004");
     f.command({ action: "pause" }, "fire-gas");
     const calls = await capture(f);
     const input = calls.find((call) => call.guidance.workerId === before.workerId);
@@ -80,9 +98,9 @@ describe("QD008 authoritative RAG applicability context", () => {
     const f = fixture();
     f.command({ action: "select", scenarioId: "EQ-SPEED-DIRECTION" });
     f.command({ action: "start" });
-    f.command({ action: "advance", deltaMs: 1000 });
+    advanceToEvent(f, "equipment", "EQ-SPEED-DIRECTION-002");
     // When the direction event generates a new primary and RAG initializes afterward.
-    f.command({ action: "advance", deltaMs: 7000 });
+    advanceToEvent(f, "equipment", "EQ-SPEED-DIRECTION-003");
     const calls = await capture(f);
     const input = calls.find((call) => call.guidance.simulationMode === "equipment");
     assert.ok(input);

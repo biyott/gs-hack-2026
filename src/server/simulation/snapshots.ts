@@ -1,6 +1,7 @@
 import { randomUUID } from "node:crypto";
 import type { EquipmentState, ResponseState, SimulationSnapshot, WorkerState } from "@/contracts";
 import type { ResponsePolicy, Scenario } from "../scenarios";
+import { DEFAULT_SIMULATION_SPEED } from "./clock";
 import type { SimulationWorld } from "./world";
 
 export function emptyResponse(): ResponseState {
@@ -29,7 +30,7 @@ export function createRunSnapshot(scenario: Scenario, now: string): SimulationSn
       positionInput: "scenario",
       status: "idle",
       virtualTimeMs: 0,
-      speed: 1,
+      speed: DEFAULT_SIMULATION_SPEED,
       seed: scenario.seed,
       version: 0,
       mapId: scenario.mapId,

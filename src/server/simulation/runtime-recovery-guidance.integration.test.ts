@@ -48,8 +48,15 @@ function recoveredMeasuredPosition(withSupport = false) {
 function arrivalScenario() {
   const f = fixture();
   f.command({ action: "select", scenarioId: "EQ-ARRIVAL" });
+  f.command({ action: "speed", speed: 1 });
   f.command({ action: "start" });
-  f.command({ action: "advance", deltaMs: 1000 });
+  const routeCheckpoint = f.runtime
+    .getRun("equipment")
+    .scenario.expectedResults.find(
+      (expected) => expected.kind === "guidance" && expected.workerId === "WORKER-A",
+    );
+  assert.ok(routeCheckpoint);
+  f.command({ action: "advance", deltaMs: routeCheckpoint.atMs });
   expect(f.snapshot().workers[0]?.currentGuidance?.actionCode).toBe("FOLLOW_VALIDATED_ROUTE");
   return f;
 }
@@ -157,11 +164,19 @@ describe("runtime guidance after position recovery", () => {
     // Given
     const f = fixture();
     f.command({ action: "select", scenarioId: "FG-CLEAR-REOPEN" }, "fire-gas");
+    f.command({ action: "speed", speed: 1 }, "fire-gas");
     f.command({ action: "start" }, "fire-gas");
     const before = f.command({ action: "advance", deltaMs: 1000 }, "fire-gas");
     expect(before.closedEdgeIds.length).toBeGreaterThan(0);
+    const hazardClear = f.runtime
+      .getRun("fire-gas")
+      .scenario.events.find((event) => event.type === "hazard.clear");
+    assert.ok(hazardClear);
     // When
-    const result = f.command({ action: "advance", deltaMs: 11000 }, "fire-gas");
+    const result = f.command(
+      { action: "advance", deltaMs: hazardClear.atMs - before.run.virtualTimeMs },
+      "fire-gas",
+    );
     // Then
     expect(result.workers[0]?.currentGuidance).toMatchObject({
       actionCode: "AWAIT_REOPEN_AUTHORIZATION",
@@ -219,26 +234,45 @@ describe("runtime guidance after position recovery", () => {
     },
   );
 
-  it.each([12000, 31000])("preserves a validated route during safe progress at %i ms", (atMs) => {
-    // Given
-    const f = arrivalScenario();
-    // When
-    const result = f.command({ action: "advance", deltaMs: atMs - 1000 });
-    // Then
-    const guidance = result.workers[0]?.currentGuidance;
-    expect(guidance).toMatchObject({
-      actionCode: "FOLLOW_VALIDATED_ROUTE",
-      destinationId: "REFUGE-01",
-    });
-    expect(guidance?.waypoints.length).toBeGreaterThan(1);
-    expect(result.workers[0]?.response.arrivedAt).toBeNull();
-  });
+  it.each(["EQ-ARRIVAL-002", "EQ-ARRIVAL-003"])(
+    "preserves a validated route during safe progress at %s",
+    (eventId) => {
+      // Given
+      const f = arrivalScenario();
+      const progress = f.runtime
+        .getRun("equipment")
+        .scenario.events.find((event) => event.id === eventId);
+      assert.ok(progress);
+      // When
+      const result = f.command({
+        action: "advance",
+        deltaMs: progress.atMs - f.snapshot().run.virtualTimeMs,
+      });
+      // Then
+      const guidance = result.workers[0]?.currentGuidance;
+      expect(guidance).toMatchObject({
+        actionCode: "FOLLOW_VALIDATED_ROUTE",
+        destinationId: "REFUGE-01",
+      });
+      expect(guidance?.waypoints.length).toBeGreaterThan(1);
+      expect(result.workers[0]?.response.arrivedAt).toBeNull();
+    },
+  );
 
   it("changes the preserved route to arrival confirmation when the destination is reached", () => {
     // Given
     const f = arrivalScenario();
+    const arrival = f.runtime
+      .getRun("equipment")
+      .scenario.expectedResults.find(
+        (expected) => expected.kind === "arrival" && expected.workerId === "WORKER-A",
+      );
+    assert.ok(arrival);
     // When
-    const result = f.command({ action: "advance", deltaMs: 31000 });
+    const result = f.command({
+      action: "advance",
+      deltaMs: arrival.atMs - f.snapshot().run.virtualTimeMs,
+    });
     // Then
     expect(result.workers[0]?.currentGuidance).toMatchObject({
       actionCode: "CONFIRM_ARRIVAL",

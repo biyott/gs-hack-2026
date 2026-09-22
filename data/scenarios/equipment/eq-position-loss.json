@@ -1,6 +1,6 @@
 {
   "id": "EQ-POSITION-LOSS",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "작업자와 장비 위치 단절",
     "en": "Worker and equipment position interruption"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 22000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-EQUIPMENT",
   "initial": {
@@ -93,7 +93,7 @@
   "events": [
     {
       "id": "EQ-POSITION-LOSS-001",
-      "atMs": 1000,
+      "atMs": 500,
       "type": "equipment.pose",
       "position": {
         "x": 35,
@@ -105,39 +105,39 @@
     },
     {
       "id": "EQ-POSITION-LOSS-002",
-      "atMs": 6000,
+      "atMs": 3000,
       "type": "source.connection",
       "entityId": "WORKER-A",
       "connected": false
     },
     {
       "id": "EQ-POSITION-LOSS-STALE-A-CONNECT",
-      "atMs": 9000,
+      "atMs": 6000,
       "type": "source.connection",
       "entityId": "WORKER-A",
       "connected": true
     },
     {
       "id": "EQ-POSITION-LOSS-STALE-A",
-      "atMs": 9000,
+      "atMs": 6000,
       "type": "worker.position",
       "workerId": "WORKER-A",
       "position": {
         "x": 65,
         "y": 25
       },
-      "observedAtMs": 1000
+      "observedAtMs": 500
     },
     {
       "id": "EQ-POSITION-LOSS-003",
-      "atMs": 12000,
+      "atMs": 6500,
       "type": "source.connection",
       "entityId": "WORKER-A",
       "connected": true
     },
     {
       "id": "EQ-POSITION-LOSS-004",
-      "atMs": 12000,
+      "atMs": 6500,
       "type": "worker.position",
       "workerId": "WORKER-A",
       "position": {
@@ -147,21 +147,21 @@
     },
     {
       "id": "EQ-POSITION-LOSS-005",
-      "atMs": 15000,
+      "atMs": 7000,
       "type": "source.connection",
       "entityId": "EQUIPMENT-A",
       "connected": false
     },
     {
       "id": "EQ-POSITION-LOSS-STALE-E-CONNECT",
-      "atMs": 18000,
+      "atMs": 8000,
       "type": "source.connection",
       "entityId": "EQUIPMENT-A",
       "connected": true
     },
     {
       "id": "EQ-POSITION-LOSS-STALE-E",
-      "atMs": 18000,
+      "atMs": 8000,
       "type": "equipment.pose",
       "position": {
         "x": 45,
@@ -170,18 +170,18 @@
       "speedMps": 0,
       "headingDeg": 0,
       "slewDeg": 0,
-      "observedAtMs": 1000
+      "observedAtMs": 500
     },
     {
       "id": "EQ-POSITION-LOSS-006",
-      "atMs": 20000,
+      "atMs": 8500,
       "type": "source.connection",
       "entityId": "EQUIPMENT-A",
       "connected": true
     },
     {
       "id": "EQ-POSITION-LOSS-007",
-      "atMs": 20000,
+      "atMs": 8500,
       "type": "equipment.pose",
       "position": {
         "x": 45,
@@ -194,14 +194,14 @@
   ],
   "expectedResults": [
     {
-      "atMs": 6000,
+      "atMs": 3000,
       "kind": "source-state",
       "entityId": "WORKER-A",
       "state": "disconnected",
       "note": "Preserve source and last observation; do not fabricate a fresh observation."
     },
     {
-      "atMs": 6000,
+      "atMs": 3000,
       "kind": "guidance",
       "workerId": "WORKER-A",
       "actionCode": "POSITION_UNKNOWN",
@@ -210,21 +210,21 @@
       "note": "Assert the current authoritative guidance, not generated explanation."
     },
     {
-      "atMs": 9000,
+      "atMs": 6000,
       "kind": "source-state",
       "entityId": "WORKER-A",
       "state": "stale",
       "note": "Connected transport does not make an old observation current."
     },
     {
-      "atMs": 15000,
+      "atMs": 7000,
       "kind": "source-state",
       "entityId": "EQUIPMENT-A",
       "state": "disconnected",
       "note": "Preserve source and last observation; do not fabricate a fresh observation."
     },
     {
-      "atMs": 18000,
+      "atMs": 8000,
       "kind": "source-state",
       "entityId": "EQUIPMENT-A",
       "state": "stale",

@@ -91,9 +91,9 @@ describe("runtime with real SQLite and scenario catalog", () => {
       const other = f.snapshot(mode === "equipment" ? "fire-gas" : "equipment");
       f.command({ action: "start" }, mode);
       // When
-      const advanced = f.command({ action: "advance", deltaMs: 8000 }, mode);
+      const advanced = f.command({ action: "advance", deltaMs: 3000 }, mode);
       // Then
-      expect(advanced.run.virtualTimeMs).toBe(8000);
+      expect(advanced.run).toMatchObject({ virtualTimeMs: 4500, status: "running", speed: 1.5 });
       expect(advanced.incidents.length).toBeGreaterThan(0);
       expect(f.snapshot(other.mode)).toEqual(other);
       expect(f.repository.history(other.run.runId)).toEqual([other]);
@@ -107,7 +107,7 @@ describe("runtime with real SQLite and scenario catalog", () => {
       const results = Array.from({ length: 3 }, () => {
         const f = fixture();
         f.command({ action: "start" }, mode);
-        f.command({ action: "advance", deltaMs: 8000 }, mode);
+        f.command({ action: "advance", deltaMs: 6000 }, mode);
         return normalized(f.snapshot(mode));
       });
       // Then
@@ -128,7 +128,7 @@ describe("runtime with real SQLite and scenario catalog", () => {
       const result = f.command({ action: "advance", deltaMs: 1000 });
       // Then
       expect(result.run).toMatchObject({
-        virtualTimeMs: resumed ? 5000 : 1000,
+        virtualTimeMs: resumed ? 5500 : 1500,
         status: resumed ? "running" : "paused",
         speed: 4,
       });

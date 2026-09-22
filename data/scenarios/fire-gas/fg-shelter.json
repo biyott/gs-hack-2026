@@ -1,6 +1,6 @@
 {
   "id": "FG-SHELTER",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "명시적 정책에 따른 실내 대기",
     "en": "Shelter under explicit scenario policy"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 20000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-FG-SHELTER",
   "initial": {
@@ -103,7 +103,7 @@
   "events": [
     {
       "id": "FG-SHELTER-001",
-      "atMs": 1000,
+      "atMs": 450,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -112,14 +112,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 1000,
+        "observedAtMs": 450,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-002",
-      "atMs": 1000,
+      "atMs": 450,
       "type": "hazard.upsert",
       "hazard": {
         "id": "GAS-ZONE-B",
@@ -148,7 +148,7 @@
     },
     {
       "id": "FG-SHELTER-003",
-      "atMs": 4000,
+      "atMs": 1800,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -157,14 +157,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 4000,
+        "observedAtMs": 1800,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-004",
-      "atMs": 4000,
+      "atMs": 1800,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -173,14 +173,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 4000,
+        "observedAtMs": 1800,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-005",
-      "atMs": 8000,
+      "atMs": 3600,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -189,14 +189,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 8000,
+        "observedAtMs": 3600,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-006",
-      "atMs": 8000,
+      "atMs": 3600,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -205,14 +205,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 8000,
+        "observedAtMs": 3600,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-007",
-      "atMs": 12000,
+      "atMs": 5400,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -221,14 +221,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 12000,
+        "observedAtMs": 5400,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-008",
-      "atMs": 12000,
+      "atMs": 5400,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -237,14 +237,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 12000,
+        "observedAtMs": 5400,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-009",
-      "atMs": 16000,
+      "atMs": 7200,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -253,14 +253,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 16000,
+        "observedAtMs": 7200,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-010",
-      "atMs": 16000,
+      "atMs": 7200,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -269,14 +269,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 16000,
+        "observedAtMs": 7200,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-011",
-      "atMs": 20000,
+      "atMs": 9000,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -285,14 +285,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 20000,
+        "observedAtMs": 9000,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SHELTER-012",
-      "atMs": 20000,
+      "atMs": 9000,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -301,7 +301,7 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 20000,
+        "observedAtMs": 9000,
         "source": "mock",
         "connected": true
       }
@@ -309,7 +309,7 @@
   ],
   "expectedResults": [
     {
-      "atMs": 1000,
+      "atMs": 450,
       "kind": "guidance",
       "workerId": "WORKER-B",
       "actionCode": "SHELTER_PER_SCENARIO",

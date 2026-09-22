@@ -1,6 +1,6 @@
 {
   "id": "EQ-ARRIVAL",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "회피 후보점 도착 확인",
     "en": "Arrival at validated refuge"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 34000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-EQUIPMENT",
   "initial": {
@@ -93,7 +93,7 @@
   "events": [
     {
       "id": "EQ-ARRIVAL-001",
-      "atMs": 1000,
+      "atMs": 265,
       "type": "equipment.pose",
       "position": {
         "x": 35,
@@ -104,8 +104,18 @@
       "slewDeg": 0
     },
     {
+      "id": "EQ-ARRIVAL-WORKER-HOLD",
+      "atMs": 265,
+      "type": "worker.position",
+      "workerId": "WORKER-A",
+      "position": {
+        "x": 65,
+        "y": 25
+      }
+    },
+    {
       "id": "EQ-ARRIVAL-002",
-      "atMs": 12000,
+      "atMs": 3176,
       "type": "worker.position",
       "workerId": "WORKER-A",
       "position": {
@@ -115,7 +125,7 @@
     },
     {
       "id": "EQ-ARRIVAL-003",
-      "atMs": 20000,
+      "atMs": 5294,
       "type": "worker.position",
       "workerId": "WORKER-A",
       "position": {
@@ -125,7 +135,7 @@
     },
     {
       "id": "EQ-ARRIVAL-004",
-      "atMs": 32000,
+      "atMs": 8471,
       "type": "worker.position",
       "workerId": "WORKER-A",
       "position": {
@@ -136,7 +146,7 @@
   ],
   "expectedResults": [
     {
-      "atMs": 1000,
+      "atMs": 265,
       "kind": "guidance",
       "workerId": "WORKER-A",
       "actionCode": "FOLLOW_VALIDATED_ROUTE",
@@ -145,7 +155,7 @@
       "note": "Assert the current authoritative guidance, not generated explanation."
     },
     {
-      "atMs": 32000,
+      "atMs": 8471,
       "kind": "arrival",
       "workerId": "WORKER-A",
       "destinationId": "REFUGE-01",

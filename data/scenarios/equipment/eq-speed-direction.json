@@ -1,6 +1,6 @@
 {
   "id": "EQ-SPEED-DIRECTION",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "속도 증가와 진행 방향 변경",
     "en": "Speed increase and direction change"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 20000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-EQUIPMENT",
   "initial": {
@@ -93,7 +93,7 @@
   "events": [
     {
       "id": "EQ-SPEED-DIRECTION-001",
-      "atMs": 1000,
+      "atMs": 450,
       "type": "equipment.pose",
       "position": {
         "x": 30,
@@ -105,7 +105,7 @@
     },
     {
       "id": "EQ-SPEED-DIRECTION-002",
-      "atMs": 4000,
+      "atMs": 1800,
       "type": "equipment.pose",
       "position": {
         "x": 30,
@@ -117,7 +117,7 @@
     },
     {
       "id": "EQ-SPEED-DIRECTION-003",
-      "atMs": 8000,
+      "atMs": 3600,
       "type": "equipment.pose",
       "position": {
         "x": 35,
@@ -129,7 +129,7 @@
     },
     {
       "id": "EQ-SPEED-DIRECTION-004",
-      "atMs": 12000,
+      "atMs": 5400,
       "type": "equipment.pose",
       "position": {
         "x": 65,
@@ -141,7 +141,7 @@
     },
     {
       "id": "EQ-SPEED-DIRECTION-005",
-      "atMs": 16000,
+      "atMs": 7200,
       "type": "equipment.pose",
       "position": {
         "x": 65,
@@ -154,7 +154,7 @@
   ],
   "expectedResults": [
     {
-      "atMs": 4000,
+      "atMs": 1800,
       "kind": "guidance",
       "workerId": "WORKER-A",
       "actionCode": "FOLLOW_VALIDATED_ROUTE",
@@ -163,7 +163,7 @@
       "note": "Assert the current authoritative guidance, not generated explanation."
     },
     {
-      "atMs": 8000,
+      "atMs": 3600,
       "kind": "guidance",
       "workerId": "WORKER-A",
       "actionCode": "FOLLOW_VALIDATED_ROUTE",

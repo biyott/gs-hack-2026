@@ -1,6 +1,6 @@
 {
   "id": "FG-SENSOR-STALE",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "오래된 센서 값과 센서 단절",
     "en": "Stale reading and disconnected sensor"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 24000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-FG-EVACUATE",
   "initial": {
@@ -103,7 +103,7 @@
   "events": [
     {
       "id": "FG-SENSOR-STALE-001",
-      "atMs": 1000,
+      "atMs": 500,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -112,14 +112,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 1000,
+        "observedAtMs": 500,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SENSOR-STALE-002",
-      "atMs": 1000,
+      "atMs": 500,
       "type": "hazard.upsert",
       "hazard": {
         "id": "GAS-ZONE-B",
@@ -148,7 +148,7 @@
     },
     {
       "id": "FG-SENSOR-STALE-006",
-      "atMs": 4000,
+      "atMs": 2500,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -157,13 +157,91 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 4000,
+        "observedAtMs": 2500,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-SENSOR-STALE-007",
+      "atMs": 6250,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 6250,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SENSOR-STALE-008",
+      "atMs": 6500,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 6500,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SENSOR-STALE-003",
+      "atMs": 7000,
+      "type": "source.connection",
+      "entityId": "SENSOR-GAS-B",
+      "connected": false
+    },
+    {
+      "id": "FG-SENSOR-STALE-009",
+      "atMs": 7500,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-FIRE-B",
+        "hazardType": "fire",
+        "zoneId": "ZONE-B",
+        "value": 0,
+        "unit": "demo-index",
+        "materialId": null,
+        "observedAtMs": 7500,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SENSOR-STALE-004",
+      "atMs": 8000,
+      "type": "source.connection",
+      "entityId": "SENSOR-GAS-B",
+      "connected": true
+    },
+    {
+      "id": "FG-SENSOR-STALE-005",
+      "atMs": 8000,
+      "type": "sensor.reading",
+      "sensor": {
+        "sensorId": "SENSOR-GAS-B",
+        "hazardType": "gas",
+        "zoneId": "ZONE-B",
+        "value": 1,
+        "unit": "demo-index",
+        "materialId": "DEMO-GAS-X",
+        "observedAtMs": 8000,
+        "source": "mock",
+        "connected": true
+      }
+    },
+    {
+      "id": "FG-SENSOR-STALE-010",
       "atMs": 8000,
       "type": "sensor.reading",
       "sensor": {
@@ -179,86 +257,8 @@
       }
     },
     {
-      "id": "FG-SENSOR-STALE-008",
-      "atMs": 12000,
-      "type": "sensor.reading",
-      "sensor": {
-        "sensorId": "SENSOR-FIRE-B",
-        "hazardType": "fire",
-        "zoneId": "ZONE-B",
-        "value": 0,
-        "unit": "demo-index",
-        "materialId": null,
-        "observedAtMs": 12000,
-        "source": "mock",
-        "connected": true
-      }
-    },
-    {
-      "id": "FG-SENSOR-STALE-003",
-      "atMs": 14000,
-      "type": "source.connection",
-      "entityId": "SENSOR-GAS-B",
-      "connected": false
-    },
-    {
-      "id": "FG-SENSOR-STALE-009",
-      "atMs": 16000,
-      "type": "sensor.reading",
-      "sensor": {
-        "sensorId": "SENSOR-FIRE-B",
-        "hazardType": "fire",
-        "zoneId": "ZONE-B",
-        "value": 0,
-        "unit": "demo-index",
-        "materialId": null,
-        "observedAtMs": 16000,
-        "source": "mock",
-        "connected": true
-      }
-    },
-    {
-      "id": "FG-SENSOR-STALE-004",
-      "atMs": 20000,
-      "type": "source.connection",
-      "entityId": "SENSOR-GAS-B",
-      "connected": true
-    },
-    {
-      "id": "FG-SENSOR-STALE-005",
-      "atMs": 20000,
-      "type": "sensor.reading",
-      "sensor": {
-        "sensorId": "SENSOR-GAS-B",
-        "hazardType": "gas",
-        "zoneId": "ZONE-B",
-        "value": 1,
-        "unit": "demo-index",
-        "materialId": "DEMO-GAS-X",
-        "observedAtMs": 20000,
-        "source": "mock",
-        "connected": true
-      }
-    },
-    {
-      "id": "FG-SENSOR-STALE-010",
-      "atMs": 20000,
-      "type": "sensor.reading",
-      "sensor": {
-        "sensorId": "SENSOR-FIRE-B",
-        "hazardType": "fire",
-        "zoneId": "ZONE-B",
-        "value": 0,
-        "unit": "demo-index",
-        "materialId": null,
-        "observedAtMs": 20000,
-        "source": "mock",
-        "connected": true
-      }
-    },
-    {
       "id": "FG-SENSOR-STALE-011",
-      "atMs": 24000,
+      "atMs": 9000,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -267,7 +267,7 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 24000,
+        "observedAtMs": 9000,
         "source": "mock",
         "connected": true
       }
@@ -275,14 +275,14 @@
   ],
   "expectedResults": [
     {
-      "atMs": 7000,
+      "atMs": 6000,
       "kind": "source-state",
       "entityId": "SENSOR-GAS-B",
       "state": "stale",
       "note": "Preserve source and last observation; do not fabricate a fresh observation."
     },
     {
-      "atMs": 7000,
+      "atMs": 6000,
       "kind": "guidance",
       "workerId": "WORKER-B",
       "actionCode": "SENSOR_UNKNOWN",
@@ -291,26 +291,26 @@
       "note": "Assert the current authoritative guidance, not generated explanation."
     },
     {
-      "atMs": 7000,
+      "atMs": 6000,
       "kind": "active-hazards",
       "hazardIds": ["GAS-ZONE-B"],
       "note": "Retain all independently active hazards."
     },
     {
-      "atMs": 14000,
+      "atMs": 7000,
       "kind": "source-state",
       "entityId": "SENSOR-GAS-B",
       "state": "disconnected",
       "note": "Preserve source and last observation; do not fabricate a fresh observation."
     },
     {
-      "atMs": 14000,
+      "atMs": 7000,
       "kind": "active-hazards",
       "hazardIds": ["GAS-ZONE-B"],
       "note": "Retain all independently active hazards."
     },
     {
-      "atMs": 20000,
+      "atMs": 8000,
       "kind": "source-state",
       "entityId": "SENSOR-GAS-B",
       "state": "fresh",

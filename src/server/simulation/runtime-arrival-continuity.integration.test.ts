@@ -15,8 +15,11 @@ function arrivedFixture() {
     id: "QD004-CONTINUITY",
     durationMs: 20_000,
     events: [
-      ...base.events.filter((event) => event.atMs <= 8000),
+      ...base.events
+        .map((event) => ({ ...event, atMs: Math.round((event.atMs * 20_000) / base.durationMs) }))
+        .filter((event) => event.atMs <= 8000),
       ...[
+        { atMs: 8000, position: { x: 65, y: 25 } },
         { atMs: 9000, position: { x: 125, y: 42 } },
         { atMs: 11_000, position: { x: 125, y: 8 } },
         { atMs: 12_000, position: null },
@@ -35,6 +38,7 @@ function arrivedFixture() {
   const path = join(directory, "runtime.sqlite");
   const f = fixture(path, config);
   f.command({ action: "select", scenarioId: scenario.id });
+  f.command({ action: "speed", speed: 1 });
   f.command({ action: "start" });
   f.command({ action: "advance", deltaMs: 9000 });
   expect(f.snapshot().workers[0]?.currentGuidance?.actionCode).toBe("CONFIRM_ARRIVAL");

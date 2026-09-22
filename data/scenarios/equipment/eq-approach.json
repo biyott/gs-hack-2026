@@ -1,6 +1,6 @@
 {
   "id": "EQ-APPROACH",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "장비 접근과 회피",
     "en": "Equipment approach and avoidance"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 20000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-EQUIPMENT",
   "initial": {
@@ -93,7 +93,7 @@
   "events": [
     {
       "id": "EQ-APPROACH-001",
-      "atMs": 1000,
+      "atMs": 450,
       "type": "equipment.pose",
       "position": {
         "x": 35,
@@ -104,8 +104,18 @@
       "slewDeg": 0
     },
     {
+      "id": "EQ-APPROACH-WORKER-HOLD",
+      "atMs": 450,
+      "type": "worker.position",
+      "workerId": "WORKER-A",
+      "position": {
+        "x": 65,
+        "y": 25
+      }
+    },
+    {
       "id": "EQ-APPROACH-002",
-      "atMs": 5000,
+      "atMs": 2250,
       "type": "equipment.pose",
       "position": {
         "x": 35,
@@ -117,7 +127,7 @@
     },
     {
       "id": "EQ-APPROACH-003",
-      "atMs": 10000,
+      "atMs": 4500,
       "type": "worker.position",
       "workerId": "WORKER-A",
       "position": {
@@ -127,7 +137,7 @@
     },
     {
       "id": "EQ-APPROACH-004",
-      "atMs": 15000,
+      "atMs": 6750,
       "type": "equipment.pose",
       "position": {
         "x": 60,
@@ -140,7 +150,7 @@
   ],
   "expectedResults": [
     {
-      "atMs": 1000,
+      "atMs": 450,
       "kind": "guidance",
       "workerId": "WORKER-A",
       "actionCode": "FOLLOW_VALIDATED_ROUTE",

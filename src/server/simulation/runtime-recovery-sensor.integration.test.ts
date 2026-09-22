@@ -7,6 +7,7 @@ type SensorRecovery = "current" | "stale" | "disconnected" | "absent-hazard" | "
 function sensorRecovery(state: SensorRecovery) {
   const f = fixture();
   f.command({ action: "select", scenarioId: "FG-SENSOR-STALE" }, "fire-gas");
+  f.command({ action: "speed", speed: 1 }, "fire-gas");
   f.command({ action: "start" }, "fire-gas");
   f.command({ action: "advance", deltaMs: 7000 }, "fire-gas");
   const run = f.runtime.getRun("fire-gas");

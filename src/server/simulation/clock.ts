@@ -5,6 +5,8 @@ export type ClockState = Readonly<{
   durationMs: number;
 }>;
 
+export const DEFAULT_SIMULATION_SPEED = 1.5;
+
 export class ClockTransitionError extends Error {
   constructor(readonly reason: "invalid-transition" | "invalid-time" | "invalid-speed") {
     super(reason);
@@ -19,7 +21,12 @@ export class SimulationClock {
   constructor(durationMs: number, initial?: ClockState) {
     if (!Number.isFinite(durationMs) || durationMs <= 0)
       throw new ClockTransitionError("invalid-time");
-    this.state = initial ?? { status: "idle", virtualTimeMs: 0, speed: 1, durationMs };
+    this.state = initial ?? {
+      status: "idle",
+      virtualTimeMs: 0,
+      speed: DEFAULT_SIMULATION_SPEED,
+      durationMs,
+    };
   }
 
   snapshot(): ClockState {

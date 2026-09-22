@@ -43,10 +43,10 @@ describe("scenario fixtures", () => {
     // Given / When
     const scenario = fixture("FG-CLEAR-REOPEN");
     // Then
-    expect(scenario.events.find((event) => event.type === "hazard.clear")?.atMs).toBe(12000);
-    expect(scenario.events.find((event) => event.type === "route.reopen")?.atMs).toBe(20000);
+    expect(scenario.events.find((event) => event.type === "hazard.clear")?.atMs).toBe(4500);
+    expect(scenario.events.find((event) => event.type === "route.reopen")?.atMs).toBe(7500);
     expect(scenario.expectedResults).toContainEqual(
-      expect.objectContaining({ atMs: 12000, kind: "blocked-paths", pathIds: ["PATH-B"] }),
+      expect.objectContaining({ atMs: 4500, kind: "blocked-paths", pathIds: ["PATH-B"] }),
     );
   });
 
@@ -57,10 +57,10 @@ describe("scenario fixtures", () => {
     const gasReadings = scenario.events.filter(
       (event) => event.type === "sensor.reading" && event.sensor.sensorId === "SENSOR-GAS-B",
     );
-    expect(gasReadings.map((event) => event.atMs)).toEqual([1000, 20000]);
+    expect(gasReadings.map((event) => event.atMs)).toEqual([500, 8000]);
     expect(
       scenario.events.find((event) => event.type === "source.connection" && !event.connected)?.atMs,
-    ).toBe(14000);
+    ).toBe(7000);
   });
 
   it("retains unknown capability fields instead of interpreting them as unrestricted", () => {

@@ -1,6 +1,6 @@
 {
   "id": "FG-ROUTE-BLOCK",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "진행 경로 차단과 재탐색",
     "en": "Blocked route and recalculation"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 22000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-FG-EVACUATE",
   "initial": {
@@ -103,7 +103,7 @@
   "events": [
     {
       "id": "FG-ROUTE-BLOCK-001",
-      "atMs": 1000,
+      "atMs": 409,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -112,14 +112,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 1000,
+        "observedAtMs": 409,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-002",
-      "atMs": 1000,
+      "atMs": 409,
       "type": "hazard.upsert",
       "hazard": {
         "id": "FIRE-ZONE-B",
@@ -148,7 +148,7 @@
     },
     {
       "id": "FG-ROUTE-BLOCK-005",
-      "atMs": 4000,
+      "atMs": 1636,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -157,14 +157,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 4000,
+        "observedAtMs": 1636,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-006",
-      "atMs": 4000,
+      "atMs": 1636,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -173,20 +173,20 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 4000,
+        "observedAtMs": 1636,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-003",
-      "atMs": 8000,
+      "atMs": 3273,
       "type": "route.block",
       "pathIds": ["PATH-B"]
     },
     {
       "id": "FG-ROUTE-BLOCK-004",
-      "atMs": 8000,
+      "atMs": 3273,
       "type": "hazard.upsert",
       "hazard": {
         "id": "FIRE-ZONE-B",
@@ -215,7 +215,7 @@
     },
     {
       "id": "FG-ROUTE-BLOCK-007",
-      "atMs": 8000,
+      "atMs": 3273,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -224,14 +224,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 8000,
+        "observedAtMs": 3273,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-008",
-      "atMs": 8000,
+      "atMs": 3273,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -240,14 +240,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 8000,
+        "observedAtMs": 3273,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-009",
-      "atMs": 12000,
+      "atMs": 4909,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -256,14 +256,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 12000,
+        "observedAtMs": 4909,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-010",
-      "atMs": 12000,
+      "atMs": 4909,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -272,14 +272,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 12000,
+        "observedAtMs": 4909,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-011",
-      "atMs": 16000,
+      "atMs": 6545,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -288,14 +288,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 16000,
+        "observedAtMs": 6545,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-012",
-      "atMs": 16000,
+      "atMs": 6545,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -304,14 +304,14 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 16000,
+        "observedAtMs": 6545,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-013",
-      "atMs": 20000,
+      "atMs": 8182,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-FIRE-B",
@@ -320,14 +320,14 @@
         "value": 1,
         "unit": "demo-index",
         "materialId": null,
-        "observedAtMs": 20000,
+        "observedAtMs": 8182,
         "source": "mock",
         "connected": true
       }
     },
     {
       "id": "FG-ROUTE-BLOCK-014",
-      "atMs": 20000,
+      "atMs": 8182,
       "type": "sensor.reading",
       "sensor": {
         "sensorId": "SENSOR-GAS-B",
@@ -336,7 +336,7 @@
         "value": 0,
         "unit": "demo-index",
         "materialId": "DEMO-GAS-X",
-        "observedAtMs": 20000,
+        "observedAtMs": 8182,
         "source": "mock",
         "connected": true
       }
@@ -344,7 +344,7 @@
   ],
   "expectedResults": [
     {
-      "atMs": 1000,
+      "atMs": 409,
       "kind": "guidance",
       "workerId": "WORKER-A",
       "actionCode": "FOLLOW_VALIDATED_ROUTE",
@@ -353,7 +353,7 @@
       "note": "Assert the current authoritative guidance, not generated explanation."
     },
     {
-      "atMs": 8000,
+      "atMs": 3273,
       "kind": "blocked-paths",
       "pathIds": ["PATH-B"],
       "note": "Hazard status and authorization do not implicitly change this list."

@@ -1,6 +1,6 @@
 {
   "id": "EQ-PROFILE-ROUTES",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "label": {
     "ko": "이동 제약별 경로와 미확인 프로필",
     "en": "Profile routes and unknown capabilities"
@@ -10,7 +10,7 @@
   "mapVersion": "1.0.0",
   "synthetic": true,
   "seed": 20260921,
-  "durationMs": 16000,
+  "durationMs": 9000,
   "clockEpoch": "2026-09-21T09:00:00Z",
   "policyId": "POLICY-EQUIPMENT",
   "initial": {
@@ -118,7 +118,7 @@
   "events": [
     {
       "id": "EQ-PROFILE-ROUTES-001",
-      "atMs": 1000,
+      "atMs": 563,
       "type": "equipment.pose",
       "position": {
         "x": 35,
@@ -130,7 +130,7 @@
     },
     {
       "id": "EQ-PROFILE-ROUTES-002",
-      "atMs": 1000,
+      "atMs": 563,
       "type": "worker.position",
       "workerId": "WORKER-B",
       "position": {
@@ -140,7 +140,7 @@
     },
     {
       "id": "EQ-PROFILE-ROUTES-003",
-      "atMs": 8000,
+      "atMs": 4500,
       "type": "worker.profile",
       "profile": {
         "workerId": "WORKER-A",
@@ -164,7 +164,7 @@
   ],
   "expectedResults": [
     {
-      "atMs": 1000,
+      "atMs": 563,
       "kind": "profile-route",
       "workerId": "WORKER-B",
       "forbiddenEdgeIds": ["EDGE-EGRESS-A-SOUTH"],
@@ -172,7 +172,7 @@
       "note": "Stairs are forbidden by the confirmed profile; assistance is required but never automatically accepted."
     },
     {
-      "atMs": 1000,
+      "atMs": 563,
       "kind": "guidance",
       "workerId": "WORKER-C",
       "actionCode": "ROUTE_UNAVAILABLE",
@@ -181,7 +181,7 @@
       "note": "A missing verified profile yields profile-unverified, no route, and assistanceRequired=true; it never means unconstrained capability."
     },
     {
-      "atMs": 8000,
+      "atMs": 4500,
       "kind": "profile-route",
       "workerId": "WORKER-A",
       "forbiddenEdgeIds": ["EDGE-EGRESS-A-SOUTH"],
@@ -189,7 +189,7 @@
       "note": "Profile version two invalidates any previous stairs route."
     },
     {
-      "atMs": 1000,
+      "atMs": 563,
       "kind": "profile-route",
       "workerId": "WORKER-C",
       "forbiddenEdgeIds": ["EDGE-EGRESS-A-SOUTH"],
