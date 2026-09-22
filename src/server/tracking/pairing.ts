@@ -154,7 +154,19 @@ export class UwbPairingService {
   }
 
   unregister(role: UwbParticipantRole): UwbPairingStatus {
-    return this.#registrations.has(role) ? this.reset() : this.prepare();
+    if (!this.#registrations.has(role)) return this.prepare();
+    switch (this.#state.status) {
+      case "ready":
+        return this.reset();
+      case "waiting":
+      case "unsupported":
+        this.#registrations.delete(role);
+        return this.prepare();
+      default: {
+        const exhaustive: never = this.#state;
+        return exhaustive;
+      }
+    }
   }
 
   reset(): UwbPairingStatus {

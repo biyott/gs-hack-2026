@@ -30,6 +30,14 @@ function owners(): Map<UwbParticipantRole, string> {
   return globalThis.gsSafetyUwbSessionOwners;
 }
 
+function unregisterParticipant(role: UwbParticipantRole): void {
+  const pairing = getTrackingServices().pairing;
+  const wasReady = pairing.prepare().status === "ready";
+  pairing.unregister(role);
+  if (wasReady) owners().clear();
+  else owners().delete(role);
+}
+
 function participantRole(session: Session): UwbParticipantRole | null {
   switch (session.deviceRole) {
     case "EQUIPMENT":
@@ -61,10 +69,7 @@ export function activateTrackingSession(session: Session): void {
     globalThis.gsSafetyUwbGenerations?.delete(previousSession);
   globalThis.gsSafetyUwbLatestSessions.set(role, session.sessionId);
   const owner = owners().get(role);
-  if (owner !== undefined && owner !== session.sessionId) {
-    getTrackingServices().pairing.unregister(role);
-    owners().clear();
-  }
+  if (owner !== undefined && owner !== session.sessionId) unregisterParticipant(role);
 }
 
 export function invalidateTrackingSession(session: Session, generation?: number): void {
@@ -90,10 +95,7 @@ export function invalidateTrackingSession(session: Session, generation?: number)
     if (role !== null && globalThis.gsSafetyUwbLatestSessions?.get(role) === session.sessionId)
       globalThis.gsSafetyUwbLatestSessions.delete(role);
   }
-  if (role !== null && owners().get(role) === session.sessionId) {
-    getTrackingServices().pairing.unregister(role);
-    owners().clear();
-  }
+  if (role !== null && owners().get(role) === session.sessionId) unregisterParticipant(role);
 }
 
 export function registerUwbParticipant(session: Session, registration: UwbPreparedRegistration) {
