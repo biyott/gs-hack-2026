@@ -1,0 +1,569 @@
+{
+  "recordedAt": "2026-09-21T19:24:02.422Z",
+  "scope": "Design/asset owner self-check; not independent QA acceptance",
+  "catalog": {
+    "path": "data/equipment/catalog.json",
+    "bytes": 52495,
+    "sha256": "8318e9eb05134bc2c9ed09d90633ec36fbf6c9e80556d4c56a9842c1d81dd6b6"
+  },
+  "catalogSchemaVersion": "1.0.1",
+  "coordinateContract": {
+    "map": "XY metres",
+    "blender": "XY ground / Z up",
+    "gltf": "[mapX,height,-mapY]",
+    "rootScale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "assets": [
+    {
+      "id": "sk1265-at6",
+      "glb": {
+        "path": "public/assets/cranes/sk1265-at6.glb",
+        "bytes": 4266912,
+        "sha256": "98398dbef3ffbef753fc854fc7d59a40dc527c2bfc6b16e947d8696c78430287"
+      },
+      "blend": {
+        "path": "resources/blender/safety-simulator/sk1265-derived/sk1265-at6.blend",
+        "bytes": 385507,
+        "sha256": "2088c2627713a2283dc4af73b833fe268de7ce68af959e83aca4305b7a198e0e"
+      },
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": false,
+        "boomLength": false,
+        "trolley": true,
+        "hook": true
+      },
+      "articulation": false,
+      "demoPose": {
+        "boomLengthM": 60,
+        "boomAngleDeg": 0,
+        "trolleyM": 30,
+        "hookHeightM": 16.24,
+        "slewDeg": 0
+      },
+      "movementLimits": {
+        "tableSlewDeg": [
+          -15,
+          15
+        ],
+        "boomLengthM": null,
+        "boomAngleDeg": null,
+        "trolleyM": [
+          2,
+          59
+        ],
+        "hookHeightM": [
+          1,
+          34
+        ]
+      },
+      "riskGeometryStatus": "verified",
+      "executedSourceEvidence": [
+        {
+          "path": "resources/blender/safety-simulator/sk1265-derived/reimport-verification.json",
+          "bytes": 798,
+          "sha256": "d4048a95bb495aff64369602509e0b8d032ac9aba5268d1099309b9f04dd60cc"
+        },
+        {
+          "path": "resources/blender/safety-simulator/sk1265-derived/verification.json",
+          "bytes": 1324,
+          "sha256": "6695f60221f4f9102e959a12af34564b6e0ea7bbb6f745e2b5351bac210a4d15"
+        }
+      ]
+    },
+    {
+      "id": "tadano-gr250n4",
+      "glb": {
+        "path": "public/assets/cranes/tadano-gr250n4.glb",
+        "bytes": 1144960,
+        "sha256": "1bb571a76c4c1ca98694f9c6414f64b8771971274ac1efaf03464ad9fa24bc1e"
+      },
+      "blend": {
+        "path": "resources/blender/safety-simulator/mobile-cranes/tadano-gr250n4.blend",
+        "bytes": 173965,
+        "sha256": "63b799ec957ab14bcdafd9d7f12f810fef9145b2ba8275876b7043b89ab8fb28"
+      },
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": true,
+        "boomLength": true,
+        "trolley": false,
+        "hook": true
+      },
+      "articulation": true,
+      "demoPose": {
+        "boomLengthM": 20,
+        "boomAngleDeg": 50,
+        "trolleyM": null,
+        "hookHeightM": 4.2,
+        "slewDeg": 0
+      },
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": [
+          18,
+          24
+        ],
+        "boomAngleDeg": [
+          35,
+          65
+        ],
+        "trolleyM": null,
+        "hookHeightM": [
+          3,
+          10
+        ]
+      },
+      "riskGeometryStatus": "verified",
+      "executedSourceEvidence": [
+        {
+          "path": "resources/blender/safety-simulator/mobile-cranes/evidence/tadano-gr250n4-verification.json",
+          "bytes": 6851,
+          "sha256": "28abab6a61831c20c71fa82b5a341f114ab9ca71a4b880a33de068fe5b581ac6"
+        },
+        {
+          "path": "resources/blender/safety-simulator/mobile-cranes/tadano-gr250n4-rig.json",
+          "bytes": 3614,
+          "sha256": "47cbe453cbdef2cfbd253459260c71706999e86bff356ef0828ffc8cb9aaf2f2"
+        }
+      ]
+    },
+    {
+      "id": "liebherr-ltm1050",
+      "glb": {
+        "path": "public/assets/cranes/liebherr-ltm1050.glb",
+        "bytes": 1573876,
+        "sha256": "bcb9e4fac1bec3e2f944a4e04047843bec78cc74400508ad900bbc3455bb9188"
+      },
+      "blend": {
+        "path": "resources/blender/safety-simulator/mobile-cranes/liebherr-ltm1050.blend",
+        "bytes": 196104,
+        "sha256": "c795bbe8a549cc11f1d68ac674b40015fece4584a90258c6ebf360aa704db376"
+      },
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": true,
+        "boomLength": true,
+        "trolley": false,
+        "hook": true
+      },
+      "articulation": true,
+      "demoPose": {
+        "boomLengthM": 26,
+        "boomAngleDeg": 50,
+        "trolleyM": null,
+        "hookHeightM": 4.2,
+        "slewDeg": 0
+      },
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": [
+          24,
+          30
+        ],
+        "boomAngleDeg": [
+          35,
+          65
+        ],
+        "trolleyM": null,
+        "hookHeightM": [
+          3,
+          10
+        ]
+      },
+      "riskGeometryStatus": "verified",
+      "executedSourceEvidence": [
+        {
+          "path": "resources/blender/safety-simulator/mobile-cranes/evidence/liebherr-ltm1050-verification.json",
+          "bytes": 6855,
+          "sha256": "266ccfd850e26847845684067e4ca800c4a4cb48affcb87f40aa8d868b80cd41"
+        },
+        {
+          "path": "resources/blender/safety-simulator/mobile-cranes/liebherr-ltm1050-rig.json",
+          "bytes": 3587,
+          "sha256": "56fcecffa2b866f7eb0b758ab46091b74bc3fa0bb9b543e00af7b3167aa2bbc1"
+        }
+      ]
+    },
+    {
+      "id": "maeda-mc305",
+      "glb": {
+        "path": "public/assets/cranes/maeda-mc305.glb",
+        "bytes": 1062092,
+        "sha256": "37e1e64d7ec86be6e66b94f32f37521a43eef9e9d25dbbd36d5ecbbb7db4dc71"
+      },
+      "blend": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-mc305.blend",
+        "bytes": 194501,
+        "sha256": "83c242db2dd53707960a6882d1c7563b746a2c78add215966ba0cdd5815e371f"
+      },
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": true,
+        "boomLength": true,
+        "trolley": false,
+        "hook": true
+      },
+      "articulation": true,
+      "demoPose": {
+        "boomLengthM": 10,
+        "boomAngleDeg": 55,
+        "trolleyM": null,
+        "hookHeightM": 3,
+        "slewDeg": 0
+      },
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": [
+          8,
+          10.6
+        ],
+        "boomAngleDeg": [
+          30,
+          75
+        ],
+        "trolleyM": null,
+        "hookHeightM": [
+          1,
+          4.5
+        ]
+      },
+      "riskGeometryStatus": "verified",
+      "executedSourceEvidence": [
+        {
+          "path": "resources/blender/safety-simulator/maeda-site/maeda/verification.json",
+          "bytes": 8741,
+          "sha256": "c648074abbfe2c828b5f8e1a40a522b6f2a2f9fbe7b26d1e3b81664c73840e04"
+        },
+        {
+          "path": "resources/blender/safety-simulator/maeda-site/maeda/rig-catalog.json",
+          "bytes": 2547,
+          "sha256": "9f0da8bfc982842df17bce56ff93d903ea2bc486511f3bc1c27881ff052cb2c4"
+        }
+      ],
+      "constructionEvidence": [
+        {
+          "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/old-source-red.json",
+          "bytes": 1342,
+          "sha256": "7140e17b7213e73baf3c6bebe06455a00cdfae3327d97ed1423062fd5dc13fe8"
+        },
+        {
+          "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/source-conformance.json",
+          "bytes": 1078,
+          "sha256": "3cb72901d24e9ebe451d8feec58520649f4650e925d77a84c12a2c63fb8c8371"
+        },
+        {
+          "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/imported-conformance.json",
+          "bytes": 1078,
+          "sha256": "3cb72901d24e9ebe451d8feec58520649f4650e925d77a84c12a2c63fb8c8371"
+        },
+        {
+          "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/execution-receipt.json",
+          "bytes": 3244,
+          "sha256": "c1bb974c711093558af9079a0e8b22b280cb665f8ceb06cabbb18db5a978c43f"
+        }
+      ]
+    },
+    {
+      "id": "liebherr-lr1100",
+      "glb": {
+        "path": "public/assets/cranes/liebherr-lr1100.glb",
+        "bytes": 663112,
+        "sha256": "13698f139bcb79b877786259d4b3f4fe625a3534f3550a41dcaae4933422acca"
+      },
+      "blend": {
+        "path": "resources/blender/safety-simulator/lattice-cranes/liebherr-lr1100.blend",
+        "bytes": 172560,
+        "sha256": "23dac3b561bdc1c0b2b43938c43ee56075fa3901c4d002a27646cbc438599bff"
+      },
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": true,
+        "boomLength": false,
+        "trolley": false,
+        "hook": true
+      },
+      "articulation": true,
+      "demoPose": {
+        "boomLengthM": 32,
+        "boomAngleDeg": 60,
+        "trolleyM": null,
+        "hookHeightM": 17.662812921102034,
+        "slewDeg": 0
+      },
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": [
+          32,
+          32
+        ],
+        "boomAngleDeg": [
+          45,
+          70
+        ],
+        "trolleyM": null,
+        "hookHeightM": [
+          2,
+          22
+        ]
+      },
+      "riskGeometryStatus": "verified",
+      "executedSourceEvidence": [
+        {
+          "path": "resources/blender/safety-simulator/lattice-cranes/liebherr-lr1100-blend-reopen-luff.json",
+          "bytes": 14865,
+          "sha256": "0a8572267cb21f065b4068b8b3c5f4bac8f4d76d8d00460053bab1ca8e17a167"
+        },
+        {
+          "path": "resources/blender/safety-simulator/lattice-cranes/liebherr-lr1100-glb-reimport-luff.json",
+          "bytes": 14865,
+          "sha256": "6950a41003f60516720f1db03080fda0715653d92b95bbf6606057968065db07"
+        },
+        {
+          "path": "resources/blender/safety-simulator/lattice-cranes/liebherr-lr1100-rig.json",
+          "bytes": 2488,
+          "sha256": "5078ee9868d203b0286c28d10c8ed61b38970eadee5752fe8b260707f11a378e"
+        }
+      ]
+    },
+    {
+      "id": "liebherr-172ecb",
+      "glb": {
+        "path": "public/assets/cranes/liebherr-172ecb.glb",
+        "bytes": 1715584,
+        "sha256": "2e7a2f66c94a55da7a71d3b1730fcab03e7e2de1032a303fbec3ed2f46e37930"
+      },
+      "blend": {
+        "path": "resources/blender/safety-simulator/lattice-cranes/liebherr-172ecb.blend",
+        "bytes": 207810,
+        "sha256": "1a1df6cfcbdacb86ea90ad4f3f085b1bd56aa46bcafe7ad6942f7e6699796dbf"
+      },
+      "controls": {
+        "translation": false,
+        "slew": true,
+        "boomAngle": false,
+        "boomLength": false,
+        "trolley": true,
+        "hook": true
+      },
+      "articulation": false,
+      "demoPose": {
+        "boomLengthM": 50,
+        "boomAngleDeg": 0,
+        "trolleyM": 30,
+        "hookHeightM": 18.8,
+        "slewDeg": 0
+      },
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": null,
+        "boomAngleDeg": null,
+        "trolleyM": [
+          3,
+          50
+        ],
+        "hookHeightM": [
+          2,
+          42.3
+        ]
+      },
+      "riskGeometryStatus": "verified",
+      "executedSourceEvidence": [
+        {
+          "path": "resources/blender/safety-simulator/lattice-cranes/liebherr-172ecb-blend-reopen.json",
+          "bytes": 1799,
+          "sha256": "b25f40106d47c91116e9e17cfb6ec73e6bcd1c39b144788d96a586fe0ce7c379"
+        },
+        {
+          "path": "resources/blender/safety-simulator/lattice-cranes/liebherr-172ecb-glb-reimport.json",
+          "bytes": 1799,
+          "sha256": "fc3a758a919144e1907da087630b80fdec7a46196258cc125a7482418d695798"
+        }
+      ]
+    }
+  ],
+  "site": {
+    "id": "hvo-demo",
+    "glb": {
+      "path": "public/assets/site/hvo-demo.glb",
+      "bytes": 5769148,
+      "sha256": "07feb36fa6d3b74e39c3efac859991b6608cd7b14221b4f7613932c7d9640a75"
+    },
+    "blend": {
+      "path": "resources/blender/safety-simulator/maeda-site/site/hvo-demo.blend",
+      "bytes": 853416,
+      "sha256": "1caa6834c3a868df773250eae1f057f8eb768f273375852136d875783e04f938"
+    },
+    "operationalExtentM": [
+      140,
+      50
+    ],
+    "synthetic": true,
+    "executedSourceEvidence": {
+      "path": "resources/blender/safety-simulator/maeda-site/site/verification.json",
+      "bytes": 2634,
+      "sha256": "544b33dd5c8e447a513da04323f53263a4c69f21282a5329e2eda3402c3a2f0d"
+    }
+  },
+  "independentAssetReview": ".omo/teams/team-08d29e60/artifacts/asset-review/qd010/README.md",
+  "productionRigTest": "src/components/scene/equipment-rig.test.ts",
+  "productionRigVerificationStatus": "Passed QD010 current-asset focused actual GLTFLoader checks; see bound producer receipt. Earlier QD005 results remain historical.",
+  "riskEngineVerificationStatus": "Passed QD010 affected Maeda extrema/control subset on this catalog; engine production code and all risk polygons unchanged.",
+  "finalQAStatus": "not issued by asset owner",
+  "testedCatalogSha256": "8318e9eb05134bc2c9ed09d90633ec36fbf6c9e80556d4c56a9842c1d81dd6b6",
+  "riskEngineEvidence": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/engine.log",
+  "independentAssetInspection": ".omo/teams/team-08d29e60/artifacts/asset-review/qd010/corrected-geometry-receipt.json",
+  "independentFinalCatalogReceipt": {
+    "path": ".omo/teams/team-08d29e60/artifacts/asset-review/qd010/corrected-geometry-receipt.json",
+    "bytes": 52375,
+    "sha256": "552ead70646871d90318a5c50dfbf13958dbae7ccc70655a67081e569d5c01fd"
+  },
+  "endpointRenderEvidence": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/render-receipt.json",
+  "liveBlenderContinuity": {
+    "path": "resources/blender/safety-simulator/live-scene-continuity.json",
+    "bytes": 2136,
+    "sha256": "5804f6e4dab572d76997358aa9139e9e8cb12a4fb24253a4552a4a29d66a7f3b"
+  },
+  "remainingReviewNotes": [
+    "The previous four-section Maeda asset and its reviews/renders are preserved under the QD010 before archive; only current bound evidence applies to the corrected asset.",
+    "Pentagonal shape and five-section count are source-backed. Individual dimensions, profile angles, wall geometry and clearances are authored demonstration reconstruction values.",
+    "Independent integrated browser/manual acceptance remains with QA; source, geometry and actual-loader evidence do not issue an overall goal verdict."
+  ],
+  "productionRigEvidence": {
+    "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/maeda-qd010/receipt.md",
+    "bytes": 8298,
+    "sha256": "376996a001c68a4c9e8515a8c032f3853ae663b23e2ffa299b17d854c6fd8c3e"
+  },
+  "priorCandidateVerification": {
+    "catalogSha256": "7b0953b6cf6505d1421d4117ef3ac042af660d1e0f50331b5caa34fb7a544219",
+    "testedCatalogSha256": "390dcbe9082206a74b5af9d41da08fdff4e810ac16241de171a18cda2a0c508f",
+    "productionRigEvidence": {
+      "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/loader-verification.md",
+      "bytes": 5104,
+      "sha256": "bd581e1adba9db4b8f787aff18e9bc3f465970a978642984db5841e7f944a376"
+    },
+    "riskEngineEvidence": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/engine/catalog-1.0.1/README.md",
+    "independentAssetReview": ".omo/teams/team-08d29e60/artifacts/asset-review/final-rig-review.md",
+    "metadataOnlyTransition": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/engine/catalog-1.0.1/provenance-followup/metadata-transition.json",
+      "bytes": 1054,
+      "sha256": "8156df40492b76f746a5c94d9561ade1755628e64d3df9abf8e88ff100f9f850"
+    },
+    "preservedArtifactManifest": {
+      "path": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/before/artifact-manifest.json",
+      "bytes": 13947,
+      "sha256": "2dc3813f65f1d03e5c694ef3c8453297f6be0cd401c57212b122d45d6eafd3ce"
+    },
+    "independentAssetInspection": ".omo/teams/team-08d29e60/artifacts/asset-review/final-rigs-inspection.json",
+    "independentFinalCatalogReceipt": {
+      "path": ".omo/teams/team-08d29e60/artifacts/asset-review/final-catalog-receipt.json",
+      "bytes": 1505,
+      "sha256": "aba859f15c89fe866c5de8b34ee39a5becb1224e46a49ef9032d86bb1adbfc43"
+    },
+    "endpointRenderEvidence": ".omo/teams/team-08d29e60/artifacts/asset-review/final-render-manifest.json"
+  },
+  "independentCorrectionReceipt": {
+    "path": ".omo/teams/team-08d29e60/artifacts/asset-review/qd005-independent-receipt.json",
+    "bytes": 6464,
+    "sha256": "7318ed6471fb17eae22293771f11fd693d688674988f10a431fcd9e8dd35fa76"
+  },
+  "corrections": [
+    {
+      "id": "QD005",
+      "attempt": 1,
+      "description": "Known LR horizontal boom-foot offset and matching synthetic load center corrected from 2.1 m to published metric 1.2 m; selected 32 m assembly, controls and unknown hinge height unchanged",
+      "receipt": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/README.md",
+      "redProof": {
+        "path": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/red-proof.json",
+        "bytes": 1320,
+        "sha256": "7c98ad0335343b6d769a053a963d2f105f60fd83b73f2b0575b9b4bdd2c5a3e3"
+      },
+      "greenProof": {
+        "path": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/green-proof.json",
+        "bytes": 1286,
+        "sha256": "8e5efe08a0e68db9d77cca534ca287983a30705c550513346d3d1b3b8d001361"
+      },
+      "execution": {
+        "path": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/execution-01.json",
+        "bytes": 912,
+        "sha256": "971a05e48aec184170859271125d22896f45e4739f5150fad3bf6a6ab3e4fc5b"
+      },
+      "unaffectedProof": {
+        "path": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/catalog-and-unaffected-proof.json",
+        "bytes": 2595,
+        "sha256": "113b432f300aaff175fbdebd7bc6809b11d5e006d4fb9f234d53b199ff0d0ead"
+      },
+      "schemaProof": {
+        "path": "resources/blender/safety-simulator/lattice-cranes/lr-pivot-correction-01/catalog-schema-01.json",
+        "bytes": 233,
+        "sha256": "2c13cbb8843284a7c9295d810ede3168e3a7e573930c3a1b24427a95e6bf87a2"
+      },
+      "independentQA": "Pending frozen-candidate W3; no asset-owner QA verdict"
+    },
+    {
+      "id": "QD010",
+      "attempt": 1,
+      "description": "Maeda boom corrected from four box sections to five pentagonal physical shells with four moving stages; baseline, demo range and endpoint law preserved.",
+      "receipt": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/README.md",
+      "redProof": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/old-source-red.json",
+        "bytes": 1342,
+        "sha256": "7140e17b7213e73baf3c6bebe06455a00cdfae3327d97ed1423062fd5dc13fe8"
+      },
+      "sourceProof": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/source-conformance.json",
+        "bytes": 1078,
+        "sha256": "3cb72901d24e9ebe451d8feec58520649f4650e925d77a84c12a2c63fb8c8371"
+      },
+      "importedProof": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/imported-conformance.json",
+        "bytes": 1078,
+        "sha256": "3cb72901d24e9ebe451d8feec58520649f4650e925d77a84c12a2c63fb8c8371"
+      },
+      "execution": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/execution-receipt.json",
+        "bytes": 3244,
+        "sha256": "c1bb974c711093558af9079a0e8b22b280cb665f8ceb06cabbb18db5a978c43f"
+      },
+      "unaffectedProof": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/catalog-and-unaffected-proof.json",
+        "bytes": 6212,
+        "sha256": "a27ee4de8897f8238230864b232ba135aae9c714904f37f8c7142e84979ab6b4"
+      },
+      "independentProof": {
+        "path": ".omo/teams/team-08d29e60/artifacts/asset-review/qd010/corrected-geometry-receipt.json",
+        "bytes": 52375,
+        "sha256": "552ead70646871d90318a5c50dfbf13958dbae7ccc70655a67081e569d5c01fd"
+      }
+    }
+  ],
+  "endpointRenderEvidenceNote": "Prior 12-image review remains applicable to unchanged models. LR QD005 imported-GLB min/max renders were refreshed and directly inspected; build-01.log records all six refreshed LR renders.",
+  "priorQd010Candidate": {
+    "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+    "manifest": {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/artifact-manifest.json",
+      "bytes": 17631,
+      "sha256": "51c6adfd6e5190a11b8bc04300a45634b2486ebda64f58a7affd444027c321de"
+    },
+    "historicalEndpointCaptures": {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/endpoint-evidence/evidence.json",
+      "bytes": 4196,
+      "sha256": "f258cbfcedca2ed3b552e2c3a6165ca0c0dbb6c4b812c4c55310c92b4beab147"
+    },
+    "note": "Prior Maeda endpoint renders belong to the four-section asset and are retained as history, not corrected-artifact evidence."
+  },
+  "productionRigFormattingTransition": {
+    "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/format-equivalence.json",
+    "bytes": 1694,
+    "sha256": "ff0bf6cea129c6174759e40541ec0d1f438de6ef86cc3259e0befc9232febf97"
+  }
+}

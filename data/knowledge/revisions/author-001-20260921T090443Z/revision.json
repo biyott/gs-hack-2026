@@ -1,0 +1,93 @@
+{
+  "revisionId": "author-001-20260921T090443Z",
+  "recordedAt": "2026-09-21T09:06:17.334Z",
+  "author": "/root/rag_lead/knowledge_author",
+  "requestedBy": "/root/rag_lead",
+  "reason": "Independent reviewer findings: prevent action mismatch in fallback support explanations and avoid unconditional cause claims.",
+  "approvalStatus": "draft",
+  "independentReviewStatus": "pending",
+  "changes": [
+    {
+      "documentIds": [
+        "EQ-003"
+      ],
+      "field": "actionCodes",
+      "before": [
+        "FOLLOW_VALIDATED_ROUTE",
+        "REQUEST_ASSISTANCE"
+      ],
+      "after": [
+        "FOLLOW_VALIDATED_ROUTE"
+      ]
+    },
+    {
+      "documentIds": [
+        "EQ-004",
+        "FG-006"
+      ],
+      "field": "actionCodes",
+      "before": [
+        "ROUTE_UNAVAILABLE",
+        "REQUEST_ASSISTANCE"
+      ],
+      "after": [
+        "ROUTE_UNAVAILABLE"
+      ]
+    },
+    {
+      "documentIds": [
+        "EQ-002",
+        "FG-002"
+      ],
+      "field": "reviewedSupplementalExplanation",
+      "change": "Both languages now use a conditional engine explanation and current guidance/route version matching."
+    }
+  ],
+  "verification": {
+    "initialDraftSnapshotsUnchanged": true,
+    "changedDocumentCount": 5,
+    "bodyAssistanceProceduresRetained": true
+  },
+  "documents": [
+    {
+      "relative": "equipment/EQ-002.md",
+      "beforeSha256": "d301271e1ac0236232303c322d6a14b2d206e799777a965d6c02655faa09971c",
+      "initialDraftSha256": "d301271e1ac0236232303c322d6a14b2d206e799777a965d6c02655faa09971c",
+      "afterSha256": "5ba251706d392608a96554936701391202d7d362d5349e6b7df1235349330fed",
+      "sourcePath": "knowledge/equipment/EQ-002.md",
+      "revisionPath": "data/knowledge/revisions/author-001-20260921T090443Z/equipment/EQ-002.md"
+    },
+    {
+      "relative": "equipment/EQ-003.md",
+      "beforeSha256": "bec31ad14d3d779058169271a4aa7d9383efb027cfc83c576237315d5283e133",
+      "initialDraftSha256": "bec31ad14d3d779058169271a4aa7d9383efb027cfc83c576237315d5283e133",
+      "afterSha256": "d604e9db0d9191dbc57bc4c00d66422b408efe8003834b50cc388b56bdd8d334",
+      "sourcePath": "knowledge/equipment/EQ-003.md",
+      "revisionPath": "data/knowledge/revisions/author-001-20260921T090443Z/equipment/EQ-003.md"
+    },
+    {
+      "relative": "equipment/EQ-004.md",
+      "beforeSha256": "9f44d61f9dc978d27da16da744a7ca9371dd191421dc688ac32ff61a7a30b359",
+      "initialDraftSha256": "9f44d61f9dc978d27da16da744a7ca9371dd191421dc688ac32ff61a7a30b359",
+      "afterSha256": "129fb9e9b1630e189c4e0c0254f8106e0b259ad4a1fb59ed2351d6c5bd8979ac",
+      "sourcePath": "knowledge/equipment/EQ-004.md",
+      "revisionPath": "data/knowledge/revisions/author-001-20260921T090443Z/equipment/EQ-004.md"
+    },
+    {
+      "relative": "fire-gas/FG-002.md",
+      "beforeSha256": "2e3cfae7352840ab8d8050815a18f3ab2ac2cc38bbb1aceca4258e07bf256f07",
+      "initialDraftSha256": "2e3cfae7352840ab8d8050815a18f3ab2ac2cc38bbb1aceca4258e07bf256f07",
+      "afterSha256": "8a055f392f4d9b98aba2883138bfecb321caded944be8d8b84737d27f8f46f7f",
+      "sourcePath": "knowledge/fire-gas/FG-002.md",
+      "revisionPath": "data/knowledge/revisions/author-001-20260921T090443Z/fire-gas/FG-002.md"
+    },
+    {
+      "relative": "fire-gas/FG-006.md",
+      "beforeSha256": "9f841f4beb6b3e99f09a5d42efeb8ceb14c4a0a429103caf07633e8df1e47471",
+      "initialDraftSha256": "9f841f4beb6b3e99f09a5d42efeb8ceb14c4a0a429103caf07633e8df1e47471",
+      "afterSha256": "216e481703baf74c679012f316db559a2ede564c23938803e94342514110ac2b",
+      "sourcePath": "knowledge/fire-gas/FG-006.md",
+      "revisionPath": "data/knowledge/revisions/author-001-20260921T090443Z/fire-gas/FG-006.md"
+    }
+  ]
+}

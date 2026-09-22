@@ -1,0 +1,374 @@
+{
+  "checkedAt": "2026-09-21T09:13:04.949Z",
+  "command": "node data/knowledge/reviews/check-corpus.mjs",
+  "scope": "Structural checks only; bilingual semantics and runtime behavior require separate evidence.",
+  "pass": true,
+  "counts": {
+    "common": {
+      "current": 4,
+      "drafts": 4
+    },
+    "equipment": {
+      "current": 6,
+      "drafts": 6
+    },
+    "fire-gas": {
+      "current": 8,
+      "drafts": 8
+    }
+  },
+  "total": 18,
+  "entries": [
+    {
+      "documentId": "COMMON-001",
+      "path": "knowledge/common/COMMON-001.md",
+      "sha256": "5844350939f920d0daf7a3c9ac0e8b03c4d3e677bb57f614f1919b24182f721f",
+      "draftPath": "data/knowledge/drafts/common/COMMON-001.md",
+      "draftSha256": "2c405c531d3417978c0b15aca1ab874912e585462902a5a1f33e7720de5ccbc6",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "COMMON-002",
+        "COMMON-003",
+        "EQ-003"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "COMMON-002",
+      "path": "knowledge/common/COMMON-002.md",
+      "sha256": "4c4afd2974b3b7ba310bb6a99eacc74b57674c8a0627e098cbcc44e4bd02e952",
+      "draftPath": "data/knowledge/drafts/common/COMMON-002.md",
+      "draftSha256": "68ffd6e414680d87dc576f2fd0c5f3f74ea75b7630a2420188e37e75f8340e42",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "COMMON-001",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "COMMON-003",
+      "path": "knowledge/common/COMMON-003.md",
+      "sha256": "b0cbb38a2f3357cffa36fea0e0d2a567e9cdb317f73003f09dff2114cc278c77",
+      "draftPath": "data/knowledge/drafts/common/COMMON-003.md",
+      "draftSha256": "b8bd055b70ebfb6e6ddbade12eea17769e4b650ad506e7989b1d4c4902438e4e",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "EQ-004",
+        "FG-006"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "COMMON-004",
+      "path": "knowledge/common/COMMON-004.md",
+      "sha256": "3d2af08d01a277fc8cce44f7ce73b7d6fd95349889a17974cf625f8edc6535e3",
+      "draftPath": "data/knowledge/drafts/common/COMMON-004.md",
+      "draftSha256": "c0cf7cce0296a42e09f7f25c9723b0a2879f44ba96bd4651fbe877cea0c20fb8",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "EQ-002",
+        "FG-002",
+        "COMMON-002"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "EQ-001",
+      "path": "knowledge/equipment/EQ-001.md",
+      "sha256": "935585e1dce9dfe4b46d12fb73a426d935f2d592022faa3861a026892a23750a",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-001.md",
+      "draftSha256": "935585e1dce9dfe4b46d12fb73a426d935f2d592022faa3861a026892a23750a",
+      "draftMatchesCurrent": true,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "destinationLabel",
+        "equipmentId",
+        "guidanceVersion",
+        "nextWaypointLabel",
+        "zoneId"
+      ],
+      "relatedDocumentIds": [
+        "EQ-002",
+        "EQ-003",
+        "EQ-004",
+        "EQ-005"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "EQ-002",
+      "path": "knowledge/equipment/EQ-002.md",
+      "sha256": "5ba251706d392608a96554936701391202d7d362d5349e6b7df1235349330fed",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-002.md",
+      "draftSha256": "d301271e1ac0236232303c322d6a14b2d206e799777a965d6c02655faa09971c",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "destinationLabel",
+        "equipmentId",
+        "guidanceVersion",
+        "nextWaypointLabel"
+      ],
+      "relatedDocumentIds": [
+        "COMMON-004",
+        "EQ-001",
+        "EQ-004"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "EQ-003",
+      "path": "knowledge/equipment/EQ-003.md",
+      "sha256": "d604e9db0d9191dbc57bc4c00d66422b408efe8003834b50cc388b56bdd8d334",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-003.md",
+      "draftSha256": "bec31ad14d3d779058169271a4aa7d9383efb027cfc83c576237315d5283e133",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "destinationLabel",
+        "guidanceVersion",
+        "nextWaypointLabel"
+      ],
+      "relatedDocumentIds": [
+        "COMMON-001",
+        "COMMON-003",
+        "EQ-004"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "EQ-004",
+      "path": "knowledge/equipment/EQ-004.md",
+      "sha256": "129fb9e9b1630e189c4e0c0254f8106e0b259ad4a1fb59ed2351d6c5bd8979ac",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-004.md",
+      "draftSha256": "9f44d61f9dc978d27da16da744a7ca9371dd191421dc688ac32ff61a7a30b359",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "COMMON-003",
+        "EQ-001",
+        "EQ-003",
+        "EQ-005"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "EQ-005",
+      "path": "knowledge/equipment/EQ-005.md",
+      "sha256": "96baf46309de4db8fcc67620fe733f104f79eed982dc8fdc93cc5ff53d6ce683",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-005.md",
+      "draftSha256": "96baf46309de4db8fcc67620fe733f104f79eed982dc8fdc93cc5ff53d6ce683",
+      "draftMatchesCurrent": true,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "COMMON-004",
+        "COMMON-003",
+        "EQ-004"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "EQ-006",
+      "path": "knowledge/equipment/EQ-006.md",
+      "sha256": "94de5e28174b538b8dfae6437cbb150f3e80f6058564cf85d784124793a299c4",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-006.md",
+      "draftSha256": "94de5e28174b538b8dfae6437cbb150f3e80f6058564cf85d784124793a299c4",
+      "draftMatchesCurrent": true,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "destinationLabel",
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "COMMON-004",
+        "COMMON-003",
+        "EQ-001"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "FG-001",
+      "path": "knowledge/fire-gas/FG-001.md",
+      "sha256": "1fef57a74852d360578d0a00526137ffe636d43bd0544f9f639320429d0f2ebd",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-001.md",
+      "draftSha256": "0abd8513b9a190335a7f6011e117b5842063feb1085a75b9549df6d62fd692fb",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion",
+        "zoneId"
+      ],
+      "relatedDocumentIds": [
+        "FG-002",
+        "FG-004",
+        "FG-005",
+        "FG-007"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "FG-002",
+      "path": "knowledge/fire-gas/FG-002.md",
+      "sha256": "5f8d4dfa85e0fecbb96a49d05a2c2a56af693924d27aa5688fd9fb587cc16532",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-002.md",
+      "draftSha256": "2e3cfae7352840ab8d8050815a18f3ab2ac2cc38bbb1aceca4258e07bf256f07",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "destinationLabel",
+        "guidanceVersion",
+        "nextWaypointLabel"
+      ],
+      "relatedDocumentIds": [
+        "COMMON-004",
+        "FG-001",
+        "FG-004",
+        "FG-006"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "FG-003",
+      "path": "knowledge/fire-gas/FG-003.md",
+      "sha256": "6ca0aff5028aea47b278ce3bbc57e80abe1e0dd34c33127bf6f0be7a7b4a9be6",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-003.md",
+      "draftSha256": "4c65e358d9803165bed0922acceb3a2fb9ee9b7bdb230f8478759d72b08a73d0",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion",
+        "zoneId"
+      ],
+      "relatedDocumentIds": [
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "FG-004",
+      "path": "knowledge/fire-gas/FG-004.md",
+      "sha256": "d52c392664010de1350f056608e1f7110cad520bfdab41bd01f2fb5fb7ec34c2",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-004.md",
+      "draftSha256": "cc4bc35a9e467267e88e8036718e678daa3d5249e7ac6515537b7d7eacf882bf",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "destinationLabel",
+        "guidanceVersion",
+        "nextWaypointLabel"
+      ],
+      "relatedDocumentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "COMMON-001"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "FG-005",
+      "path": "knowledge/fire-gas/FG-005.md",
+      "sha256": "78118f17d31bd5d3b1cc2ec82652f09effdbac371b29c1855f45d5d578822179",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-005.md",
+      "draftSha256": "0eb33fc0a6601539ce418c5525b9f29ddf24463505fe33d26f533c8db13bf65a",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "FG-003",
+        "FG-004",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "FG-006",
+      "path": "knowledge/fire-gas/FG-006.md",
+      "sha256": "2e9fdf7b01855ea598c64a7a244294973766313d0d2a0641f173bab3e2093dac",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-006.md",
+      "draftSha256": "9f841f4beb6b3e99f09a5d42efeb8ceb14c4a0a429103caf07633e8df1e47471",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "FG-001",
+        "FG-003",
+        "FG-005",
+        "COMMON-003"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "FG-007",
+      "path": "knowledge/fire-gas/FG-007.md",
+      "sha256": "8f52633eb098cfd43de67fd50bd717f7a0e7de9bc5e1382433522e31502c0c18",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-007.md",
+      "draftSha256": "dc7f11cda0632379c763d7dc0c25b2d77c313b2cd185f77fb4b335df8ea5beef",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "FG-001",
+        "FG-003",
+        "FG-008",
+        "COMMON-004"
+      ],
+      "problems": []
+    },
+    {
+      "documentId": "FG-008",
+      "path": "knowledge/fire-gas/FG-008.md",
+      "sha256": "3caf96eea7d51977b69557dff98f0c24eb93b9dc689cb0ef01a93065ea10d663",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-008.md",
+      "draftSha256": "105fb8ace8e6feccab3a0f41f7950cae46c09344539f5161d10519d4bb0b1243",
+      "draftMatchesCurrent": false,
+      "approvalStatus": "draft",
+      "examplePlaceholders": [
+        "guidanceVersion"
+      ],
+      "relatedDocumentIds": [
+        "FG-001",
+        "FG-003",
+        "FG-007",
+        "COMMON-004"
+      ],
+      "problems": []
+    }
+  ]
+}

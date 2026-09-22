@@ -1,0 +1,59 @@
+{
+  "buildType": "development",
+  "sourceScope": [
+    "app/design-system/page.tsx", "app/layout.tsx", "app/icon.svg", "app/globals.css", "app/console.css",
+    "src/components/ui", "src/client/dev-tools.tsx", "DESIGN.md", "package.json", "package-lock.json", "next.config.ts"
+  ],
+  "routes": [
+    {
+      "id": "design-system",
+      "path": "/design-system",
+      "readySelector": "main h1",
+      "states": [
+        {
+          "id": "default",
+          "actions": [
+            { "kind": "expect-text", "selector": "main", "value": "시뮬레이션 / SIMULATION" },
+            { "kind": "expect-attribute", "selector": "button:has-text('권한 필요')", "name": "disabled", "value": "" },
+            { "kind": "expect-attribute", "selector": "button:has-text('요청 중')", "name": "aria-busy", "value": "true" },
+            { "kind": "expect-text", "selector": "main", "value": "선택된 사건이 없습니다" },
+            { "kind": "expect-text", "selector": "main", "value": "영상 연결 끊김" },
+            { "kind": "expect-text", "selector": "main", "value": "위치 미확인" },
+            { "kind": "expect-text", "selector": "main", "value": "UWB 방향" }
+          ]
+        },
+        {
+          "id": "button-hover-mid",
+          "actions": [{ "kind": "hover", "selector": "button:has-text('시뮬레이션 실행')" }],
+          "afterActionMs": 100
+        },
+        { "id": "button-hover-settled", "afterActionMs": 250 },
+        {
+          "id": "button-keyboard-focus",
+          "actions": [
+            { "kind": "press", "value": "Tab" },
+            { "kind": "focus", "selector": "button:has-text('시뮬레이션 실행')" }
+          ]
+        },
+        {
+          "id": "input-focused-filled",
+          "actions": [
+            { "kind": "fill", "selector": "input[placeholder='현장에서 확인한 사실 입력']", "value": "작업자 위치 확인 / Position verified" }
+          ]
+        },
+        {
+          "id": "language-selected",
+          "actions": [{ "kind": "select", "selector": "label:has-text('안내 언어') select", "value": "en" }]
+        },
+        {
+          "id": "guidance-bilingual",
+          "actions": [{ "kind": "scroll", "selector": "section:has(h2:has-text('최초 전달 안내'))" }]
+        },
+        {
+          "id": "empty-and-error",
+          "actions": [{ "kind": "scroll", "selector": "section:has(h2:has-text('빈 상태와 실패'))" }]
+        }
+      ]
+    }
+  ]
+}

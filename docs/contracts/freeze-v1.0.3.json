@@ -1,0 +1,152 @@
+{
+  "contractRevision": "1.0.3",
+  "goalVersion": "1.0",
+  "goalId": "GS-SAFETY-SIM-001",
+  "frozenAt": "2026-09-21T11:55:56.536Z",
+  "owner": "/root/tech_lead",
+  "schemaVersions": {
+    "simulationSnapshot": "1.0.0",
+    "equipmentCatalog": "1.0.1",
+    "trackingSnapshot": "1.0.1",
+    "map": "1.0.0"
+  },
+  "change": "Explicit server stop-requested uncertainty state and optional durable per-primary voiceStopRequestedAt; no new cancellation ACK or physical-stop claim",
+  "previousFreezes": [
+    {
+      "path": "docs/contracts/freeze-v1.0.1.json",
+      "sha256": "e2a93c4ec81c6153fff4501c4072a0b0efeafbee0ccc6177c3e13117a45bd7a7"
+    },
+    {
+      "path": "docs/contracts/freeze-v1.0.2.json",
+      "sha256": "9b53450912b1a99020be2e5fb98f1d7b51dd97654659f03bb32619cee5c49a8f"
+    }
+  ],
+  "historicalCanonicalArchive": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/contracts-v1.0.1-before-v1.0.3",
+  "concurrence": {
+    "root": "Internal correction authorized within existing goal; no G0 outcome change",
+    "backend": "Pending/playing stop intent; terminal facts unchanged; late-start guard across resume and restore; new primary reset",
+    "frontend": "Explicit Korean/English request and device-unconfirmed wording; bounded affected tests",
+    "mobile": "Remote parser/label compatibility in replacement APK; no new native cancellation ACK",
+    "qa": "QR009 semantic binding; independent execution remains unstarted"
+  },
+  "verification": {
+    "scope": "shared response parser only",
+    "tests": 14,
+    "passed": 14,
+    "failed": 0,
+    "redReports": [
+      "stop-requested-schema-red.json",
+      "stop-marker-schema-red.json"
+    ],
+    "greenReport": "stop-marker-schema-green.json",
+    "producerRuntimeAndClientVerification": "pending owner submissions"
+  },
+  "files": [
+    {
+      "path": "data/equipment/catalog.json",
+      "bytes": 51229,
+      "sha256": "7b0953b6cf6505d1421d4117ef3ac042af660d1e0f50331b5caa34fb7a544219"
+    },
+    {
+      "path": "data/maps/site-construction-01.json",
+      "bytes": 6780,
+      "sha256": "ea4834c1b17e2a0ccbdaa892ce42079a42f689cfa198c7aa0f554d811bf6b5bf"
+    },
+    {
+      "path": "docs/contracts/README.md",
+      "bytes": 531,
+      "sha256": "2a7d9f593524aad438e7f011ccf82b9fa55c7b1d455e8559ac43b707af00db79"
+    },
+    {
+      "path": "docs/contracts/clarification-playback-stop-v1.0.3.md",
+      "bytes": 5057,
+      "sha256": "135f37d78311571b2f6dfeb5cfb309e0dc0a586ca0fda90b13cc996be775d97a"
+    },
+    {
+      "path": "docs/contracts/clarification-uwb-azimuth-v1.0.2.md",
+      "bytes": 3517,
+      "sha256": "e5a3c9d30b848df7692ff89e7e06728c7598cf3f5cd32d70eaf0c36f6892e915"
+    },
+    {
+      "path": "docs/contracts/v1.0.1-addendum.md",
+      "bytes": 18220,
+      "sha256": "e77866d606629d6f29317b89cba6adfeeef417fc65c0d1abf0a54baf5faa5c95"
+    },
+    {
+      "path": "docs/contracts/v1.md",
+      "bytes": 11911,
+      "sha256": "6d2a52af8961c2e61e39681db7446f2a9bb6d3a671d421861f9843b68107c90e"
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "bytes": 144,
+      "sha256": "ec2c5603774d74441473e3c9e0725518b8d518abecf170d3441c067dddae50d0"
+    },
+    {
+      "path": "packages/contracts/src/articulation.ts",
+      "bytes": 1067,
+      "sha256": "a6362be430eedbb094e95f537ea8445c91650bedbb0df92381554245cb1a4513"
+    },
+    {
+      "path": "packages/contracts/src/catalog.ts",
+      "bytes": 4654,
+      "sha256": "0c2bece72159c7c3e27d78c323587e816ff273a4997b7efb732ea74e696cbd5f"
+    },
+    {
+      "path": "packages/contracts/src/clock.ts",
+      "bytes": 730,
+      "sha256": "67fc9ad0c3bad7df93e005cb1aa09ffba1c97d944aa6c5e70097a92622fea3d7"
+    },
+    {
+      "path": "packages/contracts/src/commands.ts",
+      "bytes": 3801,
+      "sha256": "df75873b40f68ff0090a3ecfbbb6870f1c835a06aea7053079d3ac6396904482"
+    },
+    {
+      "path": "packages/contracts/src/coordinates.ts",
+      "bytes": 793,
+      "sha256": "5cc9e0cf91d6bc4002391e8613a96bd2ac80da025897373f99f9e2b74ad36607"
+    },
+    {
+      "path": "packages/contracts/src/core.ts",
+      "bytes": 2525,
+      "sha256": "3501d37d98f3f0c13f898122a715e999a24da7ead10f3810b973db9b88d7e87a"
+    },
+    {
+      "path": "packages/contracts/src/guidance.ts",
+      "bytes": 4752,
+      "sha256": "27b31acdacfb78ec34af3083cd23ef6b911d3f67f8513d4dd56ad6ce77528aa2"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "bytes": 302,
+      "sha256": "a8a5951d0f0d0e69282a9d8f1d6c93e5c7ccdf0e98d24fa28f68c4b0e5a21f5c"
+    },
+    {
+      "path": "packages/contracts/src/map-geometry.ts",
+      "bytes": 1226,
+      "sha256": "ae584628b0c3eb1303e72eced11f8262cff028700cecc7478079ca30db41a7c1"
+    },
+    {
+      "path": "packages/contracts/src/map.ts",
+      "bytes": 7294,
+      "sha256": "3d595d6f895d7ff9ffad51e307feebe2957e0e51d87d702cb551a8dfcf46f40e"
+    },
+    {
+      "path": "packages/contracts/src/state.ts",
+      "bytes": 5476,
+      "sha256": "ccf642d8593198b8835d6b65ef865a49baa42aa659aefb75a86ca13591acba54"
+    },
+    {
+      "path": "packages/contracts/src/tracking.ts",
+      "bytes": 6816,
+      "sha256": "fca281b15779c3dbc902cb3443e8bc7cb77fc3f010bfc679d3ace755a66b92a0"
+    },
+    {
+      "path": "packages/contracts/src/uwb-session.ts",
+      "bytes": 3847,
+      "sha256": "73139907f71413249b3a2a844160fa87c3932ff6c70fd1d740e706aa345bef0f"
+    }
+  ],
+  "contentSha256": "65efcc79a230bba592dc0fc4b79771dcc1e8e565aa88b42488cb1e3509183812"
+}

@@ -1,0 +1,368 @@
+{
+  "buildType": "development",
+  "settleImages": true,
+  "expectedHttpErrors": [
+    {
+      "method": "GET",
+      "path": "/api/session",
+      "status": 401,
+      "maxOccurrences": 2,
+      "beforeMutation": true
+    }
+  ],
+  "allowedMutations": [
+    {
+      "method": "POST",
+      "path": "/api/session"
+    }
+  ],
+  "expectedRequestFailures": [
+    {
+      "method": "GET",
+      "path": "/api/events",
+      "query": {
+        "mode": "equipment"
+      },
+      "error": "net::ERR_ABORTED",
+      "state": "fire-gas-current-3d-stage",
+      "maxOccurrences": 1
+    }
+  ],
+  "routes": [
+    {
+      "id": "console",
+      "path": "/",
+      "readySelector": ".entry-screen h1",
+      "states": [
+        {
+          "id": "entry",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "button[type='submit']:not(:disabled)"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "[data-testid='mode-equipment']",
+              "name": "disabled",
+              "value": ""
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "[data-testid='mode-fire-gas']",
+              "name": "disabled",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "id": "observer-connected",
+          "actions": [
+            {
+              "kind": "select",
+              "selector": "label:has-text('역할') select",
+              "value": "observer"
+            },
+            {
+              "kind": "fill",
+              "selector": "input[type='password']",
+              "valueEnv": "QA_DEMO_ACCESS_CODE",
+              "value": "2026"
+            },
+            {
+              "kind": "click",
+              "selector": "button[type='submit']"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "[data-testid='mode-equipment']:not(:disabled)"
+            },
+            {
+              "kind": "expect-text",
+              "selector": ".entry-session",
+              "value": "observer · observer"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".entry-brand"
+            }
+          ]
+        },
+        {
+          "id": "equipment-current-3d-overview",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "[data-testid='mode-equipment']"
+            },
+            {
+              "kind": "wait-text",
+              "selector": ".workspace-heading h1",
+              "value": "중장비 접근 대응"
+            },
+            {
+              "kind": "wait-text",
+              "selector": "[data-testid='connection-state']",
+              "value": "실시간 연결"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "[data-testid='site-canvas'] canvas"
+            },
+            {
+              "kind": "wait-resource",
+              "value": "/assets/site/hvo-demo.glb"
+            },
+            {
+              "kind": "wait-all-hidden",
+              "selector": ".scene-loading, .scene-failure"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "[data-testid='scenario-select']",
+              "name": "disabled",
+              "value": ""
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "[data-testid='equipment-select']",
+              "name": "disabled",
+              "value": ""
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "[data-testid='run-toggle']",
+              "name": "disabled",
+              "value": ""
+            },
+            {
+              "kind": "scroll",
+              "selector": ".console-header"
+            },
+            {
+              "kind": "expect-visible-unique",
+              "selector": ".console-header .status-synthetic",
+              "value": "시뮬레이션 / SIMULATION",
+              "inViewport": true
+            }
+          ],
+          "afterActionMs": 500
+        },
+        {
+          "id": "equipment-current-3d-stage",
+          "actions": [
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "equipment-current-3d-orbit",
+          "actions": [
+            {
+              "kind": "drag-unobscured-canvas",
+              "selector": "[data-testid='site-canvas'] canvas",
+              "projectionSelector": "svg[aria-label='현장 위치 주석'] [data-annotation-id] line",
+              "stateVersionSelector": ".status-strip-version",
+              "distanceRatio": 0.5
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "svg[aria-label='현장 위치 주석']"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "equipment-current-3d-worker-selected",
+          "actions": [
+            {
+              "kind": "expect-attribute",
+              "selector": "svg[aria-label='현장 위치 주석'] [data-annotation-id='WORKER-B'] button",
+              "name": "aria-pressed",
+              "value": "false"
+            },
+            {
+              "kind": "click",
+              "selector": "svg[aria-label='현장 위치 주석'] [data-annotation-id='WORKER-B'] button"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "svg[aria-label='현장 위치 주석'] [data-annotation-id='WORKER-B'] button",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "equipment-current-2d-risk",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "button:has-text('2D 지도')"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "[data-testid='site-map'] .map-ground"
+            },
+            {
+              "kind": "select",
+              "selector": "select[aria-label='카메라 모드']",
+              "value": "risk"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "risk"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "button:has-text('2D 지도')",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            },
+            {
+              "kind": "expect-map-scale",
+              "selector": "[data-testid='map-scale-label']"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "equipment-current-2d-full",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "button[aria-label='지도 확대']"
+            },
+            {
+              "kind": "click",
+              "selector": "button[aria-label='지도 축소']"
+            },
+            {
+              "kind": "click",
+              "selector": "button:has-text('시점 초기화')"
+            },
+            {
+              "kind": "click",
+              "selector": "button:has-text('전체 범위')"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": ".site-stage__viewport",
+              "name": "data-camera-mode",
+              "value": "full"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            },
+            {
+              "kind": "expect-map-scale",
+              "selector": "[data-testid='map-scale-label']"
+            }
+          ],
+          "afterActionMs": 300
+        },
+        {
+          "id": "fire-gas-current-3d-stage",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "button[aria-label='모드 선택으로 돌아가기']"
+            },
+            {
+              "kind": "click",
+              "selector": "[data-testid='mode-fire-gas']"
+            },
+            {
+              "kind": "wait-text",
+              "selector": ".workspace-heading h1",
+              "value": "화재·가스 대응"
+            },
+            {
+              "kind": "wait-text",
+              "selector": "[data-testid='connection-state']",
+              "value": "실시간 연결"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "[data-testid='site-canvas'] canvas"
+            },
+            {
+              "kind": "wait-all-hidden",
+              "selector": ".scene-loading, .scene-failure"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "[data-testid='scenario-select']",
+              "name": "disabled",
+              "value": ""
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "[data-testid='run-toggle']",
+              "name": "disabled",
+              "value": ""
+            },
+            {
+              "kind": "scroll",
+              "selector": ".console-header"
+            },
+            {
+              "kind": "expect-visible-unique",
+              "selector": ".console-header .status-synthetic",
+              "value": "시뮬레이션 / SIMULATION",
+              "inViewport": true
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            }
+          ],
+          "afterActionMs": 500
+        },
+        {
+          "id": "fire-gas-current-2d-stage",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "button:has-text('2D 지도')"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "[data-testid='site-map'] .map-ground"
+            },
+            {
+              "kind": "expect-attribute",
+              "selector": "button:has-text('2D 지도')",
+              "name": "aria-pressed",
+              "value": "true"
+            },
+            {
+              "kind": "scroll",
+              "selector": ".site-stage__viewport"
+            },
+            {
+              "kind": "expect-map-scale",
+              "selector": "[data-testid='map-scale-label']"
+            }
+          ],
+          "afterActionMs": 300
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0.0",
+  "units": "metres",
+  "coordinateSystem": "map-xy-z-up",
+  "equipment": [
+    {
+      "id": "sk1265-at6",
+      "equipmentType": "mobile-tower-crane",
+      "model": "Spierings SK1265-AT6",
+      "specEdition": "Legacy Specs-SK1265_EN.pdf / drawing 121-00126107A",
+      "sourceUrl": "https://www.spieringscranes.com/wp-content/uploads/Specs-SK1265_EN.pdf",
+      "sourcePage": [1, 2, 7],
+      "sourceSha256": "3b24fc18f0aafb73584c191496b4cca88bd4f19a84e6a09753f3c3ccb52b2d2b",
+      "lengthM": 16.279,
+      "widthM": 3.0,
+      "heightM": 4.0,
+      "dimensionState": "transport",
+      "supportGeometry": {
+        "kind": "four-point-outriggers",
+        "coordinateBasis": "centres",
+        "widthM": 7.66,
+        "lengthM": 7.95,
+        "frontWidthM": null,
+        "rearWidthM": null,
+        "points": [
+          { "x": -4.885, "y": 3.83 },
+          { "x": 3.065, "y": 3.83 },
+          { "x": -4.615, "y": -3.83 },
+          { "x": 3.335, "y": -3.83 }
+        ],
+        "notes": "Staggered p7 rows; cab negative X. Pads0.75x0.60 and ground plates2.5x1.0 are separate from centers."
+      },
+      "slewOrigin": { "x": 0, "y": 0, "z": 0 },
+      "manufacturerSlewDatum": "p7 plan slew center, front cab -X",
+      "tailSwingRadiusM": 4.54,
+      "boomOrJibConfiguration": {
+        "boomLengthM": null,
+        "jibLengthM": 60,
+        "hookHeightM": 35,
+        "angleDeg": 0,
+        "fixedJibM": null,
+        "notes": "60m horizontal jib; lower structure reference37.2m; hook maximum35m; legacy, not eLift."
+      },
+      "assetUrl": "/assets/cranes/sk1265-at6.glb",
+      "sourceBlend": "resources/blender/safety-simulator/sk1265-derived/sk1265-at6.blend",
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": false,
+        "boomLength": false,
+        "trolley": true,
+        "hook": true
+      },
+      "controlNodes": {
+        "slew": "SLEW",
+        "trolley": "TROLLEY",
+        "hook": "HOOK",
+        "ropes": "HOIST_ROPES",
+        "boomPivot": null,
+        "boomSegments": []
+      },
+      "controlBaselines": {
+        "slewDeg": 0,
+        "trolleyM": 30,
+        "hookHeightM": 16.24,
+        "ropeTopM": 36.62,
+        "ropeLengthM": 18.52,
+        "boomAngleDeg": 0,
+        "boomLengthM": 60
+      },
+      "controlNotes": "glTF SLEW rotate Y, TROLLEY positionX absolute, HOOK positionY absolute; rope scaleY=(18.52-(hookHeightM-16.24))/18.52",
+      "demoPose": {
+        "boomLengthM": 60,
+        "boomAngleDeg": 0,
+        "trolleyM": 30,
+        "hookHeightM": 16.24,
+        "slewDeg": 0
+      },
+      "movementLimits": {
+        "tableSlewDeg": [-15, 15],
+        "boomLengthM": null,
+        "boomAngleDeg": null,
+        "trolleyM": [2, 59],
+        "hookHeightM": [1, 35]
+      },
+      "riskGeometry": null,
+      "riskGeometryStatus": "unverified",
+      "visualizationNotes": [
+        "External visual study; tube diameters and fittings inferred",
+        "Original source preserved; new articulated derivative",
+        "No luffing, mast folding or load stability simulation"
+      ],
+      "verificationStatus": "production-in-progress"
+    }
+  ]
+}

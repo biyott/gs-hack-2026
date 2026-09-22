@@ -1,0 +1,33 @@
+{
+  "assetId": "hvo-demo",
+  "assetPath": "/assets/site/hvo-demo.glb",
+  "siteId": "SITE-CONSTRUCTION-01",
+  "mapVersion": "1.0.0",
+  "floorId": "GROUND",
+  "synthetic": true,
+  "units": "metres",
+  "origin": [0, 0, 0],
+  "blenderAxes": "XY ground, Z up",
+  "threeMapping": "[mapX, height, -mapY]",
+  "operationalBoundsXY": [[0, 0], [140, 50]],
+  "regions": [
+    {"id": "SITE-BOUNDARY", "node": "SITE_SLAB", "boundsXY": [[0, 0], [140, 50]], "surfaceZ": 0},
+    {"id": "WORK-AREA", "node": "REGION__WORK-AREA", "boundsXY": [[15, 12], [100, 38]]},
+    {"id": "STOCK", "node": "REGION__STOCK", "boundsXY": [[55, 17], [75, 29]]},
+    {"id": "DESTINATION", "node": "REGION__DESTINATION", "boundsXY": [[80, 17], [95, 29]]},
+    {"id": "OBSTACLE-01", "node": "REGION__OBSTACLE-01", "boundsXY": [[105, 18], [120, 30]], "heightM": 6},
+    {"id": "PATH-A", "node": "REGION__PATH-A", "boundsXY": [[8, 6], [132, 10]], "centerlineY": 8, "widthM": 4},
+    {"id": "PATH-B", "node": "REGION__PATH-B", "boundsXY": [[8, 40], [132, 44]], "centerlineY": 42, "widthM": 4},
+    {"id": "REFUGE-01", "node": "REGION__REFUGE-01", "centerXY": [125, 8], "visualRadiusM": 1.5, "candidateOnly": true},
+    {"id": "REFUGE-02", "node": "REGION__REFUGE-02", "centerXY": [125, 42], "visualRadiusM": 1.5, "candidateOnly": true}
+  ],
+  "defaultRuntimeEquipmentOriginXY": [30, 25],
+  "defaultRuntimeWorkerOriginsXY": [[65, 25], [90, 40]],
+  "embeddedRuntimeEntities": [],
+  "sourceContract": "DESIGN.md section 9; archived emul-008 section 4",
+  "limitations": [
+    "Surrounding industrial structures are illustrative, not measured HVO facilities",
+    "Refuge radii are visual choices; centers follow the contract",
+    "Safety geometry, workers, cranes, hazards and computed routes are supplied by runtime"
+  ]
+}

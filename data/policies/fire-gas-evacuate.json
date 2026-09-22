@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "synthetic": true,
+  "positionStaleAfterMs": 5000,
+  "sensorStaleAfterMs": 5000,
+  "equipmentPredictionSeconds": 5,
+  "arrivalToleranceM": 2,
+  "gasAlarm": {
+    "materialId": "DEMO-GAS-X",
+    "minimumValue": 1,
+    "unit": "demo-index"
+  },
+  "requireExplicitReopen": true,
+  "id": "POLICY-FG-EVACUATE",
+  "mode": "fire-gas",
+  "responses": [
+    {
+      "hazardType": "fire",
+      "priority": 90,
+      "strategy": "evacuate",
+      "destinationIds": ["ASSEMBLY-01"]
+    },
+    {
+      "hazardType": "gas",
+      "priority": 80,
+      "strategy": "evacuate",
+      "destinationIds": ["ASSEMBLY-01"]
+    },
+    {
+      "hazardType": "combined",
+      "priority": 100,
+      "strategy": "evacuate",
+      "destinationIds": ["ASSEMBLY-01"]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "contractVersion": "1.0.0",
+  "goalVersion": "1.0",
+  "goalId": "GS-SAFETY-SIM-001",
+  "frozenAt": "2026-09-21T09:21:11.899Z",
+  "owner": "/root/tech_lead",
+  "concurrence": {
+    "backend": "HTTP/snapshot/session, map, explicit supplement lineage approved",
+    "frontend": "Snapshot/catalog/map and explicit supplement lineage approved",
+    "mobile": "Explicit supplement lineage with valid callback identity approved",
+    "rag": "Bounded actual-model selection, freshness, metadata normalization approved",
+    "tracking": "Tracking + UWB schemas delegated and exported",
+    "design": "Coordinate/catalog/six presets and null unknown geometry agreed",
+    "qa": "G0 performance protocol concurrence recorded"
+  },
+  "files": [
+    {
+      "path": "data/maps/site-construction-01.json",
+      "sha256": "ea4834c1b17e2a0ccbdaa892ce42079a42f689cfa198c7aa0f554d811bf6b5bf"
+    },
+    {
+      "path": "docs/contracts/v1.md",
+      "sha256": "6d2a52af8961c2e61e39681db7446f2a9bb6d3a671d421861f9843b68107c90e"
+    },
+    {
+      "path": "packages/contracts/src/catalog.ts",
+      "sha256": "3ec4ad853019b6ac59fe5b2e026990d35ac749909a1338cfec315d0c4b7285f5"
+    },
+    {
+      "path": "packages/contracts/src/commands.ts",
+      "sha256": "4e6ce79b51e1bddb0d610b20a78f179abb9b026a2145c3c5fed23842f2985cfc"
+    },
+    {
+      "path": "packages/contracts/src/coordinates.ts",
+      "sha256": "5cc9e0cf91d6bc4002391e8613a96bd2ac80da025897373f99f9e2b74ad36607"
+    },
+    {
+      "path": "packages/contracts/src/core.ts",
+      "sha256": "392fa35b17b149e1edbc3f104a12321bf16954bfabac03878b98c10c8bd2d8cf"
+    },
+    {
+      "path": "packages/contracts/src/guidance.ts",
+      "sha256": "27b31acdacfb78ec34af3083cd23ef6b911d3f67f8513d4dd56ad6ce77528aa2"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "sha256": "308dd17ad1670d2423dfcadb7d469f6faf47f89ee0751b07fc3c59cf9ec65108"
+    },
+    {
+      "path": "packages/contracts/src/map-geometry.ts",
+      "sha256": "ae584628b0c3eb1303e72eced11f8262cff028700cecc7478079ca30db41a7c1"
+    },
+    {
+      "path": "packages/contracts/src/map.ts",
+      "sha256": "3d595d6f895d7ff9ffad51e307feebe2957e0e51d87d702cb551a8dfcf46f40e"
+    },
+    {
+      "path": "packages/contracts/src/state.ts",
+      "sha256": "e99de92d111a30fde7193576fd728ea3cdeb90f64415769b1b03634c156fbd94"
+    },
+    {
+      "path": "packages/contracts/src/tracking.ts",
+      "sha256": "1c19cbbedf5937eb1833f5b517f927794caaa92cf763c3b62b33caa37ef10c0d"
+    },
+    {
+      "path": "packages/contracts/src/uwb-session.ts",
+      "sha256": "aa97e8ba925ae4b8f7b606bb270b0c1656288f51f518f25bc4a5ece500b9b5f5"
+    }
+  ],
+  "sha256": "f23f4fe6790ca8fce3f3f9c0767d97859deeac4aa42d142270b0c7d4f683868f"
+}

@@ -1,0 +1,1459 @@
+{
+  "schemaVersion": "1.0.0",
+  "units": "metres",
+  "coordinateSystem": "map-xy-z-up",
+  "equipment": [
+    {
+      "id": "sk1265-at6",
+      "equipmentType": "mobile-tower-crane",
+      "model": "Spierings SK1265-AT6",
+      "specEdition": "Legacy Specs-SK1265_EN.pdf / drawing 121-00126107A",
+      "sourceUrl": "https://www.spieringscranes.com/wp-content/uploads/Specs-SK1265_EN.pdf",
+      "sourcePage": [1, 2, 7],
+      "sourceSha256": "3b24fc18f0aafb73584c191496b4cca88bd4f19a84e6a09753f3c3ccb52b2d2b",
+      "lengthM": 16.279,
+      "widthM": 3,
+      "heightM": 4,
+      "dimensionState": "transport",
+      "supportGeometry": {
+        "kind": "four-point-outriggers",
+        "coordinateBasis": "centres",
+        "widthM": 7.66,
+        "lengthM": 7.95,
+        "frontWidthM": null,
+        "rearWidthM": null,
+        "points": [
+          {
+            "x": -4.885,
+            "y": 3.83
+          },
+          {
+            "x": 3.065,
+            "y": 3.83
+          },
+          {
+            "x": -4.615,
+            "y": -3.83
+          },
+          {
+            "x": 3.335,
+            "y": -3.83
+          }
+        ],
+        "notes": "Staggered p7 rows; cab negative X. Pads0.75x0.60 and ground plates2.5x1.0 are separate from centers."
+      },
+      "slewOrigin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "manufacturerSlewDatum": "p7 plan slew center, front cab -X",
+      "tailSwingRadiusM": 4.54,
+      "boomOrJibConfiguration": {
+        "boomLengthM": null,
+        "jibLengthM": 60,
+        "hookHeightM": 35,
+        "angleDeg": 0,
+        "fixedJibM": null,
+        "notes": "60m horizontal jib; lower structure reference37.2m; hook maximum35m; legacy, not eLift."
+      },
+      "assetUrl": "/assets/cranes/sk1265-at6.glb",
+      "sourceBlend": "resources/blender/safety-simulator/sk1265-derived/sk1265-at6.blend",
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": false,
+        "boomLength": false,
+        "trolley": true,
+        "hook": true
+      },
+      "controlNodes": {
+        "slew": "SLEW",
+        "trolley": "TROLLEY",
+        "hook": "HOOK",
+        "ropes": "HOIST_ROPES",
+        "boomPivot": null,
+        "boomSegments": []
+      },
+      "controlBaselines": {
+        "slewDeg": 0,
+        "trolleyM": 30,
+        "hookHeightM": 16.24,
+        "ropeTopM": 36.62,
+        "ropeLengthM": 18.52,
+        "boomAngleDeg": 0,
+        "boomLengthM": 60
+      },
+      "controlNotes": "Use glTF initial node transform plus difference from controlBaselines; hook localY += heightDelta; rope scaleY = initialScaleY*(18.52-heightDelta)/18.52. Chosen demo hook limit34m avoids trolley overlap; official rated hookmax35m remains separate.",
+      "demoPose": {
+        "boomLengthM": 60,
+        "boomAngleDeg": 0,
+        "trolleyM": 30,
+        "hookHeightM": 16.24,
+        "slewDeg": 0
+      },
+      "movementLimits": {
+        "tableSlewDeg": [-15, 15],
+        "boomLengthM": null,
+        "boomAngleDeg": null,
+        "trolleyM": [2, 59],
+        "hookHeightM": [1, 34]
+      },
+      "riskGeometry": {
+        "presetId": "sk1265-at6",
+        "movable": true,
+        "parts": [
+          {
+            "part": "body",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -8.162,
+                "y": -1.57
+              },
+              {
+                "x": 4.16,
+                "y": -1.57
+              },
+              {
+                "x": 4.16,
+                "y": 1.57
+              },
+              {
+                "x": -8.162,
+                "y": 1.57
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -6.135,
+                "y": 3.33
+              },
+              {
+                "x": -3.635,
+                "y": 3.33
+              },
+              {
+                "x": -3.635,
+                "y": 4.33
+              },
+              {
+                "x": -6.135,
+                "y": 4.33
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": 1.815,
+                "y": 3.33
+              },
+              {
+                "x": 4.3149999999999995,
+                "y": 3.33
+              },
+              {
+                "x": 4.3149999999999995,
+                "y": 4.33
+              },
+              {
+                "x": 1.815,
+                "y": 4.33
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -5.865,
+                "y": -4.33
+              },
+              {
+                "x": -3.365,
+                "y": -4.33
+              },
+              {
+                "x": -3.365,
+                "y": -3.33
+              },
+              {
+                "x": -5.865,
+                "y": -3.33
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": 2.085,
+                "y": -4.33
+              },
+              {
+                "x": 4.585,
+                "y": -4.33
+              },
+              {
+                "x": 4.585,
+                "y": -3.33
+              },
+              {
+                "x": 2.085,
+                "y": -3.33
+              }
+            ]
+          },
+          {
+            "part": "tail",
+            "frame": "upper",
+            "polygon": [
+              {
+                "x": -3.83,
+                "y": -1.4
+              },
+              {
+                "x": 0,
+                "y": -1.4
+              },
+              {
+                "x": 0,
+                "y": 1.4
+              },
+              {
+                "x": -3.83,
+                "y": 1.4
+              }
+            ]
+          },
+          {
+            "part": "load",
+            "frame": "hook",
+            "polygon": [
+              {
+                "x": -0.55,
+                "y": -0.55
+              },
+              {
+                "x": 0.55,
+                "y": -0.55
+              },
+              {
+                "x": 0.55,
+                "y": 0.55
+              },
+              {
+                "x": -0.55,
+                "y": 0.55
+              }
+            ]
+          }
+        ]
+      },
+      "riskGeometryStatus": "unverified",
+      "visualizationNotes": [
+        "External visual study; tube diameters and fittings inferred",
+        "Original source preserved; new articulated derivative",
+        "No luffing, mast folding or load stability simulation"
+      ],
+      "verificationStatus": "blender-export-reimport-verified",
+      "sourceEvidence": [
+        {
+          "sourceId": "SPIERINGS-LEGACY-60M",
+          "url": "https://www.spieringscranes.com/wp-content/uploads/Specs-SK1265_EN.pdf",
+          "pages": [1, 2, 7],
+          "sha256": "3b24fc18f0aafb73584c191496b4cca88bd4f19a84e6a09753f3c3ccb52b2d2b",
+          "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/spierings/evidence.md"
+        }
+      ],
+      "manufacturerEvidencePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/spierings/manifest.json",
+      "riskGeometryNotes": "Chosen demo meshes: body lower-carrier envelope,4groundplates,low rotating ballast footprint,1.1m load footprint. Manufacturer tail radii are not substituted for static envelope. Max jib radius is not a hazard disk."
+    },
+    {
+      "id": "tadano-gr250n4",
+      "equipmentType": "rough-terrain-crane",
+      "model": "Tadano GR-250N-4",
+      "specEdition": "GR-250N-4-00101 /1609-01-05",
+      "sourceUrl": "https://mediahub.tadano.com/m/20be7de269e4d894/original/doc_Tadano_GR250N-4_specsheet_korean-pdf-pdf.pdf",
+      "sourcePage": [1, 6, 8],
+      "sourceSha256": "8728346554f8082831be7f374bd1e1ebafee8ab08d0e04af681ed73437790288",
+      "lengthM": 11.53,
+      "widthM": 2.62,
+      "heightM": 3.475,
+      "dimensionState": "transport",
+      "sourceEvidence": [
+        {
+          "sourceId": "tadano-gr250n4",
+          "url": "https://mediahub.tadano.com/m/20be7de269e4d894/original/doc_Tadano_GR250N-4_specsheet_korean-pdf-pdf.pdf",
+          "pages": [1, 6, 8],
+          "sha256": "8728346554f8082831be7f374bd1e1ebafee8ab08d0e04af681ed73437790288",
+          "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/compact/tadano/report.md"
+        }
+      ],
+      "manufacturerEvidencePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/tadano/source-manifest.json",
+      "slewOrigin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "manufacturerSlewDatum": null,
+      "tailSwingRadiusM": 3.1,
+      "assetUrl": "/assets/cranes/tadano-gr250n4.glb",
+      "sourceBlend": "resources/blender/safety-simulator/mobile-cranes/tadano-gr250n4.blend",
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": false,
+        "boomLength": false,
+        "trolley": false,
+        "hook": false
+      },
+      "controlNodes": {
+        "slew": "SLEW",
+        "trolley": null,
+        "hook": null,
+        "ropes": null,
+        "boomPivot": null,
+        "boomSegments": []
+      },
+      "controlBaselines": {
+        "slewDeg": 0,
+        "trolleyM": null,
+        "hookHeightM": 4.2,
+        "ropeTopM": null,
+        "ropeLengthM": null,
+        "boomAngleDeg": 50,
+        "boomLengthM": 20
+      },
+      "controlNotes": "Only declared controls are implemented. Geometry details are exterior visual approximations.",
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": null,
+        "boomAngleDeg": null,
+        "trolleyM": null,
+        "hookHeightM": null
+      },
+      "riskGeometry": {
+        "presetId": "tadano-gr250n4",
+        "movable": true,
+        "parts": [
+          {
+            "part": "body",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -3.2,
+                "y": -1.31
+              },
+              {
+                "x": 3.7,
+                "y": -1.31
+              },
+              {
+                "x": 3.7,
+                "y": 1.31
+              },
+              {
+                "x": -3.2,
+                "y": 1.31
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": 3.16,
+                "y": -3.59
+              },
+              {
+                "x": 3.74,
+                "y": -3.59
+              },
+              {
+                "x": 3.74,
+                "y": -3.01
+              },
+              {
+                "x": 3.16,
+                "y": -3.01
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -3.52,
+                "y": -3.59
+              },
+              {
+                "x": -2.94,
+                "y": -3.59
+              },
+              {
+                "x": -2.94,
+                "y": -3.01
+              },
+              {
+                "x": -3.52,
+                "y": -3.01
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": 2.94,
+                "y": 3.01
+              },
+              {
+                "x": 3.52,
+                "y": 3.01
+              },
+              {
+                "x": 3.52,
+                "y": 3.59
+              },
+              {
+                "x": 2.94,
+                "y": 3.59
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -3.74,
+                "y": 3.01
+              },
+              {
+                "x": -3.16,
+                "y": 3.01
+              },
+              {
+                "x": -3.16,
+                "y": 3.59
+              },
+              {
+                "x": -3.74,
+                "y": 3.59
+              }
+            ]
+          },
+          {
+            "part": "tail",
+            "frame": "upper",
+            "polygon": [
+              {
+                "x": -2.63,
+                "y": -1.095
+              },
+              {
+                "x": -1.41,
+                "y": -1.095
+              },
+              {
+                "x": -1.41,
+                "y": 1.295
+              },
+              {
+                "x": -2.63,
+                "y": 1.295
+              }
+            ]
+          },
+          {
+            "part": "load",
+            "frame": "hook",
+            "polygon": [
+              {
+                "x": -1.46,
+                "y": -0.36
+              },
+              {
+                "x": -0.7400000000000001,
+                "y": -0.36
+              },
+              {
+                "x": -0.7400000000000001,
+                "y": 0.36
+              },
+              {
+                "x": -1.46,
+                "y": 0.36
+              }
+            ]
+          }
+        ]
+      },
+      "riskGeometryStatus": "unverified",
+      "riskGeometryNotes": "Chosen synthetic demonstration geometry separate from manufacturer safety limits. No load-capacity or ground-bearing claim.",
+      "visualizationNotes": [
+        "Source transport envelope differs from deployed pose",
+        "Fore/aft support offsets and boom-section overlap are visual approximations",
+        "Dynamic luff/extension pending coupled cable verification"
+      ],
+      "verificationStatus": "blender-export-reimport-verified",
+      "supportGeometry": {
+        "kind": "X-outriggers",
+        "coordinateBasis": "centres",
+        "widthM": 6.6,
+        "lengthM": 6.68,
+        "frontWidthM": null,
+        "rearWidthM": null,
+        "points": null,
+        "notes": "Exact oriented pad centers unknown; official pad outer width7.18m separate. Visual offsets approximate. H-type excluded."
+      },
+      "boomOrJibConfiguration": {
+        "boomLengthM": null,
+        "jibLengthM": null,
+        "hookHeightM": 31.3,
+        "angleDeg": null,
+        "fixedJibM": null,
+        "notes": "4section mainboom9.35–30.5m; chosen20m/50deg; noauxiliaryjib. Max radius27.9 andheight31.3 are separate limits."
+      },
+      "demoPose": {
+        "boomLengthM": 20,
+        "boomAngleDeg": 50,
+        "trolleyM": null,
+        "hookHeightM": 4.2,
+        "slewDeg": 0
+      }
+    },
+    {
+      "id": "liebherr-ltm1050",
+      "equipmentType": "all-terrain-crane",
+      "model": "Liebherr LTM 1050-3.1",
+      "specEdition": "lwe-td-185-02-defisr01-2023 /385-95R25",
+      "sourceUrl": "https://assets-cdn.liebherr.com/versions/e57b2c0c-a794-4463-bfdc-40af69903c8d/original/",
+      "sourcePage": [3, 10, 23],
+      "sourceSha256": "d6af4bfd6f9ce75987c6d506f72c5cbd640ea0b32044fd525eb8fdbf25d41ccd",
+      "lengthM": 11.83,
+      "widthM": 2.55,
+      "heightM": 3.785,
+      "dimensionState": "transport",
+      "sourceEvidence": [
+        {
+          "sourceId": "liebherr-ltm1050",
+          "url": "https://assets-cdn.liebherr.com/versions/e57b2c0c-a794-4463-bfdc-40af69903c8d/original/",
+          "pages": [3, 10, 23],
+          "sha256": "d6af4bfd6f9ce75987c6d506f72c5cbd640ea0b32044fd525eb8fdbf25d41ccd",
+          "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/liebherr/ltm1050/report.md"
+        }
+      ],
+      "manufacturerEvidencePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/ltm1050/sources.json",
+      "slewOrigin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "manufacturerSlewDatum": null,
+      "tailSwingRadiusM": null,
+      "assetUrl": "/assets/cranes/liebherr-ltm1050.glb",
+      "sourceBlend": "resources/blender/safety-simulator/mobile-cranes/liebherr-ltm1050.blend",
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": false,
+        "boomLength": false,
+        "trolley": false,
+        "hook": false
+      },
+      "controlNodes": {
+        "slew": "SLEW",
+        "trolley": null,
+        "hook": null,
+        "ropes": null,
+        "boomPivot": null,
+        "boomSegments": []
+      },
+      "controlBaselines": {
+        "slewDeg": 0,
+        "trolleyM": null,
+        "hookHeightM": 4.2,
+        "ropeTopM": null,
+        "ropeLengthM": null,
+        "boomAngleDeg": 50,
+        "boomLengthM": 26
+      },
+      "controlNotes": "Only declared controls are implemented. Geometry details are exterior visual approximations.",
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": null,
+        "boomAngleDeg": null,
+        "trolleyM": null,
+        "hookHeightM": null
+      },
+      "riskGeometry": {
+        "presetId": "liebherr-ltm1050",
+        "movable": true,
+        "parts": [
+          {
+            "part": "body",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -3.3725,
+                "y": -1.275
+              },
+              {
+                "x": 5.9325,
+                "y": -1.275
+              },
+              {
+                "x": 5.9325,
+                "y": 1.275
+              },
+              {
+                "x": -3.3725,
+                "y": 1.275
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": 4.276,
+                "y": 2.95
+              },
+              {
+                "x": 4.776,
+                "y": 2.95
+              },
+              {
+                "x": 4.776,
+                "y": 3.45
+              },
+              {
+                "x": 4.276,
+                "y": 3.45
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -2.875,
+                "y": 2.95
+              },
+              {
+                "x": -2.375,
+                "y": 2.95
+              },
+              {
+                "x": -2.375,
+                "y": 3.45
+              },
+              {
+                "x": -2.875,
+                "y": 3.45
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": 4.024,
+                "y": -3.45
+              },
+              {
+                "x": 4.524,
+                "y": -3.45
+              },
+              {
+                "x": 4.524,
+                "y": -2.95
+              },
+              {
+                "x": 4.024,
+                "y": -2.95
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -3.145,
+                "y": -3.45
+              },
+              {
+                "x": -2.645,
+                "y": -3.45
+              },
+              {
+                "x": -2.645,
+                "y": -2.95
+              },
+              {
+                "x": -3.145,
+                "y": -2.95
+              }
+            ]
+          },
+          {
+            "part": "tail",
+            "frame": "upper",
+            "polygon": [
+              {
+                "x": -2.63,
+                "y": -1.095
+              },
+              {
+                "x": -1.41,
+                "y": -1.095
+              },
+              {
+                "x": -1.41,
+                "y": 1.295
+              },
+              {
+                "x": -2.63,
+                "y": 1.295
+              }
+            ]
+          },
+          {
+            "part": "load",
+            "frame": "hook",
+            "polygon": [
+              {
+                "x": -2.16,
+                "y": -0.36
+              },
+              {
+                "x": -1.44,
+                "y": -0.36
+              },
+              {
+                "x": -1.44,
+                "y": 0.36
+              },
+              {
+                "x": -2.16,
+                "y": 0.36
+              }
+            ]
+          }
+        ]
+      },
+      "riskGeometryStatus": "unverified",
+      "riskGeometryNotes": "Chosen synthetic demonstration geometry separate from manufacturer safety limits. No load-capacity or ground-bearing claim.",
+      "visualizationNotes": [
+        "Selected transport385/95R25 unlowered;12.391 accessory/3.835 alternative excluded",
+        "Tail radius null:3.53/4.07 labels require accessory interpretation",
+        "Visual transverse support symmetry explicitly approximated"
+      ],
+      "verificationStatus": "blender-export-reimport-verified",
+      "supportGeometry": {
+        "kind": "four-point-outriggers",
+        "coordinateBasis": "centres",
+        "widthM": 6.4,
+        "lengthM": 7.151,
+        "frontWidthM": null,
+        "rearWidthM": null,
+        "points": null,
+        "notes": "Toprow7.151,bottomrow7.169m; exact transverse datum not confirmed. Do not use centered rectangle as official geometry."
+      },
+      "boomOrJibConfiguration": {
+        "boomLengthM": null,
+        "jibLengthM": null,
+        "hookHeightM": null,
+        "angleDeg": null,
+        "fixedJibM": null,
+        "notes": "Mainboom11.4–38m; chosen26m/50deg. Optional maxima radius44m/hook54m do not describe main-boom-only pose."
+      },
+      "demoPose": {
+        "boomLengthM": 26,
+        "boomAngleDeg": 50,
+        "trolleyM": null,
+        "hookHeightM": 4.2,
+        "slewDeg": 0
+      }
+    },
+    {
+      "id": "maeda-mc305",
+      "equipmentType": "spider-crane",
+      "model": "Maeda MC305C-5",
+      "specEdition": "Metric CE MC305C-5",
+      "sourceUrl": "https://www.maeda-minicranes.com/assets/pdf/mc305c-5_printdata_ce.pdf",
+      "sourcePage": [1, 2],
+      "sourceSha256": "44a3125b73e03f298a4685428cded1e2485010c350e14bf47beccd55ed39c46e",
+      "lengthM": 4.11,
+      "widthM": 1.28,
+      "heightM": 1.695,
+      "dimensionState": "transport",
+      "sourceEvidence": [
+        {
+          "sourceId": "maeda-mc305",
+          "url": "https://www.maeda-minicranes.com/assets/pdf/mc305c-5_printdata_ce.pdf",
+          "pages": [1, 2],
+          "sha256": "44a3125b73e03f298a4685428cded1e2485010c350e14bf47beccd55ed39c46e",
+          "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/compact/maeda/README.md"
+        }
+      ],
+      "manufacturerEvidencePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/compact/maeda/source-manifest.json",
+      "slewOrigin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "manufacturerSlewDatum": null,
+      "tailSwingRadiusM": null,
+      "assetUrl": "/assets/cranes/maeda-mc305.glb",
+      "sourceBlend": "resources/blender/safety-simulator/maeda-site/maeda/maeda-mc305.blend",
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": false,
+        "boomLength": false,
+        "trolley": false,
+        "hook": false
+      },
+      "controlNodes": {
+        "slew": "SLEW",
+        "trolley": null,
+        "hook": null,
+        "ropes": null,
+        "boomPivot": null,
+        "boomSegments": []
+      },
+      "controlBaselines": {
+        "slewDeg": 0,
+        "trolleyM": null,
+        "hookHeightM": 7.45,
+        "ropeTopM": null,
+        "ropeLengthM": null,
+        "boomAngleDeg": 55,
+        "boomLengthM": 10
+      },
+      "controlNotes": "Only declared controls are implemented. Geometry details are exterior visual approximations.",
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": null,
+        "boomAngleDeg": null,
+        "trolleyM": null,
+        "hookHeightM": null
+      },
+      "riskGeometry": {
+        "presetId": "maeda-mc305",
+        "movable": true,
+        "parts": [
+          {
+            "part": "body",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -1.445,
+                "y": -0.64
+              },
+              {
+                "x": 1.205,
+                "y": -0.64
+              },
+              {
+                "x": 1.205,
+                "y": 0.64
+              },
+              {
+                "x": -1.445,
+                "y": 0.64
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": 2.3049999999999997,
+                "y": 2.1239999999999997
+              },
+              {
+                "x": 2.585,
+                "y": 2.1239999999999997
+              },
+              {
+                "x": 2.585,
+                "y": 2.404
+              },
+              {
+                "x": 2.3049999999999997,
+                "y": 2.404
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": 2.3049999999999997,
+                "y": -2.404
+              },
+              {
+                "x": 2.585,
+                "y": -2.404
+              },
+              {
+                "x": 2.585,
+                "y": -2.1239999999999997
+              },
+              {
+                "x": 2.3049999999999997,
+                "y": -2.1239999999999997
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -2.585,
+                "y": 2.072
+              },
+              {
+                "x": -2.3049999999999997,
+                "y": 2.072
+              },
+              {
+                "x": -2.3049999999999997,
+                "y": 2.3520000000000003
+              },
+              {
+                "x": -2.585,
+                "y": 2.3520000000000003
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -2.585,
+                "y": -2.3520000000000003
+              },
+              {
+                "x": -2.3049999999999997,
+                "y": -2.3520000000000003
+              },
+              {
+                "x": -2.3049999999999997,
+                "y": -2.072
+              },
+              {
+                "x": -2.585,
+                "y": -2.072
+              }
+            ]
+          },
+          {
+            "part": "tail",
+            "frame": "upper",
+            "polygon": [
+              {
+                "x": -1.27,
+                "y": -0.70601
+              },
+              {
+                "x": 0.62,
+                "y": -0.70601
+              },
+              {
+                "x": 0.62,
+                "y": 0.45
+              },
+              {
+                "x": -1.27,
+                "y": 0.45
+              }
+            ]
+          },
+          {
+            "part": "load",
+            "frame": "hook",
+            "polygon": [
+              {
+                "x": -0.25,
+                "y": -0.25
+              },
+              {
+                "x": 0.25,
+                "y": -0.25
+              },
+              {
+                "x": 0.25,
+                "y": 0.25
+              },
+              {
+                "x": -0.25,
+                "y": 0.25
+              }
+            ]
+          }
+        ]
+      },
+      "riskGeometryStatus": "unverified",
+      "riskGeometryNotes": "Chosen synthetic demonstration geometry separate from manufacturer safety limits. No load-capacity or ground-bearing claim.",
+      "visualizationNotes": [
+        "Pad centers reconstructed from official outerenvelope using approximate0.28m squares",
+        "Small full-scale model never enlarged to phone size"
+      ],
+      "verificationStatus": "blender-export-reimport-verified",
+      "supportGeometry": {
+        "kind": "four-slanted-outriggers",
+        "coordinateBasis": "pad-outer",
+        "widthM": null,
+        "lengthM": 5.17,
+        "frontWidthM": 4.808,
+        "rearWidthM": 4.704,
+        "points": null,
+        "notes": "Official outerpad dimensions; model0.28m squarepad centerlocations inferred to preserve envelope, not official centers."
+      },
+      "boomOrJibConfiguration": {
+        "boomLengthM": null,
+        "jibLengthM": null,
+        "hookHeightM": 12.52,
+        "angleDeg": null,
+        "fixedJibM": null,
+        "notes": "Chosen10m/55deg mainboom. Maximum working radius12.16m andliftheight12.52m are distinct."
+      },
+      "demoPose": {
+        "boomLengthM": 10,
+        "boomAngleDeg": 55,
+        "trolleyM": null,
+        "hookHeightM": 7.45,
+        "slewDeg": 0
+      }
+    },
+    {
+      "id": "liebherr-lr1100",
+      "equipmentType": "crawler-crane",
+      "model": "Liebherr LR 1100.1",
+      "specEdition": "Official EN-US LR1100.1 fixed32m mainboom",
+      "sourceUrl": "https://www.liebherr.com/shared/media/mobile-and-crawler-cranes/brochures/crawler-cranes-up-to-300-tonnnes/data-sheets/lr/liebherr-lr-1100-crawler-crane-technical-data-sheet-specifications-usa.pdf",
+      "sourcePage": [8, 14],
+      "sourceSha256": "d0398be38dcc2c12ae0b8e5dc6e2b12b822184fc606011b0aa672179a6ae8e26",
+      "lengthM": 6.6,
+      "widthM": 5,
+      "heightM": null,
+      "dimensionState": "working",
+      "sourceEvidence": [
+        {
+          "sourceId": "liebherr-lr1100",
+          "url": "https://www.liebherr.com/shared/media/mobile-and-crawler-cranes/brochures/crawler-cranes-up-to-300-tonnnes/data-sheets/lr/liebherr-lr-1100-crawler-crane-technical-data-sheet-specifications-usa.pdf",
+          "pages": [8, 14],
+          "sha256": "d0398be38dcc2c12ae0b8e5dc6e2b12b822184fc606011b0aa672179a6ae8e26",
+          "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/liebherr/lr1100/report.md"
+        }
+      ],
+      "manufacturerEvidencePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/lr1100/source-manifest.json",
+      "slewOrigin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "manufacturerSlewDatum": null,
+      "tailSwingRadiusM": 4.7,
+      "assetUrl": "/assets/cranes/liebherr-lr1100.glb",
+      "sourceBlend": "resources/blender/safety-simulator/lattice-cranes/liebherr-lr1100.blend",
+      "controls": {
+        "translation": true,
+        "slew": true,
+        "boomAngle": false,
+        "boomLength": false,
+        "trolley": false,
+        "hook": true
+      },
+      "controlNodes": {
+        "slew": "SLEW",
+        "trolley": null,
+        "hook": "HOOK",
+        "ropes": "HOIST_ROPES",
+        "boomPivot": null,
+        "boomSegments": []
+      },
+      "controlBaselines": {
+        "slewDeg": 0,
+        "trolleyM": null,
+        "hookHeightM": 17.662813,
+        "ropeTopM": 29.662813,
+        "ropeLengthM": 12,
+        "boomAngleDeg": 60,
+        "boomLengthM": 32
+      },
+      "controlNotes": "GLB SLEW uses initial transform plus yaw; HOOK localY += world height delta from17.662813; HOIST_ROPES localYscale=initial*(12-heightDelta)/12. Boom32m/60deg is fixed pose; hook anchor differs from lowpoint by about0.93m.",
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": null,
+        "boomAngleDeg": null,
+        "trolleyM": null,
+        "hookHeightM": [2, 28]
+      },
+      "riskGeometry": {
+        "presetId": "liebherr-lr1100",
+        "movable": true,
+        "parts": [
+          {
+            "part": "body",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -3.3,
+                "y": -2.5
+              },
+              {
+                "x": 3.3,
+                "y": -2.5
+              },
+              {
+                "x": 3.3,
+                "y": 2.5
+              },
+              {
+                "x": -3.3,
+                "y": 2.5
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -3.1375,
+                "y": 1.5999999999999999
+              },
+              {
+                "x": 3.1375,
+                "y": 1.5999999999999999
+              },
+              {
+                "x": 3.1375,
+                "y": 2.5
+              },
+              {
+                "x": -3.1375,
+                "y": 2.5
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -3.1375,
+                "y": -2.5
+              },
+              {
+                "x": 3.1375,
+                "y": -2.5
+              },
+              {
+                "x": 3.1375,
+                "y": -1.5999999999999999
+              },
+              {
+                "x": -3.1375,
+                "y": -1.5999999999999999
+              }
+            ]
+          },
+          {
+            "part": "tail",
+            "frame": "upper",
+            "polygon": [
+              {
+                "x": -4.7,
+                "y": -2.7675
+              },
+              {
+                "x": 2.75,
+                "y": -2.7675
+              },
+              {
+                "x": 2.75,
+                "y": 2.7675
+              },
+              {
+                "x": -4.7,
+                "y": 2.7675
+              }
+            ]
+          },
+          {
+            "part": "load",
+            "frame": "hook",
+            "polygon": [
+              {
+                "x": 1.6500000000000001,
+                "y": -0.45
+              },
+              {
+                "x": 2.5500000000000003,
+                "y": -0.45
+              },
+              {
+                "x": 2.5500000000000003,
+                "y": 0.45
+              },
+              {
+                "x": 1.6500000000000001,
+                "y": 0.45
+              }
+            ]
+          }
+        ]
+      },
+      "riskGeometryStatus": "unverified",
+      "riskGeometryNotes": "Chosen synthetic demonstration geometry separate from manufacturer safety limits. No load-capacity or ground-bearing claim.",
+      "visualizationNotes": [
+        "Rounded manufacturer imperial dimensions maintained asapproximate",
+        "Exterior lattice,cab andconnection details inferred"
+      ],
+      "verificationStatus": "blender-export-reimport-verified",
+      "supportGeometry": {
+        "kind": "crawler-tracks",
+        "coordinateBasis": "undercarriage",
+        "widthM": 5,
+        "lengthM": 6.6,
+        "frontWidthM": null,
+        "rearWidthM": null,
+        "points": null,
+        "notes": "Tracklength6.275m; platforms totalwidth5.535m separate;11.48m includes loweredboom not chassis."
+      },
+      "boomOrJibConfiguration": {
+        "boomLengthM": 32,
+        "jibLengthM": null,
+        "hookHeightM": null,
+        "angleDeg": 60,
+        "fixedJibM": null,
+        "notes": "32m=5.5+6+12+8.5m, nofixedjib;60deg chosen demoangle."
+      },
+      "demoPose": {
+        "boomLengthM": 32,
+        "boomAngleDeg": 60,
+        "trolleyM": null,
+        "hookHeightM": 17.662813,
+        "slewDeg": 0
+      }
+    },
+    {
+      "id": "liebherr-172ecb",
+      "equipmentType": "fixed-tower-crane",
+      "model": "Liebherr 172 EC-B 8 Litronic",
+      "specEdition": "2025-02 /16HC175 /UC-0460m /50m jib /42.3m hook",
+      "sourceUrl": "https://assets-cdn.liebherr.com/versions/e947e028-e7d0-4341-b16a-15cb83217ac4/original/",
+      "sourcePage": [4, 6, 8],
+      "sourceSha256": "3c8973aaaa1f5d68cc48d06d8f7ff3760248a8e3feadef498e3ea921df954567",
+      "lengthM": null,
+      "widthM": null,
+      "heightM": null,
+      "dimensionState": "working",
+      "sourceEvidence": [
+        {
+          "sourceId": "liebherr-172ecb",
+          "url": "https://assets-cdn.liebherr.com/versions/e947e028-e7d0-4341-b16a-15cb83217ac4/original/",
+          "pages": [4, 6, 8],
+          "sha256": "3c8973aaaa1f5d68cc48d06d8f7ff3760248a8e3feadef498e3ea921df954567",
+          "reportPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/research/manufacturer/liebherr/tower172/REPORT.md"
+        }
+      ],
+      "manufacturerEvidencePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/research/manufacturer/liebherr/tower172/sources.metadata.json",
+      "slewOrigin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "manufacturerSlewDatum": null,
+      "tailSwingRadiusM": null,
+      "assetUrl": "/assets/cranes/liebherr-172ecb.glb",
+      "sourceBlend": "resources/blender/safety-simulator/lattice-cranes/liebherr-172ecb.blend",
+      "controls": {
+        "translation": false,
+        "slew": true,
+        "boomAngle": false,
+        "boomLength": false,
+        "trolley": true,
+        "hook": true
+      },
+      "controlNodes": {
+        "slew": "SLEW",
+        "trolley": "TROLLEY",
+        "hook": "HOOK",
+        "ropes": "HOIST_ROPES",
+        "boomPivot": null,
+        "boomSegments": []
+      },
+      "controlBaselines": {
+        "slewDeg": 0,
+        "trolleyM": 30,
+        "hookHeightM": 18.8,
+        "ropeTopM": 44.68,
+        "ropeLengthM": 24.73,
+        "boomAngleDeg": 0,
+        "boomLengthM": 50
+      },
+      "controlNotes": "glTF initial transforms plus delta from demoPose: TROLLEY x += trolleyDelta; HOOK y += hookHeightDelta; HOIST_ROPES y scale=initial*(24.73-hookHeightDelta)/24.73. SLEW authoredheight44.5; trolley0.5 above; hook local-26.2 => world18.8. Original42.3 max hook is not steel height.",
+      "movementLimits": {
+        "tableSlewDeg": null,
+        "boomLengthM": null,
+        "boomAngleDeg": null,
+        "trolleyM": [3, 50],
+        "hookHeightM": [2, 42.3]
+      },
+      "riskGeometry": {
+        "presetId": "liebherr-172ecb",
+        "movable": false,
+        "parts": [
+          {
+            "part": "body",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -0.9,
+                "y": -0.9
+              },
+              {
+                "x": 0.9,
+                "y": -0.9
+              },
+              {
+                "x": 0.9,
+                "y": 0.9
+              },
+              {
+                "x": -0.9,
+                "y": 0.9
+              }
+            ]
+          },
+          {
+            "part": "support",
+            "frame": "chassis",
+            "polygon": [
+              {
+                "x": -3.2,
+                "y": -2.69
+              },
+              {
+                "x": 3.2,
+                "y": -2.69
+              },
+              {
+                "x": 3.2,
+                "y": 2.69
+              },
+              {
+                "x": -3.2,
+                "y": 2.69
+              }
+            ]
+          },
+          {
+            "part": "tail",
+            "frame": "upper",
+            "polygon": [
+              {
+                "x": -14.6,
+                "y": -1.11
+              },
+              {
+                "x": -0.9,
+                "y": -1.11
+              },
+              {
+                "x": -0.9,
+                "y": 1.11
+              },
+              {
+                "x": -14.6,
+                "y": 1.11
+              }
+            ]
+          },
+          {
+            "part": "load",
+            "frame": "hook",
+            "polygon": [
+              {
+                "x": -0.5,
+                "y": -0.5
+              },
+              {
+                "x": 0.5,
+                "y": -0.5
+              },
+              {
+                "x": 0.5,
+                "y": 0.5
+              },
+              {
+                "x": -0.5,
+                "y": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "riskGeometryStatus": "unverified",
+      "riskGeometryNotes": "Chosen synthetic demonstration geometry separate from manufacturer safety limits. No load-capacity or ground-bearing claim.",
+      "visualizationNotes": [
+        "Fixed origin is demo policy despite rail undercarriage reference",
+        "Basefloor footprint visualapproximation not foundation design"
+      ],
+      "verificationStatus": "blender-export-reimport-verified",
+      "supportGeometry": {
+        "kind": "UC-0460m-rail-undercarriage",
+        "coordinateBasis": "unknown",
+        "widthM": 4.6,
+        "lengthM": null,
+        "frontWidthM": null,
+        "rearWidthM": null,
+        "points": null,
+        "notes": "4.6m nominalsupportwidth not verified complete outerfootprint. Exact oriented supportpolygon unknown; visualbase schematic."
+      },
+      "boomOrJibConfiguration": {
+        "boomLengthM": null,
+        "jibLengthM": 50,
+        "hookHeightM": 42.3,
+        "angleDeg": 0,
+        "fixedJibM": null,
+        "notes": "16HC175 towerwidth1.8m/standardsections2.5m;11-rowfirstcolumn starredhook42.3m;physicaljibextent51.5m;counterjib14.5m. Hookheight not totalsteelheight."
+      },
+      "demoPose": {
+        "boomLengthM": 50,
+        "boomAngleDeg": 0,
+        "trolleyM": 30,
+        "hookHeightM": 18.8,
+        "slewDeg": 0
+      }
+    }
+  ]
+}

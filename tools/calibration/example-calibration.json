@@ -1,0 +1,12 @@
+{
+  "version": "operator-calibration-1",
+  "cameraId": "CCTV",
+  "camera": null,
+  "markers": [
+    { "markerId": 10, "entityId": "EQUIPMENT-A", "heightM": 0, "antennaHeightM": 0, "markerToReferenceM": { "x": 0, "y": 0 }, "markerToAntennaM": { "x": 0, "y": 0 } },
+    { "markerId": 11, "entityId": "WORKER-A", "heightM": 0, "antennaHeightM": 0, "markerToReferenceM": { "x": 0, "y": 0 }, "markerToAntennaM": { "x": 0, "y": 0 } },
+    { "markerId": 12, "entityId": "WORKER-B", "heightM": 0, "antennaHeightM": 0, "markerToReferenceM": { "x": 0, "y": 0 }, "markerToAntennaM": { "x": 0, "y": 0 } }
+  ],
+  "uwbYawRad": null,
+  "evaluationErrorM": null
+}

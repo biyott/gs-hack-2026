@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "contractRevision": "1.0.4",
+  "implementationBindingRevision": 2,
+  "kind": "implementation-conformance-correction",
+  "owner": "/root/tech_lead",
+  "defect": "QD007",
+  "automaticCorrection": 1,
+  "maximumAutomaticCorrections": 2,
+  "contractSemanticsChanged": false,
+  "sharedSchemasChanged": false,
+  "runtimeBehaviorChanged": true,
+  "astEquivalenceClaim": false,
+  "priorFreeze": {
+    "path": "docs/contracts/freeze-v1.0.4.json",
+    "bytes": 4408,
+    "sha256": "15f1456ba821634b76ec2037b7d028e7090a4408af185013f7b19ccb4664e748"
+  },
+  "priorImplementationBinding": {
+    "path": "docs/contracts/implementation-binding-v1.0.4-r1.json",
+    "bytes": 2088,
+    "sha256": "35238b0b53389778df39bb4727f61d81f11c792468ea8d1c79822f63e7f8c448"
+  },
+  "priorCandidate": {
+    "candidateId": "sha256:0d42bacc04c50cd21c9c133e262838acb6f47e2e8d33d37ea450ce160f46bc3e",
+    "manifestSha256": "6f146ee34b7880e3a0c8012ae2a2485ec7d95e0314e183c555eb509060f54ef0",
+    "frameRouteSha256": "10f23725504176483a0afab36de2b8b7ce9eb7708be0d84aa427545571e11971"
+  },
+  "normativeBasis": [
+    {
+      "path": "docs/contracts/v1.0.1-addendum.md",
+      "bytes": 18220,
+      "sha256": "e77866d606629d6f29317b89cba6adfeeef417fc65c0d1abf0a54baf5faa5c95",
+      "line": 64
+    },
+    {
+      "path": "docs/contracts/clarification-tracking-access-v1.0.4.md",
+      "bytes": 4002,
+      "sha256": "001595f7fb0fb2863af5a6fa02b38a0179843487e2786ae586ceadfd6d1d3711",
+      "line": 28
+    }
+  ],
+  "requiredBehavior": [
+    "Authorize the original parsed upload before normalization: bound CCTV device, or administrator/operator explicitly requesting synthetic.",
+    "Normalize accepted source to live for the CCTV branch and synthetic for the administrator/operator fixture branch.",
+    "Pass the same canonical frame object to ingestion and measurement persistence.",
+    "Preserve authenticated branch restrictions, native204 empty success and fixture200 snapshot, chronology, cancellation, source projection and error behavior."
+  ],
+  "concurrence": {
+    "backend": "One route correction; native uploader omits source and consumes success only; no payload/APK change.",
+    "tracking": "No supported producer depends on CCTV self-declared synthetic; fixtures explicitly use admin/operator. Existing service/schema/label propagation unchanged.",
+    "technical": "Existing frozen rule conformance; no new wire/goal/AC requirement. Actual runtime behavior changes, so no AST-equivalence claim."
+  },
+  "limits": [
+    "Authenticated channel provenance is not hardware or pixel-origin attestation. Generated JPEG replay remains software test evidence even when testing the canonical CCTV live label.",
+    "Prior C2, all freezes and implementation r1 remain immutable. New source/build/candidate identity and independent QA retest required.",
+    "Unchanged APK/models/assets/corpus reuse must be bound to exact identities; producer checks are not QA acceptance."
+  ],
+  "recordedAt": "2026-09-21T15:28:07.569440+00:00",
+  "changes": [
+    {
+      "path": "app/api/tracking/frame/route.ts",
+      "bytes": 3953,
+      "sha256": "2b504f8e5e36cf668bd66957205da0b1c88b8d208cbc19d63f8dacf907b858ab",
+      "priorSha256": "10f23725504176483a0afab36de2b8b7ce9eb7708be0d84aa427545571e11971"
+    }
+  ],
+  "addedTests": [
+    {
+      "path": "src/server/services/tracking-api/camera-source-provenance.test.ts",
+      "bytes": 6015,
+      "sha256": "ee07b2d6a75d21944c848c723f76760f5caec5d628603aaee3b487472edae59a"
+    }
+  ],
+  "backendSourceReady": {
+    "repository": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/C3-source-ready.json",
+      "bytes": 1853,
+      "sha256": "dd1d0fbeedec7ee7f94e8b4c059e13ad1a54a5b41b5b55ad0313e5e18975cb25"
+    },
+    "packagedPath": "runtime-artifacts/c3-validation/qd007-source-ready.json",
+    "reportedAt": "2026-09-21T15:27:31.677Z"
+  },
+  "priorSource": {
+    "path": "runtime-artifacts/c3-validation/frame-route-c2-before.ts.txt",
+    "sha256": "10f23725504176483a0afab36de2b8b7ce9eb7708be0d84aa427545571e11971"
+  },
+  "qaFailure": {
+    "repository": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-0d42bacc/QD007-camera-source.json",
+      "bytes": 2936,
+      "sha256": "b2e3ad7f75e1a2369d02faf2a0226e6189089a98934de6d246553d4bdef28031"
+    },
+    "packagedPath": "runtime-artifacts/c3-validation/QD007-camera-source.json",
+    "candidateIdentityRetained": "C2"
+  },
+  "validationScope": "Producer isolated RED1fail/8pass, then48/48 directly affected API checks, scopedBiome/globalTypeScript and independent reviewCLEAR. No actual camera capture, acceptance or new-candidate HTTP retest claimed.",
+  "unchangedPriorFreezeBindings": [
+    "app/api/tracking/route.ts",
+    "app/api/tracking/uwb/route.ts",
+    "docs/contracts/clarification-tracking-access-v1.0.4.md",
+    "src/components/console/safety-console.tsx",
+    "src/components/tracking/tracking-access.test.ts",
+    "src/components/tracking/tracking-access.ts",
+    "src/components/tracking/tracking-panel.test.ts",
+    "src/components/tracking/tracking-panel.tsx",
+    "src/components/tracking/use-tracking.test.ts",
+    "src/components/tracking/use-tracking.ts",
+    "src/server/services/tracking-api/device-response-privacy.test.ts",
+    "src/server/services/tracking-api/persistence.test.ts",
+    "src/server/services/tracking-api/projection.test.ts",
+    "src/server/services/tracking-api/uploads.test.ts"
+  ]
+}

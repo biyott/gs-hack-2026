@@ -1,0 +1,329 @@
+{
+  "schemaVersion": "1.0.0",
+  "contractRevision": "1.0.4",
+  "implementationBindingRevision": 3,
+  "kind": "implementation-conformance-correction",
+  "owner": "/root/tech_lead",
+  "defect": "QD008",
+  "automaticCorrection": 1,
+  "maximumAutomaticCorrections": 2,
+  "recordedAt": "2026-09-21T17:03:55.231Z",
+  "contractSemanticsChanged": false,
+  "sharedSchemasChanged": false,
+  "runtimeBehaviorChanged": true,
+  "astEquivalenceClaim": false,
+  "priorFreeze": {
+    "path": "docs/contracts/freeze-v1.0.4.json",
+    "bytes": 4408,
+    "sha256": "15f1456ba821634b76ec2037b7d028e7090a4408af185013f7b19ccb4664e748"
+  },
+  "priorImplementationBinding": {
+    "path": "docs/contracts/implementation-binding-v1.0.4-r2.json",
+    "bytes": 5506,
+    "sha256": "5f90a218c9dd43571046283076d6749c7c3728b846809a92e2a5e02ed27cf75a"
+  },
+  "priorCandidate": {
+    "candidateId": "sha256:1a7c95cd1a15df738492a368d36cc6cb98985ec1c2618b10e807c82076b247c4",
+    "manifestSha256": "8d9b031f68374ea939dcdebb570e76aeba4b09d1154165cab53d186e7d27c4bc",
+    "sourceSha256": "10f658c44bc4bd511302900e02b467058b6dc558b767f2acc4b2c49773d5f6ab"
+  },
+  "normativeBasis": [
+    {
+      "path": "knowledge/fire-gas/FG-002.md",
+      "bytes": 5327,
+      "sha256": "890827a5b140b5ed3e98a8bb70fc3f8d7aa6b6aa23ceb4fcb91ac609ffdee0d8"
+    },
+    {
+      "path": "knowledge/equipment/EQ-002.md",
+      "bytes": 5208,
+      "sha256": "b10f6892ec886a96f1570909095991319adb8ad1e758ab43aca75f9da1a4dd0c"
+    }
+  ],
+  "requiredBehavior": [
+    "FG002 requires authoritative fire invalidation of a previous valid route, a valid replacement route and explicit evacuation/designated-refuge policy; absent/ambiguous facts remain false.",
+    "EQ002 requires authoritative equipment heading/slew change in the relevant preceding transition; metadata/action/version alone does not establish causality.",
+    "Anchor applicability to the first persisted occurrence of the exact current primary and its authoritative predecessor, preserving run/worker/map/floor scope. New incident identity can legitimately replace an earlier route.",
+    "Use the existing engine-issued guidance reasonCode to forward selected policy; unknown/nonmovement reason remains null.",
+    "Filter applicability before ranking/model use and during the existing post-generation candidate recheck; preserve current-guidance version/freshness guards.",
+    "Defer live onGuidance enrichment with setImmediate and check current guidance before synchronous history decoding; no end-to-end latency claim follows from call-stack separation."
+  ],
+  "interpretation": {
+    "firePolicyBothActions": true,
+    "missingPolicy": "Existing template fallback; do not broaden eligibility to satisfy an under-specified fixture.",
+    "originalQaNullPolicyCase": "Original Q-RAG-07-06 remains a preserved missing-prerequisite limitation. An additive explicit-policy positive is QA-owned; no original expectation is overwritten.",
+    "projectionAmbiguity": "Projection-bearing routes fail closed when graph attachment identity is ambiguous. Primary routing is unchanged."
+  },
+  "concurrence": {
+    "backend": "Private helper/services seam only; no engine/shared/checkpoint/corpus changes.",
+    "rag": "Private applicability flags and pre/post ranking eligibility; reviewed text/approval bytes unchanged.",
+    "frontend": "Generic evidence rendering; no exact document-ID dependency or source change.",
+    "mobile": "Generic evidence parsing and primary identity preserved; Mobile4 unchanged. Missing eligible evidence uses template/no supplement, never an empty accepted supplement.",
+    "technical": "Runtime correction enforcing existing procedural prerequisites, not new public semantics. Source, artifact and fresh QA bindings required."
+  },
+  "sourceBindings": [
+    {
+      "path": "knowledge/RAG-CONTRACT.md",
+      "bytes": 5611,
+      "sha256": "d90583d829c5375939023127da98f52c46146f5672d97279412f3fe529a144ba"
+    },
+    {
+      "path": "src/server/rag/applicability.test.ts",
+      "bytes": 5136,
+      "sha256": "806d9b9aa2dae93cdb2605ef1edefdc35d1c008d5fb3f5e139d32848bb253d7c"
+    },
+    {
+      "path": "src/server/rag/case-applicability.ts",
+      "bytes": 2951,
+      "sha256": "b8d2640fb3c8b7f92f75634d1acdba0a4c3656a8bafcd22f97671fdde41e6248"
+    },
+    {
+      "path": "src/server/rag/cases.test.ts",
+      "bytes": 7378,
+      "sha256": "844f9ade2f32f7155963f63052f9a5acd1a3902ece27905f88c04cb93f314901"
+    },
+    {
+      "path": "src/server/rag/retrieval-candidates.ts",
+      "bytes": 6269,
+      "sha256": "f0fa519d74e096797cb40f4aa56dd8eb776eb78f2ad7afad5e803791a93178e7"
+    },
+    {
+      "path": "src/server/rag/retrieval.ts",
+      "bytes": 4400,
+      "sha256": "6ce6c9a1321874963c11a69d3d4847252054cb2c22d01e973ec7125353e41af1"
+    },
+    {
+      "path": "src/server/rag/types.ts",
+      "bytes": 4587,
+      "sha256": "4a81e254a056eb9710ec4fe0abe047cc3e82929136b9f68310d15f2fd79391ac"
+    },
+    {
+      "path": "src/server/rag/verify-model.ts",
+      "bytes": 8185,
+      "sha256": "8d4ee5486fe02bbe44efddba3fe384e94e41f194f0a6f7c27d65b3afa5c03cba"
+    },
+    {
+      "path": "src/server/rag/verify-server-drivers.ts",
+      "bytes": 7572,
+      "sha256": "50cb730bfe79f54458158f68686f1b85fd42ac98e030e0648edb462a429895e6"
+    },
+    {
+      "path": "src/server/rag/verify-server-results.test.ts",
+      "bytes": 3843,
+      "sha256": "58b4c4cfb8629293e9f5e58869a0bd7507a36438da0251112100a10d56b77450"
+    },
+    {
+      "path": "src/server/rag/verify-server-results.ts",
+      "bytes": 9438,
+      "sha256": "29f731576d43710041fa21f59e70fbb5b7e1f0ca7aa9344c34eff92230a48ef0"
+    },
+    {
+      "path": "src/server/rag/verify-server-route-proof.ts",
+      "bytes": 2985,
+      "sha256": "149b4c60387bd3b5cd96b74ea43ffd2be9c5dfe944c3fbb7f862f77c34f79a4d"
+    },
+    {
+      "path": "src/server/rag/verify-server.ts",
+      "bytes": 7460,
+      "sha256": "250ade5d5a48104108478ef9b200baa6d19602f78c63e7a073cd69fca69122c8"
+    },
+    {
+      "path": "src/server/services/rag-applicability.integration.test.ts",
+      "bytes": 7388,
+      "sha256": "f07893df16aec7560054d8d303d773a61bcae2eb53c28253ad05c7031f7a5915"
+    },
+    {
+      "path": "src/server/services/rag-applicability.test.ts",
+      "bytes": 9267,
+      "sha256": "d91ffc131bfe69e386e07faed9dee6e7eff4429d5d1338fe5d30faed264fc115"
+    },
+    {
+      "path": "src/server/services/rag-applicability.ts",
+      "bytes": 5848,
+      "sha256": "d1c9e9fec40e8f2a970bbcf941155c0a246c1b2a5037dc299af54328f760e6a7"
+    },
+    {
+      "path": "src/server/services/rag.test.ts",
+      "bytes": 10176,
+      "sha256": "174f0bc5ec3580e1274d03ea91107dbc0b79e400280ba202fb473421c480e61a"
+    },
+    {
+      "path": "src/server/services/rag.ts",
+      "bytes": 7469,
+      "sha256": "16bc3ae7be9f6524c2f134e805afb8d635d2ea15120aaa2b59aaf3d73401a2a5"
+    },
+    {
+      "path": "tests/rag-applicability.v1.json",
+      "bytes": 1569,
+      "sha256": "6bddcc7eb22144e4722e72471059e5b9684a11fc4b2c001244222d0a2c93f452"
+    }
+  ],
+  "priorSourceBindings": [
+    {
+      "path": "knowledge/RAG-CONTRACT.md",
+      "prior": {
+        "path": "knowledge/RAG-CONTRACT.md",
+        "bytes": 4839,
+        "sha256": "849ec87c9781feca94f5914559f8addb42ab086d87b443fafda2b1692986b185"
+      }
+    },
+    {
+      "path": "src/server/rag/applicability.test.ts",
+      "prior": null
+    },
+    {
+      "path": "src/server/rag/case-applicability.ts",
+      "prior": null
+    },
+    {
+      "path": "src/server/rag/cases.test.ts",
+      "prior": {
+        "path": "src/server/rag/cases.test.ts",
+        "bytes": 7262,
+        "sha256": "42252d02ef7dd6477c386f5bdf4608d2065c349bbe090711f17ea216d474a3c4"
+      }
+    },
+    {
+      "path": "src/server/rag/retrieval-candidates.ts",
+      "prior": {
+        "path": "src/server/rag/retrieval-candidates.ts",
+        "bytes": 5748,
+        "sha256": "732b94f9d0554961e10c71a92c5618c376cf79e88a3eaa25357b098e36e80654"
+      }
+    },
+    {
+      "path": "src/server/rag/retrieval.ts",
+      "prior": {
+        "path": "src/server/rag/retrieval.ts",
+        "bytes": 4350,
+        "sha256": "d6dcdc8b35a2e2a907a88fe60ce5149953116d711be58c290a96f5664bbaf05b"
+      }
+    },
+    {
+      "path": "src/server/rag/types.ts",
+      "prior": {
+        "path": "src/server/rag/types.ts",
+        "bytes": 4151,
+        "sha256": "20446f6611eac89cef54f5ea044cfcf336ef97dcd5d0fb504a5cec9e7801e543"
+      }
+    },
+    {
+      "path": "src/server/rag/verify-model.ts",
+      "prior": {
+        "path": "src/server/rag/verify-model.ts",
+        "bytes": 8032,
+        "sha256": "578c5a36c04d7b60cedf14546ade907b19cfe3253b60b7892a1609df4add9379"
+      }
+    },
+    {
+      "path": "src/server/rag/verify-server-drivers.ts",
+      "prior": {
+        "path": "src/server/rag/verify-server-drivers.ts",
+        "bytes": 5438,
+        "sha256": "f51ab8ac7b7816622f65cc3cc64ccbca8cacef51d16a686c5945f936ea000d74"
+      }
+    },
+    {
+      "path": "src/server/rag/verify-server-results.test.ts",
+      "prior": null
+    },
+    {
+      "path": "src/server/rag/verify-server-results.ts",
+      "prior": null
+    },
+    {
+      "path": "src/server/rag/verify-server-route-proof.ts",
+      "prior": null
+    },
+    {
+      "path": "src/server/rag/verify-server.ts",
+      "prior": {
+        "path": "src/server/rag/verify-server.ts",
+        "bytes": 9714,
+        "sha256": "1167d63ee387d6cf2ba2fe820f829fb0efc49eead0f239111f6574c819b510af"
+      }
+    },
+    {
+      "path": "src/server/services/rag-applicability.integration.test.ts",
+      "prior": null
+    },
+    {
+      "path": "src/server/services/rag-applicability.test.ts",
+      "prior": null
+    },
+    {
+      "path": "src/server/services/rag-applicability.ts",
+      "prior": null
+    },
+    {
+      "path": "src/server/services/rag.test.ts",
+      "prior": {
+        "path": "src/server/services/rag.test.ts",
+        "bytes": 10111,
+        "sha256": "d5bc9928d698a79fad0a1f0364495357cb70a2a20912ff4a6cc4dbee4d76b2f5"
+      }
+    },
+    {
+      "path": "src/server/services/rag.ts",
+      "prior": {
+        "path": "src/server/services/rag.ts",
+        "bytes": 7115,
+        "sha256": "35aa2a1c22a6830b7eb8b4250b88dddbdae17b7b823ba1f367d584ac7ab20601"
+      }
+    },
+    {
+      "path": "tests/rag-applicability.v1.json",
+      "prior": null
+    }
+  ],
+  "ownerSourceReady": [
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/C4-source-ready.json",
+        "bytes": 4344,
+        "sha256": "f5a98ced8e586c0388ad4736196cdc60bb7b25214523f64114197c519d2e8030"
+      },
+      "packagedPath": "runtime-artifacts/c4-validation/qd008-backend-source-ready.json"
+    },
+    {
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/rag/qd008-rework01/source-ready.json",
+        "bytes": 8611,
+        "sha256": "abc565547050d4b6ace55237cbc62751c9263db44fd1d2404dc190b24e4247fd"
+      },
+      "packagedPath": "runtime-artifacts/c4-validation/qd008-rag-source-ready.json"
+    }
+  ],
+  "qaFailure": {
+    "repository": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-1a7c95cd/QD008-fire-evidence-applicability.json",
+      "bytes": 6229,
+      "sha256": "a59963d79b2aa634d8c9203d2c01dd1c1727c541b7344525e56f4decac80d3b5"
+    },
+    "packagedPath": "runtime-artifacts/c4-validation/QD008-fire-evidence-applicability.json",
+    "candidateIdentityRetained": "C3"
+  },
+  "preservation": {
+    "repository": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/rag/qd008-rework01/preservation.json",
+      "bytes": 18996,
+      "sha256": "6c87796299436afcfc87266143d27b6632f2efee70d0ab1328ceb36ba034936a"
+    },
+    "packagedPath": "runtime-artifacts/c4-validation/qd008-preservation.json",
+    "corpusProvenanceOriginalCasesClockFiles": 71,
+    "claim": "Same approved document/original fixture bytes, not new model or acceptance execution."
+  },
+  "requiredNewOperationalInputs": [
+    "tests/rag-applicability.v1.json",
+    "src/server/rag/case-applicability.ts",
+    "src/server/rag/verify-server-results.ts",
+    "src/server/rag/verify-server-route-proof.ts"
+  ],
+  "validationScope": "Backend43 focused checks/static/review; RAG119 focused checks plus final5 CLI checks/Biome. Controlled provider tests only. Final graph TypeScript and fresh web build occur in Technical assembly; independent current-candidate model/publication and acceptance remain QA-owned.",
+  "limits": [
+    "All prior candidates/freezes/bindings retained unchanged.",
+    "No public Guidance/SSE/schema/checkpoint or approved corpus changes; knowledge/RAG-CONTRACT.md documents private applicability implementation.",
+    "Original26/QR004 fixtures unchanged; versioned producer applicability fixture is test-input-only, never production authority proof.",
+    "Full history decoding still occurs on the event loop after deferral; no G0 performance pass claimed.",
+    "No new actual models, browser, physical phones, camera, LAN or acceptance result is claimed."
+  ]
+}

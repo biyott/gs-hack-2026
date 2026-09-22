@@ -1,0 +1,48 @@
+{
+  "articulation": {
+    "boom": {
+      "pivotNode": "BOOM_PIVOT",
+      "axis": "z",
+      "angleSign": 1,
+      "tipNode": "BOOM_TIP",
+      "segments": []
+    },
+    "hook": { "node": "HOOK", "tipNode": "BOOM_TIP" },
+    "links": [
+      {
+        "node": "HOIST_ROPES", "fromNode": "BOOM_TIP", "toNode": "HOOK",
+        "startFraction": 0, "endFraction": 1, "axis": "y", "restLengthM": 1, "origin": "start"
+      },
+      {
+        "node": "BOOM_PENDANT_LEFT", "fromNode": "BOOM_PENDANT_ANCHOR_LEFT", "toNode": "BOOM_PENDANT_ATTACH_LEFT",
+        "startFraction": 0, "endFraction": 1, "axis": "y", "restLengthM": 1, "origin": "start"
+      },
+      {
+        "node": "BOOM_PENDANT_RIGHT", "fromNode": "BOOM_PENDANT_ANCHOR_RIGHT", "toNode": "BOOM_PENDANT_ATTACH_RIGHT",
+        "startFraction": 0, "endFraction": 1, "axis": "y", "restLengthM": 1, "origin": "start"
+      }
+    ]
+  },
+  "demoPose": {
+    "boomLengthM": 32, "boomAngleDeg": 60, "trolleyM": null,
+    "hookHeightM": 17.662812921102035, "slewDeg": 0
+  },
+  "movementLimits": {
+    "tableSlewDeg": null, "boomLengthM": [32, 32],
+    "boomAngleDeg": [45, 70], "trolleyM": null, "hookHeightM": [2, 22]
+  },
+  "controlBaselines": {
+    "slewDeg": 0, "trolleyM": null, "hookHeightM": 17.662812921102035,
+    "ropeTopM": 29.662812921102035, "ropeLengthM": 12,
+    "boomAngleDeg": 60, "boomLengthM": 32
+  },
+  "controls": {
+    "translation": true, "slew": true, "boomAngle": true,
+    "boomLength": false, "trolley": false, "hook": true
+  },
+  "controlNodes": {
+    "slew": "SLEW", "trolley": null, "hook": "HOOK", "ropes": "HOIST_ROPES",
+    "boomPivot": "BOOM_PIVOT", "boomSegments": []
+  },
+  "controlNotes": "Selected 32 m lattice assembly remains fixed length. Boom angle 45–70 degrees and hook height 2–22 m are chosen visual simulation limits, not a manufacturer operating plan. Set BOOM_PIVOT absolute local glTF Z rotation to positive angle, preserve commanded hook ground height, and reanchor HOOK horizontal position to BOOM_TIP. Update every endpoint link after boom/slew/hook changes using parent-local endpoint coordinates, start origin, +Y-to-direction quaternion and Y scale equal to endpoint distance. Link geometry is a unit +Y line; pendant anchors follow the gantry and fixed boom attachment. Suspension-line lengths illustrate luffing reeving without an engineering winch model. Hook rope endpoint uses the main head sheave centre and hook-block top reference; no auxiliary or fixed jib is fitted."
+}

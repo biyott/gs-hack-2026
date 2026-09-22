@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": { "incremental": false },
+  "include": [
+    "../../src/server/tracking/**/*.ts",
+    "../../tests/tracking-*.test.ts",
+    "../../packages/contracts/src/tracking.ts",
+    "../../packages/contracts/src/clock.ts",
+    "../../packages/contracts/src/uwb-session.ts",
+    "./*.ts"
+  ]
+}

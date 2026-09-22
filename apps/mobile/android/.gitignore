@@ -1,0 +1,8 @@
+/local.properties
+/.gradle/
+/captures/
+/.cxx/
+/key.properties
+/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+*.jks
+*.keystore

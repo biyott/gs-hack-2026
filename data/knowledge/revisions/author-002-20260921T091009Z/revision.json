@@ -1,0 +1,169 @@
+{
+  "revisionId": "author-002-20260921T091009Z",
+  "recordedAt": "2026-09-21T09:11:39.528Z",
+  "author": "/root/rag_lead/knowledge_author",
+  "requestedBy": "/root/rag_lead",
+  "reason": "Backend G0 map scope clarification: both simulation modes and common documents use the shared SITE-CONSTRUCTION-01 demo map. Source 004 registers both identifiers but does not mandate mode-to-site pairing.",
+  "approvalStatus": "draft",
+  "independentReviewStatus": "pending",
+  "changes": [
+    {
+      "documentIds": [
+        "COMMON-001",
+        "COMMON-002",
+        "COMMON-003",
+        "COMMON-004"
+      ],
+      "field": "siteIds",
+      "before": [
+        "SITE-CONSTRUCTION-01",
+        "SITE-INDUSTRIAL-01"
+      ],
+      "after": [
+        "SITE-CONSTRUCTION-01"
+      ]
+    },
+    {
+      "documentIds": [
+        "FG-001",
+        "FG-002",
+        "FG-003",
+        "FG-004",
+        "FG-005",
+        "FG-006",
+        "FG-007",
+        "FG-008"
+      ],
+      "field": "siteIds",
+      "before": [
+        "SITE-INDUSTRIAL-01"
+      ],
+      "after": [
+        "SITE-CONSTRUCTION-01"
+      ]
+    },
+    {
+      "documentIds": [
+        "FG-001"
+      ],
+      "field": "body applicability",
+      "change": "Replaced former industrial-site name with generic registered-site wording; metadata defines actual scope."
+    },
+    {
+      "file": "knowledge/README.md",
+      "change": "Documented shared construction map scope and alternate industrial-site identifier for wrong-site exclusion testing."
+    }
+  ],
+  "verification": {
+    "initialDraftSnapshotsUnchanged": true,
+    "currentAll18ConstructionSiteOnly": true,
+    "changedDocumentCount": 12,
+    "readmeUpdated": true
+  },
+  "documents": [
+    {
+      "relative": "common/COMMON-001.md",
+      "beforeSha256": "2c405c531d3417978c0b15aca1ab874912e585462902a5a1f33e7720de5ccbc6",
+      "initialDraftSha256": "2c405c531d3417978c0b15aca1ab874912e585462902a5a1f33e7720de5ccbc6",
+      "afterSha256": "5844350939f920d0daf7a3c9ac0e8b03c4d3e677bb57f614f1919b24182f721f",
+      "sourcePath": "knowledge/common/COMMON-001.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/common/COMMON-001.md"
+    },
+    {
+      "relative": "common/COMMON-002.md",
+      "beforeSha256": "68ffd6e414680d87dc576f2fd0c5f3f74ea75b7630a2420188e37e75f8340e42",
+      "initialDraftSha256": "68ffd6e414680d87dc576f2fd0c5f3f74ea75b7630a2420188e37e75f8340e42",
+      "afterSha256": "4c4afd2974b3b7ba310bb6a99eacc74b57674c8a0627e098cbcc44e4bd02e952",
+      "sourcePath": "knowledge/common/COMMON-002.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/common/COMMON-002.md"
+    },
+    {
+      "relative": "common/COMMON-003.md",
+      "beforeSha256": "b8bd055b70ebfb6e6ddbade12eea17769e4b650ad506e7989b1d4c4902438e4e",
+      "initialDraftSha256": "b8bd055b70ebfb6e6ddbade12eea17769e4b650ad506e7989b1d4c4902438e4e",
+      "afterSha256": "b0cbb38a2f3357cffa36fea0e0d2a567e9cdb317f73003f09dff2114cc278c77",
+      "sourcePath": "knowledge/common/COMMON-003.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/common/COMMON-003.md"
+    },
+    {
+      "relative": "common/COMMON-004.md",
+      "beforeSha256": "c0cf7cce0296a42e09f7f25c9723b0a2879f44ba96bd4651fbe877cea0c20fb8",
+      "initialDraftSha256": "c0cf7cce0296a42e09f7f25c9723b0a2879f44ba96bd4651fbe877cea0c20fb8",
+      "afterSha256": "3d2af08d01a277fc8cce44f7ce73b7d6fd95349889a17974cf625f8edc6535e3",
+      "sourcePath": "knowledge/common/COMMON-004.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/common/COMMON-004.md"
+    },
+    {
+      "relative": "fire-gas/FG-001.md",
+      "beforeSha256": "0abd8513b9a190335a7f6011e117b5842063feb1085a75b9549df6d62fd692fb",
+      "initialDraftSha256": "0abd8513b9a190335a7f6011e117b5842063feb1085a75b9549df6d62fd692fb",
+      "afterSha256": "1fef57a74852d360578d0a00526137ffe636d43bd0544f9f639320429d0f2ebd",
+      "sourcePath": "knowledge/fire-gas/FG-001.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/fire-gas/FG-001.md"
+    },
+    {
+      "relative": "fire-gas/FG-002.md",
+      "beforeSha256": "8a055f392f4d9b98aba2883138bfecb321caded944be8d8b84737d27f8f46f7f",
+      "initialDraftSha256": "2e3cfae7352840ab8d8050815a18f3ab2ac2cc38bbb1aceca4258e07bf256f07",
+      "afterSha256": "5f8d4dfa85e0fecbb96a49d05a2c2a56af693924d27aa5688fd9fb587cc16532",
+      "sourcePath": "knowledge/fire-gas/FG-002.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/fire-gas/FG-002.md"
+    },
+    {
+      "relative": "fire-gas/FG-003.md",
+      "beforeSha256": "4c65e358d9803165bed0922acceb3a2fb9ee9b7bdb230f8478759d72b08a73d0",
+      "initialDraftSha256": "4c65e358d9803165bed0922acceb3a2fb9ee9b7bdb230f8478759d72b08a73d0",
+      "afterSha256": "6ca0aff5028aea47b278ce3bbc57e80abe1e0dd34c33127bf6f0be7a7b4a9be6",
+      "sourcePath": "knowledge/fire-gas/FG-003.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/fire-gas/FG-003.md"
+    },
+    {
+      "relative": "fire-gas/FG-004.md",
+      "beforeSha256": "cc4bc35a9e467267e88e8036718e678daa3d5249e7ac6515537b7d7eacf882bf",
+      "initialDraftSha256": "cc4bc35a9e467267e88e8036718e678daa3d5249e7ac6515537b7d7eacf882bf",
+      "afterSha256": "d52c392664010de1350f056608e1f7110cad520bfdab41bd01f2fb5fb7ec34c2",
+      "sourcePath": "knowledge/fire-gas/FG-004.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/fire-gas/FG-004.md"
+    },
+    {
+      "relative": "fire-gas/FG-005.md",
+      "beforeSha256": "0eb33fc0a6601539ce418c5525b9f29ddf24463505fe33d26f533c8db13bf65a",
+      "initialDraftSha256": "0eb33fc0a6601539ce418c5525b9f29ddf24463505fe33d26f533c8db13bf65a",
+      "afterSha256": "78118f17d31bd5d3b1cc2ec82652f09effdbac371b29c1855f45d5d578822179",
+      "sourcePath": "knowledge/fire-gas/FG-005.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/fire-gas/FG-005.md"
+    },
+    {
+      "relative": "fire-gas/FG-006.md",
+      "beforeSha256": "216e481703baf74c679012f316db559a2ede564c23938803e94342514110ac2b",
+      "initialDraftSha256": "9f841f4beb6b3e99f09a5d42efeb8ceb14c4a0a429103caf07633e8df1e47471",
+      "afterSha256": "2e9fdf7b01855ea598c64a7a244294973766313d0d2a0641f173bab3e2093dac",
+      "sourcePath": "knowledge/fire-gas/FG-006.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/fire-gas/FG-006.md"
+    },
+    {
+      "relative": "fire-gas/FG-007.md",
+      "beforeSha256": "dc7f11cda0632379c763d7dc0c25b2d77c313b2cd185f77fb4b335df8ea5beef",
+      "initialDraftSha256": "dc7f11cda0632379c763d7dc0c25b2d77c313b2cd185f77fb4b335df8ea5beef",
+      "afterSha256": "8f52633eb098cfd43de67fd50bd717f7a0e7de9bc5e1382433522e31502c0c18",
+      "sourcePath": "knowledge/fire-gas/FG-007.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/fire-gas/FG-007.md"
+    },
+    {
+      "relative": "fire-gas/FG-008.md",
+      "beforeSha256": "105fb8ace8e6feccab3a0f41f7950cae46c09344539f5161d10519d4bb0b1243",
+      "initialDraftSha256": "105fb8ace8e6feccab3a0f41f7950cae46c09344539f5161d10519d4bb0b1243",
+      "afterSha256": "3caf96eea7d51977b69557dff98f0c24eb93b9dc689cb0ef01a93065ea10d663",
+      "sourcePath": "knowledge/fire-gas/FG-008.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/fire-gas/FG-008.md"
+    },
+    {
+      "relative": "README.md",
+      "beforeSha256": "3d1af8e9c251143c79091d072420ac3e0250747fbd5d5784452af9d708668cc8",
+      "initialDraftSha256": null,
+      "afterSha256": "4c17d1af6382d9a3f5f7fa726ee4a518764f32452b99e0da4392e5629dc52fbe",
+      "sourcePath": "knowledge/README.md",
+      "revisionPath": "data/knowledge/revisions/author-002-20260921T091009Z/README.md"
+    }
+  ]
+}

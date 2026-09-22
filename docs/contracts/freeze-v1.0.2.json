@@ -1,0 +1,40 @@
+{
+  "contractRevision": "1.0.2",
+  "kind": "semantic-clarification",
+  "goalId": "GS-SAFETY-SIM-001",
+  "goalVersion": "1.0",
+  "frozenAt": "2026-09-21T11:06:45.382Z",
+  "owner": "/root/tech_lead",
+  "extends": "docs/contracts/freeze-v1.0.1.json",
+  "structuralSchemasUnchanged": true,
+  "concurrence": {
+    "tracking": "Raw Android clockwise radians retained; server projection alone converts to counterclockwise XY; signed regression red-to-green",
+    "mobile": "AndroidX1.0.0 source audit confirms raw degree sign retained; native bridge only converts radians",
+    "technical": "Pinned Android35 reference verified directly; single conversion and physical mounting boundary accepted",
+    "qa": "AC12/AC13 physical mounting, sign, zero, radio accuracy and timing remain required; no threshold change"
+  },
+  "files": [
+    {
+      "path": "docs/contracts/clarification-uwb-azimuth-v1.0.2.md",
+      "sha256": "e5a3c9d30b848df7692ff89e7e06728c7598cf3f5cd32d70eaf0c36f6892e915"
+    },
+    {
+      "path": "src/server/tracking/uwb.ts",
+      "sha256": "cf77e15457c67492f5fa67d86ebaf548efa68bdd57e8111844e7d7828e89d140"
+    },
+    {
+      "path": "tests/tracking-uwb.test.ts",
+      "sha256": "eb5898c99c11ab4f2a507f600f67b0848b6d8f9c7714765e4f3ffd520387ad03"
+    },
+    {
+      "path": "tools/calibration/README.md",
+      "sha256": "07e2a2d5ad57a627b560595ef48bacef885f3d6b47772fb4e5723379080bbd26"
+    }
+  ],
+  "contentSha256": "0908921f203e3e6a480562ad9bedeee6355eb8f02b9da0c9364f9d88a8e03655",
+  "limitations": [
+    "Software signed-angle fixtures do not establish physical radio calibration",
+    "Final G3 source and built artifacts must contain the corrected projection",
+    "Frozen1.0.1 files are preserved unchanged"
+  ]
+}

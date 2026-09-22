@@ -1,0 +1,29 @@
+{
+  "articulation": {
+    "boom": {
+      "pivotNode": "BOOM_PIVOT",
+      "axis": "z",
+      "angleSign": 1,
+      "tipNode": "BOOM_TIP",
+      "segments": [
+        {"node": "TELESCOPIC_1", "axis": "x", "lengthShare": 0.25},
+        {"node": "TELESCOPIC_2", "axis": "x", "lengthShare": 0.25},
+        {"node": "TELESCOPIC_3", "axis": "x", "lengthShare": 0.25},
+        {"node": "TELESCOPIC_4", "axis": "x", "lengthShare": 0.25}
+      ]
+    },
+    "hook": {"node": "HOOK", "tipNode": "BOOM_TIP"},
+    "links": [
+      {"node": "HOIST_ROPE_1", "fromNode": "HOOK_ATTACH_1", "toNode": "TIP_ATTACH_1", "startFraction": 0, "endFraction": 1, "axis": "y", "restLengthM": 1, "origin": "start"},
+      {"node": "HOIST_ROPE_2", "fromNode": "HOOK_ATTACH_2", "toNode": "TIP_ATTACH_2", "startFraction": 0, "endFraction": 1, "axis": "y", "restLengthM": 1, "origin": "start"},
+      {"node": "LIFT_BARREL", "fromNode": "LIFT_FIXED_ANCHOR", "toNode": "LIFT_MOVING_ANCHOR", "startFraction": 0, "endFraction": 0.55, "axis": "y", "restLengthM": 1, "origin": "start"},
+      {"node": "LIFT_PISTON", "fromNode": "LIFT_FIXED_ANCHOR", "toNode": "LIFT_MOVING_ANCHOR", "startFraction": 0.55, "endFraction": 1, "axis": "y", "restLengthM": 1, "origin": "start"}
+    ]
+  },
+  "demoPose": {"boomLengthM": 10, "boomAngleDeg": 55, "trolleyM": null, "hookHeightM": 3, "slewDeg": 0},
+  "movementLimits": {"tableSlewDeg": null, "boomLengthM": [8,10.6], "boomAngleDeg": [30,75], "trolleyM": null, "hookHeightM": [1,4.5]},
+  "controlBaselines": {"slewDeg": 0, "trolleyM": null, "hookHeightM": 3, "ropeTopM": 9.6115204429, "ropeLengthM": 6.3815204429, "boomAngleDeg": 55, "boomLengthM": 10},
+  "controls": {"translation": true, "slew": true, "boomAngle": true, "boomLength": true, "trolley": false, "hook": true},
+  "controlNodes": {"slew": "SLEW", "trolley": null, "hook": "HOOK", "ropes": null, "boomPivot": "BOOM_PIVOT", "boomSegments": ["TELESCOPIC_1","TELESCOPIC_2","TELESCOPIC_3","TELESCOPIC_4"]},
+  "controlNotes": "Five physical pentagonal principal shells: one fixed and four moving. Four nested stage translations share the length delta equally. HOOK stays under the tip with fixed vertical orientation; endpoint links update twin ropes and hydraulic actuators. Demo ranges preserve at least 0.25 m stage overlap and 0.69 m cable clearance. Section lengths, profile angles and a 0.88 inner-profile scale are authored hollow-shell reconstruction values, not OEM dimensions or wall thickness. These are model kinematic limits, not manufacturer-certified operating ranges."
+}

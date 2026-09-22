@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewedAt": "2026-09-21T09:13:05.116Z",
+  "reviewedBy": "/root/rag_lead/knowledge_review",
+  "scope": "Independent content review for synthetic demo documents; not runtime QA or actual-site approval",
+  "sourceHashes": [
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/sources/emul-004.body.md",
+      "sha256": "5339f3cd43df552e3bda5da24fbef2e72dc49f9cd1ea77bba401dadb6548f2db"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/goal.document.original.md",
+      "sha256": "55d2e2a4eaac35e4b16c948b22bfe56c73fae04802787921f5c2639146cb4d12"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/requirements/scope-freeze.v1.0.md",
+      "sha256": "e778d20e8ddb78bcd62d89fec6354c46795dd385ebc35b7cdf4208eca54cb2d9"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/g0-protocol-v1.md",
+      "sha256": "e7f257c72feb993807e5faa420c56674f06f3bdf5e112b8155cbbef994027dec"
+    },
+    {
+      "path": "data/maps/site-construction-01.json",
+      "sha256": "ea4834c1b17e2a0ccbdaa892ce42079a42f689cfa198c7aa0f554d811bf6b5bf"
+    }
+  ],
+  "findingsResolved": [
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "entries": [
+    {
+      "documentId": "COMMON-001",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/common/COMMON-001.md",
+      "draftPath": "data/knowledge/drafts/common/COMMON-001.md",
+      "originalDraftHash": "2c405c531d3417978c0b15aca1ab874912e585462902a5a1f33e7720de5ccbc6",
+      "reviewedCandidateHash": "5844350939f920d0daf7a3c9ac0e8b03c4d3e677bb57f614f1919b24182f721f",
+      "reviewedContentHash": "ae59d5fd21cc087ad6e9609e88aaaf51216ffac9be86e36cfe9bd95a72ccdf6d",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "COMMON-002",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/common/COMMON-002.md",
+      "draftPath": "data/knowledge/drafts/common/COMMON-002.md",
+      "originalDraftHash": "68ffd6e414680d87dc576f2fd0c5f3f74ea75b7630a2420188e37e75f8340e42",
+      "reviewedCandidateHash": "4c4afd2974b3b7ba310bb6a99eacc74b57674c8a0627e098cbcc44e4bd02e952",
+      "reviewedContentHash": "0155e038dd135c0243992da5aa67fff5ca4a53cf33ed3a16b0fc7cc688785f8c",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "COMMON-003",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/common/COMMON-003.md",
+      "draftPath": "data/knowledge/drafts/common/COMMON-003.md",
+      "originalDraftHash": "b8bd055b70ebfb6e6ddbade12eea17769e4b650ad506e7989b1d4c4902438e4e",
+      "reviewedCandidateHash": "b0cbb38a2f3357cffa36fea0e0d2a567e9cdb317f73003f09dff2114cc278c77",
+      "reviewedContentHash": "ee8fb3e65e62508cbc27e1e6be145070c297254754dce7c4f932ef470468bd00",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "COMMON-004",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/common/COMMON-004.md",
+      "draftPath": "data/knowledge/drafts/common/COMMON-004.md",
+      "originalDraftHash": "c0cf7cce0296a42e09f7f25c9723b0a2879f44ba96bd4651fbe877cea0c20fb8",
+      "reviewedCandidateHash": "3d2af08d01a277fc8cce44f7ce73b7d6fd95349889a17974cf625f8edc6535e3",
+      "reviewedContentHash": "d5160a3820a0b2d7997518ea70383993243d4a11aeba5bc9e77f2a88d3cf4182",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "EQ-001",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/equipment/EQ-001.md",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-001.md",
+      "originalDraftHash": "935585e1dce9dfe4b46d12fb73a426d935f2d592022faa3861a026892a23750a",
+      "reviewedCandidateHash": "935585e1dce9dfe4b46d12fb73a426d935f2d592022faa3861a026892a23750a",
+      "reviewedContentHash": "72c885c61053a5bfddc1f27cf841cb1e5cace93ab19888bdbbacce7bdde5c2ca",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "EQ-002",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/equipment/EQ-002.md",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-002.md",
+      "originalDraftHash": "d301271e1ac0236232303c322d6a14b2d206e799777a965d6c02655faa09971c",
+      "reviewedCandidateHash": "5ba251706d392608a96554936701391202d7d362d5349e6b7df1235349330fed",
+      "reviewedContentHash": "2d08eedcc93b31279b448e3f563562973dafe5d66b86a13162096ff0d7de686e",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "EQ-003",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/equipment/EQ-003.md",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-003.md",
+      "originalDraftHash": "bec31ad14d3d779058169271a4aa7d9383efb027cfc83c576237315d5283e133",
+      "reviewedCandidateHash": "d604e9db0d9191dbc57bc4c00d66422b408efe8003834b50cc388b56bdd8d334",
+      "reviewedContentHash": "ffa51860099aa73d2795f7065925f44b92e4e73e89d642445fc4aec9de9f81c6",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "EQ-004",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/equipment/EQ-004.md",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-004.md",
+      "originalDraftHash": "9f44d61f9dc978d27da16da744a7ca9371dd191421dc688ac32ff61a7a30b359",
+      "reviewedCandidateHash": "129fb9e9b1630e189c4e0c0254f8106e0b259ad4a1fb59ed2351d6c5bd8979ac",
+      "reviewedContentHash": "e79d29c647e885d22b474bb85d8b778ff1520b71e2e7d823f70b9ee4af12fef6",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "EQ-005",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/equipment/EQ-005.md",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-005.md",
+      "originalDraftHash": "96baf46309de4db8fcc67620fe733f104f79eed982dc8fdc93cc5ff53d6ce683",
+      "reviewedCandidateHash": "96baf46309de4db8fcc67620fe733f104f79eed982dc8fdc93cc5ff53d6ce683",
+      "reviewedContentHash": "3ba9888b3f59a8630d1d255d0751f20a6c288f27d6068499f56e5d5e6849c5ee",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "EQ-006",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/equipment/EQ-006.md",
+      "draftPath": "data/knowledge/drafts/equipment/EQ-006.md",
+      "originalDraftHash": "94de5e28174b538b8dfae6437cbb150f3e80f6058564cf85d784124793a299c4",
+      "reviewedCandidateHash": "94de5e28174b538b8dfae6437cbb150f3e80f6058564cf85d784124793a299c4",
+      "reviewedContentHash": "34853f7396a14d86752c5790f3153b0d82f7c15c8ceba1b6860fdaa7da113454",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "FG-001",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/fire-gas/FG-001.md",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-001.md",
+      "originalDraftHash": "0abd8513b9a190335a7f6011e117b5842063feb1085a75b9549df6d62fd692fb",
+      "reviewedCandidateHash": "1fef57a74852d360578d0a00526137ffe636d43bd0544f9f639320429d0f2ebd",
+      "reviewedContentHash": "c7f2025199f56451389375358bf57c61188938f4da935ad7ef2e0d887da3b2fd",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "FG-002",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/fire-gas/FG-002.md",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-002.md",
+      "originalDraftHash": "2e3cfae7352840ab8d8050815a18f3ab2ac2cc38bbb1aceca4258e07bf256f07",
+      "reviewedCandidateHash": "5f8d4dfa85e0fecbb96a49d05a2c2a56af693924d27aa5688fd9fb587cc16532",
+      "reviewedContentHash": "17f8045c0de73635d70d2931df3ce93047b554f3598caca1c6f658936e7c41ce",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "FG-003",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/fire-gas/FG-003.md",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-003.md",
+      "originalDraftHash": "4c65e358d9803165bed0922acceb3a2fb9ee9b7bdb230f8478759d72b08a73d0",
+      "reviewedCandidateHash": "6ca0aff5028aea47b278ce3bbc57e80abe1e0dd34c33127bf6f0be7a7b4a9be6",
+      "reviewedContentHash": "6e7ed3c4c091daed4644547658cc06147f0f4381a87fff533f1000bf9ae614bb",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "FG-004",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/fire-gas/FG-004.md",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-004.md",
+      "originalDraftHash": "cc4bc35a9e467267e88e8036718e678daa3d5249e7ac6515537b7d7eacf882bf",
+      "reviewedCandidateHash": "d52c392664010de1350f056608e1f7110cad520bfdab41bd01f2fb5fb7ec34c2",
+      "reviewedContentHash": "e3417aa152fa5dd5c7b64f98b0739ec846277db5c029e43c0410c3e0c3712859",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "FG-005",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/fire-gas/FG-005.md",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-005.md",
+      "originalDraftHash": "0eb33fc0a6601539ce418c5525b9f29ddf24463505fe33d26f533c8db13bf65a",
+      "reviewedCandidateHash": "78118f17d31bd5d3b1cc2ec82652f09effdbac371b29c1855f45d5d578822179",
+      "reviewedContentHash": "0e1437f8f97dbde3ef95be5eeff0dc4da918dae1dcb2ab034b9a262d8cbc86f2",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "FG-006",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/fire-gas/FG-006.md",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-006.md",
+      "originalDraftHash": "9f841f4beb6b3e99f09a5d42efeb8ceb14c4a0a429103caf07633e8df1e47471",
+      "reviewedCandidateHash": "2e9fdf7b01855ea598c64a7a244294973766313d0d2a0641f173bab3e2093dac",
+      "reviewedContentHash": "116996f82eef634ecb0a866041634cc335c69b8ff25caff86376a1fe734fd0ac",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "FG-007",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/fire-gas/FG-007.md",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-007.md",
+      "originalDraftHash": "dc7f11cda0632379c763d7dc0c25b2d77c313b2cd185f77fb4b335df8ea5beef",
+      "reviewedCandidateHash": "8f52633eb098cfd43de67fd50bd717f7a0e7de9bc5e1382433522e31502c0c18",
+      "reviewedContentHash": "7100dd4639806e4cd7c8d565e91bf978e486236bbd0d7032f9707c54819e3449",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    },
+    {
+      "documentId": "FG-008",
+      "documentVersion": "0.1.0",
+      "path": "knowledge/fire-gas/FG-008.md",
+      "draftPath": "data/knowledge/drafts/fire-gas/FG-008.md",
+      "originalDraftHash": "105fb8ace8e6feccab3a0f41f7950cae46c09344539f5161d10519d4bb0b1243",
+      "reviewedCandidateHash": "3caf96eea7d51977b69557dff98f0c24eb93b9dc689cb0ef01a93065ea10d663",
+      "reviewedContentHash": "1ab8ca779cd9b0b7ae20cdbb129cf7dfe556600b5d33a7375c9b732fd9bdbb5d",
+      "decision": "approved_for_demo",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z",
+      "semanticEvidence": "data/knowledge/reviews/semantic-review.md"
+    }
+  ]
+}

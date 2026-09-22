@@ -1,0 +1,164 @@
+{
+  "articulation": {
+    "boom": {
+      "pivotNode": "BOOM_PIVOT",
+      "axis": "z",
+      "angleSign": 1,
+      "tipNode": "BOOM_TIP",
+      "segments": [
+        {
+          "node": "TELESCOPIC_1",
+          "axis": "x",
+          "lengthShare": 0.3333333333333333
+        },
+        {
+          "node": "TELESCOPIC_2",
+          "axis": "x",
+          "lengthShare": 0.3333333333333333
+        },
+        {
+          "node": "TELESCOPIC_3",
+          "axis": "x",
+          "lengthShare": 0.3333333333333333
+        }
+      ]
+    },
+    "hook": {
+      "node": "HOOK",
+      "tipNode": "BOOM_TIP"
+    },
+    "links": [
+      {
+        "node": "HOIST_ROPES",
+        "fromNode": "HOOK_ATTACH",
+        "toNode": "BOOM_ROPE_TOP",
+        "startFraction": 0,
+        "endFraction": 1,
+        "axis": "y",
+        "restLengthM": 1,
+        "origin": "start"
+      },
+      {
+        "node": "RAM_BARREL",
+        "fromNode": "RAM_BASE",
+        "toNode": "BOOM_RAM_ANCHOR",
+        "startFraction": 0,
+        "endFraction": 0.55,
+        "axis": "y",
+        "restLengthM": 1,
+        "origin": "start"
+      },
+      {
+        "node": "RAM_ROD",
+        "fromNode": "RAM_BASE",
+        "toNode": "BOOM_RAM_ANCHOR",
+        "startFraction": 0.55,
+        "endFraction": 1,
+        "axis": "y",
+        "restLengthM": 1,
+        "origin": "start"
+      }
+    ]
+  },
+  "demoPose": {
+    "boomLengthM": 20,
+    "boomAngleDeg": 50,
+    "trolleyM": null,
+    "hookHeightM": 4.2,
+    "slewDeg": 0
+  },
+  "movementLimits": {
+    "tableSlewDeg": null,
+    "boomLengthM": [
+      18,
+      24
+    ],
+    "boomAngleDeg": [
+      35,
+      65
+    ],
+    "trolleyM": null,
+    "hookHeightM": [
+      3,
+      10
+    ]
+  },
+  "controlBaselines": {
+    "slewDeg": 0,
+    "trolleyM": null,
+    "hookHeightM": 4.2,
+    "ropeTopM": 18.03874969,
+    "ropeLengthM": 13.43874969,
+    "boomAngleDeg": 50,
+    "boomLengthM": 20
+  },
+  "controls": {
+    "translation": true,
+    "slew": true,
+    "boomAngle": true,
+    "boomLength": true,
+    "trolley": false,
+    "hook": true
+  },
+  "controlNodes": {
+    "slew": "SLEW",
+    "trolley": null,
+    "hook": "HOOK",
+    "ropes": "HOIST_ROPES",
+    "boomPivot": "BOOM_PIVOT",
+    "boomSegments": [
+      "TELESCOPIC_1",
+      "TELESCOPIC_2",
+      "TELESCOPIC_3"
+    ]
+  },
+  "controlNotes": "Bounded demo kinematics; nested stages share extension equally. Hook follows BOOM_TIP physical sheave anchor at selected height. Anchor-driven unit links keep ropes vertical and hydraulic parts connected. These ranges and overlaps are demo geometry choices, not operating limits.",
+  "rigMetadata": {
+    "coordinateSystem": "gltf-y-up",
+    "lengthUnit": "metres",
+    "boomPivotLocalM": [
+      -1.1,
+      2.75,
+      0
+    ],
+    "sectionLengthM": 8.95,
+    "initialSegmentLocalXM": 3.6833333333333336,
+    "minimumSectionOverlapM": 3.9333333333333327,
+    "physicalSheaveOffsetBoomLocalM": [
+      0,
+      -0.05,
+      0
+    ],
+    "nominalLengthTipNode": "BOOM_AXIS_TIP",
+    "physicalSheaveTipNode": "BOOM_TIP",
+    "hookAttachLocalM": [
+      0,
+      0.4,
+      0
+    ],
+    "ropeTopRelativeToPhysicalTipM": [
+      0,
+      0,
+      0
+    ],
+    "ramBaseLocalM": [
+      0.3,
+      2.02,
+      0
+    ],
+    "ramEndBoomLocalM": [
+      4,
+      -0.45,
+      0
+    ],
+    "normalizedLinkExtentM": [
+      0,
+      1
+    ],
+    "manufacturerBoomLengthRangeM": [
+      9.35,
+      30.5
+    ],
+    "riskProjectionNote": "Nominal-axis ground projection differs from physical sheave by at most 0.05m; a 0.36m load polygon is a conservative approximation, not exact hook footprint."
+  }
+}

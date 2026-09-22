@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "approvals": [
+    {
+      "documentId": "COMMON-001",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "ae59d5fd21cc087ad6e9609e88aaaf51216ffac9be86e36cfe9bd95a72ccdf6d",
+      "approvedFileHash": "bf21e084d905ed39a1061f41c57bec9494171af715dfc064ac626feac865a0be",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "COMMON-002",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "0155e038dd135c0243992da5aa67fff5ca4a53cf33ed3a16b0fc7cc688785f8c",
+      "approvedFileHash": "bd4dc0862cc8ac32b7b8d5ba0b9cc2c6e05e170e3c1a23c7a437d60c1ca5922f",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "COMMON-003",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "ee8fb3e65e62508cbc27e1e6be145070c297254754dce7c4f932ef470468bd00",
+      "approvedFileHash": "1c7258c3dd53e134fe43546f49e85d82eabb54fdb7efbcec1f6c9666d80760ce",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "COMMON-004",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "d5160a3820a0b2d7997518ea70383993243d4a11aeba5bc9e77f2a88d3cf4182",
+      "approvedFileHash": "44e4c92b9c5237b7429483e6024bc6e98e27dbcbbfca021fd7b7b1725746a96c",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "EQ-001",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "72c885c61053a5bfddc1f27cf841cb1e5cace93ab19888bdbbacce7bdde5c2ca",
+      "approvedFileHash": "66847a3d71e32e565963b29be1a7d2dbafcdaa44d2e71a506f101569310e0004",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "EQ-002",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "2d08eedcc93b31279b448e3f563562973dafe5d66b86a13162096ff0d7de686e",
+      "approvedFileHash": "b10f6892ec886a96f1570909095991319adb8ad1e758ab43aca75f9da1a4dd0c",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "EQ-003",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "ffa51860099aa73d2795f7065925f44b92e4e73e89d642445fc4aec9de9f81c6",
+      "approvedFileHash": "efba24b4441c045b4cb266651cc984f2eefb3e3966e053f4828514e66b6ff3f8",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "EQ-004",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "e79d29c647e885d22b474bb85d8b778ff1520b71e2e7d823f70b9ee4af12fef6",
+      "approvedFileHash": "6b9a5119bd7b58a304158183e5c38cec941d7c3b913a9a3e48e2cae716b0b540",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "EQ-005",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "3ba9888b3f59a8630d1d255d0751f20a6c288f27d6068499f56e5d5e6849c5ee",
+      "approvedFileHash": "233547f244f61f2135aa9e3eba3efb15099b7d1c97fe2bc6e5f32b998e528b0a",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "EQ-006",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "34853f7396a14d86752c5790f3153b0d82f7c15c8ceba1b6860fdaa7da113454",
+      "approvedFileHash": "f327cc12a5d3e8362224fc632328066912112f2f7b6dd806c95b20b2d803a4f2",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "FG-001",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "c7f2025199f56451389375358bf57c61188938f4da935ad7ef2e0d887da3b2fd",
+      "approvedFileHash": "b07abcc263e86d39d3ed919371a0206440c1b9ebd784b7a666f357ebc1697444",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "FG-002",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "17f8045c0de73635d70d2931df3ce93047b554f3598caca1c6f658936e7c41ce",
+      "approvedFileHash": "890827a5b140b5ed3e98a8bb70fc3f8d7aa6b6aa23ceb4fcb91ac609ffdee0d8",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "FG-003",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "6e7ed3c4c091daed4644547658cc06147f0f4381a87fff533f1000bf9ae614bb",
+      "approvedFileHash": "d6c03e7e689c1d51dcd26967ef3b062edf43149f675d16cc1127ebfbab1c75f7",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "FG-004",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "e3417aa152fa5dd5c7b64f98b0739ec846277db5c029e43c0410c3e0c3712859",
+      "approvedFileHash": "0a5e2515e0acd69d3ca6adaed2915ad04859f0570229a8232f70aeece20b6e7b",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "FG-005",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "0e1437f8f97dbde3ef95be5eeff0dc4da918dae1dcb2ab034b9a262d8cbc86f2",
+      "approvedFileHash": "efee99887421091ec514ef32610f65de364bfe501cf59af0b48dde50818b455d",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "FG-006",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "116996f82eef634ecb0a866041634cc335c69b8ff25caff86376a1fe734fd0ac",
+      "approvedFileHash": "cb9243f42ea62b6f518b2542a3279da19934e1592e0bdea000c8f38689edc70a",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "FG-007",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "7100dd4639806e4cd7c8d565e91bf978e486236bbd0d7032f9707c54819e3449",
+      "approvedFileHash": "584187b6199b11c44a41824a7b6ef7f5bff60bb273173b338540a047ac329e05",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    },
+    {
+      "documentId": "FG-008",
+      "documentVersion": "0.1.0",
+      "reviewedContentHash": "1ab8ca779cd9b0b7ae20cdbb129cf7dfe556600b5d33a7375c9b732fd9bdbb5d",
+      "approvedFileHash": "993d7a980ceebc7b8c338aaf0fad5e5ff411bb6b59f5245f69f655a76bbe9827",
+      "reviewedBy": "/root/rag_lead/knowledge_review",
+      "reviewedAt": "2026-09-21T09:13:05.116Z"
+    }
+  ]
+}

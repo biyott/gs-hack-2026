@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "authority": "QD-008",
+  "scope": "test-input-only",
+  "sourceCases": {
+    "path": "tests/rag-test-cases.json",
+    "sha256": "be54c02a5697048a29b07b425c6dad74773fcaee1ea56447e516217a0568f245"
+  },
+  "limitations": "These are explicit producer test inputs grounded in the original scenario query and reason. They are not proof of production causal facts and are not inferred from expected document IDs, actions, or outcomes.",
+  "bindings": [
+    {
+      "testId": "RAG-002-equipment-direction",
+      "simulationType": "equipment",
+      "sourceQuery": "중장비 방향 변경 안내 갱신 이전 경로 최신 버전",
+      "sourceReason": "방향 변경 문서와 현재 안내 버전 원칙을 함께 검색한다.",
+      "basis": "The original scenario explicitly describes equipment direction changing and a corresponding guidance update; this fixture supplies that described causal input.",
+      "applicability": {
+        "equipmentDirectionChanged": true
+      }
+    },
+    {
+      "testId": "RAG-006-fire-reroute",
+      "simulationType": "fire-gas",
+      "sourceQuery": "화재 기존 이동 경로 변경 통로 제한 안내 버전",
+      "sourceReason": "화재 경로 갱신과 이전 안내 무효화 근거를 검색한다.",
+      "basis": "The original scenario describes fire-related passage restriction changing an existing route and invalidating earlier guidance; this fixture supplies that described causal input.",
+      "applicability": {
+        "fireInvalidatedPreviousRoute": true
+      }
+    }
+  ]
+}

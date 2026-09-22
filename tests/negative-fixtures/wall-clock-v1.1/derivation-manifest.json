@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "1.1.0",
+  "authority": "QR-004",
+  "bindingPath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/clock-binding-v1.1.md",
+  "createdAt": "2026-09-21T10:27:59.538Z",
+  "createdBy": "/root/rag_lead/rag_cases",
+  "sourceCases": {
+    "path": "tests/rag-test-cases.json",
+    "sha256": "be54c02a5697048a29b07b425c6dad74773fcaee1ea56447e516217a0568f245"
+  },
+  "derivedCases": {
+    "path": "tests/rag-test-cases.wall-clock-v1.1.json",
+    "sha256": "51fdc80f0c7e5eb4cd9a16962ef99e7ce2dbf6289575b9d234e608ca9ae665c8"
+  },
+  "approvalLedger": {
+    "path": "data/knowledge/reviews/approvals.json",
+    "sha256": "ef2d2352527620d43d2a8ccd15a0f00bc740b3935dd995360c46382e1f3de00e"
+  },
+  "scenarioVirtualNow": "2026-09-21T09:00:00.000Z",
+  "documentTestNow": "2026-09-21T09:30:00Z",
+  "caseFieldDiffs": [
+    {
+      "testId": "RAG-001-equipment-approach",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-002-equipment-direction",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-003-stairs-forbidden",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-004-preferred-english",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-005-position-interrupted",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-006-fire-reroute",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-007-demo-gas",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-008-shelter-policy-present",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-009-shelter-policy-absent",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-010-other-site-excluded",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-011-no-applicable-evidence",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-012-conflicting-directives",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-013-ineligible-metadata",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-014-common-site-filter",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-015-production-excludes-synthetic",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-016-other-substance-excluded",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-017-designated-refuge-distinct",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-018-profile-unverified",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-019-combined-route-unavailable",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-020-sensor-interrupted",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-021-reopen-authorization",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-022-evacuation-excludes-shelter",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-023-equipment-route-unavailable",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-024-confirm-arrival",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-025-assistance-request",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    },
+    {
+      "testId": "RAG-026-fire-restriction",
+      "field": "context.now",
+      "original": "2026-09-21T09:00:00.000Z",
+      "derived": "2026-09-21T09:30:00Z",
+      "reason": "QR-004 separates virtual scenario09:00 from deterministic document-validity UTC09:30; every other value is identical."
+    }
+  ],
+  "fixtures": [
+    {
+      "documentId": "NEG-COMMON-OTHER-SITE",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-COMMON-OTHER-SITE.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-COMMON-OTHER-SITE.md",
+      "sourceSha256": "215dddbde30a7994d53d18e650f01098fc045d023fa1a0f787df9811a39f7221",
+      "derivedSha256": "215dddbde30a7994d53d18e650f01098fc045d023fa1a0f787df9811a39f7221",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-CONFLICT-MOVE",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-CONFLICT-MOVE.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-CONFLICT-MOVE.md",
+      "sourceSha256": "fe15f0157f50124464321320d0957280145afa27aa5e3ff14bd23d1e1d84c2f4",
+      "derivedSha256": "fe15f0157f50124464321320d0957280145afa27aa5e3ff14bd23d1e1d84c2f4",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-CONFLICT-SHELTER",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-CONFLICT-SHELTER.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-CONFLICT-SHELTER.md",
+      "sourceSha256": "207d83ec299e183fdd227cb3082b69b194dbd6776eaf9388bbc9f80ccd0528b5",
+      "derivedSha256": "207d83ec299e183fdd227cb3082b69b194dbd6776eaf9388bbc9f80ccd0528b5",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-DRAFT",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-DRAFT.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-DRAFT.md",
+      "sourceSha256": "9f58811eca647cc1fb3157377a7b7b32f56a7cd97438298baaa6f2009d95cbd2",
+      "derivedSha256": "9f58811eca647cc1fb3157377a7b7b32f56a7cd97438298baaa6f2009d95cbd2",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-EXPIRED",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-EXPIRED.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-EXPIRED.md",
+      "sourceSha256": "05a1fed86795784ec4094ee258381139aa8490293bc6e86ca047906b41f54916",
+      "derivedSha256": "54295b5e8efea3904558622dd26e5d82501b3c7b12a0d93a43f75396ca220230",
+      "fieldDiffs": [
+        {
+          "field": "expiresAt",
+          "original": "2026-09-21T09:00:00Z",
+          "derived": "2026-09-21T09:30:00Z",
+          "reason": "QR-004 shifts the isolated exact-expiry boundary with document-test UTC by +30 minutes."
+        },
+        {
+          "field": "reviewedContentHash",
+          "original": "0253646412f0c7e8f5c03f313056328fd0074f22c3ac594b46682a2ee60a87f5",
+          "derived": "2da6ed8d8d2053c77c423be5356b3959be8e2c56b08b4b38eb9466074c729c6b",
+          "reason": "Test-only content digest recomputed after the synthetic expiry field changed; no real approval is created."
+        }
+      ]
+    },
+    {
+      "documentId": "NEG-FUTURE",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-FUTURE.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-FUTURE.md",
+      "sourceSha256": "7713681a05f23ba220660fae6cb1645f8639b9a8ea10988801891573c14fc8dd",
+      "derivedSha256": "7713681a05f23ba220660fae6cb1645f8639b9a8ea10988801891573c14fc8dd",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-OTHER-MATERIAL",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-OTHER-MATERIAL.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-OTHER-MATERIAL.md",
+      "sourceSha256": "f391ec24f749acde90b319db22012914be41c8912a3f1a837ee9ed85d095f985",
+      "derivedSha256": "f391ec24f749acde90b319db22012914be41c8912a3f1a837ee9ed85d095f985",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-OTHER-MODE",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-OTHER-MODE.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-OTHER-MODE.md",
+      "sourceSha256": "190d07d55c5d921f1179dd20b3b2ee5980c581efa21a4a56f0225cb589414ec2",
+      "derivedSha256": "190d07d55c5d921f1179dd20b3b2ee5980c581efa21a4a56f0225cb589414ec2",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-OTHER-ROLE",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-OTHER-ROLE.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-OTHER-ROLE.md",
+      "sourceSha256": "ec109623924cf83847f64fe91a17cdecdcd80ed21cf1d13283b2a6a024ab4e9c",
+      "derivedSha256": "ec109623924cf83847f64fe91a17cdecdcd80ed21cf1d13283b2a6a024ab4e9c",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-OTHER-SITE",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-OTHER-SITE.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-OTHER-SITE.md",
+      "sourceSha256": "322d7ab583c4654616e905431822b6bcd3a8d2bd56ace754300a87f7d74cfe81",
+      "derivedSha256": "322d7ab583c4654616e905431822b6bcd3a8d2bd56ace754300a87f7d74cfe81",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-OTHER-ZONE",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-OTHER-ZONE.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-OTHER-ZONE.md",
+      "sourceSha256": "1c00bd2080bac7fa5d98976d6dc8871c000ca5e751b10a7b0fb010686e41ffe0",
+      "derivedSha256": "1c00bd2080bac7fa5d98976d6dc8871c000ca5e751b10a7b0fb010686e41ffe0",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-PRODUCTION-SYNTHETIC",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-PRODUCTION-SYNTHETIC.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-PRODUCTION-SYNTHETIC.md",
+      "sourceSha256": "00d70b31ff7db0fa6d93154080aa69c6e1990fba6e5864631a8482fd0cf6d5bb",
+      "derivedSha256": "00d70b31ff7db0fa6d93154080aa69c6e1990fba6e5864631a8482fd0cf6d5bb",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-PROFILE-RESTRICTED",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-PROFILE-RESTRICTED.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-PROFILE-RESTRICTED.md",
+      "sourceSha256": "b2d955d38bce2819f8e806975377f3114d406fb5e1ca73394e93f250d6b08276",
+      "derivedSha256": "b2d955d38bce2819f8e806975377f3114d406fb5e1ca73394e93f250d6b08276",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-PROMPT-INJECTION",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-PROMPT-INJECTION.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-PROMPT-INJECTION.md",
+      "sourceSha256": "886c38debb4795c30fa1d61d2ad636c7e829b88cd4c436be05a255bcc9791225",
+      "derivedSha256": "886c38debb4795c30fa1d61d2ad636c7e829b88cd4c436be05a255bcc9791225",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-RETIRED",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-RETIRED.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-RETIRED.md",
+      "sourceSha256": "6f403d58993a86258ff78f8831ab4ea1b833c7c2aa47f4ae977906279db4a775",
+      "derivedSha256": "6f403d58993a86258ff78f8831ab4ea1b833c7c2aa47f4ae977906279db4a775",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-UNREVIEWED",
+      "kind": "derived-copy",
+      "sourcePath": "tests/negative-fixtures/NEG-UNREVIEWED.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-UNREVIEWED.md",
+      "sourceSha256": "694bc89fe3a4c913a3e3ef23c160c706ab149e5b37d99803a3948aef5d5679c6",
+      "derivedSha256": "694bc89fe3a4c913a3e3ef23c160c706ab149e5b37d99803a3948aef5d5679c6",
+      "fieldDiffs": []
+    },
+    {
+      "documentId": "NEG-REVIEW-BOUNDARY",
+      "kind": "new-isolated-boundary",
+      "sourcePath": "tests/negative-fixtures/NEG-OTHER-SITE.md",
+      "derivedPath": "tests/negative-fixtures/wall-clock-v1.1/NEG-REVIEW-BOUNDARY.md",
+      "sourceSha256": "322d7ab583c4654616e905431822b6bcd3a8d2bd56ace754300a87f7d74cfe81",
+      "derivedSha256": "c0c876d88fcbae60bbde0242b53a03d16adac92c69c2ced891e58b79dd333adc",
+      "fieldDiffs": [
+        {
+          "field": "documentId/sourceReference/body",
+          "original": "NEG-OTHER-SITE / other-site condition",
+          "derived": "NEG-REVIEW-BOUNDARY / review-time condition",
+          "reason": "Separately named test-only review boundary fixture; it is not an approval ledger record."
+        },
+        {
+          "field": "siteIds",
+          "original": [
+            "SITE-INDUSTRIAL-01"
+          ],
+          "derived": [
+            "SITE-CONSTRUCTION-01"
+          ],
+          "reason": "Keep site applicable to isolate the review boundary."
+        },
+        {
+          "field": "reviewedAt",
+          "original": "2026-09-20T00:00:00Z",
+          "derived": "2026-09-21T09:13:05.116Z",
+          "reason": "Synthetic fixture uses the real ledger time only as an input value for exact and adjacent-millisecond tests; reviewer stays explicitly test-only."
+        },
+        {
+          "field": "reviewedContentHash",
+          "original": "56d0ddbdbece15e4986a348b1dac02289a08b5c97f12ed91c17aa8069387f31d",
+          "derived": "bda5ad0734084c4e247fa7f9862400d168967b9ed6f6b7de14ed4695b5f9f988",
+          "reason": "New isolated fixture digest, not real corpus approval."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Original producer cases and original negative fixtures remain byte-identical.",
+    "NEG-FUTURE effectiveFrom=2027-01-01 is an absolute broad future value, not a relative09:00 boundary; it remains unchanged.",
+    "Original pre-review no_match was observed in tool output but no dedicated raw result file was saved; there is an evidence gap, not a reconstructed prior artifact. New historical reproduction is separately executed.",
+    "This is producer test data. Mock-vector results are not AC07 actual-model or independent G4 acceptance evidence."
+  ],
+  "bindingSha256": "ae85c3dec71024931f885b797c3e296ea0b31c69b603d85a194b32b0f2cebaca"
+}

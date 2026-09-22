@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `request_mode_id_unique` ON `request_receipts` (`mode`,`request_id`);

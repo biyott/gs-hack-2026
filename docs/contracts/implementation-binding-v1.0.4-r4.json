@@ -1,0 +1,900 @@
+{
+  "schemaVersion": "1.0.0",
+  "contractRevision": "1.0.4",
+  "implementationBindingRevision": 4,
+  "kind": "implementation-conformance-correction",
+  "owner": "/root/recovery_boundary_oracle",
+  "delegatedBy": "/root",
+  "defects": [
+    "QD009",
+    "QD010"
+  ],
+  "recordedAt": "2026-09-21T19:26:55.815963Z",
+  "contractSemanticsChanged": false,
+  "sharedSchemasChanged": false,
+  "publicEndpointsChanged": false,
+  "runtimeBehaviorChanged": true,
+  "assetGeometryBehaviorChanged": true,
+  "engineEndpointLawChanged": false,
+  "astEquivalenceClaim": false,
+  "priorFreeze": {
+    "path": "docs/contracts/freeze-v1.0.4.json",
+    "bytes": 4408,
+    "sha256": "15f1456ba821634b76ec2037b7d028e7090a4408af185013f7b19ccb4664e748"
+  },
+  "priorImplementationBinding": {
+    "path": "docs/contracts/implementation-binding-v1.0.4-r3.json",
+    "bytes": 13079,
+    "sha256": "371afc9fa891c57ed0c37ccc7132695bb2e633d9f3f452b8b1123871d67d66e3"
+  },
+  "priorCandidate": {
+    "candidateId": "sha256:cd8a2428d3d9e44703c25b4ae135f0ed5821b6b3b3794bbca6abc1ec37197eba",
+    "manifest": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/candidate-manifest-c4.json",
+      "bytes": 280426,
+      "sha256": "a4ae231987936e6a91cc05ff380eb71a69597c7e689e315dd6e21e7222d0b53d"
+    },
+    "sourceSha256": "e17322b2faf5b5181f6a50bcd5cd4baeae2ca31f57f7bfd1653399b4e9e28efa",
+    "stageRoot": "/home/b/.cache/gs-safety-c4.q2FD40",
+    "writesAllowed": false
+  },
+  "requiredBehavior": [
+    "QD009: Only a newly retained equipment ROUTE_UNAVAILABLE primary removes absent exact current-equipment-namespace hazard IDs. Present inactive equipment and unrelated hazard IDs remain; both production callers supply the current snapshot.",
+    "QD009: Preserve stationary unresolved action, reason, priority, assistance, empty route and destination, current profile/locale binding, immutable first guidance, cumulative history, help request and incident lifecycle; sensor/position/fire/gas/combined cause sets are unchanged.",
+    "QD010: Maeda has five physical pentagonal hollow principal shells, one fixed and four moving. Four quarter-share stages use the approved variable-length articulation array; other equipment entries and assets remain unchanged.",
+    "QD010: Preserve declared origin, units, baseline 10m, 8–10.6m length and 30–75deg boom ranges, 1–4.5m hook range, and endpoint/hook law. Physical topology/profile and authored reconstruction provenance change.",
+    "The matching global MC305C-5 brochure supports five-section pentagonal construction. CE dimensions are separately sourced; individual section dimensions, angles, walls and demo limits remain authored reconstruction values."
+  ],
+  "normativeBasis": [
+    {
+      "path": "docs/contracts/v1.0.1-addendum.md",
+      "bytes": 18220,
+      "sha256": "e77866d606629d6f29317b89cba6adfeeef417fc65c0d1abf0a54baf5faa5c95"
+    },
+    {
+      "path": "packages/contracts/src/articulation.ts",
+      "bytes": 1067,
+      "sha256": "a6362be430eedbb094e95f537ea8445c91650bedbb0df92381554245cb1a4513"
+    },
+    {
+      "path": "packages/contracts/src/catalog.ts",
+      "bytes": 4654,
+      "sha256": "0c2bece72159c7c3e27d78c323587e816ff273a4997b7efb732ea74e696cbd5f"
+    }
+  ],
+  "sourceBindings": [
+    {
+      "path": "src/server/simulation/guidance-recovery.ts",
+      "bytes": 3899,
+      "sha256": "22dbf240bad1dc7539fa4740310536787b01233ff1e204c2f0ead889eb49a116"
+    },
+    {
+      "path": "src/server/simulation/evaluate.ts",
+      "bytes": 7240,
+      "sha256": "e9846de7d57f5dd854acda63dd39d3ad45660f6fea2345797bbffe24baef6e51"
+    },
+    {
+      "path": "src/server/simulation/arrival-intent.ts",
+      "bytes": 7140,
+      "sha256": "881cb0562ad5a73ba1c0cb10fe78ac724845501c689d32239bcf21b6949ff8cd"
+    },
+    {
+      "path": "src/server/simulation/runtime-equipment-guidance-context.integration.test.ts",
+      "bytes": 6725,
+      "sha256": "c4f4d4d7ddac26fd7c8a180b3b2e82f84691bfd50b4235140a61fc2599b5a733"
+    },
+    {
+      "path": "src/server/simulation/equipment-guidance-context.test.ts",
+      "bytes": 5166,
+      "sha256": "a17b17a10c980e47358cbd4714bebb6a0c8b3e22bec244bc6c551dc876580c43"
+    },
+    {
+      "path": "data/equipment/build-catalog.mjs",
+      "bytes": 14624,
+      "sha256": "c2b17854cf65ae60c63e980afa81e7c604a69dd6092d70cbe7a7d68e2132191e"
+    },
+    {
+      "path": "data/equipment/catalog.json",
+      "bytes": 52495,
+      "sha256": "8318e9eb05134bc2c9ed09d90633ec36fbf6c9e80556d4c56a9842c1d81dd6b6"
+    },
+    {
+      "path": "resources/blender/safety-simulator/artifact-manifest.json",
+      "bytes": 21475,
+      "sha256": "8c37f448288ed4712081ff96d323a4388ffba07e68ee34fc604fc5c2312412e0"
+    },
+    {
+      "path": "resources/blender/safety-simulator/HANDOFF.md",
+      "bytes": 4365,
+      "sha256": "b09d0c4c5ca143e07670b78ec93e3661d808ee2efc122c53def1c4f01b972734"
+    },
+    {
+      "path": "public/assets/cranes/maeda-mc305.glb",
+      "bytes": 1062092,
+      "sha256": "37e1e64d7ec86be6e66b94f32f37521a43eef9e9d25dbbd36d5ecbbb7db4dc71"
+    },
+    {
+      "path": "src/components/scene/equipment-rig.test.ts",
+      "bytes": 11574,
+      "sha256": "389682454b8bed0c7a98e8d666de19cfc792a835d12820303647efe97a8443bc"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/README.md",
+      "bytes": 8055,
+      "sha256": "dece3d24de3df00a7158570186e5cfff4a759a12a7a514345392c9020f4c1174"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/build_maeda.py",
+      "bytes": 4042,
+      "sha256": "cb9cea60eb38fbba944a3b5ca109d9ae07490d3699bad961436bc57f65ed2e35"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-carrier-detail.png",
+      "bytes": 1625554,
+      "sha256": "c3d67ca3dda4f233b8adf044f42e70b3df8edb983946679091feb2a54f742417"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-mc305.blend",
+      "bytes": 194501,
+      "sha256": "83c242db2dd53707960a6882d1c7563b746a2c78add215966ba0cdd5815e371f"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-overview.png",
+      "bytes": 1404574,
+      "sha256": "01224bf452dd2e4c8e2066881786b4fc1c6cec0fdb3abbc641c6c9502c9d49da"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-side.png",
+      "bytes": 1291955,
+      "sha256": "218e9c6fb934f8a9b39b9fe2292fe61d2710b06e09e42d4cebaa7e6240498455"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/pentagonal_shell.py",
+      "bytes": 1656,
+      "sha256": "62ef37f8e74456ae35b57d610f93f1e74c8935a45c10c1e9b2cef45c88c3fdaf"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/pose.py",
+      "bytes": 2533,
+      "sha256": "c72c257df3ec2c5582aa08d63fae2ad18d18a171f5d5d8efd2f7f1883aa3f80d"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/rig-catalog.json",
+      "bytes": 2547,
+      "sha256": "9f0da8bfc982842df17bce56ff93d903ea2bc486511f3bc1c27881ff052cb2c4"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/rig-contract.json",
+      "bytes": 2922,
+      "sha256": "433eb172abedcb2a7472136b9ceed1744b3fe968c6db587a59b224451cdda390"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/rig_builder.py",
+      "bytes": 4060,
+      "sha256": "00819ce33fa116ac6148a197c9baa414c56d04580301be19a93227e0d73bef5c"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/run_qd010.py",
+      "bytes": 4949,
+      "sha256": "bac8e91c6b1f4ed75ee557dc8751e209c07eee141b93c796af05dc59eb95ed81"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/shell_topology.py",
+      "bytes": 3690,
+      "sha256": "71bcc71737d92c6f00c992b7e3c77e43f20eeef6ce3e13159cbcd898865c8f5c"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verification.json",
+      "bytes": 8741,
+      "sha256": "c648074abbfe2c828b5f8e1a40a522b6f2a2f9fbe7b26d1e3b81664c73840e04"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_maeda.py",
+      "bytes": 5970,
+      "sha256": "f21779d0714b8b548d1c7a12c5f5076d54f3672a719a3e0e884328b259fbb487"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_rig.py",
+      "bytes": 4411,
+      "sha256": "0f9a6c8fac8368fa205b02897fd36a74baf553898c19480fbb38eca7a03491bf"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_shapes.py",
+      "bytes": 5171,
+      "sha256": "6653766df00fdc05328030aed2629ed1cc5aabd4b5e68c09a3c40257be784cd4"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_static_geometry.py",
+      "bytes": 2300,
+      "sha256": "7dc8b2048dff8d2dfc7bd5ded59c1f4cb76d65f754e40ac48a3f065d924a5499"
+    }
+  ],
+  "priorSourceBindings": [
+    {
+      "path": "src/server/simulation/guidance-recovery.ts",
+      "prior": {
+        "path": "src/server/simulation/guidance-recovery.ts",
+        "bytes": 3424,
+        "sha256": "45a522dd42c20db521443e11a0ce851f67f2d6d079b079e3250599111392a784"
+      }
+    },
+    {
+      "path": "src/server/simulation/evaluate.ts",
+      "prior": {
+        "path": "src/server/simulation/evaluate.ts",
+        "bytes": 7230,
+        "sha256": "233d0f0f817869a5c532aef1a5b8fe731bd63ef7eec726b772d950e9a5d5c602"
+      }
+    },
+    {
+      "path": "src/server/simulation/arrival-intent.ts",
+      "prior": {
+        "path": "src/server/simulation/arrival-intent.ts",
+        "bytes": 7124,
+        "sha256": "191f29187f31f77de42432b6925997cd496571700eba9e0e78f23dfaf9d524c0"
+      }
+    },
+    {
+      "path": "src/server/simulation/runtime-equipment-guidance-context.integration.test.ts",
+      "prior": null
+    },
+    {
+      "path": "src/server/simulation/equipment-guidance-context.test.ts",
+      "prior": null
+    },
+    {
+      "path": "data/equipment/build-catalog.mjs",
+      "prior": {
+        "path": "data/equipment/build-catalog.mjs",
+        "bytes": 13902,
+        "sha256": "30d877e0178a616e7dbb0eb4cd2c048cddae53253559aba83ba3c24bdf3a08c4"
+      }
+    },
+    {
+      "path": "data/equipment/catalog.json",
+      "prior": {
+        "path": "data/equipment/catalog.json",
+        "bytes": 51368,
+        "sha256": "3a0cdc1ab07bd993028fac9c462c34e3d7812b8baf4447c9ad34a40db6c7758b"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/artifact-manifest.json",
+      "prior": {
+        "path": "resources/blender/safety-simulator/artifact-manifest.json",
+        "bytes": 17631,
+        "sha256": "51c6adfd6e5190a11b8bc04300a45634b2486ebda64f58a7affd444027c321de"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/HANDOFF.md",
+      "prior": {
+        "path": "resources/blender/safety-simulator/HANDOFF.md",
+        "bytes": 2805,
+        "sha256": "c2c6ee13c79697be127ae65bf643ce0058ecc1d64f43f35ee3dd0a7f9a4bec3b"
+      }
+    },
+    {
+      "path": "public/assets/cranes/maeda-mc305.glb",
+      "prior": {
+        "path": "public/assets/cranes/maeda-mc305.glb",
+        "bytes": 1081424,
+        "sha256": "eb3d7746ad92d2905c494027bd77b84bc35f302fc677bbcc695e4b15c4af7a59"
+      }
+    },
+    {
+      "path": "src/components/scene/equipment-rig.test.ts",
+      "prior": {
+        "path": "src/components/scene/equipment-rig.test.ts",
+        "bytes": 8537,
+        "sha256": "37fe3134fc76dabfec40d8be12eb34403efd7827c2bcb5b49faba995cfb75d0d"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/README.md",
+      "prior": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/README.md",
+        "bytes": 6583,
+        "sha256": "3d434b5bc9242f91be76a9d08961002603b3112658ab58cbaa0ac0e6ac792fc3"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/build_maeda.py",
+      "prior": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/build_maeda.py",
+        "bytes": 3907,
+        "sha256": "5dbb6f04c2cecaf0fc0c45666714f92ed0bae26ffc5e8d73eb93821952553aec"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-carrier-detail.png",
+      "prior": null
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-mc305.blend",
+      "prior": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-mc305.blend",
+        "bytes": 204100,
+        "sha256": "cba8dafae9d037952ff689bf21e78370f77164e24455fe59272026bde91da61d"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-overview.png",
+      "prior": null
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/maeda-side.png",
+      "prior": null
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/pentagonal_shell.py",
+      "prior": null
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/pose.py",
+      "prior": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/pose.py",
+        "bytes": 2527,
+        "sha256": "17192b59c6598f58d95b083b928f33d3287148f92814bb8a7a96de96fbdbd2c2"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/rig-catalog.json",
+      "prior": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/rig-catalog.json",
+        "bytes": 2333,
+        "sha256": "e262ee88d787c01f620763a3c40a4570cb1d99893a31b5d7b2924b6754d2ffbb"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/rig-contract.json",
+      "prior": null
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/rig_builder.py",
+      "prior": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/rig_builder.py",
+        "bytes": 3955,
+        "sha256": "fba68a118f9b98ababa60412ee912ed3a9216fa2c877da19ae63b4a86d2db925"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/run_qd010.py",
+      "prior": null
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/shell_topology.py",
+      "prior": null
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verification.json",
+      "prior": null
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_maeda.py",
+      "prior": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_maeda.py",
+        "bytes": 5103,
+        "sha256": "d48b1ea6076b6c6f9679d675740b9305bad2368dcc64b4906b23812075103932"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_rig.py",
+      "prior": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_rig.py",
+        "bytes": 4367,
+        "sha256": "31520c098cb6b68aff973f9ef1a65fdadd32b2bf50da23ca8de2b74592c3bc4a"
+      }
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_shapes.py",
+      "prior": null
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/verify_static_geometry.py",
+      "prior": null
+    }
+  ],
+  "additionalExactEvidenceBindings": [
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/PLAN.md",
+      "bytes": 2049,
+      "sha256": "f8078f2103d20cb161095eaa43bbd0c429992cf4ba3f8e771fc68d7c97d5eb0d"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/README.md",
+      "bytes": 6458,
+      "sha256": "9c3d247d546ae274cdeb215db2775ef81ea2cf947ecc7a89cb23c6d0b9bef5ce"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/data/equipment/build-catalog.mjs",
+      "bytes": 13902,
+      "sha256": "30d877e0178a616e7dbb0eb4cd2c048cddae53253559aba83ba3c24bdf3a08c4"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/data/equipment/catalog.json",
+      "bytes": 51368,
+      "sha256": "3a0cdc1ab07bd993028fac9c462c34e3d7812b8baf4447c9ad34a40db6c7758b"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/public/assets/cranes/maeda-mc305.glb",
+      "bytes": 1081424,
+      "sha256": "eb3d7746ad92d2905c494027bd77b84bc35f302fc677bbcc695e4b15c4af7a59"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/HANDOFF.md",
+      "bytes": 2805,
+      "sha256": "c2c6ee13c79697be127ae65bf643ce0058ecc1d64f43f35ee3dd0a7f9a4bec3b"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/artifact-manifest.json",
+      "bytes": 17631,
+      "sha256": "51c6adfd6e5190a11b8bc04300a45634b2486ebda64f58a7affd444027c321de"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/README.md",
+      "bytes": 6583,
+      "sha256": "3d434b5bc9242f91be76a9d08961002603b3112658ab58cbaa0ac0e6ac792fc3"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/build_maeda.py",
+      "bytes": 3907,
+      "sha256": "5dbb6f04c2cecaf0fc0c45666714f92ed0bae26ffc5e8d73eb93821952553aec"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/geometry.py",
+      "bytes": 4873,
+      "sha256": "ccfd1ed87181b0850bdfff47b414be09a8aae950a915c2f9dee6b309f1ed1d74"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/maeda-carrier-detail.png",
+      "bytes": 1636181,
+      "sha256": "16d400e3de31139f9a8043a15947b8f07081336431e498e807c9edd8d47ebeff"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/maeda-mc305.blend",
+      "bytes": 204100,
+      "sha256": "cba8dafae9d037952ff689bf21e78370f77164e24455fe59272026bde91da61d"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/maeda-overview.png",
+      "bytes": 1425062,
+      "sha256": "f3fc9266ab1502efa91554ceecf91f34db7db55afcadd9b9ea5bef244c53403e"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/maeda-side.png",
+      "bytes": 1326497,
+      "sha256": "a82a8eaa31dc8d001cc8856ac1af1694e0eb025d10cd6b144c0379fa986d6096"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/pose.py",
+      "bytes": 2527,
+      "sha256": "17192b59c6598f58d95b083b928f33d3287148f92814bb8a7a96de96fbdbd2c2"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/render_endpoints.py",
+      "bytes": 4035,
+      "sha256": "c85c9a781676d53c8ce3af9e76ee76de82c418cb776d9d68003f5d54c9a34a2e"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/rig-catalog.json",
+      "bytes": 2333,
+      "sha256": "e262ee88d787c01f620763a3c40a4570cb1d99893a31b5d7b2924b6754d2ffbb"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/rig-contract.json",
+      "bytes": 2389,
+      "sha256": "86f804ce48ab8019ddd553eb24b72a9d1c5a3728a6d1046c800c25b5315217db"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/rig_builder.py",
+      "bytes": 3955,
+      "sha256": "fba68a118f9b98ababa60412ee912ed3a9216fa2c877da19ae63b4a86d2db925"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/studio.py",
+      "bytes": 2196,
+      "sha256": "fa977b77cfeb1554b3e691d1a7b298b5373c779ff0cd4e3181e81b0dd7bd34fc"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/superstructure.py",
+      "bytes": 2819,
+      "sha256": "3f477ab40d407aedc772950b417e7da81a5a797d6d112051e608dc4865fcdc5b"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/undercarriage.py",
+      "bytes": 4281,
+      "sha256": "04372dc0b588a9c34623ce45d38519de72268a43e78d7ef53c5c3716019fa508"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/verification.json",
+      "bytes": 5123,
+      "sha256": "8fe1f41f8113aabdbf8575ddd9aa2e6fb52595fe743c6bde788b015b7e6cb644"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/verify_maeda.py",
+      "bytes": 5103,
+      "sha256": "d48b1ea6076b6c6f9679d675740b9305bad2368dcc64b4906b23812075103932"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/before/resources/blender/safety-simulator/maeda-site/maeda/verify_rig.py",
+      "bytes": 4367,
+      "sha256": "31520c098cb6b68aff973f9ef1a65fdadd32b2bf50da23ca8de2b74592c3bc4a"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/binding-check.log",
+      "bytes": 5047,
+      "sha256": "acbc1d321ca5ae024eed866c9b02ce3ffa7902d64573309dd0f5399ecb392cdd"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/catalog-and-unaffected-proof.json",
+      "bytes": 6212,
+      "sha256": "a27ee4de8897f8238230864b232ba135aae9c714904f37f8c7142e84979ab6b4"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/corrected-static-geometry.json",
+      "bytes": 299778,
+      "sha256": "377a6ac6dc3242a5a5c112ca1d7191a50a3b6815b5cbe7ccc2f088e1eb7d5b3f"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/engine-exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/engine.log",
+      "bytes": 205,
+      "sha256": "d1ed653054dbefd8e36163c465a02a77595ab38634c9dee598e90a533ac4d774"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/equipment-rig.format-image.ts.txt",
+      "bytes": 11574,
+      "sha256": "389682454b8bed0c7a98e8d666de19cfc792a835d12820303647efe97a8443bc"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/execution-receipt.json",
+      "bytes": 3244,
+      "sha256": "c1bb974c711093558af9079a0e8b22b280cb665f8ceb06cabbb18db5a978c43f"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/format-equivalence.json",
+      "bytes": 1694,
+      "sha256": "ff0bf6cea129c6174759e40541ec0d1f438de6ef86cc3259e0befc9232febf97"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/format-image.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/imported-conformance.json",
+      "bytes": 1078,
+      "sha256": "3cb72901d24e9ebe451d8feec58520649f4650e925d77a84c12a2c63fb8c8371"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/inventory.mjs",
+      "bytes": 2527,
+      "sha256": "1fd3d04f9139f3b236625413c7658acf9c47f679e712de1a9ce9eb1a1e488fcf"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/make-source-ready.mjs",
+      "bytes": 4677,
+      "sha256": "d0c50a7a5ba02259ea2339eedcf42ee8368b605b202b107ffde6f0a208b657b6"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/native-process-end.json",
+      "bytes": 102,
+      "sha256": "c7171607a1044c8c1349073b47a4142996cf37438024d46d9b73258f9e5a701a"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/old-source-red.json",
+      "bytes": 1342,
+      "sha256": "7140e17b7213e73baf3c6bebe06455a00cdfae3327d97ed1423062fd5dc13fe8"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/old-static-geometry.json",
+      "bytes": 299778,
+      "sha256": "377a6ac6dc3242a5a5c112ca1d7191a50a3b6815b5cbe7ccc2f088e1eb7d5b3f"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/producer-end-utc.txt",
+      "bytes": 21,
+      "sha256": "6fabba23647ea24df40356356a819bd6655f96b9135ac925978a4c1bce1b5987"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/producer-exit-code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/producer-start-utc.txt",
+      "bytes": 21,
+      "sha256": "04291338c8489a518a3f9b136f728b966212cf9dd4952a593914af2906f24c32"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/producer.log",
+      "bytes": 18322,
+      "sha256": "a665c6db216b69ebced4f20d926d4e00d11ff43af5e84277ed06c58c27d31469"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/prove-format-equivalence.mjs",
+      "bytes": 3033,
+      "sha256": "5dff590f356a889a1c81c88fc179d04f10099f4c71ef557e122822a7a2710cae"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/publish-manifest.mjs",
+      "bytes": 4841,
+      "sha256": "fe0e894c48c733617509201324f99bf7dc077147eab09464d4b140fbfa3d7a2c"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/run-producer.sh",
+      "bytes": 777,
+      "sha256": "4ecd017939d4f166adaffc2c71966a60f195a2252772bb757f92bd86d53aaf0f"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/source-conformance.json",
+      "bytes": 1078,
+      "sha256": "3cb72901d24e9ebe451d8feec58520649f4650e925d77a84c12a2c63fb8c8371"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/static-preservation.json",
+      "bytes": 322,
+      "sha256": "a25a864a355b1c48b5222c977b73be0639dd4c40fe5e571ef5e2dfb07e96a742"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/verification.json",
+      "bytes": 8741,
+      "sha256": "c648074abbfe2c828b5f8e1a40a522b6f2a2f9fbe7b26d1e3b81664c73840e04"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/verify-bindings.mjs",
+      "bytes": 3405,
+      "sha256": "40dd60b75ff788d0a16bd1b00b2d96b9b473f8655fa4374313c4099372940bbe"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/asset-review/qd010/README.md",
+      "bytes": 7887,
+      "sha256": "cfded196ccd353ee9f8bf468653f8a632492dcb4611c8e29216cc87f1a5defe9"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/asset-review/qd010/corrected-geometry-receipt.json",
+      "bytes": 52375,
+      "sha256": "552ead70646871d90318a5c50dfbf13958dbae7ccc70655a67081e569d5c01fd"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/asset-review/qd010/glb-reader.mjs",
+      "bytes": 4966,
+      "sha256": "79b9349375a9fd28e53b43d37eefe0b02dd49581bcb5b3e56c454af5d39667ff"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/asset-review/qd010/inspect-qd010.mjs",
+      "bytes": 10806,
+      "sha256": "2dde0f2c8dedd7be5b232669a43d86ded236edf0362fe32d422ab242ce45cff8"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/asset-review/qd010/shell-geometry.mjs",
+      "bytes": 3667,
+      "sha256": "75a02a02d0c70cda48a4ec2a7ae94126abc0813390db193fd5183644c6bb1b51"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/maeda-qd010/equipment-rig.test.before-format.ts",
+      "bytes": 11185,
+      "sha256": "0e2818041079c5f55e42416d5cd5b5c721a25d5f0e7cfde9cc55978a0c0af7f9"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/maeda-qd010/format-check.log",
+      "bytes": 42,
+      "sha256": "c09468b79a681cf7262b33a862d3dd6dddd4214940d467e089f475ab3f26ca5d"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/maeda-qd010/format-equivalence-failed.log",
+      "bytes": 678,
+      "sha256": "e39e4280315b636ddca612b8978b6a19a15d7f2713e5a3abd6b6068f57991bd4"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/maeda-qd010/format.log",
+      "bytes": 39,
+      "sha256": "78a7b7841fcf3ae76b271395cca2c122ee1c9682ae2088c11a6bcf53697f71b0"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/maeda-qd010/green.log",
+      "bytes": 193,
+      "sha256": "f3090a82f72eb94344fe36bd55437dec299c633c3960c51bfa7efd8ce69cca75"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/maeda-qd010/receipt.md",
+      "bytes": 8298,
+      "sha256": "376996a001c68a4c9e8515a8c032f3853ae663b23e2ffa299b17d854c6fd8c3e"
+    },
+    {
+      "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/maeda-qd010/red.log",
+      "bytes": 13508,
+      "sha256": "afde3405576bcd510ea68c4d4ec1a224bf4e12aae3ff50f1efe5316c1df4167e"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/source-ready.json",
+      "bytes": 17956,
+      "sha256": "1342aa16e8a5e4204cbc5d35cfa83cc1fe186312655f6ce01a4d5d2339c3dc71"
+    },
+    {
+      "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/changed-files.json",
+      "bytes": 24182,
+      "sha256": "d8885d4886fea74fdbd404c37239630aec37db2f4fa576edf33d5755eaaae52f"
+    }
+  ],
+  "ownerReceipts": [
+    {
+      "owner": "Backend",
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/C5-source-ready.json",
+        "bytes": 9360,
+        "sha256": "db839c15c8b88b45476437ee6a22f40f1a464c7a52a7b278332ff1faefa802d3"
+      },
+      "packagedPath": "runtime-artifacts/c5-validation/qd009-backend-source-ready.json"
+    },
+    {
+      "owner": "Design",
+      "repository": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/source-ready.json",
+        "bytes": 17956,
+        "sha256": "1342aa16e8a5e4204cbc5d35cfa83cc1fe186312655f6ce01a4d5d2339c3dc71"
+      },
+      "packagedPath": "runtime-artifacts/c5-validation/qd010-design-source-ready.json"
+    }
+  ],
+  "qaFailureLineage": [
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/QD009-current-guidance-removed-risk.json",
+      "bytes": 9722,
+      "sha256": "609e34d61bf98934dbbdcffcd2cde5d968e3a2b9818dab40295d81f57f85c45e"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/QD009-directed-scope-concurrence-v1.json",
+      "bytes": 2517,
+      "sha256": "7fe3b5e6870ba4b1c1d77ad1935eb8044fe1a8962b2dd70361ad1aa91f88950f"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/QD010-maeda-boom-section-count.json",
+      "bytes": 5901,
+      "sha256": "5d62072b426766337ca981878539462bfa306a3dc48124d42607e415506fe628"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/QD010-maeda-profile-addendum-v1.json",
+      "bytes": 3114,
+      "sha256": "5b5bd9521210ab62f8593a8faa26a4512a0897872359387d529df3f9dc0a8202"
+    }
+  ],
+  "boundaryVerification": {
+    "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/technical/c5-final-owner-boundary.json",
+    "bytes": 902,
+    "sha256": "820a3377a00a26855e85eca0cc0f1e581cd6f6d6030275a154d9c54db74ae317"
+  },
+  "rootIntegrity": [
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c5-backend-source-integrity-01.json",
+      "bytes": 10043,
+      "sha256": "70484a0d65aa0befe832bbd64ed42c8bd045943894503a953ec9b997827c3bda"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c5-design-source-integrity-01.json",
+      "bytes": 30580,
+      "sha256": "7b485a19e9c4c495e936e9b8bf0d5b6669aeece80a9aae34e31006a7d637e0db"
+    }
+  ],
+  "correctionHistory": {
+    "backend": [
+      {
+        "id": "QD009-D1",
+        "familyAlias": "IO007-D2",
+        "result": "Initial RED5/9; focused14PASS but affected84/86 due missed arrival caller; preserved"
+      },
+      {
+        "id": "QD009-D2",
+        "familyAlias": "IO007-D3",
+        "result": "Existing snapshot argument added to second caller; affected86/86PASS"
+      }
+    ],
+    "priorCountersPreserved": "IO007 automatic2 and prior IO007-D1, all QD004/IO009/QD003 records unchanged; no automatic allowance reset",
+    "designAutomaticCorrection": 1,
+    "designMaximumAutomaticCorrections": 2,
+    "designReservationIncident": {
+      "expiredGrant": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/qa/g4/candidate-cd8a2428/qd010-design-static-grant-02.json",
+        "bytes": 1106,
+        "sha256": "e7db6332e9ec9b1ca6489ceaa9247996f37e43ce42dbba82143bfa1120988f3d"
+      },
+      "authorizedStart": "2026-09-21T19:07:43.491Z",
+      "authorizedEnd": "2026-09-21T19:09:13.491Z",
+      "firstExecutionClockRead": "2026-09-21T19:09:26Z",
+      "reportedExecutionRelease": "2026-09-21T19:09:28Z",
+      "classification": "QA retained STATIC02 as a reservation breach/failure, with no retroactive authorization. Formatting/check exited zero; the legacy TypeScript API comparison failed before comparing.",
+      "disposition": "The separately granted pinned-Biome formatter-image proof supplies the exact current-source binding. It does not erase the scheduling breach, claim an AST proof, or repeat runtime tests."
+    }
+  },
+  "producerVerification": {
+    "backend": {
+      "red": {
+        "failed": 5,
+        "passed": 9
+      },
+      "firstAffected": {
+        "failed": 2,
+        "passed": 84
+      },
+      "finalBehavioral": {
+        "failed": 0,
+        "passed": 86,
+        "endedAt": "2026-09-21T18:50:50.091Z",
+        "qualification": "Before exact test-only [...history] matcher copy; no runtime repetition claimed."
+      },
+      "finalStatic": {
+        "biome": "PASS exact5files no fixes",
+        "typecheck": "PASS workspace --noEmit --incremental false",
+        "endedAt": "2026-09-21T18:53:06.555Z"
+      },
+      "independentReview": {
+        "verdict": "CLEAR scoped code/evidence review",
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/runtime/QD009/independent-review.md",
+        "sha256": "68c3a47f714614996b9492c16f69319e2f49489d1cef072a2cb1f3d6a8c20cbd"
+      },
+      "resourceReleasedAt": "2026-09-21T18:53:06.555Z"
+    },
+    "design": {
+      "sourceMotionPoses": 24,
+      "importedMotionPoses": 24,
+      "actualLoaderPassed": 88,
+      "engineMaedaPassed": 17,
+      "independentGeometryChecksPassed": 14,
+      "otherCatalogEntriesUnchanged": 5,
+      "otherCraneSiteArtifactsUnchanged": 12,
+      "legacyFilesUnchanged": 9
+    },
+    "formattingTransition": {
+      "startedAt": "2026-09-21T19:23:15.811Z",
+      "endedAt": "2026-09-21T19:23:15.867Z",
+      "resourceGrant": "QD010-ROOT-STATIC-03",
+      "authorization": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/qd010-static-grant-03.json",
+        "sha256": "51079a133ab882d93b79cd7b756829f1de3e07c4e735932bc1e56a099c4ad0de",
+        "issuedBy": "/root",
+        "grantedAt": "2026-09-21T19:22:39.730Z",
+        "expiresAt": "2026-09-21T19:25:39.730Z"
+      },
+      "method": "Pinned Biome format of preserved tested bytes through stdin; exact output byte comparison with current source. This is formatter-image equivalence, not an independent AST proof or a new test run.",
+      "tool": {
+        "package": "@biomejs/biome",
+        "version": "2.5.14",
+        "packageManifestSha256": "83fb6cda5f9630a9eb31a5f12da337bacc5ab7c0de1860a2338f55cda4e0c1c9"
+      },
+      "command": [
+        "/home/b/.local/share/gs-safety-runtime/node-v22.23.2-linux-x64/bin/node",
+        "node_modules/@biomejs/biome/bin/biome",
+        "format",
+        "--stdin-file-path=src/components/scene/equipment-rig.test.ts"
+      ],
+      "preserved": {
+        "path": ".omo/teams/team-08d29e60/artifacts/scene-rig/maeda-qd010/equipment-rig.test.before-format.ts",
+        "sha256": "0e2818041079c5f55e42416d5cd5b5c721a25d5f0e7cfde9cc55978a0c0af7f9"
+      },
+      "current": {
+        "path": "src/components/scene/equipment-rig.test.ts",
+        "sha256": "389682454b8bed0c7a98e8d666de19cfc792a835d12820303647efe97a8443bc"
+      },
+      "formatterImage": {
+        "path": "resources/blender/safety-simulator/maeda-site/maeda/qd010-correction-01/equipment-rig.format-image.ts.txt",
+        "sha256": "389682454b8bed0c7a98e8d666de19cfc792a835d12820303647efe97a8443bc"
+      },
+      "exactMatch": true
+    },
+    "qualification": "Backend86 behavior precedes the explicit test-only readonly-array matcher container copy; exact-final statics follow. Design88 loader and17 engine behavior precede the formatter-only delta; pinned Biome2.5.14 formatter-image equality binds final test bytes without an AST or new runtime claim. These producer results do not establish combined-candidate acceptance."
+  },
+  "assemblyRequirements": [
+    "New isolated C5 stage and fresh web build under a separate bounded QA resource grant.",
+    "Exact C4 source table plus enumerated Backend/Design deltas, their exact correction evidence, and this r4; no unreviewed source delta or removal.",
+    "Reuse only exact unchanged Mobile4/model/provenance artifact rows; no prior .next output or prior acceptance transfer.",
+    "Preserve prior candidate, manifests, all failed evidence and correction counters unchanged.",
+    "Generate a new source/build binding, candidate manifest, content/delta audit and external current-candidate index. Stable runbook may retain historical wording."
+  ],
+  "candidateId": null,
+  "acceptance": "NOT_ISSUED"
+}

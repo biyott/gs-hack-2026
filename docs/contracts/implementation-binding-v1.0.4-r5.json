@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.0.0",
+  "contractRevision": "1.0.4",
+  "implementationBindingRevision": 5,
+  "kind": "implementation-conformance-correction",
+  "owner": "/root/integration_resume",
+  "delegatedBy": "/root",
+  "recordedAt": "2026-09-21T23:57:28.696Z",
+  "defects": [
+    "QD011",
+    "QD012",
+    "QD013"
+  ],
+  "contractSemanticsChanged": false,
+  "sharedSchemasChanged": false,
+  "publicEndpointsChanged": false,
+  "engineBehaviorChanged": false,
+  "uiLayoutBehaviorChanged": true,
+  "runtimeBehaviorChanged": true,
+  "assetGeometryBehaviorChanged": false,
+  "astEquivalenceClaim": false,
+  "goalChange": "목표 변경 없음",
+  "criteriaChanged": false,
+  "priorFreeze": {
+    "path": "docs/contracts/freeze-v1.0.4.json",
+    "bytes": 4408,
+    "sha256": "15f1456ba821634b76ec2037b7d028e7090a4408af185013f7b19ccb4664e748"
+  },
+  "priorImplementationBinding": {
+    "path": "docs/contracts/implementation-binding-v1.0.4-r4.json",
+    "bytes": 39401,
+    "sha256": "e2ae8f14061a8d7f96a2e1d8e2cee0e982abf49a064b05771d59fe0b22af4b39"
+  },
+  "priorCandidate": {
+    "candidateId": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+    "manifest": {
+      "path": "runtime-artifacts/candidate-manifest-c5.json",
+      "bytes": 343553,
+      "sha256": "76afd9b2eb72dde296feecf477405af8e1aea1c4bcb92dac474ea2d0748c9379"
+    },
+    "sourceSha256": "a9522ae4668f3909993662feb06b17ee406e35a3f4887a00a0db989aac50048a",
+    "stageRoot": "/home/b/.cache/gs-safety-c5.H4mElI",
+    "writesAllowed": false
+  },
+  "requiredBehavior": [
+    "QD011 restores frozen44px target minimum in viewbuttons/rangeprimitive/workerannotation hitboxes; annotation placement dimensions and bounded dense packing preserve priority, anchor coordinates and nonoverlap.",
+    "QD012 displays complete selected server-catalog Korean scenario name in a wrapping companion; existing selection/data/state remain.",
+    "QD013 makes existing pending new-risk incident identity visible in notice while preserving pinned camera selection and existing action.",
+    "Public API/schemas, server engine/DB, mobile APK, models, asset topology and source criteria remain unchanged."
+  ],
+  "normativeBasis": [
+    {
+      "path": "DESIGN.md",
+      "bytes": 15554,
+      "sha256": "ad34164bb0eec7c9d75f7d11b177ec430cf8a39749aaca60534a650507a55e4a"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/ui-device/ac10-11-15-concurrent-incidents-amendment-v1.1.md",
+      "bytes": 9684,
+      "sha256": "62d0e0c895f7ce48ff2d87c5080f31ddf88ce78941044b22dbe5810f93eeeef6"
+    }
+  ],
+  "sourceBindings": [
+    {
+      "path": "app/console.css",
+      "bytes": 37403,
+      "sha256": "908042f159b9d1341289162a9c49d848c319f37c4f6e31c71811e653cabfb215"
+    },
+    {
+      "path": "app/globals.css",
+      "bytes": 9094,
+      "sha256": "1a3a1e35daf8a533b7c60382ef73b7f21e125ec397aab9f67635fe6cddbbc7db"
+    },
+    {
+      "path": "src/components/console/scenario-rail.tsx",
+      "bytes": 8401,
+      "sha256": "2d9b55bdf2f3008d98edf8591051e0313bad6247bac8fec2e541b947313938cf"
+    },
+    {
+      "path": "src/components/scene/SiteStage.tsx",
+      "bytes": 7416,
+      "sha256": "e157c6390273d1b13d4beb3ea0918c0fce8f605bbc8926f2b4c5a8686f6ce7be"
+    },
+    {
+      "path": "src/components/scene/annotation-layout.test.ts",
+      "bytes": 6174,
+      "sha256": "a67182c1e7dafcc2743d4e8db28a57e38afd495e2fafc2bf9121a19659a4336f"
+    },
+    {
+      "path": "src/components/scene/annotation-layout.ts",
+      "bytes": 6530,
+      "sha256": "1bc67c8bca87f44fdc9af0171611b49de5dd1e4568af3f0a06b6acc64140c8a5"
+    }
+  ],
+  "priorSourceBindings": [
+    {
+      "path": "app/console.css",
+      "prior": {
+        "path": "app/console.css",
+        "bytes": 37151,
+        "sha256": "2bb39006ab7bfeccadb1e6ff6a11b933d87687301cf29e917d744b384025c9de"
+      }
+    },
+    {
+      "path": "app/globals.css",
+      "prior": {
+        "path": "app/globals.css",
+        "bytes": 9114,
+        "sha256": "3aff9ef817c2bad2e392cb3f27dff43ba4830cc56cbb54177ddfb75a7e00f727"
+      }
+    },
+    {
+      "path": "src/components/console/scenario-rail.tsx",
+      "prior": {
+        "path": "src/components/console/scenario-rail.tsx",
+        "bytes": 8228,
+        "sha256": "0fb233511277d9bcfe82b761ea86e0ea39815bb291db973f14aefb6723ed2a40"
+      }
+    },
+    {
+      "path": "src/components/scene/SiteStage.tsx",
+      "prior": {
+        "path": "src/components/scene/SiteStage.tsx",
+        "bytes": 7327,
+        "sha256": "0cd8da1d09591dd7d27b637455f59e7d1df1c73854f83f7104e3d19f2b9fe739"
+      }
+    },
+    {
+      "path": "src/components/scene/annotation-layout.test.ts",
+      "prior": {
+        "path": "src/components/scene/annotation-layout.test.ts",
+        "bytes": 3974,
+        "sha256": "0d3f86d8c81ec589bb1e9530a6e9843d057eae00f14c6643a3c1b8d0a8e6563e"
+      }
+    },
+    {
+      "path": "src/components/scene/annotation-layout.ts",
+      "prior": {
+        "path": "src/components/scene/annotation-layout.ts",
+        "bytes": 5548,
+        "sha256": "3df0650505cf7fe133a20db7327e6682c4e9d67fc299f1b784f8dca1c1248a19"
+      }
+    }
+  ],
+  "additionalExactEvidenceBindings": [
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/new-risk-identity-correction-01/before.sha256",
+      "bytes": 259,
+      "sha256": "762ca88d9bef9e0db4c5075dda904f4d4b26edd9e910e7e8512caeb3848beb55"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/new-risk-identity-correction-01/before/app/console.css",
+      "bytes": 37284,
+      "sha256": "91198233cbca980e24f449267076912a60912a8017bff5e98cd45c67a0509500"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/new-risk-identity-correction-01/before/src/components/scene/SiteStage.tsx",
+      "bytes": 7327,
+      "sha256": "0cd8da1d09591dd7d27b637455f59e7d1df1c73854f83f7104e3d19f2b9fe739"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/new-risk-identity-correction-01/correction.diff",
+      "bytes": 1079,
+      "sha256": "894dd97fa05d73d431f24624f4a5d1eeb65e351a5d5ef8acde19f40e6579f489"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/new-risk-identity-correction-01/source-ready-reference.txt",
+      "bytes": 190,
+      "sha256": "d1e68196318f0756bd8577a93d671c41b7e802a8d564e00c60f7fbf0a2c29655"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/new-risk-identity-correction-01/started-at.txt",
+      "bytes": 21,
+      "sha256": "b1033ba1974b4c5310999176a94c0333e501b210a5baad43a546a5fb75124a1c"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01/before.sha256",
+      "bytes": 265,
+      "sha256": "d7386fc5925f28eb7157bf15abb4f17751cd14e213584816a7b0c482aa5a2909"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01/before/app/console.css",
+      "bytes": 37206,
+      "sha256": "1f3708b7a447328cc8d06eec99f7e5fff5ad045df8d91187638e5a60a3ffd33b"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01/before/src/components/console/scenario-rail.tsx",
+      "bytes": 8228,
+      "sha256": "0fb233511277d9bcfe82b761ea86e0ea39815bb291db973f14aefb6723ed2a40"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01/biome.txt",
+      "bytes": 8481,
+      "sha256": "d17f51839dd485edf166ae0337e2746ddc38a466b5e28d2df3aef18e95ced54c"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01/correction.diff",
+      "bytes": 1192,
+      "sha256": "868155146f6a59cb45681921c600efbd87f50cdaa1a98f17973918a907eb34ab"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01/source-ready-reference.txt",
+      "bytes": 190,
+      "sha256": "d1e68196318f0756bd8577a93d671c41b7e802a8d564e00c60f7fbf0a2c29655"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01/started-at.txt",
+      "bytes": 21,
+      "sha256": "1a51e4b1478d2d8e4f7c0a480d2c5a942220f5d5120ebe4f6b1ad20afcabf4d7"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01/typecheck.txt",
+      "bytes": 11,
+      "sha256": "16e3edbe92d848d09637b5ec0801d01a735a0deb44c99bc4c374f0865de6acd8"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/after.sha256",
+      "bytes": 593,
+      "sha256": "f9a8c6758560a034c23854b7deaa769cadba43101d1a2cb266aaba3d674a09be"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/annotation-test-after.sha256",
+      "bytes": 221,
+      "sha256": "385e2c9a7a2f87944b6342cb7484c675b0befef3d10a5fbe7bec9f44f4c4994a"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/annotation-test-before.sha256",
+      "bytes": 435,
+      "sha256": "2b92da3e817ae59254aded666b5b5674a167e3b40b6c913e4ad874248eb12ccd"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/annotation-test-green-final.log",
+      "bytes": 191,
+      "sha256": "c45c3849bab39710eda8f623cf57751e7f395be6d35275f329707fb1a4c9759a"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/annotation-test-green.log",
+      "bytes": 1026,
+      "sha256": "7c2efabc0498838ce0f57b992cf6769f07e8dfba5c9089866c62264e072b9fc3"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/annotation-test-packing-green-final.log",
+      "bytes": 191,
+      "sha256": "444cad48c22a053335f2500f410536d8752952085ff867ec0c39f945d6eeaa04"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/annotation-test-packing-green.log",
+      "bytes": 191,
+      "sha256": "683b9ab2dba672d5910198e5180c90b7fff74ee9708c420806333c2238cb3f68"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/annotation-test-packing-red.log",
+      "bytes": 1026,
+      "sha256": "31bd451a3f63b9d3d5843362f125319bc1404517e82e845008a080182a9b9e4d"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/annotation-test-red.log",
+      "bytes": 1201,
+      "sha256": "b49327fd0fd1194efc8bcee45b43ced4097209abc5334eca7e2ecdb99f29fbb8"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/before.sha256",
+      "bytes": 240,
+      "sha256": "9517cbe177acc06524a208c2f985c091c6189b59a0c81b8a2d6ee0081ffa2058"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/before/app/console.css",
+      "bytes": 37151,
+      "sha256": "2bb39006ab7bfeccadb1e6ff6a11b933d87687301cf29e917d744b384025c9de"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/before/app/globals.css",
+      "bytes": 9114,
+      "sha256": "3aff9ef817c2bad2e392cb3f27dff43ba4830cc56cbb54177ddfb75a7e00f727"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/before/src/components/scene/annotation-layout.test.ts",
+      "bytes": 3974,
+      "sha256": "0d3f86d8c81ec589bb1e9530a6e9843d057eae00f14c6643a3c1b8d0a8e6563e"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/before/src/components/scene/annotation-layout.ts",
+      "bytes": 5548,
+      "sha256": "3df0650505cf7fe133a20db7327e6682c4e9d67fc299f1b784f8dca1c1248a19"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/biome-before-console.txt",
+      "bytes": 37513,
+      "sha256": "9f0166b474c5199d0efa9c7623ca5472e2b34f9b8f893ee3a214e468bfcb3cbf"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/biome-before-globals.txt",
+      "bytes": 9476,
+      "sha256": "c0cacdde51e26a2095fd272cfb1dadb0bc589181c35ee403f933018c700457d5"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/biome-final.txt",
+      "bytes": 8492,
+      "sha256": "3c9bef7510b08b77ca3ab3997ab63fee31dfdb7d83b4b929ee27bbc872b803dc"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/combined-source.diff",
+      "bytes": 7789,
+      "sha256": "daafe38d5c0aa76bfc272bb8977cb4caf4a70037b65d3546510263a8720bc471"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/correction.diff",
+      "bytes": 6159,
+      "sha256": "2a1ba48b47c6eeb61865c51a8da652f14084ff9a2fe2001df662419010e97a6b"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/css-static-check-final.json",
+      "bytes": 464,
+      "sha256": "287eb151c250926933cd3f94572fdd405af427a51fc2ac541ecfc7e9f00e9d35"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/css-static-check.json",
+      "bytes": 436,
+      "sha256": "e2d5173a5b9b8e80e30359a646867cf62c84806cd57e0e09f4ceaad5162eefdb"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/focused-tests-final.txt",
+      "bytes": 204,
+      "sha256": "383d295e44e76a59ecedcc3363c347299bded73da928f25507c245805556a92f"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/source-ready-reference.txt",
+      "bytes": 190,
+      "sha256": "d1e68196318f0756bd8577a93d671c41b7e802a8d564e00c60f7fbf0a2c29655"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/source-ready.json",
+      "bytes": 6347,
+      "sha256": "91bf951eca844d30e3be9dd668841f67c86b18930a445ea9050896f485cbdac3"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/started-at.txt",
+      "bytes": 21,
+      "sha256": "9cb85e06be97704212b49e57275f8eea76e4f076bf30f746470f715cd598763f"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/typecheck-final.txt",
+      "bytes": 11,
+      "sha256": "16e3edbe92d848d09637b5ec0801d01a735a0deb44c99bc4c374f0865de6acd8"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c6-conformance-correction-01.json",
+      "bytes": 2212,
+      "sha256": "39bf35f1468ca46d70f598669a4b6c8df93ea26b6faf02f67444ceb234f2d3f3"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-91375a9d/visual-cjk/findings.md",
+      "bytes": 3006,
+      "sha256": "a0f23dfbc22a93661192d82827527a12a210fd981a76509fc93980aeed7f9587"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-91375a9d/visual-integrity/control-size-evidence.json",
+      "bytes": 15972,
+      "sha256": "940a3437fdbf6bb5c19444410eab10322146d42abf502a122cbd5c005a8f45d3"
+    },
+    {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-91375a9d/visual-integrity/report.md",
+      "bytes": 16837,
+      "sha256": "ac67f1f2ee2196eb757fe28a4f62d158ce27d1f3b46dbd47c617ec3160b1cec8"
+    }
+  ],
+  "ownerReceipts": [
+    {
+      "owner": "/root/frontend_touch_fix",
+      "repository": {
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/source-ready.json",
+        "bytes": 6347,
+        "sha256": "91bf951eca844d30e3be9dd668841f67c86b18930a445ea9050896f485cbdac3"
+      },
+      "qualification": "Final complete source-ready owner concurrence required; producer checks are not combined-candidate acceptance."
+    }
+  ],
+  "frontendConcurrence": {
+    "sourceReadyAt": "2026-09-21T23:56:04.268Z",
+    "producer": "/root/frontend_touch_fix",
+    "status": "SOURCE_READY_FOR_INTEGRATION_NOT_QA_PASS",
+    "goal": "GS-SAFETY-SIM-001",
+    "candidateParent": "sha256:91375a9d76f058ac4d79f194988ada70792b6e118152dbd25f3ba0f99665efe2",
+    "files": [
+      {
+        "path": "app/console.css",
+        "bytes": 37403,
+        "sha256": "908042f159b9d1341289162a9c49d848c319f37c4f6e31c71811e653cabfb215",
+        "beforePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/before/app/console.css",
+        "beforeBytes": 37151,
+        "beforeSha256": "2bb39006ab7bfeccadb1e6ff6a11b933d87687301cf29e917d744b384025c9de",
+        "pureLines": 1810
+      },
+      {
+        "path": "app/globals.css",
+        "bytes": 9094,
+        "sha256": "1a3a1e35daf8a533b7c60382ef73b7f21e125ec397aab9f67635fe6cddbbc7db",
+        "beforePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/before/app/globals.css",
+        "beforeBytes": 9114,
+        "beforeSha256": "3aff9ef817c2bad2e392cb3f27dff43ba4830cc56cbb54177ddfb75a7e00f727",
+        "pureLines": 448
+      },
+      {
+        "path": "src/components/scene/annotation-layout.ts",
+        "bytes": 6530,
+        "sha256": "1bc67c8bca87f44fdc9af0171611b49de5dd1e4568af3f0a06b6acc64140c8a5",
+        "beforePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/before/src/components/scene/annotation-layout.ts",
+        "beforeBytes": 5548,
+        "beforeSha256": "3df0650505cf7fe133a20db7327e6682c4e9d67fc299f1b784f8dca1c1248a19",
+        "pureLines": 188
+      },
+      {
+        "path": "src/components/scene/annotation-layout.test.ts",
+        "bytes": 6174,
+        "sha256": "a67182c1e7dafcc2743d4e8db28a57e38afd495e2fafc2bf9121a19659a4336f",
+        "beforePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01/before/src/components/scene/annotation-layout.test.ts",
+        "beforeBytes": 3974,
+        "beforeSha256": "0d3f86d8c81ec589bb1e9530a6e9843d057eae00f14c6643a3c1b8d0a8e6563e",
+        "pureLines": 137
+      },
+      {
+        "path": "src/components/console/scenario-rail.tsx",
+        "bytes": 8401,
+        "sha256": "2d9b55bdf2f3008d98edf8591051e0313bad6247bac8fec2e541b947313938cf",
+        "beforePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01/before/src/components/console/scenario-rail.tsx",
+        "beforeBytes": 8228,
+        "beforeSha256": "0fb233511277d9bcfe82b761ea86e0ea39815bb291db973f14aefb6723ed2a40",
+        "pureLines": 226
+      },
+      {
+        "path": "src/components/scene/SiteStage.tsx",
+        "bytes": 7416,
+        "sha256": "e157c6390273d1b13d4beb3ea0918c0fce8f605bbc8926f2b4c5a8686f6ce7be",
+        "beforePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/new-risk-identity-correction-01/before/src/components/scene/SiteStage.tsx",
+        "beforeBytes": 7327,
+        "beforeSha256": "0cd8da1d09591dd7d27b637455f59e7d1df1c73854f83f7104e3d19f2b9fe739",
+        "pureLines": 172
+      }
+    ],
+    "corrections": [
+      {
+        "id": "QD011",
+        "attempt": 1,
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/touch-conformance-correction-01",
+        "description": "Remove stage40/range32 minimum overrides; worker buttons fill98x44 annotation boxes; preserve dense placement via packed-grid fallback only when it retains more priority-ordered labels.",
+        "originalFinding": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-91375a9d/visual-integrity/report.md"
+      },
+      {
+        "id": "QD012",
+        "attempt": 1,
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/scenario-label-correction-01",
+        "description": "Display full selected server-catalog Korean scenario name in wrapping companion text.",
+        "originalFinding": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/qa/reviews/candidate-91375a9d/visual-cjk/findings.md"
+      },
+      {
+        "id": "QD013",
+        "attempt": 1,
+        "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/frontend/new-risk-identity-correction-01",
+        "description": "Display the full existing pending new-incident ID in the notice with wrapping, preserving pin and action behavior.",
+        "originalFinding": "Root and QA official QD013 coordination; AC10/11/15 concurrent incident A01"
+      }
+    ],
+    "frontendConcurrence": {
+      "frozenDesign44pxThresholdUnchanged": true,
+      "designSha256": "ad34164bb0eec7c9d75f7d11b177ec430cf8a39749aaca60534a650507a55e4a",
+      "publicApiUnchanged": true,
+      "serverStateAndEngineUnchanged": true,
+      "logicalCoordinatesAndAnchorsUnchanged": true,
+      "selectionHandlersAndCameraPinBehaviorUnchanged": true,
+      "newAriaLiveOrAudio": false,
+      "behaviorChanges": "Target and annotation placement dimensions; packed fallback to retain labels; visible existing scenario and incident identity text only.",
+      "frozenC5Untouched": true
+    },
+    "checks": {
+      "cssSyntax": "PostCSS+LightningCSS PASS, zero warnings",
+      "biome": "exit0;10 existing CSS-style warnings, no new warning location in added rules",
+      "typecheck": "tsc --noEmit --incremental false exit0",
+      "focusedTests": "Vitest annotation-layout + camera-policy15/15 PASS; original dense8-label expectation preserved",
+      "red": "annotation-test-red.log and annotation-test-packing-red.log retain failing evidence; earlier partial green superseded",
+      "runtime": "No application/browser/server/model/device/build launched; independent QA owns runtime"
+    },
+    "revalidation": [
+      "C6 production computed hitboxes at375/768/1280 and200% zoom: stage buttons44px, worker98x44 matchingforeignObject and nonoverlap; range control44px after openingdetails.",
+      "Actual worker click/keyboard selection and slider behavior; dense/edge layout and focus clipping.",
+      "Full selectedscenario name at768/1280 and200% zoom.",
+      "ConcurrentincidentA01: notice displaysB fullID whileA remains pinned; existing explicitaction selectsB."
+    ],
+    "architecturalReview": "Targeted files own annotation layout, scenario rail, and stage display. No boundary inputs, tagged variants, casts, escape hatches, state, logging, API, or handlers added. TS files under250 purelines."
+  },
+  "authorization": {
+    "record": {
+      "path": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/orchestrator/c6-conformance-correction-01.json",
+      "bytes": 2212,
+      "sha256": "39bf35f1468ca46d70f598669a4b6c8df93ea26b6faf02f67444ceb234f2d3f3"
+    },
+    "additionalRootMessage": {
+      "receivedAt": "2026-09-21T23:57:28.696Z",
+      "source": "Root collaboration task/message to delegated Technical owner",
+      "directive": "QD013 correction01 authorized in same C6 before finalsource-ready: visible existing pendingincidentID with wrapping, no pin/action/state/priority change.",
+      "classification": "Contemporaneous record of actual Root instruction, not a new authority or retroactive grant."
+    }
+  },
+  "correctionHistory": {
+    "QD011": 1,
+    "QD012": 1,
+    "QD013": 1,
+    "priorCountersPreserved": true,
+    "noAutomaticCounterReset": true
+  },
+  "assemblyRequirements": [
+    "Exact six owner-ready frontend files and this newr5 only; preserve C5 bytes and all prior failures.",
+    "Fresh C6 build/lint/typecheck under Root prospective window CPU2 heap3072; selected unchanged Mobile4/APK/models retained only by bytes.",
+    "Fresh source/build/manifest/currentlaunch/state/audit/origin bindings required; independent QA and RootG3 separate."
+  ],
+  "candidateId": null,
+  "acceptance": "NOT_ISSUED"
+}

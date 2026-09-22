@@ -1,0 +1,92 @@
+{
+  "contractRevision": "1.0.4",
+  "kind": "semantic-access-clarification",
+  "goalId": "GS-SAFETY-SIM-001",
+  "goalVersion": "1.0",
+  "frozenAt": "2026-09-21T13:59:41.951Z",
+  "owner": "/root/tech_lead",
+  "extends": "docs/contracts/freeze-v1.0.3.json",
+  "structuralSchemasUnchanged": true,
+  "concurrence": {
+    "backend": "Exact role/status/body matrix implemented,89 affected checks and independent code review clear; whole Backend readiness remains separate.",
+    "frontend": "Raw-tracking and frame role gates,cleanup and enclosing session remount boundary; settled source bundle137 affected checks and independent reviews clear.",
+    "mobile": "Native transports do not consume tracking read endpoints or parse snapshot JSON on successful device uploads; current APK reuse still requires separate ordering impact assessment.",
+    "tracking": "Exact consumer compatibility confirmed; measurements and ingestion policy unchanged.",
+    "technical": "15 source/note/test hashes bound; independent note review found no semantic contradictions.",
+    "root": "SEC01 bounded rework01 including device POST204 and device frameGET denial authorized after actual QA and consumer proof."
+  },
+  "files": [
+    {
+      "path": "app/api/tracking/frame/route.ts",
+      "sha256": "a106fb7cb40ca183d62032d386f250a0ff5fa889af1403e04024b2b46c01ba4f"
+    },
+    {
+      "path": "app/api/tracking/route.ts",
+      "sha256": "6d0150bfb9ae98e8be20273dedcfbde7088aa9eb86983946ee789fb985dd7498"
+    },
+    {
+      "path": "app/api/tracking/uwb/route.ts",
+      "sha256": "54b37aae7987ef9d6086f0c01dcf99de04006847ec80145b9f6cd05dd2d48f58"
+    },
+    {
+      "path": "docs/contracts/clarification-tracking-access-v1.0.4.md",
+      "sha256": "001595f7fb0fb2863af5a6fa02b38a0179843487e2786ae586ceadfd6d1d3711"
+    },
+    {
+      "path": "src/components/console/safety-console.tsx",
+      "sha256": "e2b8028a9483f38d170e6597c9d0d8fe42b9b72ff10b6337005707d7d16b4a85"
+    },
+    {
+      "path": "src/components/tracking/tracking-access.test.ts",
+      "sha256": "6b45bb672298dd9d5236bf641f1aa05e296458ed2f70aff9768b820b7a10ab05"
+    },
+    {
+      "path": "src/components/tracking/tracking-access.ts",
+      "sha256": "93f43d3c5fa584d713b3bff017a5c43b7fd7b4623b5090c29c706e963988b4cb"
+    },
+    {
+      "path": "src/components/tracking/tracking-panel.test.ts",
+      "sha256": "926ad6d2cbf0922398659cabbfef097b2fd8b37b8096b008596cff6d3bb7e88f"
+    },
+    {
+      "path": "src/components/tracking/tracking-panel.tsx",
+      "sha256": "218695ae00b53ebf32dd39c08f21a3b69af3a0fc35443673c8e834ca01e77ac0"
+    },
+    {
+      "path": "src/components/tracking/use-tracking.test.ts",
+      "sha256": "2108454100d9a73044b6edd1b88ca8f2205f5bb2df91cac628a9abaa74ddfb92"
+    },
+    {
+      "path": "src/components/tracking/use-tracking.ts",
+      "sha256": "e86585e1e14282e4f38451ce2e69d568f0cfbfa6834aab5410007b4cd7c60905"
+    },
+    {
+      "path": "src/server/services/tracking-api/device-response-privacy.test.ts",
+      "sha256": "811cb0d06d781b6691de3203984a5e5da51028f0c3efb54e7b8bdf0834be39d0"
+    },
+    {
+      "path": "src/server/services/tracking-api/persistence.test.ts",
+      "sha256": "64b317cac8f342a0b01eb45e17aa777c7a3c78adcc2625b0a77809762925febf"
+    },
+    {
+      "path": "src/server/services/tracking-api/projection.test.ts",
+      "sha256": "f965a7c3ac3be989daf6ad59d3d7a86972086a386bfcb2c4dea178ad9ba81ea6"
+    },
+    {
+      "path": "src/server/services/tracking-api/uploads.test.ts",
+      "sha256": "7def5f8630fefb6162ec75da7e7f05e14830a71fa0d2f7cae4e7652f5a53ae77"
+    }
+  ],
+  "contentSha256": "0dfda820ac09b8c075671f68416dac02d57c3751fa4ecbe48b2440b7c83d6205",
+  "priorFreezeSha256": {
+    "docs/contracts/freeze-v1.0.1.json": "e2a93c4ec81c6153fff4501c4072a0b0efeafbee0ccc6177c3e13117a45bd7a7",
+    "docs/contracts/freeze-v1.0.2.json": "9b53450912b1a99020be2e5fb98f1d7b51dd97654659f03bb32619cee5c49a8f",
+    "docs/contracts/freeze-v1.0.3.json": "9c074b761a1bfa7870066add68c75ea4a08b8595eaa6acdc52c2c167847f16bf"
+  },
+  "limitations": [
+    "This is role-policy revision only; no G0 criteria or shared schema changes.",
+    "Source-ready for this correction is not a final C2, G3 or acceptance verdict.",
+    "C1 candidate and all prior contract freeze files remain unchanged.",
+    "Current-candidate HTTP/browser/device QA is still required; producer tests do not establish physical observations."
+  ]
+}

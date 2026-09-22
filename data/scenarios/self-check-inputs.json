@@ -1,0 +1,274 @@
+{
+  "goalId": "GS-SAFETY-SIM-001",
+  "runId": "GS-SAFETY-SIM-001-20260921T084101Z",
+  "task": "backend-scenario-data",
+  "createdAt": "2026-09-21T09:23:38.692Z",
+  "scope": "Developer self-check input fingerprint; not the final integrated QA candidate",
+  "sha256": "13b572756ffbe6c4b35c1414b263a4048795b04d78d3187d96101c456f5c3c14",
+  "files": [
+    {
+      "path": "data/equipment/catalog.json",
+      "sha256": "12faa28d107e90b87fbf7bc2d66988ee93e9a7d0a38a4abb7b90a87fa5da5ff4"
+    },
+    {
+      "path": "data/maps/site-construction-01.json",
+      "sha256": "ea4834c1b17e2a0ccbdaa892ce42079a42f689cfa198c7aa0f554d811bf6b5bf"
+    },
+    {
+      "path": "data/policies/equipment-response.json",
+      "sha256": "d4081efa35d63f39b7f3b0261dcbf0a79d8a91ea7cdd19bc6ed95021b7df9cdb"
+    },
+    {
+      "path": "data/policies/fire-gas-designated.json",
+      "sha256": "d21f65e43b3adc49b0bee26a35f28aeca1f71b3d6b6e180ca6bc3bb4cdce9820"
+    },
+    {
+      "path": "data/policies/fire-gas-evacuate.json",
+      "sha256": "53d669d60d7c06d376121bc6c1d72700b5f984d3e041899118bbb6fd43be3242"
+    },
+    {
+      "path": "data/policies/fire-gas-shelter.json",
+      "sha256": "424e5517e8bf93d03ef916625143dc4d736ba39a782073373c0ca91f9cf9f990"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-approach.json",
+      "sha256": "9685ef20d5db14baa1d7b7c3a46c63fa6b0dff6419ffbfb634adcb7723a4df7f"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-arrival.json",
+      "sha256": "c7d2d7bb457473b9b213fe3cfb44b68a8a59476be6af68d70a94fb2b170af2f1"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-no-route.json",
+      "sha256": "76d18744d1e768b86ef5c89977be16f856c2cbff840bde8bf5a4102a0e59288b"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-position-loss.json",
+      "sha256": "595ac62dd71da986675ac72f9cbe06a29f9a6bda3ecb4c90f08a65527a7513b7"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-profile-routes.json",
+      "sha256": "e95e04db955846f453f8c118fe367979e5866116643e7133d52ad084eb93381f"
+    },
+    {
+      "path": "data/scenarios/equipment/eq-speed-direction.json",
+      "sha256": "5a00cb7dd519d8028e51f161080b35bacc4a132e55b7f9a98d29220ddc7e3d00"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-clear-reopen.json",
+      "sha256": "beaa9e7320dc284b806db7f466418317ec96e9727d0bbaa72aa4762d04ba8fbf"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-combined.json",
+      "sha256": "0704ac0f82adb3ae8dfeb52a0fbf1cc8f1a446c7b10a3c4633368c6559a9a056"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-fire.json",
+      "sha256": "bde4e91470eaa90a03bf7b515c72563e01eba70aa06c9a7803f9cbd79764960e"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-gas-designated.json",
+      "sha256": "c131254ce5095ec333dbd3965dc9cf9810efb0cdc6e387f4dd3d27f22ad1b3cf"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-no-route.json",
+      "sha256": "33c42b3c99623eddfb45e9f98969efc92b3c31d8e9d74aaea4e99b2204adea80"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-route-block.json",
+      "sha256": "73a5bde5b1d875f7a928f0f58e8c4047e4a744eb1fcc8def2e18e92924c87590"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-sensor-stale.json",
+      "sha256": "e6671f0c503c7b96a1e47fa8c7c91e569e9d4cb955ee05f4fdaae40577092321"
+    },
+    {
+      "path": "data/scenarios/fire-gas/fg-shelter.json",
+      "sha256": "5ee9d995dc7c7d95e5a5cea42760182d7065ad0075c043b5f791b9f971b3e5ad"
+    },
+    {
+      "path": "src/server/engine/attachment.ts",
+      "sha256": "a5f8fdffdfe5ecf7e36c6a0ea7126227f7ad29d0a7cd1c504f337f65f9c06d42"
+    },
+    {
+      "path": "src/server/engine/catalog-integration.test.ts",
+      "sha256": "0493e0b5ea6cce8b49eab9b4ede0618f8665f8e1ba1b1913f6375067eb85906f"
+    },
+    {
+      "path": "src/server/engine/equipment.test.ts",
+      "sha256": "90bdab8af4c38dc2500793f7334d807f8e3fb7d9c27778069add74410b1e4793"
+    },
+    {
+      "path": "src/server/engine/equipment.ts",
+      "sha256": "a0d242af1b831cbe6b479512e9987613100d29a42af5bee2e15101abf7f50d17"
+    },
+    {
+      "path": "src/server/engine/evaluation.test.ts",
+      "sha256": "49f8a02fec9fa99a081244a25916749f482c993287ad70030d5d4ed82d314874"
+    },
+    {
+      "path": "src/server/engine/evaluation.ts",
+      "sha256": "7362348971621828030ba263942d7788784e1d42fc1eef2530616f66fece60ec"
+    },
+    {
+      "path": "src/server/engine/fixtures.test-support.ts",
+      "sha256": "e9a67f0974db7aa0aa5eaf676a73b1931f452713ce929b5fd89e27824b0fc016"
+    },
+    {
+      "path": "src/server/engine/geometry.test.ts",
+      "sha256": "8c0a0a4cac0119f0f1e9c5b1728496080dada93f92662cb3b0850588a88a0d27"
+    },
+    {
+      "path": "src/server/engine/geometry.ts",
+      "sha256": "50af4322c240c3d323aa0bfb3879c9228aad2610c2ae45a90ebb545d92bc288c"
+    },
+    {
+      "path": "src/server/engine/hull.ts",
+      "sha256": "a6e24d96701fbb66a925955334356acdacc2a3e376206cf329d1f98f1852e303"
+    },
+    {
+      "path": "src/server/engine/index.ts",
+      "sha256": "85672a349a3341aa1004a28e23aca4bcc87fcc91ebbe7e6784ab2e3b80891f7e"
+    },
+    {
+      "path": "src/server/engine/map-integration.test.ts",
+      "sha256": "325eb8c1f5362036e829771ecb307a4c5458ba32930b825925ea2fd111ed35de"
+    },
+    {
+      "path": "src/server/engine/routing.test.ts",
+      "sha256": "45c341a0aec9bc52b0668b298b893a8bbac9f89ca741f0f2352acdca834910b2"
+    },
+    {
+      "path": "src/server/engine/routing.ts",
+      "sha256": "629e3d4a410032fa7cb230c53c92298307ffa302780bcb5d4f942c6523ad463c"
+    },
+    {
+      "path": "src/server/engine/types.ts",
+      "sha256": "37efa8012a434a72e04a2790d63b2603c027b9ddbdebfff3f7a48709cfbdc43e"
+    },
+    {
+      "path": "src/server/guidance/guidance.test.ts",
+      "sha256": "4d2a9ced49c1120e47069698cde6aa545f1ea7aa292142bf3b5649d168984563"
+    },
+    {
+      "path": "src/server/guidance/guidance.ts",
+      "sha256": "968a73838ea8aae06274b0e5332ece5b64c0e7f73876250b3cc096da6ca3296e"
+    },
+    {
+      "path": "src/server/guidance/index.ts",
+      "sha256": "9f2caf0a600fab9a685dfe7244e7f8ccff2799a188ad1a8ae769c2c3358d8c53"
+    },
+    {
+      "path": "src/server/guidance/localization.test.ts",
+      "sha256": "cfc75e83055c1fdfa2c2e4f2c945f044442e94e2af1476150017fa6a020cb810"
+    },
+    {
+      "path": "src/server/guidance/localization.ts",
+      "sha256": "67c54bfd1d2868be294dabc1f3a874f4e42ff269fd51be482197c45151bb857b"
+    },
+    {
+      "path": "src/server/guidance/templates.test.ts",
+      "sha256": "233eebcc5e93a2894864925d1a39616936530ed17d1e48083167907699230daa"
+    },
+    {
+      "path": "src/server/guidance/templates.ts",
+      "sha256": "2f604249db6ed9a0e717ad3c189b51e8b8332a45df232478b40f8fe168c4ad0d"
+    },
+    {
+      "path": "src/server/guidance/test-fixtures.ts",
+      "sha256": "acded3860d3c3c20cb117c112b3aef78feefe6f8c543551179a312778dbd1c11"
+    },
+    {
+      "path": "src/server/scenarios/entities.ts",
+      "sha256": "b5a05dd73cab6c3c2fc6e76eca8d95f47d5dfca2f92f75df928984373c189b3d"
+    },
+    {
+      "path": "src/server/scenarios/events.ts",
+      "sha256": "c62095369af1e69ebd048b127572f4004c9adb80e93db052926d21efe27eedee"
+    },
+    {
+      "path": "src/server/scenarios/index.ts",
+      "sha256": "0c7bfb24653a83ed68de5f2bdc6a959d98c9834c9df42c1bd23ced005ce9fed8"
+    },
+    {
+      "path": "src/server/scenarios/loader.ts",
+      "sha256": "743a0e4e6c016e3c3bf49e3becd5427252ffd72769d0e56347fa26cdf6a20f2a"
+    },
+    {
+      "path": "src/server/scenarios/policy.ts",
+      "sha256": "3e2d9e9533fd5fe34146b941d56a84cfad7a2af26bb4aa7887afbedd13496476"
+    },
+    {
+      "path": "src/server/scenarios/references.ts",
+      "sha256": "41b6b5110e422200cc2110cb4bb4a888fff7241a46974424ac4cf5216ec90a22"
+    },
+    {
+      "path": "src/server/scenarios/replay.test.ts",
+      "sha256": "4b59deabb14d425ecce8580c0485f5696b24412e99af0a8000a65eda3850931b"
+    },
+    {
+      "path": "src/server/scenarios/runtime-checkpoints.test.ts",
+      "sha256": "21621d53943f617b9f40a612dfeed940c797d33233d969bf7c80a5816c8fdd1a"
+    },
+    {
+      "path": "src/server/scenarios/scenarios.test.ts",
+      "sha256": "06c2d286204eb7e7ffdde49c524258d243c0f726296f8718e2af4f475d1cf4db"
+    },
+    {
+      "path": "src/server/scenarios/schema.ts",
+      "sha256": "24cb9ca892b26428f67f5798951a68ecde1ba6af888bbdc3f87c20176d0e78f7"
+    },
+    {
+      "path": "src/server/scenarios/timeline.test.ts",
+      "sha256": "6530d9e6a30d0e2dcd128caec60b98267991b588733cb440d1c8e492d193c000"
+    },
+    {
+      "path": "src/server/scenarios/timeline.ts",
+      "sha256": "5291138c43e43c368f5aa7b03d27154dac08bd795bbe15471889c4b8e049f87b"
+    },
+    {
+      "path": "src/server/simulation/clock.test.ts",
+      "sha256": "22b7557dea1359f504cad957e3c277d40b25455326a1f48bae2716529773d0f8"
+    },
+    {
+      "path": "src/server/simulation/clock.ts",
+      "sha256": "8c33024c6427224b21d1c1a6d259944b1b39745dc13b764431f42f4e40487e3b"
+    },
+    {
+      "path": "src/server/simulation/commands.ts",
+      "sha256": "0cf5246fb54db683aeeda04686b42914f8e1e09d4d08258c5e40b45a2586b718"
+    },
+    {
+      "path": "src/server/simulation/configuration.ts",
+      "sha256": "a80e8cfb7070d7a8a386cd484ac433391343f99238e53969c95c89ca1555df26"
+    },
+    {
+      "path": "src/server/simulation/evaluate.ts",
+      "sha256": "3ebcd42359538742f7f11d5962f2a1d4f2f1dd475883b58a2c94fcce6b8189df"
+    },
+    {
+      "path": "src/server/simulation/hazards.ts",
+      "sha256": "9bb457cf061d843b84355443d85544d04dd5e7fe764cda8d097da5cba2fb86df"
+    },
+    {
+      "path": "src/server/simulation/run.ts",
+      "sha256": "b17106a8c42d5ff14e55e7ceb5b0387cd3a72ec850358a025a39996903d1ddb2"
+    },
+    {
+      "path": "src/server/simulation/runtime.integration.test.ts",
+      "sha256": "e2ef2260f3fa2426b512485f34a5c76856e6b9fd24f19e6f9cec855348da58d2"
+    },
+    {
+      "path": "src/server/simulation/runtime.ts",
+      "sha256": "963a819175440fcf2dd507a44d7b88d298701e3b670452b2ce43c877a72294ff"
+    },
+    {
+      "path": "src/server/simulation/snapshots.ts",
+      "sha256": "5dfdbefdf5b774e6c0f42e87dacb447e71decdab70ff0fca6e8029cba720ae86"
+    },
+    {
+      "path": "src/server/simulation/world.ts",
+      "sha256": "6852a409fc36617d910d5ed14f084db9871bc144336b7be5101b5f3f974c9d6a"
+    }
+  ]
+}

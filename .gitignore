@@ -50,3 +50,29 @@ tmp/
 temp/
 *.swp
 *~
+
+# Local simulator databases and Flutter dependency metadata
+data/runtime/
+*.sqlite-wal
+*.sqlite-shm
+apps/mobile/.dart_tool/
+apps/mobile/.flutter-plugins-dependencies
+
+# Private device captures, local databases, and downloaded model runtimes
+.private/
+*.sqlite
+*.sqlite3
+__pycache__/
+*.pyc
+*.blend1
+*.blend2
+/data/knowledge/runtime/bin/
+/data/knowledge/runtime/models/
+/data/knowledge/runtime/cache/
+/next-env.d.ts
+
+# Local execution archives; reviewed summaries are staged explicitly
+/.omo/
+/.debug-journal.md
+/evidence/
+/docs/goal-runs/*/evidence/

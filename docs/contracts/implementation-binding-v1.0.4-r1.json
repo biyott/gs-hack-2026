@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0.0",
+  "contractRevision": "1.0.4",
+  "implementationBindingRevision": 1,
+  "kind": "whitespace-only-implementation-binding",
+  "recordedAt": "2026-09-21T14:28:17.459272+00:00",
+  "owner": "/root/tech_lead",
+  "priorFreeze": "docs/contracts/freeze-v1.0.4.json",
+  "priorFreezeSha256": "15f1456ba821634b76ec2037b7d028e7090a4408af185013f7b19ccb4664e748",
+  "priorContentSha256": "0dfda820ac09b8c075671f68416dac02d57c3751fa4ecbe48b2440b7c83d6205",
+  "semanticChange": false,
+  "sharedSchemasChanged": false,
+  "reason": "Biome splits a same-line if/return into two lines; parsed TypeScript AST and token sequence match after excluding source positions. Root authorized this format-only correction; no automatic semantic rework counter is reset.",
+  "changes": [
+    {
+      "path": "app/api/tracking/frame/route.ts",
+      "priorSha256": "a106fb7cb40ca183d62032d386f250a0ff5fa889af1403e04024b2b46c01ba4f",
+      "sha256": "10f23725504176483a0afab36de2b8b7ce9eb7708be0d84aa427545571e11971"
+    }
+  ],
+  "unchangedBindings": 14,
+  "equivalenceProof": {
+    "path": "runtime-artifacts/c2-validation/frame-format-equivalence.json",
+    "sha256": "599859f3d397b82ac7a32e4cf807b173be78c03678ea4e897ebbef16efbe819c",
+    "repositoryEvidencePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/security/SEC-01/frame-format-equivalence.json"
+  },
+  "priorSource": {
+    "path": "runtime-artifacts/c2-validation/frame-route-pre-format.ts.txt",
+    "sha256": "a106fb7cb40ca183d62032d386f250a0ff5fa889af1403e04024b2b46c01ba4f",
+    "repositoryEvidencePath": "docs/goal-runs/GS-SAFETY-SIM-001-20260921T084101Z/evidence/backend/security/SEC-01/frame-format-before.ts.txt"
+  },
+  "validationScope": "Backend records continuation scoped Biome/global TypeScript; prior194 simulation checks retain their preformat input identity and AST-equivalent semantics. No redundant194 execution claimed.",
+  "immutability": "Original1.0.4 and all previous freeze bytes remain unchanged; C2 binds actual formatted route bytes plus this explicit implementation revision."
+}

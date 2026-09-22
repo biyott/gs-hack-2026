@@ -1,0 +1,351 @@
+{
+  "buildType": "production",
+  "settleImages": true,
+  "viewports": [
+    {
+      "width": 375,
+      "height": 812
+    },
+    {
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "scopeNotes": [
+    "18 semantic states: both modes × three viewports × original guidance A/current guidance plus delivery A/actual worker board.",
+    "Equipment uses EQ-PROFILE-ROUTES with workers A/B/C; FG-FIRE contains A/B only, and C absence is asserted.",
+    "Observer support evidence includes delivery/support status and the role permission note; operator/admin incident action controls are not rendered for this role.",
+    "Each focus target is covered by real overlapping viewport PNGs, so actual frame count may exceed 18. Collapsed guidance/profile details remain collapsed.",
+    "The fixture owner supplies paused actual scenarios; this contract sends only observer login and local UI actions."
+  ],
+  "expectedHttpErrors": [
+    {
+      "method": "GET",
+      "path": "/api/session",
+      "status": 401,
+      "maxOccurrences": 2,
+      "beforeMutation": true
+    }
+  ],
+  "allowedMutations": [
+    {
+      "method": "POST",
+      "path": "/api/session"
+    }
+  ],
+  "routes": [
+    {
+      "id": "lower-equipment",
+      "path": "/",
+      "readySelector": ".entry-screen h1",
+      "setupActions": [
+        {
+          "kind": "wait-visible",
+          "selector": "button[type='submit']:not(:disabled)"
+        },
+        {
+          "kind": "select",
+          "selector": "label:has-text('역할') select",
+          "value": "observer"
+        },
+        {
+          "kind": "fill",
+          "selector": "input[type='password']",
+          "valueEnv": "QA_DEMO_ACCESS_CODE"
+        },
+        {
+          "kind": "click",
+          "selector": "button[type='submit']"
+        },
+        {
+          "kind": "wait-visible",
+          "selector": "[data-testid='mode-equipment']:not(:disabled)"
+        },
+        {
+          "kind": "expect-text",
+          "selector": ".entry-session",
+          "value": "observer · observer"
+        },
+        {
+          "kind": "click",
+          "selector": "[data-testid='mode-equipment']"
+        },
+        {
+          "kind": "wait-text",
+          "selector": ".workspace-heading h1",
+          "value": "중장비 접근 대응"
+        },
+        {
+          "kind": "wait-text",
+          "selector": "[data-testid='connection-state']",
+          "value": "실시간 연결"
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='scenario-select'] option:checked",
+          "name": "value",
+          "value": "EQ-PROFILE-ROUTES"
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='scenario-select']",
+          "name": "disabled",
+          "value": ""
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='run-toggle']",
+          "name": "disabled",
+          "value": ""
+        },
+        {
+          "kind": "wait-visible",
+          "selector": "[data-testid='site-canvas'] canvas"
+        },
+        {
+          "kind": "wait-resource",
+          "value": "/assets/site/hvo-demo.glb"
+        },
+        {
+          "kind": "wait-all-hidden",
+          "selector": ".scene-loading, .scene-failure"
+        }
+      ],
+      "states": [
+        {
+          "id": "first-guidance-a",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "#incident-detail .incident-list-item:has(strong:text-is('장비 위험')):has(.status-badge:text-is('진행 중'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+            },
+            {
+              "kind": "expect-text",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+              "value": "최초 원문 · 기록 고정"
+            }
+          ],
+          "focusTarget": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+        },
+        {
+          "id": "current-guidance-delivery-a",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+            },
+            {
+              "kind": "expect-text",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A')) .delivery-status",
+              "value": "전달 · 응답 · 지원"
+            },
+            {
+              "kind": "expect-text",
+              "selector": "#incident-detail .incident-detail > p.muted:last-child",
+              "value": "이 역할은 사건 기록을 조회할 수 있습니다."
+            },
+            {
+              "kind": "wait-hidden",
+              "selector": "#incident-detail .incident-actions"
+            }
+          ],
+          "focusTarget": [
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail .incident-detail > p.muted:last-child"
+          ]
+        },
+        {
+          "id": "worker-board",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-C'))"
+            }
+          ],
+          "focusTarget": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-C'))"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lower-fire-gas",
+      "path": "/",
+      "readySelector": ".entry-screen h1",
+      "setupActions": [
+        {
+          "kind": "wait-visible",
+          "selector": "button[type='submit']:not(:disabled)"
+        },
+        {
+          "kind": "select",
+          "selector": "label:has-text('역할') select",
+          "value": "observer"
+        },
+        {
+          "kind": "fill",
+          "selector": "input[type='password']",
+          "valueEnv": "QA_DEMO_ACCESS_CODE"
+        },
+        {
+          "kind": "click",
+          "selector": "button[type='submit']"
+        },
+        {
+          "kind": "wait-visible",
+          "selector": "[data-testid='mode-fire-gas']:not(:disabled)"
+        },
+        {
+          "kind": "expect-text",
+          "selector": ".entry-session",
+          "value": "observer · observer"
+        },
+        {
+          "kind": "click",
+          "selector": "[data-testid='mode-fire-gas']",
+          "eventPhase": "fire-gas-initial-mode-selection"
+        },
+        {
+          "kind": "wait-text",
+          "selector": ".workspace-heading h1",
+          "value": "화재·가스 대응"
+        },
+        {
+          "kind": "wait-text",
+          "selector": "[data-testid='connection-state']",
+          "value": "실시간 연결"
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='scenario-select'] option:checked",
+          "name": "value",
+          "value": "FG-FIRE",
+          "eventPhase": "fire-gas-setup-complete"
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='scenario-select']",
+          "name": "disabled",
+          "value": ""
+        },
+        {
+          "kind": "expect-attribute",
+          "selector": "[data-testid='run-toggle']",
+          "name": "disabled",
+          "value": ""
+        },
+        {
+          "kind": "wait-visible",
+          "selector": "[data-testid='site-canvas'] canvas"
+        },
+        {
+          "kind": "wait-resource",
+          "value": "/assets/site/hvo-demo.glb"
+        },
+        {
+          "kind": "wait-all-hidden",
+          "selector": ".scene-loading, .scene-failure"
+        }
+      ],
+      "states": [
+        {
+          "id": "first-guidance-a",
+          "actions": [
+            {
+              "kind": "click",
+              "selector": "#incident-detail .incident-list-item:has(strong:text-is('화재')):has(.status-badge:text-is('진행 중'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+            },
+            {
+              "kind": "expect-text",
+              "selector": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+              "value": "최초 원문 · 기록 고정"
+            }
+          ],
+          "focusTarget": "#incident-detail [aria-label='최초 안내 기록'] .guidance-record:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+        },
+        {
+          "id": "current-guidance-delivery-a",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))"
+            },
+            {
+              "kind": "expect-text",
+              "selector": "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A')) .delivery-status",
+              "value": "전달 · 응답 · 지원"
+            },
+            {
+              "kind": "expect-text",
+              "selector": "#incident-detail .incident-detail > p.muted:last-child",
+              "value": "이 역할은 사건 기록을 조회할 수 있습니다."
+            },
+            {
+              "kind": "wait-hidden",
+              "selector": "#incident-detail .incident-actions"
+            }
+          ],
+          "focusTarget": [
+            "#incident-detail [aria-label='현재 안내와 응답'] .incident-worker-guidance:has(.guidance-record-heading > strong:text-is('WORKER-A'))",
+            "#incident-detail .incident-detail > p.muted:last-child"
+          ]
+        },
+        {
+          "id": "worker-board",
+          "actions": [
+            {
+              "kind": "wait-visible",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))"
+            },
+            {
+              "kind": "wait-visible",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))"
+            },
+            {
+              "kind": "wait-hidden",
+              "selector": ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-C'))"
+            }
+          ],
+          "focusTarget": [
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-A'))",
+            ".worker-board .worker-card:has(.worker-card-heading strong:text-is('WORKER-B'))"
+          ]
+        }
+      ]
+    }
+  ],
+  "expectedRequestFailures": [
+    {
+      "method": "GET",
+      "path": "/api/events",
+      "query": {
+        "mode": "equipment"
+      },
+      "error": "net::ERR_ABORTED",
+      "state": "fire-gas-initial-mode-selection",
+      "maxOccurrences": 1
+    }
+  ]
+}

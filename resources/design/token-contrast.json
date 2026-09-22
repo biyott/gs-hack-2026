@@ -1,0 +1,313 @@
+{
+  "scope": "Declared opaque DESIGN.md tokens only; not computed CSS, translucent overlays, browser accessibility or product QA",
+  "method": "WCAG sRGB relative luminance contrast",
+  "results": [
+    {
+      "foreground": "--text-primary",
+      "background": "--surface-base",
+      "minimum": 4.5,
+      "foregroundHex": "#F5F8FC",
+      "backgroundHex": "#0B1118",
+      "ratio": 17.79987047100251,
+      "passed": true
+    },
+    {
+      "foreground": "--text-primary",
+      "background": "--surface-panel",
+      "minimum": 4.5,
+      "foregroundHex": "#F5F8FC",
+      "backgroundHex": "#111C28",
+      "ratio": 16.15230205868051,
+      "passed": true
+    },
+    {
+      "foreground": "--text-primary",
+      "background": "--surface-raised",
+      "minimum": 4.5,
+      "foregroundHex": "#F5F8FC",
+      "backgroundHex": "#192838",
+      "ratio": 14.06257376212351,
+      "passed": true
+    },
+    {
+      "foreground": "--text-secondary",
+      "background": "--surface-base",
+      "minimum": 4.5,
+      "foregroundHex": "#B9C8D8",
+      "backgroundHex": "#0B1118",
+      "ratio": 11.119680054275117,
+      "passed": true
+    },
+    {
+      "foreground": "--text-secondary",
+      "background": "--surface-panel",
+      "minimum": 4.5,
+      "foregroundHex": "#B9C8D8",
+      "backgroundHex": "#111C28",
+      "ratio": 10.090434721147767,
+      "passed": true
+    },
+    {
+      "foreground": "--text-secondary",
+      "background": "--surface-raised",
+      "minimum": 4.5,
+      "foregroundHex": "#B9C8D8",
+      "backgroundHex": "#192838",
+      "ratio": 8.784969600155206,
+      "passed": true
+    },
+    {
+      "foreground": "--text-muted",
+      "background": "--surface-base",
+      "minimum": 4.5,
+      "foregroundHex": "#93A7BD",
+      "backgroundHex": "#0B1118",
+      "ratio": 7.676896902335036,
+      "passed": true
+    },
+    {
+      "foreground": "--text-muted",
+      "background": "--surface-panel",
+      "minimum": 4.5,
+      "foregroundHex": "#93A7BD",
+      "backgroundHex": "#111C28",
+      "ratio": 6.966317976407187,
+      "passed": true
+    },
+    {
+      "foreground": "--text-muted",
+      "background": "--surface-raised",
+      "minimum": 4.5,
+      "foregroundHex": "#93A7BD",
+      "backgroundHex": "#192838",
+      "ratio": 6.065040143363676,
+      "passed": true
+    },
+    {
+      "foreground": "--accent",
+      "background": "--surface-base",
+      "minimum": 4.5,
+      "foregroundHex": "#73C9F2",
+      "backgroundHex": "#0B1118",
+      "ratio": 10.26164759773791,
+      "passed": true
+    },
+    {
+      "foreground": "--accent",
+      "background": "--surface-panel",
+      "minimum": 4.5,
+      "foregroundHex": "#73C9F2",
+      "backgroundHex": "#111C28",
+      "ratio": 9.31182234659603,
+      "passed": true
+    },
+    {
+      "foreground": "--accent",
+      "background": "--surface-raised",
+      "minimum": 4.5,
+      "foregroundHex": "#73C9F2",
+      "backgroundHex": "#192838",
+      "ratio": 8.107091368962047,
+      "passed": true
+    },
+    {
+      "foreground": "--state-safe",
+      "background": "--surface-base",
+      "minimum": 4.5,
+      "foregroundHex": "#72DCB0",
+      "backgroundHex": "#0B1118",
+      "ratio": 11.357615911019577,
+      "passed": true
+    },
+    {
+      "foreground": "--state-safe",
+      "background": "--surface-panel",
+      "minimum": 4.5,
+      "foregroundHex": "#72DCB0",
+      "backgroundHex": "#111C28",
+      "ratio": 10.306347069217287,
+      "passed": true
+    },
+    {
+      "foreground": "--state-safe",
+      "background": "--surface-raised",
+      "minimum": 4.5,
+      "foregroundHex": "#72DCB0",
+      "backgroundHex": "#192838",
+      "ratio": 8.972947964468245,
+      "passed": true
+    },
+    {
+      "foreground": "--state-caution",
+      "background": "--surface-base",
+      "minimum": 4.5,
+      "foregroundHex": "#FFD07B",
+      "backgroundHex": "#0B1118",
+      "ratio": 13.1458838387716,
+      "passed": true
+    },
+    {
+      "foreground": "--state-caution",
+      "background": "--surface-panel",
+      "minimum": 4.5,
+      "foregroundHex": "#FFD07B",
+      "backgroundHex": "#111C28",
+      "ratio": 11.929091671654527,
+      "passed": true
+    },
+    {
+      "foreground": "--state-caution",
+      "background": "--surface-raised",
+      "minimum": 4.5,
+      "foregroundHex": "#FFD07B",
+      "backgroundHex": "#192838",
+      "ratio": 10.385747550927046,
+      "passed": true
+    },
+    {
+      "foreground": "--state-danger",
+      "background": "--surface-base",
+      "minimum": 4.5,
+      "foregroundHex": "#FF9191",
+      "backgroundHex": "#0B1118",
+      "ratio": 8.767640735814183,
+      "passed": true
+    },
+    {
+      "foreground": "--state-danger",
+      "background": "--surface-panel",
+      "minimum": 4.5,
+      "foregroundHex": "#FF9191",
+      "backgroundHex": "#111C28",
+      "ratio": 7.9561018007164455,
+      "passed": true
+    },
+    {
+      "foreground": "--state-danger",
+      "background": "--surface-raised",
+      "minimum": 4.5,
+      "foregroundHex": "#FF9191",
+      "backgroundHex": "#192838",
+      "ratio": 6.926769201385185,
+      "passed": true
+    },
+    {
+      "foreground": "--state-info",
+      "background": "--surface-base",
+      "minimum": 4.5,
+      "foregroundHex": "#9CBEFF",
+      "backgroundHex": "#0B1118",
+      "ratio": 10.132701951280175,
+      "passed": true
+    },
+    {
+      "foreground": "--state-info",
+      "background": "--surface-panel",
+      "minimum": 4.5,
+      "foregroundHex": "#9CBEFF",
+      "backgroundHex": "#111C28",
+      "ratio": 9.194811999013435,
+      "passed": true
+    },
+    {
+      "foreground": "--state-info",
+      "background": "--surface-raised",
+      "minimum": 4.5,
+      "foregroundHex": "#9CBEFF",
+      "backgroundHex": "#192838",
+      "ratio": 8.005219410535686,
+      "passed": true
+    },
+    {
+      "foreground": "--state-offline",
+      "background": "--surface-base",
+      "minimum": 4.5,
+      "foregroundHex": "#BCC6D0",
+      "backgroundHex": "#0B1118",
+      "ratio": 10.948659741663228,
+      "passed": true
+    },
+    {
+      "foreground": "--state-offline",
+      "background": "--surface-panel",
+      "minimum": 4.5,
+      "foregroundHex": "#BCC6D0",
+      "backgroundHex": "#111C28",
+      "ratio": 9.93524416782451,
+      "passed": true
+    },
+    {
+      "foreground": "--state-offline",
+      "background": "--surface-raised",
+      "minimum": 4.5,
+      "foregroundHex": "#BCC6D0",
+      "backgroundHex": "#192838",
+      "ratio": 8.649857057350806,
+      "passed": true
+    },
+    {
+      "foreground": "--on-accent",
+      "background": "--accent",
+      "minimum": 4.5,
+      "foregroundHex": "#082638",
+      "backgroundHex": "#73C9F2",
+      "ratio": 8.452442173475308,
+      "passed": true
+    },
+    {
+      "foreground": "--map-text",
+      "background": "--map-ground",
+      "minimum": 4.5,
+      "foregroundHex": "#193332",
+      "backgroundHex": "#E9EEE9",
+      "ratio": 11.4491102724959,
+      "passed": true
+    },
+    {
+      "foreground": "--map-route",
+      "background": "--map-ground",
+      "minimum": 3,
+      "foregroundHex": "#176B53",
+      "backgroundHex": "#E9EEE9",
+      "ratio": 5.474540740503374,
+      "passed": true
+    },
+    {
+      "foreground": "--map-danger",
+      "background": "--map-ground",
+      "minimum": 3,
+      "foregroundHex": "#B62735",
+      "backgroundHex": "#E9EEE9",
+      "ratio": 5.365701492055768,
+      "passed": true
+    },
+    {
+      "foreground": "--map-caution",
+      "background": "--map-ground",
+      "minimum": 3,
+      "foregroundHex": "#90620B",
+      "backgroundHex": "#E9EEE9",
+      "ratio": 4.538408404325145,
+      "passed": true
+    },
+    {
+      "foreground": "--border-strong",
+      "background": "--surface-panel",
+      "minimum": 3,
+      "foregroundHex": "#536B83",
+      "backgroundHex": "#111C28",
+      "ratio": 3.1121510827371512,
+      "passed": true
+    },
+    {
+      "foreground": "--accent",
+      "background": "--surface-raised",
+      "minimum": 3,
+      "foregroundHex": "#73C9F2",
+      "backgroundHex": "#192838",
+      "ratio": 8.107091368962047,
+      "passed": true
+    }
+  ],
+  "failures": []
+}
