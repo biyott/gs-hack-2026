@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ApiFailure, api, errorMessage } from "@/client/api";
+import { createRequestId } from "@/client/request-id";
 import { useConsoleStore } from "@/client/store";
 import type { Guidance, SiteMap, WorkerResponse } from "@/contracts";
 import {
@@ -62,7 +63,7 @@ export function useWorkerResponses(map: SiteMap) {
             incidentId: guidance.incidentId,
             guidanceId: guidance.guidanceId,
             guidanceVersion: responseVersion,
-            requestId: crypto.randomUUID(),
+            requestId: createRequestId(),
             response,
             occurredAt,
           });

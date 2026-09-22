@@ -58,6 +58,6 @@ curl -sS -X POST https://gs.emul.site/api/session \
 
 ## 5. 시연 접속
 
-브라우저는 `https://gs.emul.site`로 접속한다. 앱의 실행·응답 버튼은 보안 컨텍스트가 필요한 `crypto.randomUUID()`를 사용하므로 공개 HTTP 주소로 시연하지 않는다. [Web Crypto 표준](https://w3c.github.io/webcrypto/#Crypto-method-randomUUID)
+브라우저는 `https://gs.emul.site`로 접속한다. 임시 HTTP 시연에서도 실행·응답 요청 ID는 `crypto.getRandomValues()`로 생성할 수 있지만, 접속 코드와 세션을 암호화하려면 HTTPS를 사용한다.
 
 Android 앱 세 대 모두 서버 선택을 **수동 입력 → `https://gs.emul.site`**로 맞추고 다시 연결한다. 공개 도메인 연결에는 같은 Wi-Fi나 Tailscale 접속이 필요하지 않다. 실제 접속 PIN으로 로그인한 뒤 명령 전송과 실시간 갱신을 확인한다. 서버를 재배포했다면 고정 UWB 기준점을 다시 적용한다.

@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import type { IncidentAction, SimulationCommand } from "@/contracts";
 import { ApiFailure, api, errorMessage } from "./api";
 import { AUTH_CHANNEL } from "./auth-sync";
+import { createRequestId } from "./request-id";
 import { openSimulationStream } from "./simulation-stream";
 import { useConsoleStore } from "./store";
 
@@ -85,7 +86,7 @@ export function sendCommand(input: CommandInput) {
     ...input,
     mode: state.mode,
     expectedVersion: state.snapshot.run.version,
-    requestId: crypto.randomUUID(),
+    requestId: createRequestId(),
   };
   return mutate(() => api.command(body));
 }
@@ -99,7 +100,7 @@ export function sendIncidentAction(input: IncidentInput) {
     mode: state.mode,
     expectedVersion: state.snapshot.run.version,
     expectedIncidentVersion: incident.version,
-    requestId: crypto.randomUUID(),
+    requestId: createRequestId(),
   };
   return mutate(() => api.incident(body));
 }
