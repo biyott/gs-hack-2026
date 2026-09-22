@@ -420,6 +420,7 @@
 .run-controls {
   padding: var(--space-4) var(--space-3);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-3);
@@ -439,6 +440,20 @@
 .run-clock > div > span {
   color: var(--text-muted);
   font-size: var(--type-label);
+}
+.run-speed {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.run-speed select {
+  width: auto;
+}
+.run-speed select:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 .run-dot {
   height: 8px;
@@ -1263,7 +1278,7 @@
   min-width: 140px;
 }
 .site-stage__viewport {
-  height: 420px;
+  height: var(--site-stage-height);
   min-height: 320px;
   position: relative;
   background: var(--map-ground);
@@ -1622,7 +1637,7 @@
     padding-inline: var(--space-3);
   }
   .site-stage__viewport {
-    height: 320px;
+    height: var(--site-stage-height-compact);
     min-height: 280px;
   }
   .site-legend {

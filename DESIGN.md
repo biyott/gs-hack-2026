@@ -73,6 +73,8 @@ Desktop ≥1280px: 64px masthead, 224px left scenario/navigation rail, minmax(0,
 
 Tablet 768–1279px: navigation becomes a 64px compact rail; incident details open inline below the map or accessible drawer. Phone <768px: one column with 16px gutters, compact mode header, map, current actions, controls, incident details. Avoid horizontal scrolling except within labeled data tables. 375px width, 200% zoom, 80-character identifiers and bilingual text are required stress cases. The worker app prioritizes action then 2D map and three distinct acknowledgements.
 
+The shared 2D/3D map viewport uses `--site-stage-height: 630px` at widths ≥768px and `--site-stage-height-compact: 480px` below 768px, 1.5× the original 420/320px heights. Its surrounding controls remain outside the viewport. A labeled native speed select beside the virtual clock offers 0.25×, 0.5×, 0.75×, 1×, 1.2×, 1.4×, 1.5×, 1.6×, 1.8×, 2×, 2.5×, 3×, 4×, 6×, 8×, 12× and 16×; a mode without a previous selection defaults to 1.5×. Each mode retains its selected speed through reset, scenario changes and server restart. It displays the server-confirmed speed and is disabled for read-only roles and while commands are pending. Narrow controls wrap without horizontal overflow. Demonstration timelines finish within nine virtual seconds: nine seconds at 1×, six seconds at the default 1.5×; slower rates deliberately take longer.
+
 ## 5. Components
 
 Every primitive is rendered in a `/design-system` or equivalent showcase before product screens, with default/hover/pressed/focus/disabled/loading/empty/error states at 375/768/1280px. Frontend owns that executable evidence.
@@ -98,6 +100,8 @@ Every primitive is rendered in a `/design-system` or equivalent showcase before 
 ## 6. Motion & Interaction
 
 Tokens --motion-fast=120ms, --motion-standard=200ms, --motion-ease=cubic-bezier(0.2,0.8,0.2,1). Motion only communicates control or panel state. Transform/opacity only. Press scale .98 is optional; focus never depends on animation. Reduced motion disables transitions and camera flights. Safety content is updated immediately; no reveal delays. Announce new guidance once per guide ID/version, not every position tick. Map animation never interpolates across a stale gap or disguises absent measurements.
+
+Scripted synthetic movement follows adjacent scenario keyframes continuously on the server. The web map bridges fresh synthetic position updates with a bounded 100 ms frame animation shared by 2D and 3D; it does not predict beyond the last received target. Measured, manual, unknown and stale positions remain authoritative, and run/source changes or pauses stop interpolation. Hazard geometry, route validity, guidance and controls always use the latest server state. Reduced motion shows the latest synthetic position directly.
 
 ## 7. Depth & Surface
 

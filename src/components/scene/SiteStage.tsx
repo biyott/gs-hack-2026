@@ -12,6 +12,7 @@ import { StageCameraControls } from "./StageCameraControls";
 import { positionSourceLabel, workerLabel } from "./scene-data";
 import type { ScenePalette, SceneSelection } from "./scene-types";
 import { useSceneCamera } from "./use-scene-camera";
+import { useSceneMotion } from "./use-scene-motion";
 
 const LazyCanvas = lazy(async () => ({ default: (await import("./SiteCanvas")).SiteCanvas }));
 type Props = SceneSelection & {
@@ -27,6 +28,7 @@ export function SiteStage(props: Props) {
   const reachM = equipmentPreset?.boomOrJibConfiguration.jibLengthM ?? 0;
   const extentM = Math.max(reachM, snapshot.equipment.boomLengthM ?? 0);
   const camera = useSceneCamera(props, extentM, nowMs);
+  const displaySnapshot = useSceneMotion(snapshot, map);
 
   useEffect(() => {
     const timer = window.setInterval(() => setNowMs(Date.now()), 500);
@@ -96,7 +98,7 @@ export function SiteStage(props: Props) {
       ) : null}
       <div className="site-stage__viewport" data-camera-mode={camera.mode}>
         {view === "2d" ? (
-          <SiteMap {...props} {...frame} />
+          <SiteMap {...props} {...frame} snapshot={displaySnapshot} />
         ) : (
           <SceneBoundary
             key={`${snapshot.run.runId}:${snapshot.equipment.presetId}`}
@@ -109,7 +111,9 @@ export function SiteStage(props: Props) {
                 </div>
               }
             >
-              {palette ? <LazyCanvas {...props} {...frame} palette={palette} /> : null}
+              {palette ? (
+                <LazyCanvas {...props} {...frame} snapshot={displaySnapshot} palette={palette} />
+              ) : null}
             </Suspense>
           </SceneBoundary>
         )}

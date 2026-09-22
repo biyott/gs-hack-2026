@@ -6,6 +6,8 @@ import { sendCommand } from "@/client/use-simulation";
 import { Button } from "@/components/ui/button";
 import type { SimulationSnapshot } from "@/contracts";
 
+const speeds = [0.25, 0.5, 0.75, 1, 1.2, 1.4, 1.5, 1.6, 1.8, 2, 2.5, 3, 4, 6, 8, 12, 16] as const;
+
 export function RunControls({ snapshot }: { readonly snapshot: SimulationSnapshot }) {
   const busy = useConsoleStore((state) => state.busy);
   const role = useConsoleStore((state) => state.session?.role);
@@ -25,6 +27,26 @@ export function RunControls({ snapshot }: { readonly snapshot: SimulationSnapsho
           <span>가상 시간 · {snapshot.run.speed}×</span>
         </div>
       </div>
+      <label className="run-speed">
+        <span>속도</span>
+        <select
+          aria-label="가상시간 속도"
+          value={snapshot.run.speed}
+          disabled={busy || !editable}
+          onChange={(event) => {
+            void sendCommand({ action: "speed", speed: Number(event.currentTarget.value) });
+          }}
+        >
+          {!speeds.some((speed) => speed === snapshot.run.speed) ? (
+            <option value={snapshot.run.speed}>{snapshot.run.speed}×</option>
+          ) : null}
+          {speeds.map((speed) => (
+            <option key={speed} value={speed}>
+              {speed}×
+            </option>
+          ))}
+        </select>
+      </label>
       <div className="cluster">
         <Button
           onClick={() => {
@@ -37,7 +59,7 @@ export function RunControls({ snapshot }: { readonly snapshot: SimulationSnapsho
         </Button>
         <Button
           onClick={() => {
-            void sendCommand({ action: "advance", deltaMs: 5000 });
+            void sendCommand({ action: "advance", deltaMs: 5000 / snapshot.run.speed });
           }}
           disabled={busy || !editable}
         >
