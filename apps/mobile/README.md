@@ -14,7 +14,15 @@ flutter test --concurrency=2
 flutter build apk --debug
 ```
 
-The output is `build/app/outputs/flutter-apk/app-debug.apk`. Install that exact artifact with `adb -s <authorized-device> install -r build/app/outputs/flutter-apk/app-debug.apk`, then launch **GS Safety Demo**. The app asks for the server URL, simulation mode, runtime role, and server-configured demo access code. Its default URL can be overridden at build time with `--dart-define=GS_SERVER_URL=http://your-lan-host:3000`, or edited in the connection form.
+The output is `build/app/outputs/flutter-apk/app-debug.apk`. Install that exact artifact with `adb -s <authorized-device> install -r build/app/outputs/flutter-apk/app-debug.apk`, then launch **GS Safety Demo**. The app asks for the server URL, simulation mode, runtime role, and server-configured demo access code. Leaving the code blank (or entering only whitespace) sends `2026`; an explicitly entered code is sent unchanged. Configure the demo server to accept `2026` when using this default.
+
+The server selector has three choices in this order:
+
+1. **GS server (default):** `http://gs-safety:30080`, selected whenever the connection screen is first opened.
+2. **Existing IP:** `http://100.95.210.25:3000`.
+3. **Manual input:** enter an HTTP(S) server URL. Manual text is preserved while switching between choices; connecting always uses the selected choice.
+
+Connect the phone to the server's Tailscale network before using either preset. The hostname preset also requires Tailscale name resolution. Building with `--dart-define=GS_SERVER_URL=http://your-lan-host:3000` prefills the manual input only; the GS server remains the first and default choice.
 
 Keep the app foreground and the screen unlocked. Allow only the permissions requested for the selected role. The worker screen follows the server-confirmed profile/guidance language for both text and speech. Setup language controls affect setup labels.
 

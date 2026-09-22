@@ -4,6 +4,7 @@ import '../features/safety_guidance/presentation/safety_text.dart';
 import '../l10n/safety_strings.dart';
 import '../session/mobile_session_controller.dart';
 import '../theme/safety_theme.dart';
+import 'server_address_field.dart';
 
 class ConnectionScreen extends StatefulWidget {
   const ConnectionScreen({required this.session, super.key});
@@ -15,12 +16,10 @@ class ConnectionScreen extends StatefulWidget {
 class _ConnectionScreenState extends State<ConnectionScreen> {
   final _form = GlobalKey<FormState>();
   final _server = TextEditingController(
-    text: const String.fromEnvironment(
-      'GS_SERVER_URL',
-      defaultValue: 'http://10.15.82.5:3000',
-    ),
+    text: const String.fromEnvironment('GS_SERVER_URL'),
   );
   final _code = TextEditingController();
+  ServerAddressOption _serverOption = ServerAddressOption.gsServer;
   String _role = 'WORKER_1';
   String _mode = 'equipment';
   String _language = 'ko';
@@ -35,10 +34,10 @@ class _ConnectionScreenState extends State<ConnectionScreen> {
   Future<void> _connect() async {
     if (!(_form.currentState?.validate() ?? false)) return;
     await widget.session.connect(
-      server: Uri.parse(_server.text.trim()),
+      server: Uri.parse(_serverOption.address ?? _server.text.trim()),
       deviceRole: _role,
       mode: _mode,
-      accessCode: _code.text,
+      accessCode: _code.text.trim().isEmpty ? '2026' : _code.text,
     );
   }
 
@@ -90,35 +89,15 @@ class _ConnectionScreenState extends State<ConnectionScreen> {
                   style: SafetyTypography.small,
                 ),
                 const SizedBox(height: SafetySpacing.xxl),
-                TextFormField(
-                  controller: _server,
-                  keyboardType: TextInputType.url,
-                  autocorrect: false,
-                  decoration: InputDecoration(
-                    labelText: text.serverAddress,
-                    helper: SafetyText(
-                      text.serverAddressHint,
-                      style: SafetyTypography.small,
-                    ),
-                    errorMaxLines: 3,
-                  ),
-                  validator: (value) {
-                    final uri = Uri.tryParse(value?.trim() ?? '');
-                    return uri != null &&
-                            ['http', 'https'].contains(uri.scheme) &&
-                            uri.host.isNotEmpty &&
-                            uri.userInfo.isEmpty &&
-                            !uri.hasQuery &&
-                            !uri.hasFragment
-                        ? null
-                        : text.text(
-                            '서버 주소를 확인하세요',
-                            'Enter a valid HTTP(S) server address',
-                          );
-                  },
+                ServerAddressField(
+                  option: _serverOption,
+                  manualController: _server,
+                  text: text,
+                  onChanged: (value) => setState(() => _serverOption = value),
                 ),
                 const SizedBox(height: SafetySpacing.lg),
                 DropdownButtonFormField<String>(
+                  key: const Key('simulation-mode'),
                   initialValue: _mode,
                   isDense: false,
                   isExpanded: true,
@@ -139,6 +118,7 @@ class _ConnectionScreenState extends State<ConnectionScreen> {
                 ),
                 const SizedBox(height: SafetySpacing.lg),
                 DropdownButtonFormField<String>(
+                  key: const Key('device-role'),
                   initialValue: _role,
                   decoration: InputDecoration(labelText: text.deviceRole),
                   isDense: false,
@@ -173,6 +153,7 @@ class _ConnectionScreenState extends State<ConnectionScreen> {
                 ),
                 const SizedBox(height: SafetySpacing.lg),
                 TextFormField(
+                  key: const Key('demo-access-code'),
                   controller: _code,
                   obscureText: true,
                   autocorrect: false,
@@ -181,8 +162,8 @@ class _ConnectionScreenState extends State<ConnectionScreen> {
                     labelText: text.text('시연 접속 코드', 'Demo access code'),
                     helper: SafetyText(
                       text.text(
-                        '서버 운영자가 지정한 코드를 입력하세요',
-                        'Use the code configured by the server operator',
+                        '비워두면 시연 코드 2026으로 접속합니다',
+                        'Leave blank to use demo code 2026',
                       ),
                       style: SafetyTypography.small,
                     ),
