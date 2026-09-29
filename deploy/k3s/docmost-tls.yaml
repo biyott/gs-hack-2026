@@ -1,0 +1,57 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: docmost-letsencrypt
+  namespace: docmost
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      name: docmost-acme-account
+    solvers:
+      - http01:
+          ingress:
+            ingressClassName: traefik
+            ingressTemplate:
+              metadata:
+                annotations:
+                  traefik.ingress.kubernetes.io/router.entrypoints: web
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: docmost-tls
+  namespace: docmost
+spec:
+  secretName: docmost-tls
+  issuerRef:
+    kind: Issuer
+    name: docmost-letsencrypt
+  dnsNames:
+    - emul.site
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: docmost-https
+  namespace: docmost
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
+spec:
+  ingressClassName: traefik
+  tls:
+    - hosts:
+        - emul.site
+      secretName: docmost-tls
+  rules:
+    - host: emul.site
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: docmost
+                port:
+                  number: 3000
